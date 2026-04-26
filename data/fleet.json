@@ -1,0 +1,130 @@
+{
+  "updated": "2026-04-26",
+  "prev_week": {
+    "total": 148,
+    "on_contract": 118,
+    "idle_stacked": 30
+  },
+  "rigs": [
+    {
+      "name": "Deepwater Atlas",
+      "contractor": "Transocean",
+      "type": "Drillship",
+      "water_depth_ft": 20000,
+      "status": "On Contract",
+      "operator": "Chevron",
+      "location": "US Gulf of Mexico",
+      "contract_start": "2024-06",
+      "contract_end": "2027-03",
+      "day_rate_kusd": 465
+    },
+    {
+      "name": "Deepwater Titan",
+      "contractor": "Transocean",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "On Contract",
+      "operator": "Shell",
+      "location": "US Gulf of Mexico",
+      "contract_start": "2023-09",
+      "contract_end": "2026-09",
+      "day_rate_kusd": 455
+    },
+    {
+      "name": "Valaris DS-7",
+      "contractor": "Valaris",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "On Contract",
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2024-01",
+      "contract_end": "2028-01",
+      "day_rate_kusd": 440
+    },
+    {
+      "name": "Noble Venturer",
+      "contractor": "Noble",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "Idle",
+      "operator": "",
+      "location": "Singapore (Cold Stack)",
+      "contract_start": "",
+      "contract_end": "",
+      "day_rate_kusd": null
+    },
+    {
+      "name": "Seadrill West Aquila",
+      "contractor": "Seadrill",
+      "type": "Semisubmersible",
+      "water_depth_ft": 10000,
+      "status": "On Contract",
+      "operator": "Equinor",
+      "location": "Norway",
+      "contract_start": "2024-03",
+      "contract_end": "2026-12",
+      "day_rate_kusd": 380
+    },
+    {
+      "name": "Transocean Endurance",
+      "contractor": "Transocean",
+      "type": "Semisubmersible",
+      "water_depth_ft": 10000,
+      "status": "On Contract",
+      "operator": "bp",
+      "location": "UK North Sea",
+      "contract_start": "2023-06",
+      "contract_end": "2026-06",
+      "day_rate_kusd": 370
+    },
+    {
+      "name": "Valaris 123",
+      "contractor": "Valaris",
+      "type": "Jack-up",
+      "water_depth_ft": 400,
+      "status": "On Contract",
+      "operator": "Saudi Aramco",
+      "location": "Saudi Arabia",
+      "contract_start": "2024-01",
+      "contract_end": "2027-01",
+      "day_rate_kusd": 145
+    },
+    {
+      "name": "Noble Sam Hartley",
+      "contractor": "Noble",
+      "type": "Jack-up",
+      "water_depth_ft": 400,
+      "status": "On Contract",
+      "operator": "ADNOC",
+      "location": "UAE",
+      "contract_start": "2025-02",
+      "contract_end": "2026-08",
+      "day_rate_kusd": 135
+    },
+    {
+      "name": "Diamond Black Rhino",
+      "contractor": "Diamond",
+      "type": "Jack-up",
+      "water_depth_ft": 350,
+      "status": "Cold Stacked",
+      "operator": "",
+      "location": "Middle East (Stacked)",
+      "contract_start": "",
+      "contract_end": "",
+      "day_rate_kusd": null
+    },
+    {
+      "name": "Seadrill West Linus",
+      "contractor": "Seadrill",
+      "type": "Jack-up",
+      "water_depth_ft": 492,
+      "status": "On Contract",
+      "operator": "ConocoPhillips",
+      "location": "Norway",
+      "contract_start": "2023-01",
+      "contract_end": "2028-01",
+      "day_rate_kusd": 155
+    }
+  ]
+}

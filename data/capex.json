@@ -1,0 +1,104 @@
+{
+  "updated": "2026-04-26",
+  "companies": [
+    {
+      "name": "ExxonMobil",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 23.2, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "amount_busd": 24.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 25.0, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "Guyana, Permian, deepwater",
+      "notes": "Guyana Yellowtail 포함, Pioneer 인수 효과 반영"
+    },
+    {
+      "name": "Shell",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 22.0, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "amount_busd": 22.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 22.0, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "deepwater, LNG",
+      "notes": "Brazil, Gulf of Mexico, Nigeria 집중"
+    },
+    {
+      "name": "bp",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 16.0, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "amount_busd": 14.5, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 13.5, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "GOM, North Sea, Azerbaijan",
+      "notes": "비용 절감 전략으로 CAPEX 감소 추세"
+    },
+    {
+      "name": "Chevron",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 15.6, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "amount_busd": 14.5, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 14.5, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "Permian, Kazakhstan, GOM",
+      "notes": "Hess 인수 후 Guyana 포트폴리오 추가"
+    },
+    {
+      "name": "TotalEnergies",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 17.0, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "amount_busd": 17.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 17.5, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "Africa deepwater, Middle East, Brazil",
+      "notes": "Angola, Nigeria, Congo 집중 투자"
+    },
+    {
+      "name": "Saudi Aramco",
+      "type": "NOC",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 49.0, "source": "FY2023 Annual Report" },
+        { "year": 2025, "amount_busd": 48.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "amount_busd": 50.0, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "offshore increment, Jafurah gas",
+      "notes": "Jafurah 비전통 가스 개발 포함, 생산능력 1200만 b/d 목표"
+    },
+    {
+      "name": "ADNOC",
+      "type": "NOC",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 15.0, "source": "FY2023 Annual Report" },
+        { "year": 2025, "amount_busd": 16.0, "source": "2025 Budget" },
+        { "year": 2026, "amount_busd": 17.0, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "offshore UAE, sour gas",
+      "notes": "생산능력 500만 b/d 목표 2027년"
+    },
+    {
+      "name": "Petrobras",
+      "type": "NOC",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 21.4, "source": "2024-2028 Business Plan" },
+        { "year": 2025, "amount_busd": 21.0, "source": "2025-2029 Business Plan" },
+        { "year": 2026, "amount_busd": 21.0, "source": "2025-2029 Business Plan" }
+      ],
+      "upstream_focus": "pre-salt deepwater Brazil",
+      "notes": "Buzios, Tupi 등 pre-salt 집중"
+    },
+    {
+      "name": "PETRONAS",
+      "type": "NOC",
+      "capex_guidance": [
+        { "year": 2024, "amount_busd": 12.0, "source": "FY2023 Annual Report" },
+        { "year": 2025, "amount_busd": 12.5, "source": "2025 Budget" },
+        { "year": 2026, "amount_busd": 13.0, "source": "2026 Guidance" }
+      ],
+      "upstream_focus": "Malaysia offshore, LNG",
+      "notes": "Kasawari CCS 프로젝트 포함"
+    }
+  ]
+}

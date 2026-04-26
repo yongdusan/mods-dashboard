@@ -1,0 +1,70 @@
+{
+  "updated": "2026-04-26",
+  "day_rates": [
+    { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Rigzone" },
+    { "date": "2025-02", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 435, "source": "Rigzone" },
+    { "date": "2025-03", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 440, "source": "Rigzone" },
+    { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Rigzone" },
+    { "date": "2025-05", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 450, "source": "Rigzone" },
+    { "date": "2025-06", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 455, "source": "Rigzone" },
+    { "date": "2025-07", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 458, "source": "Rigzone" },
+    { "date": "2025-08", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 460, "source": "Rigzone" },
+    { "date": "2025-09", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 462, "source": "Rigzone" },
+    { "date": "2025-10", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 463, "source": "Rigzone" },
+    { "date": "2025-11", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 465, "source": "Rigzone" },
+    { "date": "2025-12", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 465, "source": "Rigzone" },
+    { "date": "2026-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 468, "source": "Rigzone" },
+    { "date": "2026-02", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 470, "source": "Rigzone" },
+    { "date": "2026-03", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 472, "source": "Rigzone" },
+    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 475, "source": "Rigzone" },
+    { "date": "2025-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 330, "source": "Rigzone" },
+    { "date": "2025-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 345, "source": "Rigzone" },
+    { "date": "2025-07", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 360, "source": "Rigzone" },
+    { "date": "2025-10", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 368, "source": "Rigzone" },
+    { "date": "2026-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 375, "source": "Rigzone" },
+    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 382, "source": "Rigzone" },
+    { "date": "2025-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 120, "source": "Rigzone" },
+    { "date": "2025-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 128, "source": "Rigzone" },
+    { "date": "2025-07", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 133, "source": "Rigzone" },
+    { "date": "2025-10", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 138, "source": "Rigzone" },
+    { "date": "2026-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 142, "source": "Rigzone" },
+    { "date": "2026-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 145, "source": "Rigzone" }
+  ],
+  "newbuild_prices": [
+    {
+      "date": "2024-03",
+      "rig_type": "Jack-up (Premium)",
+      "yard": "Keppel FELS",
+      "price_musd": 230,
+      "notes": "KFELS B Class, harsh environment"
+    },
+    {
+      "date": "2024-07",
+      "rig_type": "Jack-up (Standard)",
+      "yard": "PPL Shipyard",
+      "price_musd": 195,
+      "notes": "Baker Marine Pacific Class 375"
+    },
+    {
+      "date": "2024-11",
+      "rig_type": "Drillship (UDW)",
+      "yard": "Daewoo (DSME)",
+      "price_musd": 750,
+      "notes": "20,000ft WD, dual BOP"
+    },
+    {
+      "date": "2025-02",
+      "rig_type": "Semisubmersible",
+      "yard": "Samsung Heavy",
+      "price_musd": 680,
+      "notes": "10,000ft WD, harsh environment"
+    },
+    {
+      "date": "2025-09",
+      "rig_type": "Jack-up (Premium)",
+      "yard": "Keppel FELS",
+      "price_musd": 245,
+      "notes": "Increased steel costs reflected"
+    }
+  ]
+}
