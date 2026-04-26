@@ -48,10 +48,10 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "Idle",
-      "operator": "",
+      "operator": null,
       "location": "Singapore (Cold Stack)",
-      "contract_start": "",
-      "contract_end": "",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null
     },
     {
@@ -103,15 +103,15 @@
       "day_rate_kusd": 135
     },
     {
-      "name": "Diamond Black Rhino",
-      "contractor": "Diamond",
+      "name": "Borr Gerd",
+      "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 350,
       "status": "Cold Stacked",
-      "operator": "",
+      "operator": null,
       "location": "Middle East (Stacked)",
-      "contract_start": "",
-      "contract_end": "",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null
     },
     {
