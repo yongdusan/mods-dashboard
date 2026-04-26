@@ -484,6 +484,15 @@
      Data loading
   ───────────────────────────────────────── */
   let fleet, rates, capex;
+  let dayRateChart = null;
+  let capexChart = null;
+  let capexTable = null;
+  let newbuildTable = null;
+
+  function esc(str) {
+    if (str == null) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
   try {
     [fleet, rates, capex] = await Promise.all([
       fetch('./data/fleet.json').then(r => r.json()),
@@ -505,15 +514,15 @@
       <div class="meta-row">
         <span class="live-dot"></span>
         <span class="label">Fleet data:</span>
-        <span class="value">${fleet.updated}</span>
+        <span class="value">${esc(fleet.updated)}</span>
       </div>
       <div class="meta-row">
         <span class="label">Day rates:</span>
-        <span class="value">${rates.updated}</span>
+        <span class="value">${esc(rates.updated)}</span>
       </div>
       <div class="meta-row">
         <span class="label">CAPEX:</span>
-        <span class="value">${capex.updated}</span>
+        <span class="value">${esc(capex.updated)}</span>
       </div>
     `;
   }
@@ -601,8 +610,6 @@
   let fleetTable = null;
 
   function renderFleetTable(rigs) {
-    document.getElementById('fleet-count').textContent = `${rigs.length} rigs`;
-
     const tableData = rigs.map(r => ({
       name: r.name,
       type: r.type,
@@ -627,13 +634,13 @@
           title: 'Rig Name',
           field: 'name',
           widthGrow: 2,
-          formatter: cell => `<span style="font-weight:500;color:var(--text)">${cell.getValue()}</span>`,
+          formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Type',
           field: 'type',
           widthGrow: 1,
-          formatter: cell => `<span class="mono" style="color:var(--text-muted)">${cell.getValue()}</span>`,
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Status',
@@ -647,7 +654,7 @@
           widthGrow: 1,
           formatter: cell => {
             const v = cell.getValue();
-            return v ? `<span style="color:var(--text)">${v}</span>` : '<span style="color:var(--text-muted)">—</span>';
+            return v ? `<span style="color:var(--text)">${esc(v)}</span>` : '<span style="color:var(--text-muted)">—</span>';
           },
         },
         {
@@ -681,8 +688,8 @@
   function renderDayRateChart() {
     const allDates = [...new Set(rates.day_rates.map(r => r.date))].sort();
 
-    function buildDataset(rigType, color) {
-      const entries = rates.day_rates.filter(r => r.rig_type === rigType);
+    function buildDataset(rigType, tier) {
+      const entries = rates.day_rates.filter(r => r.rig_type === rigType && r.tier === tier);
       return allDates.map(date => {
         const found = entries.find(e => e.date === date);
         return found ? found.rate_kusd : null;
@@ -690,6 +697,7 @@
     }
 
     const ctx = document.getElementById('dayRateChart').getContext('2d');
+    if (dayRateChart) { dayRateChart.destroy(); }
 
     function makeGradient(ctx, colorHex) {
       const grad = ctx.createLinearGradient(0, 0, 0, 280);
@@ -698,14 +706,14 @@
       return grad;
     }
 
-    new Chart(ctx, {
+    dayRateChart = new Chart(ctx, {
       type: 'line',
       data: {
         labels: allDates,
         datasets: [
           {
             label: 'Drillship (UDW)',
-            data: buildDataset('Drillship', '#00d4aa'),
+            data: buildDataset('Drillship', 'Ultra-deepwater'),
             borderColor: '#00d4aa',
             backgroundColor: makeGradient(ctx, '#00d4aa'),
             fill: true,
@@ -716,7 +724,7 @@
           },
           {
             label: 'Semisubmersible',
-            data: buildDataset('Semisubmersible', '#58a6ff'),
+            data: buildDataset('Semisubmersible', 'Deepwater'),
             borderColor: '#58a6ff',
             backgroundColor: makeGradient(ctx, '#58a6ff'),
             fill: true,
@@ -727,7 +735,7 @@
           },
           {
             label: 'Jack-up',
-            data: buildDataset('Jack-up', '#f0883e'),
+            data: buildDataset('Jack-up', 'Premium'),
             borderColor: '#f0883e',
             backgroundColor: makeGradient(ctx, '#f0883e'),
             fill: true,
@@ -809,7 +817,8 @@
     });
 
     const ctx = document.getElementById('capexChart').getContext('2d');
-    new Chart(ctx, {
+    if (capexChart) { capexChart.destroy(); }
+    capexChart = new Chart(ctx, {
       type: 'bar',
       data: { labels: years, datasets },
       options: {
@@ -860,6 +869,7 @@
   ───────────────────────────────────────── */
   function renderCapexTable() {
     const tableData = capex.companies.map(c => {
+      if (!c.capex_guidance.length) return null;
       // Get latest year entry
       const latest = c.capex_guidance.slice().sort((a, b) => b.year - a.year)[0];
       return {
@@ -869,9 +879,10 @@
         amount_busd: latest.amount_busd,
         focus: c.upstream_focus,
       };
-    });
+    }).filter(Boolean);
 
-    new Tabulator('#capex-table', {
+    if (capexTable) { capexTable.destroy(); }
+    capexTable = new Tabulator('#capex-table', {
       data: tableData,
       height: '280px',
       layout: 'fitColumns',
@@ -880,7 +891,7 @@
           title: 'Company',
           field: 'company',
           widthGrow: 1.2,
-          formatter: cell => `<span style="font-weight:500;color:var(--text)">${cell.getValue()}</span>`,
+          formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Type',
@@ -910,7 +921,7 @@
           title: 'Focus',
           field: 'focus',
           widthGrow: 2,
-          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${cell.getValue()}</span>`,
+          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },
       ],
     });
@@ -928,7 +939,8 @@
       notes: p.notes,
     }));
 
-    new Tabulator('#newbuild-table', {
+    if (newbuildTable) { newbuildTable.destroy(); }
+    newbuildTable = new Tabulator('#newbuild-table', {
       data: tableData,
       layout: 'fitColumns',
       columns: [
@@ -948,7 +960,7 @@
           title: 'Yard',
           field: 'yard',
           widthGrow: 1,
-          formatter: cell => `<span style="color:var(--blue)">${cell.getValue()}</span>`,
+          formatter: cell => `<span style="color:var(--blue)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Price ($M)',
@@ -961,7 +973,7 @@
           title: 'Notes',
           field: 'notes',
           widthGrow: 2,
-          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${cell.getValue()}</span>`,
+          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },
       ],
     });
