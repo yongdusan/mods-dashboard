@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-26",
+  "updated": "2026-05-03",
   "day_rates": [
     { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Rigzone" },
     { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Rigzone" },
