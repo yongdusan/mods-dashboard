@@ -1023,6 +1023,7 @@
     document.getElementById('capex-btn-total').classList.toggle('active', mode === 'total');
     renderCapexChart();
   }
+  window.switchCapexMode = switchCapexMode;
 
   function renderCapexChart() {
     const palette = ['#00d4aa','#58a6ff','#f0883e','#d29922','#bc8cff','#f85149','#3fb950','#79c0ff','#ffa657'];
