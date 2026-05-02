@@ -1,0 +1,155 @@
+{
+  "updated": "2026-05-02",
+  "items": [
+    {
+      "id": 1,
+      "date": "2026-04-29",
+      "category": "Contract",
+      "title": "ExxonMobil Awards Noble Drillship Contract at $375k/day in Guyana",
+      "summary": "ExxonMobil awarded Noble Corporation a new drillship contract offshore Guyana at a day rate of $375,000. The contract supports continued development drilling at the Stabroek Block, one of the world's most prolific deepwater discoveries.",
+      "companies": ["Noble", "ExxonMobil"],
+      "source": "Kaieteur News",
+      "url": "https://kaieteurnewsonline.com/2026/04/29/exxon-awards-new-rig-contract-to-noble-at-us375000-day-rate/"
+    },
+    {
+      "id": 2,
+      "date": "2026-04-22",
+      "category": "Contract",
+      "title": "Seadrill Adds $260M Backlog with U.S. Gulf Drillship Awards",
+      "summary": "Seadrill secured two drillship contract awards in the U.S. Gulf of Mexico. The West Neptune received a 365-day extension commencing September 2026, and the West Vela secured a 270-day contract starting August 2026, adding approximately $260 million in backlog.",
+      "companies": ["Seadrill"],
+      "source": "World Oil",
+      "url": "https://worldoil.com/news/2026/4/22/seadrill-adds-260-million-backlog-with-u-s-gulf-drillship-awards/"
+    },
+    {
+      "id": 3,
+      "date": "2026-04-14",
+      "category": "Contract",
+      "title": "Transocean Announces $425M Additional Backlog for Ultra-Deepwater Drillship",
+      "summary": "Transocean secured $425 million in additional contract backlog for an ultra-deepwater drillship. The award reflects continued operator demand for high-specification 8th generation assets.",
+      "companies": ["Transocean"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/04/14/3273137/0/en/Transocean-Ltd-Announces-425-Million-Additional-Backlog-for-Ultra-Deepwater-Drillship.html"
+    },
+    {
+      "id": 4,
+      "date": "2026-04-02",
+      "category": "Contract",
+      "title": "Transocean Wins $1B in Offshore Rig Contracts for Norway and Brazil",
+      "summary": "Transocean announced contract awards totaling approximately $1.0 billion. The Transocean Barents was awarded a 1,095-day contract with Vår Energi in Norway at $450k/day (~$490M backlog). The Deepwater Orion secured a 1,095-day extension with Petrobras in Brazil (~$420M), and the Deepwater Aquila received a 365-day Petrobras extension (~$160M).",
+      "companies": ["Transocean", "Petrobras"],
+      "source": "World Oil",
+      "url": "https://worldoil.com/news/2026/4/2/transocean-lands-1-billion-in-brazil-norway-offshore-rig-contracts/"
+    },
+    {
+      "id": 5,
+      "date": "2026-04-02",
+      "category": "Contract",
+      "title": "Transocean Deepwater Asgard Wins $158M Eastern Mediterranean Contract",
+      "summary": "The Deepwater Asgard was awarded a five-well contract in the Eastern Mediterranean Sea with an undisclosed operator, adding approximately $158 million of backlog. The estimated 390-day campaign is expected to begin in Q4 2026.",
+      "companies": ["Transocean"],
+      "source": "StockTitan",
+      "url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html"
+    },
+    {
+      "id": 6,
+      "date": "2026-03-25",
+      "category": "Contract",
+      "title": "Petrobras Awards Foresea $465M Drillship Contract for Mero Field",
+      "summary": "Petrobras awarded Foresea a long-term contract to operate the ultra-deepwater drillship ODN I offshore Brazil. The 1,443-day campaign supports development activity in the Mero field in the Santos Basin, contributing approximately $465 million to backlog.",
+      "companies": ["Petrobras"],
+      "source": "World Oil",
+      "url": "https://www.worldoil.com/news/2026/3/25/petrobras-awards-foresea-long-term-drillship-contract-for-mero-field-offshore-brazil/"
+    },
+    {
+      "id": 7,
+      "date": "2026-02-13",
+      "category": "M&A",
+      "title": "Transocean to Acquire Valaris for $5.8B, Creating World's Largest Offshore Driller",
+      "summary": "Transocean announced an all-stock acquisition of Valaris valued at approximately $5.8 billion. The combined entity would operate 73 offshore rigs — 33 UDW drillships, 9 semisubmersibles, and 31 jackups — with a combined contract backlog of approximately $10 billion. Transaction expected to close in H2 2026, pending regulatory approvals.",
+      "companies": ["Transocean", "Valaris"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
+    },
+    {
+      "id": 8,
+      "date": "2026-01-28",
+      "category": "Fleet",
+      "title": "Noble Completes $360M Sale of Five Jackups to Borr Drilling",
+      "summary": "Noble Corporation completed the sale of five premium jack-up drilling rigs to Borr Drilling for approximately $360 million, including three Friede & Goldman JU-3000N and two Gusto MSC CJ50 design rigs. The transaction generated ~$210M cash and $150M in seller notes, expanding Borr's fleet to 29 jackups. Noble becomes a pureplay deepwater driller.",
+      "companies": ["Noble", "Borr Drilling"],
+      "source": "World Oil",
+      "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
+    },
+    {
+      "id": 9,
+      "date": "2026-01-26",
+      "category": "Contract",
+      "title": "Seadrill Announces Multiple Contract Awards in Malaysia, Norway, and Brazil",
+      "summary": "Seadrill secured three rig awards: West Capella contracted in Malaysia for ~440 days at $157M total value commencing Q2 2026; West Elara secured an accommodation contract with Equinor in Norway worth $78M starting Q3 2026; West Carina contract extended through April 2026 in Brazil.",
+      "companies": ["Seadrill", "Equinor"],
+      "source": "Seadrill IR",
+      "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
+    },
+    {
+      "id": 10,
+      "date": "2026-02-20",
+      "category": "Earnings",
+      "title": "Transocean FY2025: Revenue Up 13% to $3.97B, EBITDA Up 19% to $1.37B",
+      "summary": "Transocean reported full-year 2025 contract drilling revenues of $3.965 billion (up 13% YoY) and Adjusted EBITDA of $1.37 billion (up 19%). Q4 2025 revenue was $1.04 billion with a 37% EBITDA margin. Total backlog stood at approximately $6.1 billion. Record uptime of near 98% achieved across fleet.",
+      "companies": ["Transocean"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/02/20/3241645/0/en/Transocean-Ltd-Reports-Fourth-Quarter-and-Full-Year-2025-Results.html"
+    },
+    {
+      "id": 11,
+      "date": "2026-02-25",
+      "category": "Earnings",
+      "title": "Seadrill Q4 2025: Revenue $362M, EBITDA $88M — 2026 Guidance $1.4–1.45B",
+      "summary": "Seadrill reported Q4 2025 revenue of $362 million and Adjusted EBITDA of $88 million (24.3% margin), with a net loss of $10 million. Full-year 2025 Adjusted EBITDA was $353 million. Backlog rose to $2.5 billion. 2026 guidance: revenue $1.40–1.45 billion, Adjusted EBITDA $350–400 million.",
+      "companies": ["Seadrill"],
+      "source": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260225741746/en/Seadrill-Announces-Fourth-Quarter-and-Full-Year-2025-Results"
+    },
+    {
+      "id": 12,
+      "date": "2026-02-18",
+      "category": "Earnings",
+      "title": "Valaris Q4 2025: Revenue $537M, Backlog $4.7B — Merger with Transocean Pending",
+      "summary": "Valaris reported Q4 2025 revenue of $537 million and net income of $717 million including a tax benefit. Full-year 2025 revenue was $2.36 billion. Backlog expanded to $4.7 billion with ~97% of 2026 revenue midpoint already contracted. Valaris has cancelled future earnings calls due to the pending Transocean acquisition.",
+      "companies": ["Valaris", "Transocean"],
+      "source": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260218978659/en/Valaris-Reports-Fourth-Quarter-2025-Results"
+    },
+    {
+      "id": 13,
+      "date": "2026-02-10",
+      "category": "Earnings",
+      "title": "Borr Drilling Q4 2025: Revenue $259M, FY EBITDA $470M at Top of Guidance",
+      "summary": "Borr Drilling reported Q4 2025 operating revenue of $259.4 million and full-year 2025 Adjusted EBITDA of $470.1 million, at the top of guidance. Q4 net loss was $1.0 million. Backlog stood at $1.2 billion. Fleet utilization was 85% for premium jackups.",
+      "companies": ["Borr Drilling"],
+      "source": "StockTitan",
+      "url": "https://www.stocktitan.net/news/BORR/borr-drilling-limited-announces-fourth-quarter-2025-7dlxv6zs1s87.html"
+    },
+    {
+      "id": 14,
+      "date": "2026-02-06",
+      "category": "Outlook",
+      "title": "Westwood: 2026 Offshore Rig Outlook Brightens After Mid-Cycle Pause",
+      "summary": "Westwood Global Energy reported that offshore rig demand is strengthening with 355 rig-years of awarded demand for 2026 starts. The market outlook for 2027–2028 is particularly strong, with 42 unawarded tenders totaling ~67 combined rig-years. Drillship demand recovery is led by Brazil and the U.S. Gulf of Mexico.",
+      "companies": [],
+      "source": "Westwood Energy",
+      "url": "https://www.westwoodenergy.com/news/westwood-insight/westwood-insight-as-2025-challenges-fade-offshore-rig-outlook-brightens"
+    },
+    {
+      "id": 15,
+      "date": "2025-12-09",
+      "category": "Fleet",
+      "title": "Noble to Sell 6 Jackups to Become Pureplay Deepwater Driller",
+      "summary": "Noble Corporation announced the sale of six jackup rigs — five to Borr Drilling and one to Ocean Oilfield — to become a pureplay deepwater drilling company. The strategic shift aligns Noble with the higher day rate UDW floater market and eliminates exposure to the more commoditized jackup segment.",
+      "companies": ["Noble", "Borr Drilling"],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/noble_to_sell_6_jackups_become_pureplay_deepwater_driller-09-dec-2025-182483-article/"
+    }
+  ]
+}

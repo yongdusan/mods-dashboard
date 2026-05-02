@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industry News — MODU Dashboard</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ─── CSS Variables ─── */
+    :root {
+      --bg:         #0d1117;
+      --panel:      #161b22;
+      --border:     #30363d;
+      --accent:     #00d4aa;
+      --text:       #e6edf3;
+      --text-muted: #8b949e;
+      --green:      #3fb950;
+      --red:        #f85149;
+      --yellow:     #d29922;
+      --blue:       #58a6ff;
+      --orange:     #f0883e;
+      --font-body:  'Inter', sans-serif;
+      --font-mono:  'JetBrains Mono', monospace;
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .header-title h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .header-title .subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .nav-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .nav-link:hover { text-decoration: underline; }
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-meta .value { color: var(--accent); font-weight: 500; }
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ─── Controls Bar ─── */
+    .controls-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0d1117;
+      font-weight: 600;
+    }
+    .filter-btn .count {
+      opacity: 0.75;
+      font-weight: 400;
+    }
+    .search-input {
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--panel);
+      color: var(--text);
+      font-size: 12px;
+      font-family: var(--font-body);
+      width: 240px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-input::placeholder { color: var(--text-muted); }
+    .search-input:focus { border-color: var(--accent); }
+
+    /* ─── News Grid ─── */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 1100px) { .news-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 680px)  { .news-grid { grid-template-columns: 1fr; } }
+
+    /* ─── News Card ─── */
+    .news-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .news-card:hover {
+      border-color: rgba(0, 212, 170, 0.4);
+      box-shadow: 0 2px 12px rgba(0, 212, 170, 0.06);
+    }
+
+    /* Card top row: badge + date */
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-date {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+    }
+
+    /* Category badge */
+    .cat-badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .cat-Contract { background: rgba(63,185,80,0.15);  color: #3fb950; }
+    .cat-MA       { background: rgba(88,166,255,0.15); color: #58a6ff; }
+    .cat-Earnings { background: rgba(210,153,34,0.15); color: #d29922; }
+    .cat-Fleet    { background: rgba(240,136,62,0.15); color: #f0883e; }
+    .cat-Outlook  { background: rgba(0,212,170,0.15);  color: #00d4aa; }
+
+    /* Title */
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* Summary */
+    .card-summary {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .card-summary.truncated {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Expand toggle */
+    .card-toggle {
+      font-size: 11px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      opacity: 0.8;
+      margin-top: -4px;
+    }
+
+    /* Footer: companies + source */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+    .card-companies {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .company-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 212, 170, 0.35);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .card-source {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.15s;
+      font-family: var(--font-mono);
+    }
+    .card-source:hover { color: var(--accent); }
+
+    /* ─── Empty State ─── */
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .empty-state p {
+      font-size: 15px;
+    }
+    .reset-btn {
+      padding: 8px 20px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .reset-btn:hover {
+      background: var(--accent);
+      color: #0d1117;
+      border-color: var(--accent);
+    }
+
+    /* ─── Loading ─── */
+    .loading {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 2;
+    }
+    .loading code {
+      font-family: var(--font-mono);
+      background: var(--border);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="header-title">
+      <h1>Industry News</h1>
+      <span class="subtitle">Offshore Drilling Market Intelligence</span>
+    </div>
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">← Fleet Dashboard</a>
+        <a href="earnings.html" class="nav-link">Earnings</a>
+      </nav>
+      <div class="header-meta" id="header-meta">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </header>
+
+  <div class="controls-bar">
+    <div class="filter-row" id="filter-row">
+      <!-- category buttons populated by JS -->
+    </div>
+    <input class="search-input" type="text" id="search-input" placeholder="Search news, companies...">
+  </div>
+
+  <div class="news-grid" id="news-grid">
+    <div class="loading">Loading news data…</div>
+  </div>
+
+</div>
+
+<script>
+(async function () {
+
+  let newsData = null;
+  let currentCategory = 'All';
+  let searchQuery = '';
+
+  function esc(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* ─── Load Data ─── */
+  async function loadData() {
+    try {
+      newsData = await fetch('./data/news.json').then(r => r.json());
+    } catch (err) {
+      document.getElementById('news-grid').innerHTML =
+        `<div class="loading">&#9888; 데이터 로드 실패: ${esc(err.message)}<br>로컬 서버로 실행하세요: <code>python3 -m http.server 8080</code></div>`;
+      return false;
+    }
+    return true;
+  }
+
+  /* ─── Category badge CSS class ─── */
+  function catClass(category) {
+    const map = { 'Contract': 'cat-Contract', 'M&A': 'cat-MA', 'Earnings': 'cat-Earnings', 'Fleet': 'cat-Fleet', 'Outlook': 'cat-Outlook' };
+    return map[category] || 'cat-Outlook';
+  }
+
+  /* ─── Render Cards ─── */
+  function renderCards(items) {
+    const grid = document.getElementById('news-grid');
+
+    if (items.length === 0) {
+      grid.innerHTML = `
+        <div class="empty-state">
+          <p>검색 결과가 없습니다</p>
+          <button class="reset-btn" id="reset-btn">필터 초기화</button>
+        </div>`;
+      const resetBtn = document.getElementById('reset-btn');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          currentCategory = 'All';
+          searchQuery = '';
+          document.getElementById('search-input').value = '';
+          document.querySelectorAll('.filter-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.category === 'All');
+          });
+          filterAndRender();
+        });
+      }
+      return;
+    }
+
+    grid.innerHTML = items.map(item => {
+      const companies = item.companies.length
+        ? item.companies.map(c => `<span class="company-pill">${esc(c)}</span>`).join('')
+        : '';
+
+      return `
+        <div class="news-card" data-id="${item.id}">
+          <div class="card-top">
+            <span class="cat-badge ${catClass(item.category)}">${esc(item.category)}</span>
+            <span class="card-date">${esc(item.date)}</span>
+          </div>
+          <div class="card-title">${esc(item.title)}</div>
+          <div class="card-summary truncated" data-full="${esc(item.summary)}">${esc(item.summary)}</div>
+          <div class="card-toggle">&#9660; more</div>
+          <div class="card-footer">
+            <div class="card-companies">${companies}</div>
+            <a class="card-source" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.source)} &#8594;</a>
+          </div>
+        </div>`;
+    }).join('');
+
+    /* Card click — expand/collapse summary */
+    grid.querySelectorAll('.news-card').forEach(card => {
+      card.addEventListener('click', e => {
+        /* Don't toggle when clicking the source link */
+        if (e.target.closest('.card-source')) return;
+
+        const summary = card.querySelector('.card-summary');
+        const toggle  = card.querySelector('.card-toggle');
+        const isExpanded = !summary.classList.contains('truncated');
+
+        if (isExpanded) {
+          summary.classList.add('truncated');
+          toggle.innerHTML = '&#9660; more';
+        } else {
+          summary.classList.remove('truncated');
+          toggle.innerHTML = '&#9650; less';
+        }
+      });
+    });
+  }
+
+  /* ─── Filter & Render ─── */
+  function filterAndRender() {
+    let filtered = newsData.items;
+
+    if (currentCategory !== 'All') {
+      filtered = filtered.filter(n => n.category === currentCategory);
+    }
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(n =>
+        n.title.toLowerCase().includes(q) ||
+        n.summary.toLowerCase().includes(q) ||
+        n.companies.some(c => c.toLowerCase().includes(q))
+      );
+    }
+
+    renderCards(filtered);
+  }
+
+  /* ─── Count per category ─── */
+  function countByCategory(category) {
+    if (category === 'All') return newsData.items.length;
+    return newsData.items.filter(n => n.category === category).length;
+  }
+
+  /* ─── Init Controls ─── */
+  function initControls() {
+    const categories = ['All', 'Contract', 'M&A', 'Earnings', 'Fleet', 'Outlook'];
+    const filterRow = document.getElementById('filter-row');
+
+    filterRow.innerHTML = categories.map(cat => {
+      const count = countByCategory(cat);
+      const label = cat === 'All' ? `All <span class="count">(${count})</span>` : `${esc(cat)} <span class="count">(${count})</span>`;
+      return `<button class="filter-btn${cat === 'All' ? ' active' : ''}" data-category="${esc(cat)}">${label}</button>`;
+    }).join('');
+
+    filterRow.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterRow.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.category;
+        filterAndRender();
+      });
+    });
+
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', e => {
+      searchQuery = e.target.value.trim();
+      filterAndRender();
+    });
+  }
+
+  /* ─── Render Header Meta ─── */
+  function renderHeaderMeta() {
+    document.getElementById('header-meta').innerHTML = `
+      <span class="live-dot"></span>
+      <span>Updated:</span>
+      <span class="value">${esc(newsData.updated)}</span>
+    `;
+  }
+
+  /* ─── Main ─── */
+  const ok = await loadData();
+  if (!ok) return;
+
+  renderHeaderMeta();
+  initControls();
+  filterAndRender();
+
+})();
+</script>
+</body>
+</html>
