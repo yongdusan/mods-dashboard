@@ -521,6 +521,25 @@
       .replace(/"/g, '&quot;');
   }
 
+  /* ─── Delta tag helper ─── */
+  // mode: 'pct' (% change), 'pp' (percentage points diff), 'abs_pct' (abs % then pct change)
+  function deltaTag(current, prev, prevPeriod, mode) {
+    if (prev == null || current == null) return '';
+    const diff = current - prev;
+    const up = diff >= 0;
+    const sign = up ? '▲' : '▼';
+    const color = up ? 'var(--green)' : 'var(--red)';
+    let label;
+    if (mode === 'pp') {
+      label = `${sign}${Math.abs(diff).toFixed(1)}pp`;
+    } else {
+      const pct = Math.abs(diff / prev * 100);
+      label = `${sign}${pct.toFixed(1)}%`;
+    }
+    return `<div style="font-size:10px;color:${color};font-family:var(--font-mono);margin-top:2px;line-height:1.2">`
+         + `${label} <span style="color:var(--text-muted)">vs ${esc(prevPeriod)}</span></div>`;
+  }
+
   /* ─── Color helpers ─── */
   function marginColor(pct) {
     if (pct >= 40) return 'var(--green)';
@@ -562,22 +581,31 @@
 
   /* ─── Render comparison table ─── */
   function renderComparisonTable(companies) {
-    // Build table data from latest quarter of each company
+    // Build table data — latest quarter + previous quarter for QoQ delta
     const tableData = companies.map(c => {
       const latest = c.quarters[c.quarters.length - 1];
+      const prev   = c.quarters.length >= 2 ? c.quarters[c.quarters.length - 2] : null;
       return {
         name: c.name,
         ticker: c.ticker,
         period: latest.period,
         isMerger: c.ticker === 'VAL',
-        revenue_musd: latest.revenue_musd,
-        adj_ebitda_musd: latest.adj_ebitda_musd,
+        revenue_musd:      latest.revenue_musd,
+        adj_ebitda_musd:   latest.adj_ebitda_musd,
         ebitda_margin_pct: latest.ebitda_margin_pct,
-        utilization_pct: latest.utilization_pct,
+        utilization_pct:   latest.utilization_pct,
         avg_day_rate_kusd: latest.avg_day_rate_kusd,
-        backlog_busd: latest.backlog_busd,
+        backlog_busd:      latest.backlog_busd,
         note: c.note,
         _company: c,
+        // previous quarter for QoQ reference
+        prev_period:         prev ? prev.period : null,
+        prev_revenue_musd:   prev ? prev.revenue_musd : null,
+        prev_ebitda_musd:    prev ? prev.adj_ebitda_musd : null,
+        prev_margin_pct:     prev ? prev.ebitda_margin_pct : null,
+        prev_util_pct:       prev ? prev.utilization_pct : null,
+        prev_day_rate_kusd:  prev ? prev.avg_day_rate_kusd : null,
+        prev_backlog_busd:   prev ? prev.backlog_busd : null,
       };
     });
 
@@ -629,71 +657,82 @@
         {
           title: 'Revenue ($M)',
           field: 'revenue_musd',
-          minWidth: 110,
+          minWidth: 120,
           widthGrow: 0.8,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            return `<span class="mono" style="color:var(--text)">${v.toLocaleString()}</span>`;
+            const row = cell.getData();
+            return `<span class="mono" style="color:var(--text)">${v.toLocaleString()}</span>`
+                 + deltaTag(v, row.prev_revenue_musd, row.prev_period, 'pct');
           },
         },
         {
           title: 'Adj. EBITDA ($M)',
           field: 'adj_ebitda_musd',
-          minWidth: 130,
+          minWidth: 140,
           widthGrow: 0.8,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            const pct = cell.getData().ebitda_margin_pct;
-            const color = marginColor(pct);
-            return `<span class="mono" style="color:${color};font-weight:600">${v.toLocaleString()}</span>`;
+            const row = cell.getData();
+            const color = marginColor(row.ebitda_margin_pct);
+            return `<span class="mono" style="color:${color};font-weight:600">${v.toLocaleString()}</span>`
+                 + deltaTag(v, row.prev_ebitda_musd, row.prev_period, 'pct');
           },
         },
         {
           title: 'EBITDA Margin (%)',
           field: 'ebitda_margin_pct',
-          minWidth: 140,
+          minWidth: 150,
           widthGrow: 0.8,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
+            const row = cell.getData();
             const color = marginColor(v);
-            return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`;
+            return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`
+                 + deltaTag(v, row.prev_margin_pct, row.prev_period, 'pp');
           },
         },
         {
           title: 'Utilization (%)',
           field: 'utilization_pct',
-          minWidth: 120,
+          minWidth: 130,
           widthGrow: 0.7,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
+            const row = cell.getData();
             const color = utilizationColor(v);
-            return `<span class="mono" style="color:${color}">${v}%</span>`;
+            return `<span class="mono" style="color:${color}">${v}%</span>`
+                 + deltaTag(v, row.prev_util_pct, row.prev_period, 'pp');
           },
         },
         {
           title: 'Avg Day Rate (k$)',
           field: 'avg_day_rate_kusd',
-          minWidth: 140,
+          minWidth: 150,
           widthGrow: 0.8,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            return `<span class="mono" style="color:var(--accent);font-weight:500">${v}</span>`;
+            const row = cell.getData();
+            return `<span class="mono" style="color:var(--accent);font-weight:500">${v}</span>`
+                 + deltaTag(v, row.prev_day_rate_kusd, row.prev_period, 'pct');
           },
         },
         {
           title: 'Backlog ($B)',
           field: 'backlog_busd',
-          minWidth: 110,
+          minWidth: 120,
           widthGrow: 0.7,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`;
+            const row = cell.getData();
+            return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`
+                 + deltaTag(v, row.prev_backlog_busd, row.prev_period, 'pct');
           },
         },
         {
