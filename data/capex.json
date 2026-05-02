@@ -15,11 +15,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": null,
         "key_projects": [
-          { "name": "Johan Sverdrup Phase 3 (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 755, "notes": "NCS 최대 유전. Phase 1+2 생산 중(현 ~700kboed). Phase 3: NOK 13B 투자, 8공 신규 시추, 4000만~5000만 boe 추가 회수 목표." },
-          { "name": "Bacalhau (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 220, "notes": "Santos Basin. 2025 first oil. 2026년 220kboed 목표로 생산 램프업 중. Equinor 35% op." },
-          { "name": "Bay du Nord (Canada)", "region": "North America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 170, "notes": "Newfoundland 심해. FID 2027 목표. First oil 2031 예상. 160~175kboed 생산능력. 탐사·개발 드릴링 2029년 착수 예정." },
-          { "name": "Troll Field (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 350, "notes": "NCS 최대 가스전. Troll A·B·C 플랫폼 운영. 2040년대까지 생산 유지 목표." },
-          { "name": "Wisting (Arctic NCS)", "region": "Barents Sea", "type": "Offshore", "status": "Planning", "capacity_kboed": 100, "notes": "바렌츠해 북극권 유전. 노르웨이 최북단 개발 프로젝트. 개발 방식 검토 중." }
+          {
+            "name": "Johan Sverdrup Phase 3 (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 755, "notes": "NCS 최대 유전. Phase 1+2 생산 중. Phase 3: 8공 신규 시추, 4000만~5000만 boe 추가 회수 목표.",
+            "detail": { "operator": "Equinor (42.6%)", "partners": ["Lundin Energy 20%", "Petoro 17.36%", "Aker BP 11.57%", "TotalEnergies 8.44%"], "water_depth_m": 120, "reserves_mmboe": 3000, "fid": "2015-05", "first_oil": "2019-10", "peak_year": "2023", "vessel": "플랫폼 A·B·C·D (Aibel/Kværner 건조)", "rig_demand": "반잠수식 리그 1~2기 — Phase 3 개발정 시추 2026~2027년", "source": "Equinor IR / Johan Sverdrup Project Page" }
+          },
+          {
+            "name": "Bacalhau (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 220, "notes": "Santos Basin. 2025 first oil. 2026년 220kboed 목표 램프업 중. Equinor 35% op.",
+            "detail": { "operator": "Equinor (35%)", "partners": ["Pré-sal Petróleo (PPSA) 30%", "ExxonMobil 35%"], "water_depth_m": 2050, "reserves_mmboe": 700, "fid": "2020-06", "first_oil": "2025-01", "peak_year": "2026", "vessel": "Bacalhau FPSO (SBM Offshore 건조)", "rig_demand": "드릴십 1기 — 개발정 추가 시추 및 생산 안정화", "source": "Equinor IR / Offshore Magazine" }
+          },
+          {
+            "name": "Bay du Nord (Canada)", "region": "North America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 170, "notes": "Newfoundland 심해. FID 2027 목표. First oil 2031. 탐사·개발 드릴링 계약 2029 착수.",
+            "detail": { "operator": "Equinor (65%)", "partners": ["Cenovus Energy 35%"], "water_depth_m": 1200, "reserves_mmboe": 300, "fid": "2027 (예정)", "first_oil": "2031 (예정)", "peak_year": "2033", "vessel": "FPSO (미정)", "rig_demand": "드릴십 1기 — 탐사/평가 시추 2029년 착수 예정", "source": "Equinor IR / Canada.ca (2026.03)" }
+          },
+          {
+            "name": "Troll Field (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 350, "notes": "NCS 최대 가스전. Troll A·B·C 플랫폼. 2040년대까지 생산 유지 목표.",
+            "detail": { "operator": "Equinor (30.58%)", "partners": ["Petoro 56%", "Shell 8.1%", "TotalEnergies 3.69%", "ConocoPhillips 1.62%"], "water_depth_m": 340, "reserves_mmboe": 5600, "fid": "1986", "first_oil": "1996-10", "peak_year": "2001", "vessel": "Troll A (콘크리트 GBS), Troll B·C (반잠수식 FPU)", "rig_demand": "반잠수식 리그 1기 — 유지보수 시추 연간 5~8공", "source": "Equinor IR / NPD" }
+          },
+          {
+            "name": "Wisting (Arctic NCS)", "region": "Barents Sea", "type": "Offshore", "status": "Planning", "capacity_kboed": 100, "notes": "바렌츠해 북극권 유전. 노르웨이 최북단 개발 프로젝트. 개발 방식 검토 중.",
+            "detail": { "operator": "OMV (25%)", "partners": ["Equinor 35%", "Petoro 20%", "Aker BP 20%"], "water_depth_m": 400, "reserves_mmboe": 440, "fid": "미정 (2028 이후)", "first_oil": "2033+ (예정)", "peak_year": null, "vessel": "얼음 강화형 FPSO 또는 고정식 플랫폼 검토 중", "rig_demand": "북극 강화형 반잠수식 리그 필요 — 현재 미계획", "source": "OMV IR / Norwegian Petroleum Directorate" }
+          }
         ],
         "drilling_highlights": [
           "Johan Sverdrup Phase 3 — 8공 개발정 시추 2026~2027년 진행, 반잠수식 리그 투입",
@@ -43,11 +58,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": 140,
         "key_projects": [
-          { "name": "Yellowtail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 250, "notes": "Stabroek 4번째 FPSO. 2024 first oil. XOM 45% op." },
-          { "name": "Hammerhead (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "Stabroek 5번째 개발. FID 2024. 2027년 first oil 목표." },
-          { "name": "Whiptail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 250, "notes": "Stabroek 6번째. 기술 평가 중." },
-          { "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 1400, "notes": "Pioneer 통합 후 순 생산량 1.4Mboed/d. 2030년 2Mboed 목표." },
-          { "name": "Anchor (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 75, "notes": "20,000psi 고압 저류층. 업계 최초 15,000psi 수중 장비 적용." }
+          {
+            "name": "Yellowtail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 250, "notes": "Stabroek 4번째 FPSO. 2024 first oil. XOM 45% op.",
+            "detail": { "operator": "ExxonMobil (45%)", "partners": ["Hess/Chevron 30%", "CNOOC 25%"], "water_depth_m": 1800, "reserves_mmboe": 600, "fid": "2022-04", "first_oil": "2024-01", "peak_year": "2025", "vessel": "One Guyana FPSO (SBM Offshore)", "rig_demand": "드릴십 2기 장기 계약 — 개발정 지속 시추", "source": "ExxonMobil IR / Offshore Magazine" }
+          },
+          {
+            "name": "Hammerhead (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "Stabroek 5번째 개발. FID 2024. 2027년 first oil 목표.",
+            "detail": { "operator": "ExxonMobil (45%)", "partners": ["Hess/Chevron 30%", "CNOOC 25%"], "water_depth_m": 1600, "reserves_mmboe": 450, "fid": "2024-Q2", "first_oil": "2027 (예정)", "peak_year": "2028", "vessel": "Jaguar FPSO (SBM Offshore)", "rig_demand": "드릴십 2기 — 2025~2027년 집중 개발 시추", "source": "ExxonMobil IR / Rystad Energy" }
+          },
+          {
+            "name": "Whiptail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 250, "notes": "Stabroek 6번째. 기술 평가 중.",
+            "detail": { "operator": "ExxonMobil (45%)", "partners": ["Hess/Chevron 30%", "CNOOC 25%"], "water_depth_m": 1700, "reserves_mmboe": 500, "fid": "2026 (예정)", "first_oil": "2029+ (예정)", "peak_year": null, "vessel": "FPSO (미정)", "rig_demand": "FID 후 드릴십 1~2기 추가 소요 예상", "source": "ExxonMobil 2026 Investor Day" }
+          },
+          {
+            "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 1400, "notes": "Pioneer 통합 후 순 생산량 1.4Mboed/d. 2030년 2Mboed 목표.",
+            "detail": { "operator": "ExxonMobil (100%)", "partners": [], "water_depth_m": null, "reserves_mmboe": 16000, "fid": null, "first_oil": null, "peak_year": "2030+", "vessel": "육상 (Shale/Tight Oil)", "rig_demand": "육상 시추 리그 연 약 1,000정 — MODU 수요 없음", "source": "ExxonMobil 2030 Plan / Pioneer Acquisition" }
+          },
+          {
+            "name": "Anchor (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 75, "notes": "20,000psi 고압 저류층. 업계 최초 15,000psi 수중 장비 적용.",
+            "detail": { "operator": "Chevron (55%)", "partners": ["ExxonMobil 45%"], "water_depth_m": 1500, "reserves_mmboe": 440, "fid": "2019-08", "first_oil": "2024-Q3", "peak_year": "2026", "vessel": "Anchor Semi-FPS (Kiewit 건조)", "rig_demand": "드릴십 1기 — 유지보수 시추 연 2~3공", "source": "Chevron IR / OE Digital" }
+          }
         ],
         "drilling_highlights": [
           "2026년 Guyana Hammerhead 개발정 시추 집중 — 드릴십 2기 장기 계약 운용",
@@ -71,11 +101,26 @@
         "horizon": "2026–2028",
         "total_commitment_busd": null,
         "key_projects": [
-          { "name": "Gato do Mato (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 100, "notes": "Santos Basin. Shell 50% op. 2027년 first oil 목표." },
-          { "name": "Raia (Brazil)", "region": "South America", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Santos Basin 탐사 블록. 대형 가스 발견." },
-          { "name": "Whale (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 100, "notes": "Shell 60% op. 2023 first oil. Appomattox 타이백." },
-          { "name": "Bonga North (Nigeria)", "region": "West Africa", "type": "Deepwater FPSO", "status": "FID Approved", "capacity_kboed": 110, "notes": "OML 118. NNPC/SPDC JV. FID 2024." },
-          { "name": "LNG Portfolio", "region": "Global", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "연간 LNG 70+Mtpa 포트폴리오 유지. Qatar, Australia, Nigeria, Malaysia." }
+          {
+            "name": "Gato do Mato (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 100, "notes": "Santos Basin. Shell 50% op. 2027년 first oil 목표.",
+            "detail": { "operator": "Shell (50%)", "partners": ["Petrobras 25%", "TotalEnergies 25%"], "water_depth_m": 2100, "reserves_mmboe": 400, "fid": "2023-12", "first_oil": "2027 (예정)", "peak_year": "2028", "vessel": "Gato do Mato FPSO (Saipem 건조)", "rig_demand": "드릴십 1기 — 개발정 시추 2025~2027년", "source": "Shell IR / Upstream Online" }
+          },
+          {
+            "name": "Raia (Brazil)", "region": "South America", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Santos Basin 탐사 블록. 대형 가스 발견.",
+            "detail": { "operator": "Shell (50%)", "partners": ["Chevron 50%"], "water_depth_m": 2200, "reserves_mmboe": null, "fid": "미정", "first_oil": "2030+ (예정)", "peak_year": null, "vessel": "미정", "rig_demand": "드릴십 1기 — 추가 평가정 시추 예정", "source": "Shell IR / Offshore Magazine" }
+          },
+          {
+            "name": "Whale (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 100, "notes": "Shell 60% op. 2023 first oil. Appomattox 타이백.",
+            "detail": { "operator": "Shell (60%)", "partners": ["Chevron 40%"], "water_depth_m": 2700, "reserves_mmboe": 490, "fid": "2018-08", "first_oil": "2023-Q1", "peak_year": "2025", "vessel": "Appomattox Hull 타이백 (FPS)", "rig_demand": "드릴십 1기 — 유지보수 시추 연 2~3공", "source": "Shell IR / OE Digital" }
+          },
+          {
+            "name": "Bonga North (Nigeria)", "region": "West Africa", "type": "Deepwater FPSO", "status": "FID Approved", "capacity_kboed": 110, "notes": "OML 118. NNPC/SPDC JV. FID 2024.",
+            "detail": { "operator": "Shell (55%)", "partners": ["NNPC 20%", "TotalEnergies 12.5%", "ENI 12.5%"], "water_depth_m": 1000, "reserves_mmboe": 300, "fid": "2024-Q3", "first_oil": "2028 (예정)", "peak_year": "2029", "vessel": "Bonga North FPSO (신조)", "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추", "source": "Shell IR / Upstream Online" }
+          },
+          {
+            "name": "LNG Portfolio", "region": "Global", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "연간 LNG 70+Mtpa 포트폴리오 유지. Qatar, Australia, Nigeria, Malaysia.",
+            "detail": { "operator": "Shell", "partners": ["QatarEnergy (Qatargas)", "Woodside (Australia)", "NLNG (Nigeria)"], "water_depth_m": null, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "LNG 액화 트레인 (육상/FLNG)", "rig_demand": "MODU 직접 수요 제한적 — 가스전 유지 시추만 해당", "source": "Shell Annual Report 2025" }
+          }
         ],
         "drilling_highlights": [
           "Brazil Santos Basin 드릴링 캠페인 지속 — 드릴십 2기 운용",
@@ -99,11 +144,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": 50,
         "key_projects": [
-          { "name": "Mad Dog Phase 2 / Argos (GOM)", "region": "Gulf of Mexico", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 140, "notes": "2023 first oil. bp 60.5% op. 5억 배럴 매장량." },
-          { "name": "Kaskida (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 80, "notes": "고압 심해 개발. FID 2024. 2028년 first oil 목표." },
-          { "name": "ACG Expansion (Azerbaijan)", "region": "Caspian", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 200, "notes": "Azeri-Chirag-Gunashli 확장. 2050년까지 계약 연장." },
-          { "name": "Tangguh Expansion (Indonesia)", "region": "Asia Pacific", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "Train 3 완공. LNG 생산 능력 11.4Mtpa." },
-          { "name": "North Sea Portfolio", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 200, "notes": "노후 자산 생산성 유지. 선택적 투자. 점진적 포트폴리오 축소 검토." }
+          {
+            "name": "Mad Dog Phase 2 / Argos (GOM)", "region": "Gulf of Mexico", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 140, "notes": "2023 first oil. bp 60.5% op. 5억 배럴 매장량.",
+            "detail": { "operator": "bp (60.5%)", "partners": ["BHP 23.9%", "Union Oil 15.6%"], "water_depth_m": 1370, "reserves_mmboe": 500, "fid": "2016-07", "first_oil": "2023-02", "peak_year": "2025", "vessel": "Argos Semi-FPS (Technip Energies 건조)", "rig_demand": "드릴십 1기 — 유지보수 시추 연 3~4공", "source": "bp IR / OE Digital" }
+          },
+          {
+            "name": "Kaskida (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 80, "notes": "고압 심해 개발. FID 2024. 2028년 first oil 목표.",
+            "detail": { "operator": "bp (100%)", "partners": [], "water_depth_m": 1800, "reserves_mmboe": 275, "fid": "2024-Q2", "first_oil": "2028 (예정)", "peak_year": "2029", "vessel": "FPS (설계 중)", "rig_demand": "드릴십 1기 (20,000psi 장비) — 2026~2028년 개발정", "source": "bp IR / Offshore Magazine" }
+          },
+          {
+            "name": "ACG Expansion (Azerbaijan)", "region": "Caspian", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 200, "notes": "Azeri-Chirag-Gunashli 확장. 2050년까지 계약 연장.",
+            "detail": { "operator": "bp (30.37%)", "partners": ["SOCAR 25%", "MOL 9.57%", "INPEX 9.31%", "AzACG 7.27%", "Equinor 7.27%", "ExxonMobil 6.79%", "TotalEnergies 5.73%"], "water_depth_m": 200, "reserves_mmboe": 5400, "fid": "1994", "first_oil": "1997-11", "peak_year": "2010", "vessel": "Central Azeri / West Azeri / East Azeri 플랫폼", "rig_demand": "잭업 리그 2기 — 수평정 및 유지보수 시추", "source": "bp IR / AIOC" }
+          },
+          {
+            "name": "Tangguh Expansion (Indonesia)", "region": "Asia Pacific", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "Train 3 완공. LNG 생산 능력 11.4Mtpa.",
+            "detail": { "operator": "bp (40.22%)", "partners": ["MI Berau 16.3%", "CNOOC 13.9%", "Nippon Oil 12.23%", "KG 8.56%", "LNG Japan 7.35%"], "water_depth_m": null, "reserves_mmboe": 14000, "fid": "2018-02", "first_oil": "2023 (Train 3)", "peak_year": null, "vessel": "육상 LNG 트레인 3기", "rig_demand": "육상/얕은 해상 가스정 시추 — 잭업 1기 간헐적", "source": "bp IR / LNG Industry" }
+          },
+          {
+            "name": "North Sea Portfolio", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 200, "notes": "노후 자산 생산성 유지. 선택적 투자. 점진적 포트폴리오 축소 검토.",
+            "detail": { "operator": "bp", "partners": ["다수 JV 파트너"], "water_depth_m": 150, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "고정식 플랫폼 다수", "rig_demand": "반잠수식·잭업 리그 — 유지보수 시추 연 10~15공", "source": "bp Annual Report 2025" }
+          }
         ],
         "drilling_highlights": [
           "GOM Kaskida 개발정 시추 착수 — 20,000psi 장비 적용",
@@ -127,11 +187,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": 90,
         "key_projects": [
-          { "name": "Stabroek Block (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 150, "notes": "Hess 인수로 30% 지분 확보. Liza I·II·Yellowtail 운영 중." },
-          { "name": "TCO / Tengiz Expansion (Kazakhstan)", "region": "Central Asia", "type": "Onshore", "status": "On Production", "capacity_kboed": 260, "notes": "Tengizchevroil FGP-WPMP 완공. 75만 b/d 목표. CVX 50% 지분." },
-          { "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 900, "notes": "2026년 내 100만 boed 돌파 목표. 연간 약 600정 시추." },
-          { "name": "Anchor / Ballymore (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 75, "notes": "Ballymore FID 2023. 2025년 first oil 목표. CVX 40% op." },
-          { "name": "Aphrodite (Cyprus)", "region": "Mediterranean", "type": "Deepwater Gas", "status": "FID Approved", "capacity_kboed": null, "notes": "동지중해 가스전. CVX 35% op. LNG 또는 파이프라인 수출 검토." }
+          {
+            "name": "Stabroek Block (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 150, "notes": "Hess 인수로 30% 지분 확보. Liza I·II·Yellowtail 운영 중.",
+            "detail": { "operator": "ExxonMobil (45%)", "partners": ["Chevron/Hess 30%", "CNOOC 25%"], "water_depth_m": 1800, "reserves_mmboe": 11000, "fid": "2016", "first_oil": "2019-12", "peak_year": "2027+", "vessel": "Liza Destiny / Liza Unity / One Guyana FPSO", "rig_demand": "드릴십 3~4기 동시 운용 — 세계 최대 deepwater 드릴링 캠페인", "source": "Chevron IR / Hess Acquisition Filing" }
+          },
+          {
+            "name": "TCO / Tengiz Expansion (Kazakhstan)", "region": "Central Asia", "type": "Onshore", "status": "On Production", "capacity_kboed": 260, "notes": "TCO FGP-WPMP 완공. 75만 b/d 목표. CVX 50% 지분.",
+            "detail": { "operator": "Tengizchevroil (CVX 50%)", "partners": ["ExxonMobil 25%", "KazMunayGas 20%", "LukArco 5%"], "water_depth_m": null, "reserves_mmboe": 9000, "fid": "2016", "first_oil": "1993-04", "peak_year": "2026+", "vessel": "육상 (Chevron Technology Center 설계)", "rig_demand": "육상 시추 리그 — MODU 수요 없음", "source": "Chevron IR / TCO" }
+          },
+          {
+            "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 900, "notes": "2026년 내 100만 boed 돌파 목표. 연간 약 600정 시추.",
+            "detail": { "operator": "Chevron (100%)", "partners": [], "water_depth_m": null, "reserves_mmboe": 12000, "fid": null, "first_oil": null, "peak_year": "2027+", "vessel": "육상 (Shale)", "rig_demand": "육상 시추 리그 연 600정 — MODU 수요 없음", "source": "Chevron 2026 Capital Budget" }
+          },
+          {
+            "name": "Anchor / Ballymore (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 75, "notes": "Ballymore FID 2023. 2025년 first oil 목표. CVX 40% op.",
+            "detail": { "operator": "Chevron (40%)", "partners": ["ExxonMobil 60% (Anchor)"], "water_depth_m": 1500, "reserves_mmboe": 440, "fid": "2023-Q1 (Ballymore)", "first_oil": "2025 (예정)", "peak_year": "2027", "vessel": "Anchor Semi-FPS / Ballymore FPSO", "rig_demand": "드릴십 1기 — 개발정 시추 및 생산 램프업", "source": "Chevron IR / OE Digital" }
+          },
+          {
+            "name": "Aphrodite (Cyprus)", "region": "Mediterranean", "type": "Deepwater Gas", "status": "FID Approved", "capacity_kboed": null, "notes": "동지중해 가스전. CVX 35% op. LNG 또는 파이프라인 수출 검토.",
+            "detail": { "operator": "Chevron (35%)", "partners": ["Shell 35%", "Noble Energy 30%"], "water_depth_m": 1700, "reserves_mmboe": 3500, "fid": "2025 (예정)", "first_oil": "2029+ (예정)", "peak_year": null, "vessel": "FPSO 또는 파이프라인 연결 미정", "rig_demand": "드릴십 1기 — FID 후 개발정 시추 착수", "source": "Chevron IR / S&P Global" }
+          }
         ],
         "drilling_highlights": [
           "Guyana Stabroek 드릴링 가속 — Hammerhead 개발정 참여",
@@ -155,11 +230,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": null,
         "key_projects": [
-          { "name": "Kaminho (Angola)", "region": "West Africa", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 70, "notes": "Block 20/11. TTE 40% op. 2027년 first oil 목표." },
-          { "name": "Ballossorie (Angola)", "region": "West Africa", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Block 48 탐사. 대형 가스·콘덴세이트 발견." },
-          { "name": "Ikike (Nigeria)", "region": "West Africa", "type": "Offshore", "status": "On Production", "capacity_kboed": 50, "notes": "OML 99. TTE 24% 지분. 2022 first oil." },
-          { "name": "Mero / Libra (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 180, "notes": "Santos Basin pre-salt. TTE 20%. Mero 3·4 FPSO 순차 생산." },
-          { "name": "Al Shaheen (Qatar)", "region": "Middle East", "type": "Offshore", "status": "On Production", "capacity_kboed": 300, "notes": "Qatar 최대 해상 유전. TTE 30% op. 장기 계약 2024년 갱신." }
+          {
+            "name": "Kaminho (Angola)", "region": "West Africa", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 70, "notes": "Block 20/11. TTE 40% op. 2027년 first oil 목표.",
+            "detail": { "operator": "TotalEnergies (40%)", "partners": ["Sonangol 30%", "ENI 15%", "Galp 15%"], "water_depth_m": 1800, "reserves_mmboe": 450, "fid": "2023-11", "first_oil": "2027 (예정)", "peak_year": "2028", "vessel": "Kaminho FPSO (SBM Offshore)", "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 개발정 시추", "source": "TotalEnergies IR / Upstream Online" }
+          },
+          {
+            "name": "Ballossorie (Angola)", "region": "West Africa", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Block 48 탐사. 대형 가스·콘덴세이트 발견.",
+            "detail": { "operator": "TotalEnergies (50%)", "partners": ["Sonangol 50%"], "water_depth_m": 2000, "reserves_mmboe": null, "fid": "미정", "first_oil": "2030+ (예정)", "peak_year": null, "vessel": "미정", "rig_demand": "드릴십 1기 — 추가 평가정 시추 예정", "source": "TotalEnergies IR / Offshore Energy" }
+          },
+          {
+            "name": "Ikike (Nigeria)", "region": "West Africa", "type": "Offshore", "status": "On Production", "capacity_kboed": 50, "notes": "OML 99. TTE 24% 지분. 2022 first oil.",
+            "detail": { "operator": "TotalEnergies (24%)", "partners": ["NNPC 60%", "Oando 16%"], "water_depth_m": 50, "reserves_mmboe": 200, "fid": "2018", "first_oil": "2022-11", "peak_year": "2024", "vessel": "고정식 플랫폼", "rig_demand": "잭업 리그 — 유지보수 시추 연 2~3공", "source": "TotalEnergies IR" }
+          },
+          {
+            "name": "Mero / Libra (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 180, "notes": "Santos Basin pre-salt. TTE 20%. Mero 3·4 FPSO 순차 생산.",
+            "detail": { "operator": "Petrobras (40%)", "partners": ["Shell 20%", "TotalEnergies 20%", "CNOOC 10%", "CNPC 10%"], "water_depth_m": 2100, "reserves_mmboe": 3300, "fid": "2017", "first_oil": "2022-04 (Mero 1)", "peak_year": "2027 (Mero 4 완공 후)", "vessel": "Mero 1~4 FPSO (순차 투입)", "rig_demand": "드릴십 2기 — Mero 3·4 개발정 시추 진행 중", "source": "TotalEnergies IR / Petrobras" }
+          },
+          {
+            "name": "Al Shaheen (Qatar)", "region": "Middle East", "type": "Offshore", "status": "On Production", "capacity_kboed": 300, "notes": "Qatar 최대 해상 유전. TTE 30% op. 장기 계약 2024년 갱신.",
+            "detail": { "operator": "TotalEnergies (30%)", "partners": ["QatarEnergy 70%"], "water_depth_m": 70, "reserves_mmboe": 4000, "fid": "1994", "first_oil": "1994-09", "peak_year": "2026", "vessel": "고정식 플랫폼 다수 + FPSO", "rig_demand": "잭업 리그 2~3기 — 유지보수 및 인필 시추", "source": "TotalEnergies IR / Offshore Magazine" }
+          }
         ],
         "drilling_highlights": [
           "Angola Kaminho 개발정 시추 착수 — 드릴십 1기 전용 배치",
@@ -183,17 +273,32 @@
         "horizon": "2026–2030",
         "total_commitment_busd": 180,
         "key_projects": [
-          { "name": "Marjan Increment (Phase 1+2)", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 600, "notes": "$18B 프로그램. offshore+onshore 패키지. 600kboed 생산 증가 목표. 2026년 Phase 1 완공 예정." },
-          { "name": "Berri Increment", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 250, "notes": "Berri 가스전 연계. Marjan과 병행 개발. 2026년 완공 목표." },
-          { "name": "Jafurah Gas Field", "region": "Eastern Province", "type": "Unconventional Gas", "status": "Under Development", "capacity_kboed": null, "notes": "사우디 최대 비전통 가스전. 2030년 gas 2Bcf/d 목표. 총 투자 $100B+" },
-          { "name": "Safaniya Field Maintenance", "region": "Arabian Gulf", "type": "Offshore", "status": "On Production", "capacity_kboed": 1200, "notes": "세계 최대 해상 유전. 노후 설비 교체 및 가동률 유지 투자." },
-          { "name": "Hawiyah NGL Recovery", "region": "Eastern Province", "type": "Gas Processing", "status": "Under Development", "capacity_kboed": null, "notes": "Jafurah 연계 NGL 회수 설비. 석화 원료 공급 목적." }
+          {
+            "name": "Marjan Increment (Phase 1+2)", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 600, "notes": "$18B 프로그램. offshore+onshore 패키지. 2026년 Phase 1 완공 예정.",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": 60, "reserves_mmboe": 17000, "fid": "2019", "first_oil": "2026 (Phase 1 예정)", "peak_year": "2027", "vessel": "고정식 해상 플랫폼 + 육상 처리 시설", "rig_demand": "잭업 리그 10기 이상 — 2024~2026년 해상 시추 집중", "source": "Aramco IR / Offshore Magazine" }
+          },
+          {
+            "name": "Berri Increment", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 250, "notes": "Berri 가스전 연계. Marjan과 병행 개발. 2026년 완공 목표.",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": 50, "reserves_mmboe": 8000, "fid": "2019", "first_oil": "2026 (예정)", "peak_year": "2027", "vessel": "고정식 해상 플랫폼", "rig_demand": "잭업 리그 5~6기 — Marjan과 병행 드릴링", "source": "Aramco IR" }
+          },
+          {
+            "name": "Jafurah Gas Field", "region": "Eastern Province", "type": "Unconventional Gas", "status": "Under Development", "capacity_kboed": null, "notes": "사우디 최대 비전통 가스전. 2030년 gas 2Bcf/d 목표. 총 투자 $100B+",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": null, "reserves_mmboe": 200000, "fid": "2021", "first_oil": "2025 (Phase 1 가스)", "peak_year": "2030", "vessel": "육상 가스 처리 시설", "rig_demand": "육상 시추 리그 집중 — MODU 수요 없음", "source": "Aramco IR / S&P Global" }
+          },
+          {
+            "name": "Safaniya Field Maintenance", "region": "Arabian Gulf", "type": "Offshore", "status": "On Production", "capacity_kboed": 1200, "notes": "세계 최대 해상 유전. 노후 설비 교체 및 가동률 유지 투자.",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": 50, "reserves_mmboe": 50000, "fid": null, "first_oil": "1957", "peak_year": "현재", "vessel": "고정식 플랫폼 다수 (세계 최대 규모)", "rig_demand": "잭업 리그 5~8기 — 유지보수 및 인필 시추 연중 운용", "source": "Aramco IR / Offshore Magazine" }
+          },
+          {
+            "name": "Hawiyah NGL Recovery", "region": "Eastern Province", "type": "Gas Processing", "status": "Under Development", "capacity_kboed": null, "notes": "Jafurah 연계 NGL 회수 설비. 석화 원료 공급 목적.",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": null, "reserves_mmboe": null, "fid": "2022", "first_oil": "2025 (예정)", "peak_year": null, "vessel": "육상 가스 처리 시설", "rig_demand": "MODU 수요 없음", "source": "Aramco IR" }
+          }
         ],
         "drilling_highlights": [
           "Marjan Phase 2 해상 플랫폼 시추 집중 — 잭업 리그 다수 장기 계약",
           "2025~2026년 해상 시추 프로그램 사상 최대 규모",
           "Jafurah 비전통 가스전 수평정 대규모 시추 착수",
-          "생산능력 1,200만 b/d 목표는 철회, 1,200만 b/d 유지에 집중"
+          "생산능력 1,200만 b/d 유지에 집중"
         ]
       }
     },
@@ -211,11 +316,26 @@
         "horizon": "2026–2030",
         "total_commitment_busd": 150,
         "key_projects": [
-          { "name": "Umm Shaif – Gas Cap", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": null, "notes": "가스 캡 개발. ADNOC Offshore op. 2027년 완공 목표." },
-          { "name": "Abu Dhabi Offshore 2 (ADO-2)", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 100, "notes": "신규 해상 블록 개발. ADNOC Offshore 100%. 생산능력 확대 기여." },
-          { "name": "SARB Phase 2", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 130, "notes": "Satah Al Razboot 확장. 2026년 완공 목표." },
-          { "name": "Belbazem Phase 2", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 45, "notes": "경질유 생산. 2026년 완공 예정." },
-          { "name": "Hail & Ghasha (Sour Gas)", "region": "Arabian Gulf", "type": "Offshore Gas", "status": "Under Development", "capacity_kboed": null, "notes": "세계 최대 사우어 가스전. ENI·Wintershall·OMV 참여. 2025~2026년 시추 집중." }
+          {
+            "name": "Umm Shaif – Gas Cap", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": null, "notes": "가스 캡 개발. ADNOC Offshore op. 2027년 완공 목표.",
+            "detail": { "operator": "ADNOC Offshore (100%)", "partners": [], "water_depth_m": 50, "reserves_mmboe": null, "fid": "2021", "first_oil": "2027 (예정)", "peak_year": null, "vessel": "기존 Umm Shaif 플랫폼 증설", "rig_demand": "잭업 리그 2기 — 개발정 시추 2025~2027년", "source": "ADNOC IR / Offshore Magazine" }
+          },
+          {
+            "name": "Abu Dhabi Offshore 2 (ADO-2)", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 100, "notes": "신규 해상 블록 개발. ADNOC Offshore 100%.",
+            "detail": { "operator": "ADNOC Offshore (100%)", "partners": [], "water_depth_m": 60, "reserves_mmboe": 800, "fid": "2023", "first_oil": "2027 (예정)", "peak_year": "2028", "vessel": "신규 해상 플랫폼", "rig_demand": "잭업 리그 3기 — 신규 블록 시추 집중", "source": "ADNOC IR" }
+          },
+          {
+            "name": "SARB Phase 2", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 130, "notes": "Satah Al Razboot 확장. 2026년 완공 목표.",
+            "detail": { "operator": "ADNOC Offshore (100%)", "partners": [], "water_depth_m": 30, "reserves_mmboe": 1500, "fid": "2020", "first_oil": "2026 (예정)", "peak_year": "2027", "vessel": "고정식 플랫폼 증설", "rig_demand": "잭업 리그 2기 — 2024~2026년 개발정 시추", "source": "ADNOC IR / Upstream Online" }
+          },
+          {
+            "name": "Belbazem Phase 2", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 45, "notes": "경질유 생산. 2026년 완공 예정.",
+            "detail": { "operator": "ADNOC Offshore (100%)", "partners": [], "water_depth_m": 30, "reserves_mmboe": 300, "fid": "2022", "first_oil": "2026 (예정)", "peak_year": "2027", "vessel": "고정식 플랫폼", "rig_demand": "잭업 리그 1기 — 2024~2026년 개발정 시추", "source": "ADNOC IR" }
+          },
+          {
+            "name": "Hail & Ghasha (Sour Gas)", "region": "Arabian Gulf", "type": "Offshore Gas", "status": "Under Development", "capacity_kboed": null, "notes": "세계 최대 사우어 가스전. ENI·Wintershall·OMV 참여. 2025~2026년 시추 집중.",
+            "detail": { "operator": "ADNOC (55%)", "partners": ["ENI 25%", "Wintershall Dea 10%", "OMV 10%"], "water_depth_m": 30, "reserves_mmboe": null, "fid": "2018", "first_oil": "2026 (가스 예정)", "peak_year": "2030", "vessel": "인공 섬 + 해상 플랫폼 복합", "rig_demand": "잭업 리그 3~4기 — 사우어 가스전 집중 시추", "source": "ADNOC IR / ENI IR" }
+          }
         ],
         "drilling_highlights": [
           "2025~2026년 해상 잭업 리그 수요 급증 — 중동 최대 잭업 시장",
@@ -239,11 +359,26 @@
         "horizon": "2025–2029",
         "total_commitment_busd": 111,
         "key_projects": [
-          { "name": "Búzios Field (Santos Basin)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1800, "notes": "세계 최대 deepwater 유전 중 하나. FPSO P-74~P-79 순차 투입. Búzios 11 FID 2025." },
-          { "name": "Tupi / Lula Field", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1100, "notes": "2006년 발견된 첫 대형 pre-salt. 생산 안정화, FPSO 교체 투자 진행." },
-          { "name": "Atapu Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 190, "notes": "Atapu 3 FPSO FID 완료. SBM Offshore 수주 유력." },
-          { "name": "Sepia Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "SEAP II FPSO 협상 진행 중. 2027년 first oil 목표." },
-          { "name": "Equatorial Margin Exploration", "region": "South America", "type": "Deepwater Exploration", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "북부 해상 탐사. 대형 발견 기대. 환경 허가 진행 중." }
+          {
+            "name": "Búzios Field (Santos Basin)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1800, "notes": "세계 최대 deepwater 유전 중 하나. FPSO P-74~P-79 순차 투입. Búzios 11 FID 2025.",
+            "detail": { "operator": "Petrobras (100%)", "partners": [], "water_depth_m": 2100, "reserves_mmboe": 12000, "fid": "2016 (초기)", "first_oil": "2018-04 (P-74)", "peak_year": "2027+", "vessel": "P-74/75/76/77 생산 중, P-78/79 건조 중 (MODEC/BW Offshore)", "rig_demand": "드릴십 4~5기 전용 장기 계약 — 세계 최대 단일 유전 드릴링 캠페인", "source": "Petrobras IR / Offshore Magazine" }
+          },
+          {
+            "name": "Tupi / Lula Field", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1100, "notes": "2006년 발견된 첫 대형 pre-salt. 생산 안정화, FPSO 교체 투자 진행.",
+            "detail": { "operator": "Petrobras (65%)", "partners": ["Shell 25%", "Petrogal 10%"], "water_depth_m": 2100, "reserves_mmboe": 8300, "fid": "2010", "first_oil": "2010-05", "peak_year": "2018", "vessel": "P-56/57/58/66/67/68/69 FPSO", "rig_demand": "드릴십 2~3기 — 유지보수 및 인필 시추", "source": "Petrobras IR" }
+          },
+          {
+            "name": "Atapu Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 190, "notes": "Atapu 3 FPSO FID 완료. SBM Offshore 수주 유력.",
+            "detail": { "operator": "Petrobras (52.5%)", "partners": ["Shell 25%", "TotalEnergies 22.5%"], "water_depth_m": 2100, "reserves_mmboe": 2000, "fid": "2025 (Atapu 3)", "first_oil": "2028 (예정)", "peak_year": "2030", "vessel": "Atapu 3 FPSO (SBM Offshore 유력)", "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추", "source": "Petrobras IR / Offshore Magazine" }
+          },
+          {
+            "name": "Sepia Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "SEAP II FPSO 협상 진행 중. 2027년 first oil 목표.",
+            "detail": { "operator": "Petrobras (47.2%)", "partners": ["TotalEnergies 22.9%", "QatarEnergy 21.4%", "PPSA 8.5%"], "water_depth_m": 2200, "reserves_mmboe": 1600, "fid": "2024", "first_oil": "2027 (예정)", "peak_year": "2029", "vessel": "SEAP II FPSO (협상 중)", "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추", "source": "Petrobras IR / SBM Offshore" }
+          },
+          {
+            "name": "Equatorial Margin Exploration", "region": "South America", "type": "Deepwater Exploration", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "북부 해상 탐사. 대형 발견 기대. 환경 허가 진행 중.",
+            "detail": { "operator": "Petrobras (100%)", "partners": [], "water_depth_m": 2500, "reserves_mmboe": null, "fid": "미정", "first_oil": "2032+ (예정)", "peak_year": null, "vessel": "미정", "rig_demand": "드릴십 1기 — 탐사 허가 확보 후 시추 착수", "source": "Petrobras IR / Brazilian ANP" }
+          }
         ],
         "drilling_highlights": [
           "Búzios 개발정 연간 8~10공 시추 — 드릴십 4~5기 전용 장기 계약 운용",
@@ -267,14 +402,29 @@
         "horizon": "2026–2030",
         "total_commitment_busd": null,
         "key_projects": [
-          { "name": "Kasawari Gas Field (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas + CCS", "status": "Under Development", "capacity_kboed": null, "notes": "Malaysia 최대 가스전. CCS 설비 포함(연 3.3Mtpa CO₂ 저장). 2025년 완공 목표." },
-          { "name": "Rosmari-Marjoram (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas", "status": "On Production", "capacity_kboed": null, "notes": "2023 first gas. Kasawari 연계 가스 공급망." },
-          { "name": "Pan Malaysia Drilling", "region": "Southeast Asia", "type": "Offshore", "status": "On Production", "capacity_kboed": null, "notes": "말레이시아 전역 성숙 유전 생산 유지. 잭업 리그 다수 장기 계약." },
-          { "name": "RAPID / Pengerang (Downstream)", "region": "Southeast Asia", "type": "Refinery / Petchem", "status": "On Production", "capacity_kboed": null, "notes": "하류 통합 컴플렉스. 상류 crude 공급 연계 투자 일부 포함." },
-          { "name": "International Portfolio (Iraq, Canada)", "region": "Global", "type": "Upstream", "status": "On Production", "capacity_kboed": 80, "notes": "이라크 Gharraf, 캐나다 오일샌드 등. 해외 자산 선택적 유지." }
+          {
+            "name": "Kasawari Gas Field (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas + CCS", "status": "Under Development", "capacity_kboed": null, "notes": "Malaysia 최대 가스전. CCS 설비 포함. 2025년 완공 목표.",
+            "detail": { "operator": "PETRONAS (100%)", "partners": [], "water_depth_m": 140, "reserves_mmboe": 14000, "fid": "2021", "first_oil": "2025 (가스 예정)", "peak_year": "2027", "vessel": "플랫폼 + CCS 파이프라인 (연 3.3Mtpa CO₂ 저장)", "rig_demand": "잭업 리그 1~2기 — 개발정 및 CO₂ 주입정 시추", "source": "PETRONAS IR / Offshore Energy" }
+          },
+          {
+            "name": "Rosmari-Marjoram (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas", "status": "On Production", "capacity_kboed": null, "notes": "2023 first gas. Kasawari 연계 가스 공급망.",
+            "detail": { "operator": "PETRONAS (100%)", "partners": [], "water_depth_m": 70, "reserves_mmboe": 2500, "fid": "2020", "first_oil": "2023-Q2", "peak_year": "2025", "vessel": "무인 플랫폼 + 해저 파이프라인", "rig_demand": "잭업 리그 1기 — 유지보수 시추 간헐적", "source": "PETRONAS IR" }
+          },
+          {
+            "name": "Pan Malaysia Drilling", "region": "Southeast Asia", "type": "Offshore", "status": "On Production", "capacity_kboed": null, "notes": "말레이시아 전역 성숙 유전 생산 유지. 잭업 리그 다수 장기 계약.",
+            "detail": { "operator": "PETRONAS (100%)", "partners": ["다수 PSC 파트너"], "water_depth_m": 100, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "고정식 플랫폼 200+기", "rig_demand": "잭업 리그 10기 이상 연간 장기 계약 — 동남아 최대 잭업 수요처", "source": "PETRONAS Activity Outlook 2026" }
+          },
+          {
+            "name": "RAPID / Pengerang (Downstream)", "region": "Southeast Asia", "type": "Refinery / Petchem", "status": "On Production", "capacity_kboed": null, "notes": "하류 통합 컴플렉스. 상류 crude 공급 연계 투자 일부 포함.",
+            "detail": { "operator": "PETRONAS (100%)", "partners": ["Saudi Aramco (PRPC 지분 50%)"], "water_depth_m": null, "reserves_mmboe": null, "fid": "2013", "first_oil": "2019 (정제 가동)", "peak_year": null, "vessel": "육상 정제/석화 단지", "rig_demand": "MODU 수요 없음", "source": "PETRONAS IR" }
+          },
+          {
+            "name": "International Portfolio (Iraq, Canada)", "region": "Global", "type": "Upstream", "status": "On Production", "capacity_kboed": 80, "notes": "이라크 Gharraf, 캐나다 오일샌드 등. 해외 자산 선택적 유지.",
+            "detail": { "operator": "PETRONAS (다수 JV)", "partners": ["Shell (캐나다)", "이라크 South Oil Company"], "water_depth_m": null, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "육상 (이라크·캐나다)", "rig_demand": "MODU 수요 없음 — 육상 리그 운용", "source": "PETRONAS Annual Report 2025" }
+          }
         ],
         "drilling_highlights": [
-          "Pan Malaysia Drilling — 잭업 리그 10기 이상 연간 장기 계약 (업계 주요 수요처)",
+          "Pan Malaysia Drilling — 잭업 리그 10기 이상 연간 장기 계약 (동남아 최대 수요처)",
           "Kasawari 완공 후 신규 가스전 탐사 드릴링 캠페인 착수 예정",
           "Sarawak 심해 탐사 확대 — 드릴십 1기 계약 검토",
           "해외 자산 유지 드릴링 최소화, 국내 집중 전략"

@@ -330,22 +330,66 @@
       border-left: 3px solid var(--accent);
       border-radius: 6px;
       padding: 10px 12px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 4px 12px;
-      align-items: start;
-      transition: border-color 0.15s;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
     }
-    .project-card:hover { border-color: var(--accent); }
+    .project-card:hover { border-color: var(--accent); background: var(--bg-alt); }
+    .project-card.expanded { background: var(--bg-alt); }
     .project-card.status-production { border-left-color: var(--green); }
     .project-card.status-development { border-left-color: var(--blue); }
     .project-card.status-fid { border-left-color: var(--yellow); }
     .project-card.status-exploration { border-left-color: var(--orange); }
     .project-card.status-planning { border-left-color: var(--text-muted); }
+    .project-card-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 12px;
+      align-items: start;
+    }
+    .project-expand-icon {
+      font-size: 10px;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+      align-self: start;
+      margin-top: 2px;
+    }
+    .project-card.expanded .project-expand-icon { transform: rotate(180deg); }
     .project-name { font-size: 12px; font-weight: 600; color: var(--text); }
     .project-meta { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
     .project-notes { font-size: 11px; color: var(--text-muted); margin-top: 4px; grid-column: 1 / -1; line-height: 1.5; }
     .project-badge { font-size: 10px; white-space: nowrap; align-self: start; }
+    .project-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding-top 0.2s;
+    }
+    .project-card.expanded .project-detail {
+      max-height: 400px;
+      padding-top: 10px;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 16px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+    .detail-item { display: flex; flex-direction: column; gap: 1px; }
+    .detail-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); }
+    .detail-value { font-size: 11px; color: var(--text); line-height: 1.5; }
+    .detail-item.full-width { grid-column: 1 / -1; }
+    .detail-rig-demand {
+      margin-top: 8px;
+      padding: 7px 10px;
+      background: rgba(var(--accent-rgb, 59,130,246), 0.08);
+      border: 1px solid rgba(var(--accent-rgb, 59,130,246), 0.2);
+      border-radius: 5px;
+      font-size: 11px;
+      color: var(--text);
+      line-height: 1.6;
+      grid-column: 1 / -1;
+    }
+    .detail-rig-demand::before { content: '🔵 시추 수요: '; font-weight: 600; }
     .drill-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
     .drill-list li { display: flex; gap: 8px; font-size: 12px; color: var(--text); line-height: 1.6; }
     .drill-list li::before { content: '▸'; color: var(--orange); flex-shrink: 0; margin-top: 3px; font-size: 9px; }
@@ -1340,17 +1384,41 @@
     if (plan && plan.key_projects && plan.key_projects.length) {
       projectList.innerHTML = plan.key_projects.map(p => {
         const cap = p.capacity_kboed ? `<span class="mono" style="color:var(--accent);font-size:11px">${p.capacity_kboed}kboed</span>` : '';
+        const d = p.detail || {};
+        const partners = Array.isArray(d.partners) && d.partners.length ? d.partners.join(', ') : null;
+        const timeline = [
+          d.fid ? `FID ${esc(d.fid)}` : null,
+          d.first_oil ? `First Oil ${esc(d.first_oil)}` : null,
+          d.peak_year ? `Peak ${esc(d.peak_year)}` : null
+        ].filter(Boolean).join(' → ');
+        const hasDetail = Object.keys(d).length > 0;
         return `
-          <div class="project-card ${statusClass(p.status)}">
-            <div>
-              <div class="project-name">${esc(p.name)}</div>
-              <div class="project-meta">${esc(p.region)} · ${esc(p.type)}</div>
+          <div class="project-card ${statusClass(p.status)}" onclick="toggleProjectCard(this)">
+            <div class="project-card-header">
+              <div>
+                <div class="project-name">${esc(p.name)}</div>
+                <div class="project-meta">${esc(p.region)} · ${esc(p.type)}</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+                <span class="badge ${statusBadgeClass(p.status)} project-badge">${esc(p.status)}</span>
+                ${cap}
+                ${hasDetail ? `<span class="project-expand-icon">▾</span>` : ''}
+              </div>
+              <div class="project-notes">${esc(p.notes)}</div>
             </div>
-            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
-              <span class="badge ${statusBadgeClass(p.status)} project-badge">${esc(p.status)}</span>
-              ${cap}
-            </div>
-            <div class="project-notes">${esc(p.notes)}</div>
+            ${hasDetail ? `
+            <div class="project-detail">
+              <div class="detail-grid">
+                ${d.operator ? `<div class="detail-item"><span class="detail-label">운영사 (지분)</span><span class="detail-value">${esc(d.operator)}</span></div>` : ''}
+                ${partners ? `<div class="detail-item"><span class="detail-label">파트너</span><span class="detail-value">${esc(partners)}</span></div>` : ''}
+                ${d.water_depth_m != null ? `<div class="detail-item"><span class="detail-label">수심</span><span class="detail-value">${d.water_depth_m.toLocaleString()}m</span></div>` : ''}
+                ${d.reserves_mmboe != null ? `<div class="detail-item"><span class="detail-label">매장량</span><span class="detail-value">${d.reserves_mmboe.toLocaleString()} MMboe</span></div>` : ''}
+                ${timeline ? `<div class="detail-item full-width"><span class="detail-label">타임라인</span><span class="detail-value">${timeline}</span></div>` : ''}
+                ${d.vessel ? `<div class="detail-item full-width"><span class="detail-label">생산 설비</span><span class="detail-value">${esc(d.vessel)}</span></div>` : ''}
+                ${d.rig_demand ? `<div class="detail-rig-demand">${esc(d.rig_demand)}</div>` : ''}
+                ${d.source ? `<div class="detail-item full-width" style="margin-top:4px"><span class="detail-label">출처</span><span class="detail-value" style="color:var(--text-muted)">${esc(d.source)}</span></div>` : ''}
+              </div>
+            </div>` : ''}
           </div>`;
       }).join('');
     } else {
@@ -1377,6 +1445,16 @@
     if (capexTable) capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
   }
   window.closeCapexDrilldown = closeCapexDrilldown;
+
+  function toggleProjectCard(card) {
+    const isExpanded = card.classList.contains('expanded');
+    // Collapse all other cards first
+    document.querySelectorAll('#capex-project-list .project-card.expanded').forEach(c => {
+      if (c !== card) c.classList.remove('expanded');
+    });
+    card.classList.toggle('expanded', !isExpanded);
+  }
+  window.toggleProjectCard = toggleProjectCard;
 
   /* ─────────────────────────────────────────
      Newbuild Prices Table (Tabulator)
