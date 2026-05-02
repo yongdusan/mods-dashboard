@@ -95,9 +95,12 @@
 | PETRONAS | https://www.petronas.com/investors | 연간 보고서 (3월) |
 
 ### 업데이트 항목
-- 해당 연도 `capex_guidance` 항목의 `amount_busd` 수정 (신규 연도면 추가)
-- `source` 필드 예시: `"Q1 2026 Earnings (Apr 2026)"`, `"2026 Annual Budget"`
-- `notes` 필드에 주요 전략 변화 반영
+- `capex_guidance` 항목 필드:
+  - `total_capex_busd`: 회사 전체 CAPEX
+  - `upstream_capex_busd`: E&P/Upstream 전용 CAPEX (upstream % = upstream / total × 100)
+  - `source`: 출처 (예: `"Q1 2026 Earnings (Apr 2026)"`, `"2026 Annual Budget"`)
+- 신규 연도 항목이면 배열에 추가, 기존 연도 수정이면 해당 항목 값 업데이트
+- `notes` 필드에 upstream 비중(%) 및 주요 전략 변화 반영
 
 ### 현재 기준일자 (2026-05-03)
 | 회사 | 2026 가이던스 | 소스 |

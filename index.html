@@ -271,6 +271,28 @@
     .capex-section {
       margin-bottom: 20px;
     }
+    .capex-toggle {
+      display: flex;
+      gap: 4px;
+    }
+    .capex-toggle-btn {
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-family: var(--font-body);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .capex-toggle-btn:hover { border-color: var(--accent); color: var(--text); }
+    .capex-toggle-btn.active {
+      background: rgba(0,212,170,0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
     .capex-section .section-label {
       font-size: 11px;
       font-weight: 600;
@@ -582,7 +604,10 @@
       <div class="panel">
         <div class="panel-header">
           <span class="panel-title"><span class="dot" style="background:var(--orange)"></span>Annual CAPEX by Company</span>
-          <span class="panel-subtitle">$B USD</span>
+          <div class="capex-toggle">
+            <button class="capex-toggle-btn active" id="capex-btn-upstream" onclick="switchCapexMode('upstream')">Upstream</button>
+            <button class="capex-toggle-btn" id="capex-btn-total" onclick="switchCapexMode('total')">Total</button>
+          </div>
         </div>
         <div class="panel-body">
           <div class="capex-chart-container">
@@ -636,6 +661,7 @@
   let dayRateChart = null;
   let capexChart = null;
   let capexTable = null;
+  let capexMode = 'upstream'; // 'upstream' | 'total'
   let newbuildTable = null;
 
   function esc(str) {
@@ -991,8 +1017,17 @@
   /* ─────────────────────────────────────────
      CAPEX Bar Chart (Chart.js)
   ───────────────────────────────────────── */
+  function switchCapexMode(mode) {
+    capexMode = mode;
+    document.getElementById('capex-btn-upstream').classList.toggle('active', mode === 'upstream');
+    document.getElementById('capex-btn-total').classList.toggle('active', mode === 'total');
+    renderCapexChart();
+  }
+
   function renderCapexChart() {
     const palette = ['#00d4aa','#58a6ff','#f0883e','#d29922','#bc8cff','#f85149','#3fb950','#79c0ff','#ffa657'];
+    const field = capexMode === 'upstream' ? 'upstream_capex_busd' : 'total_capex_busd';
+    const labelSuffix = capexMode === 'upstream' ? ' (Upstream)' : ' (Total)';
 
     // Collect all years
     const allYears = new Set();
@@ -1002,7 +1037,7 @@
     const datasets = capex.companies.map((company, i) => {
       const data = years.map(year => {
         const entry = company.capex_guidance.find(g => g.year === year);
-        return entry ? entry.amount_busd : null;
+        return entry ? (entry[field] ?? entry.total_capex_busd) : null;
       });
       return {
         label: company.name,
@@ -1041,7 +1076,7 @@
             bodyColor: '#8b949e',
             padding: 10,
             callbacks: {
-              label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y}B`,
+              label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y}B${labelSuffix}`,
             },
           },
         },
@@ -1069,13 +1104,17 @@
   function renderCapexTable() {
     const tableData = capex.companies.map(c => {
       if (!c.capex_guidance.length) return null;
-      // Get latest year entry
       const latest = c.capex_guidance.slice().sort((a, b) => b.year - a.year)[0];
+      const upstreamPct = latest.upstream_capex_busd && latest.total_capex_busd
+        ? Math.round(latest.upstream_capex_busd / latest.total_capex_busd * 100)
+        : null;
       return {
         company: c.name,
         type: c.type,
         year: latest.year,
-        amount_busd: latest.amount_busd,
+        total_capex_busd: latest.total_capex_busd,
+        upstream_capex_busd: latest.upstream_capex_busd,
+        upstream_pct: upstreamPct,
         focus: c.upstream_focus,
       };
     }).filter(Boolean);
@@ -1083,19 +1122,21 @@
     if (capexTable) { capexTable.destroy(); }
     capexTable = new Tabulator('#capex-table', {
       data: tableData,
-      height: '280px',
+      height: '300px',
       layout: 'fitColumns',
       columns: [
         {
           title: 'Company',
           field: 'company',
+          minWidth: 120,
           widthGrow: 1.2,
           formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Type',
           field: 'type',
-          widthGrow: 0.8,
+          minWidth: 70,
+          widthGrow: 0.6,
           formatter: cell => {
             const v = cell.getValue();
             const cls = v === 'NOC' ? 'badge-blue' : 'badge-muted';
@@ -1103,22 +1144,38 @@
           },
         },
         {
-          title: 'Year',
+          title: 'Yr',
           field: 'year',
-          widthGrow: 0.5,
+          minWidth: 50,
+          widthGrow: 0.4,
           hozAlign: 'center',
           formatter: cell => `<span class="mono" style="color:var(--text-muted)">${cell.getValue()}</span>`,
         },
         {
-          title: 'CAPEX ($B)',
-          field: 'amount_busd',
+          title: 'Total ($B)',
+          field: 'total_capex_busd',
+          minWidth: 90,
           widthGrow: 0.7,
           hozAlign: 'right',
-          formatter: cell => `<span class="mono" style="color:var(--accent)">$${cell.getValue()}B</span>`,
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">$${cell.getValue()}B</span>`,
+        },
+        {
+          title: 'Upstream ($B)',
+          field: 'upstream_capex_busd',
+          minWidth: 110,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            const pct = cell.getData().upstream_pct;
+            return `<span class="mono" style="color:var(--accent);font-weight:600">$${v}B</span>`
+                 + (pct != null ? `<span style="font-size:10px;color:var(--text-muted);margin-left:4px">${pct}%</span>` : '');
+          },
         },
         {
           title: 'Focus',
           field: 'focus',
+          minWidth: 160,
           widthGrow: 2,
           formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },

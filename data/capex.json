@@ -5,100 +5,100 @@
       "name": "ExxonMobil",
       "type": "Oil Major",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 23.2, "source": "Q4 2023 Earnings" },
-        { "year": 2025, "amount_busd": 24.0, "source": "Q4 2024 Earnings" },
-        { "year": 2026, "amount_busd": 28.0, "source": "Q1 2026 Earnings (Apr 2026)" }
+        { "year": 2024, "total_capex_busd": 23.2, "upstream_capex_busd": 17.4, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "total_capex_busd": 24.0, "upstream_capex_busd": 18.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "total_capex_busd": 28.0, "upstream_capex_busd": 21.0, "source": "Q1 2026 Earnings (Apr 2026)" }
       ],
       "upstream_focus": "Guyana, Permian, deepwater",
-      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B로 대폭 상향. Permian 생산 레코드 4.7Mboe/d 달성."
+      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B 상향. Upstream 비중 ~75%. Permian 생산 레코드 4.7Mboe/d."
     },
     {
       "name": "Shell",
       "type": "Oil Major",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 22.0, "source": "Q4 2023 Earnings" },
-        { "year": 2025, "amount_busd": 21.0, "source": "Q4 2024 Earnings" },
-        { "year": 2026, "amount_busd": 21.0, "source": "2026 Capital Discipline Guidance" }
+        { "year": 2024, "total_capex_busd": 22.0, "upstream_capex_busd": 13.6, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "total_capex_busd": 21.0, "upstream_capex_busd": 13.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "total_capex_busd": 21.0, "upstream_capex_busd": 13.0, "source": "2026 Capital Discipline Guidance" }
       ],
       "upstream_focus": "deepwater, LNG",
-      "notes": "6대 메이저 합산 capex 2026년 $110.2B로 전년 대비 소폭 감소 예상. Brazil, GOM, Nigeria 집중."
+      "notes": "Upstream 비중 ~62%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지."
     },
     {
       "name": "bp",
       "type": "Oil Major",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 16.0, "source": "Q4 2023 Earnings" },
-        { "year": 2025, "amount_busd": 14.5, "source": "Q4 2024 Earnings" },
-        { "year": 2026, "amount_busd": 13.0, "source": "Q1 2026 Earnings (Apr 2026)" }
+        { "year": 2024, "total_capex_busd": 16.0, "upstream_capex_busd": 12.3, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "total_capex_busd": 14.5, "upstream_capex_busd": 11.2, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "total_capex_busd": 13.0, "upstream_capex_busd": 10.0, "source": "Q1 2026 Earnings (Apr 2026)" }
       ],
       "upstream_focus": "GOM, North Sea, Azerbaijan",
-      "notes": "Q1 2026 FY 가이던스 $13.0–13.5B 유지 확인. Q1 capex $3.3B 집행. 재생에너지 투자 축소, upstream 재집중 전략."
+      "notes": "Upstream(O&G) 비중 ~77%. 재생에너지 투자 축소, upstream 재집중 전략. 2026 FY 가이던스 $13.0–13.5B 유지."
     },
     {
       "name": "Chevron",
       "type": "Oil Major",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 15.6, "source": "Q4 2023 Earnings" },
-        { "year": 2025, "amount_busd": 14.5, "source": "Q4 2024 Earnings" },
-        { "year": 2026, "amount_busd": 18.5, "source": "2026 Capex Budget Announcement (Dec 2025)" }
+        { "year": 2024, "total_capex_busd": 15.6, "upstream_capex_busd": 11.9, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "total_capex_busd": 14.5, "upstream_capex_busd": 11.0, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "total_capex_busd": 18.5, "upstream_capex_busd": 14.0, "source": "2026 Capex Budget Announcement (Dec 2025)" }
       ],
       "upstream_focus": "Permian, Kazakhstan, GOM, Guyana",
-      "notes": "2026 가이던스 $18–19B로 상향 발표 — Hess 인수로 Guyana 지분(30%) 확보 반영. 장기 가이던스 $18–21B 하단."
+      "notes": "Upstream 비중 ~76%. Hess 인수로 Guyana 지분(30%) 확보 반영. 2026 가이던스 $18–19B로 대폭 상향."
     },
     {
       "name": "TotalEnergies",
       "type": "Oil Major",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 17.0, "source": "Q4 2023 Earnings" },
-        { "year": 2025, "amount_busd": 17.0, "source": "Q4 2024 Earnings" },
-        { "year": 2026, "amount_busd": 16.0, "source": "2025 Results & 2026 Objectives (Feb 2026)" }
+        { "year": 2024, "total_capex_busd": 17.0, "upstream_capex_busd": 10.7, "source": "Q4 2023 Earnings" },
+        { "year": 2025, "total_capex_busd": 17.0, "upstream_capex_busd": 10.7, "source": "Q4 2024 Earnings" },
+        { "year": 2026, "total_capex_busd": 16.0, "upstream_capex_busd": 10.0, "source": "2025 Results & 2026 Objectives (Feb 2026)" }
       ],
       "upstream_focus": "Africa deepwater, Middle East, Brazil",
-      "notes": "2026 net capex ~$16B로 하향 조정(기존 $17.5B 대비). 저탄소 capex ~$4B/년 유지. Angola, Nigeria, Congo 집중."
+      "notes": "Upstream 비중 ~63%. 저탄소/통합전력 ~$4B 별도. 2026 net capex ~$16B로 하향(기존 $17.5B). Angola, Nigeria, Congo 집중."
     },
     {
       "name": "Saudi Aramco",
       "type": "NOC",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 49.0, "source": "FY2023 Annual Report" },
-        { "year": 2025, "amount_busd": 55.0, "source": "2025 Budget (range $52–58B)" },
-        { "year": 2026, "amount_busd": 50.0, "source": "2026 Medium-Term Guidance" }
+        { "year": 2024, "total_capex_busd": 49.0, "upstream_capex_busd": 29.4, "source": "FY2023 Annual Report" },
+        { "year": 2025, "total_capex_busd": 55.0, "upstream_capex_busd": 33.0, "source": "2025 Budget (range $52–58B)" },
+        { "year": 2026, "total_capex_busd": 50.0, "upstream_capex_busd": 30.0, "source": "2026 Medium-Term Guidance" }
       ],
       "upstream_focus": "offshore increment, Jafurah gas",
-      "notes": "2025 capex 최대 $58B 편성. Jafurah 비전통 가스 + 해외 upstream 투자 포함. 4년간 capex의 60%를 upstream에 배분."
+      "notes": "Upstream 비중 60% (명시). Marjan·Berri offshore 증산($18B 프로그램). Jafurah 비전통 가스 포함."
     },
     {
       "name": "ADNOC",
       "type": "NOC",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 15.0, "source": "FY2023 Annual Report" },
-        { "year": 2025, "amount_busd": 16.0, "source": "2025 Budget" },
-        { "year": 2026, "amount_busd": 17.0, "source": "2026 Guidance" }
+        { "year": 2024, "total_capex_busd": 15.0, "upstream_capex_busd": 12.3, "source": "FY2023 Annual Report" },
+        { "year": 2025, "total_capex_busd": 16.0, "upstream_capex_busd": 13.1, "source": "2025 Budget" },
+        { "year": 2026, "total_capex_busd": 17.0, "upstream_capex_busd": 14.0, "source": "2026 Guidance" }
       ],
       "upstream_focus": "offshore UAE, sour gas",
-      "notes": "생산능력 500만 b/d 목표(2027). XRG 자회사 통해 Mozambique Area 4 10% 지분 인수($881M, 2025.03)."
+      "notes": "Upstream 비중 ~82%. Umm Shaif, Abu Dhabi Offshore 2, SARB Phase 2 진행. 생산능력 500만 b/d 목표(2027)."
     },
     {
       "name": "Petrobras",
       "type": "NOC",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 21.4, "source": "2024-2028 Business Plan" },
-        { "year": 2025, "amount_busd": 21.0, "source": "2025-2029 Business Plan" },
-        { "year": 2026, "amount_busd": 21.0, "source": "2025-2029 Business Plan" }
+        { "year": 2024, "total_capex_busd": 21.4, "upstream_capex_busd": 16.9, "source": "2024-2028 Business Plan" },
+        { "year": 2025, "total_capex_busd": 21.0, "upstream_capex_busd": 16.6, "source": "2025-2029 Business Plan" },
+        { "year": 2026, "total_capex_busd": 21.0, "upstream_capex_busd": 16.6, "source": "2025-2029 Business Plan" }
       ],
       "upstream_focus": "pre-salt deepwater Brazil",
-      "notes": "Búzios 11, Atapu 3 FP 투자 결정(FID). 5개년 계획 연 $21B 유지. Buzios, Tupi pre-salt 집중."
+      "notes": "E&P 비중 ~79%. Búzios, Tupi pre-salt 집중. Búzios 11·Atapu 3 FID. SEAP II FPSO 협상 진행."
     },
     {
       "name": "PETRONAS",
       "type": "NOC",
       "capex_guidance": [
-        { "year": 2024, "amount_busd": 12.0, "source": "FY2023 Annual Report" },
-        { "year": 2025, "amount_busd": 12.5, "source": "2025 Budget" },
-        { "year": 2026, "amount_busd": 13.0, "source": "2026 Guidance" }
+        { "year": 2024, "total_capex_busd": 12.0, "upstream_capex_busd": 7.8, "source": "FY2023 Annual Report" },
+        { "year": 2025, "total_capex_busd": 12.5, "upstream_capex_busd": 8.1, "source": "2025 Budget" },
+        { "year": 2026, "total_capex_busd": 13.0, "upstream_capex_busd": 8.5, "source": "2026 Guidance" }
       ],
       "upstream_focus": "Malaysia offshore, LNG",
-      "notes": "Kasawari CCS 프로젝트 포함. Malaysia 국내 offshore + LNG 중심. GCC NOC 합산 2027년 $125B 전망."
+      "notes": "Upstream 비중 ~65%. Kasawari CCS 포함. Malaysia 국내 offshore + LNG. GCC NOC 합산 2027년 $125B 전망."
     }
   ]
 }
