@@ -176,14 +176,21 @@
     /* ─── Filter Bar ─── */
     .filter-bar {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       gap: 8px;
       margin-bottom: 20px;
     }
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
     .filter-bar .filter-label {
-      font-size: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
       color: var(--text-muted);
-      margin-right: 4px;
+      min-width: 80px;
     }
     .filter-btn {
       padding: 6px 16px;
@@ -411,11 +418,22 @@
 
   <!-- Filter Bar -->
   <div class="filter-bar">
-    <span class="filter-label">RIG TYPE</span>
-    <button class="filter-btn active" data-filter="All">All</button>
-    <button class="filter-btn" data-filter="Drillship">Drillship</button>
-    <button class="filter-btn" data-filter="Semisubmersible">Semisubmersible</button>
-    <button class="filter-btn" data-filter="Jack-up">Jack-up</button>
+    <div class="filter-row">
+      <span class="filter-label">RIG TYPE</span>
+      <button class="filter-btn type-btn active" data-filter="All">All</button>
+      <button class="filter-btn type-btn" data-filter="Drillship">Drillship</button>
+      <button class="filter-btn type-btn" data-filter="Semisubmersible">Semisubmersible</button>
+      <button class="filter-btn type-btn" data-filter="Jack-up">Jack-up</button>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">CONTRACTOR</span>
+      <button class="filter-btn contractor-btn active" data-contractor="All">All</button>
+      <button class="filter-btn contractor-btn" data-contractor="Transocean">Transocean</button>
+      <button class="filter-btn contractor-btn" data-contractor="Valaris">Valaris</button>
+      <button class="filter-btn contractor-btn" data-contractor="Noble">Noble</button>
+      <button class="filter-btn contractor-btn" data-contractor="Seadrill">Seadrill</button>
+      <button class="filter-btn contractor-btn" data-contractor="Borr Drilling">Borr Drilling</button>
+    </div>
   </div>
 
   <!-- Two-column: Fleet Table | Day Rate Chart -->
@@ -612,9 +630,13 @@
   function renderFleetTable(rigs) {
     const tableData = rigs.map(r => ({
       name: r.name,
+      contractor: r.contractor,
       type: r.type,
       status: r.status,
       operator: r.operator,
+      location: r.location,
+      water_depth_ft: r.water_depth_ft,
+      contract_start: r.contract_start,
       contract_end: r.contract_end,
       day_rate_kusd: r.day_rate_kusd,
     }));
@@ -626,41 +648,76 @@
 
     fleetTable = new Tabulator('#fleet-table', {
       data: tableData,
-      height: '320px',
-      layout: 'fitColumns',
+      height: '400px',
+      layout: 'fitData',
       responsiveLayout: false,
       columns: [
         {
           title: 'Rig Name',
           field: 'name',
-          widthGrow: 2,
+          minWidth: 180,
+          frozen: true,
           formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Contractor',
+          field: 'contractor',
+          minWidth: 120,
+          formatter: cell => `<span style="color:var(--accent);font-weight:500">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Type',
           field: 'type',
-          widthGrow: 1,
+          minWidth: 130,
           formatter: cell => `<span class="mono" style="color:var(--text-muted)">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Status',
           field: 'status',
-          widthGrow: 1.2,
+          minWidth: 140,
           formatter: cell => statusBadge(cell.getValue()),
         },
         {
           title: 'Operator',
           field: 'operator',
-          widthGrow: 1,
+          minWidth: 120,
           formatter: cell => {
             const v = cell.getValue();
             return v ? `<span style="color:var(--text)">${esc(v)}</span>` : '<span style="color:var(--text-muted)">—</span>';
           },
         },
         {
-          title: 'Contract End',
+          title: 'Location',
+          field: 'location',
+          minWidth: 160,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span style="color:var(--text-muted);font-size:12px">${esc(v)}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'WD (ft)',
+          field: 'water_depth_ft',
+          minWidth: 80,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span class="mono" style="color:var(--text-muted)">${v.toLocaleString()}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'Start',
+          field: 'contract_start',
+          minWidth: 80,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span class="mono" style="color:var(--text-muted)">${v}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'End',
           field: 'contract_end',
-          widthGrow: 1,
+          minWidth: 80,
           formatter: cell => {
             const v = cell.getValue();
             return v ? `<span class="mono" style="color:var(--text-muted)">${v}</span>` : '<span style="color:var(--text-muted)">—</span>';
@@ -669,12 +726,12 @@
         {
           title: 'Rate (k$)',
           field: 'day_rate_kusd',
-          widthGrow: 0.8,
+          minWidth: 90,
           hozAlign: 'right',
           formatter: cell => {
             const v = cell.getValue();
             return v !== null && v !== undefined
-              ? `<span class="mono" style="color:var(--accent)">${v}</span>`
+              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
               : '<span style="color:var(--text-muted)">—</span>';
           },
         },
@@ -982,25 +1039,36 @@
   /* ─────────────────────────────────────────
      Filter Logic
   ───────────────────────────────────────── */
-  let currentFilter = 'All';
+  let currentTypeFilter = 'All';
+  let currentContractorFilter = 'All';
 
-  function applyFilter(filter) {
-    currentFilter = filter;
-    const filtered = filter === 'All'
-      ? fleet.rigs
-      : fleet.rigs.filter(r => r.type === filter);
-
-    renderKPIs(filtered, filter !== 'All');
+  function applyFilters() {
+    const isFiltered = currentTypeFilter !== 'All' || currentContractorFilter !== 'All';
+    const filtered = fleet.rigs.filter(r => {
+      const typeMatch = currentTypeFilter === 'All' || r.type === currentTypeFilter;
+      const contractorMatch = currentContractorFilter === 'All' || r.contractor === currentContractorFilter;
+      return typeMatch && contractorMatch;
+    });
+    renderKPIs(filtered, isFiltered);
     renderFleetTable(filtered);
     document.getElementById('fleet-count').textContent = `${filtered.length} rigs`;
   }
 
   function initFilters() {
-    document.querySelectorAll('.filter-btn').forEach(btn => {
+    document.querySelectorAll('.type-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        applyFilter(btn.dataset.filter);
+        currentTypeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+    document.querySelectorAll('.contractor-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.contractor-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentContractorFilter = btn.dataset.contractor;
+        applyFilters();
       });
     });
   }
