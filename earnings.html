@@ -157,7 +157,7 @@
       margin-bottom: 24px;
     }
     .drilldown-panel.open {
-      max-height: 900px;
+      max-height: 1400px;
     }
     .drilldown-header {
       display: flex;
@@ -362,6 +362,63 @@
       font-size: 11px;
     }
 
+    /* ─── Highlights ─── */
+    .highlights-section {
+      padding: 16px 18px;
+      border-top: 1px solid var(--border);
+    }
+    .highlights-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .highlights-quarter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .hl-tab {
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .hl-tab:hover { border-color: var(--accent); color: var(--text); }
+    .hl-tab.active {
+      background: rgba(0,212,170,0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .hl-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .hl-list li {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .hl-list li .hl-icon {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-size: 10px;
+      margin-top: 5px;
+    }
+
     /* chart title */
     .chart-title {
       font-size: 12px;
@@ -409,7 +466,7 @@
 
   <!-- Comparison Table Section -->
   <section class="comparison-section">
-    <div class="section-label">LATEST QUARTER COMPARISON — Q4 2025</div>
+    <div class="section-label" id="comparison-label">LATEST REPORTED QUARTER — COMPARISON</div>
     <div class="panel">
       <div id="comparison-table"></div>
     </div>
@@ -434,6 +491,11 @@
           <div class="detail-table-label">All Quarters</div>
           <div id="detail-table"></div>
         </div>
+      </div>
+      <div class="highlights-section" id="highlights-section">
+        <div class="highlights-label">Key Highlights</div>
+        <div class="highlights-quarter-tabs" id="highlights-tabs"></div>
+        <ul class="hl-list" id="highlights-list"></ul>
       </div>
     </div>
   </div>
@@ -500,23 +562,32 @@
 
   /* ─── Render comparison table ─── */
   function renderComparisonTable(companies) {
-    // Build table data from Q4 2025 (last quarter) of each company
+    // Build table data from latest quarter of each company
     const tableData = companies.map(c => {
-      const q4 = c.quarters[c.quarters.length - 1];
+      const latest = c.quarters[c.quarters.length - 1];
       return {
         name: c.name,
         ticker: c.ticker,
+        period: latest.period,
         isMerger: c.ticker === 'VAL',
-        revenue_musd: q4.revenue_musd,
-        adj_ebitda_musd: q4.adj_ebitda_musd,
-        ebitda_margin_pct: q4.ebitda_margin_pct,
-        utilization_pct: q4.utilization_pct,
-        avg_day_rate_kusd: q4.avg_day_rate_kusd,
-        backlog_busd: q4.backlog_busd,
+        revenue_musd: latest.revenue_musd,
+        adj_ebitda_musd: latest.adj_ebitda_musd,
+        ebitda_margin_pct: latest.ebitda_margin_pct,
+        utilization_pct: latest.utilization_pct,
+        avg_day_rate_kusd: latest.avg_day_rate_kusd,
+        backlog_busd: latest.backlog_busd,
         note: c.note,
         _company: c,
       };
     });
+
+    // Update section label — show unique periods
+    const periods = [...new Set(tableData.map(d => d.period))];
+    const labelEl = document.getElementById('comparison-label');
+    if (labelEl) {
+      const periodStr = periods.length === 1 ? periods[0] : periods.join(' / ');
+      labelEl.textContent = `LATEST REPORTED QUARTER — ${periodStr}`;
+    }
 
     if (comparisonTable) {
       comparisonTable.destroy();
@@ -540,6 +611,19 @@
               : '';
             return `<span style="font-weight:600;color:var(--text)">${esc(row.name)}</span>
                     <span class="badge badge-muted" style="margin-left:6px;font-size:10px">${esc(row.ticker)}</span>${mergerBadge}`;
+          },
+        },
+        {
+          title: 'Period',
+          field: 'period',
+          minWidth: 80,
+          widthGrow: 0.6,
+          hozAlign: 'center',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const isLatest = v && v.includes('2026');
+            const color = isLatest ? 'var(--accent)' : 'var(--text-muted)';
+            return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>`;
           },
         },
         {
@@ -648,32 +732,34 @@
   function renderDrillDown(company) {
     selectedCompany = company;
     const panel = document.getElementById('drilldown-panel');
-    const q4 = company.quarters[company.quarters.length - 1];
+    const latest = company.quarters[company.quarters.length - 1];
 
     // Title
     const mergerBadge = company.ticker === 'VAL'
       ? ' <span class="badge badge-yellow" style="font-size:11px">&#9888; Merger Pending</span>'
       : '';
     document.getElementById('drilldown-title').innerHTML =
-      `${esc(company.name)} <span class="badge badge-muted" style="font-size:12px">${esc(company.ticker)}</span>${mergerBadge}`;
+      `${esc(company.name)} <span class="badge badge-muted" style="font-size:12px">${esc(company.ticker)}</span>` +
+      ` <span class="badge badge-blue" style="font-size:11px;margin-left:4px">${esc(latest.period)}</span>` +
+      mergerBadge;
 
-    // KPI cards
+    // KPI cards (latest quarter)
     document.getElementById('drilldown-kpis').innerHTML = `
       <div class="kpi-card accent">
-        <div class="kpi-label">Latest Revenue</div>
-        <div class="kpi-value">${q4.revenue_musd.toLocaleString()}<span class="unit">$M</span></div>
+        <div class="kpi-label">${esc(latest.period)} Revenue</div>
+        <div class="kpi-value">${latest.revenue_musd.toLocaleString()}<span class="unit">$M</span></div>
       </div>
       <div class="kpi-card green">
-        <div class="kpi-label">Latest Adj. EBITDA</div>
-        <div class="kpi-value">${q4.adj_ebitda_musd.toLocaleString()}<span class="unit">$M</span></div>
+        <div class="kpi-label">${esc(latest.period)} Adj. EBITDA</div>
+        <div class="kpi-value">${latest.adj_ebitda_musd.toLocaleString()}<span class="unit">$M</span></div>
       </div>
       <div class="kpi-card yellow">
         <div class="kpi-label">EBITDA Margin</div>
-        <div class="kpi-value">${q4.ebitda_margin_pct.toFixed(1)}<span class="unit">%</span></div>
+        <div class="kpi-value">${latest.ebitda_margin_pct.toFixed(1)}<span class="unit">%</span></div>
       </div>
       <div class="kpi-card blue">
         <div class="kpi-label">Backlog</div>
-        <div class="kpi-value">${q4.backlog_busd.toFixed(1)}<span class="unit">$B</span></div>
+        <div class="kpi-value">${latest.backlog_busd.toFixed(1)}<span class="unit">$B</span></div>
       </div>
     `;
 
@@ -685,9 +771,54 @@
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 50);
 
-    // Render chart and table
+    // Render chart, table and highlights
     renderDetailChart(company);
     renderDetailTable(company);
+    renderHighlights(company);
+  }
+
+  /* ─── Render highlights ─── */
+  let activeHighlightPeriod = null;
+
+  function renderHighlights(company) {
+    const tabsEl = document.getElementById('highlights-tabs');
+    const listEl = document.getElementById('highlights-list');
+    if (!tabsEl || !listEl) return;
+
+    // Build tabs — reverse order (latest first)
+    const quarters = [...company.quarters].reverse();
+    activeHighlightPeriod = quarters[0].period;
+
+    tabsEl.innerHTML = quarters.map(q => {
+      const isLatest = q === quarters[0];
+      return `<button class="hl-tab${isLatest ? ' active' : ''}" data-period="${esc(q.period)}">${esc(q.period)}</button>`;
+    }).join('');
+
+    // Tab click handler
+    tabsEl.querySelectorAll('.hl-tab').forEach(btn => {
+      btn.addEventListener('click', function() {
+        tabsEl.querySelectorAll('.hl-tab').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        activeHighlightPeriod = this.dataset.period;
+        const q = company.quarters.find(q => q.period === activeHighlightPeriod);
+        renderHighlightList(q);
+      });
+    });
+
+    // Render latest quarter highlights initially
+    renderHighlightList(quarters[0]);
+  }
+
+  function renderHighlightList(quarter) {
+    const listEl = document.getElementById('highlights-list');
+    if (!listEl) return;
+    if (!quarter || !quarter.highlights || quarter.highlights.length === 0) {
+      listEl.innerHTML = '<li><span class="hl-icon">▸</span><span style="color:var(--text-muted)">주요 내용 없음</span></li>';
+      return;
+    }
+    listEl.innerHTML = quarter.highlights.map(h =>
+      `<li><span class="hl-icon">▸</span><span>${esc(h)}</span></li>`
+    ).join('');
   }
 
   /* ─── Close drill-down ─── */

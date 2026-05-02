@@ -1,59 +1,379 @@
 {
-  "updated": "2026-04-26",
+  "updated": "2026-05-03",
   "companies": [
     {
       "name": "Transocean",
       "ticker": "RIG",
-      "note": "Acquiring Valaris for $5.8B (announced Feb 2026)",
+      "note": "Acquiring Valaris for $5.8B (announced Feb 2026). Q1 2026 reports May 4.",
       "quarters": [
-        { "period": "Q1 2025", "revenue_musd": 965,  "adj_ebitda_musd": 315, "ebitda_margin_pct": 32.6, "utilization_pct": 79, "avg_day_rate_kusd": 441, "backlog_busd": 8.8, "source": "Q1 2025 Earnings" },
-        { "period": "Q2 2025", "revenue_musd": 970,  "adj_ebitda_musd": 330, "ebitda_margin_pct": 34.0, "utilization_pct": 80, "avg_day_rate_kusd": 448, "backlog_busd": 8.5, "source": "Q2 2025 Earnings" },
-        { "period": "Q3 2025", "revenue_musd": 950,  "adj_ebitda_musd": 340, "ebitda_margin_pct": 35.8, "utilization_pct": 81, "avg_day_rate_kusd": 455, "backlog_busd": 7.8, "source": "Q3 2025 Earnings" },
-        { "period": "Q4 2025", "revenue_musd": 1040, "adj_ebitda_musd": 385, "ebitda_margin_pct": 37.0, "utilization_pct": 82, "avg_day_rate_kusd": 461, "backlog_busd": 6.1, "source": "Q4 2025 Earnings (Feb 2026)" }
+        {
+          "period": "Q1 2025",
+          "revenue_musd": 965,
+          "adj_ebitda_musd": 315,
+          "ebitda_margin_pct": 32.6,
+          "utilization_pct": 79,
+          "avg_day_rate_kusd": 441,
+          "backlog_busd": 8.8,
+          "source": "Q1 2025 Earnings",
+          "highlights": [
+            "Backlog $8.8B로 업계 최대 수준 유지",
+            "Deepwater Atlas(삼성 96K) 첫 풀 가동 분기 — $465K/day",
+            "Ultra-deepwater 세그먼트 가동률 79% 달성",
+            "7th Gen 리그 계약 갱신 협상 진행 중"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 970,
+          "adj_ebitda_musd": 330,
+          "ebitda_margin_pct": 34.0,
+          "utilization_pct": 80,
+          "avg_day_rate_kusd": 448,
+          "backlog_busd": 8.5,
+          "source": "Q2 2025 Earnings",
+          "highlights": [
+            "평균 day rate $448K로 분기 기록 경신",
+            "Harsh Environment 세그먼트(노르웨이) 가동률 상승",
+            "Ultra-deepwater 신규 계약 2건 추가 확보",
+            "재무 레버리지 개선 — 부채 상환 진행"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 950,
+          "adj_ebitda_musd": 340,
+          "ebitda_margin_pct": 35.8,
+          "utilization_pct": 81,
+          "avg_day_rate_kusd": 455,
+          "backlog_busd": 7.8,
+          "source": "Q3 2025 Earnings",
+          "highlights": [
+            "EBITDA 마진 35.8%로 3분기 연속 개선",
+            "Deepwater Titan — Chevron 계약 순조롭게 이행 중",
+            "노르웨이 Harsh Environment 리그 고가동 유지",
+            "2026년 Ultra-deepwater 시장 타이트 전망 제시"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 1040,
+          "adj_ebitda_musd": 385,
+          "ebitda_margin_pct": 37.0,
+          "utilization_pct": 82,
+          "avg_day_rate_kusd": 461,
+          "backlog_busd": 6.1,
+          "source": "Q4 2025 Earnings (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $3.925B — 연간 최고치 경신",
+            "Valaris 인수 $5.8B 발표(2026.02) — 통합 후 Fleet 62개 예상",
+            "통합 완료 시 연간 시너지 효과 $50M+ 전망",
+            "Backlog $6.1B — 인수 완료 후 $11B+ 예상"
+          ]
+        }
       ]
     },
     {
       "name": "Valaris",
       "ticker": "VAL",
-      "note": "Merger with Transocean pending (announced Feb 2026, $5.8B deal)",
+      "note": "Merger with Transocean pending ($5.8B, announced Feb 2026). Q1 2026 reports May 4. Earnings calls discontinued.",
       "quarters": [
-        { "period": "Q1 2025", "revenue_musd": 606, "adj_ebitda_musd": 98,  "ebitda_margin_pct": 16.2, "utilization_pct": 74, "avg_day_rate_kusd": 385, "backlog_busd": 4.2, "source": "Q1 2025 Earnings" },
-        { "period": "Q2 2025", "revenue_musd": 620, "adj_ebitda_musd": 105, "ebitda_margin_pct": 16.9, "utilization_pct": 75, "avg_day_rate_kusd": 390, "backlog_busd": 4.4, "source": "Q2 2025 Earnings" },
-        { "period": "Q3 2025", "revenue_musd": 600, "adj_ebitda_musd": 112, "ebitda_margin_pct": 18.7, "utilization_pct": 76, "avg_day_rate_kusd": 393, "backlog_busd": 4.6, "source": "Q3 2025 Earnings" },
-        { "period": "Q4 2025", "revenue_musd": 537, "adj_ebitda_musd": 108, "ebitda_margin_pct": 20.1, "utilization_pct": 73, "avg_day_rate_kusd": 388, "backlog_busd": 4.7, "source": "Q4 2025 Earnings (Feb 2026)" }
+        {
+          "period": "Q1 2025",
+          "revenue_musd": 606,
+          "adj_ebitda_musd": 98,
+          "ebitda_margin_pct": 16.2,
+          "utilization_pct": 74,
+          "avg_day_rate_kusd": 385,
+          "backlog_busd": 4.2,
+          "source": "Q1 2025 Earnings",
+          "highlights": [
+            "잭업 리그 비중 높아 평균 day rate 상대적으로 낮음 ($385K)",
+            "드릴십 리그 신규 계약 협상 진행",
+            "Backlog $4.2B — 향후 계약 갱신 집중",
+            "EBITDA 마진 16.2%로 업계 내 개선 여지 있음"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 620,
+          "adj_ebitda_musd": 105,
+          "ebitda_margin_pct": 16.9,
+          "utilization_pct": 75,
+          "avg_day_rate_kusd": 390,
+          "backlog_busd": 4.4,
+          "source": "Q2 2025 Earnings",
+          "highlights": [
+            "EBITDA 마진 소폭 개선(16.9%) — 운영 효율화 효과",
+            "드릴십 3기 계약 연장 확보",
+            "Backlog $4.4B로 상승",
+            "잭업 시장 중동·동남아 수요 견조"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 600,
+          "adj_ebitda_musd": 112,
+          "ebitda_margin_pct": 18.7,
+          "utilization_pct": 76,
+          "avg_day_rate_kusd": 393,
+          "backlog_busd": 4.6,
+          "source": "Q3 2025 Earnings",
+          "highlights": [
+            "EBITDA 마진 18.7%로 분기 최고 — 비용 절감 가시화",
+            "Valaris DS-17 노르웨이 신규 계약 체결",
+            "잭업 리그 평균 가동률 76% — 중동 수요 견조",
+            "2026년 마진 20%+ 달성 목표 제시"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 537,
+          "adj_ebitda_musd": 108,
+          "ebitda_margin_pct": 20.1,
+          "utilization_pct": 73,
+          "avg_day_rate_kusd": 388,
+          "backlog_busd": 4.7,
+          "source": "Q4 2025 Earnings (Feb 2026)",
+          "highlights": [
+            "Transocean $5.8B 인수 협상 완료 — 주주 승인 절차 진행",
+            "EBITDA 마진 20.1%로 역대 최고 달성",
+            "향후 분기 실적 발표 및 가이던스 제공 중단 발표",
+            "Backlog $4.7B — 통합 완료 시 Transocean 풀로 흡수"
+          ]
+        }
       ]
     },
     {
       "name": "Noble",
       "ticker": "NE",
-      "note": "Acquired Diamond Offshore in 2024. Pureplay deepwater after selling jackups to Borr (Jan 2026)",
+      "note": "Acquired Diamond Offshore in 2024. Sold jackups to Borr Drilling (Jan 2026). Now pureplay deepwater.",
       "quarters": [
-        { "period": "Q1 2025", "revenue_musd": 810, "adj_ebitda_musd": 248, "ebitda_margin_pct": 30.6, "utilization_pct": 76, "avg_day_rate_kusd": 412, "backlog_busd": 6.8, "source": "Q1 2025 Earnings" },
-        { "period": "Q2 2025", "revenue_musd": 825, "adj_ebitda_musd": 255, "ebitda_margin_pct": 30.9, "utilization_pct": 77, "avg_day_rate_kusd": 418, "backlog_busd": 7.0, "source": "Q2 2025 Earnings" },
-        { "period": "Q3 2025", "revenue_musd": 851, "adj_ebitda_musd": 263, "ebitda_margin_pct": 30.9, "utilization_pct": 78, "avg_day_rate_kusd": 422, "backlog_busd": 7.0, "source": "Q3 2025 Earnings" },
-        { "period": "Q4 2025", "revenue_musd": 800, "adj_ebitda_musd": 252, "ebitda_margin_pct": 31.5, "utilization_pct": 76, "avg_day_rate_kusd": 425, "backlog_busd": 7.5, "source": "Q4 2025 Earnings (Feb 2026)" }
+        {
+          "period": "Q1 2025",
+          "revenue_musd": 810,
+          "adj_ebitda_musd": 248,
+          "ebitda_margin_pct": 30.6,
+          "utilization_pct": 76,
+          "avg_day_rate_kusd": 412,
+          "backlog_busd": 6.8,
+          "source": "Q1 2025 Earnings",
+          "highlights": [
+            "Diamond Offshore 통합 완료 후 첫 완전 분기",
+            "딥워터 Fleet 확장 — 마케팅 리그 35개",
+            "통합 시너지 연 $50M 달성 조기 확인",
+            "잭업 리그 Borr Drilling 매각 논의 시작"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 825,
+          "adj_ebitda_musd": 255,
+          "ebitda_margin_pct": 30.9,
+          "utilization_pct": 77,
+          "avg_day_rate_kusd": 418,
+          "backlog_busd": 7.0,
+          "source": "Q2 2025 Earnings",
+          "highlights": [
+            "Noble Venturer — Petrobras 계약 연장 확보",
+            "잭업 5기 Borr Drilling 매각 협상 진전",
+            "딥워터 가동률 77%로 상승",
+            "Backlog $7.0B 유지 — 신규 계약 파이프라인 강함"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 851,
+          "adj_ebitda_musd": 263,
+          "ebitda_margin_pct": 30.9,
+          "utilization_pct": 78,
+          "avg_day_rate_kusd": 422,
+          "backlog_busd": 7.0,
+          "source": "Q3 2025 Earnings",
+          "highlights": [
+            "Revenue $851M으로 분기 최고 달성",
+            "Noble Reacher 브라질 계약 연장",
+            "Noble Courage 장기 계약 협상 진행 중",
+            "잭업 매각 2026년 1월 완료 예정 발표"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 800,
+          "adj_ebitda_musd": 252,
+          "ebitda_margin_pct": 31.5,
+          "utilization_pct": 76,
+          "avg_day_rate_kusd": 425,
+          "backlog_busd": 7.5,
+          "source": "Q4 2025 Earnings (Feb 2026)",
+          "highlights": [
+            "잭업 5기 Borr Drilling 매각 완료(2026.01) $175M — 딥워터 퓨어플레이 전환",
+            "FY2025 Revenue $3.287B, EBITDA $1.018B",
+            "2026 가이던스 발표: Revenue $2.8–3.0B, EBITDA $940M–$1.02B",
+            "Backlog $7.5B — Noble Deliverer 재활성화 포함"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 743,
+          "adj_ebitda_musd": 277,
+          "ebitda_margin_pct": 37.3,
+          "utilization_pct": 68,
+          "avg_day_rate_kusd": 438,
+          "backlog_busd": 7.5,
+          "source": "Q1 2026 Earnings (Apr 2026)",
+          "highlights": [
+            "딥워터 퓨어플레이 전환 후 첫 분기 — EBITDA 마진 37.3%로 급등",
+            "Noble Courage 3년 계약 연장 + Noble Deliverer 5-well 계약 체결",
+            "신규 계약 $565M 확보 — Backlog $7.5B 유지",
+            "Noble Deliverer 재활성화로 2026 capex $615–665M 상향 조정",
+            "2026 가이던스 유지: Revenue $2.8–3.0B, EBITDA $940M–$1.02B",
+            "Free Cash Flow $169M — 주당 배당금 유지"
+          ]
+        }
       ]
     },
     {
       "name": "Seadrill",
       "ticker": "SDRL",
-      "note": "FY2025 Adj. EBITDA $353M. 2026 guidance: Rev $1.40–1.45B, EBITDA $350–400M",
+      "note": "FY2025 Adj. EBITDA $353M. 2026 guidance: Rev $1.40–1.45B, EBITDA $350–400M. Q1 2026 date TBD.",
       "quarters": [
-        { "period": "Q1 2025", "revenue_musd": 335, "adj_ebitda_musd": 99,  "ebitda_margin_pct": 29.6, "utilization_pct": 78, "avg_day_rate_kusd": 395, "backlog_busd": 1.6, "source": "Q1 2025 Earnings" },
-        { "period": "Q2 2025", "revenue_musd": 332, "adj_ebitda_musd": 80,  "ebitda_margin_pct": 24.1, "utilization_pct": 74, "avg_day_rate_kusd": 390, "backlog_busd": 1.8, "source": "Q2 2025 Earnings" },
-        { "period": "Q3 2025", "revenue_musd": 363, "adj_ebitda_musd": 86,  "ebitda_margin_pct": 23.7, "utilization_pct": 75, "avg_day_rate_kusd": 398, "backlog_busd": 2.1, "source": "Q3 2025 Earnings" },
-        { "period": "Q4 2025", "revenue_musd": 362, "adj_ebitda_musd": 88,  "ebitda_margin_pct": 24.3, "utilization_pct": 75, "avg_day_rate_kusd": 400, "backlog_busd": 2.5, "source": "Q4 2025 Earnings (Feb 2026)" }
+        {
+          "period": "Q1 2025",
+          "revenue_musd": 335,
+          "adj_ebitda_musd": 99,
+          "ebitda_margin_pct": 29.6,
+          "utilization_pct": 78,
+          "avg_day_rate_kusd": 395,
+          "backlog_busd": 1.6,
+          "source": "Q1 2025 Earnings",
+          "highlights": [
+            "파산 재편(2022) 후 안정적 운영 기반 확립",
+            "드릴십 포트폴리오 집중 — 잭업 제로",
+            "West Africa 및 중동 시장 선택적 계약 전략",
+            "Backlog $1.6B — 계약 기간 짧아 갱신 리스크 존재"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 332,
+          "adj_ebitda_musd": 80,
+          "ebitda_margin_pct": 24.1,
+          "utilization_pct": 74,
+          "avg_day_rate_kusd": 390,
+          "backlog_busd": 1.8,
+          "source": "Q2 2025 Earnings",
+          "highlights": [
+            "드릴십 일부 계약 공백(gap) 발생으로 EBITDA 마진 하락",
+            "EBITDA 마진 24.1%로 분기 내 하락",
+            "Seadrill Aquila West Africa 신규 계약 확보",
+            "Backlog $1.8B로 소폭 상승"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 363,
+          "adj_ebitda_musd": 86,
+          "ebitda_margin_pct": 23.7,
+          "utilization_pct": 75,
+          "avg_day_rate_kusd": 398,
+          "backlog_busd": 2.1,
+          "source": "Q3 2025 Earnings",
+          "highlights": [
+            "Revenue $363M으로 분기 최고 — 드릴십 재계약 성공",
+            "West Jupiter, West Ceres 연속 계약 확보",
+            "Backlog $2.1B로 상승 — 계약 가시성 개선",
+            "드릴십 시장 공급 타이트 전망으로 2026년 day rate 상승 기대"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 362,
+          "adj_ebitda_musd": 88,
+          "ebitda_margin_pct": 24.3,
+          "utilization_pct": 75,
+          "avg_day_rate_kusd": 400,
+          "backlog_busd": 2.5,
+          "source": "Q4 2025 Earnings (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $1.44B, EBITDA $353M 확정",
+            "2026 가이던스: Revenue $1.40–1.45B, EBITDA $350–400M",
+            "Backlog $2.5B — 드릴십 8기 중 5기 계약 확보",
+            "2026 capex $200–240M — 장기 유지보수 포함",
+            "안전 기록 신기록 달성 — TRIR(총 재해율) 업계 최저 수준"
+          ]
+        }
       ]
     },
     {
       "name": "Borr Drilling",
       "ticker": "BORR",
-      "note": "Pure-play jackup driller. 29 modern jackups (all post-2008). Acquired 5 Noble jackups Jan 2026",
+      "note": "Pure-play jackup. 29 modern jackups (all post-2008). Acquired 5 Noble jackups Jan 2026. Q1 2026 reports May 20.",
       "quarters": [
-        { "period": "Q1 2025", "revenue_musd": 236, "adj_ebitda_musd": 108, "ebitda_margin_pct": 45.8, "utilization_pct": 84, "avg_day_rate_kusd": 138, "backlog_busd": 1.3, "source": "Q1 2025 Earnings" },
-        { "period": "Q2 2025", "revenue_musd": 248, "adj_ebitda_musd": 115, "ebitda_margin_pct": 46.4, "utilization_pct": 85, "avg_day_rate_kusd": 140, "backlog_busd": 1.2, "source": "Q2 2025 Earnings" },
-        { "period": "Q3 2025", "revenue_musd": 255, "adj_ebitda_musd": 120, "ebitda_margin_pct": 47.1, "utilization_pct": 86, "avg_day_rate_kusd": 142, "backlog_busd": 1.2, "source": "Q3 2025 Earnings" },
-        { "period": "Q4 2025", "revenue_musd": 259, "adj_ebitda_musd": 118, "ebitda_margin_pct": 45.6, "utilization_pct": 85, "avg_day_rate_kusd": 143, "backlog_busd": 1.2, "source": "Q4 2025 Earnings (Feb 2026)" }
+        {
+          "period": "Q1 2025",
+          "revenue_musd": 236,
+          "adj_ebitda_musd": 108,
+          "ebitda_margin_pct": 45.8,
+          "utilization_pct": 84,
+          "avg_day_rate_kusd": 138,
+          "backlog_busd": 1.3,
+          "source": "Q1 2025 Earnings",
+          "highlights": [
+            "EBITDA 마진 45.8% — 업계 최고 수준",
+            "순수 프리미엄 잭업 포트폴리오의 운영 효율 입증",
+            "중동·동남아 드릴링 수요 견조",
+            "신조 리그 2기 인도 예정 — Fleet 확장 가속"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 248,
+          "adj_ebitda_musd": 115,
+          "ebitda_margin_pct": 46.4,
+          "utilization_pct": 85,
+          "avg_day_rate_kusd": 140,
+          "backlog_busd": 1.2,
+          "source": "Q2 2025 Earnings",
+          "highlights": [
+            "Day rate $140K로 상승 — 중동 프리미엄 잭업 수요 강세",
+            "EBITDA 마진 46.4%로 분기 최고",
+            "중동 및 동남아 신규 계약 추가",
+            "Noble 잭업 인수 협상 본격화"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 255,
+          "adj_ebitda_musd": 120,
+          "ebitda_margin_pct": 47.1,
+          "utilization_pct": 86,
+          "avg_day_rate_kusd": 142,
+          "backlog_busd": 1.2,
+          "source": "Q3 2025 Earnings",
+          "highlights": [
+            "가동률 86%로 상승 — 분기 최고",
+            "EBITDA 마진 47.1% 달성",
+            "신규 프리미엄 잭업 리그 3기 인도 완료",
+            "Noble 잭업 5기 인수 $175M 합의 발표"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 259,
+          "adj_ebitda_musd": 118,
+          "ebitda_margin_pct": 45.6,
+          "utilization_pct": 85,
+          "avg_day_rate_kusd": 143,
+          "backlog_busd": 1.2,
+          "source": "Q4 2025 Earnings (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $998M, Adj. EBITDA $470M",
+            "Noble 잭업 5기 인수 완료(2026.01) — Fleet 29기로 확대",
+            "인수 리그 즉시 중동 계약 투입 예정",
+            "Q1 2026 결과 발표 예정: 2026.05.20",
+            "잭업 공급 타이트 유지 — 2026년 Day rate 상승 기대"
+          ]
+        }
       ]
     }
   ]
