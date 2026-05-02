@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earnings Dashboard — MODU Intelligence</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <!-- Tabulator CDN -->
+  <link href="https://unpkg.com/tabulator-tables@6.2.1/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
+  <style>
+    /* ─── CSS Variables ─── */
+    :root {
+      --bg:         #0d1117;
+      --panel:      #161b22;
+      --border:     #30363d;
+      --accent:     #00d4aa;
+      --text:       #e6edf3;
+      --text-muted: #8b949e;
+      --green:      #3fb950;
+      --red:        #f85149;
+      --yellow:     #d29922;
+      --blue:       #58a6ff;
+      --orange:     #f0883e;
+      --font-body:  'Inter', sans-serif;
+      --font-mono:  'JetBrains Mono', monospace;
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .header-title h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .header-title .subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .nav-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .nav-link:hover { text-decoration: underline; }
+    .header-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    .header-meta .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-meta .meta-row .label { color: var(--text-muted); }
+    .header-meta .meta-row .value { color: var(--accent); font-weight: 500; }
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ─── Panel ─── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .panel-body {
+      padding: 16px;
+    }
+
+    /* ─── Section Label ─── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+
+    /* ─── Comparison Section ─── */
+    .comparison-section {
+      margin-bottom: 24px;
+    }
+
+    /* ─── Drilldown Panel ─── */
+    .drilldown-panel {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+      margin-bottom: 24px;
+    }
+    .drilldown-panel.open {
+      max-height: 900px;
+    }
+    .drilldown-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    #drilldown-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .close-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 18px;
+      line-height: 1;
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+    .close-btn:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    /* ─── KPI Grid ─── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 900px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .kpi-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .kpi-card:hover { border-color: var(--accent); }
+    .kpi-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 8px 0 0 8px;
+    }
+    .kpi-card.accent::before  { background: var(--accent); }
+    .kpi-card.green::before   { background: var(--green); }
+    .kpi-card.yellow::before  { background: var(--yellow); }
+    .kpi-card.blue::before    { background: var(--blue); }
+    .kpi-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+    .kpi-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      font-family: var(--font-mono);
+    }
+    .kpi-value .unit {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+
+    /* ─── Two-column layout ─── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    @media (max-width: 1024px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+    .two-col > div {
+      padding: 16px 18px;
+    }
+    .two-col > div:first-child {
+      border-right: 1px solid var(--border);
+    }
+
+    /* ─── Status Badges ─── */
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .badge-green   { background: rgba(63,185,80,0.15);  color: var(--green); }
+    .badge-yellow  { background: rgba(210,153,34,0.15); color: var(--yellow); }
+    .badge-red     { background: rgba(248,81,73,0.15);  color: var(--red); }
+    .badge-blue    { background: rgba(88,166,255,0.15); color: var(--blue); }
+    .badge-muted   { background: rgba(139,148,158,0.15); color: var(--text-muted); }
+    .badge-orange  { background: rgba(240,136,62,0.15); color: var(--orange); }
+
+    /* ─── Loading / Error ─── */
+    .loading {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 2;
+    }
+    .loading code {
+      font-family: var(--font-mono);
+      background: var(--border);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    /* ─── Tabulator Overrides ─── */
+    .tabulator {
+      background: transparent !important;
+      border: none !important;
+      font-family: var(--font-body) !important;
+      font-size: 12px !important;
+    }
+    .tabulator .tabulator-header {
+      background: rgba(48, 54, 61, 0.5) !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+    .tabulator .tabulator-header .tabulator-col {
+      background: transparent !important;
+      border-right: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+    }
+    .tabulator .tabulator-header .tabulator-col:last-child {
+      border-right: none !important;
+    }
+    .tabulator .tabulator-row {
+      background: transparent !important;
+      border-bottom: 1px solid var(--border) !important;
+      color: var(--text) !important;
+      cursor: pointer;
+    }
+    .tabulator .tabulator-row:last-child {
+      border-bottom: none !important;
+    }
+    .tabulator .tabulator-row:hover {
+      background: rgba(48, 54, 61, 0.4) !important;
+    }
+    .tabulator .tabulator-row.tabulator-selected,
+    .tabulator .tabulator-row.row-selected {
+      background: rgba(0, 212, 170, 0.08) !important;
+      border-left: 2px solid var(--accent) !important;
+    }
+    .tabulator .tabulator-row .tabulator-cell {
+      border-right: 1px solid var(--border) !important;
+      padding: 10px 12px !important;
+    }
+    .tabulator .tabulator-row .tabulator-cell:last-child {
+      border-right: none !important;
+    }
+    .tabulator .tabulator-footer {
+      background: transparent !important;
+      border-top: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      font-size: 11px !important;
+    }
+    .tabulator-tableholder {
+      background: transparent !important;
+    }
+    .tabulator-placeholder {
+      background: transparent !important;
+      color: var(--text-muted) !important;
+    }
+
+    /* mono values */
+    .mono {
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    /* chart title */
+    .chart-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+    .chart-container {
+      position: relative;
+      height: 260px;
+    }
+
+    /* detail table label */
+    .detail-table-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-title">
+      <h1>Drilling Contractor — Earnings Dashboard</h1>
+      <span class="subtitle">Quarterly Financial Performance</span>
+    </div>
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">← Fleet Dashboard</a>
+      </nav>
+      <div class="header-meta" id="header-meta">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Comparison Table Section -->
+  <section class="comparison-section">
+    <div class="section-label">LATEST QUARTER COMPARISON — Q4 2025</div>
+    <div class="panel">
+      <div id="comparison-table"></div>
+    </div>
+  </section>
+
+  <!-- Drill-down Panel -->
+  <div class="drilldown-panel" id="drilldown-panel">
+    <div class="panel">
+      <div class="drilldown-header">
+        <span id="drilldown-title"></span>
+        <button class="close-btn" id="close-drilldown">×</button>
+      </div>
+      <div class="kpi-grid" id="drilldown-kpis"></div>
+      <div class="two-col">
+        <div>
+          <div class="chart-title">Revenue &amp; EBITDA Margin — Quarterly</div>
+          <div class="chart-container">
+            <canvas id="detail-chart"></canvas>
+          </div>
+        </div>
+        <div>
+          <div class="detail-table-label">All Quarters</div>
+          <div id="detail-table"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  let earningsData = null;
+  let comparisonTable = null;
+  let detailChart = null;
+  let detailTable = null;
+  let selectedCompany = null;
+
+  function esc(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* ─── Color helpers ─── */
+  function marginColor(pct) {
+    if (pct >= 40) return 'var(--green)';
+    if (pct >= 25) return 'var(--yellow)';
+    return 'var(--red)';
+  }
+
+  function utilizationColor(pct) {
+    if (pct >= 85) return 'var(--green)';
+    if (pct >= 75) return 'var(--yellow)';
+    return 'var(--red)';
+  }
+
+  /* ─── Load data ─── */
+  async function loadData() {
+    try {
+      const res = await fetch('./data/earnings.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      earningsData = await res.json();
+    } catch (err) {
+      document.querySelector('.container').innerHTML +=
+        `<div class="loading">&#9888; 데이터 로드 실패: ${err.message}<br>로컬 서버로 실행하세요: <code>python3 -m http.server 8080</code></div>`;
+      return false;
+    }
+    return true;
+  }
+
+  /* ─── Render header meta ─── */
+  function renderHeaderMeta() {
+    const el = document.getElementById('header-meta');
+    el.innerHTML = `
+      <div class="meta-row">
+        <span class="live-dot"></span>
+        <span class="label">Updated:</span>
+        <span class="value">${esc(earningsData.updated)}</span>
+      </div>
+    `;
+  }
+
+  /* ─── Render comparison table ─── */
+  function renderComparisonTable(companies) {
+    // Build table data from Q4 2025 (last quarter) of each company
+    const tableData = companies.map(c => {
+      const q4 = c.quarters[c.quarters.length - 1];
+      return {
+        name: c.name,
+        ticker: c.ticker,
+        isMerger: c.ticker === 'VAL',
+        revenue_musd: q4.revenue_musd,
+        adj_ebitda_musd: q4.adj_ebitda_musd,
+        ebitda_margin_pct: q4.ebitda_margin_pct,
+        utilization_pct: q4.utilization_pct,
+        avg_day_rate_kusd: q4.avg_day_rate_kusd,
+        backlog_busd: q4.backlog_busd,
+        note: c.note,
+        _company: c,
+      };
+    });
+
+    if (comparisonTable) {
+      comparisonTable.destroy();
+      comparisonTable = null;
+    }
+
+    comparisonTable = new Tabulator('#comparison-table', {
+      data: tableData,
+      layout: 'fitColumns',
+      columns: [
+        {
+          title: 'Company',
+          field: 'name',
+          minWidth: 180,
+          widthGrow: 1.4,
+          frozen: true,
+          formatter: function(cell) {
+            const row = cell.getData();
+            const mergerBadge = row.isMerger
+              ? ' <span class="badge badge-yellow" style="font-size:10px">&#9888; Merger Pending</span>'
+              : '';
+            return `<span style="font-weight:600;color:var(--text)">${esc(row.name)}</span>
+                    <span class="badge badge-muted" style="margin-left:6px;font-size:10px">${esc(row.ticker)}</span>${mergerBadge}`;
+          },
+        },
+        {
+          title: 'Revenue ($M)',
+          field: 'revenue_musd',
+          minWidth: 110,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            return `<span class="mono" style="color:var(--text)">${v.toLocaleString()}</span>`;
+          },
+        },
+        {
+          title: 'Adj. EBITDA ($M)',
+          field: 'adj_ebitda_musd',
+          minWidth: 130,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const pct = cell.getData().ebitda_margin_pct;
+            const color = marginColor(pct);
+            return `<span class="mono" style="color:${color};font-weight:600">${v.toLocaleString()}</span>`;
+          },
+        },
+        {
+          title: 'EBITDA Margin (%)',
+          field: 'ebitda_margin_pct',
+          minWidth: 140,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const color = marginColor(v);
+            return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`;
+          },
+        },
+        {
+          title: 'Utilization (%)',
+          field: 'utilization_pct',
+          minWidth: 120,
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const color = utilizationColor(v);
+            return `<span class="mono" style="color:${color}">${v}%</span>`;
+          },
+        },
+        {
+          title: 'Avg Day Rate (k$)',
+          field: 'avg_day_rate_kusd',
+          minWidth: 140,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            return `<span class="mono" style="color:var(--accent);font-weight:500">${v}</span>`;
+          },
+        },
+        {
+          title: 'Backlog ($B)',
+          field: 'backlog_busd',
+          minWidth: 110,
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`;
+          },
+        },
+        {
+          title: 'Note',
+          field: 'note',
+          minWidth: 200,
+          widthGrow: 2,
+          formatter: function(cell) {
+            const v = cell.getValue();
+            return `<span style="color:var(--text-muted);font-size:11px">${esc(v)}</span>`;
+          },
+        },
+      ],
+      rowClick: function(e, row) {
+        const data = row.getData();
+        const company = data._company;
+
+        // Deselect all rows visually
+        comparisonTable.getRows().forEach(r => {
+          r.getElement().classList.remove('row-selected');
+        });
+
+        if (selectedCompany && selectedCompany.name === company.name) {
+          // Same row clicked again — close drilldown
+          closeDrillDown();
+        } else {
+          // New row clicked
+          row.getElement().classList.add('row-selected');
+          renderDrillDown(company);
+        }
+      },
+    });
+  }
+
+  /* ─── Render drill-down ─── */
+  function renderDrillDown(company) {
+    selectedCompany = company;
+    const panel = document.getElementById('drilldown-panel');
+    const q4 = company.quarters[company.quarters.length - 1];
+
+    // Title
+    const mergerBadge = company.ticker === 'VAL'
+      ? ' <span class="badge badge-yellow" style="font-size:11px">&#9888; Merger Pending</span>'
+      : '';
+    document.getElementById('drilldown-title').innerHTML =
+      `${esc(company.name)} <span class="badge badge-muted" style="font-size:12px">${esc(company.ticker)}</span>${mergerBadge}`;
+
+    // KPI cards
+    document.getElementById('drilldown-kpis').innerHTML = `
+      <div class="kpi-card accent">
+        <div class="kpi-label">Latest Revenue</div>
+        <div class="kpi-value">${q4.revenue_musd.toLocaleString()}<span class="unit">$M</span></div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">Latest Adj. EBITDA</div>
+        <div class="kpi-value">${q4.adj_ebitda_musd.toLocaleString()}<span class="unit">$M</span></div>
+      </div>
+      <div class="kpi-card yellow">
+        <div class="kpi-label">EBITDA Margin</div>
+        <div class="kpi-value">${q4.ebitda_margin_pct.toFixed(1)}<span class="unit">%</span></div>
+      </div>
+      <div class="kpi-card blue">
+        <div class="kpi-label">Backlog</div>
+        <div class="kpi-value">${q4.backlog_busd.toFixed(1)}<span class="unit">$B</span></div>
+      </div>
+    `;
+
+    // Open panel
+    panel.classList.add('open');
+
+    // Scroll into view
+    setTimeout(() => {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 50);
+
+    // Render chart and table
+    renderDetailChart(company);
+    renderDetailTable(company);
+  }
+
+  /* ─── Close drill-down ─── */
+  function closeDrillDown() {
+    selectedCompany = null;
+    const panel = document.getElementById('drilldown-panel');
+    panel.classList.remove('open');
+
+    // Deselect all rows
+    if (comparisonTable) {
+      comparisonTable.getRows().forEach(r => {
+        r.getElement().classList.remove('row-selected');
+      });
+    }
+
+    // Destroy chart
+    if (detailChart) {
+      detailChart.destroy();
+      detailChart = null;
+    }
+    if (detailTable) {
+      detailTable.destroy();
+      detailTable = null;
+    }
+  }
+
+  /* ─── Render detail chart ─── */
+  function renderDetailChart(company) {
+    const labels = company.quarters.map(q => q.period);
+    const revenues = company.quarters.map(q => q.revenue_musd);
+    const margins = company.quarters.map(q => q.ebitda_margin_pct);
+
+    const canvas = document.getElementById('detail-chart');
+    if (detailChart) {
+      detailChart.destroy();
+      detailChart = null;
+    }
+
+    const ctx = canvas.getContext('2d');
+    detailChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            type: 'bar',
+            label: 'Revenue ($M)',
+            data: revenues,
+            backgroundColor: '#58a6ff55',
+            borderColor: '#58a6ff',
+            borderWidth: 1,
+            borderRadius: 3,
+            yAxisID: 'y',
+          },
+          {
+            type: 'line',
+            label: 'EBITDA Margin (%)',
+            data: margins,
+            borderColor: '#00d4aa',
+            backgroundColor: '#00d4aa22',
+            borderWidth: 2,
+            pointRadius: 4,
+            pointBackgroundColor: '#00d4aa',
+            tension: 0.3,
+            yAxisID: 'y2',
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: 'index',
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              color: '#8b949e',
+              font: { size: 11, family: "'Inter', sans-serif" },
+              boxWidth: 12,
+              padding: 14,
+            },
+          },
+          tooltip: {
+            backgroundColor: '#161b22',
+            borderColor: '#30363d',
+            borderWidth: 1,
+            titleColor: '#e6edf3',
+            bodyColor: '#8b949e',
+            padding: 10,
+          },
+        },
+        scales: {
+          x: {
+            grid: { color: '#30363d33' },
+            ticks: {
+              color: '#8b949e',
+              font: { size: 10, family: "'JetBrains Mono', monospace" },
+            },
+          },
+          y: {
+            position: 'left',
+            grid: { color: '#30363d55' },
+            ticks: {
+              color: '#8b949e',
+              font: { size: 10, family: "'JetBrains Mono', monospace" },
+              callback: v => '$' + v + 'M',
+            },
+            title: {
+              display: true,
+              text: 'Revenue ($M)',
+              color: '#58a6ff',
+              font: { size: 10 },
+            },
+          },
+          y2: {
+            position: 'right',
+            grid: { drawOnChartArea: false },
+            ticks: {
+              color: '#8b949e',
+              font: { size: 10, family: "'JetBrains Mono', monospace" },
+              callback: v => v + '%',
+            },
+            title: {
+              display: true,
+              text: 'EBITDA Margin (%)',
+              color: '#00d4aa',
+              font: { size: 10 },
+            },
+          },
+        },
+      },
+    });
+  }
+
+  /* ─── Render detail table ─── */
+  function renderDetailTable(company) {
+    const tableData = company.quarters.map(q => ({
+      period: q.period,
+      revenue_musd: q.revenue_musd,
+      adj_ebitda_musd: q.adj_ebitda_musd,
+      ebitda_margin_pct: q.ebitda_margin_pct,
+      utilization_pct: q.utilization_pct,
+      avg_day_rate_kusd: q.avg_day_rate_kusd,
+      backlog_busd: q.backlog_busd,
+    }));
+
+    if (detailTable) {
+      detailTable.destroy();
+      detailTable = null;
+    }
+
+    detailTable = new Tabulator('#detail-table', {
+      data: tableData,
+      layout: 'fitColumns',
+      columns: [
+        {
+          title: 'Period',
+          field: 'period',
+          widthGrow: 0.8,
+          formatter: function(cell) {
+            return `<span class="mono" style="color:var(--text)">${esc(cell.getValue())}</span>`;
+          },
+        },
+        {
+          title: 'Revenue ($M)',
+          field: 'revenue_musd',
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            return `<span class="mono">${cell.getValue().toLocaleString()}</span>`;
+          },
+        },
+        {
+          title: 'EBITDA ($M)',
+          field: 'adj_ebitda_musd',
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const pct = cell.getData().ebitda_margin_pct;
+            const color = marginColor(pct);
+            return `<span class="mono" style="color:${color}">${v.toLocaleString()}</span>`;
+          },
+        },
+        {
+          title: 'Margin (%)',
+          field: 'ebitda_margin_pct',
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const color = marginColor(v);
+            return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`;
+          },
+        },
+        {
+          title: 'Util. (%)',
+          field: 'utilization_pct',
+          widthGrow: 0.6,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            const v = cell.getValue();
+            const color = utilizationColor(v);
+            return `<span class="mono" style="color:${color}">${v}%</span>`;
+          },
+        },
+        {
+          title: 'Day Rate (k$)',
+          field: 'avg_day_rate_kusd',
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            return `<span class="mono" style="color:var(--accent)">${cell.getValue()}</span>`;
+          },
+        },
+        {
+          title: 'Backlog ($B)',
+          field: 'backlog_busd',
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: function(cell) {
+            return `<span class="mono" style="color:var(--blue)">${cell.getValue().toFixed(1)}</span>`;
+          },
+        },
+      ],
+    });
+  }
+
+  /* ─── Init ─── */
+  async function init() {
+    const ok = await loadData();
+    if (!ok) return;
+
+    renderHeaderMeta();
+    renderComparisonTable(earningsData.companies);
+
+    document.getElementById('close-drilldown').addEventListener('click', closeDrillDown);
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
