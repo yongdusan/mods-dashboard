@@ -1281,17 +1281,18 @@
           formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },
       ],
-      rowClick: function(e, row) {
-        const data = row.getData();
-        const company = data._company;
-        capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
-        if (selectedCapexCompany && selectedCapexCompany.name === company.name) {
-          closeCapexDrilldown();
-        } else {
-          row.getElement().classList.add('row-selected');
-          renderCapexDrilldown(company);
-        }
-      },
+    });
+
+    capexTable.on('rowClick', function(e, row) {
+      const data = row.getData();
+      const company = data._company;
+      capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+      if (selectedCapexCompany && selectedCapexCompany.name === company.name) {
+        closeCapexDrilldown();
+      } else {
+        row.getElement().classList.add('row-selected');
+        renderCapexDrilldown(company);
+      }
     });
   }
 
