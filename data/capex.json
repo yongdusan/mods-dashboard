@@ -32,8 +32,8 @@
             "detail": { "operator": "Equinor (30.58%)", "partners": ["Petoro 56%", "Shell 8.1%", "TotalEnergies 3.69%", "ConocoPhillips 1.62%"], "water_depth_m": 340, "reserves_mmboe": 5600, "fid": "1986", "first_oil": "1996-10", "peak_year": "2001", "vessel": "Troll A (콘크리트 GBS), Troll B·C (반잠수식 FPU)", "rig_demand": "반잠수식 리그 1기 — 유지보수 시추 연간 5~8공", "source": "Equinor IR / NPD" }
           },
           {
-            "name": "Wisting (Arctic NCS)", "region": "Barents Sea", "type": "Offshore", "status": "Planning", "capacity_kboed": 100, "notes": "바렌츠해 북극권 유전. 노르웨이 최북단 개발 프로젝트. 개발 방식 검토 중.",
-            "detail": { "operator": "OMV (25%)", "partners": ["Equinor 35%", "Petoro 20%", "Aker BP 20%"], "water_depth_m": 400, "reserves_mmboe": 440, "fid": "미정 (2028 이후)", "first_oil": "2033+ (예정)", "peak_year": null, "vessel": "얼음 강화형 FPSO 또는 고정식 플랫폼 검토 중", "rig_demand": "북극 강화형 반잠수식 리그 필요 — 현재 미계획", "source": "OMV IR / Norwegian Petroleum Directorate" }
+            "name": "Johan Castberg (Barents Sea)", "region": "Barents Sea", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 220, "notes": "바렌츠해 최대 개발 프로젝트. 2024년 1월 first oil. 매장량 650 MMboe. Equinor 운영.",
+            "detail": { "operator": "Equinor (50%)", "partners": ["Var Energi 30%", "PGNiG Upstream Norway 20%"], "water_depth_m": 360, "reserves_mmboe": 650, "fid": "2018-11", "first_oil": "2024-01", "peak_year": "2026", "vessel": "Johan Castberg FPSO (Aker Solutions, 30년 설계 수명)", "rig_demand": "반잠수식 리그 1기 — 인필 시추 및 유지보수 연 3~5공", "source": "Equinor IR / Norwegian Petroleum Directorate" }
           }
         ],
         "drilling_highlights": [
@@ -118,8 +118,8 @@
             "detail": { "operator": "Shell (55%)", "partners": ["NNPC 20%", "TotalEnergies 12.5%", "ENI 12.5%"], "water_depth_m": 1000, "reserves_mmboe": 300, "fid": "2024-Q3", "first_oil": "2028 (예정)", "peak_year": "2029", "vessel": "Bonga North FPSO (신조)", "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추", "source": "Shell IR / Upstream Online" }
           },
           {
-            "name": "LNG Portfolio", "region": "Global", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "연간 LNG 70+Mtpa 포트폴리오 유지. Qatar, Australia, Nigeria, Malaysia.",
-            "detail": { "operator": "Shell", "partners": ["QatarEnergy (Qatargas)", "Woodside (Australia)", "NLNG (Nigeria)"], "water_depth_m": null, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "LNG 액화 트레인 (육상/FLNG)", "rig_demand": "MODU 직접 수요 제한적 — 가스전 유지 시추만 해당", "source": "Shell Annual Report 2025" }
+            "name": "Crux / Prelude FLNG (Australia)", "region": "Asia Pacific", "type": "Deepwater FLNG", "status": "Under Development", "capacity_kboed": 60, "notes": "Browse Basin 가스전. Prelude FLNG 피드가스 공급. FID 2022. 2028년 first gas 목표.",
+            "detail": { "operator": "Shell (50%)", "partners": ["INPEX 17.5%", "Osaka Gas 17.5%", "KOGAS 15%"], "water_depth_m": 200, "reserves_mmboe": 700, "fid": "2022", "first_oil": "2028 (first gas, 예정)", "peak_year": "2030", "vessel": "Prelude FLNG (Shell, 세계 최대 FLNG)", "rig_demand": "반잠수식 리그 1기 — 개발정 시추 2026~2027년", "source": "Shell IR / Offshore Energy" }
           }
         ],
         "drilling_highlights": [
@@ -235,8 +235,8 @@
             "detail": { "operator": "TotalEnergies (40%)", "partners": ["Sonangol 30%", "ENI 15%", "Galp 15%"], "water_depth_m": 1800, "reserves_mmboe": 450, "fid": "2023-11", "first_oil": "2027 (예정)", "peak_year": "2028", "vessel": "Kaminho FPSO (SBM Offshore)", "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 개발정 시추", "source": "TotalEnergies IR / Upstream Online" }
           },
           {
-            "name": "Ballossorie (Angola)", "region": "West Africa", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Block 48 탐사. 대형 가스·콘덴세이트 발견.",
-            "detail": { "operator": "TotalEnergies (50%)", "partners": ["Sonangol 50%"], "water_depth_m": 2000, "reserves_mmboe": null, "fid": "미정", "first_oil": "2030+ (예정)", "peak_year": null, "vessel": "미정", "rig_demand": "드릴십 1기 — 추가 평가정 시추 예정", "source": "TotalEnergies IR / Offshore Energy" }
+            "name": "Venus (Namibia)", "region": "West Africa", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Orange Basin Block 2913B. 약 3 Bboe 자원량 추정, 수십 년 만의 최대 아프리카 deepwater 발견. FID 준비 중.",
+            "detail": { "operator": "TotalEnergies (40%)", "partners": ["QatarEnergy 30%", "Impact Oil & Gas 20%", "NAMCOR 10%"], "water_depth_m": 3000, "reserves_mmboe": 3000, "fid": "2026 (예상)", "first_oil": "2030+ (예상)", "peak_year": "2032–2035 (예상)", "vessel": "FPSO (설계 준비 중)", "rig_demand": "드릴십 2~3기 — 추가 평가정 및 개발정 계획, 시장 최고급 UDW 리그 필요", "source": "TotalEnergies IR / Offshore Magazine 2024" }
           },
           {
             "name": "Ikike (Nigeria)", "region": "West Africa", "type": "Offshore", "status": "On Production", "capacity_kboed": 50, "notes": "OML 99. TTE 24% 지분. 2022 first oil.",
@@ -249,13 +249,18 @@
           {
             "name": "Al Shaheen (Qatar)", "region": "Middle East", "type": "Offshore", "status": "On Production", "capacity_kboed": 300, "notes": "Qatar 최대 해상 유전. TTE 30% op. 장기 계약 2024년 갱신.",
             "detail": { "operator": "TotalEnergies (30%)", "partners": ["QatarEnergy 70%"], "water_depth_m": 70, "reserves_mmboe": 4000, "fid": "1994", "first_oil": "1994-09", "peak_year": "2026", "vessel": "고정식 플랫폼 다수 + FPSO", "rig_demand": "잭업 리그 2~3기 — 유지보수 및 인필 시추", "source": "TotalEnergies IR / Offshore Magazine" }
+          },
+          {
+            "name": "Grand Tortue Ahmeyim LNG (GTA)", "region": "West Africa", "type": "FLNG", "status": "On Production", "capacity_kboed": 80, "notes": "세네갈·모리타니아 해상 경계 LNG 프로젝트. Phase 1 2024년 first LNG. Phase 2 FID 준비 중.",
+            "detail": { "operator": "TotalEnergies (55.9% Mauritania / 50% Senegal)", "partners": ["bp 26.7%", "Kosmos Energy 9.9%", "SMHPM/PETROSEN 7.5%"], "water_depth_m": 2700, "reserves_mmboe": 1800, "fid": "2019 (Phase 1)", "first_oil": "2024-01 (first LNG)", "peak_year": "2025 (Phase 1) / 2030 (Phase 2)", "vessel": "Golar Tundra FLNG (임차, Phase 1)", "rig_demand": "드릴십 1기 — Phase 2 개발정 시추 2026~2027년 예상", "source": "TotalEnergies IR / Offshore Energy" }
           }
         ],
         "drilling_highlights": [
           "Angola Kaminho 개발정 시추 착수 — 드릴십 1기 전용 배치",
           "Brazil Mero 3·4 연계 개발정 지속 시추",
-          "Africa deepwater 탐사 캠페인 유지 — 연 2~3공",
-          "2026년 upstream 드릴링 예산 $2.5B 추정"
+          "Namibia Venus 추가 평가정 시추 — UDW 드릴십 필요",
+          "GTA Phase 2 FID 준비 — 드릴십 수요 2026년 후반 예상",
+          "Africa deepwater 탐사 캠페인 유지 — 연 2~3공"
         ]
       }
     },
