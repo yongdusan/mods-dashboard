@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Earnings Dashboard — Offshore Intelligence</title>
+  <title>FPSO Earnings — Offshore Intelligence</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,14 @@
       font-weight: 500;
     }
     .nav-link:hover { text-decoration: underline; }
+    .nav-link.active {
+      color: var(--text);
+      background: rgba(0,212,170,0.12);
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      padding: 2px 8px;
+      pointer-events: none;
+    }
     .header-meta {
       display: flex;
       flex-direction: column;
@@ -223,6 +231,7 @@
     .kpi-card.green::before   { background: var(--green); }
     .kpi-card.yellow::before  { background: var(--yellow); }
     .kpi-card.blue::before    { background: var(--blue); }
+    .kpi-card.orange::before  { background: var(--orange); }
     .kpi-label {
       font-size: 10px;
       font-weight: 600;
@@ -442,6 +451,23 @@
       letter-spacing: 0.6px;
       margin-bottom: 12px;
     }
+
+    /* ─── Page title section ─── */
+    .page-title-section {
+      margin-bottom: 24px;
+    }
+    .page-title-section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+    .page-title-section .page-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
   </style>
 </head>
 <body>
@@ -451,20 +477,27 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Intelligence Dashboard</h1>
-      <span class="subtitle">Drilling Contractor — Quarterly Financial Performance</span>
+      <span class="subtitle">FPSO Operating Company — Quarterly Financial Performance</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
         <a href="index.html" class="nav-link">← Fleet Dashboard</a>
         <a href="fpso.html" class="nav-link">FPSO &amp; FLNG</a>
-        <a href="fpso_earnings.html" class="nav-link">FPSO Earnings</a>
+        <a href="earnings.html" class="nav-link">Drilling Earnings</a>
         <a href="news.html" class="nav-link">News</a>
+        <span class="nav-link active">FPSO Earnings</span>
       </nav>
       <div class="header-meta" id="header-meta">
         <!-- populated by JS -->
       </div>
     </div>
   </header>
+
+  <!-- Page Title -->
+  <div class="page-title-section">
+    <h2>FPSO 운영사 실적 분석</h2>
+    <div class="page-subtitle">분기별 수익성 · 수주잔량 · 임대설비 현황</div>
+  </div>
 
   <!-- Comparison Table Section -->
   <section class="comparison-section">
@@ -549,16 +582,10 @@
     return 'var(--red)';
   }
 
-  function utilizationColor(pct) {
-    if (pct >= 85) return 'var(--green)';
-    if (pct >= 75) return 'var(--yellow)';
-    return 'var(--red)';
-  }
-
   /* ─── Load data ─── */
   async function loadData() {
     try {
-      const res = await fetch('./data/earnings.json');
+      const res = await fetch('./data/fpso_earnings.json');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       earningsData = await res.json();
     } catch (err) {
@@ -590,23 +617,20 @@
       return {
         name: c.name,
         ticker: c.ticker,
+        type: c.type,
         period: latest.period,
-        isMerger: c.ticker === 'VAL',
         revenue_musd:      latest.revenue_musd,
         adj_ebitda_musd:   latest.adj_ebitda_musd,
         ebitda_margin_pct: latest.ebitda_margin_pct,
-        utilization_pct:   latest.utilization_pct,
-        avg_day_rate_kusd: latest.avg_day_rate_kusd,
+        units_on_lease:    latest.units_on_lease,
         backlog_busd:      latest.backlog_busd,
-        note: c.note,
         _company: c,
         // previous quarter for QoQ reference
         prev_period:         prev ? prev.period : null,
         prev_revenue_musd:   prev ? prev.revenue_musd : null,
         prev_ebitda_musd:    prev ? prev.adj_ebitda_musd : null,
         prev_margin_pct:     prev ? prev.ebitda_margin_pct : null,
-        prev_util_pct:       prev ? prev.utilization_pct : null,
-        prev_day_rate_kusd:  prev ? prev.avg_day_rate_kusd : null,
+        prev_units_on_lease: prev ? prev.units_on_lease : null,
         prev_backlog_busd:   prev ? prev.backlog_busd : null,
       };
     });
@@ -636,11 +660,11 @@
           frozen: true,
           formatter: function(cell) {
             const row = cell.getData();
-            const mergerBadge = row.isMerger
-              ? ' <span class="badge badge-yellow" style="font-size:10px">&#9888; Merger Pending</span>'
-              : '';
+            const typeBadge = row.type === 'FLNG Specialist'
+              ? ' <span class="badge badge-orange" style="font-size:10px">FLNG</span>'
+              : ' <span class="badge badge-blue" style="font-size:10px">FPSO</span>';
             return `<span style="font-weight:600;color:var(--text)">${esc(row.name)}</span>
-                    <span class="badge badge-muted" style="margin-left:6px;font-size:10px">${esc(row.ticker)}</span>${mergerBadge}`;
+                    <span class="badge badge-muted" style="margin-left:6px;font-size:10px">${esc(row.ticker)}</span>${typeBadge}`;
           },
         },
         {
@@ -651,7 +675,7 @@
           hozAlign: 'center',
           formatter: function(cell) {
             const v = cell.getValue();
-            const isLatest = v && v.includes('2026');
+            const isLatest = v && v.includes('2025');
             const color = isLatest ? 'var(--accent)' : 'var(--text-muted)';
             return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>`;
           },
@@ -698,30 +722,14 @@
           },
         },
         {
-          title: 'Utilization (%)',
-          field: 'utilization_pct',
+          title: 'Units on Lease',
+          field: 'units_on_lease',
           minWidth: 130,
           widthGrow: 0.7,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            const row = cell.getData();
-            const color = utilizationColor(v);
-            return `<span class="mono" style="color:${color}">${v}%</span>`
-                 + deltaTag(v, row.prev_util_pct, row.prev_period, 'pp');
-          },
-        },
-        {
-          title: 'Avg Day Rate (k$)',
-          field: 'avg_day_rate_kusd',
-          minWidth: 150,
-          widthGrow: 0.8,
-          hozAlign: 'right',
-          formatter: function(cell) {
-            const v = cell.getValue();
-            const row = cell.getData();
-            return `<span class="mono" style="color:var(--accent);font-weight:500">${v}</span>`
-                 + deltaTag(v, row.prev_day_rate_kusd, row.prev_period, 'pct');
+            return `<span class="mono" style="color:var(--yellow);font-weight:600">${v}</span>`;
           },
         },
         {
@@ -735,16 +743,6 @@
             const row = cell.getData();
             return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`
                  + deltaTag(v, row.prev_backlog_busd, row.prev_period, 'pct');
-          },
-        },
-        {
-          title: 'Note',
-          field: 'note',
-          minWidth: 200,
-          widthGrow: 2,
-          formatter: function(cell) {
-            const v = cell.getValue();
-            return `<span style="color:var(--text-muted);font-size:11px">${esc(v)}</span>`;
           },
         },
       ],
@@ -774,33 +772,43 @@
     selectedCompany = company;
     const panel = document.getElementById('drilldown-panel');
     const latest = company.quarters[company.quarters.length - 1];
+    const prev = company.quarters.length >= 2 ? company.quarters[company.quarters.length - 2] : null;
 
     // Title
-    const mergerBadge = company.ticker === 'VAL'
-      ? ' <span class="badge badge-yellow" style="font-size:11px">&#9888; Merger Pending</span>'
-      : '';
+    const typeBadge = company.type === 'FLNG Specialist'
+      ? ' <span class="badge badge-orange" style="font-size:11px">FLNG</span>'
+      : ' <span class="badge badge-blue" style="font-size:11px">FPSO</span>';
     document.getElementById('drilldown-title').innerHTML =
       `${esc(company.name)} <span class="badge badge-muted" style="font-size:12px">${esc(company.ticker)}</span>` +
       ` <span class="badge badge-blue" style="font-size:11px;margin-left:4px">${esc(latest.period)}</span>` +
-      mergerBadge;
+      typeBadge;
 
     // KPI cards (latest quarter)
+    const revDelta = prev ? deltaTag(latest.revenue_musd, prev.revenue_musd, prev.period, 'pct') : '';
+    const ebitdaDelta = prev ? deltaTag(latest.adj_ebitda_musd, prev.adj_ebitda_musd, prev.period, 'pct') : '';
+    const marginDelta = prev ? deltaTag(latest.ebitda_margin_pct, prev.ebitda_margin_pct, prev.period, 'pp') : '';
+    const backlogDelta = prev ? deltaTag(latest.backlog_busd, prev.backlog_busd, prev.period, 'pct') : '';
+
     document.getElementById('drilldown-kpis').innerHTML = `
       <div class="kpi-card accent">
         <div class="kpi-label">${esc(latest.period)} Revenue</div>
         <div class="kpi-value">${latest.revenue_musd.toLocaleString()}<span class="unit">$M</span></div>
+        ${revDelta}
       </div>
       <div class="kpi-card green">
         <div class="kpi-label">${esc(latest.period)} Adj. EBITDA</div>
         <div class="kpi-value">${latest.adj_ebitda_musd.toLocaleString()}<span class="unit">$M</span></div>
+        ${ebitdaDelta}
       </div>
       <div class="kpi-card yellow">
         <div class="kpi-label">EBITDA Margin</div>
         <div class="kpi-value">${latest.ebitda_margin_pct.toFixed(1)}<span class="unit">%</span></div>
+        ${marginDelta}
       </div>
       <div class="kpi-card blue">
         <div class="kpi-label">Backlog</div>
         <div class="kpi-value">${latest.backlog_busd.toFixed(1)}<span class="unit">$B</span></div>
+        ${backlogDelta}
       </div>
     `;
 
@@ -1005,8 +1013,7 @@
       revenue_musd: q.revenue_musd,
       adj_ebitda_musd: q.adj_ebitda_musd,
       ebitda_margin_pct: q.ebitda_margin_pct,
-      utilization_pct: q.utilization_pct,
-      avg_day_rate_kusd: q.avg_day_rate_kusd,
+      units_on_lease: q.units_on_lease,
       backlog_busd: q.backlog_busd,
     }));
 
@@ -1060,23 +1067,13 @@
           },
         },
         {
-          title: 'Util. (%)',
-          field: 'utilization_pct',
-          widthGrow: 0.6,
+          title: 'Units on Lease',
+          field: 'units_on_lease',
+          widthGrow: 0.7,
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            const color = utilizationColor(v);
-            return `<span class="mono" style="color:${color}">${v}%</span>`;
-          },
-        },
-        {
-          title: 'Day Rate (k$)',
-          field: 'avg_day_rate_kusd',
-          widthGrow: 0.8,
-          hozAlign: 'right',
-          formatter: function(cell) {
-            return `<span class="mono" style="color:var(--accent)">${cell.getValue()}</span>`;
+            return `<span class="mono" style="color:var(--yellow)">${v}</span>`;
           },
         },
         {
@@ -1101,6 +1098,11 @@
     renderComparisonTable(earningsData.companies);
 
     document.getElementById('close-drilldown').addEventListener('click', closeDrillDown);
+
+    // ESC key closes drilldown
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeDrillDown();
+    });
   }
 
   init();
