@@ -400,6 +400,114 @@
     .header-nav { display: flex; gap: 16px; align-items: center; }
     .nav-link { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; }
     .nav-link:hover { text-decoration: underline; }
+
+    /* ─── Rig Detail Drawer ─── */
+    .drawer-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+    .drawer {
+      position: fixed; top: 0; right: 0; bottom: 0;
+      width: 480px; max-width: 95vw;
+      background: var(--panel);
+      border-left: 1px solid var(--border);
+      z-index: 101;
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      overflow-y: auto;
+      display: flex; flex-direction: column;
+    }
+    .drawer.open { transform: translateX(0); }
+
+    .drawer-header {
+      display: flex; align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: var(--panel);
+      z-index: 1;
+    }
+    .drawer-rig-name {
+      font-size: 18px; font-weight: 700;
+      color: var(--text); line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .drawer-rig-meta {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .drawer-close {
+      background: none; border: 1px solid var(--border);
+      border-radius: 6px; color: var(--text-muted);
+      cursor: pointer; font-size: 18px;
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-left: 12px;
+      transition: all 0.15s;
+    }
+    .drawer-close:hover { border-color: var(--red); color: var(--red); }
+
+    .drawer-body { padding: 20px 24px; flex: 1; }
+
+    .drawer-section {
+      margin-bottom: 24px;
+    }
+    .drawer-section-title {
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      color: var(--text-muted); margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .specs-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .spec-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    .spec-label {
+      font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      color: var(--text-muted); margin-bottom: 4px;
+    }
+    .spec-value {
+      font-size: 14px; font-weight: 600;
+      color: var(--text); font-family: var(--font-mono);
+    }
+    .spec-value.accent { color: var(--accent); }
+    .spec-value.blue   { color: var(--blue); }
+
+    .contract-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: 14px 16px;
+    }
+    .contract-row {
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .contract-row:last-child { border-bottom: none; }
+    .contract-row-label { font-size: 12px; color: var(--text-muted); }
+    .contract-row-value { font-size: 13px; font-weight: 500; color: var(--text); font-family: var(--font-mono); }
+
+    .region-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(88,166,255,0.1);
+      border: 1px solid rgba(88,166,255,0.3);
+      border-radius: 6px; padding: 8px 14px;
+      font-size: 13px; color: var(--blue); font-weight: 500;
+    }
+    .region-badge .region-icon { font-size: 16px; }
   </style>
 </head>
 <body>
@@ -504,12 +612,26 @@
 
 </div>
 
+<!-- Rig Detail Drawer -->
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<div class="drawer" id="rig-drawer">
+  <div class="drawer-header">
+    <div class="drawer-title-group">
+      <div class="drawer-rig-name" id="drawer-rig-name"></div>
+      <div class="drawer-rig-meta" id="drawer-rig-meta"></div>
+    </div>
+    <button class="drawer-close" id="drawer-close">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</div>
+
 <script>
 (async function () {
   /* ─────────────────────────────────────────
      Data loading
   ───────────────────────────────────────── */
   let fleet, rates, capex;
+  let allRigs = [];
   let dayRateChart = null;
   let capexChart = null;
   let capexTable = null;
@@ -525,6 +647,7 @@
       fetch('./data/rates.json').then(r => r.json()),
       fetch('./data/capex.json').then(r => r.json()),
     ]);
+    allRigs = fleet.rigs;
   } catch (err) {
     document.querySelector('.container').innerHTML +=
       `<div class="loading">⚠ 데이터 로드 실패: ${err.message}<br>로컬 서버로 실행하세요: <code>python3 -m http.server 8080</code></div>`;
@@ -744,6 +867,16 @@
           },
         },
       ],
+      rowFormatter: row => {
+        row.getElement().style.cursor = 'pointer';
+      },
+    });
+
+    fleetTable.on('rowClick', (e, row) => {
+      const rowData = row.getData();
+      // find the full rig object from allRigs
+      const rig = allRigs.find(r => r.name === rowData.name);
+      if (rig) openDrawer(rig);
     });
   }
 
@@ -1045,6 +1178,131 @@
   }
 
   /* ─────────────────────────────────────────
+     Rig Detail Drawer
+  ───────────────────────────────────────── */
+  function openDrawer(rig) {
+    const drawer = document.getElementById('rig-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+    // Header
+    document.getElementById('drawer-rig-name').textContent = rig.name;
+    document.getElementById('drawer-rig-meta').innerHTML = `
+      ${statusBadge(rig.status)}
+      <span class="badge badge-muted">${esc(rig.type)}</span>
+      <span style="color:var(--accent);font-size:12px;font-weight:600">${esc(rig.contractor)}</span>
+    `;
+
+    // Body
+    const s = rig.specs || {};
+    const regionIcon = getRegionIcon(rig.location);
+
+    document.getElementById('drawer-body').innerHTML = `
+      <!-- Location -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Operation Area</div>
+        <div class="region-badge">
+          <span class="region-icon">${regionIcon}</span>
+          ${esc(rig.location || '—')}
+        </div>
+      </div>
+
+      <!-- Current Contract -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Current Contract</div>
+        <div class="contract-card">
+          <div class="contract-row">
+            <span class="contract-row-label">Operator</span>
+            <span class="contract-row-value">${esc(rig.operator || '—')}</span>
+          </div>
+          <div class="contract-row">
+            <span class="contract-row-label">Day Rate</span>
+            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + ' k$/day' : '—'}</span>
+          </div>
+          <div class="contract-row">
+            <span class="contract-row-label">Period</span>
+            <span class="contract-row-value">${esc(rig.contract_start || '—')} → ${esc(rig.contract_end || '—')}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rig Specs -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Rig Specifications</div>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-label">Build Year</div>
+            <div class="spec-value">${s.build_year || '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Build Yard</div>
+            <div class="spec-value" style="font-size:12px">${esc(s.build_yard || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Design</div>
+            <div class="spec-value blue">${esc(s.design || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Generation</div>
+            <div class="spec-value">${esc(s.generation || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Max Water Depth</div>
+            <div class="spec-value accent">${s.max_water_depth_ft ? s.max_water_depth_ft.toLocaleString() + ' ft' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Max Drill Depth</div>
+            <div class="spec-value">${s.max_drilling_depth_ft ? s.max_drilling_depth_ft.toLocaleString() + ' ft' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">BOP Rating</div>
+            <div class="spec-value">${s.bop_rating_psi ? s.bop_rating_psi.toLocaleString() + ' psi' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">VDL</div>
+            <div class="spec-value">${s.variable_deck_load_t ? s.variable_deck_load_t.toLocaleString() + ' t' : '—'}</div>
+          </div>
+          ${s.dp_class ? `<div class="spec-item">
+            <div class="spec-label">DP Class</div>
+            <div class="spec-value blue">${esc(s.dp_class)}</div>
+          </div>` : ''}
+        </div>
+      </div>
+    `;
+
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    document.getElementById('rig-drawer').classList.remove('open');
+    document.getElementById('drawer-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function getRegionIcon(location) {
+    if (!location) return '🌐';
+    const l = location.toLowerCase();
+    if (l.includes('norway') || l.includes('north sea') || l.includes('uk')) return '🇳🇴';
+    if (l.includes('brazil')) return '🇧🇷';
+    if (l.includes('gulf of mexico') || l.includes('gom') || l.includes('us gulf')) return '🇺🇸';
+    if (l.includes('australia')) return '🇦🇺';
+    if (l.includes('malaysia') || l.includes('vietnam') || l.includes('southeast asia')) return '🌏';
+    if (l.includes('angola') || l.includes('nigeria') || l.includes('africa') || l.includes('gabon')) return '🌍';
+    if (l.includes('saudi') || l.includes('uae') || l.includes('middle east') || l.includes('qatar')) return '🇸🇦';
+    if (l.includes('suriname') || l.includes('guyana')) return '🌎';
+    if (l.includes('singapore') || l.includes('stack') || l.includes('shipyard') || l.includes('stacked')) return '🔧';
+    if (l.includes('mexico')) return '🇲🇽';
+    return '🌐';
+  }
+
+  function initDrawer() {
+    document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+    document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  }
+
+  /* ─────────────────────────────────────────
      Filter Logic
   ───────────────────────────────────────── */
   let currentTypeFilter = 'All';
@@ -1092,6 +1350,7 @@
   renderCapexTable();
   renderNewbuildTable();
   initFilters();
+  initDrawer();
 
 })();
 </script>

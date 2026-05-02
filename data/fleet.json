@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-26",
+  "updated": "2026-05-02",
   "prev_week": {
     "total": 58,
     "on_contract": 47,
@@ -16,7 +16,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-06",
       "contract_end": "2027-03",
-      "day_rate_kusd": 465
+      "day_rate_kusd": 465,
+      "specs": {
+        "build_year": 2022,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 20000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 20000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 6500,
+        "generation": "8th Gen"
+      }
     },
     {
       "name": "Deepwater Titan",
@@ -28,7 +39,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2023-09",
       "contract_end": "2026-09",
-      "day_rate_kusd": 455
+      "day_rate_kusd": 455,
+      "specs": {
+        "build_year": 2022,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 20000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 6500,
+        "generation": "8th Gen"
+      }
     },
     {
       "name": "Deepwater Aquila",
@@ -40,7 +62,18 @@
       "location": "Brazil",
       "contract_start": "2024-07",
       "contract_end": "2027-06",
-      "day_rate_kusd": 445
+      "day_rate_kusd": 445,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSME 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Asgard",
@@ -52,7 +85,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-06",
       "contract_end": "2026-06",
-      "day_rate_kusd": 515
+      "day_rate_kusd": 515,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Invictus",
@@ -64,7 +108,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-03",
       "contract_end": "2027-01",
-      "day_rate_kusd": 450
+      "day_rate_kusd": 450,
+      "specs": {
+        "build_year": 2023,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 20000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 6000,
+        "generation": "8th Gen"
+      }
     },
     {
       "name": "Deepwater Proteus",
@@ -76,7 +131,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2023-11",
       "contract_end": "2026-11",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Poseidon",
@@ -88,7 +154,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-01",
       "contract_end": "2027-04",
-      "day_rate_kusd": 435
+      "day_rate_kusd": 435,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Orion",
@@ -100,7 +177,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-05",
       "contract_end": "2026-12",
-      "day_rate_kusd": 425
+      "day_rate_kusd": 425,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSME 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Conqueror",
@@ -112,7 +200,18 @@
       "location": "West Africa",
       "contract_start": "2024-02",
       "contract_end": "2027-02",
-      "day_rate_kusd": 440
+      "day_rate_kusd": 440,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Corcovado",
@@ -124,7 +223,18 @@
       "location": "Brazil",
       "contract_start": "2023-08",
       "contract_end": "2026-10",
-      "day_rate_kusd": 420
+      "day_rate_kusd": 420,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Mykonos",
@@ -136,7 +246,18 @@
       "location": "Brazil",
       "contract_start": "2023-10",
       "contract_end": "2026-12",
-      "day_rate_kusd": 415
+      "day_rate_kusd": 415,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSME 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Thalassa",
@@ -148,7 +269,18 @@
       "location": "Angola",
       "contract_start": "2024-04",
       "contract_end": "2027-05",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Deepwater Stavanger",
@@ -160,7 +292,18 @@
       "location": "Norway",
       "contract_start": "2023-06",
       "contract_end": "2026-06",
-      "day_rate_kusd": 390
+      "day_rate_kusd": 390,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "Kvaerner Verdal",
+        "design": "GVA 7500",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Spitsbergen",
@@ -172,7 +315,18 @@
       "location": "Norway",
       "contract_start": "2024-08",
       "contract_end": "2027-08",
-      "day_rate_kusd": 400
+      "day_rate_kusd": 400,
+      "specs": {
+        "build_year": 2010,
+        "build_yard": "Kvaerner Verdal",
+        "design": "GVA 7500",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Enabler",
@@ -184,7 +338,18 @@
       "location": "Norway",
       "contract_start": "2024-06",
       "contract_end": "2027-06",
-      "day_rate_kusd": 395
+      "day_rate_kusd": 395,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSS-38E",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Encourage",
@@ -196,7 +361,18 @@
       "location": "Norway",
       "contract_start": "2024-01",
       "contract_end": "2026-12",
-      "day_rate_kusd": 380
+      "day_rate_kusd": 380,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSS-38E",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Endurance",
@@ -208,7 +384,18 @@
       "location": "Australia",
       "contract_start": "2024-08",
       "contract_end": "2026-08",
-      "day_rate_kusd": 385
+      "day_rate_kusd": 385,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSS-38E",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Equinox",
@@ -220,7 +407,18 @@
       "location": "Australia",
       "contract_start": "2024-09",
       "contract_end": "2027-09",
-      "day_rate_kusd": 390
+      "day_rate_kusd": 390,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Kvaerner Verdal",
+        "design": "GVA 7500",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Barents",
@@ -232,7 +430,18 @@
       "location": "Norway",
       "contract_start": "2024-03",
       "contract_end": "2027-03",
-      "day_rate_kusd": 375
+      "day_rate_kusd": 375,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Kvaerner Verdal",
+        "design": "GVA 7500",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Transocean Norge",
@@ -244,7 +453,18 @@
       "location": "Norway",
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2011,
+        "build_yard": "Kvaerner Verdal",
+        "design": "GVA 7500",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Valaris DS-7",
@@ -256,7 +476,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-01",
       "contract_end": "2027-01",
-      "day_rate_kusd": 450
+      "day_rate_kusd": 450,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSME 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DS-8",
@@ -268,7 +499,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-05",
       "contract_end": "2026-11",
-      "day_rate_kusd": 435
+      "day_rate_kusd": 435,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DS-9",
@@ -280,7 +522,18 @@
       "location": "West Africa",
       "contract_start": "2024-03",
       "contract_end": "2027-03",
-      "day_rate_kusd": 440
+      "day_rate_kusd": 440,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DS-10",
@@ -292,7 +545,18 @@
       "location": "East Africa",
       "contract_start": "2024-07",
       "contract_end": "2027-07",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DS-12",
@@ -304,7 +568,18 @@
       "location": "Shipyard",
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "Daewoo Shipbuilding & Marine Engineering",
+        "design": "DSME 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DS-17",
@@ -316,7 +591,18 @@
       "location": "Brazil",
       "contract_start": "2024-09",
       "contract_end": "2027-09",
-      "day_rate_kusd": 445
+      "day_rate_kusd": 445,
+      "specs": {
+        "build_year": 2019,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 12000",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Valaris DPS-1",
@@ -328,7 +614,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-02",
       "contract_end": "2026-08",
-      "day_rate_kusd": 375
+      "day_rate_kusd": 375,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "Jurong Shipyard",
+        "design": "Friede & Goldman ExD Millennium",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Valaris Norway",
@@ -340,7 +637,18 @@
       "location": "North Sea",
       "contract_start": "2024-06",
       "contract_end": "2026-06",
-      "day_rate_kusd": 175
+      "day_rate_kusd": 175,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "Kvaerner Verdal",
+        "design": "Kvaerner CS50 Mk II",
+        "max_water_depth_ft": 492,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris Stavanger",
@@ -352,7 +660,18 @@
       "location": "North Sea",
       "contract_start": "2024-04",
       "contract_end": "2026-10",
-      "day_rate_kusd": 170
+      "day_rate_kusd": 170,
+      "specs": {
+        "build_year": 2010,
+        "build_yard": "Kvaerner Verdal",
+        "design": "Kvaerner CS50 Mk II",
+        "max_water_depth_ft": 492,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris 106",
@@ -364,7 +683,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-06",
       "contract_end": "2026-06",
-      "day_rate_kusd": 140
+      "day_rate_kusd": 140,
+      "specs": {
+        "build_year": 2008,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS B Class",
+        "max_water_depth_ft": 375,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 3500,
+        "generation": "Standard"
+      }
     },
     {
       "name": "Valaris 110",
@@ -376,7 +706,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-08",
       "contract_end": "2026-08",
-      "day_rate_kusd": 140
+      "day_rate_kusd": 140,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 375",
+        "max_water_depth_ft": 375,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 3500,
+        "generation": "Standard"
+      }
     },
     {
       "name": "Valaris 143",
@@ -388,7 +729,18 @@
       "location": "Middle East",
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2010,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS B Class",
+        "max_water_depth_ft": 375,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 3500,
+        "generation": "Standard"
+      }
     },
     {
       "name": "Valaris 146",
@@ -400,7 +752,18 @@
       "location": "UAE",
       "contract_start": "2024-01",
       "contract_end": "2026-12",
-      "day_rate_kusd": 145
+      "day_rate_kusd": 145,
+      "specs": {
+        "build_year": 2011,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS B Class",
+        "max_water_depth_ft": 375,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris 147",
@@ -412,7 +775,18 @@
       "location": "Qatar",
       "contract_start": "2023-10",
       "contract_end": "2026-10",
-      "day_rate_kusd": 142
+      "day_rate_kusd": 142,
+      "specs": {
+        "build_year": 2011,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 375",
+        "max_water_depth_ft": 375,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris 148",
@@ -424,7 +798,18 @@
       "location": "Middle East",
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS B Class",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris 248",
@@ -436,7 +821,18 @@
       "location": "Malaysia",
       "contract_start": "2024-03",
       "contract_end": "2026-09",
-      "day_rate_kusd": 135
+      "day_rate_kusd": 135,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Valaris 249",
@@ -448,7 +844,18 @@
       "location": "Malaysia",
       "contract_start": "2024-04",
       "contract_end": "2026-10",
-      "day_rate_kusd": 135
+      "day_rate_kusd": 135,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Noble Stanley Lafosse",
@@ -460,7 +867,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-08",
       "contract_end": "2027-08",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Noble Venturer",
@@ -472,7 +890,18 @@
       "location": "West Africa",
       "contract_start": "2024-01",
       "contract_end": "2026-10",
-      "day_rate_kusd": 420
+      "day_rate_kusd": 420,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Noble Valiant",
@@ -484,7 +913,18 @@
       "location": "Suriname",
       "contract_start": "2026-10",
       "contract_end": "2028-04",
-      "day_rate_kusd": 440
+      "day_rate_kusd": 440,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Jurong Shipyard",
+        "design": "Frigstad D90",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Noble Globetrotter I",
@@ -496,7 +936,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-03",
       "contract_end": "2027-03",
-      "day_rate_kusd": 415
+      "day_rate_kusd": 415,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "6th Gen"
+      }
     },
     {
       "name": "Noble Globetrotter II",
@@ -508,7 +959,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-06",
       "contract_end": "2027-06",
-      "day_rate_kusd": 420
+      "day_rate_kusd": 420,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "6th Gen"
+      }
     },
     {
       "name": "Noble Gerry de Souza",
@@ -520,7 +982,18 @@
       "location": "Brazil",
       "contract_start": "2024-04",
       "contract_end": "2027-04",
-      "day_rate_kusd": 435
+      "day_rate_kusd": 435,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Noble Regina Allen",
@@ -532,7 +1005,18 @@
       "location": "Brazil",
       "contract_start": "2024-02",
       "contract_end": "2027-02",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Jurong Shipyard",
+        "design": "Frigstad D90",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "Noble Resolve",
@@ -544,7 +1028,18 @@
       "location": "Norway",
       "contract_start": "2024-05",
       "contract_end": "2026-11",
-      "day_rate_kusd": 380
+      "day_rate_kusd": 380,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Jurong Shipyard",
+        "design": "Friede & Goldman ExD Millennium",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 35000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Noble Developer",
@@ -556,7 +1051,18 @@
       "location": null,
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 10000",
+        "max_water_depth_ft": 6000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4000,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Vela",
@@ -568,7 +1074,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2026-08",
       "contract_end": "2028-02",
-      "day_rate_kusd": 460
+      "day_rate_kusd": 460,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "West Neptune",
@@ -580,7 +1097,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2026-09",
       "contract_end": "2027-09",
-      "day_rate_kusd": 455
+      "day_rate_kusd": 455,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "West Capella",
@@ -592,7 +1120,18 @@
       "location": "Malaysia",
       "contract_start": "2026-04",
       "contract_end": "2027-06",
-      "day_rate_kusd": 430
+      "day_rate_kusd": 430,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "West Jupiter",
@@ -604,7 +1143,18 @@
       "location": "Brazil",
       "contract_start": "2026-01",
       "contract_end": "2029-01",
-      "day_rate_kusd": 450
+      "day_rate_kusd": 450,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "West Carina",
@@ -616,7 +1166,18 @@
       "location": "West Africa",
       "contract_start": "2024-06",
       "contract_end": "2027-06",
-      "day_rate_kusd": 440
+      "day_rate_kusd": 440,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      }
     },
     {
       "name": "West Tellus",
@@ -628,7 +1189,18 @@
       "location": "Brazil",
       "contract_start": "2026-01",
       "contract_end": "2029-01",
-      "day_rate_kusd": 455
+      "day_rate_kusd": 455,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 10000",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Saturn",
@@ -640,7 +1212,18 @@
       "location": "Norway",
       "contract_start": "2024-04",
       "contract_end": "2027-04",
-      "day_rate_kusd": 390
+      "day_rate_kusd": 390,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 10000",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Auriga",
@@ -652,7 +1235,18 @@
       "location": "West Africa",
       "contract_start": "2024-02",
       "contract_end": "2026-08",
-      "day_rate_kusd": 375
+      "day_rate_kusd": 375,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Jurong Shipyard",
+        "design": "Friede & Goldman ExD Millennium",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Polaris",
@@ -664,7 +1258,18 @@
       "location": "Norway",
       "contract_start": "2024-03",
       "contract_end": "2026-09",
-      "day_rate_kusd": 380
+      "day_rate_kusd": 380,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "Jurong Shipyard",
+        "design": "Friede & Goldman ExD Millennium",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Elara",
@@ -676,7 +1281,18 @@
       "location": "Norway",
       "contract_start": "2026-07",
       "contract_end": "2028-01",
-      "day_rate_kusd": 385
+      "day_rate_kusd": 385,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI 10000",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "West Gemini",
@@ -688,7 +1304,18 @@
       "location": null,
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2010,
+        "build_yard": "Jurong Shipyard",
+        "design": "Friede & Goldman ExD Millennium",
+        "max_water_depth_ft": 8000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Sevan Louisiana",
@@ -700,7 +1327,18 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2024-05",
       "contract_end": "2026-11",
-      "day_rate_kusd": 360
+      "day_rate_kusd": 360,
+      "specs": {
+        "build_year": 2012,
+        "build_yard": "Sevan Marine / Cosco",
+        "design": "Sevan Cylindrical",
+        "max_water_depth_ft": 10000,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4500,
+        "generation": "Harsh Environment"
+      }
     },
     {
       "name": "Borr Gerd",
@@ -712,7 +1350,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-09",
       "contract_end": "2026-09",
-      "day_rate_kusd": 155
+      "day_rate_kusd": 155,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Ran",
@@ -724,7 +1373,18 @@
       "location": "Mexico",
       "contract_start": "2024-09",
       "contract_end": "2026-09",
-      "day_rate_kusd": 148
+      "day_rate_kusd": 148,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Thor",
@@ -736,7 +1396,18 @@
       "location": "Vietnam",
       "contract_start": "2026-07",
       "contract_end": "2027-07",
-      "day_rate_kusd": 145
+      "day_rate_kusd": 145,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Joro",
@@ -748,7 +1419,18 @@
       "location": "North Sea",
       "contract_start": null,
       "contract_end": "2026-05",
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2017,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Prospector 5",
@@ -760,7 +1442,18 @@
       "location": "North Sea",
       "contract_start": "2024-01",
       "contract_end": "2026-12",
-      "day_rate_kusd": 165
+      "day_rate_kusd": 165,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "DSME",
+        "design": "DSJ-300",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Heimdal",
@@ -772,7 +1465,18 @@
       "location": "Norway",
       "contract_start": "2024-04",
       "contract_end": "2027-04",
-      "day_rate_kusd": 170
+      "day_rate_kusd": 170,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Groa",
@@ -784,7 +1488,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2024-02",
       "contract_end": "2026-08",
-      "day_rate_kusd": 150
+      "day_rate_kusd": 150,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Idun",
@@ -796,7 +1511,18 @@
       "location": "UAE",
       "contract_start": "2024-06",
       "contract_end": "2026-12",
-      "day_rate_kusd": 148
+      "day_rate_kusd": 148,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Saga",
@@ -808,7 +1534,18 @@
       "location": "India",
       "contract_start": "2024-03",
       "contract_end": "2026-09",
-      "day_rate_kusd": 138
+      "day_rate_kusd": 138,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Vale",
@@ -820,7 +1557,18 @@
       "location": "Malaysia",
       "contract_start": "2024-05",
       "contract_end": "2026-11",
-      "day_rate_kusd": 142
+      "day_rate_kusd": 142,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Var",
@@ -832,7 +1580,18 @@
       "location": "Norway",
       "contract_start": "2024-07",
       "contract_end": "2027-01",
-      "day_rate_kusd": 168
+      "day_rate_kusd": 168,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Arabia I",
@@ -844,7 +1603,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-05",
       "contract_end": "2026-05",
-      "day_rate_kusd": 152
+      "day_rate_kusd": 152,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Arabia II",
@@ -856,7 +1626,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-07",
       "contract_end": "2026-07",
-      "day_rate_kusd": 152
+      "day_rate_kusd": 152,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Arabia III",
@@ -868,7 +1649,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2023-09",
       "contract_end": "2026-09",
-      "day_rate_kusd": 152
+      "day_rate_kusd": 152,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Arabia IV",
@@ -880,7 +1672,18 @@
       "location": "Saudi Arabia",
       "contract_start": "2024-01",
       "contract_end": "2027-01",
-      "day_rate_kusd": 155
+      "day_rate_kusd": 155,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Norve",
@@ -892,7 +1695,18 @@
       "location": null,
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2015,
+        "build_yard": "PPL Shipyard",
+        "design": "PPL Pacific Class 400",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Hild",
@@ -904,7 +1718,18 @@
       "location": "Denmark",
       "contract_start": "2024-08",
       "contract_end": "2026-08",
-      "day_rate_kusd": 162
+      "day_rate_kusd": 162,
+      "specs": {
+        "build_year": 2016,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 4500,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Frigg",
@@ -916,7 +1741,18 @@
       "location": "North Sea",
       "contract_start": "2024-09",
       "contract_end": "2026-09",
-      "day_rate_kusd": 160
+      "day_rate_kusd": 160,
+      "specs": {
+        "build_year": 2020,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     },
     {
       "name": "Borr Skald",
@@ -928,7 +1764,18 @@
       "location": null,
       "contract_start": null,
       "contract_end": null,
-      "day_rate_kusd": null
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2019,
+        "build_yard": "Keppel FELS",
+        "design": "KFELS Super B Bigfoot",
+        "max_water_depth_ft": 400,
+        "max_drilling_depth_ft": 30000,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 5000,
+        "generation": "Premium"
+      }
     }
   ]
 }
