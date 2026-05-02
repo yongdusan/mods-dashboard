@@ -77,10 +77,15 @@
           {
             "name": "Anchor (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 75, "notes": "20,000psi 고압 저류층. 업계 최초 15,000psi 수중 장비 적용.",
             "detail": { "operator": "Chevron (55%)", "partners": ["ExxonMobil 45%"], "water_depth_m": 1500, "reserves_mmboe": 440, "fid": "2019-08", "first_oil": "2024-Q3", "peak_year": "2026", "vessel": "Anchor Semi-FPS (Kiewit 건조)", "rig_demand": "드릴십 1기 — 유지보수 시추 연 2~3공", "source": "Chevron IR / OE Digital" }
+          },
+          {
+            "name": "Papua LNG (PNG)", "region": "Asia Pacific", "type": "LNG", "status": "FID Approved", "capacity_kboed": null, "notes": "파푸아뉴기니 LNG 3트레인, 연 12Mtpa 목표. TotalEnergies 운영, XOM 37.1% 지분. FID 2025.",
+            "detail": { "operator": "TotalEnergies (40.1%)", "partners": ["ExxonMobil 37.1%", "Santos 22.8%"], "water_depth_m": null, "reserves_mmboe": 10000, "fid": "2025 (예정)", "first_oil": "2030 (first LNG, 예정)", "peak_year": "2032", "vessel": "육상 LNG 트레인 3기 (신설)", "rig_demand": "해상 가스전 개발정 시추 — 잭업/반잠수식 리그 2기 예상", "source": "ExxonMobil IR / TotalEnergies IR 2025" }
           }
         ],
         "drilling_highlights": [
           "2026년 Guyana Hammerhead 개발정 시추 집중 — 드릴십 2기 장기 계약 운용",
+          "Papua LNG 해상 가스전 시추 착수 준비 — 리그 계약 협의 중",
           "Permian 연간 시추 약 1,000정 규모 유지",
           "GOM 심해 탐사정 2~3공 계획",
           "2030년까지 Stabroek 블록에서 6개 FPSO 운영 목표"
@@ -163,13 +168,18 @@
           {
             "name": "North Sea Portfolio", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 200, "notes": "노후 자산 생산성 유지. 선택적 투자. 점진적 포트폴리오 축소 검토.",
             "detail": { "operator": "bp", "partners": ["다수 JV 파트너"], "water_depth_m": 150, "reserves_mmboe": null, "fid": null, "first_oil": null, "peak_year": null, "vessel": "고정식 플랫폼 다수", "rig_demand": "반잠수식·잭업 리그 — 유지보수 시추 연 10~15공", "source": "bp Annual Report 2025" }
+          },
+          {
+            "name": "Azule Energy (Angola)", "region": "West Africa", "type": "Deepwater", "status": "On Production", "capacity_kboed": 200, "notes": "bp·ENI 앙골라 자산 통합 JV (2022 설립). 15개 라이선스, ~200kboed 생산. 성장 목표 2030년 250kboed.",
+            "detail": { "operator": "Azule Energy (bp 50% / ENI 50%)", "partners": ["Sonangol (블록별 JV)"], "water_depth_m": 1500, "reserves_mmboe": 7000, "fid": "2022 (JV 설립)", "first_oil": "기존 자산 통합", "peak_year": "2030 (250kboed 목표)", "vessel": "다수 FPSO 운용 (Plutão, Saturno, Venus, Marte 등)", "rig_demand": "드릴십 2~3기 장기 계약 — 앙골라 deepwater 인필 시추 집중", "source": "bp IR / ENI IR / Azule Energy 2024" }
           }
         ],
         "drilling_highlights": [
           "GOM Kaskida 개발정 시추 착수 — 20,000psi 장비 적용",
           "Azerbaijan ACG 유정 추가 시추로 생산 안정화",
+          "Azule Energy Angola 드릴링 캠페인 — 드릴십 2기 앙골라 deepwater 운용",
           "2025 CMD: upstream 투자 확대 선언, 재생에너지 예산 대폭 삭감",
-          "연간 드릴링 예산 약 $3B 유지 (GOM 집중)"
+          "연간 드릴링 예산 약 $3B 유지 (GOM + Angola 집중)"
         ]
       }
     },
@@ -205,13 +215,18 @@
           },
           {
             "name": "Aphrodite (Cyprus)", "region": "Mediterranean", "type": "Deepwater Gas", "status": "FID Approved", "capacity_kboed": null, "notes": "동지중해 가스전. CVX 35% op. LNG 또는 파이프라인 수출 검토.",
-            "detail": { "operator": "Chevron (35%)", "partners": ["Shell 35%", "Noble Energy 30%"], "water_depth_m": 1700, "reserves_mmboe": 3500, "fid": "2025 (예정)", "first_oil": "2029+ (예정)", "peak_year": null, "vessel": "FPSO 또는 파이프라인 연결 미정", "rig_demand": "드릴십 1기 — FID 후 개발정 시추 착수", "source": "Chevron IR / S&P Global" }
+            "detail": { "operator": "Chevron (35%)", "partners": ["Shell 35%", "NewMed Energy 30%"], "water_depth_m": 1700, "reserves_mmboe": 3500, "fid": "2025 (예정)", "first_oil": "2029+ (예정)", "peak_year": null, "vessel": "FPSO 또는 파이프라인 연결 미정", "rig_demand": "드릴십 1기 — FID 후 개발정 시추 착수", "source": "Chevron IR / S&P Global" }
+          },
+          {
+            "name": "Pony (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "GOM 대형 deepwater 발견. CVX 80% op. FID 2026 준비 중. Norphlet 사암층 (~20,000ft 수심).",
+            "detail": { "operator": "Chevron (80%)", "partners": ["Equinor 20%"], "water_depth_m": 2400, "reserves_mmboe": 600, "fid": "2026 (예상)", "first_oil": "2030+ (예상)", "peak_year": null, "vessel": "Semi-FPS 또는 FPSO (검토 중)", "rig_demand": "드릴십 1기 (고압 Norphlet 능력 필수) — FID 전 추가 평가정 시추 예정", "source": "Chevron IR / Offshore Magazine 2024" }
           }
         ],
         "drilling_highlights": [
           "Guyana Stabroek 드릴링 가속 — Hammerhead 개발정 참여",
           "Permian 연간 약 600정 시추 규모 유지",
           "GOM Ballymore 개발정 시추 완료, production ramp-up",
+          "Pony 추가 평가정 시추 — 고압 UDW 드릴십 필요",
           "Kazakhstan TCO 증산에 따른 공정 최적화 중심 투자"
         ]
       }
@@ -297,10 +312,15 @@
           {
             "name": "Hawiyah NGL Recovery", "region": "Eastern Province", "type": "Gas Processing", "status": "Under Development", "capacity_kboed": null, "notes": "Jafurah 연계 NGL 회수 설비. 석화 원료 공급 목적.",
             "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": null, "reserves_mmboe": null, "fid": "2022", "first_oil": "2025 (예정)", "peak_year": null, "vessel": "육상 가스 처리 시설", "rig_demand": "MODU 수요 없음", "source": "Aramco IR" }
+          },
+          {
+            "name": "Zuluf Increment", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 600, "notes": "아라비아만 최대 단일 해상 개발 프로젝트. $10B+ 규모. 60만 b/d 증산 목표. 2026년 생산 개시 목표.",
+            "detail": { "operator": "Saudi Aramco (100%)", "partners": [], "water_depth_m": 50, "reserves_mmboe": 8000, "fid": "2021", "first_oil": "2026 (예정)", "peak_year": "2028", "vessel": "해상 플랫폼 다수 (자켓 + 토프사이드)", "rig_demand": "잭업 리그 5~8기 — 아라비아만 최대 규모 해상 시추 캠페인", "source": "Saudi Aramco IR / Rystad Energy" }
           }
         ],
         "drilling_highlights": [
           "Marjan Phase 2 해상 플랫폼 시추 집중 — 잭업 리그 다수 장기 계약",
+          "Zuluf Increment — 잭업 5~8기 동원, 아라비아만 최대 규모 시추 캠페인",
           "2025~2026년 해상 시추 프로그램 사상 최대 규모",
           "Jafurah 비전통 가스전 수평정 대규모 시추 착수",
           "생산능력 1,200만 b/d 유지에 집중"
