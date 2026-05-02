@@ -2,6 +2,34 @@
   "updated": "2026-05-03",
   "companies": [
     {
+      "name": "Equinor",
+      "type": "Oil Major",
+      "capex_guidance": [
+        { "year": 2024, "total_capex_busd": 14.0, "upstream_capex_busd": 12.6, "source": "FY2024 Annual Report" },
+        { "year": 2025, "total_capex_busd": 13.0, "upstream_capex_busd": 11.7, "source": "Q4 2025 Earnings (Feb 2026)" },
+        { "year": 2026, "total_capex_busd": 13.0, "upstream_capex_busd": 11.7, "source": "Q4 2025 Earnings & 2026 Guidance (Feb 2026)" }
+      ],
+      "upstream_focus": "NCS, Brazil deepwater, international",
+      "notes": "2026 organic capex ~$13B. NCS 60% + 국제 O&G 30% + Power 10%. O&G 투자 연 ~$10B 유지. 재생에너지 예산 $4B 삭감(2026~27). 2025년 생산 레코드 2.14Mboe/d.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": null,
+        "key_projects": [
+          { "name": "Johan Sverdrup Phase 3 (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 755, "notes": "NCS 최대 유전. Phase 1+2 생산 중(현 ~700kboed). Phase 3: NOK 13B 투자, 8공 신규 시추, 4000만~5000만 boe 추가 회수 목표." },
+          { "name": "Bacalhau (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 220, "notes": "Santos Basin. 2025 first oil. 2026년 220kboed 목표로 생산 램프업 중. Equinor 35% op." },
+          { "name": "Bay du Nord (Canada)", "region": "North America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 170, "notes": "Newfoundland 심해. FID 2027 목표. First oil 2031 예상. 160~175kboed 생산능력. 탐사·개발 드릴링 2029년 착수 예정." },
+          { "name": "Troll Field (NCS)", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 350, "notes": "NCS 최대 가스전. Troll A·B·C 플랫폼 운영. 2040년대까지 생산 유지 목표." },
+          { "name": "Wisting (Arctic NCS)", "region": "Barents Sea", "type": "Offshore", "status": "Planning", "capacity_kboed": 100, "notes": "바렌츠해 북극권 유전. 노르웨이 최북단 개발 프로젝트. 개발 방식 검토 중." }
+        ],
+        "drilling_highlights": [
+          "Johan Sverdrup Phase 3 — 8공 개발정 시추 2026~2027년 진행, 반잠수식 리그 투입",
+          "Bacalhau 생산 안정화를 위한 추가 개발정 시추 — 드릴십 1기 운용",
+          "NCS 플랫폼 드릴링(Troll, Oseberg, Gullfaks) — 반잠수식·잭업 복합 운용",
+          "Bay du Nord 탐사 드릴링 2029 착수, 현재 FID 전 평가 시추 검토 중"
+        ]
+      }
+    },
+    {
       "name": "ExxonMobil",
       "type": "Oil Major",
       "capex_guidance": [
