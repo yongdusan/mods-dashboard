@@ -547,7 +547,8 @@
       "oil_capacity_kboed": 70,
       "delivery": "2027-Q1",
       "status": "Under Construction",
-      "notes": "SBM Fast4Ward 선형. 앙골라 심해 개발."
+      "notes": "SBM Fast4Ward 선형. 앙골라 심해 개발.",
+      "detail": { "hull_type": "SBM Fast4Ward (신조)", "water_depth_m": 1800, "storage_mmbbl": 1.7, "gas_capacity_mmscfd": 120, "mooring": "Disconnectable Turret (SOFEC)", "fid_date": "2023-11", "construction_progress_pct": 45, "financing": "20년 BFOO 장기 임대 (TotalEnergies)", "key_equipment": "SBM Fast4Ward 6호 선형. Keppel FELS 선체 + SHI 상부 공정. SOFEC 터렛 계류.", "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 Kaminho 개발정 시추 캠페인", "partners": ["TotalEnergies 40% op", "Sonangol 30%", "ENI 15%", "Galp 15%"] }
     },
     {
       "name": "FPSO Jaguar (Hammerhead)",
@@ -561,7 +562,8 @@
       "oil_capacity_kboed": 120,
       "delivery": "2027-Q3",
       "status": "Under Construction",
-      "notes": "SBM Fast4Ward 선형. 가이아나 5번째 FPSO."
+      "notes": "SBM Fast4Ward 선형. 가이아나 5번째 FPSO.",
+      "detail": { "hull_type": "SBM Fast4Ward (신조)", "water_depth_m": 1600, "storage_mmbbl": 2.0, "gas_capacity_mmscfd": 150, "mooring": "Turret Mooring (SBM)", "fid_date": "2024-Q2", "construction_progress_pct": 30, "financing": "20년 장기 임대 (ExxonMobil)", "key_equipment": "SBM Fast4Ward 7호 선형. Stabroek 블록 5번째 FPSO. 고효율 가스 처리 모듈.", "rig_demand": "드릴십 2기 동시 운용 — Hammerhead 개발정 집중 시추 2026~2028년", "partners": ["ExxonMobil 45% op", "Chevron/Hess 30%", "CNOOC 25%"] }
     },
     {
       "name": "Marechal Duque de Caxias (P-83)",
@@ -575,7 +577,8 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027-Q2",
       "status": "Under Construction",
-      "notes": "Buzios 10번째 FPSO. SBM Fast4Ward."
+      "notes": "Buzios 10번째 FPSO. SBM Fast4Ward.",
+      "detail": { "hull_type": "SBM Fast4Ward (신조)", "water_depth_m": 2000, "storage_mmbbl": 2.0, "gas_capacity_mmscfd": 212, "mooring": "Turret Mooring", "fid_date": "2023", "construction_progress_pct": 40, "financing": "22.5년 임대 계약 (Petrobras)", "key_equipment": "SBM Fast4Ward 표준 선형. 브라질 로컬 콘텐츠 요건 준수 (Brasfels 통합).", "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 시추 지속", "partners": ["Petrobras 65% op", "PPSA 자원 관리"] }
     },
     {
       "name": "Gato do Mato FPSO",
@@ -589,7 +592,8 @@
       "oil_capacity_kboed": 100,
       "delivery": "2027-Q4",
       "status": "Under Construction",
-      "notes": "Shell 수석 운영사. Saipem EPC 수행 중."
+      "notes": "Shell 수석 운영사. Saipem EPC 수행 중.",
+      "detail": { "hull_type": "VLCC 개조 (Saipem 전환)", "water_depth_m": 2100, "storage_mmbbl": 2.0, "gas_capacity_mmscfd": 90, "mooring": "Spread Mooring", "fid_date": "2023-12", "construction_progress_pct": 35, "financing": "Shell 직발주 EPC (자가 소유)", "key_equipment": "Saipem EPC 계약. CSSC 중국 조선소 선체 건조. Fincantieri 상부 공정 통합.", "rig_demand": "드릴십 1기 — Shell/Petrobras/TTE 개발정 공동 시추 2026~2028년", "partners": ["Shell 50% op", "Petrobras 25%", "TotalEnergies 25%"] }
     },
     {
       "name": "Bonga North FPSO",
@@ -603,7 +607,8 @@
       "oil_capacity_kboed": 150,
       "delivery": "2028-Q2",
       "status": "Under Construction",
-      "notes": "나이지리아 심해 개발. FID 2023년 9월."
+      "notes": "나이지리아 심해 개발. FID 2023년 9월.",
+      "detail": { "hull_type": "신조 FPSO (SHI 건조)", "water_depth_m": 1000, "storage_mmbbl": 1.5, "gas_capacity_mmscfd": 180, "mooring": "Turret Mooring", "fid_date": "2023-Q3", "construction_progress_pct": 20, "financing": "JV 직발주 (자가 소유)", "key_equipment": "SHI 한국 신조. OML 118 블록 기존 Bonga FPSO 인접 배치. 수중 처리 시스템.", "rig_demand": "드릴십 1기 — 2026~2028년 Bonga North 개발정 8공 시추 계획", "partners": ["Shell 55% op", "NNPC 20%", "TotalEnergies 12.5%", "ENI 12.5%"] }
     },
     {
       "name": "Coral Sul 2 FLNG",
@@ -617,7 +622,8 @@
       "oil_capacity_kboed": null,
       "delivery": "2028-Q4",
       "status": "Under Construction",
-      "notes": "모잠비크 Area 4 2번째 FLNG. 3.4 MTPA. FID 2024년."
+      "notes": "모잠비크 Area 4 2번째 FLNG. 3.4 MTPA. FID 2024년.",
+      "detail": { "hull_type": "Purpose-built FLNG (SHI)", "water_depth_m": 2000, "storage_mmbbl": null, "gas_capacity_mmscfd": 550, "mooring": "Spread Mooring (FLNG)", "fid_date": "2024", "construction_progress_pct": 15, "financing": "20년 FLNG 장기 임대 (ENI)", "key_equipment": "SHI 모잠비크 Area 4 전용 FLNG. LNG 액화 용량 3.4 MTPA. Coral Sul 1 자매선.", "rig_demand": "드릴십 1기 — Coral North 가스전 개발정 시추 2026~2027년 예정", "partners": ["ENI 50% op", "Galp 10%", "KOGAS 10%", "CNPC 20%", "EMHH 10%"] }
     },
     {
       "name": "Yinson FPSO Atlanta (FPSO Atlanta)",
@@ -631,7 +637,8 @@
       "oil_capacity_kboed": 50,
       "delivery": "2026-Q3",
       "status": "Under Construction",
-      "notes": "브라질 Santos Basin Atlanta 전용. Yinson 최신 프로젝트."
+      "notes": "브라질 Santos Basin Atlanta 전용. Yinson 최신 프로젝트.",
+      "detail": { "hull_type": "VLCC 개조 (Yinson)", "water_depth_m": 1500, "storage_mmbbl": 1.0, "gas_capacity_mmscfd": 50, "mooring": "Turret Mooring", "fid_date": "2023", "construction_progress_pct": 75, "financing": "25년 임대 (ENAUTA)", "key_equipment": "Jurong 싱가포르 개조 작업 진행. Atlanta 필드 중질유(API 14°) 처리 특화 설계.", "rig_demand": "드릴십 1기 — Atlanta 중질유 개발정 시추 2026년 하반기 착수", "partners": ["ENAUTA 100% op (단독 운영)"] }
     },
     {
       "name": "Yinson FPSO PM3-CAA",
@@ -645,7 +652,8 @@
       "oil_capacity_kboed": 40,
       "delivery": "2026-Q4",
       "status": "Under Construction",
-      "notes": "말레이시아 PETRONAS 프로젝트. 연장 옵션 포함."
+      "notes": "말레이시아 PETRONAS 프로젝트. 연장 옵션 포함.",
+      "detail": { "hull_type": "개조 FPSO", "water_depth_m": 70, "storage_mmbbl": 0.8, "gas_capacity_mmscfd": 40, "mooring": "Spread Mooring", "fid_date": "2023", "construction_progress_pct": 65, "financing": "10년 임대 + 연장 옵션 (PETRONAS)", "key_equipment": "말레이시아·베트남 해상 경계 블록 전용. 얕은 수심 최적화 설계.", "rig_demand": "잭업 리그 1기 — 인필 시추 및 유지보수 용도", "partners": ["PETRONAS 50% op", "PetroVietnam 50%"] }
     },
     {
       "name": "Buzios 11 (P-84)",
@@ -659,7 +667,8 @@
       "oil_capacity_kboed": 225,
       "delivery": "2028-Q1",
       "status": "Under Construction",
-      "notes": "Petrobras 직발주 Buzios 11번째 FPSO."
+      "notes": "Petrobras 직발주 Buzios 11번째 FPSO.",
+      "detail": { "hull_type": "신조 FPSO (Petrobras 자가 소유)", "water_depth_m": 2100, "storage_mmbbl": 2.0, "gas_capacity_mmscfd": 212, "mooring": "Turret Mooring", "fid_date": "2024", "construction_progress_pct": 20, "financing": "Petrobras 자가 소유 (BNDES 금융 지원)", "key_equipment": "Keppel FELS 선체 + BrasFELS 브라질 통합. Petrobras 로컬 콘텐츠 65% 이상 목표.", "rig_demand": "드릴십 2기 — Búzios 11 전용 개발정 12공 시추 계획", "partners": ["Petrobras 65% op", "PPSA 자원 관리"] }
     },
     {
       "name": "GranMorgu FPSO",
@@ -673,7 +682,8 @@
       "oil_capacity_kboed": 220,
       "delivery": "2028-Q3",
       "status": "Under Construction",
-      "notes": "수리남 첫 심해 FPSO. TotalEnergies FID 2024년."
+      "notes": "수리남 첫 심해 FPSO. TotalEnergies FID 2024년.",
+      "detail": { "hull_type": "SBM Fast4Ward (신조)", "water_depth_m": 700, "storage_mmbbl": 2.0, "gas_capacity_mmscfd": 200, "mooring": "Turret Mooring", "fid_date": "2025 (예상)", "construction_progress_pct": 10, "financing": "20년 BFOO 임대 (TotalEnergies)", "key_equipment": "수리남 최초 대형 FPSO. Block 58 GranMorgu 발견 개발 전용. SBM Fast4Ward 8호 선형.", "rig_demand": "드릴십 1~2기 — Block 58 개발정 시추 2027년 착수 예정", "partners": ["TotalEnergies 40% op", "APA Corp 25%", "Staatsolie 20%", "Shell 15%"] }
     },
     {
       "name": "FLNG Sorrento",
@@ -687,7 +697,8 @@
       "oil_capacity_kboed": null,
       "delivery": "2027-Q2",
       "status": "Under Construction",
-      "notes": "호주 Scarborough 가스전 FLNG. Golar MK II 설계. 3.5 MTPA."
+      "notes": "호주 Scarborough 가스전 FLNG. Golar MK II 설계. 3.5 MTPA.",
+      "detail": { "hull_type": "Golar MK II FLNG (개조 LNG 운반선)", "water_depth_m": 950, "storage_mmbbl": null, "gas_capacity_mmscfd": 560, "mooring": "Spread Mooring (FLNG)", "fid_date": "2023-Q4", "construction_progress_pct": 25, "financing": "20년 임대 (Woodside)", "key_equipment": "Golar MK II 설계 (Hilli 자매선 기반). Wison 중국 개조. LNG 액화 용량 3.5 MTPA. APCI 액화 공정.", "rig_demand": "반잠수식 리그 1기 — Scarborough 가스전 개발정 시추 병행", "partners": ["Woodside 73% op", "BHP 27%"] }
     },
     {
       "name": "Dalia 2 FPSO (Angola)",
@@ -701,7 +712,8 @@
       "oil_capacity_kboed": 80,
       "delivery": "2027-Q4",
       "status": "Under Construction",
-      "notes": "앙골라 Block 17 Dalia Phase 2. TotalEnergies 자가 운영."
+      "notes": "앙골라 Block 17 Dalia Phase 2. TotalEnergies 자가 운영.",
+      "detail": { "hull_type": "신조 FPSO (HHI)", "water_depth_m": 1400, "storage_mmbbl": 1.5, "gas_capacity_mmscfd": 80, "mooring": "Turret Mooring (SOFEC)", "fid_date": "2024", "construction_progress_pct": 20, "financing": "TotalEnergies 자가 소유 직발주", "key_equipment": "HHI 현대중공업 신조. Block 17 기존 Dalia FPSO 인근 배치. 딥워터 앙골라 3번째 TTE 자가 FPSO.", "rig_demand": "드릴십 1기 — Dalia Phase 2 개발정 6공 시추 2027~2029년", "partners": ["TotalEnergies 36.75% op", "Sonangol 30%", "bp 16.67%", "ExxonMobil 20%"] }
     },
     {
       "name": "MODEC MV34 (Libra NW)",
@@ -715,7 +727,8 @@
       "oil_capacity_kboed": 180,
       "delivery": "2028-Q2",
       "status": "Under Construction",
-      "notes": "MODEC MV34. Petrobras 발주 브라질 신규 FPSO."
+      "notes": "MODEC MV34. Petrobras 발주 브라질 신규 FPSO.",
+      "detail": { "hull_type": "신조 FPSO (MODEC MV34 선형)", "water_depth_m": 2000, "storage_mmbbl": 1.8, "gas_capacity_mmscfd": 170, "mooring": "Turret Mooring", "fid_date": "2024", "construction_progress_pct": 15, "financing": "20년 임대 (Petrobras)", "key_equipment": "MODEC MV34 표준 선형. SHI 한국 신조. Búzios NW/Atapu 프리솔트 레이어 복합 개발 전용.", "rig_demand": "드릴십 2기 — Búzios NW 개발정 시추 2027~2029년 집중 배치", "partners": ["Petrobras 65% op", "TotalEnergies 22.5%", "Shell 12.5%"] }
     }
   ],
   "charter_rates": [

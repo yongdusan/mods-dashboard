@@ -337,6 +337,105 @@
       color: var(--accent);
     }
 
+    /* ─── Orderbook Drilldown ─── */
+    .ob-drilldown {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, margin 0.2s;
+      margin: 0 0 0 0;
+    }
+    .ob-drilldown.open {
+      max-height: 600px;
+      margin: 0 0 16px 0;
+    }
+    .ob-drilldown-inner {
+      background: var(--panel);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+    }
+    .ob-drilldown-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .ob-drilldown-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      flex: 1;
+    }
+    .ob-close-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    .ob-close-btn:hover { border-color: var(--text-muted); color: var(--text); }
+    .ob-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px 20px;
+    }
+    @media (max-width: 768px) { .ob-detail-grid { grid-template-columns: repeat(2, 1fr); } }
+    .ob-detail-item { display: flex; flex-direction: column; gap: 2px; }
+    .ob-detail-item.full { grid-column: 1 / -1; }
+    .ob-detail-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+    }
+    .ob-detail-value {
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .ob-progress-bar {
+      margin-top: 4px;
+      height: 6px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .ob-progress-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 3px;
+      transition: width 0.5s ease;
+    }
+    .ob-rig-demand {
+      grid-column: 1 / -1;
+      margin-top: 4px;
+      padding: 8px 12px;
+      background: rgba(0, 212, 170, 0.07);
+      border: 1px solid rgba(0, 212, 170, 0.25);
+      border-radius: 5px;
+      font-size: 11px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .ob-rig-demand::before { content: '🔵 시추 수요: '; font-weight: 600; }
+    .ob-partners {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .ob-partner-tag {
+      font-size: 10px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      color: var(--text-muted);
+    }
+
     /* ─── Tabulator Overrides ─── */
     .tabulator {
       background: transparent !important;
@@ -489,9 +588,19 @@
   <div class="panel">
     <div class="panel-header">
       <span class="panel-title"><span class="dot"></span>Orderbook</span>
-      <span class="panel-subtitle">건조 중 · 발주 완료 설비</span>
+      <span class="panel-subtitle">건조 중 · 발주 완료 설비 — 클릭 시 상세 정보</span>
     </div>
     <div id="orderbook-table"></div>
+    <!-- Drilldown -->
+    <div class="ob-drilldown" id="ob-drilldown">
+      <div class="ob-drilldown-inner">
+        <div class="ob-drilldown-header">
+          <div class="ob-drilldown-title" id="ob-drilldown-title">—</div>
+          <button class="ob-close-btn" onclick="window.closeObDrilldown()">✕ 닫기</button>
+        </div>
+        <div class="ob-detail-grid" id="ob-detail-grid"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Charter Rates Chart -->
@@ -632,13 +741,59 @@
     });
   }
 
+  /* ─── Orderbook Drilldown ─── */
+  let selectedObItem = null;
+  let obTable = null;
+
+  function renderObDrilldown(item) {
+    selectedObItem = item;
+    const d = item.detail || {};
+    const titleEl = document.getElementById('ob-drilldown-title');
+    const typeColor = item.type === 'FLNG' ? 'var(--orange)' : 'var(--blue)';
+    titleEl.innerHTML = `<span style="color:${typeColor};font-weight:800">${esc(item.type)}</span> ${esc(item.name)}
+      <span class="badge badge-muted" style="font-size:10px;margin-left:6px">${esc(item.delivery)}</span>
+      ${item.contract_value_busd ? `<span class="badge badge-orange" style="font-size:10px;margin-left:4px">$${item.contract_value_busd.toFixed(1)}B</span>` : ''}`;
+
+    const pct = d.construction_progress_pct || 0;
+    const partners = Array.isArray(d.partners) && d.partners.length
+      ? `<div class="ob-partners">${d.partners.map(p => `<span class="ob-partner-tag">${esc(p)}</span>`).join('')}</div>` : '';
+
+    document.getElementById('ob-detail-grid').innerHTML = `
+      ${d.hull_type ? `<div class="ob-detail-item"><span class="ob-detail-label">선형 / 선체</span><span class="ob-detail-value">${esc(d.hull_type)}</span></div>` : ''}
+      ${d.mooring ? `<div class="ob-detail-item"><span class="ob-detail-label">계류 방식</span><span class="ob-detail-value">${esc(d.mooring)}</span></div>` : ''}
+      ${d.fid_date ? `<div class="ob-detail-item"><span class="ob-detail-label">FID 일자</span><span class="ob-detail-value">${esc(d.fid_date)}</span></div>` : ''}
+      ${d.water_depth_m != null ? `<div class="ob-detail-item"><span class="ob-detail-label">수심</span><span class="ob-detail-value">${d.water_depth_m.toLocaleString()}m</span></div>` : ''}
+      ${d.storage_mmbbl != null ? `<div class="ob-detail-item"><span class="ob-detail-label">저장 용량</span><span class="ob-detail-value">${d.storage_mmbbl} MMbbl</span></div>` : ''}
+      ${d.gas_capacity_mmscfd != null ? `<div class="ob-detail-item"><span class="ob-detail-label">${item.type === 'FLNG' ? 'LNG 처리 용량' : '가스 처리 용량'}</span><span class="ob-detail-value">${d.gas_capacity_mmscfd.toLocaleString()} MMscfd</span></div>` : ''}
+      ${d.construction_progress_pct != null ? `
+        <div class="ob-detail-item full">
+          <span class="ob-detail-label">건조 진행률 — ${pct}%</span>
+          <div class="ob-progress-bar"><div class="ob-progress-fill" style="width:${pct}%"></div></div>
+        </div>` : ''}
+      ${d.financing ? `<div class="ob-detail-item full"><span class="ob-detail-label">금융 / 계약 구조</span><span class="ob-detail-value">${esc(d.financing)}</span></div>` : ''}
+      ${d.key_equipment ? `<div class="ob-detail-item full"><span class="ob-detail-label">주요 특징 / 기자재</span><span class="ob-detail-value">${esc(d.key_equipment)}</span></div>` : ''}
+      ${d.rig_demand ? `<div class="ob-rig-demand">${esc(d.rig_demand)}</div>` : ''}
+      ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
+    `;
+
+    const panel = document.getElementById('ob-drilldown');
+    panel.classList.add('open');
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+  }
+
+  function closeObDrilldown() {
+    selectedObItem = null;
+    document.getElementById('ob-drilldown').classList.remove('open');
+    if (obTable) obTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+  }
+  window.closeObDrilldown = closeObDrilldown;
+
   /* ─── Orderbook Table ─── */
   function renderOrderbookTable(data) {
-    new Tabulator('#orderbook-table', {
+    obTable = new Tabulator('#orderbook-table', {
       data: data.orderbook,
       layout: 'fitColumns',
       responsiveLayout: 'collapse',
-      selectable: 1,
       columns: [
         { title: '설비명',          field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
         { title: '유형',            field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
@@ -651,6 +806,18 @@
         { title: '계약금액($B)',    field: 'contract_value_busd',width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono" style="color:var(--accent)">$${v.toFixed(1)}B</span>` : '—'; } },
         { title: '상태',            field: 'status',            width: 130, formatter: function(cell) { return statusBadge(cell.getValue()); } }
       ]
+    });
+    obTable.on('rowClick', function(e, row) {
+      const item = row.getData();
+      if (!item.detail) return;
+      const isSelected = row.getElement().classList.contains('row-selected');
+      obTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+      if (isSelected) {
+        closeObDrilldown();
+      } else {
+        row.getElement().classList.add('row-selected');
+        renderObDrilldown(item);
+      }
     });
   }
 
@@ -786,6 +953,9 @@
       renderVesselTable(data);
       renderOrderbookTable(data);
       renderCharterChart(data);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeObDrilldown();
+      });
     })
     .catch(function(err) {
       console.error('Failed to load fpso.json:', err);
