@@ -10,7 +10,24 @@
         { "year": 2026, "total_capex_busd": 28.0, "upstream_capex_busd": 21.0, "source": "Q1 2026 Earnings (Apr 2026)" }
       ],
       "upstream_focus": "Guyana, Permian, deepwater",
-      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B 상향. Upstream 비중 ~75%. Permian 생산 레코드 4.7Mboe/d."
+      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B 상향. Upstream 비중 ~75%. Permian 생산 레코드 4.7Mboe/d.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": 140,
+        "key_projects": [
+          { "name": "Yellowtail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 250, "notes": "Stabroek 4번째 FPSO. 2024 first oil. XOM 45% op." },
+          { "name": "Hammerhead (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "Stabroek 5번째 개발. FID 2024. 2027년 first oil 목표." },
+          { "name": "Whiptail (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "Planning", "capacity_kboed": 250, "notes": "Stabroek 6번째. 기술 평가 중." },
+          { "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 1400, "notes": "Pioneer 통합 후 순 생산량 1.4Mboed/d. 2030년 2Mboed 목표." },
+          { "name": "Anchor (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 75, "notes": "20,000psi 고압 저류층. 업계 최초 15,000psi 수중 장비 적용." }
+        ],
+        "drilling_highlights": [
+          "2026년 Guyana Hammerhead 개발정 시추 집중 — 드릴십 2기 장기 계약 운용",
+          "Permian 연간 시추 약 1,000정 규모 유지",
+          "GOM 심해 탐사정 2~3공 계획",
+          "2030년까지 Stabroek 블록에서 6개 FPSO 운영 목표"
+        ]
+      }
     },
     {
       "name": "Shell",
@@ -21,7 +38,24 @@
         { "year": 2026, "total_capex_busd": 21.0, "upstream_capex_busd": 13.0, "source": "2026 Capital Discipline Guidance" }
       ],
       "upstream_focus": "deepwater, LNG",
-      "notes": "Upstream 비중 ~62%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지."
+      "notes": "Upstream 비중 ~62%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지.",
+      "upstream_plan": {
+        "horizon": "2026–2028",
+        "total_commitment_busd": null,
+        "key_projects": [
+          { "name": "Gato do Mato (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 100, "notes": "Santos Basin. Shell 50% op. 2027년 first oil 목표." },
+          { "name": "Raia (Brazil)", "region": "South America", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Santos Basin 탐사 블록. 대형 가스 발견." },
+          { "name": "Whale (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "On Production", "capacity_kboed": 100, "notes": "Shell 60% op. 2023 first oil. Appomattox 타이백." },
+          { "name": "Bonga North (Nigeria)", "region": "West Africa", "type": "Deepwater FPSO", "status": "FID Approved", "capacity_kboed": 110, "notes": "OML 118. NNPC/SPDC JV. FID 2024." },
+          { "name": "LNG Portfolio", "region": "Global", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "연간 LNG 70+Mtpa 포트폴리오 유지. Qatar, Australia, Nigeria, Malaysia." }
+        ],
+        "drilling_highlights": [
+          "Brazil Santos Basin 드릴링 캠페인 지속 — 드릴십 2기 운용",
+          "GOM deepwater 탐사/개발 연 3~4공",
+          "Nigeria deepwater Bonga North 개발 착수 준비",
+          "2026년 upstream 드릴링 예산 $3.5B 추정"
+        ]
+      }
     },
     {
       "name": "bp",
@@ -32,7 +66,24 @@
         { "year": 2026, "total_capex_busd": 13.0, "upstream_capex_busd": 10.0, "source": "Q1 2026 Earnings (Apr 2026)" }
       ],
       "upstream_focus": "GOM, North Sea, Azerbaijan",
-      "notes": "Upstream(O&G) 비중 ~77%. 재생에너지 투자 축소, upstream 재집중 전략. 2026 FY 가이던스 $13.0–13.5B 유지."
+      "notes": "Upstream(O&G) 비중 ~77%. 재생에너지 투자 축소, upstream 재집중 전략. 2026 FY 가이던스 $13.0–13.5B 유지.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": 50,
+        "key_projects": [
+          { "name": "Mad Dog Phase 2 / Argos (GOM)", "region": "Gulf of Mexico", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 140, "notes": "2023 first oil. bp 60.5% op. 5억 배럴 매장량." },
+          { "name": "Kaskida (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 80, "notes": "고압 심해 개발. FID 2024. 2028년 first oil 목표." },
+          { "name": "ACG Expansion (Azerbaijan)", "region": "Caspian", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 200, "notes": "Azeri-Chirag-Gunashli 확장. 2050년까지 계약 연장." },
+          { "name": "Tangguh Expansion (Indonesia)", "region": "Asia Pacific", "type": "LNG", "status": "On Production", "capacity_kboed": null, "notes": "Train 3 완공. LNG 생산 능력 11.4Mtpa." },
+          { "name": "North Sea Portfolio", "region": "North Sea", "type": "Offshore Platform", "status": "On Production", "capacity_kboed": 200, "notes": "노후 자산 생산성 유지. 선택적 투자. 점진적 포트폴리오 축소 검토." }
+        ],
+        "drilling_highlights": [
+          "GOM Kaskida 개발정 시추 착수 — 20,000psi 장비 적용",
+          "Azerbaijan ACG 유정 추가 시추로 생산 안정화",
+          "2025 CMD: upstream 투자 확대 선언, 재생에너지 예산 대폭 삭감",
+          "연간 드릴링 예산 약 $3B 유지 (GOM 집중)"
+        ]
+      }
     },
     {
       "name": "Chevron",
@@ -43,7 +94,24 @@
         { "year": 2026, "total_capex_busd": 18.5, "upstream_capex_busd": 14.0, "source": "2026 Capex Budget Announcement (Dec 2025)" }
       ],
       "upstream_focus": "Permian, Kazakhstan, GOM, Guyana",
-      "notes": "Upstream 비중 ~76%. Hess 인수로 Guyana 지분(30%) 확보 반영. 2026 가이던스 $18–19B로 대폭 상향."
+      "notes": "Upstream 비중 ~76%. Hess 인수로 Guyana 지분(30%) 확보 반영. 2026 가이던스 $18–19B로 대폭 상향.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": 90,
+        "key_projects": [
+          { "name": "Stabroek Block (Guyana)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 150, "notes": "Hess 인수로 30% 지분 확보. Liza I·II·Yellowtail 운영 중." },
+          { "name": "TCO / Tengiz Expansion (Kazakhstan)", "region": "Central Asia", "type": "Onshore", "status": "On Production", "capacity_kboed": 260, "notes": "Tengizchevroil FGP-WPMP 완공. 75만 b/d 목표. CVX 50% 지분." },
+          { "name": "Permian Basin", "region": "North America", "type": "Unconventional", "status": "On Production", "capacity_kboed": 900, "notes": "2026년 내 100만 boed 돌파 목표. 연간 약 600정 시추." },
+          { "name": "Anchor / Ballymore (GOM)", "region": "Gulf of Mexico", "type": "Deepwater", "status": "Under Development", "capacity_kboed": 75, "notes": "Ballymore FID 2023. 2025년 first oil 목표. CVX 40% op." },
+          { "name": "Aphrodite (Cyprus)", "region": "Mediterranean", "type": "Deepwater Gas", "status": "FID Approved", "capacity_kboed": null, "notes": "동지중해 가스전. CVX 35% op. LNG 또는 파이프라인 수출 검토." }
+        ],
+        "drilling_highlights": [
+          "Guyana Stabroek 드릴링 가속 — Hammerhead 개발정 참여",
+          "Permian 연간 약 600정 시추 규모 유지",
+          "GOM Ballymore 개발정 시추 완료, production ramp-up",
+          "Kazakhstan TCO 증산에 따른 공정 최적화 중심 투자"
+        ]
+      }
     },
     {
       "name": "TotalEnergies",
@@ -54,7 +122,24 @@
         { "year": 2026, "total_capex_busd": 16.0, "upstream_capex_busd": 10.0, "source": "2025 Results & 2026 Objectives (Feb 2026)" }
       ],
       "upstream_focus": "Africa deepwater, Middle East, Brazil",
-      "notes": "Upstream 비중 ~63%. 저탄소/통합전력 ~$4B 별도. 2026 net capex ~$16B로 하향(기존 $17.5B). Angola, Nigeria, Congo 집중."
+      "notes": "Upstream 비중 ~63%. 저탄소/통합전력 ~$4B 별도. 2026 net capex ~$16B로 하향(기존 $17.5B). Angola, Nigeria, Congo 집중.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": null,
+        "key_projects": [
+          { "name": "Kaminho (Angola)", "region": "West Africa", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 70, "notes": "Block 20/11. TTE 40% op. 2027년 first oil 목표." },
+          { "name": "Ballossorie (Angola)", "region": "West Africa", "type": "Deepwater", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "Block 48 탐사. 대형 가스·콘덴세이트 발견." },
+          { "name": "Ikike (Nigeria)", "region": "West Africa", "type": "Offshore", "status": "On Production", "capacity_kboed": 50, "notes": "OML 99. TTE 24% 지분. 2022 first oil." },
+          { "name": "Mero / Libra (Brazil)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 180, "notes": "Santos Basin pre-salt. TTE 20%. Mero 3·4 FPSO 순차 생산." },
+          { "name": "Al Shaheen (Qatar)", "region": "Middle East", "type": "Offshore", "status": "On Production", "capacity_kboed": 300, "notes": "Qatar 최대 해상 유전. TTE 30% op. 장기 계약 2024년 갱신." }
+        ],
+        "drilling_highlights": [
+          "Angola Kaminho 개발정 시추 착수 — 드릴십 1기 전용 배치",
+          "Brazil Mero 3·4 연계 개발정 지속 시추",
+          "Africa deepwater 탐사 캠페인 유지 — 연 2~3공",
+          "2026년 upstream 드릴링 예산 $2.5B 추정"
+        ]
+      }
     },
     {
       "name": "Saudi Aramco",
@@ -65,7 +150,24 @@
         { "year": 2026, "total_capex_busd": 50.0, "upstream_capex_busd": 30.0, "source": "2026 Medium-Term Guidance" }
       ],
       "upstream_focus": "offshore increment, Jafurah gas",
-      "notes": "Upstream 비중 60% (명시). Marjan·Berri offshore 증산($18B 프로그램). Jafurah 비전통 가스 포함."
+      "notes": "Upstream 비중 60% (명시). Marjan·Berri offshore 증산($18B 프로그램). Jafurah 비전통 가스 포함.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": 180,
+        "key_projects": [
+          { "name": "Marjan Increment (Phase 1+2)", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 600, "notes": "$18B 프로그램. offshore+onshore 패키지. 600kboed 생산 증가 목표. 2026년 Phase 1 완공 예정." },
+          { "name": "Berri Increment", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 250, "notes": "Berri 가스전 연계. Marjan과 병행 개발. 2026년 완공 목표." },
+          { "name": "Jafurah Gas Field", "region": "Eastern Province", "type": "Unconventional Gas", "status": "Under Development", "capacity_kboed": null, "notes": "사우디 최대 비전통 가스전. 2030년 gas 2Bcf/d 목표. 총 투자 $100B+" },
+          { "name": "Safaniya Field Maintenance", "region": "Arabian Gulf", "type": "Offshore", "status": "On Production", "capacity_kboed": 1200, "notes": "세계 최대 해상 유전. 노후 설비 교체 및 가동률 유지 투자." },
+          { "name": "Hawiyah NGL Recovery", "region": "Eastern Province", "type": "Gas Processing", "status": "Under Development", "capacity_kboed": null, "notes": "Jafurah 연계 NGL 회수 설비. 석화 원료 공급 목적." }
+        ],
+        "drilling_highlights": [
+          "Marjan Phase 2 해상 플랫폼 시추 집중 — 잭업 리그 다수 장기 계약",
+          "2025~2026년 해상 시추 프로그램 사상 최대 규모",
+          "Jafurah 비전통 가스전 수평정 대규모 시추 착수",
+          "생산능력 1,200만 b/d 목표는 철회, 1,200만 b/d 유지에 집중"
+        ]
+      }
     },
     {
       "name": "ADNOC",
@@ -76,7 +178,24 @@
         { "year": 2026, "total_capex_busd": 17.0, "upstream_capex_busd": 14.0, "source": "2026 Guidance" }
       ],
       "upstream_focus": "offshore UAE, sour gas",
-      "notes": "Upstream 비중 ~82%. Umm Shaif, Abu Dhabi Offshore 2, SARB Phase 2 진행. 생산능력 500만 b/d 목표(2027)."
+      "notes": "Upstream 비중 ~82%. Umm Shaif, Abu Dhabi Offshore 2, SARB Phase 2 진행. 생산능력 500만 b/d 목표(2027).",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": 150,
+        "key_projects": [
+          { "name": "Umm Shaif – Gas Cap", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": null, "notes": "가스 캡 개발. ADNOC Offshore op. 2027년 완공 목표." },
+          { "name": "Abu Dhabi Offshore 2 (ADO-2)", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 100, "notes": "신규 해상 블록 개발. ADNOC Offshore 100%. 생산능력 확대 기여." },
+          { "name": "SARB Phase 2", "region": "Arabian Gulf", "type": "Offshore Platform", "status": "Under Development", "capacity_kboed": 130, "notes": "Satah Al Razboot 확장. 2026년 완공 목표." },
+          { "name": "Belbazem Phase 2", "region": "Arabian Gulf", "type": "Offshore", "status": "Under Development", "capacity_kboed": 45, "notes": "경질유 생산. 2026년 완공 예정." },
+          { "name": "Hail & Ghasha (Sour Gas)", "region": "Arabian Gulf", "type": "Offshore Gas", "status": "Under Development", "capacity_kboed": null, "notes": "세계 최대 사우어 가스전. ENI·Wintershall·OMV 참여. 2025~2026년 시추 집중." }
+        ],
+        "drilling_highlights": [
+          "2025~2026년 해상 잭업 리그 수요 급증 — 중동 최대 잭업 시장",
+          "Hail & Ghasha 사우어 가스전 집중 시추 — 전용 리그 다수 계약",
+          "ADO-2 및 SARB Phase 2 개발정 시추 동시 진행",
+          "생산능력 500만 b/d 달성을 위한 드릴링 프로그램 가속"
+        ]
+      }
     },
     {
       "name": "Petrobras",
@@ -87,7 +206,24 @@
         { "year": 2026, "total_capex_busd": 21.0, "upstream_capex_busd": 16.6, "source": "2025-2029 Business Plan" }
       ],
       "upstream_focus": "pre-salt deepwater Brazil",
-      "notes": "E&P 비중 ~79%. Búzios, Tupi pre-salt 집중. Búzios 11·Atapu 3 FID. SEAP II FPSO 협상 진행."
+      "notes": "E&P 비중 ~79%. Búzios, Tupi pre-salt 집중. Búzios 11·Atapu 3 FID. SEAP II FPSO 협상 진행.",
+      "upstream_plan": {
+        "horizon": "2025–2029",
+        "total_commitment_busd": 111,
+        "key_projects": [
+          { "name": "Búzios Field (Santos Basin)", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1800, "notes": "세계 최대 deepwater 유전 중 하나. FPSO P-74~P-79 순차 투입. Búzios 11 FID 2025." },
+          { "name": "Tupi / Lula Field", "region": "South America", "type": "Deepwater FPSO", "status": "On Production", "capacity_kboed": 1100, "notes": "2006년 발견된 첫 대형 pre-salt. 생산 안정화, FPSO 교체 투자 진행." },
+          { "name": "Atapu Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 190, "notes": "Atapu 3 FPSO FID 완료. SBM Offshore 수주 유력." },
+          { "name": "Sepia Field", "region": "South America", "type": "Deepwater FPSO", "status": "Under Development", "capacity_kboed": 180, "notes": "SEAP II FPSO 협상 진행 중. 2027년 first oil 목표." },
+          { "name": "Equatorial Margin Exploration", "region": "South America", "type": "Deepwater Exploration", "status": "Exploration/Appraisal", "capacity_kboed": null, "notes": "북부 해상 탐사. 대형 발견 기대. 환경 허가 진행 중." }
+        ],
+        "drilling_highlights": [
+          "Búzios 개발정 연간 8~10공 시추 — 드릴십 4~5기 전용 장기 계약 운용",
+          "Atapu·Sepia 개발정 시추 착수 — 드릴십 2기 추가 수요",
+          "2025~2029년 E&P 드릴링 예산 $111B 중 약 40% 시추 비용 추정",
+          "Equatorial Margin 탐사 드릴십 1~2기 별도 계약 예정"
+        ]
+      }
     },
     {
       "name": "PETRONAS",
@@ -98,7 +234,24 @@
         { "year": 2026, "total_capex_busd": 13.0, "upstream_capex_busd": 8.5, "source": "2026 Guidance" }
       ],
       "upstream_focus": "Malaysia offshore, LNG",
-      "notes": "Upstream 비중 ~65%. Kasawari CCS 포함. Malaysia 국내 offshore + LNG. GCC NOC 합산 2027년 $125B 전망."
+      "notes": "Upstream 비중 ~65%. Kasawari CCS 포함. Malaysia 국내 offshore + LNG. GCC NOC 합산 2027년 $125B 전망.",
+      "upstream_plan": {
+        "horizon": "2026–2030",
+        "total_commitment_busd": null,
+        "key_projects": [
+          { "name": "Kasawari Gas Field (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas + CCS", "status": "Under Development", "capacity_kboed": null, "notes": "Malaysia 최대 가스전. CCS 설비 포함(연 3.3Mtpa CO₂ 저장). 2025년 완공 목표." },
+          { "name": "Rosmari-Marjoram (Sarawak)", "region": "Southeast Asia", "type": "Offshore Gas", "status": "On Production", "capacity_kboed": null, "notes": "2023 first gas. Kasawari 연계 가스 공급망." },
+          { "name": "Pan Malaysia Drilling", "region": "Southeast Asia", "type": "Offshore", "status": "On Production", "capacity_kboed": null, "notes": "말레이시아 전역 성숙 유전 생산 유지. 잭업 리그 다수 장기 계약." },
+          { "name": "RAPID / Pengerang (Downstream)", "region": "Southeast Asia", "type": "Refinery / Petchem", "status": "On Production", "capacity_kboed": null, "notes": "하류 통합 컴플렉스. 상류 crude 공급 연계 투자 일부 포함." },
+          { "name": "International Portfolio (Iraq, Canada)", "region": "Global", "type": "Upstream", "status": "On Production", "capacity_kboed": 80, "notes": "이라크 Gharraf, 캐나다 오일샌드 등. 해외 자산 선택적 유지." }
+        ],
+        "drilling_highlights": [
+          "Pan Malaysia Drilling — 잭업 리그 10기 이상 연간 장기 계약 (업계 주요 수요처)",
+          "Kasawari 완공 후 신규 가스전 탐사 드릴링 캠페인 착수 예정",
+          "Sarawak 심해 탐사 확대 — 드릴십 1기 계약 검토",
+          "해외 자산 유지 드릴링 최소화, 국내 집중 전략"
+        ]
+      }
     }
   ]
 }

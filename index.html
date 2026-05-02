@@ -269,8 +269,86 @@
 
     /* ─── CAPEX section ─── */
     .capex-section {
+      margin-bottom: 0;
+    }
+
+    /* ─── CAPEX Drilldown ─── */
+    .capex-drilldown {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease;
       margin-bottom: 20px;
     }
+    .capex-drilldown.open { max-height: 900px; }
+    .capex-drilldown-inner {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      margin-top: 12px;
+      overflow: hidden;
+    }
+    .capex-drilldown-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .capex-drilldown-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .capex-drilldown-body {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 0;
+    }
+    @media (max-width: 1100px) {
+      .capex-drilldown-body { grid-template-columns: 1fr; }
+    }
+    .capex-drilldown-body > div {
+      padding: 16px 18px;
+    }
+    .capex-drilldown-body > div:first-child {
+      border-right: 1px solid var(--border);
+    }
+    .capex-sub-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .project-list { display: flex; flex-direction: column; gap: 8px; }
+    .project-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 10px 12px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 12px;
+      align-items: start;
+      transition: border-color 0.15s;
+    }
+    .project-card:hover { border-color: var(--accent); }
+    .project-card.status-production { border-left-color: var(--green); }
+    .project-card.status-development { border-left-color: var(--blue); }
+    .project-card.status-fid { border-left-color: var(--yellow); }
+    .project-card.status-exploration { border-left-color: var(--orange); }
+    .project-card.status-planning { border-left-color: var(--text-muted); }
+    .project-name { font-size: 12px; font-weight: 600; color: var(--text); }
+    .project-meta { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+    .project-notes { font-size: 11px; color: var(--text-muted); margin-top: 4px; grid-column: 1 / -1; line-height: 1.5; }
+    .project-badge { font-size: 10px; white-space: nowrap; align-self: start; }
+    .drill-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .drill-list li { display: flex; gap: 8px; font-size: 12px; color: var(--text); line-height: 1.6; }
+    .drill-list li::before { content: '▸'; color: var(--orange); flex-shrink: 0; margin-top: 3px; font-size: 9px; }
     .capex-toggle {
       display: flex;
       gap: 4px;
@@ -625,6 +703,26 @@
     </div>
   </div>
 
+  <!-- CAPEX Drilldown Panel -->
+  <div class="capex-drilldown" id="capex-drilldown">
+    <div class="capex-drilldown-inner">
+      <div class="capex-drilldown-header">
+        <div class="capex-drilldown-title" id="capex-drilldown-title"></div>
+        <button class="close-btn" id="close-capex-drilldown">×</button>
+      </div>
+      <div class="capex-drilldown-body">
+        <div>
+          <div class="capex-sub-label">Key Upstream Projects</div>
+          <div class="project-list" id="capex-project-list"></div>
+        </div>
+        <div>
+          <div class="capex-sub-label">Drilling Highlights</div>
+          <ul class="drill-list" id="capex-drill-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Newbuild Prices Table -->
   <div class="newbuild-section">
     <div class="panel">
@@ -662,6 +760,7 @@
   let capexChart = null;
   let capexTable = null;
   let capexMode = 'upstream'; // 'upstream' | 'total'
+  let selectedCapexCompany = null;
   let newbuildTable = null;
 
   function esc(str) {
@@ -1117,6 +1216,7 @@
         upstream_capex_busd: latest.upstream_capex_busd,
         upstream_pct: upstreamPct,
         focus: c.upstream_focus,
+        _company: c,
       };
     }).filter(Boolean);
 
@@ -1181,8 +1281,101 @@
           formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },
       ],
+      rowClick: function(e, row) {
+        const data = row.getData();
+        const company = data._company;
+        capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+        if (selectedCapexCompany && selectedCapexCompany.name === company.name) {
+          closeCapexDrilldown();
+        } else {
+          row.getElement().classList.add('row-selected');
+          renderCapexDrilldown(company);
+        }
+      },
     });
   }
+
+  /* ─────────────────────────────────────────
+     CAPEX Drilldown
+  ───────────────────────────────────────── */
+  function statusClass(status) {
+    if (!status) return 'status-planning';
+    const s = status.toLowerCase();
+    if (s.includes('production')) return 'status-production';
+    if (s.includes('development')) return 'status-development';
+    if (s.includes('fid')) return 'status-fid';
+    if (s.includes('explor') || s.includes('apprais')) return 'status-exploration';
+    return 'status-planning';
+  }
+
+  function statusBadgeClass(status) {
+    if (!status) return 'badge-muted';
+    const s = status.toLowerCase();
+    if (s.includes('production')) return 'badge-green';
+    if (s.includes('development')) return 'badge-blue';
+    if (s.includes('fid')) return 'badge-yellow';
+    if (s.includes('explor') || s.includes('apprais')) return 'badge-orange';
+    return 'badge-muted';
+  }
+
+  function renderCapexDrilldown(company) {
+    selectedCapexCompany = company;
+    const panel = document.getElementById('capex-drilldown');
+    const plan = company.upstream_plan;
+
+    // Title
+    const typeClass = company.type === 'NOC' ? 'badge-blue' : 'badge-muted';
+    let titleHtml = `${esc(company.name)} <span class="badge ${typeClass}" style="font-size:11px">${esc(company.type)}</span>`;
+    if (plan && plan.horizon) {
+      titleHtml += ` <span class="badge badge-muted" style="font-size:11px">${esc(plan.horizon)}</span>`;
+    }
+    if (plan && plan.total_commitment_busd) {
+      titleHtml += ` <span class="badge badge-orange" style="font-size:11px">총 약속 $${plan.total_commitment_busd}B</span>`;
+    }
+    document.getElementById('capex-drilldown-title').innerHTML = titleHtml;
+
+    // Projects
+    const projectList = document.getElementById('capex-project-list');
+    if (plan && plan.key_projects && plan.key_projects.length) {
+      projectList.innerHTML = plan.key_projects.map(p => {
+        const cap = p.capacity_kboed ? `<span class="mono" style="color:var(--accent);font-size:11px">${p.capacity_kboed}kboed</span>` : '';
+        return `
+          <div class="project-card ${statusClass(p.status)}">
+            <div>
+              <div class="project-name">${esc(p.name)}</div>
+              <div class="project-meta">${esc(p.region)} · ${esc(p.type)}</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+              <span class="badge ${statusBadgeClass(p.status)} project-badge">${esc(p.status)}</span>
+              ${cap}
+            </div>
+            <div class="project-notes">${esc(p.notes)}</div>
+          </div>`;
+      }).join('');
+    } else {
+      projectList.innerHTML = '<div style="color:var(--text-muted);font-size:12px">데이터 없음</div>';
+    }
+
+    // Drilling highlights
+    const drillList = document.getElementById('capex-drill-list');
+    if (plan && plan.drilling_highlights && plan.drilling_highlights.length) {
+      drillList.innerHTML = plan.drilling_highlights.map(h =>
+        `<li>${esc(h)}</li>`
+      ).join('');
+    } else {
+      drillList.innerHTML = '<li style="color:var(--text-muted)">데이터 없음</li>';
+    }
+
+    panel.classList.add('open');
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+  }
+
+  function closeCapexDrilldown() {
+    selectedCapexCompany = null;
+    document.getElementById('capex-drilldown').classList.remove('open');
+    if (capexTable) capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+  }
+  window.closeCapexDrilldown = closeCapexDrilldown;
 
   /* ─────────────────────────────────────────
      Newbuild Prices Table (Tabulator)
@@ -1358,7 +1551,8 @@
   function initDrawer() {
     document.getElementById('drawer-close').addEventListener('click', closeDrawer);
     document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+    document.getElementById('close-capex-drilldown').addEventListener('click', closeCapexDrilldown);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeDrawer(); closeCapexDrilldown(); } });
   }
 
   /* ─────────────────────────────────────────
