@@ -140,7 +140,18 @@
       "contract_end": "2044-01",
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용."
+      "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "Keppel FELS (Singapore) + SHI (Korea)",
+        "gas_capacity_mmscfd": 170,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2022-04",
+        "partners": ["ExxonMobil 45% op", "Hess 30%", "CNOOC 25%"],
+        "financing": "20년 BFOO 장기 임대",
+        "rig_demand": "드릴십 2기 장기 계약 — Yellowtail 개발정 지속 시추",
+        "notable": "SBM Fast4Ward 5호 선형. Stabroek 4번째 FPSO. 세계 최초 20,000ft WD 설계."
+      }
     },
     {
       "name": "Prosperity",
@@ -157,7 +168,18 @@
       "contract_end": "2043-12",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO."
+      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "Keppel FELS (Singapore) + SHI (Korea)",
+        "gas_capacity_mmscfd": 150,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2019-09",
+        "partners": ["ExxonMobil 45% op", "Hess 30%", "CNOOC 25%"],
+        "financing": "20년 BFOO 장기 임대",
+        "rig_demand": "드릴십 1기 — Payara 개발정 연간 유지보수 시추 3~5공",
+        "notable": "SBM Fast4Ward 4호 선형. Stabroek 3번째 FPSO. Payara 220kboed 피크 생산 설계."
+      }
     },
     {
       "name": "Liza Unity",
@@ -174,7 +196,18 @@
       "contract_end": "2042-02",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO."
+      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "Keppel FELS (Singapore) + SHI (Korea)",
+        "gas_capacity_mmscfd": 170,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2019-09",
+        "partners": ["ExxonMobil 45% op", "Hess 30%", "CNOOC 25%"],
+        "financing": "20년 BFOO 장기 임대",
+        "rig_demand": "드릴십 1기 — Liza Phase 2 연간 유지보수 시추 3~5공",
+        "notable": "SBM Fast4Ward 3호 선형. Stabroek 2번째 FPSO. Liza Phase 2 220kboed 생산 설계."
+      }
     },
     {
       "name": "Liza Destiny",
@@ -191,7 +224,18 @@
       "contract_end": "2039-12",
       "status": "On Production",
       "year_delivered": 2019,
-      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비."
+      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비.",
+      "detail": {
+        "hull_type": "SBM Turritella 전환 (VLCC 개조)",
+        "yard": "SHI (Korea) — VLCC 기반 개조",
+        "gas_capacity_mmscfd": 100,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2016-06",
+        "partners": ["ExxonMobil 45% op", "Hess 30%", "CNOOC 25%"],
+        "financing": "20년 BFOO 장기 임대",
+        "rig_demand": "드릴십 1기 — Liza Phase 1 연간 유지보수 시추 2~3공",
+        "notable": "가이아나 최초 상업 생산 FPSO. Stabroek 1번째 FPSO. VLCC 개조 선형으로 건조기간 단축."
+      }
     },
     {
       "name": "Almirante Tamandaré",
@@ -208,7 +252,18 @@
       "contract_end": "2049-06",
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형."
+      "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "SHI (Korea) + BrasFELS (Brazil)",
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2022-02",
+        "partners": ["Petrobras 65% op", "PPSA 자원 관리"],
+        "financing": "22.5년 장기 임대 (Petrobras)",
+        "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 연간 유지보수 및 인필 시추",
+        "notable": "Búzios 6번째 FPSO. SBM Fast4Ward 표준 선형. 브라질 로컬 콘텐츠 요건 준수."
+      }
     },
     {
       "name": "Sepetiba",
@@ -225,7 +280,18 @@
       "contract_end": "2049-10",
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "Buzios 7번째 FPSO."
+      "notes": "Buzios 7번째 FPSO.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "Keppel FELS (Singapore) + SHI (Korea)",
+        "gas_capacity_mmscfd": 150,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2020-07",
+        "partners": ["Shell 26.7%", "Petrobras 40%", "TotalEnergies 20%", "CNOOC 10%", "CNPC 3.3%"],
+        "financing": "20년 BFOO 장기 임대 (Mero 3 / Libra 컨소시엄)",
+        "rig_demand": "드릴십 1기 — Mero/Libra 블록 연간 유지보수 시추 3~4공",
+        "notable": "Mero 3 개발용 FPSO. Libra 컨소시엄 발주. 브라질 프리솔트 핵심 생산설비."
+      }
     },
     {
       "name": "FPSO Carioca (MV31)",
@@ -242,7 +308,18 @@
       "contract_end": "2047-09",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "브라질 프리-솔트 Sepia 개발용."
+      "notes": "브라질 프리-솔트 Sepia 개발용.",
+      "detail": {
+        "hull_type": "MODEC MV31 신조 (Sépia 2 전용)",
+        "yard": "SHI (Korea)",
+        "gas_capacity_mmscfd": 170,
+        "mooring": "Spread Mooring",
+        "fid_date": "2019-01",
+        "partners": ["Shell 30% op", "Petrobras 30%", "TotalEnergies 28%", "PPSA 12%"],
+        "financing": "25년 임대 (Sépia 컨소시엄)",
+        "rig_demand": "드릴십 1기 — Sépia 프리솔트 연간 인필 시추 3~5공",
+        "notable": "MODEC MV31 선형. 브라질 Santos Basin Sépia 2 개발 전용. 2,190m 초심해 설계."
+      }
     },
     {
       "name": "FPSO Anita Garibaldi (MV32)",
@@ -259,7 +336,18 @@
       "contract_end": "2048-09",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "MODEC MV32. Buzios 5번째 FPSO."
+      "notes": "MODEC MV32. Buzios 5번째 FPSO.",
+      "detail": {
+        "hull_type": "MODEC MV32 신조 (Búzios 전용)",
+        "yard": "SHI (Korea) + BrasFELS (Brazil)",
+        "gas_capacity_mmscfd": 80,
+        "mooring": "Spread Mooring",
+        "fid_date": "2021-04",
+        "partners": ["Petrobras 100% op"],
+        "financing": "25년 임대 (Petrobras 단독)",
+        "rig_demand": "드릴십 1기 — Búzios 프리솔트 연간 유지보수 시추 3~5공",
+        "notable": "MODEC MV32 선형. Búzios 5번째 FPSO. Petrobras 단독 운영 설비."
+      }
     },
     {
       "name": "FPSO Abigail Joseph",
@@ -276,7 +364,18 @@
       "contract_end": "2044-06",
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비."
+      "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비.",
+      "detail": {
+        "hull_type": "신조 FPSO (Yinson)",
+        "yard": "Keppel FELS (Singapore)",
+        "gas_capacity_mmscfd": 45,
+        "mooring": "Spread Mooring",
+        "fid_date": "2020-07",
+        "partners": ["Woodside 82% op", "Petrosen 18%"],
+        "financing": "20년 임대 (Woodside Energy)",
+        "rig_demand": "드릴십 1기 — Sangomar Phase 1 연간 유지보수 시추 2~3공",
+        "notable": "세네갈 최초 FPSO. 2024년 First Oil 달성. Sangomar Phase 1 100kboed 설계."
+      }
     },
     {
       "name": "FPSO Ngujima-Yin",
@@ -293,7 +392,18 @@
       "contract_end": "2027-12",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "호주 서부 Vincent 유전 운영 중. 계약 만료 예정."
+      "notes": "호주 서부 Vincent 유전 운영 중. 계약 만료 예정.",
+      "detail": {
+        "hull_type": "VLCC 전환 FPSO",
+        "yard": "Keppel (Singapore) — VLCC 개조",
+        "gas_capacity_mmscfd": 40,
+        "mooring": "Spread Mooring",
+        "fid_date": "2005",
+        "partners": ["Woodside 57% op", "BHP 26.5%", "CITIC 5%", "기타 11.5%"],
+        "financing": "장기 임대 (Woodside 계약, Chevron 운영)",
+        "rig_demand": "드릴십 1기 — 연간 유지보수 시추 2~3공 (수명 연장 생산)",
+        "notable": "호주 서부 480m 수심 Vincent 유전 전용. 2027년 계약 만료 후 처리 방향 검토 중."
+      }
     },
     {
       "name": "FPSO Cidade de Ilhabela",
@@ -310,7 +420,18 @@
       "contract_end": "2034-07",
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "브라질 Sapinhoa 프리-솔트 생산설비."
+      "notes": "브라질 Sapinhoa 프리-솔트 생산설비.",
+      "detail": {
+        "hull_type": "MODEC 신조 FPSO (Sapinhoá 전용)",
+        "yard": "SHI (Korea)",
+        "gas_capacity_mmscfd": 150,
+        "mooring": "Turret Mooring",
+        "fid_date": "2011-05",
+        "partners": ["Petrobras 45% op", "BG Group 30%", "Repsol 25%"],
+        "financing": "20년 임대 (Petrobras/BG Group/Repsol)",
+        "rig_demand": "드릴십 1기 — Sapinhoá 프리솔트 연간 유지보수 시추 3~5공",
+        "notable": "브라질 Santos Basin Sapinhoá 프리솔트 전용. 2,140m 초심해. BG Group 지분 후 Shell 인수."
+      }
     },
     {
       "name": "BW Catcher",
@@ -327,7 +448,18 @@
       "contract_end": "2030-12",
       "status": "On Production",
       "year_delivered": 2017,
-      "notes": "북해 Catcher 지역 생산. 영국 북해 운영."
+      "notes": "북해 Catcher 지역 생산. 영국 북해 운영.",
+      "detail": {
+        "hull_type": "신조 FPSO (BW Offshore)",
+        "yard": "DSME (Korea)",
+        "gas_capacity_mmscfd": 30,
+        "mooring": "Spread Mooring",
+        "fid_date": "2014-06",
+        "partners": ["Repsol 50% op", "Premier Oil 25%", "MOL 20%", "Predator Oil & Gas 5%"],
+        "financing": "20년 베어보트 임대 (BW Offshore)",
+        "rig_demand": "드릴십 1기 — 북해 Catcher 지역 연간 유지보수 시추 2~3공",
+        "notable": "영국 북해 최신 FPSO 중 하나. 170m 천해 최적화 Spread Mooring 설계."
+      }
     },
     {
       "name": "BW Adolo",
@@ -344,7 +476,18 @@
       "contract_end": "2035-07",
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "가봉 Dussafu 개발 전용 전환 FPSO."
+      "notes": "가봉 Dussafu 개발 전용 전환 FPSO.",
+      "detail": {
+        "hull_type": "VLCC 전환 FPSO",
+        "yard": "Keppel (Singapore) — VLCC 개조",
+        "gas_capacity_mmscfd": 20,
+        "mooring": "Spread Mooring",
+        "fid_date": "2016",
+        "partners": ["Perenco 57.5% op", "BW Energy 42.5%"],
+        "financing": "장기 FPSO 임대 (Perenco/BW JV)",
+        "rig_demand": "잭업 리그 1기 — Dussafu 연간 개발정 시추 2~3공",
+        "notable": "BW Offshore-Perenco 공동 개발 JV. 가봉 Dussafu Marin 전용 전환 FPSO."
+      }
     },
     {
       "name": "Espoir Ivoirien",
@@ -361,7 +504,18 @@
       "contract_end": "2026-12",
       "status": "On Production",
       "year_delivered": 2002,
-      "notes": "코트디부아르 장기 운영 FPSO. 2026년 계약 만료 예정."
+      "notes": "코트디부아르 장기 운영 FPSO. 2026년 계약 만료 예정.",
+      "detail": {
+        "hull_type": "VLCC 전환 FPSO",
+        "yard": "Keppel (Singapore) — VLCC 개조",
+        "gas_capacity_mmscfd": 60,
+        "mooring": "Spread Mooring",
+        "fid_date": "2000",
+        "partners": ["CNR International 58.9% op", "Tullow Oil 26.2%", "Petroci 14.9%"],
+        "financing": "장기 임대 (CNR International)",
+        "rig_demand": "드릴십 1기 — 연간 유지보수 시추 2~3공 (노령 유전 수명 연장)",
+        "notable": "2002년 초도 배치 이래 20년 이상 운영 중. 2026년 계약 만료 — 후속 설비 검토 중."
+      }
     },
     {
       "name": "FPSO John Agyekum Kufuor",
@@ -378,7 +532,18 @@
       "contract_end": "2045-01",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO."
+      "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO.",
+      "detail": {
+        "hull_type": "신조 FPSO (Yinson)",
+        "yard": "Sembcorp Marine (Singapore)",
+        "gas_capacity_mmscfd": 40,
+        "mooring": "Turret Mooring",
+        "fid_date": "2019-12",
+        "partners": ["ENI 44.44% op", "Vitol 35.56%", "GNPC 20%"],
+        "financing": "20년 임대 (Sankofa-Gye Nyame 컨소시엄)",
+        "rig_demand": "드릴십 1기 — Sankofa/Gye Nyame 연간 유지보수 시추 2~3공",
+        "notable": "가나 Sankofa-Gye Nyame OML 전용. ENI 운영 서아프리카 심해 생산 거점."
+      }
     },
     {
       "name": "Prelude FLNG",
@@ -395,7 +560,18 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "세계 최대 부유식 구조물. LNG/NGL/C5+ 생산. 3.6 MTPA 용량."
+      "notes": "세계 최대 부유식 구조물. LNG/NGL/C5+ 생산. 3.6 MTPA 용량.",
+      "detail": {
+        "hull_type": "Purpose-built FLNG (Samsung — 세계 최대 부유식 구조물)",
+        "yard": "Samsung Heavy Industries (Korea)",
+        "gas_capacity_mmscfd": 600,
+        "mooring": "Spread Mooring (FLNG)",
+        "fid_date": "2011-05",
+        "partners": ["Shell 67.5% op", "INPEX 17.5%", "KOGAS 10%", "CPC 5%"],
+        "financing": "Shell 자가 소유 (JV 지분 구조)",
+        "rig_demand": "MODU 수요 없음 — 자체 생산 정 유지보수 한정",
+        "notable": "세계 최대 부유식 구조물 (488m × 74m). LNG 3.6MTPA + NGL + C5+. Browse Basin 호주 NW."
+      }
     },
     {
       "name": "Golar Hilli",
@@ -412,7 +588,18 @@
       "contract_end": "2034-05",
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "세계 최초 상업 운전 FLNG. 1.2 MTPA 용량. Hilli Episeyo 개조."
+      "notes": "세계 최초 상업 운전 FLNG. 1.2 MTPA 용량. Hilli Episeyo 개조.",
+      "detail": {
+        "hull_type": "Golar MK I FLNG (Moss-type LNG 운반선 전환)",
+        "yard": "Keppel Shipyard (Singapore) — LNG 운반선 개조",
+        "gas_capacity_mmscfd": 190,
+        "mooring": "Spread Mooring (FLNG)",
+        "fid_date": "2015-07",
+        "partners": ["Perenco 100% op (SNH 국가 지분 포함)"],
+        "financing": "장기 임대 (Golar — Perenco/SNH)",
+        "rig_demand": "MODU 수요 최소 — 자체 가스전 유지보수 한정",
+        "notable": "세계 최초 상업 운전 FLNG. 1.2MTPA 용량. Moss-type LNG 운반선 개조. 카메룬 Kribi."
+      }
     },
     {
       "name": "Golar Tundra",
@@ -429,7 +616,18 @@
       "contract_end": "2043-12",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "코트디부아르 Baleine 가스전 개발. 1.2 MTPA."
+      "notes": "코트디부아르 Baleine 가스전 개발. 1.2 MTPA.",
+      "detail": {
+        "hull_type": "Golar MK II FLNG (LNG 운반선 전환)",
+        "yard": "Wison Offshore (China) — 개조",
+        "gas_capacity_mmscfd": 400,
+        "mooring": "Spread Mooring (FLNG)",
+        "fid_date": "2019-06",
+        "partners": ["ENI 90% op", "Petroci 10%"],
+        "financing": "20년 임대 (Golar — ENI)",
+        "rig_demand": "MODU 수요 없음 — 자체 가스전 생산 한정",
+        "notable": "Baleine 가스전 전용 FLNG. ENI GTA 프로젝트 핵심. 코트디부아르 첫 LNG 생산."
+      }
     },
     {
       "name": "Coral Sul FLNG",
@@ -446,7 +644,18 @@
       "contract_end": "2042-11",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "모잠비크 첫 LNG 생산설비. 3.4 MTPA. Samsung Heavy Industries 건조."
+      "notes": "모잠비크 첫 LNG 생산설비. 3.4 MTPA. Samsung Heavy Industries 건조.",
+      "detail": {
+        "hull_type": "Purpose-built FLNG (SHI 신조)",
+        "yard": "Samsung Heavy Industries (Korea)",
+        "gas_capacity_mmscfd": 550,
+        "mooring": "Spread Mooring (FLNG)",
+        "fid_date": "2017-06",
+        "partners": ["ENI 50% op", "Galp 10%", "KOGAS 10%", "CNPC 20%", "EMHH 10%"],
+        "financing": "20년 장기 임대 — BP 전량 off-take 계약",
+        "rig_demand": "MODU 수요 없음 — Coral South 자체 가스전 생산",
+        "notable": "모잠비크 최초 LNG 생산설비. SHI 신조 3.4MTPA FLNG. 2,000m 수심. BP 전량 구매 계약."
+      }
     },
     {
       "name": "Alexandre de Gusmão",
@@ -463,7 +672,18 @@
       "contract_end": "2050-06",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형."
+      "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "SHI (Korea) + BrasFELS (Brazil)",
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Turret Mooring (SBM)",
+        "fid_date": "2022-12",
+        "partners": ["Petrobras 65% op", "PPSA 자원 관리"],
+        "financing": "22.5년 장기 임대 (Petrobras)",
+        "rig_demand": "드릴십 2기 — Búzios 7 프리솔트 개발정 시추 및 인필 드릴링",
+        "notable": "Búzios 7 전용 FPSO (SBM 명칭). 2025년 인도. SBM Fast4Ward 최신 선형."
+      }
     },
     {
       "name": "P-82 (Búzios 9)",
@@ -480,7 +700,18 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "Petrobras 자가운영 9번째 Buzios FPSO."
+      "notes": "Petrobras 자가운영 9번째 Buzios FPSO.",
+      "detail": {
+        "hull_type": "신조 FPSO (Petrobras 자가 소유 P-82)",
+        "yard": "Keppel FELS (Singapore) + BrasFELS (Brazil)",
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Turret Mooring",
+        "fid_date": "2023",
+        "partners": ["Petrobras 65% op", "PPSA 자원 관리"],
+        "financing": "Petrobras 자가 소유 (BNDES 금융 지원)",
+        "rig_demand": "드릴십 2기 — Búzios 9 프리솔트 개발정 집중 시추",
+        "notable": "Petrobras P-82. Búzios 9번째 FPSO. 2025년 인도. 225kboed 피크 생산 설계."
+      }
     },
     {
       "name": "BW Connector",
@@ -497,7 +728,18 @@
       "contract_end": null,
       "status": "Idle/Warm Stacked",
       "year_delivered": 2000,
-      "notes": "Fortuna FLNG 프로젝트 무산으로 Idle 상태."
+      "notes": "Fortuna FLNG 프로젝트 무산으로 Idle 상태.",
+      "detail": {
+        "hull_type": "가스 응축유 FPSO 전환 (구 Tamar Spirit)",
+        "yard": "DSME (Korea) — 원 건조",
+        "gas_capacity_mmscfd": null,
+        "mooring": "Spread Mooring",
+        "fid_date": null,
+        "partners": null,
+        "financing": "BW Offshore 자가 보유 (Idle 상태)",
+        "rig_demand": "현재 드릴링 수요 없음",
+        "notable": "구 Tamar Spirit (이스라엘 가스전) 전환 FPSO. Fortuna FLNG 프로젝트 무산으로 Warm Stack 상태."
+      }
     },
     {
       "name": "Cidade de Maricá",
@@ -514,7 +756,18 @@
       "contract_end": "2036-09",
       "status": "On Production",
       "year_delivered": 2016,
-      "notes": "Petrobras Lula Alto/South 생산설비. MODEC 운영."
+      "notes": "Petrobras Lula Alto/South 생산설비. MODEC 운영.",
+      "detail": {
+        "hull_type": "MODEC 신조 FPSO (Lula 전용)",
+        "yard": "SHI (Korea)",
+        "gas_capacity_mmscfd": 150,
+        "mooring": "Turret Mooring",
+        "fid_date": "2013-04",
+        "partners": ["Petrobras 65% op", "Shell 25%", "TotalEnergies 10%"],
+        "financing": "20년 임대 (Petrobras/Lula 컨소시엄)",
+        "rig_demand": "드릴십 1기 — Lula Alto/South 프리솔트 연간 유지보수 시추 3~5공",
+        "notable": "브라질 Lula/Tupi NW Santos Basin 프리솔트 전용. 2,140m 초심해. MODEC 브라질 핵심 설비."
+      }
     },
     {
       "name": "FPSO Kwame Nkrumah MV21",
@@ -531,7 +784,18 @@
       "contract_end": "2030-12",
       "status": "On Production",
       "year_delivered": 2010,
-      "notes": "가나 Jubilee 유전 생산. 아프리카 대형 심해 FPSO 중 하나."
+      "notes": "가나 Jubilee 유전 생산. 아프리카 대형 심해 FPSO 중 하나.",
+      "detail": {
+        "hull_type": "MODEC MV21 신조 FPSO (Jubilee 전용)",
+        "yard": "SHI (Korea)",
+        "gas_capacity_mmscfd": 120,
+        "mooring": "Turret Mooring",
+        "fid_date": "2007-06",
+        "partners": ["Tullow Oil 35.5% op", "Eni 36.3%", "Kosmos Energy 18%", "GNPC 10.2%"],
+        "financing": "20년 임대 (Jubilee 컨소시엄)",
+        "rig_demand": "드릴십 1기 — 가나 Jubilee 연간 유지보수 및 인필 시추 3~4공",
+        "notable": "가나 Jubilee 유전 전용 FPSO. 서아프리카 심해 개발 선도 사례. 2010년 초도 생산."
+      }
     }
   ],
   "orderbook": [

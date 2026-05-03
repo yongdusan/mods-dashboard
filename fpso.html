@@ -554,7 +554,7 @@
   <div class="panel">
     <div class="panel-header">
       <span class="panel-title"><span class="dot"></span>Notable Vessels</span>
-      <span class="panel-subtitle">주요 생산설비 현황</span>
+      <span class="panel-subtitle">주요 생산설비 현황 — 클릭 시 상세 정보</span>
     </div>
     <div class="filter-bar" id="vessel-filter-bar">
       <div class="filter-row">
@@ -582,6 +582,16 @@
       </div>
     </div>
     <div id="vessel-table"></div>
+    <!-- Vessel Drilldown -->
+    <div class="ob-drilldown" id="vessel-drilldown">
+      <div class="ob-drilldown-inner">
+        <div class="ob-drilldown-header">
+          <div class="ob-drilldown-title" id="vessel-drilldown-title">—</div>
+          <button class="ob-close-btn" onclick="window.closeVesselDrilldown()">✕ 닫기</button>
+        </div>
+        <div class="ob-detail-grid" id="vessel-detail-grid"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Orderbook -->
@@ -718,6 +728,52 @@
     });
   }
 
+  /* ─── Vessel Drilldown ─── */
+  let selectedVessel = null;
+
+  function renderVesselDrilldown(vessel) {
+    selectedVessel = vessel;
+    const d = vessel.detail || {};
+    const typeColor = vessel.type === 'FLNG' ? 'var(--orange)' : 'var(--accent)';
+
+    // Title
+    const titleEl = document.getElementById('vessel-drilldown-title');
+    let titleHtml = `<span style="color:${typeColor};font-weight:800">${esc(vessel.type)}</span> ${esc(vessel.name)}`;
+    if (vessel.status === 'On Production') titleHtml += ` <span class="badge badge-green" style="font-size:10px">On Production</span>`;
+    if (vessel.contract_end) titleHtml += ` <span class="badge badge-muted" style="font-size:10px;margin-left:4px">계약 ~${esc(vessel.contract_end)}</span>`;
+    titleEl.innerHTML = titleHtml;
+
+    // Detail grid
+    const partners = Array.isArray(d.partners) && d.partners.length
+      ? `<div class="ob-partners">${d.partners.map(p => `<span class="ob-partner-tag">${esc(p)}</span>`).join('')}</div>` : '';
+
+    document.getElementById('vessel-detail-grid').innerHTML = `
+      ${d.hull_type ? `<div class="ob-detail-item"><span class="ob-detail-label">선형 / 선체</span><span class="ob-detail-value">${esc(d.hull_type)}</span></div>` : ''}
+      ${d.yard ? `<div class="ob-detail-item"><span class="ob-detail-label">건조 / 개조 조선소</span><span class="ob-detail-value">${esc(d.yard)}</span></div>` : ''}
+      ${d.mooring ? `<div class="ob-detail-item"><span class="ob-detail-label">계류 방식</span><span class="ob-detail-value">${esc(d.mooring)}</span></div>` : ''}
+      ${vessel.water_depth_m != null ? `<div class="ob-detail-item"><span class="ob-detail-label">수심</span><span class="ob-detail-value">${vessel.water_depth_m.toLocaleString()}m</span></div>` : ''}
+      ${vessel.storage_mmbbl != null ? `<div class="ob-detail-item"><span class="ob-detail-label">저장 용량</span><span class="ob-detail-value">${vessel.storage_mmbbl} MMbbl</span></div>` : ''}
+      ${d.gas_capacity_mmscfd != null ? `<div class="ob-detail-item"><span class="ob-detail-label">${vessel.type === 'FLNG' ? 'LNG 처리 용량' : '가스 처리 용량'}</span><span class="ob-detail-value">${d.gas_capacity_mmscfd.toLocaleString()} MMscfd</span></div>` : ''}
+      ${d.fid_date ? `<div class="ob-detail-item"><span class="ob-detail-label">FID 일자</span><span class="ob-detail-value">${esc(d.fid_date)}</span></div>` : ''}
+      ${vessel.year_delivered ? `<div class="ob-detail-item"><span class="ob-detail-label">인도 연도</span><span class="ob-detail-value">${vessel.year_delivered}</span></div>` : ''}
+      ${d.financing ? `<div class="ob-detail-item full"><span class="ob-detail-label">계약 / 금융 구조</span><span class="ob-detail-value">${esc(d.financing)}</span></div>` : ''}
+      ${d.notable ? `<div class="ob-detail-item full"><span class="ob-detail-label">주요 특징</span><span class="ob-detail-value">${esc(d.notable)}</span></div>` : ''}
+      ${d.rig_demand ? `<div class="ob-rig-demand">${esc(d.rig_demand)}</div>` : ''}
+      ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
+    `;
+
+    const panel = document.getElementById('vessel-drilldown');
+    panel.classList.add('open');
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+  }
+
+  function closeVesselDrilldown() {
+    selectedVessel = null;
+    document.getElementById('vessel-drilldown').classList.remove('open');
+    if (vesselTable) vesselTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+  }
+  window.closeVesselDrilldown = closeVesselDrilldown;
+
   /* ─── Vessel Table ─── */
   function renderVesselTable(data) {
     vesselTable = new Tabulator('#vessel-table', {
@@ -738,6 +794,18 @@
         { title: '계약종료',        field: 'contract_end',      width: 95,  formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
         { title: '상태',            field: 'status',            width: 140, formatter: function(cell) { return statusBadge(cell.getValue()); } }
       ]
+    });
+    vesselTable.on('rowClick', function(e, row) {
+      const vessel = row.getData();
+      if (!vessel.detail) return;
+      const isSelected = row.getElement().classList.contains('row-selected');
+      vesselTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+      if (isSelected) {
+        closeVesselDrilldown();
+      } else {
+        row.getElement().classList.add('row-selected');
+        renderVesselDrilldown(vessel);
+      }
     });
   }
 
@@ -954,7 +1022,7 @@
       renderOrderbookTable(data);
       renderCharterChart(data);
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') closeObDrilldown();
+        if (e.key === 'Escape') { closeObDrilldown(); closeVesselDrilldown(); }
       });
     })
     .catch(function(err) {
