@@ -819,6 +819,8 @@
 
     // Update section label — show unique periods
     const periods = [...new Set(tableData.map(d => d.period))];
+    // Determine the latest period to use for accent highlighting (dynamic, not hardcoded)
+    const latestPeriod = tableData.length > 0 ? tableData[0].period : '';
     const labelEl = document.getElementById('comparison-label');
     if (labelEl) {
       const periodStr = periods.length === 1 ? periods[0] : periods.join(' / ');
@@ -857,7 +859,7 @@
           hozAlign: 'center',
           formatter: function(cell) {
             const v = cell.getValue();
-            const isLatest = v && v.includes('2025');
+            const isLatest = v && v === latestPeriod;
             const color = isLatest ? 'var(--accent)' : 'var(--text-muted)';
             return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>`;
           },
