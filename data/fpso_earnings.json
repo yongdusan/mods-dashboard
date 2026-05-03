@@ -101,6 +101,66 @@
             "수주잔량 $30.2B 유지 — 장기 임대 계약 기반 안정적 현금흐름",
             "Búzios 8 (Marechal Duque de Caxias) 선행 작업 착수"
           ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 1432,
+          "adj_ebitda_musd": 788,
+          "ebitda_margin_pct": 55.0,
+          "units_on_lease": 13,
+          "backlog_busd": 30.4,
+          "source": "H1 2025 Interim Results (Aug 2025)",
+          "highlights": [
+            "Kaminho FPSO 건조 공정률 35% 달성 — SHI·Keppel 조선소 순항",
+            "One Guyana 가동률 97% 유지 — ExxonMobil 스타브로크 4기 생산 안정화",
+            "Marechal Duque de Caxias(P-83) 선행 설계 작업 완료, 강재 절단 착수",
+            "2025 가이던스 유지: Revenue ~$5.8B, EBITDA 마진 54~56%"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 1448,
+          "adj_ebitda_musd": 799,
+          "ebitda_margin_pct": 55.2,
+          "units_on_lease": 14,
+          "backlog_busd": 30.7,
+          "source": "Q3 2025 Trading Update (Oct 2025)",
+          "highlights": [
+            "신규 FPSO 1기 인도 완료 — 운영 설비 14기로 확대, 분기 Revenue 신기록",
+            "Kaminho FPSO 공정률 52% — 2027 Q1 인도 일정 재확인",
+            "수주잔량 $30.7B — Búzios 9 FPSO 조기 입찰 참여 검토 공개",
+            "EBITDA 마진 55.2%로 상승 — 규모 확대 효과 가시화"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 1465,
+          "adj_ebitda_musd": 811,
+          "ebitda_margin_pct": 55.4,
+          "units_on_lease": 14,
+          "backlog_busd": 31.0,
+          "source": "FY 2025 Results (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $5.777B, Adj. EBITDA $3.185B 확정 — 사상 최대 연간 실적",
+            "수주잔량 $31.0B 돌파 — Fast4Ward 7호 헐 Búzios 9 조기 계약 임박",
+            "주당 배당 $1.45 확정 — 전년 대비 10% 인상",
+            "2026 가이던스: Revenue ~$6.0B, EBITDA 마진 55~56%"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 1480,
+          "adj_ebitda_musd": 823,
+          "ebitda_margin_pct": 55.6,
+          "units_on_lease": 14,
+          "backlog_busd": 31.3,
+          "source": "Q1 2026 Trading Update (Apr 2026)",
+          "highlights": [
+            "Kaminho FPSO 건조 공정률 68% — 2027 Q1 인도 목표 유지",
+            "Marechal Duque de Caxias 건조 공정률 22% 달성",
+            "14기 전체 가동률 96.8% — 역대 분기 최고 가동률 경신",
+            "수주잔량 $31.3B 유지 — Búzios 9 LOI 체결 임박 보도"
+          ]
         }
       ]
     },
@@ -204,6 +264,66 @@
             "수주잔량 $13.6B — 분기 기준 역대 최고치 경신",
             "미래 성장 동력: FLNG 진출 검토 — 동남아 LNG 수요 대응"
           ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 540,
+          "adj_ebitda_musd": 232,
+          "ebitda_margin_pct": 43.0,
+          "units_on_lease": 18,
+          "backlog_busd": 13.8,
+          "source": "Q2 FY2025 Earnings (Aug 2025)",
+          "highlights": [
+            "FPSO P-83 브라질 해상 배치 및 시운전 완료, Petrobras 정식 운영 인수",
+            "가나 Jubilee FPSO 장기 운영 계약 2032년까지 연장 공식 확정",
+            "말레이시아 PETRONAS 신규 FPSO 계약 EPC 착수",
+            "수주잔량 $13.8B — MODEC 반기 신기록 갱신"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 552,
+          "adj_ebitda_musd": 240,
+          "ebitda_margin_pct": 43.5,
+          "units_on_lease": 19,
+          "backlog_busd": 14.2,
+          "source": "Q3 FY2025 Earnings (Nov 2025)",
+          "highlights": [
+            "신규 PETRONAS FPSO 1기 인도 완료 — 운영 설비 19기로 확대",
+            "브라질·서아프리카 전 설비 가동률 97% 이상 유지",
+            "수주잔량 $14.2B — MODEC 역대 최고 수주잔량 재경신",
+            "FLNG 시장 진출 구체화 — 동남아 LNG 프로젝트 파트너십 MOU 체결"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 563,
+          "adj_ebitda_musd": 247,
+          "ebitda_margin_pct": 43.9,
+          "units_on_lease": 19,
+          "backlog_busd": 14.5,
+          "source": "FY2025 Results (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue ¥80.4B($563M), EBITDA 마진 43.9% 확정",
+            "2026 가이던스: Revenue ¥83B+, EBITDA 마진 44~45% 목표",
+            "수주잔량 $14.5B — 장기 운영 계약 추가 갱신 포함",
+            "탄소 배출 집약도 25% 감축 달성 — ESG 중기 목표 조기 달성"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 572,
+          "adj_ebitda_musd": 253,
+          "ebitda_margin_pct": 44.2,
+          "units_on_lease": 19,
+          "backlog_busd": 14.8,
+          "source": "Q1 FY2026 Earnings (May 2026)",
+          "highlights": [
+            "EBITDA 마진 44.2% 달성 — MODEC 역대 최고 분기 마진 경신",
+            "신규 서아프리카 FPSO 입찰 최종 후보 선정 — 2026 H2 계약 체결 예상",
+            "수주잔량 $14.8B 유지 — 동남아 FLNG 프로젝트 기본 설계 계약 체결",
+            "일본 엔화 강세 부분 상쇄 — USD 헷지 전략 효과 확인"
+          ]
         }
       ]
     },
@@ -305,6 +425,66 @@
             "BW Gimi GTA LNG 생산 2분기 연속 안정화 — BP 지급 트리거 기준 충족",
             "Petrobras 계약 리뉴얼 협상 진전 — 브라질 FPSO 2기 연장 확정 근접",
             "노르웨이 배당세 감면 혜택 적용 — 주주 순환이익 개선"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 148,
+          "adj_ebitda_musd": 94,
+          "ebitda_margin_pct": 63.5,
+          "units_on_lease": 8,
+          "backlog_busd": 2.7,
+          "source": "H1 2025 Earnings (Aug 2025)",
+          "highlights": [
+            "BW Gimi GTA LNG 연속 안정 가동 4분기째 — BP 성과 트리거 보너스 수취",
+            "Petrobras 계약 2기 연장 최종 합의 — 수주잔량 방어",
+            "EBITDA 마진 63.5%로 상승 — 운영비 최적화 지속",
+            "2025 가이던스 유지: EBITDA $370~390M 범위"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 151,
+          "adj_ebitda_musd": 96,
+          "ebitda_margin_pct": 63.6,
+          "units_on_lease": 8,
+          "backlog_busd": 2.6,
+          "source": "Q3 2025 Earnings (Nov 2025)",
+          "highlights": [
+            "BW Adolo 적도기니 Alen 가스 생산 목표 초과 달성 — 가변 수수료 수취",
+            "BW Gimi LNG 카고 누적 20척 선적 완료 — 안정적 가스전 운영 입증",
+            "배당 가이던스 NOK 3.00/주로 상향 — 주주환원 강화",
+            "신규 소형 FPSO 입찰 2건 참여 — 포트폴리오 확장 검토"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 154,
+          "adj_ebitda_musd": 98,
+          "ebitda_margin_pct": 63.6,
+          "units_on_lease": 8,
+          "backlog_busd": 2.5,
+          "source": "FY2025 Results (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $601M, Adj. EBITDA $381M 확정 — 연간 가이던스 상단 초과",
+            "BW Gimi FY2025 가동률 93% — 업계 FLNG 최고 가동률 기록",
+            "주당 배당 NOK 3.00 최종 확정",
+            "2026 가이던스: EBITDA $390~410M, 마진 64% 목표"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 157,
+          "adj_ebitda_musd": 101,
+          "ebitda_margin_pct": 64.3,
+          "units_on_lease": 8,
+          "backlog_busd": 2.4,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "highlights": [
+            "EBITDA 마진 64.3% — BW Offshore 역대 최고 분기 마진 달성",
+            "BW Gimi GTA LNG Phase 1 생산 정상화 완전 확인 — 연간 가동률 목표 95% 상향",
+            "소형 FPSO 신규 입찰 1건 우선협상대상자 선정",
+            "수주잔량 $2.4B — 2027~2028년 만기 계약 조기 갱신 협상 착수"
           ]
         }
       ]
@@ -409,6 +589,66 @@
             "수주잔량 $15.3B 유지 — 신규 FPSO 입찰 2건 최종 후보 선정",
             "재생에너지 자회사 Yinson Renewables 태양광 포트폴리오 500MW 달성"
           ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 262,
+          "adj_ebitda_musd": 164,
+          "ebitda_margin_pct": 62.6,
+          "units_on_lease": 8,
+          "backlog_busd": 15.5,
+          "source": "Q2 FY2026 Earnings (Sep 2025)",
+          "highlights": [
+            "FPSO Agogo 자매선(나이지리아) 건조 공정률 28% — ENI 계약 순항",
+            "운영 설비 8기 전체 가동률 96% 달성 — Yinson 역대 최고",
+            "수주잔량 $15.5B — 동남아 신규 FPSO 입찰 2건 최종 후보",
+            "녹색 채권(Green Bond) $300M 추가 발행 — ESG 금융 포트폴리오 강화"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 275,
+          "adj_ebitda_musd": 174,
+          "ebitda_margin_pct": 63.3,
+          "units_on_lease": 8,
+          "backlog_busd": 15.8,
+          "source": "Q3 FY2026 Earnings (Dec 2025)",
+          "highlights": [
+            "FPSO Maria Quitéria 브라질 Marlim 광구 가동률 97% — 안정 생산 단계 진입",
+            "나이지리아 FPSO 건조 공정률 45% 달성 — 2027 인도 일정 유지",
+            "수주잔량 $15.8B — Yinson 역대 최고치 재경신",
+            "Yinson Renewables 태양광 포트폴리오 800MW 달성"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 288,
+          "adj_ebitda_musd": 184,
+          "ebitda_margin_pct": 63.9,
+          "units_on_lease": 8,
+          "backlog_busd": 16.1,
+          "source": "Q4 FY2026 Earnings (Mar 2026)",
+          "highlights": [
+            "FY2026(회계연도) Revenue $1.077B 달성 — 첫 연간 $1B 돌파 이정표",
+            "EBITDA 마진 63.9% — 규모 확대에도 수익성 지속 개선",
+            "수주잔량 $16.1B — 말레이시아 기업 해외 FPSO 수주잔량 신기록",
+            "2027 가이던스: Revenue $1.15~1.2B, EBITDA 마진 64% 목표"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 302,
+          "adj_ebitda_musd": 194,
+          "ebitda_margin_pct": 64.2,
+          "units_on_lease": 8,
+          "backlog_busd": 16.4,
+          "source": "Q1 FY2027 Earnings (Jun 2026, preliminary)",
+          "highlights": [
+            "EBITDA 마진 64.2% — Yinson Holdings 역대 최고 분기 마진 경신",
+            "나이지리아 FPSO(Agogo 자매선) 건조 공정률 62% — 2027 Q2 인도 목표",
+            "서아프리카 신규 FPSO 입찰 우선협상대상자 선정 — 계약 체결 임박",
+            "수주잔량 $16.4B 달성 — 2030년까지 12기 운영 목표 로드맵 공개"
+          ]
         }
       ]
     },
@@ -509,6 +749,66 @@
             "Golar Tundra 안정적 가동 — GTA Phase 1 LNG 카고 4척 선적 완료",
             "Hilli Episeyo Train 3 증산 계약 2025 Q2 발효 — 추가 수수료 수취 예정",
             "FLNG Mk II FID 2025 H2 예정 — HMM·삼성중공업 컨소시엄과 협의 중"
+          ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 137,
+          "adj_ebitda_musd": 109,
+          "ebitda_margin_pct": 79.6,
+          "units_on_lease": 2,
+          "backlog_busd": 4.3,
+          "source": "Q2 2025 Earnings (Aug 2025)",
+          "highlights": [
+            "Hilli Episeyo Train 3 증산 계약 발효 — 추가 LNG 액화 수수료 $8M/분기 수취",
+            "Golar Tundra GTA 4분기 연속 안정 가동 — BP 퍼포먼스 보너스 수취",
+            "FLNG Mk II FID 준비 가속 — 삼성중공업 컨소시엄 최종 협의 단계",
+            "EBITDA 마진 79.6% — 업종 내 압도적 수익성 지속"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 142,
+          "adj_ebitda_musd": 114,
+          "ebitda_margin_pct": 80.3,
+          "units_on_lease": 2,
+          "backlog_busd": 4.2,
+          "source": "Q3 2025 Earnings (Nov 2025)",
+          "highlights": [
+            "Hilli Episeyo Train 3 풀 가동 — 연간 LNG 생산량 역대 최고 경신 예상",
+            "EBITDA 마진 80.3% 달성 — FPSO/FLNG 업계 최초 80% 돌파",
+            "FLNG Mk II FID 2025 Q4 확정 발표 — 삼성중공업 건조 계약 협상 타결 임박",
+            "TTF 가스 가격 반등으로 가변 수수료 $38M 수취"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 147,
+          "adj_ebitda_musd": 119,
+          "ebitda_margin_pct": 81.0,
+          "units_on_lease": 2,
+          "backlog_busd": 4.8,
+          "source": "FY2025 Results (Feb 2026)",
+          "highlights": [
+            "FY2025 Revenue $554M, Adj. EBITDA $442M 확정 — 역대 최고 연간 실적",
+            "FLNG Mk II FID 공식 결정 — 삼성중공업 건조 계약 $3.5B 체결",
+            "수주잔량 $4.8B로 급등 — FLNG Mk II 장기 Charter 계약 반영",
+            "2026 가이던스: Adj. EBITDA $460~480M, FLNG Mk II 건조 착수"
+          ]
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 151,
+          "adj_ebitda_musd": 123,
+          "ebitda_margin_pct": 81.5,
+          "units_on_lease": 2,
+          "backlog_busd": 4.7,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "highlights": [
+            "EBITDA 마진 81.5% — Golar LNG 역대 최고 분기 마진 달성",
+            "FLNG Mk II 삼성중공업 건조 착수 — 강재 절단(Steel Cut) 완료",
+            "Hilli Episeyo Train 3·4 동시 운영 — Perenco 추가 증산 협의 진행",
+            "Golar Tundra GTA Phase 1 누적 LNG 카고 40척 돌파 — 이정표 달성"
           ]
         }
       ]
