@@ -468,6 +468,186 @@
       color: var(--text-muted);
       font-family: var(--font-mono);
     }
+
+    /* ─── Company Overview ─── */
+    .company-overview {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 20px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .company-overview { grid-template-columns: 1fr; }
+    }
+    .co-left {}
+    .co-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px 16px;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 700px) {
+      .co-meta-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .co-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .co-meta-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+    .co-meta-value {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      color: var(--text);
+      font-weight: 500;
+    }
+    .co-model-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 10px;
+      border-left: 2px solid var(--accent);
+      padding-left: 10px;
+    }
+    .co-strategy-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .co-notable {
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--accent);
+      line-height: 1.55;
+      padding: 8px 10px;
+      background: rgba(0,212,170,0.06);
+      border-radius: 4px;
+      border: 1px solid rgba(0,212,170,0.2);
+    }
+    .co-right {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .co-fleet-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    .co-fleet-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+    .co-fleet-stats {
+      display: flex;
+      gap: 16px;
+    }
+    .co-fleet-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .co-fleet-stat-val {
+      font-size: 22px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--text);
+      line-height: 1;
+    }
+    .co-fleet-stat-lbl {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .co-clients-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    .co-clients-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 8px;
+    }
+    .co-clients-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .co-client-tag {
+      padding: 3px 8px;
+      background: rgba(88,166,255,0.1);
+      border: 1px solid rgba(88,166,255,0.25);
+      border-radius: 4px;
+      font-size: 11px;
+      color: var(--blue);
+      font-weight: 500;
+    }
+
+    /* ─── Key Assets Table ─── */
+    .co-assets-section {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .co-assets-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+    .co-assets-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .co-asset-row {
+      display: grid;
+      grid-template-columns: 220px 140px 1fr 80px 120px;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(48,54,61,0.5);
+      font-size: 12px;
+    }
+    .co-asset-row:last-child { border-bottom: none; }
+    .co-asset-row.header-row {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .co-asset-name { font-weight: 600; color: var(--text); }
+    .co-asset-client { color: var(--blue); font-size: 11px; }
+    .co-asset-region { color: var(--text-muted); font-size: 11px; }
+    .co-asset-cap { font-family: var(--font-mono); font-size: 11px; color: var(--yellow); text-align: right; }
+    .co-asset-status {}
+    @media (max-width: 800px) {
+      .co-asset-row { grid-template-columns: 1fr 1fr; }
+      .co-asset-row.header-row { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -514,6 +694,8 @@
         <span id="drilldown-title"></span>
         <button class="close-btn" id="close-drilldown">×</button>
       </div>
+      <!-- Company Overview (populated by JS) -->
+      <div id="company-overview-section"></div>
       <div class="kpi-grid" id="drilldown-kpis"></div>
       <div class="two-col">
         <div>
@@ -767,6 +949,77 @@
     });
   }
 
+  /* ─── Render company overview ─── */
+  function renderCompanyOverview(company) {
+    const el = document.getElementById('company-overview-section');
+    if (!el) return;
+    const p = company.company_profile;
+    if (!p) { el.innerHTML = ''; return; }
+
+    const fleet = p.fleet_summary || {};
+    const clients = (p.key_clients || []).map(c =>
+      `<span class="co-client-tag">${esc(c)}</span>`
+    ).join('');
+
+    const assets = (p.key_assets || []).map(a => {
+      const statusBadge = a.status === 'Under Construction'
+        ? `<span class="badge badge-yellow" style="font-size:10px">건조 중</span>`
+        : a.status && a.status.includes('FID')
+        ? `<span class="badge badge-orange" style="font-size:10px">${esc(a.status)}</span>`
+        : `<span class="badge badge-green" style="font-size:10px">생산 중</span>`;
+      return `
+        <div class="co-asset-row">
+          <div class="co-asset-name">${esc(a.name)}</div>
+          <div class="co-asset-client">${esc(a.client)}</div>
+          <div class="co-asset-region">${esc(a.region)}</div>
+          <div class="co-asset-cap">${a.capacity_kboed != null ? a.capacity_kboed + ' kboed' : '—'}</div>
+          <div class="co-asset-status">${statusBadge}</div>
+        </div>`;
+    }).join('');
+
+    el.innerHTML = `
+      <div class="company-overview">
+        <div class="co-left">
+          <div class="co-meta-grid">
+            ${p.founded ? `<div class="co-meta-item"><span class="co-meta-label">설립연도</span><span class="co-meta-value">${esc(String(p.founded))}</span></div>` : ''}
+            ${p.hq ? `<div class="co-meta-item"><span class="co-meta-label">본사</span><span class="co-meta-value">${esc(p.hq)}</span></div>` : ''}
+            ${p.employees ? `<div class="co-meta-item"><span class="co-meta-label">직원 수</span><span class="co-meta-value">${esc(p.employees)}</span></div>` : ''}
+            ${p.market_cap_busd != null ? `<div class="co-meta-item"><span class="co-meta-label">시가총액</span><span class="co-meta-value">$${p.market_cap_busd.toFixed(1)}B</span></div>` : ''}
+            ${p.credit_rating ? `<div class="co-meta-item"><span class="co-meta-label">신용등급</span><span class="co-meta-value">${esc(p.credit_rating)}</span></div>` : ''}
+          </div>
+          ${p.business_model ? `<div class="co-model-text">${esc(p.business_model)}</div>` : ''}
+          ${p.strategy ? `<div class="co-strategy-text">${esc(p.strategy)}</div>` : ''}
+          ${p.notable ? `<div class="co-notable">★ ${esc(p.notable)}</div>` : ''}
+        </div>
+        <div class="co-right">
+          <div class="co-fleet-box">
+            <div class="co-fleet-title">Fleet</div>
+            <div class="co-fleet-stats">
+              ${fleet.on_lease != null ? `<div class="co-fleet-stat"><div class="co-fleet-stat-val" style="color:var(--accent)">${fleet.on_lease}</div><div class="co-fleet-stat-lbl">임대 운영</div></div>` : ''}
+              ${fleet.under_construction != null ? `<div class="co-fleet-stat"><div class="co-fleet-stat-val" style="color:var(--yellow)">${fleet.under_construction}</div><div class="co-fleet-stat-lbl">건조 중</div></div>` : ''}
+              ${fleet.total_delivered != null ? `<div class="co-fleet-stat"><div class="co-fleet-stat-val" style="color:var(--text-muted)">${fleet.total_delivered}</div><div class="co-fleet-stat-lbl">누적 인도</div></div>` : ''}
+            </div>
+          </div>
+          ${clients ? `
+          <div class="co-clients-box">
+            <div class="co-clients-title">주요 고객</div>
+            <div class="co-clients-list">${clients}</div>
+          </div>` : ''}
+        </div>
+      </div>
+      ${assets ? `
+      <div class="co-assets-section">
+        <div class="co-assets-title">주요 보유 설비</div>
+        <div class="co-assets-list">
+          <div class="co-asset-row header-row">
+            <div>설비명</div><div>발주사</div><div>지역</div><div>용량</div><div>상태</div>
+          </div>
+          ${assets}
+        </div>
+      </div>` : ''}
+    `;
+  }
+
   /* ─── Render drill-down ─── */
   function renderDrillDown(company) {
     selectedCompany = company;
@@ -820,7 +1073,8 @@
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 50);
 
-    // Render chart, table and highlights
+    // Render company overview, chart, table and highlights
+    renderCompanyOverview(company);
     renderDetailChart(company);
     renderDetailTable(company);
     renderHighlights(company);
@@ -875,6 +1129,9 @@
     selectedCompany = null;
     const panel = document.getElementById('drilldown-panel');
     panel.classList.remove('open');
+    // Clear company overview
+    const overviewEl = document.getElementById('company-overview-section');
+    if (overviewEl) overviewEl.innerHTML = '';
 
     // Deselect all rows
     if (comparisonTable) {

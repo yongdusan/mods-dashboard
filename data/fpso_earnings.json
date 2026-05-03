@@ -6,6 +6,25 @@
       "ticker": "SBMO.AS",
       "exchange": "Euronext Amsterdam",
       "type": "FPSO Lessor",
+      "company_profile": {
+        "founded": 1969,
+        "hq": "Schiedam, Netherlands",
+        "employees": "~7,000",
+        "market_cap_busd": 1.2,
+        "credit_rating": "BBB-",
+        "business_model": "Lease & Operate (L&O) 전문 — Fast4Ward® 표준화 선체 플랫폼으로 건조 기간을 40개월로 단축",
+        "strategy": "브라질 Petrobras 및 가이아나 ExxonMobil 심해 프로젝트 집중. Fast4Ward 표준화로 원가 경쟁력 확보. 2030년까지 운영 FPSO 18기 목표.",
+        "key_clients": ["ExxonMobil", "Petrobras", "TotalEnergies", "Equinor", "Shell"],
+        "fleet_summary": { "on_lease": 13, "under_construction": 2, "total_delivered": 27 },
+        "key_assets": [
+          { "name": "One Guyana (Yellowtail)", "client": "ExxonMobil", "region": "South America", "capacity_kboed": 250, "status": "On Production" },
+          { "name": "Almirante Tamandaré", "client": "Petrobras", "region": "South America", "capacity_kboed": 225, "status": "On Production" },
+          { "name": "Liza Unity", "client": "ExxonMobil", "region": "South America", "capacity_kboed": 220, "status": "On Production" },
+          { "name": "Prosperity (Payload)", "client": "ExxonMobil", "region": "South America", "capacity_kboed": 220, "status": "On Production" },
+          { "name": "Kaminho FPSO", "client": "TotalEnergies", "region": "West Africa", "capacity_kboed": 100, "status": "Under Construction" }
+        ],
+        "notable": "세계 최대 FPSO 임대운영사. Fast4Ward® 표준화 선체 플랫폼 특허 보유. 가이아나 스타브로크 광구의 핵심 파트너로 4기 운용 중."
+      },
       "quarters": [
         {
           "period": "Q1 2024",
@@ -90,6 +109,25 @@
       "ticker": "6269.T",
       "exchange": "Tokyo Stock Exchange",
       "type": "FPSO Lessor",
+      "company_profile": {
+        "founded": 1979,
+        "hq": "Tokyo, Japan",
+        "employees": "~3,500",
+        "market_cap_busd": 2.8,
+        "credit_rating": "A-",
+        "business_model": "EPCI(Engineering, Procurement, Construction, Installation) + Lease & Operate 겸업. 일본 최대 해양 플로팅 설비 전문사.",
+        "strategy": "브라질 Petrobras 및 동남아 PETRONAS 중심의 장기 계약 포트폴리오. 서아프리카 가나·앙골라 운영 역량 강화. FLNG 시장 진출 검토.",
+        "key_clients": ["Petrobras", "PETRONAS", "Woodside Energy", "TotalEnergies", "Tullow Oil"],
+        "fleet_summary": { "on_lease": 18, "under_construction": 1, "total_delivered": 35 },
+        "key_assets": [
+          { "name": "FPSO Carioca (P-67)", "client": "Petrobras", "region": "South America", "capacity_kboed": 150, "status": "On Production" },
+          { "name": "FPSO Cidade de Caraguatatuba", "client": "Petrobras", "region": "South America", "capacity_kboed": 120, "status": "On Production" },
+          { "name": "FPSO Kwame Nkrumah MV21", "client": "Tullow Oil", "region": "West Africa", "capacity_kboed": 120, "status": "On Production" },
+          { "name": "FPSO Abigail-Joseph", "client": "PETRONAS", "region": "Asia Pacific", "capacity_kboed": 60, "status": "On Production" },
+          { "name": "FPSO P-83", "client": "Petrobras", "region": "South America", "capacity_kboed": 180, "status": "Under Construction" }
+        ],
+        "notable": "일본 최대 해양 FPSO EPCI 기업. 브라질·서아프리카 핵심 운영 거점 보유. 18기 동시 운영으로 업계 최다 운영 설비 수 기록."
+      },
       "quarters": [
         {
           "period": "Q1 2024",
@@ -174,6 +212,25 @@
       "ticker": "BWO.OL",
       "exchange": "Oslo Stock Exchange",
       "type": "FPSO Lessor",
+      "company_profile": {
+        "founded": 2005,
+        "hq": "Singapore / Oslo, Norway",
+        "employees": "~2,000",
+        "market_cap_busd": 0.9,
+        "credit_rating": "BB+",
+        "business_model": "Lease & Operate + 유전 지분 직접 투자(Equity Stake). 소규모 고수익 포트폴리오 전략으로 EBITDA 마진 62% 이상 유지.",
+        "strategy": "BW Gimi FLNG를 통한 LNG 시장 진출. 고수익 장기 임대 계약 중심 포트폴리오 유지. 브라질·서아프리카·노르웨이 지역 균형 운영.",
+        "key_clients": ["BP", "Petrobras", "Equinor", "Perenco", "CNR International"],
+        "fleet_summary": { "on_lease": 8, "under_construction": 0, "total_delivered": 15 },
+        "key_assets": [
+          { "name": "BW Gimi (FLNG)", "client": "BP / Kosmos", "region": "West Africa", "capacity_kboed": 35, "status": "On Production" },
+          { "name": "BW Cidade de São Paulo", "client": "Petrobras", "region": "South America", "capacity_kboed": 100, "status": "On Production" },
+          { "name": "BW Adolo", "client": "Perenco", "region": "West Africa", "capacity_kboed": 40, "status": "On Production" },
+          { "name": "Espoir Ivoirien", "client": "CNR International", "region": "West Africa", "capacity_kboed": 30, "status": "On Production" },
+          { "name": "BW Connector", "client": "Perenco/SNH", "region": "West Africa", "capacity_kboed": 25, "status": "On Production" }
+        ],
+        "notable": "세계 최초 상업적 FLNG 프로젝트(BW Gimi) 운영사. 유전 지분 직접 투자 모델로 업계 최고 수준 EBITDA 마진 달성."
+      },
       "quarters": [
         {
           "period": "Q1 2024",
@@ -257,6 +314,25 @@
       "ticker": "7293.KL",
       "exchange": "Bursa Malaysia",
       "type": "FPSO Lessor",
+      "company_profile": {
+        "founded": 1983,
+        "hq": "Kuala Lumpur, Malaysia",
+        "employees": "~3,000",
+        "market_cap_busd": 1.6,
+        "credit_rating": "BBB-",
+        "business_model": "Lease & Operate 전문. 녹색 금융(Green Loan) 및 ESG 연계 금융 구조 적극 활용. 재생에너지 자회사 Yinson Renewables 병행 운영.",
+        "strategy": "아시아 FPSO 기업 중 가장 공격적인 성장 전략. 브라질·서아프리카·나이지리아 신규 계약 집중. 수주잔량 $15B+ 유지로 장기 현금흐름 가시성 확보.",
+        "key_clients": ["Petrobras", "TotalEnergies", "Aker Energy", "ENI", "PETRONAS"],
+        "fleet_summary": { "on_lease": 7, "under_construction": 1, "total_delivered": 11 },
+        "key_assets": [
+          { "name": "FPSO Maria Quitéria", "client": "Petrobras", "region": "South America", "capacity_kboed": 100, "status": "On Production" },
+          { "name": "FPSO Agogo", "client": "TotalEnergies", "region": "West Africa", "capacity_kboed": 100, "status": "On Production" },
+          { "name": "FPSO John Agyekum Kufuor", "client": "Aker Energy", "region": "West Africa", "capacity_kboed": 110, "status": "On Production" },
+          { "name": "FPSO Helang", "client": "PETRONAS", "region": "Asia Pacific", "capacity_kboed": 50, "status": "On Production" },
+          { "name": "FPSO Agogo Sister (Nigeria)", "client": "ENI", "region": "West Africa", "capacity_kboed": 100, "status": "Under Construction" }
+        ],
+        "notable": "말레이시아 최대 FPSO 임대운영사. 아시아 기업 중 최고 수준의 글로벌 수주잔량($15B+) 보유. Yinson Renewables 통해 에너지 전환 사업 병행."
+      },
       "quarters": [
         {
           "period": "Q1 2024",
@@ -341,6 +417,23 @@
       "ticker": "GLNG",
       "exchange": "NASDAQ",
       "type": "FLNG Specialist",
+      "company_profile": {
+        "founded": 1946,
+        "hq": "Hamilton, Bermuda",
+        "employees": "~500",
+        "market_cap_busd": 2.1,
+        "credit_rating": "BB",
+        "business_model": "FLNG 톨링(Tolling) 전문 — 가스전 개발사에 액화 서비스 제공. 고정 수수료 + TTF 연동 변동 수수료 구조로 고수익 현금흐름 확보.",
+        "strategy": "육상 LNG 인프라 없이 해상에서 직접 액화 수출 가능한 FLNG 기술 상용화 선도. Mk II FLNG 신조로 2030년 이후 성장 동력 확보. 아프리카·중동 신규 가스전 개발 지원.",
+        "key_clients": ["Perenco (카메룬)", "BP / Kosmos (세네갈·모리타니아)"],
+        "fleet_summary": { "on_lease": 2, "under_construction": 1, "total_delivered": 2 },
+        "key_assets": [
+          { "name": "Hilli Episeyo (FLNG)", "client": "Perenco", "region": "West Africa", "capacity_kboed": 80, "status": "On Production" },
+          { "name": "Golar Tundra (FLNG)", "client": "BP / Kosmos", "region": "West Africa", "capacity_kboed": 35, "status": "On Production" },
+          { "name": "FLNG Mk II", "client": "TBD", "region": "TBD", "capacity_kboed": null, "status": "FID 2025 H2 예정" }
+        ],
+        "notable": "세계 최초 FLNG 상업 운전 성공(Hilli Episeyo, 2018). EBITDA 마진 78% — FPSO/FLNG 업계 압도적 최고 수익성. 소규모 에셋라이트 모델로 고ROE 달성."
+      },
       "quarters": [
         {
           "period": "Q1 2024",
