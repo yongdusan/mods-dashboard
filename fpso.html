@@ -604,6 +604,7 @@
       <span class="panel-title"><span class="dot"></span>Orderbook</span>
       <span class="panel-subtitle">건조 중 · 발주 완료 설비 — 클릭 시 상세 정보</span>
     </div>
+    <div class="filter-bar" id="ob-filter-bar"></div>
     <div id="orderbook-table"></div>
     <!-- Drilldown -->
     <div class="ob-drilldown" id="ob-drilldown">
@@ -638,7 +639,8 @@
 
   let fpsoData = null;
   let vesselTable = null;
-  const vesselFilters = { type: 'all', region: 'all', status: 'all' };
+  const vesselFilters = { type: 'all', region: 'all', status: 'all', owner: 'all', client: 'all' };
+  const obFilters = { owner: 'all', client: 'all', yard: 'all' };
 
   /* ─── Utilities ─── */
   function esc(str) {
@@ -811,6 +813,12 @@
         renderVesselDrilldown(vessel);
       }
     });
+
+    // Build dynamic owner / client filter rows
+    const vOwners  = [...new Set(data.vessels.map(function(v) { return v.owner; }).filter(Boolean))].sort();
+    const vClients = [...new Set(data.vessels.map(function(v) { return v.client; }).filter(Boolean))].sort();
+    buildFilterRow('vessel-filter-bar', '소유자', 'owner',  vOwners,  window.setVesselFilter);
+    buildFilterRow('vessel-filter-bar', '운영사', 'client', vClients, window.setVesselFilter);
   }
 
   /* ─── Orderbook Drilldown ─── */
@@ -891,6 +899,14 @@
         renderObDrilldown(item);
       }
     });
+
+    // Build dynamic owner / client / yard filter rows
+    const obOwners  = [...new Set(data.orderbook.map(function(o) { return o.owner; }).filter(Boolean))].sort();
+    const obClients = [...new Set(data.orderbook.map(function(o) { return o.client; }).filter(Boolean))].sort();
+    const obYards   = [...new Set(data.orderbook.map(function(o) { return o.yard; }).filter(Boolean))].sort();
+    buildFilterRow('ob-filter-bar', '소유자', 'owner',  obOwners,  window.setObFilter);
+    buildFilterRow('ob-filter-bar', '발주사', 'client', obClients, window.setObFilter);
+    buildFilterRow('ob-filter-bar', '조선소', 'yard',   obYards,   window.setObFilter);
   }
 
   /* ─── Charter Rates Chart ─── */
@@ -978,6 +994,26 @@
     });
   }
 
+  /* ─── Dynamic Filter Row Builder ─── */
+  function buildFilterRow(barId, label, dimension, values, handlerFn) {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+    const row = document.createElement('div');
+    row.className = 'filter-row';
+    const lbl = document.createElement('span');
+    lbl.className = 'filter-label';
+    lbl.textContent = label;
+    row.appendChild(lbl);
+    ['all'].concat(values).forEach(function(v) {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (v === 'all' ? ' active' : '');
+      btn.textContent = v === 'all' ? 'All' : v;
+      btn.addEventListener('click', function() { handlerFn(dimension, v, btn); });
+      row.appendChild(btn);
+    });
+    bar.appendChild(row);
+  }
+
   /* ─── Vessel Filter ─── */
   window.setVesselFilter = function(dimension, value, btn) {
     // Update active button state for this row
@@ -997,20 +1033,39 @@
     if (!vesselTable) return;
 
     const activeFilters = [];
-    if (vesselFilters.type !== 'all') {
-      activeFilters.push({ field: 'type', type: '=', value: vesselFilters.type });
-    }
-    if (vesselFilters.region !== 'all') {
-      activeFilters.push({ field: 'region', type: '=', value: vesselFilters.region });
-    }
-    if (vesselFilters.status !== 'all') {
-      activeFilters.push({ field: 'status', type: '=', value: vesselFilters.status });
-    }
+    if (vesselFilters.type   !== 'all') activeFilters.push({ field: 'type',   type: '=', value: vesselFilters.type });
+    if (vesselFilters.region !== 'all') activeFilters.push({ field: 'region', type: '=', value: vesselFilters.region });
+    if (vesselFilters.status !== 'all') activeFilters.push({ field: 'status', type: '=', value: vesselFilters.status });
+    if (vesselFilters.owner  !== 'all') activeFilters.push({ field: 'owner',  type: '=', value: vesselFilters.owner });
+    if (vesselFilters.client !== 'all') activeFilters.push({ field: 'client', type: '=', value: vesselFilters.client });
 
     if (activeFilters.length === 0) {
       vesselTable.clearFilter();
     } else {
       vesselTable.setFilter(activeFilters);
+    }
+  };
+
+  /* ─── Orderbook Filter ─── */
+  window.setObFilter = function(dimension, value, btn) {
+    const row = btn.closest('.filter-row');
+    row.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+
+    obFilters[dimension] = value;
+    closeObDrilldown();
+
+    if (!obTable) return;
+
+    const activeFilters = [];
+    if (obFilters.owner  !== 'all') activeFilters.push({ field: 'owner',  type: '=', value: obFilters.owner });
+    if (obFilters.client !== 'all') activeFilters.push({ field: 'client', type: '=', value: obFilters.client });
+    if (obFilters.yard   !== 'all') activeFilters.push({ field: 'yard',   type: '=', value: obFilters.yard });
+
+    if (activeFilters.length === 0) {
+      obTable.clearFilter();
+    } else {
+      obTable.setFilter(activeFilters);
     }
   };
 
