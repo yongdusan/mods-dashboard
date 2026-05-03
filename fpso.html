@@ -582,6 +582,10 @@
       </div>
     </div>
     <div id="vessel-table"></div>
+    <!-- Under Construction 안내 -->
+    <div id="vessel-uc-notice" style="display:none;padding:14px 16px;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border);">
+      ℹ️ &nbsp;건조 중인 설비(Under Construction)는 아래 <strong style="color:var(--accent)">Orderbook</strong> 섹션에서 상세 정보를 확인할 수 있습니다.
+    </div>
     <!-- Vessel Drilldown -->
     <div class="ob-drilldown" id="vessel-drilldown">
       <div class="ob-drilldown-inner">
@@ -982,6 +986,13 @@
     btn.classList.add('active');
 
     vesselFilters[dimension] = value;
+
+    // Close any open drilldown on filter change
+    closeVesselDrilldown();
+
+    // Show UC notice when filtering for Under Construction (no vessels in this status — they're in Orderbook)
+    const ucNotice = document.getElementById('vessel-uc-notice');
+    if (ucNotice) ucNotice.style.display = (vesselFilters.status === 'Under Construction') ? 'block' : 'none';
 
     if (!vesselTable) return;
 
