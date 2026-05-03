@@ -569,6 +569,54 @@
             "수주잔량 $15.3B 유지 — 신규 FPSO 입찰 2건 최종 후보 선정",
             "재생에너지 자회사 Yinson Renewables 태양광 포트폴리오 500MW 달성"
           ]
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_musd": 261,
+          "adj_ebitda_musd": 135,
+          "ebitda_margin_pct": 51.7,
+          "units_on_lease": 7,
+          "backlog_busd": 16.4,
+          "source": "Q2 FY2026 Earnings (Sep 2025) — Yinson Production Enterprise Reporting",
+          "highlights": [
+            "Agogo FPSO(앙골라) 2025년 7월 29일 First Oil 달성 — 예정보다 4개월 앞선 조기 완공",
+            "Agogo FPSO 15년 L&O 계약(총 계약가치 $5B+) 8월 12일 공식 용선 개시 예정",
+            "EBITDA 마진 51.7% — EPCIC 단계 종료 후 용선 전환기 과도적 마진 하락",
+            "6개월 누적 운영일수 1,428일, 전년 동기 대비 31% 증가",
+            "FPSO Maria Quitéria·FPSO Atlanta 용선 기여도 증가 — 브라질 포트폴리오 강화"
+          ]
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_musd": 292,
+          "adj_ebitda_musd": 193,
+          "ebitda_margin_pct": 66.1,
+          "units_on_lease": 8,
+          "backlog_busd": 18.0,
+          "source": "Q3 FY2026 Earnings (Dec 2025) — Yinson Production Enterprise Reporting",
+          "highlights": [
+            "Agogo FPSO 8월 12일 용선 개시 — 운영 FPSO 8기 체제 진입",
+            "FPSO Atlanta 프로젝트론 조기 상환(바이아웃) — $153M 일회성 이익 인식(Adj EBITDA 제외)",
+            "Adj EBITDA 마진 66.1% — Agogo 용선 기여 첫 분기 반영으로 수익성 회복",
+            "9개월 누적 운영일수 2,237일, 전년 동기 대비 35% 증가",
+            "FPSO Maria Quitéria·Atlanta·Agogo 3개 신규 자산 풀가동 — 운영 포트폴리오 확대 완료"
+          ]
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_musd": 309,
+          "adj_ebitda_musd": 195,
+          "ebitda_margin_pct": 63.1,
+          "units_on_lease": 8,
+          "backlog_busd": 19.5,
+          "source": "Q4 FY2026 Earnings (Mar 2026) — Yinson Production Enterprise Reporting",
+          "highlights": [
+            "FY2026 연간 매출 $1,098M, Adj EBITDA $640M — 전년 대비 각각 +81%, +63% 증가",
+            "수주잔량 $19.5B 확보 — 15~20년 장기 용선 기반 안정적 매출 가시성",
+            "FSO PTSC LDV(베트남) 1차 구조 공사 완료, FSO Block B 첫 철판 절단 — 신조 사업 순항",
+            "연간 운영일수 3,059일 — 전년 대비 34% 증가, 8기 풀가동 체제 정착",
+            "주당 배당 5센(FY2025 대비 +22%), 자사주 매입 1.11억 주(RM244M) — 주주환원 강화"
+          ]
         }
       ]
     },

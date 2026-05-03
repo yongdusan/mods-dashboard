@@ -819,12 +819,30 @@
 
     // Update section label — show unique periods
     const periods = [...new Set(tableData.map(d => d.period))];
-    // Determine the latest period to use for accent highlighting (dynamic, not hardcoded)
-    const latestPeriod = tableData.length > 0 ? tableData[0].period : '';
+    // Determine the globally latest period across all companies (dynamic)
+    function parsePeriod(p) {
+      if (!p) return { year: 0, q: 0 };
+      const m = p.match(/Q(\d)\s+(\d{4})/);
+      return m ? { year: parseInt(m[2]), q: parseInt(m[1]) } : { year: 0, q: 0 };
+    }
+    const latestPeriod = tableData.reduce((max, d) => {
+      if (!d.period) return max;
+      if (!max) return d.period;
+      const a = parsePeriod(max), b = parsePeriod(d.period);
+      return (b.year > a.year || (b.year === a.year && b.q > a.q)) ? d.period : max;
+    }, '');
     const labelEl = document.getElementById('comparison-label');
     if (labelEl) {
-      const periodStr = periods.length === 1 ? periods[0] : periods.join(' / ');
-      labelEl.textContent = `LATEST REPORTED QUARTER — ${periodStr}`;
+      if (periods.length === 1) {
+        labelEl.textContent = `LATEST REPORTED QUARTER — ${periods[0]}`;
+      } else {
+        // Sort periods chronologically, show range
+        const sorted = periods.slice().sort((a, b) => {
+          const pa = parsePeriod(a), pb = parsePeriod(b);
+          return pa.year !== pb.year ? pa.year - pb.year : pa.q - pb.q;
+        });
+        labelEl.textContent = `LATEST REPORTED QUARTER — ${sorted[0]} – ${sorted[sorted.length - 1]} (각 사 최신 기준)`;
+      }
     }
 
     if (comparisonTable) {
@@ -859,9 +877,13 @@
           hozAlign: 'center',
           formatter: function(cell) {
             const v = cell.getValue();
-            const isLatest = v && v === latestPeriod;
-            const color = isLatest ? 'var(--accent)' : 'var(--text-muted)';
-            return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>`;
+            // Highlight each company's own latest period (globally latest gets accent, others get dim-accent)
+            const pv = parsePeriod(v), pl = parsePeriod(latestPeriod);
+            const isGlobalLatest = v && v === latestPeriod;
+            const isCompanyLatest = !!v; // every row in comparison table IS that company's latest
+            const color = isGlobalLatest ? 'var(--accent)' : isCompanyLatest ? 'var(--text)' : 'var(--text-muted)';
+            const weight = isCompanyLatest ? '600' : '400';
+            return `<span class="mono" style="color:${color};font-weight:${weight}">${esc(v)}</span>`;
           },
         },
         {
