@@ -928,24 +928,25 @@
           },
         },
       ],
-      rowClick: function(e, row) {
-        const data = row.getData();
-        const company = data._company;
+    });
 
-        // Deselect all rows visually
-        comparisonTable.getRows().forEach(r => {
-          r.getElement().classList.remove('row-selected');
-        });
+    comparisonTable.on('rowClick', function(e, row) {
+      const data = row.getData();
+      const company = data._company;
 
-        if (selectedCompany && selectedCompany.name === company.name) {
-          // Same row clicked again — close drilldown
-          closeDrillDown();
-        } else {
-          // New row clicked
-          row.getElement().classList.add('row-selected');
-          renderDrillDown(company);
-        }
-      },
+      // Deselect all rows visually
+      comparisonTable.getRows().forEach(r => {
+        r.getElement().classList.remove('row-selected');
+      });
+
+      if (selectedCompany && selectedCompany.name === company.name) {
+        // Same row clicked again — close drilldown
+        closeDrillDown();
+      } else {
+        // New row clicked
+        row.getElement().classList.add('row-selected');
+        renderDrillDown(company);
+      }
     });
   }
 
