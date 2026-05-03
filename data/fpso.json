@@ -1,15 +1,15 @@
 {
   "updated": "2026-05-03",
   "market_summary": {
-    "active_fleet": 182,
-    "on_production": 163,
-    "under_construction": 19,
+    "active_fleet": 185,
+    "on_production": 166,
+    "under_construction": 20,
     "flng_active": 4,
-    "flng_construction": 3,
+    "flng_construction": 4,
     "prev_quarter": {
-      "active_fleet": 178,
-      "on_production": 159,
-      "under_construction": 21
+      "active_fleet": 182,
+      "on_production": 163,
+      "under_construction": 19
     }
   },
   "contractors": [
@@ -18,22 +18,22 @@
       "type": "FPSO Lessor",
       "hq": "Netherlands",
       "ticker": "SBMO.AS",
-      "fleet_owned": 14,
-      "on_lease": 13,
-      "under_construction": 3,
-      "backlog_busd": 31.2,
-      "notes": "세계 최대 FPSO 임대사. Fast4Ward 표준 선형으로 건조 주기 단축."
+      "fleet_owned": 15,
+      "on_lease": 14,
+      "under_construction": 2,
+      "backlog_busd": 31.3,
+      "notes": "세계 최대 FPSO 임대사. Fast4Ward 표준 선형으로 건조 주기 단축. Q3 2025 신규 인도로 14기 운영 체제."
     },
     {
       "name": "MODEC",
       "type": "FPSO Lessor/EPC",
       "hq": "Japan",
       "ticker": "6269.T",
-      "fleet_owned": 12,
-      "on_lease": 11,
-      "under_construction": 2,
+      "fleet_owned": 20,
+      "on_lease": 19,
+      "under_construction": 1,
       "backlog_busd": 14.8,
-      "notes": "일본계 최대 FPSO 전문사. 브라질 프리-솔트 프로젝트 강점."
+      "notes": "일본계 최대 FPSO 전문사. 브라질·서아프리카·동남아 19기 운영. Q3 2025 PETRONAS FPSO 신규 인도."
     },
     {
       "name": "BW Offshore",
@@ -42,20 +42,20 @@
       "ticker": "BWO.OL",
       "fleet_owned": 9,
       "on_lease": 8,
-      "under_construction": 1,
-      "backlog_busd": 5.2,
-      "notes": "노르웨이계 FPSO 임대사. 서아프리카 및 동남아 포트폴리오 보유."
+      "under_construction": 0,
+      "backlog_busd": 2.4,
+      "notes": "노르웨이계 FPSO 임대사. BW Gimi FLNG 포함 8기 운영. EBITDA 마진 64% 수준 고수익 구조."
     },
     {
       "name": "Yinson Holdings",
       "type": "FPSO Lessor",
       "hq": "Malaysia",
       "ticker": "7293.KL",
-      "fleet_owned": 8,
-      "on_lease": 7,
+      "fleet_owned": 9,
+      "on_lease": 8,
       "under_construction": 2,
-      "backlog_busd": 8.6,
-      "notes": "말레이시아계 성장 중인 FPSO 임대사. 서아프리카 및 브라질 신규 수주."
+      "backlog_busd": 16.4,
+      "notes": "말레이시아 최대 FPSO 임대사. Q2 2025 8기 운영 체제 진입. 수주잔량 $16.4B 업계 최고 성장세."
     },
     {
       "name": "Altera Infrastructure",
@@ -98,8 +98,8 @@
       "fleet_owned": 3,
       "on_lease": 2,
       "under_construction": 1,
-      "backlog_busd": 6.8,
-      "notes": "세계 최초 상업운전 FLNG 보유사. Hilli·Tundra 운영 중."
+      "backlog_busd": 4.7,
+      "notes": "세계 최초 상업운전 FLNG 보유사. Hilli·Tundra 운영 중. FLNG Mk II Q4 2025 FID, 삼성중공업 건조."
     },
     {
       "name": "Petrobras",
@@ -796,6 +796,90 @@
         "rig_demand": "드릴십 1기 — 가나 Jubilee 연간 유지보수 및 인필 시추 3~4공",
         "notable": "가나 Jubilee 유전 전용 FPSO. 서아프리카 심해 개발 선도 사례. 2010년 초도 생산."
       }
+    },
+    {
+      "name": "SBM Fast4Ward #7 (Búzios 9)",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "Petrobras",
+      "field": "Búzios (Santos Basin Pre-salt)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1900,
+      "oil_capacity_kboed": 225,
+      "storage_mmbbl": 2.0,
+      "contract_start": "2025-09",
+      "contract_end": "2045-09",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "SBM 14번째 임대 설비. Q3 2025 인도 완료. Búzios 프리솔트 집중 배치.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward (신조)",
+        "yard": "Keppel (Singapore) + SHI (Korea)",
+        "gas_capacity_mmscfd": 180,
+        "mooring": "Internal Turret",
+        "fid_date": "2023",
+        "partners": ["Petrobras 65% op", "TotalEnergies 22.5%", "Shell 12.5%"],
+        "financing": "20년 BFOO 임대 (Petrobras)",
+        "rig_demand": "드릴십 1~2기 — Búzios 프리솔트 연간 시추 캠페인 지속",
+        "notable": "SBM Fast4Ward 표준 선형 7호. Q3 2025 Petrobras 인도 완료로 SBM 14기 운영 체제 진입."
+      }
+    },
+    {
+      "name": "MODEC MV32 (PETRONAS FPSO)",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "PETRONAS",
+      "field": "Kasawari (Sarawak, Malaysia)",
+      "region": "Asia Pacific",
+      "country": "Malaysia",
+      "water_depth_m": 120,
+      "oil_capacity_kboed": 90,
+      "storage_mmbbl": 1.2,
+      "contract_start": "2025-09",
+      "contract_end": "2040-09",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "MODEC 19번째 임대 설비. Q3 2025 인도. 말레이시아 가스전 개발 전용.",
+      "detail": {
+        "hull_type": "신조 FPSO (MODEC MV32 선형)",
+        "yard": "Keppel (Singapore)",
+        "gas_capacity_mmscfd": 400,
+        "mooring": "Spread Mooring",
+        "fid_date": "2022",
+        "partners": ["PETRONAS 100% op"],
+        "financing": "15년 임대 (PETRONAS)",
+        "rig_demand": "잭업 리그 — Kasawari 가스전 개발정 보완 시추",
+        "notable": "MODEC의 동남아 최대 단일 계약. 말레이시아 Kasawari 대규모 가스전 개발 핵심 설비. Q3 2025 인도로 MODEC 19기 운영."
+      }
+    },
+    {
+      "name": "Yinson FPSO John Agyekum Kufuor II",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "Aker Energy / GNPC",
+      "field": "Pecan (Deepwater Tano, Ghana)",
+      "region": "West Africa",
+      "country": "Ghana",
+      "water_depth_m": 2400,
+      "oil_capacity_kboed": 110,
+      "storage_mmbbl": 1.8,
+      "contract_start": "2025-06",
+      "contract_end": "2045-06",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "Yinson 8번째 임대 설비. Q2 2025 인도. 가나 Pecan 심해 첫 생산 설비.",
+      "detail": {
+        "hull_type": "신조 FPSO",
+        "yard": "Jurong (Singapore)",
+        "gas_capacity_mmscfd": 130,
+        "mooring": "Disconnectable Turret",
+        "fid_date": "2022",
+        "partners": ["Aker Energy 50% op", "GNPC 15%", "Lukoil 25%", "Fueltrade 10%"],
+        "financing": "20년 FPSO 임대 (Aker Energy / GNPC 보증)",
+        "rig_demand": "드릴십 1기 — 가나 Pecan 개발정 시추 2025~2027년 집중",
+        "notable": "Yinson 역대 최대 단일 프로젝트. Q2 2025 인도로 8기 운영 체제 진입. 수주잔량 $15.5B 이정표."
+      }
     }
   ],
   "orderbook": [
@@ -993,6 +1077,21 @@
       "status": "Under Construction",
       "notes": "MODEC MV34. Petrobras 발주 브라질 신규 FPSO.",
       "detail": { "hull_type": "신조 FPSO (MODEC MV34 선형)", "water_depth_m": 2000, "storage_mmbbl": 1.8, "gas_capacity_mmscfd": 170, "mooring": "Turret Mooring", "fid_date": "2024", "construction_progress_pct": 15, "financing": "20년 임대 (Petrobras)", "key_equipment": "MODEC MV34 표준 선형. SHI 한국 신조. Búzios NW/Atapu 프리솔트 레이어 복합 개발 전용.", "rig_demand": "드릴십 2기 — Búzios NW 개발정 시추 2027~2029년 집중 배치", "partners": ["Petrobras 65% op", "TotalEnergies 22.5%", "Shell 12.5%"] }
+    },
+    {
+      "name": "FLNG Mk II (Golar)",
+      "type": "FLNG",
+      "owner": "Golar LNG",
+      "client": "TBD",
+      "field": "TBD",
+      "region": "TBD",
+      "yard": "Samsung Heavy Industries (Korea)",
+      "contract_value_busd": 3.5,
+      "oil_capacity_kboed": null,
+      "delivery": "2029-Q2",
+      "status": "Under Construction",
+      "notes": "2025년 Q4 FID 확정. Golar 3번째 FLNG. 삼성중공업 건조 계약 $3.5B.",
+      "detail": { "hull_type": "전용 FLNG 신조 (개조 아님)", "water_depth_m": null, "storage_mmbbl": null, "gas_capacity_mmscfd": 500, "mooring": "Spread Mooring (현장 미정)", "fid_date": "2025-Q4", "construction_progress_pct": 5, "financing": "장기 Charter 계약 + 프로젝트 파이낸싱 (구조 확정 중)", "key_equipment": "차세대 LNG 액화 트레인 (용량 Hilli 대비 2배+). 삼성중공업 SHI-FLNG 전용 설계.", "rig_demand": "드릴십 불필요 — 기존 가스전 연계 또는 신규 발견 LNG전 개발 지원 예정", "partners": ["Golar LNG 100% (파트너 선정 중)"] }
     }
   ],
   "charter_rates": [
