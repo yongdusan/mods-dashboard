@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industry News — Offshore Intelligence</title>
+  <title>Market News — Offshore Market Intelligence</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,6 +89,10 @@
       font-weight: 500;
     }
     .nav-link:hover { text-decoration: underline; }
+    .nav-link.active {
+      color: var(--text-muted);
+      pointer-events: none;
+    }
     .header-meta {
       display: flex;
       align-items: center;
@@ -343,15 +347,16 @@
 
   <header class="header">
     <div class="header-title">
-      <h1>Offshore Intelligence Dashboard</h1>
-      <span class="subtitle">Industry News — Offshore Drilling &amp; Production Market</span>
+      <h1>Offshore Market Intelligence</h1>
+      <span class="subtitle">Market News — Drilling, FPSO / FLNG, Contracts &amp; Earnings</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
-        <a href="index.html" class="nav-link">← Fleet Dashboard</a>
-        <a href="fpso.html" class="nav-link">FPSO &amp; FLNG</a>
-        <a href="earnings.html" class="nav-link">Drilling Earnings</a>
-        <a href="fpso_earnings.html" class="nav-link">FPSO Earnings</a>
+        <a href="index.html" class="nav-link">Drilling / MODU</a>
+        <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
+        <a href="earnings.html" class="nav-link">Drilling Financials</a>
+        <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
+        <span class="nav-link active">Market News</span>
       </nav>
       <div class="header-meta" id="header-meta">
         <!-- populated by JS -->
