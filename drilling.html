@@ -282,6 +282,28 @@
       color: var(--text-muted);
       font-family: var(--font-mono);
     }
+    .confidence-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 500;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    .confidence-low {
+      background: rgba(248, 81, 73, 0.12);
+      color: #f85149;
+      border: 1px solid rgba(248, 81, 73, 0.3);
+    }
+    .confidence-medium {
+      background: rgba(210, 153, 34, 0.12);
+      color: #d29922;
+      border: 1px solid rgba(210, 153, 34, 0.3);
+    }
     .panel-body {
       padding: 16px;
     }
@@ -760,7 +782,7 @@
     <div class="panel">
       <div class="panel-header">
         <span class="panel-title"><span class="dot" style="background:var(--blue)"></span>Dayrate Trend</span>
-        <span class="panel-subtitle">US$k/day · quarterly</span>
+        <span class="panel-subtitle">US$k/day · quarterly<span id="dayrate-confidence-badge"></span></span>
       </div>
       <div class="panel-body">
         <div class="chart-container">
@@ -823,7 +845,7 @@
     <div class="panel">
       <div class="panel-header">
         <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>MODU Asset Value Benchmarks</span>
-        <span class="panel-subtitle">Newbuild obligations, acquired hulls and cancelled-order transactions</span>
+        <span class="panel-subtitle">Newbuild obligations, acquired hulls and cancelled-order transactions<span id="benchmark-confidence-badge"></span></span>
       </div>
       <div id="newbuild-table"></div>
     </div>
@@ -1847,6 +1869,26 @@
   }
 
   /* ─────────────────────────────────────────
+     Confidence Badges
+  ───────────────────────────────────────── */
+  function renderConfidenceBadges() {
+    const dq = rates.data_quality || {};
+
+    function badge(conf) {
+      if (!conf) return '';
+      const cls = conf === 'low' ? 'confidence-low' : conf === 'medium' ? 'confidence-medium' : '';
+      const icon = conf === 'low' ? '⚠' : 'ℹ';
+      return `<span class="confidence-badge ${cls}">${icon} ${conf} confidence</span>`;
+    }
+
+    const dayrateEl = document.getElementById('dayrate-confidence-badge');
+    if (dayrateEl && dq.day_rates) dayrateEl.innerHTML = badge(dq.day_rates.confidence);
+
+    const benchmarkEl = document.getElementById('benchmark-confidence-badge');
+    if (benchmarkEl && dq.asset_values) benchmarkEl.innerHTML = badge(dq.asset_values.confidence);
+  }
+
+  /* ─────────────────────────────────────────
      Main Init
   ───────────────────────────────────────── */
   renderHeader();
@@ -1857,6 +1899,7 @@
   renderCapexChart();
   renderCapexTable();
   renderNewbuildTable();
+  renderConfidenceBadges();
   initFilters();
   initDrawer();
 

@@ -141,6 +141,23 @@
     .panel-body {
       padding: 16px;
     }
+    .confidence-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 500;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    .confidence-caution {
+      background: rgba(210, 153, 34, 0.12);
+      color: #d29922;
+      border: 1px solid rgba(210, 153, 34, 0.3);
+    }
 
     /* ─── Section Label ─── */
     .section-label {
@@ -787,6 +804,7 @@
         <span class="live-dot"></span>
         <span class="label">Updated:</span>
         <span class="value">${esc(earningsData.updated)}</span>
+        <span class="confidence-badge confidence-caution">⚠ source URLs pending</span>
       </div>
     `;
   }
