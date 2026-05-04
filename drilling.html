@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drilling / MODU — Offshore Market Intelligence</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <!-- Tabulator CDN -->
+  <link href="https://unpkg.com/tabulator-tables@6.2.1/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
+  <style>
+    /* ─── CSS Variables ─── */
+    :root {
+      --bg:         #0d1117;
+      --panel:      #161b22;
+      --border:     #30363d;
+      --accent:     #00d4aa;
+      --text:       #e6edf3;
+      --text-muted: #8b949e;
+      --green:      #3fb950;
+      --red:        #f85149;
+      --yellow:     #d29922;
+      --blue:       #58a6ff;
+      --orange:     #f0883e;
+      --font-body:  'Inter', sans-serif;
+      --font-mono:  'JetBrains Mono', monospace;
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .header-title h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .header-title .subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    .header-meta .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-meta .meta-row .label {
+      color: var(--text-muted);
+    }
+    .header-meta .meta-row .value {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ─── Market Overview ─── */
+    .market-overview {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.85fr) minmax(520px, 1.35fr);
+      gap: 20px;
+      margin-bottom: 24px;
+      align-items: stretch;
+    }
+    @media (max-width: 1024px) {
+      .market-overview { grid-template-columns: 1fr; }
+    }
+    .overview-copy {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+    }
+    .overview-copy h2 {
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.2px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .overview-copy p {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.7;
+      max-width: 560px;
+    }
+    .overview-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .overview-chip {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 5px 8px;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-family: var(--font-mono);
+      background: rgba(13,17,23,0.45);
+    }
+    .sector-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    @media (max-width: 720px) {
+      .sector-grid { grid-template-columns: 1fr; }
+    }
+    .sector-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      color: var(--text);
+      text-decoration: none;
+      min-height: 126px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .sector-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .sector-card.active {
+      border-color: rgba(0,212,170,0.55);
+      background: linear-gradient(180deg, rgba(0,212,170,0.08), var(--panel));
+    }
+    .sector-card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .sector-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+    .sector-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .sector-desc {
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .sector-metric {
+      flex-shrink: 0;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 18px;
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .sector-foot {
+      margin-top: 14px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* ─── KPI Grid ─── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 900px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .kpi-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .kpi-card:hover { border-color: var(--accent); }
+    .kpi-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 8px 0 0 8px;
+    }
+    .kpi-card.accent::before  { background: var(--accent); }
+    .kpi-card.green::before   { background: var(--green); }
+    .kpi-card.red::before     { background: var(--red); }
+    .kpi-card.blue::before    { background: var(--blue); }
+
+    .kpi-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+    .kpi-value {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 8px;
+      font-family: var(--font-mono);
+    }
+    .kpi-value .unit {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+    .kpi-delta {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: var(--font-mono);
+    }
+    .kpi-delta.positive { color: var(--green); }
+    .kpi-delta.negative { color: var(--red); }
+    .kpi-delta.neutral  { color: var(--text-muted); }
+
+    /* ─── Filter Bar ─── */
+    .filter-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .filter-bar .filter-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      min-width: 80px;
+    }
+    .filter-btn {
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0d1117;
+      font-weight: 600;
+    }
+
+    /* ─── Two-column layout ─── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 1024px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* ─── Panel ─── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .panel-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .panel-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .panel-title .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .panel-subtitle {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .panel-body {
+      padding: 16px;
+    }
+    .chart-container {
+      position: relative;
+      height: 280px;
+    }
+
+    /* ─── CAPEX section ─── */
+    .capex-section {
+      margin-bottom: 0;
+    }
+
+    /* ─── CAPEX Drilldown ─── */
+    .capex-drilldown {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .capex-drilldown.open { max-height: 900px; }
+    .capex-drilldown-inner {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      margin-top: 12px;
+      overflow: hidden;
+    }
+    .capex-drilldown-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .capex-drilldown-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .capex-drilldown-body {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 0;
+    }
+    @media (max-width: 1100px) {
+      .capex-drilldown-body { grid-template-columns: 1fr; }
+    }
+    .capex-drilldown-body > div {
+      padding: 16px 18px;
+    }
+    .capex-drilldown-body > div:first-child {
+      border-right: 1px solid var(--border);
+    }
+    .capex-sub-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .project-list { display: flex; flex-direction: column; gap: 8px; }
+    .project-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .project-card:hover { border-color: var(--accent); background: var(--bg-alt); }
+    .project-card.expanded { background: var(--bg-alt); }
+    .project-card.status-production { border-left-color: var(--green); }
+    .project-card.status-development { border-left-color: var(--blue); }
+    .project-card.status-fid { border-left-color: var(--yellow); }
+    .project-card.status-exploration { border-left-color: var(--orange); }
+    .project-card.status-planning { border-left-color: var(--text-muted); }
+    .project-card-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 12px;
+      align-items: start;
+    }
+    .project-expand-icon {
+      font-size: 10px;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+      align-self: start;
+      margin-top: 2px;
+    }
+    .project-card.expanded .project-expand-icon { transform: rotate(180deg); }
+    .project-name { font-size: 12px; font-weight: 600; color: var(--text); }
+    .project-meta { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+    .project-notes { font-size: 11px; color: var(--text-muted); margin-top: 4px; grid-column: 1 / -1; line-height: 1.5; }
+    .project-badge { font-size: 10px; white-space: nowrap; align-self: start; }
+    .project-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding-top 0.2s;
+    }
+    .project-card.expanded .project-detail {
+      max-height: 400px;
+      padding-top: 10px;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 16px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+    .detail-item { display: flex; flex-direction: column; gap: 1px; }
+    .detail-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); }
+    .detail-value { font-size: 11px; color: var(--text); line-height: 1.5; }
+    .detail-item.full-width { grid-column: 1 / -1; }
+    .detail-rig-demand {
+      margin-top: 8px;
+      padding: 7px 10px;
+      background: rgba(var(--accent-rgb, 59,130,246), 0.08);
+      border: 1px solid rgba(var(--accent-rgb, 59,130,246), 0.2);
+      border-radius: 5px;
+      font-size: 11px;
+      color: var(--text);
+      line-height: 1.6;
+      grid-column: 1 / -1;
+    }
+    .detail-rig-demand::before { content: '🔵 시추 수요: '; font-weight: 600; }
+    .drill-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .drill-list li { display: flex; gap: 8px; font-size: 12px; color: var(--text); line-height: 1.6; }
+    .drill-list li::before { content: '▸'; color: var(--orange); flex-shrink: 0; margin-top: 3px; font-size: 9px; }
+    .capex-toggle {
+      display: flex;
+      gap: 4px;
+    }
+    .capex-toggle-btn {
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-family: var(--font-body);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .capex-toggle-btn:hover { border-color: var(--accent); color: var(--text); }
+    .capex-toggle-btn.active {
+      background: rgba(0,212,170,0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .capex-section .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .capex-chart-container {
+      position: relative;
+      height: 260px;
+    }
+
+    /* ─── Newbuild section ─── */
+    .newbuild-section {
+      margin-bottom: 20px;
+    }
+
+    /* ─── Status Badges ─── */
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .badge-green   { background: rgba(63,185,80,0.15);  color: var(--green); }
+    .badge-yellow  { background: rgba(210,153,34,0.15); color: var(--yellow); }
+    .badge-red     { background: rgba(248,81,73,0.15);  color: var(--red); }
+    .badge-blue    { background: rgba(88,166,255,0.15); color: var(--blue); }
+    .badge-muted   { background: rgba(139,148,158,0.15); color: var(--text-muted); }
+
+    /* ─── Loading / Error ─── */
+    .loading {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 2;
+    }
+    .loading code {
+      font-family: var(--font-mono);
+      background: var(--border);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    /* ─── Tabulator Overrides ─── */
+    .tabulator {
+      background: transparent !important;
+      border: none !important;
+      font-family: var(--font-body) !important;
+      font-size: 12px !important;
+    }
+    .tabulator .tabulator-header {
+      background: rgba(48, 54, 61, 0.5) !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+    .tabulator .tabulator-header .tabulator-col {
+      background: transparent !important;
+      border-right: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+    }
+    .tabulator .tabulator-header .tabulator-col:last-child {
+      border-right: none !important;
+    }
+    .tabulator .tabulator-row {
+      background: transparent !important;
+      border-bottom: 1px solid var(--border) !important;
+      color: var(--text) !important;
+    }
+    .tabulator .tabulator-row:last-child {
+      border-bottom: none !important;
+    }
+    .tabulator .tabulator-row:hover {
+      background: rgba(48, 54, 61, 0.4) !important;
+    }
+    .tabulator .tabulator-row .tabulator-cell {
+      border-right: 1px solid var(--border) !important;
+      padding: 8px 10px !important;
+    }
+    .tabulator .tabulator-row .tabulator-cell:last-child {
+      border-right: none !important;
+    }
+    .tabulator .tabulator-footer {
+      background: transparent !important;
+      border-top: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      font-size: 11px !important;
+    }
+    .tabulator .tabulator-paginator {
+      color: var(--text-muted) !important;
+    }
+    .tabulator .tabulator-paginator button {
+      background: transparent !important;
+      border: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      border-radius: 4px !important;
+    }
+    .tabulator .tabulator-paginator button:hover {
+      background: var(--border) !important;
+      color: var(--text) !important;
+    }
+    .tabulator-tableholder {
+      background: transparent !important;
+    }
+    .tabulator-placeholder {
+      background: transparent !important;
+      color: var(--text-muted) !important;
+    }
+
+    /* mono values */
+    .mono {
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    /* ─── Header Nav ─── */
+    .header-nav { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-link { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; }
+    .nav-link:hover { text-decoration: underline; }
+    .nav-link.active {
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    /* ─── Rig Detail Drawer ─── */
+    .drawer-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+    .drawer {
+      position: fixed; top: 0; right: 0; bottom: 0;
+      width: 480px; max-width: 95vw;
+      background: var(--panel);
+      border-left: 1px solid var(--border);
+      z-index: 101;
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      overflow-y: auto;
+      display: flex; flex-direction: column;
+    }
+    .drawer.open { transform: translateX(0); }
+
+    .drawer-header {
+      display: flex; align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: var(--panel);
+      z-index: 1;
+    }
+    .drawer-rig-name {
+      font-size: 18px; font-weight: 700;
+      color: var(--text); line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .drawer-rig-meta {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .drawer-close {
+      background: none; border: 1px solid var(--border);
+      border-radius: 6px; color: var(--text-muted);
+      cursor: pointer; font-size: 18px;
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-left: 12px;
+      transition: all 0.15s;
+    }
+    .drawer-close:hover { border-color: var(--red); color: var(--red); }
+
+    .drawer-body { padding: 20px 24px; flex: 1; }
+
+    .drawer-section {
+      margin-bottom: 24px;
+    }
+    .drawer-section-title {
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      color: var(--text-muted); margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .specs-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .spec-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    .spec-label {
+      font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      color: var(--text-muted); margin-bottom: 4px;
+    }
+    .spec-value {
+      font-size: 14px; font-weight: 600;
+      color: var(--text); font-family: var(--font-mono);
+    }
+    .spec-value.accent { color: var(--accent); }
+    .spec-value.blue   { color: var(--blue); }
+
+    .contract-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: 14px 16px;
+    }
+    .contract-row {
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .contract-row:last-child { border-bottom: none; }
+    .contract-row-label { font-size: 12px; color: var(--text-muted); }
+    .contract-row-value { font-size: 13px; font-weight: 500; color: var(--text); font-family: var(--font-mono); }
+
+    .region-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(88,166,255,0.1);
+      border: 1px solid rgba(88,166,255,0.3);
+      border-radius: 6px; padding: 8px 14px;
+      font-size: 13px; color: var(--blue); font-weight: 500;
+    }
+    .region-badge .region-icon { font-size: 16px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-title">
+      <h1>Offshore Market Intelligence</h1>
+      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrates, CAPEX &amp; Yard Pricing</span>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">Overview</a>
+      <span class="nav-link active">Drilling / MODU</span>
+      <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
+      <a href="earnings.html" class="nav-link">Drilling Financials</a>
+      <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
+      <a href="news.html" class="nav-link">Market News</a>
+    </nav>
+    <div class="header-meta" id="header-meta">
+      <!-- populated by JS -->
+    </div>
+  </header>
+
+  <!-- Market Overview -->
+  <section class="market-overview">
+    <div class="overview-copy">
+      <div>
+        <h2>Drilling / MODU Fleet Intelligence</h2>
+        <p>
+          해양 시추 리그의 fleet status, dayrate, CAPEX, yard pricing을 따로 보는 Drilling 섹터 화면입니다.
+          전체 시장 흐름과 뉴스는 Overview 첫 화면에서 확인할 수 있습니다.
+        </p>
+      </div>
+      <div class="overview-meta">
+        <span class="overview-chip" id="overview-fleet-date">Fleet data: —</span>
+        <span class="overview-chip" id="overview-production-date">Production assets: —</span>
+        <span class="overview-chip" id="overview-capex-date">CAPEX: —</span>
+      </div>
+    </div>
+    <div class="sector-grid">
+      <a class="sector-card active" href="drilling.html">
+        <div class="sector-card-top">
+          <div>
+            <div class="sector-label">Sector</div>
+            <div class="sector-title">Drilling / MODU</div>
+            <div class="sector-desc">Global fleet status, dayrate trend, contractor exposure and yard pricing.</div>
+          </div>
+          <div class="sector-metric" id="sector-rig-count">—</div>
+        </div>
+        <div class="sector-foot">Current section</div>
+      </a>
+      <a class="sector-card" href="fpso.html">
+        <div class="sector-card-top">
+          <div>
+            <div class="sector-label">Sector</div>
+            <div class="sector-title">FPSO / FLNG Assets</div>
+            <div class="sector-desc">Production assets, notable vessels, orderbook and charter rate trends.</div>
+          </div>
+          <div class="sector-metric" id="sector-fpso-count">—</div>
+        </div>
+        <div class="sector-foot">Open assets view</div>
+      </a>
+      <a class="sector-card" href="earnings.html">
+        <div class="sector-card-top">
+          <div>
+            <div class="sector-label">Financials</div>
+            <div class="sector-title">Drilling Contractors</div>
+            <div class="sector-desc">Quarterly revenue, EBITDA margin, utilization and backlog by contractor.</div>
+          </div>
+          <div class="sector-metric" id="sector-drilling-earnings-count">—</div>
+        </div>
+        <div class="sector-foot">Open financials</div>
+      </a>
+      <a class="sector-card" href="fpso_earnings.html">
+        <div class="sector-card-top">
+          <div>
+            <div class="sector-label">Financials</div>
+            <div class="sector-title">FPSO / FLNG Operators</div>
+            <div class="sector-desc">Operator earnings, lease units, contract backlog and key operating assets.</div>
+          </div>
+          <div class="sector-metric" id="sector-fpso-earnings-count">—</div>
+        </div>
+        <div class="sector-foot">Open operator view</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="section-label">Fleet Intelligence</div>
+
+  <!-- KPI Grid -->
+  <section class="kpi-grid" id="kpi-grid">
+    <!-- populated by JS -->
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="filter-row">
+      <span class="filter-label">RIG TYPE</span>
+      <button class="filter-btn type-btn active" data-filter="All">All</button>
+      <button class="filter-btn type-btn" data-filter="Drillship">Drillship</button>
+      <button class="filter-btn type-btn" data-filter="Semisubmersible">Semisubmersible</button>
+      <button class="filter-btn type-btn" data-filter="Jack-up">Jack-up</button>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">CONTRACTOR</span>
+      <button class="filter-btn contractor-btn active" data-contractor="All">All</button>
+      <button class="filter-btn contractor-btn" data-contractor="Transocean">Transocean</button>
+      <button class="filter-btn contractor-btn" data-contractor="Valaris">Valaris</button>
+      <button class="filter-btn contractor-btn" data-contractor="Noble">Noble</button>
+      <button class="filter-btn contractor-btn" data-contractor="Seadrill">Seadrill</button>
+      <button class="filter-btn contractor-btn" data-contractor="Borr Drilling">Borr Drilling</button>
+    </div>
+  </div>
+
+  <!-- Two-column: Fleet Table | Day Rate Chart -->
+  <div class="two-col">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title"><span class="dot"></span>Fleet Status</span>
+        <span class="panel-subtitle" id="fleet-count">— rigs</span>
+      </div>
+      <div id="fleet-table"></div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title"><span class="dot" style="background:var(--blue)"></span>Day Rate Trend</span>
+        <span class="panel-subtitle">k$/day · quarterly</span>
+      </div>
+      <div class="panel-body">
+        <div class="chart-container">
+          <canvas id="dayRateChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAPEX Section -->
+  <div class="capex-section">
+    <div class="section-label">CAPEX Guidance</div>
+    <div class="two-col">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title"><span class="dot" style="background:var(--orange)"></span>Annual CAPEX by Company</span>
+          <div class="capex-toggle">
+            <button class="capex-toggle-btn active" id="capex-btn-upstream" onclick="switchCapexMode('upstream')">Upstream</button>
+            <button class="capex-toggle-btn" id="capex-btn-total" onclick="switchCapexMode('total')">Total</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="capex-chart-container">
+            <canvas id="capexChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>CAPEX Summary</span>
+          <span class="panel-subtitle">Latest year per company</span>
+        </div>
+        <div id="capex-table"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAPEX Drilldown Panel -->
+  <div class="capex-drilldown" id="capex-drilldown">
+    <div class="capex-drilldown-inner">
+      <div class="capex-drilldown-header">
+        <div class="capex-drilldown-title" id="capex-drilldown-title"></div>
+        <button class="close-btn" id="close-capex-drilldown">×</button>
+      </div>
+      <div class="capex-drilldown-body">
+        <div>
+          <div class="capex-sub-label">Key Upstream Projects</div>
+          <div class="project-list" id="capex-project-list"></div>
+        </div>
+        <div>
+          <div class="capex-sub-label">Drilling Highlights</div>
+          <ul class="drill-list" id="capex-drill-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newbuild Prices Table -->
+  <div class="newbuild-section">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Newbuild &amp; Repair Prices</span>
+        <span class="panel-subtitle">Yard contract data</span>
+      </div>
+      <div id="newbuild-table"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Rig Detail Drawer -->
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<div class="drawer" id="rig-drawer">
+  <div class="drawer-header">
+    <div class="drawer-title-group">
+      <div class="drawer-rig-name" id="drawer-rig-name"></div>
+      <div class="drawer-rig-meta" id="drawer-rig-meta"></div>
+    </div>
+    <button class="drawer-close" id="drawer-close">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</div>
+
+<script>
+(async function () {
+  /* ─────────────────────────────────────────
+     Data loading
+  ───────────────────────────────────────── */
+  let fleet, rates, capex, fpso, drillingEarnings, fpsoEarnings;
+  let allRigs = [];
+  let dayRateChart = null;
+  let capexChart = null;
+  let capexTable = null;
+  let capexMode = 'upstream'; // 'upstream' | 'total'
+  let selectedCapexCompany = null;
+  let newbuildTable = null;
+
+  function esc(str) {
+    if (str == null) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  try {
+    [fleet, rates, capex, fpso, drillingEarnings, fpsoEarnings] = await Promise.all([
+      fetch('./data/fleet.json').then(r => r.json()),
+      fetch('./data/rates.json').then(r => r.json()),
+      fetch('./data/capex.json').then(r => r.json()),
+      fetch('./data/fpso.json').then(r => r.json()),
+      fetch('./data/earnings.json').then(r => r.json()),
+      fetch('./data/fpso_earnings.json').then(r => r.json()),
+    ]);
+    allRigs = fleet.rigs;
+  } catch (err) {
+    document.querySelector('.container').innerHTML +=
+      `<div class="loading">⚠ 데이터 로드 실패: ${err.message}<br>로컬 서버로 실행하세요: <code>python3 -m http.server 8080</code></div>`;
+    return;
+  }
+
+  /* ─────────────────────────────────────────
+     Render Header Meta
+  ───────────────────────────────────────── */
+  function renderHeader() {
+    const el = document.getElementById('header-meta');
+    el.innerHTML = `
+      <div class="meta-row">
+        <span class="live-dot"></span>
+        <span class="label">Fleet data:</span>
+        <span class="value">${esc(fleet.updated)}</span>
+      </div>
+      <div class="meta-row">
+        <span class="label">Day rates:</span>
+        <span class="value">${esc(rates.updated)}</span>
+      </div>
+      <div class="meta-row">
+        <span class="label">CAPEX:</span>
+        <span class="value">${esc(capex.updated)}</span>
+      </div>
+    `;
+  }
+
+  function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  }
+
+  function renderMarketOverview() {
+    setText('overview-fleet-date', `Fleet data: ${fleet.updated || '—'}`);
+    setText('overview-production-date', `Production assets: ${fpso.updated || '—'}`);
+    setText('overview-capex-date', `CAPEX: ${capex.updated || '—'}`);
+
+    setText('sector-rig-count', `${fleet.rigs.length} rigs`);
+    setText('sector-fpso-count', `${fpso.vessels.length} assets`);
+    setText('sector-drilling-earnings-count', `${drillingEarnings.companies.length} cos`);
+    setText('sector-fpso-earnings-count', `${fpsoEarnings.companies.length} cos`);
+  }
+
+  /* ─────────────────────────────────────────
+     KPI Logic
+  ───────────────────────────────────────── */
+  function calcKPIs(rigs) {
+    const total = rigs.length;
+    const onContract = rigs.filter(r => r.status === 'On Contract').length;
+    const idleStacked = rigs.filter(r => r.status === 'Idle' || r.status === 'Cold Stacked').length;
+    return { total, onContract, idleStacked };
+  }
+
+  function getAvgDayRate() {
+    const drillshipUDW = rates.day_rates
+      .filter(r => r.rig_type === 'Drillship' && r.tier === 'Ultra-deepwater')
+      .sort((a, b) => b.date.localeCompare(a.date));
+    return drillshipUDW.length ? drillshipUDW[0].rate_kusd : null;
+  }
+
+  function deltaText(current, prev) {
+    if (prev == null) return { text: '—', cls: 'neutral' };
+    const diff = current - prev;
+    if (diff > 0) return { text: `▲ ${diff}`, cls: 'positive' };
+    if (diff < 0) return { text: `▼ ${Math.abs(diff)}`, cls: 'negative' };
+    return { text: '—', cls: 'neutral' };
+  }
+
+  /* ─────────────────────────────────────────
+     Render KPI Cards
+  ───────────────────────────────────────── */
+  function renderKPIs(rigs, isFiltered) {
+    const { total, onContract, idleStacked } = calcKPIs(rigs);
+    const avgRate = getAvgDayRate();
+
+    const pw = fleet.prev_week;
+    const totalDelta   = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(total, pw.total);
+    const contractDelta = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(onContract, pw.on_contract);
+    const idleDelta    = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(idleStacked, pw.idle_stacked);
+
+    document.getElementById('kpi-grid').innerHTML = `
+      <div class="kpi-card accent">
+        <div class="kpi-label">Total Rigs</div>
+        <div class="kpi-value">${total}</div>
+        <div class="kpi-delta ${totalDelta.cls}">${totalDelta.text} vs prev week</div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">On Contract</div>
+        <div class="kpi-value">${onContract}</div>
+        <div class="kpi-delta ${contractDelta.cls}">${contractDelta.text} vs prev week</div>
+      </div>
+      <div class="kpi-card red">
+        <div class="kpi-label">Idle + Stacked</div>
+        <div class="kpi-value">${idleStacked}</div>
+        <div class="kpi-delta ${idleDelta.cls}">${idleDelta.text} vs prev week</div>
+      </div>
+      <div class="kpi-card blue">
+        <div class="kpi-label">Avg Day Rate (UDW Drillship)</div>
+        <div class="kpi-value">${avgRate !== null ? avgRate : '—'}<span class="unit">k$/day</span></div>
+        <div class="kpi-delta neutral">Global · not filtered</div>
+      </div>
+    `;
+  }
+
+  /* ─────────────────────────────────────────
+     Status Badge helper
+  ───────────────────────────────────────── */
+  function statusBadge(status) {
+    if (!status) return '<span class="badge badge-muted">—</span>';
+    const map = {
+      'On Contract':         'badge-green',
+      'Idle':                'badge-yellow',
+      'Cold Stacked':        'badge-red',
+      'Under Construction':  'badge-blue',
+      'Shipyard':            'badge-muted',
+    };
+    const cls = map[status] || 'badge-muted';
+    return `<span class="badge ${cls}">${status}</span>`;
+  }
+
+  /* ─────────────────────────────────────────
+     Fleet Table (Tabulator)
+  ───────────────────────────────────────── */
+  let fleetTable = null;
+
+  function renderFleetTable(rigs) {
+    const tableData = rigs.map(r => ({
+      name: r.name,
+      contractor: r.contractor,
+      type: r.type,
+      status: r.status,
+      operator: r.operator,
+      location: r.location,
+      water_depth_ft: r.water_depth_ft,
+      contract_start: r.contract_start,
+      contract_end: r.contract_end,
+      day_rate_kusd: r.day_rate_kusd,
+    }));
+
+    if (fleetTable) {
+      fleetTable.setData(tableData);
+      return;
+    }
+
+    fleetTable = new Tabulator('#fleet-table', {
+      data: tableData,
+      height: '400px',
+      layout: 'fitData',
+      responsiveLayout: false,
+      columns: [
+        {
+          title: 'Rig Name',
+          field: 'name',
+          minWidth: 180,
+          frozen: true,
+          formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Contractor',
+          field: 'contractor',
+          minWidth: 120,
+          formatter: cell => `<span style="color:var(--accent);font-weight:500">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Type',
+          field: 'type',
+          minWidth: 130,
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Status',
+          field: 'status',
+          minWidth: 140,
+          formatter: cell => statusBadge(cell.getValue()),
+        },
+        {
+          title: 'Operator',
+          field: 'operator',
+          minWidth: 120,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span style="color:var(--text)">${esc(v)}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'Location',
+          field: 'location',
+          minWidth: 160,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span style="color:var(--text-muted);font-size:12px">${esc(v)}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'WD (ft)',
+          field: 'water_depth_ft',
+          minWidth: 80,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span class="mono" style="color:var(--text-muted)">${v.toLocaleString()}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'Start',
+          field: 'contract_start',
+          minWidth: 80,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span class="mono" style="color:var(--text-muted)">${v}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'End',
+          field: 'contract_end',
+          minWidth: 80,
+          formatter: cell => {
+            const v = cell.getValue();
+            return v ? `<span class="mono" style="color:var(--text-muted)">${v}</span>` : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+        {
+          title: 'Rate (k$)',
+          field: 'day_rate_kusd',
+          minWidth: 90,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            return v !== null && v !== undefined
+              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
+              : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+      ],
+      rowFormatter: row => {
+        row.getElement().style.cursor = 'pointer';
+      },
+    });
+
+    fleetTable.on('rowClick', (e, row) => {
+      const rowData = row.getData();
+      // find the full rig object from allRigs
+      const rig = allRigs.find(r => r.name === rowData.name);
+      if (rig) openDrawer(rig);
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     Day Rate Chart (Chart.js)
+  ───────────────────────────────────────── */
+  function renderDayRateChart() {
+    const allDates = [...new Set(rates.day_rates.map(r => r.date))].sort();
+
+    function buildDataset(rigType, tier) {
+      const entries = rates.day_rates.filter(r => r.rig_type === rigType && r.tier === tier);
+      return allDates.map(date => {
+        const found = entries.find(e => e.date === date);
+        return found ? found.rate_kusd : null;
+      });
+    }
+
+    const ctx = document.getElementById('dayRateChart').getContext('2d');
+    if (dayRateChart) { dayRateChart.destroy(); }
+
+    function makeGradient(ctx, colorHex) {
+      const grad = ctx.createLinearGradient(0, 0, 0, 280);
+      grad.addColorStop(0, colorHex + '55');
+      grad.addColorStop(1, colorHex + '00');
+      return grad;
+    }
+
+    dayRateChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: allDates,
+        datasets: [
+          {
+            label: 'Drillship (UDW)',
+            data: buildDataset('Drillship', 'Ultra-deepwater'),
+            borderColor: '#00d4aa',
+            backgroundColor: makeGradient(ctx, '#00d4aa'),
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3,
+            pointBackgroundColor: '#00d4aa',
+            spanGaps: true,
+          },
+          {
+            label: 'Semisubmersible',
+            data: buildDataset('Semisubmersible', 'Deepwater'),
+            borderColor: '#58a6ff',
+            backgroundColor: makeGradient(ctx, '#58a6ff'),
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3,
+            pointBackgroundColor: '#58a6ff',
+            spanGaps: true,
+          },
+          {
+            label: 'Jack-up',
+            data: buildDataset('Jack-up', 'Premium'),
+            borderColor: '#f0883e',
+            backgroundColor: makeGradient(ctx, '#f0883e'),
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3,
+            pointBackgroundColor: '#f0883e',
+            spanGaps: true,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              color: '#8b949e',
+              font: { size: 11, family: "'Inter', sans-serif" },
+              boxWidth: 12,
+              padding: 16,
+            },
+          },
+          tooltip: {
+            backgroundColor: '#161b22',
+            borderColor: '#30363d',
+            borderWidth: 1,
+            titleColor: '#e6edf3',
+            bodyColor: '#8b949e',
+            padding: 10,
+            callbacks: {
+              label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y} k$/day`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { color: '#30363d33', drawBorder: false },
+            ticks: { color: '#8b949e', font: { size: 10, family: "'JetBrains Mono', monospace" } },
+          },
+          y: {
+            grid: { color: '#30363d55', drawBorder: false },
+            ticks: {
+              color: '#8b949e',
+              font: { size: 10, family: "'JetBrains Mono', monospace" },
+              callback: v => v + 'k',
+            },
+          },
+        },
+      },
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     CAPEX Bar Chart (Chart.js)
+  ───────────────────────────────────────── */
+  function switchCapexMode(mode) {
+    capexMode = mode;
+    document.getElementById('capex-btn-upstream').classList.toggle('active', mode === 'upstream');
+    document.getElementById('capex-btn-total').classList.toggle('active', mode === 'total');
+    renderCapexChart();
+  }
+  window.switchCapexMode = switchCapexMode;
+
+  function renderCapexChart() {
+    const palette = ['#00d4aa','#58a6ff','#f0883e','#d29922','#bc8cff','#f85149','#3fb950','#79c0ff','#ffa657','#ff6eb4'];
+    const field = capexMode === 'upstream' ? 'upstream_capex_busd' : 'total_capex_busd';
+    const labelSuffix = capexMode === 'upstream' ? ' (Upstream)' : ' (Total)';
+
+    // Collect all years
+    const allYears = new Set();
+    capex.companies.forEach(c => c.capex_guidance.forEach(g => allYears.add(g.year)));
+    const years = [...allYears].sort();
+
+    const datasets = capex.companies.map((company, i) => {
+      const data = years.map(year => {
+        const entry = company.capex_guidance.find(g => g.year === year);
+        return entry ? (entry[field] ?? entry.total_capex_busd) : null;
+      });
+      return {
+        label: company.name,
+        data,
+        backgroundColor: palette[i % palette.length] + 'cc',
+        borderColor: palette[i % palette.length],
+        borderWidth: 1,
+        borderRadius: 3,
+        spanGaps: true,
+      };
+    });
+
+    const ctx = document.getElementById('capexChart').getContext('2d');
+    if (capexChart) { capexChart.destroy(); }
+    capexChart = new Chart(ctx, {
+      type: 'bar',
+      data: { labels: years, datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              color: '#8b949e',
+              font: { size: 10, family: "'Inter', sans-serif" },
+              boxWidth: 10,
+              padding: 10,
+            },
+          },
+          tooltip: {
+            backgroundColor: '#161b22',
+            borderColor: '#30363d',
+            borderWidth: 1,
+            titleColor: '#e6edf3',
+            bodyColor: '#8b949e',
+            padding: 10,
+            callbacks: {
+              label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y}B${labelSuffix}`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { color: '#30363d33', drawBorder: false },
+            ticks: { color: '#8b949e', font: { size: 11 } },
+          },
+          y: {
+            grid: { color: '#30363d55', drawBorder: false },
+            ticks: {
+              color: '#8b949e',
+              font: { size: 10, family: "'JetBrains Mono', monospace" },
+              callback: v => '$' + v + 'B',
+            },
+          },
+        },
+      },
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     CAPEX Summary Table (Tabulator)
+  ───────────────────────────────────────── */
+  function renderCapexTable() {
+    const tableData = capex.companies.map(c => {
+      if (!c.capex_guidance.length) return null;
+      const latest = c.capex_guidance.slice().sort((a, b) => b.year - a.year)[0];
+      const upstreamPct = latest.upstream_capex_busd && latest.total_capex_busd
+        ? Math.round(latest.upstream_capex_busd / latest.total_capex_busd * 100)
+        : null;
+      return {
+        company: c.name,
+        type: c.type,
+        year: latest.year,
+        total_capex_busd: latest.total_capex_busd,
+        upstream_capex_busd: latest.upstream_capex_busd,
+        upstream_pct: upstreamPct,
+        focus: c.upstream_focus,
+        _company: c,
+      };
+    }).filter(Boolean);
+
+    if (capexTable) { capexTable.destroy(); }
+    capexTable = new Tabulator('#capex-table', {
+      data: tableData,
+      height: '300px',
+      layout: 'fitColumns',
+      columns: [
+        {
+          title: 'Company',
+          field: 'company',
+          minWidth: 120,
+          widthGrow: 1.2,
+          formatter: cell => `<span style="font-weight:500;color:var(--text)">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Type',
+          field: 'type',
+          minWidth: 70,
+          widthGrow: 0.6,
+          formatter: cell => {
+            const v = cell.getValue();
+            const cls = v === 'NOC' ? 'badge-blue' : 'badge-muted';
+            return `<span class="badge ${cls}">${v}</span>`;
+          },
+        },
+        {
+          title: 'Yr',
+          field: 'year',
+          minWidth: 50,
+          widthGrow: 0.4,
+          hozAlign: 'center',
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Total ($B)',
+          field: 'total_capex_busd',
+          minWidth: 90,
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">$${cell.getValue()}B</span>`,
+        },
+        {
+          title: 'Upstream ($B)',
+          field: 'upstream_capex_busd',
+          minWidth: 110,
+          widthGrow: 0.8,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            const pct = cell.getData().upstream_pct;
+            return `<span class="mono" style="color:var(--accent);font-weight:600">$${v}B</span>`
+                 + (pct != null ? `<span style="font-size:10px;color:var(--text-muted);margin-left:4px">${pct}%</span>` : '');
+          },
+        },
+        {
+          title: 'Focus',
+          field: 'focus',
+          minWidth: 160,
+          widthGrow: 2,
+          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
+        },
+      ],
+    });
+
+    capexTable.on('rowClick', function(e, row) {
+      const data = row.getData();
+      const company = data._company;
+      capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+      if (selectedCapexCompany && selectedCapexCompany.name === company.name) {
+        closeCapexDrilldown();
+      } else {
+        row.getElement().classList.add('row-selected');
+        renderCapexDrilldown(company);
+      }
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     CAPEX Drilldown
+  ───────────────────────────────────────── */
+  function statusClass(status) {
+    if (!status) return 'status-planning';
+    const s = status.toLowerCase();
+    if (s.includes('production')) return 'status-production';
+    if (s.includes('development')) return 'status-development';
+    if (s.includes('fid')) return 'status-fid';
+    if (s.includes('explor') || s.includes('apprais')) return 'status-exploration';
+    return 'status-planning';
+  }
+
+  function statusBadgeClass(status) {
+    if (!status) return 'badge-muted';
+    const s = status.toLowerCase();
+    if (s.includes('production')) return 'badge-green';
+    if (s.includes('development')) return 'badge-blue';
+    if (s.includes('fid')) return 'badge-yellow';
+    if (s.includes('explor') || s.includes('apprais')) return 'badge-orange';
+    return 'badge-muted';
+  }
+
+  function renderCapexDrilldown(company) {
+    selectedCapexCompany = company;
+    const panel = document.getElementById('capex-drilldown');
+    const plan = company.upstream_plan;
+
+    // Title
+    const typeClass = company.type === 'NOC' ? 'badge-blue' : 'badge-muted';
+    let titleHtml = `${esc(company.name)} <span class="badge ${typeClass}" style="font-size:11px">${esc(company.type)}</span>`;
+    if (plan && plan.horizon) {
+      titleHtml += ` <span class="badge badge-muted" style="font-size:11px">${esc(plan.horizon)}</span>`;
+    }
+    if (plan && plan.total_commitment_busd) {
+      titleHtml += ` <span class="badge badge-orange" style="font-size:11px">총 약속 $${plan.total_commitment_busd}B</span>`;
+    }
+    document.getElementById('capex-drilldown-title').innerHTML = titleHtml;
+
+    // Projects
+    const projectList = document.getElementById('capex-project-list');
+    if (plan && plan.key_projects && plan.key_projects.length) {
+      projectList.innerHTML = plan.key_projects.map(p => {
+        const cap = p.capacity_kboed ? `<span class="mono" style="color:var(--accent);font-size:11px">${p.capacity_kboed}kboed</span>` : '';
+        const d = p.detail || {};
+        const partners = Array.isArray(d.partners) && d.partners.length ? d.partners.join(', ') : null;
+        const timeline = [
+          d.fid ? `FID ${esc(d.fid)}` : null,
+          d.first_oil ? `First Oil ${esc(d.first_oil)}` : null,
+          d.peak_year ? `Peak ${esc(d.peak_year)}` : null
+        ].filter(Boolean).join(' → ');
+        const hasDetail = Object.keys(d).length > 0;
+        return `
+          <div class="project-card ${statusClass(p.status)}" onclick="toggleProjectCard(this)">
+            <div class="project-card-header">
+              <div>
+                <div class="project-name">${esc(p.name)}</div>
+                <div class="project-meta">${esc(p.region)} · ${esc(p.type)}</div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+                <span class="badge ${statusBadgeClass(p.status)} project-badge">${esc(p.status)}</span>
+                ${cap}
+                ${hasDetail ? `<span class="project-expand-icon">▾</span>` : ''}
+              </div>
+              <div class="project-notes">${esc(p.notes)}</div>
+            </div>
+            ${hasDetail ? `
+            <div class="project-detail">
+              <div class="detail-grid">
+                ${d.operator ? `<div class="detail-item"><span class="detail-label">운영사 (지분)</span><span class="detail-value">${esc(d.operator)}</span></div>` : ''}
+                ${partners ? `<div class="detail-item"><span class="detail-label">파트너</span><span class="detail-value">${esc(partners)}</span></div>` : ''}
+                ${d.water_depth_m != null ? `<div class="detail-item"><span class="detail-label">수심</span><span class="detail-value">${d.water_depth_m.toLocaleString()}m</span></div>` : ''}
+                ${d.reserves_mmboe != null ? `<div class="detail-item"><span class="detail-label">매장량</span><span class="detail-value">${d.reserves_mmboe.toLocaleString()} MMboe</span></div>` : ''}
+                ${timeline ? `<div class="detail-item full-width"><span class="detail-label">타임라인</span><span class="detail-value">${timeline}</span></div>` : ''}
+                ${d.vessel ? `<div class="detail-item full-width"><span class="detail-label">생산 설비</span><span class="detail-value">${esc(d.vessel)}</span></div>` : ''}
+                ${d.rig_demand ? `<div class="detail-rig-demand">${esc(d.rig_demand)}</div>` : ''}
+                ${d.source ? `<div class="detail-item full-width" style="margin-top:4px"><span class="detail-label">출처</span><span class="detail-value" style="color:var(--text-muted)">${esc(d.source)}</span></div>` : ''}
+              </div>
+            </div>` : ''}
+          </div>`;
+      }).join('');
+    } else {
+      projectList.innerHTML = '<div style="color:var(--text-muted);font-size:12px">데이터 없음</div>';
+    }
+
+    // Drilling highlights
+    const drillList = document.getElementById('capex-drill-list');
+    if (plan && plan.drilling_highlights && plan.drilling_highlights.length) {
+      drillList.innerHTML = plan.drilling_highlights.map(h =>
+        `<li>${esc(h)}</li>`
+      ).join('');
+    } else {
+      drillList.innerHTML = '<li style="color:var(--text-muted)">데이터 없음</li>';
+    }
+
+    panel.classList.add('open');
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+  }
+
+  function closeCapexDrilldown() {
+    selectedCapexCompany = null;
+    document.getElementById('capex-drilldown').classList.remove('open');
+    if (capexTable) capexTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
+  }
+  window.closeCapexDrilldown = closeCapexDrilldown;
+
+  function toggleProjectCard(card) {
+    const isExpanded = card.classList.contains('expanded');
+    // Collapse all other cards first
+    document.querySelectorAll('#capex-project-list .project-card.expanded').forEach(c => {
+      if (c !== card) c.classList.remove('expanded');
+    });
+    card.classList.toggle('expanded', !isExpanded);
+  }
+  window.toggleProjectCard = toggleProjectCard;
+
+  /* ─────────────────────────────────────────
+     Newbuild Prices Table (Tabulator)
+  ───────────────────────────────────────── */
+  function renderNewbuildTable() {
+    const tableData = rates.newbuild_prices.map(p => ({
+      date: p.date,
+      rig_type: p.rig_type,
+      yard: p.yard,
+      price_musd: p.price_musd,
+      notes: p.notes,
+    }));
+
+    if (newbuildTable) { newbuildTable.destroy(); }
+    newbuildTable = new Tabulator('#newbuild-table', {
+      data: tableData,
+      layout: 'fitColumns',
+      columns: [
+        {
+          title: 'Date',
+          field: 'date',
+          widthGrow: 0.6,
+          formatter: cell => `<span class="mono" style="color:var(--text-muted)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Rig Type',
+          field: 'rig_type',
+          widthGrow: 1.2,
+          formatter: cell => `<span style="color:var(--text)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Yard',
+          field: 'yard',
+          widthGrow: 1,
+          formatter: cell => `<span style="color:var(--blue)">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Price ($M)',
+          field: 'price_musd',
+          widthGrow: 0.7,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--accent)">$${cell.getValue()}M</span>`,
+        },
+        {
+          title: 'Notes',
+          field: 'notes',
+          widthGrow: 2,
+          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
+        },
+      ],
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     Rig Detail Drawer
+  ───────────────────────────────────────── */
+  function openDrawer(rig) {
+    const drawer = document.getElementById('rig-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+    // Header
+    document.getElementById('drawer-rig-name').textContent = rig.name;
+    document.getElementById('drawer-rig-meta').innerHTML = `
+      ${statusBadge(rig.status)}
+      <span class="badge badge-muted">${esc(rig.type)}</span>
+      <span style="color:var(--accent);font-size:12px;font-weight:600">${esc(rig.contractor)}</span>
+    `;
+
+    // Body
+    const s = rig.specs || {};
+    const regionIcon = getRegionIcon(rig.location);
+
+    document.getElementById('drawer-body').innerHTML = `
+      <!-- Location -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Operation Area</div>
+        <div class="region-badge">
+          <span class="region-icon">${regionIcon}</span>
+          ${esc(rig.location || '—')}
+        </div>
+      </div>
+
+      <!-- Current Contract -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Current Contract</div>
+        <div class="contract-card">
+          <div class="contract-row">
+            <span class="contract-row-label">Operator</span>
+            <span class="contract-row-value">${esc(rig.operator || '—')}</span>
+          </div>
+          <div class="contract-row">
+            <span class="contract-row-label">Day Rate</span>
+            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + ' k$/day' : '—'}</span>
+          </div>
+          <div class="contract-row">
+            <span class="contract-row-label">Period</span>
+            <span class="contract-row-value">${esc(rig.contract_start || '—')} → ${esc(rig.contract_end || '—')}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rig Specs -->
+      <div class="drawer-section">
+        <div class="drawer-section-title">Rig Specifications</div>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-label">Build Year</div>
+            <div class="spec-value">${s.build_year || '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Build Yard</div>
+            <div class="spec-value" style="font-size:12px">${esc(s.build_yard || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Design</div>
+            <div class="spec-value blue">${esc(s.design || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Generation</div>
+            <div class="spec-value">${esc(s.generation || '—')}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Max Water Depth</div>
+            <div class="spec-value accent">${s.max_water_depth_ft ? s.max_water_depth_ft.toLocaleString() + ' ft' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Max Drill Depth</div>
+            <div class="spec-value">${s.max_drilling_depth_ft ? s.max_drilling_depth_ft.toLocaleString() + ' ft' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">BOP Rating</div>
+            <div class="spec-value">${s.bop_rating_psi ? s.bop_rating_psi.toLocaleString() + ' psi' : '—'}</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">VDL</div>
+            <div class="spec-value">${s.variable_deck_load_t ? s.variable_deck_load_t.toLocaleString() + ' t' : '—'}</div>
+          </div>
+          ${s.dp_class ? `<div class="spec-item">
+            <div class="spec-label">DP Class</div>
+            <div class="spec-value blue">${esc(s.dp_class)}</div>
+          </div>` : ''}
+        </div>
+      </div>
+    `;
+
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    document.getElementById('rig-drawer').classList.remove('open');
+    document.getElementById('drawer-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function getRegionIcon(location) {
+    if (!location) return '🌐';
+    const l = location.toLowerCase();
+    if (l.includes('norway') || l.includes('north sea') || l.includes('uk')) return '🇳🇴';
+    if (l.includes('brazil')) return '🇧🇷';
+    if (l.includes('gulf of mexico') || l.includes('gom') || l.includes('us gulf')) return '🇺🇸';
+    if (l.includes('australia')) return '🇦🇺';
+    if (l.includes('malaysia') || l.includes('vietnam') || l.includes('southeast asia')) return '🌏';
+    if (l.includes('angola') || l.includes('nigeria') || l.includes('africa') || l.includes('gabon')) return '🌍';
+    if (l.includes('saudi') || l.includes('uae') || l.includes('middle east') || l.includes('qatar')) return '🇸🇦';
+    if (l.includes('suriname') || l.includes('guyana')) return '🌎';
+    if (l.includes('singapore') || l.includes('stack') || l.includes('shipyard') || l.includes('stacked')) return '🔧';
+    if (l.includes('mexico')) return '🇲🇽';
+    return '🌐';
+  }
+
+  function initDrawer() {
+    document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+    document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
+    document.getElementById('close-capex-drilldown').addEventListener('click', closeCapexDrilldown);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeDrawer(); closeCapexDrilldown(); } });
+  }
+
+  /* ─────────────────────────────────────────
+     Filter Logic
+  ───────────────────────────────────────── */
+  let currentTypeFilter = 'All';
+  let currentContractorFilter = 'All';
+
+  function applyFilters() {
+    const isFiltered = currentTypeFilter !== 'All' || currentContractorFilter !== 'All';
+    const filtered = fleet.rigs.filter(r => {
+      const typeMatch = currentTypeFilter === 'All' || r.type === currentTypeFilter;
+      const contractorMatch = currentContractorFilter === 'All' || r.contractor === currentContractorFilter;
+      return typeMatch && contractorMatch;
+    });
+    renderKPIs(filtered, isFiltered);
+    renderFleetTable(filtered);
+    document.getElementById('fleet-count').textContent = `${filtered.length} rigs`;
+  }
+
+  function initFilters() {
+    document.querySelectorAll('.type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentTypeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+    document.querySelectorAll('.contractor-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.contractor-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentContractorFilter = btn.dataset.contractor;
+        applyFilters();
+      });
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     Main Init
+  ───────────────────────────────────────── */
+  renderHeader();
+  renderMarketOverview();
+  renderKPIs(fleet.rigs, false);
+  renderFleetTable(fleet.rigs);
+  renderDayRateChart();
+  renderCapexChart();
+  renderCapexTable();
+  renderNewbuildTable();
+  initFilters();
+  initDrawer();
+
+})();
+</script>
+</body>
+</html>
