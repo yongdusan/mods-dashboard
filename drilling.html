@@ -304,6 +304,47 @@
       color: #d29922;
       border: 1px solid rgba(210, 153, 34, 0.3);
     }
+    .obs-table-wrap {
+      margin-top: 12px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+    .obs-table-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      margin-bottom: 6px;
+      letter-spacing: 0.04em;
+    }
+    .obs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5px;
+      font-family: var(--font-mono);
+    }
+    .obs-table th {
+      text-align: left;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      padding: 3px 6px;
+      font-weight: 500;
+    }
+    .obs-table td {
+      padding: 3px 6px;
+      border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+      color: var(--text-primary);
+    }
+    .obs-table td.rate-cell {
+      text-align: right;
+      font-weight: 600;
+      color: var(--blue);
+    }
+    .obs-table a.src-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 9px;
+    }
+    .obs-table a.src-link:hover { color: var(--blue); }
     .panel-body {
       padding: 16px;
     }
@@ -787,6 +828,22 @@
       <div class="panel-body">
         <div class="chart-container">
           <canvas id="dayRateChart"></canvas>
+        </div>
+        <div class="obs-table-wrap" id="named-obs-wrap" style="display:none">
+          <div class="obs-table-label">FSR 검증 계약 기준점 (Transocean · Valaris Feb/Mar 2026 FSR)</div>
+          <table class="obs-table" id="named-obs-table">
+            <thead>
+              <tr>
+                <th>Rig</th>
+                <th>Type</th>
+                <th>Operator</th>
+                <th>Start</th>
+                <th style="text-align:right">Rate (k$)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="named-obs-body"></tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -1889,6 +1946,33 @@
   }
 
   /* ─────────────────────────────────────────
+     Named Observations Table
+  ───────────────────────────────────────── */
+  function renderNamedObservations() {
+    const obs = rates.named_observations;
+    if (!obs || obs.length === 0) return;
+    const wrap = document.getElementById('named-obs-wrap');
+    const tbody = document.getElementById('named-obs-body');
+    if (!wrap || !tbody) return;
+    const rows = obs.map(o => {
+      const op = o.operator || '(conf.)';
+      const srcLink = o.source_url
+        ? `<a class="src-link" href="${o.source_url}" target="_blank">FSR ↗</a>`
+        : '';
+      return `<tr>
+        <td>${o.rig}</td>
+        <td>${o.tier}</td>
+        <td>${op}</td>
+        <td>${o.contract_start || ''}</td>
+        <td class="rate-cell">${o.rate_kusd}</td>
+        <td>${srcLink}</td>
+      </tr>`;
+    }).join('');
+    tbody.innerHTML = rows;
+    wrap.style.display = '';
+  }
+
+  /* ─────────────────────────────────────────
      Main Init
   ───────────────────────────────────────── */
   renderHeader();
@@ -1900,6 +1984,7 @@
   renderCapexTable();
   renderNewbuildTable();
   renderConfidenceBadges();
+  renderNamedObservations();
   initFilters();
   initDrawer();
 

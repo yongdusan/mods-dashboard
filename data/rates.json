@@ -2,9 +2,9 @@
   "updated": "2026-05-05",
   "data_quality": {
     "day_rates": {
-      "confidence": "low",
-      "basis": "Indicative market curve",
-      "notes": "Directional dayrate trend only. Individual points are not yet tied to contract-level URLs or a published market index methodology."
+      "confidence": "medium",
+      "basis": "Indicative market curve anchored on FSR-verified contracts",
+      "notes": "Directional trend only; not a published market index. 2026-Q2 values are calibrated against Transocean Feb 2026 FSR contract data. See named_observations for contract-level benchmarks."
     },
     "asset_values": {
       "confidence": "medium",
@@ -18,19 +18,129 @@
     { "date": "2025-07", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 458, "source": "Indicative estimate" },
     { "date": "2025-10", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 463, "source": "Indicative estimate" },
     { "date": "2026-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 468, "source": "Indicative estimate" },
-    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 475, "source": "Indicative estimate" },
+    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 480, "source": "FSR-anchored indicative (Transocean Feb 2026 FSR)" },
     { "date": "2025-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 330, "source": "Indicative estimate" },
     { "date": "2025-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 345, "source": "Indicative estimate" },
     { "date": "2025-07", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 360, "source": "Indicative estimate" },
     { "date": "2025-10", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 368, "source": "Indicative estimate" },
     { "date": "2026-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 375, "source": "Indicative estimate" },
-    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 382, "source": "Indicative estimate" },
+    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 400, "source": "FSR-anchored indicative (Transocean Feb 2026 FSR; HE semis 452–490k)" },
     { "date": "2025-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 120, "source": "Indicative estimate" },
     { "date": "2025-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 128, "source": "Indicative estimate" },
     { "date": "2025-07", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 133, "source": "Indicative estimate" },
     { "date": "2025-10", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 138, "source": "Indicative estimate" },
     { "date": "2026-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 142, "source": "Indicative estimate" },
     { "date": "2026-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 145, "source": "Indicative estimate" }
+  ],
+  "named_observations": [
+    {
+      "rig": "Deepwater Thalassa",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Transocean",
+      "operator": "Woodside",
+      "contract_start": "2026-03",
+      "contract_end": "2029-02",
+      "rate_kusd": 480,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Deepwater Atlas",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Transocean",
+      "operator": "Beacon Offshore Energy",
+      "contract_start": "2025-08",
+      "contract_end": "2030-05",
+      "rate_kusd": 505,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Deepwater Invictus",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Transocean",
+      "operator": "bp",
+      "contract_start": "2025-04",
+      "contract_end": "2028-04",
+      "rate_kusd": 485,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Deepwater Poseidon",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Transocean",
+      "operator": "Shell",
+      "contract_start": "2017-09",
+      "contract_end": "2028-02",
+      "rate_kusd": 499,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Deepwater Titan",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Transocean",
+      "operator": "Chevron",
+      "contract_start": "2023-04",
+      "contract_end": "2028-04",
+      "rate_kusd": 462,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Transocean Norge",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater (HE)",
+      "contractor": "Transocean",
+      "operator": "Harbour Energy / OMV",
+      "contract_start": "2026-01",
+      "contract_end": "2027-12",
+      "rate_kusd": 452,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Transocean Barents",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater (HE)",
+      "contractor": "Transocean",
+      "operator": "OMV Petrom",
+      "contract_start": "2025-03",
+      "contract_end": "2027-02",
+      "rate_kusd": 465,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Transocean Endurance",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "contractor": "Transocean",
+      "operator": "Woodside",
+      "contract_start": "2026-02",
+      "contract_end": "2026-10",
+      "rate_kusd": 390,
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+    },
+    {
+      "rig": "Valaris DS-8",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "contractor": "Valaris",
+      "operator": "Petrobras",
+      "contract_start": "2023-12",
+      "contract_end": "2026-12",
+      "rate_kusd": 428,
+      "source": "Valaris Fleet Status Report, Mar 2026",
+      "source_url": "https://s23.q4cdn.com/956522162/files/doc_financials/2025/q4/2025q4-fleet-status-report.pdf"
+    }
   ],
   "newbuild_prices": [
     {
