@@ -127,6 +127,10 @@
       font-size: 11px;
       background: rgba(13,17,23,0.45);
     }
+    .chip.wide {
+      max-width: 100%;
+      white-space: normal;
+    }
     .sector-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -418,6 +422,7 @@
             <span class="chip">FPSO / FLNG: ${esc(fpso.updated)}</span>
             <span class="chip">Financials: ${esc(drillingEarnings.updated)}</span>
             <span class="chip">News: ${esc(news.updated)}</span>
+            <span class="chip wide">News cycle: ${esc(news.update_frequency_ko || news.update_frequency || 'Weekly review + ad hoc updates')}</span>
           </div>
         </div>
         <div class="sector-grid">

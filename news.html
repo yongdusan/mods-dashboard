@@ -100,8 +100,15 @@
       font-size: 11px;
       color: var(--text-muted);
       font-family: var(--font-mono);
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
     .header-meta .value { color: var(--accent); font-weight: 500; }
+    .header-meta .frequency {
+      color: var(--text-muted);
+      max-width: 520px;
+      text-align: right;
+    }
     .live-dot {
       width: 6px;
       height: 6px;
@@ -625,6 +632,8 @@
       <span class="live-dot"></span>
       <span>Updated:</span>
       <span class="value">${esc(newsData.updated)}</span>
+      <span>·</span>
+      <span class="frequency">${esc(newsData.update_frequency_ko || newsData.update_frequency || 'Weekly review + ad hoc updates')}</span>
     `;
   }
 

@@ -1,5 +1,7 @@
 {
   "updated": "2026-05-04",
+  "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
+  "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
     {
       "id": 1,
