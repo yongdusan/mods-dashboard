@@ -4,11 +4,6 @@
   "summary": {
     "high_risk": [
       {
-        "file": "fleet.json",
-        "issue": "Rig-level dayrates, contract periods, rig specs and weekly deltas have no item-level source fields.",
-        "recommended_action": "Add source/basis/confidence per rig, starting with active dayrate and contract end dates from fleet status reports."
-      },
-      {
         "file": "fpso.json",
         "issue": "Market summary, contractor fleet counts/backlog and many vessel capacity fields are not tied to source URLs.",
         "recommended_action": "Prioritize contractor backlog/fleet counts and orderbook project capacities; add source_url or confidence fields."
@@ -20,6 +15,11 @@
       }
     ],
     "medium_risk": [
+      {
+        "file": "fleet.json",
+        "issue": "48 of 77 rigs now carry source/source_url/confidence from FSR cross-reference (2026-05-05). Remaining 29 rigs lack item-level source fields.",
+        "recommended_action": "Extend source enrichment to remaining rigs using next FSR cycle; prioritise rigs on contract with no source_url."
+      },
       {
         "file": "capex.json",
         "issue": "Company CAPEX guidance has source labels, but project capacity/reserve/timeline values often rely on nested detail.source text without URLs.",
@@ -45,7 +45,7 @@
     ]
   },
   "current_counts": {
-    "fleet.json": { "numeric_fields": 533, "source_fields": 0, "url_fields": 0 },
+    "fleet.json": { "total_rigs": 77, "rigs_with_source": 48, "rigs_with_source_url": 48, "rigs_with_confidence": 48, "numeric_fields": 533 },
     "fpso.json": { "numeric_fields": 266, "source_fields": 18, "url_fields": 0 },
     "capex.json": { "numeric_fields": 228, "source_fields": 85, "url_fields": 0 },
     "earnings.json": { "numeric_fields": 176, "source_fields": 21, "url_fields": 0 },
