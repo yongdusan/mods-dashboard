@@ -1,9 +1,10 @@
 {
-  "updated": "2026-05-02",
+  "updated": "2026-05-04",
   "items": [
     {
       "id": 1,
       "date": "2026-04-29",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "ExxonMobil Awards Noble Drillship Contract at $375k/day in Guyana",
       "summary": "ExxonMobil awarded Noble Corporation a new drillship contract offshore Guyana at a day rate of $375,000. The contract supports continued development drilling at the Stabroek Block, one of the world's most prolific deepwater discoveries.",
@@ -14,6 +15,7 @@
     {
       "id": 2,
       "date": "2026-04-22",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Seadrill Adds $260M Backlog with U.S. Gulf Drillship Awards",
       "summary": "Seadrill secured two drillship contract awards in the U.S. Gulf of Mexico. The West Neptune received a 365-day extension commencing September 2026, and the West Vela secured a 270-day contract starting August 2026, adding approximately $260 million in backlog.",
@@ -24,6 +26,18 @@
     {
       "id": 3,
       "date": "2026-04-14",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "CoreMarine and Jumbo Offshore Win FLNG Installation Work in Argentina",
+      "summary": "CoreMarine and Jumbo Offshore were awarded transport, installation and hook-up work for the Hilli Episeyo FLNG and MKII FLNG vessels in Argentina's Golfo San Matias. The scope covers soft-yoke mooring systems and offshore installation for the Southern Energy FLNG development.",
+      "companies": ["CoreMarine", "Jumbo Offshore", "Golar LNG"],
+      "source": "Offshore Magazine",
+      "url": "https://www.offshore-mag.com/field-development/news/55370931/coremarine-jumbo-offshore-to-manage-mooring-operations-for-two-flng-vessels-in-argentina"
+    },
+    {
+      "id": 4,
+      "date": "2026-04-14",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Transocean Announces $425M Additional Backlog for Ultra-Deepwater Drillship",
       "summary": "Transocean secured $425 million in additional contract backlog for an ultra-deepwater drillship. The award reflects continued operator demand for high-specification 8th generation assets.",
@@ -32,18 +46,20 @@
       "url": "https://www.globenewswire.com/news-release/2026/04/14/3273137/0/en/Transocean-Ltd-Announces-425-Million-Additional-Backlog-for-Ultra-Deepwater-Drillship.html"
     },
     {
-      "id": 4,
+      "id": 5,
       "date": "2026-04-02",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Transocean Wins $1B in Offshore Rig Contracts for Norway and Brazil",
-      "summary": "Transocean announced contract awards totaling approximately $1.0 billion. The Transocean Barents was awarded a 1,095-day contract with Vår Energi in Norway at $450k/day (~$490M backlog). The Deepwater Orion secured a 1,095-day extension with Petrobras in Brazil (~$420M), and the Deepwater Aquila received a 365-day Petrobras extension (~$160M).",
+      "summary": "Transocean announced contract awards totaling approximately $1.0 billion. The Transocean Barents was awarded a 1,095-day contract with Var Energi in Norway at $450k/day (~$490M backlog). The Deepwater Orion secured a 1,095-day extension with Petrobras in Brazil (~$420M), and the Deepwater Aquila received a 365-day Petrobras extension (~$160M).",
       "companies": ["Transocean", "Petrobras"],
       "source": "World Oil",
       "url": "https://worldoil.com/news/2026/4/2/transocean-lands-1-billion-in-brazil-norway-offshore-rig-contracts/"
     },
     {
-      "id": 5,
+      "id": 6,
       "date": "2026-04-02",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Transocean Deepwater Asgard Wins $158M Eastern Mediterranean Contract",
       "summary": "The Deepwater Asgard was awarded a five-well contract in the Eastern Mediterranean Sea with an undisclosed operator, adding approximately $158 million of backlog. The estimated 390-day campaign is expected to begin in Q4 2026.",
@@ -52,104 +68,191 @@
       "url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html"
     },
     {
-      "id": 6,
+      "id": 7,
+      "date": "2026-03-30",
+      "sector": "FPSO/FLNG",
+      "category": "Outlook",
+      "title": "Yinson Starts Carbon Capture System on FPSO Agogo Offshore Angola",
+      "summary": "Yinson Production put a post-combustion carbon capture system into operation on the Agogo FPSO offshore Angola. The system, developed with Azule Energy and Carbon Circle, is described as the first offshore post-combustion CO2 capture plant operating on an active production facility.",
+      "companies": ["Yinson", "Azule Energy", "Carbon Circle"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/history-written-as-ccs-technology-starts-operating-on-board-fpso/"
+    },
+    {
+      "id": 8,
       "date": "2026-03-25",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Petrobras Awards Foresea $465M Drillship Contract for Mero Field",
       "summary": "Petrobras awarded Foresea a long-term contract to operate the ultra-deepwater drillship ODN I offshore Brazil. The 1,443-day campaign supports development activity in the Mero field in the Santos Basin, contributing approximately $465 million to backlog.",
-      "companies": ["Petrobras"],
+      "companies": ["Petrobras", "Foresea"],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/3/25/petrobras-awards-foresea-long-term-drillship-contract-for-mero-field-offshore-brazil/"
     },
     {
-      "id": 7,
-      "date": "2026-02-13",
-      "category": "M&A",
-      "title": "Transocean to Acquire Valaris for $5.8B, Creating World's Largest Offshore Driller",
-      "summary": "Transocean announced an all-stock acquisition of Valaris valued at approximately $5.8 billion. The combined entity would operate 73 offshore rigs — 33 UDW drillships, 9 semisubmersibles, and 31 jackups — with a combined contract backlog of approximately $10 billion. Transaction expected to close in H2 2026, pending regulatory approvals.",
-      "companies": ["Transocean", "Valaris"],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
-    },
-    {
-      "id": 8,
-      "date": "2026-01-28",
-      "category": "Fleet",
-      "title": "Noble Completes $360M Sale of Five Jackups to Borr Drilling",
-      "summary": "Noble Corporation completed the sale of five premium jack-up drilling rigs to Borr Drilling for approximately $360 million, including three Friede & Goldman JU-3000N and two Gusto MSC CJ50 design rigs. The transaction generated ~$210M cash and $150M in seller notes, expanding Borr's fleet to 29 jackups. Noble becomes a pureplay deepwater driller.",
-      "companies": ["Noble", "Borr Drilling"],
-      "source": "World Oil",
-      "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
-    },
-    {
       "id": 9,
-      "date": "2026-01-26",
-      "category": "Contract",
-      "title": "Seadrill Announces Multiple Contract Awards in Malaysia, Norway, and Brazil",
-      "summary": "Seadrill secured three rig awards: West Capella contracted in Malaysia for ~440 days at $157M total value commencing Q2 2026; West Elara secured an accommodation contract with Equinor in Norway worth $78M starting Q3 2026; West Carina contract extended through April 2026 in Brazil.",
-      "companies": ["Seadrill", "Equinor"],
-      "source": "Seadrill IR",
-      "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
+      "date": "2026-03-25",
+      "sector": "FPSO/FLNG",
+      "category": "M&A",
+      "title": "Golar LNG Launches Strategic Review to Accelerate FLNG Growth",
+      "summary": "Golar LNG initiated a strategic review and appointed Goldman Sachs as financial advisor. The review will evaluate alternatives including a sale, merger, asset divestiture or corporate optimization as Golar positions itself as a pure-play FLNG company.",
+      "companies": ["Golar LNG", "Goldman Sachs"],
+      "source": "Nasdaq",
+      "url": "https://www.nasdaq.com/press-release/golar-lng-limited-announces-strategic-review-maximize-stakeholder-value-and-0"
     },
     {
       "id": 10,
-      "date": "2026-02-20",
+      "date": "2026-03-19",
+      "sector": "FPSO/FLNG",
       "category": "Earnings",
-      "title": "Transocean FY2025: Revenue Up 13% to $3.97B, EBITDA Up 19% to $1.37B",
-      "summary": "Transocean reported full-year 2025 contract drilling revenues of $3.965 billion (up 13% YoY) and Adjusted EBITDA of $1.37 billion (up 19%). Q4 2025 revenue was $1.04 billion with a 37% EBITDA margin. Total backlog stood at approximately $6.1 billion. Record uptime of near 98% achieved across fleet.",
-      "companies": ["Transocean"],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/02/20/3241645/0/en/Transocean-Ltd-Reports-Fourth-Quarter-and-Full-Year-2025-Results.html"
+      "title": "Yinson Q4 FY2026 Supported by FPSO Assets Entering Charter Phase",
+      "summary": "Yinson reported Q4 FY2026 PATAMI of RM228 million, broadly stable quarter-on-quarter, with growing operational contribution from FPSO assets including Maria Quiteria, Atlanta and Agogo after entering charter periods.",
+      "companies": ["Yinson"],
+      "source": "Yinson",
+      "url": "https://www.yinson.com/news/yinson-records-steady-q4fy2026-earnings-supported-by-growing-operational-contributions/"
     },
     {
       "id": 11,
-      "date": "2026-02-25",
+      "date": "2026-02-26",
+      "sector": "FPSO/FLNG",
       "category": "Earnings",
-      "title": "Seadrill Q4 2025: Revenue $362M, EBITDA $88M — 2026 Guidance $1.4–1.45B",
-      "summary": "Seadrill reported Q4 2025 revenue of $362 million and Adjusted EBITDA of $88 million (24.3% margin), with a net loss of $10 million. Full-year 2025 Adjusted EBITDA was $353 million. Backlog rose to $2.5 billion. 2026 guidance: revenue $1.40–1.45 billion, Adjusted EBITDA $350–400 million.",
+      "title": "SBM Offshore FY2025: Revenue $5.1B, EBITDA $1.7B, Backlog $31.1B",
+      "summary": "SBM Offshore reported 2025 Directional revenue of $5.1 billion and Directional EBITDA of $1.7 billion, both above guidance. Directional backlog stood at $31.1 billion, and the company issued 2026 baseline guidance of around $6.5 billion revenue and $1.8 billion EBITDA.",
+      "companies": ["SBM Offshore"],
+      "source": "SBM Offshore",
+      "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-full-year-2025-earnings/"
+    },
+    {
+      "id": 12,
+      "date": "2026-02-25",
+      "sector": "FPSO/FLNG",
+      "category": "Earnings",
+      "title": "Golar LNG Q4 2025: FLNG Hilli and Gimi Outperform Production Targets",
+      "summary": "Golar LNG reported Q4 2025 total operating revenue of $133 million and adjusted EBITDA of $91 million. FLNG Hilli exceeded its 2025 production target, FLNG Gimi overproduced versus committed volume in Q4, and MKII construction remained on time and on budget.",
+      "companies": ["Golar LNG"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/02/25/3244404/0/en/Golar-LNG-Limited-Preliminary-fourth-quarter-and-financial-year-2025-results.html"
+    },
+    {
+      "id": 13,
+      "date": "2026-02-25",
+      "sector": "Drilling",
+      "category": "Earnings",
+      "title": "Seadrill Q4 2025: Revenue $362M, EBITDA $88M - 2026 Guidance $1.4-1.45B",
+      "summary": "Seadrill reported Q4 2025 revenue of $362 million and Adjusted EBITDA of $88 million (24.3% margin), with a net loss of $10 million. Full-year 2025 Adjusted EBITDA was $353 million. Backlog rose to $2.5 billion. 2026 guidance: revenue $1.40-1.45 billion, Adjusted EBITDA $350-400 million.",
       "companies": ["Seadrill"],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260225741746/en/Seadrill-Announces-Fourth-Quarter-and-Full-Year-2025-Results"
     },
     {
-      "id": 12,
-      "date": "2026-02-18",
+      "id": 14,
+      "date": "2026-02-20",
+      "sector": "Drilling",
       "category": "Earnings",
-      "title": "Valaris Q4 2025: Revenue $537M, Backlog $4.7B — Merger with Transocean Pending",
-      "summary": "Valaris reported Q4 2025 revenue of $537 million and net income of $717 million including a tax benefit. Full-year 2025 revenue was $2.36 billion. Backlog expanded to $4.7 billion with ~97% of 2026 revenue midpoint already contracted. Valaris has cancelled future earnings calls due to the pending Transocean acquisition.",
+      "title": "Transocean FY2025: Revenue Up 13% to $3.97B, EBITDA Up 19% to $1.37B",
+      "summary": "Transocean reported full-year 2025 contract drilling revenues of $3.965 billion (up 13% YoY) and Adjusted EBITDA of $1.37 billion (up 19%). Q4 2025 revenue was $1.04 billion with a 37% EBITDA margin. Total backlog stood at approximately $6.1 billion.",
+      "companies": ["Transocean"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/02/20/3241645/0/en/Transocean-Ltd-Reports-Fourth-Quarter-and-Full-Year-2025-Results.html"
+    },
+    {
+      "id": 15,
+      "date": "2026-02-18",
+      "sector": "Drilling",
+      "category": "Earnings",
+      "title": "Valaris Q4 2025: Revenue $537M, Backlog $4.7B - Merger with Transocean Pending",
+      "summary": "Valaris reported Q4 2025 revenue of $537 million and net income of $717 million including a tax benefit. Full-year 2025 revenue was $2.36 billion. Backlog expanded to $4.7 billion with about 97% of 2026 revenue midpoint already contracted.",
       "companies": ["Valaris", "Transocean"],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260218978659/en/Valaris-Reports-Fourth-Quarter-2025-Results"
     },
     {
-      "id": 13,
+      "id": 16,
+      "date": "2026-02-13",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Transocean to Acquire Valaris for $5.8B, Creating World's Largest Offshore Driller",
+      "summary": "Transocean announced an all-stock acquisition of Valaris valued at approximately $5.8 billion. The combined entity would operate 73 offshore rigs - 33 UDW drillships, 9 semisubmersibles and 31 jackups - with a combined contract backlog of approximately $10 billion.",
+      "companies": ["Transocean", "Valaris"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
+    },
+    {
+      "id": 17,
       "date": "2026-02-10",
+      "sector": "Drilling",
       "category": "Earnings",
       "title": "Borr Drilling Q4 2025: Revenue $259M, FY EBITDA $470M at Top of Guidance",
-      "summary": "Borr Drilling reported Q4 2025 operating revenue of $259.4 million and full-year 2025 Adjusted EBITDA of $470.1 million, at the top of guidance. Q4 net loss was $1.0 million. Backlog stood at $1.2 billion. Fleet utilization was 85% for premium jackups.",
+      "summary": "Borr Drilling reported Q4 2025 operating revenue of $259.4 million and full-year 2025 Adjusted EBITDA of $470.1 million, at the top of guidance. Q4 net loss was $1.0 million and backlog stood at $1.2 billion.",
       "companies": ["Borr Drilling"],
       "source": "StockTitan",
       "url": "https://www.stocktitan.net/news/BORR/borr-drilling-limited-announces-fourth-quarter-2025-7dlxv6zs1s87.html"
     },
     {
-      "id": 14,
+      "id": 18,
       "date": "2026-02-06",
+      "sector": "Drilling",
       "category": "Outlook",
       "title": "Westwood: 2026 Offshore Rig Outlook Brightens After Mid-Cycle Pause",
-      "summary": "Westwood Global Energy reported that offshore rig demand is strengthening with 355 rig-years of awarded demand for 2026 starts. The market outlook for 2027–2028 is particularly strong, with 42 unawarded tenders totaling ~67 combined rig-years. Drillship demand recovery is led by Brazil and the U.S. Gulf of Mexico.",
+      "summary": "Westwood Global Energy reported that offshore rig demand is strengthening with 355 rig-years of awarded demand for 2026 starts. The market outlook for 2027-2028 is particularly strong, with drillship demand recovery led by Brazil and the U.S. Gulf of Mexico.",
       "companies": [],
       "source": "Westwood Energy",
       "url": "https://www.westwoodenergy.com/news/westwood-insight/westwood-insight-as-2025-challenges-fade-offshore-rig-outlook-brightens"
     },
     {
-      "id": 15,
+      "id": 19,
+      "date": "2026-02-04",
+      "sector": "FPSO/FLNG",
+      "category": "M&A",
+      "title": "ExxonMobil Guyana Completes $2.32B Purchase of FPSO ONE GUYANA",
+      "summary": "SBM Offshore and ExxonMobil Guyana completed the FPSO ONE GUYANA purchase transaction ahead of the maximum lease term. ExxonMobil assumes ownership while SBM Offshore continues operations and maintenance through 2035; cash consideration was approximately $2.32 billion.",
+      "companies": ["SBM Offshore", "ExxonMobil"],
+      "source": "SBM Offshore",
+      "url": "https://www.sbmoffshore.com/newsroom/fpso-one-guyana-purchase-by-exxonmobil-guyana-completed/"
+    },
+    {
+      "id": 20,
+      "date": "2026-01-28",
+      "sector": "Drilling",
+      "category": "Fleet",
+      "title": "Noble Completes $360M Sale of Five Jackups to Borr Drilling",
+      "summary": "Noble Corporation completed the sale of five premium jack-up drilling rigs to Borr Drilling for approximately $360 million, expanding Borr's fleet to 29 jackups and moving Noble further toward a pure-play deepwater profile.",
+      "companies": ["Noble", "Borr Drilling"],
+      "source": "World Oil",
+      "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
+    },
+    {
+      "id": 21,
+      "date": "2026-01-26",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Seadrill Announces Multiple Contract Awards in Malaysia, Norway and Brazil",
+      "summary": "Seadrill secured three rig awards: West Capella contracted in Malaysia for about 440 days at $157 million, West Elara secured an accommodation contract with Equinor in Norway worth $78 million, and West Carina was extended in Brazil.",
+      "companies": ["Seadrill", "Equinor"],
+      "source": "Seadrill IR",
+      "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
+    },
+    {
+      "id": 22,
       "date": "2025-12-09",
+      "sector": "Drilling",
       "category": "Fleet",
       "title": "Noble to Sell 6 Jackups to Become Pureplay Deepwater Driller",
-      "summary": "Noble Corporation announced the sale of six jackup rigs — five to Borr Drilling and one to Ocean Oilfield — to become a pureplay deepwater drilling company. The strategic shift aligns Noble with the higher day rate UDW floater market and eliminates exposure to the more commoditized jackup segment.",
+      "summary": "Noble Corporation announced the sale of six jackup rigs - five to Borr Drilling and one to Ocean Oilfield - to become a pureplay deepwater drilling company. The strategic shift aligns Noble with the higher day rate UDW floater market.",
       "companies": ["Noble", "Borr Drilling"],
       "source": "Rigzone",
       "url": "https://www.rigzone.com/news/noble_to_sell_6_jackups_become_pureplay_deepwater_driller-09-dec-2025-182483-article/"
+    },
+    {
+      "id": 23,
+      "date": "2025-09-30",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "MODEC Awarded Full EPCI Scope for ExxonMobil's Hammerhead FPSO",
+      "summary": "MODEC was awarded the full EPCI scope to develop the Hammerhead FPSO for ExxonMobil Guyana following FID. The unit is expected to produce 150,000 barrels of oil per day, operate in about 1,025 meters of water and receive 10 years of O&M service from MODEC after first oil.",
+      "companies": ["MODEC", "ExxonMobil"],
+      "source": "MODEC",
+      "url": "https://www.modec.com/news/2025/20250930_pr_Hammerhead-FID.html"
     }
   ]
 }

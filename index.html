@@ -394,7 +394,14 @@
 
     const onContract = fleet.rigs.filter(r => r.status === 'On Contract').length;
     const idleStacked = fleet.rigs.filter(r => r.status === 'Idle' || r.status === 'Cold Stacked').length;
-    const latestNews = [...news.items].sort((a, b) => b.date.localeCompare(a.date));
+    const sortedNews = [...news.items].sort((a, b) => b.date.localeCompare(a.date));
+    const drillingNews = sortedNews.filter(n => n.sector === 'Drilling').slice(0, 3);
+    const fpsoNews = sortedNews.filter(n => n.sector === 'FPSO/FLNG').slice(0, 3);
+    const latestNews = [
+      drillingNews[0], fpsoNews[0],
+      drillingNews[1], fpsoNews[1],
+      drillingNews[2], fpsoNews[2],
+    ].filter(Boolean);
 
     document.getElementById('app').innerHTML = `
       <section class="hero">

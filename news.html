@@ -130,6 +130,20 @@
       gap: 8px;
       flex-wrap: wrap;
     }
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
     .filter-btn {
       padding: 6px 14px;
       border: 1px solid var(--border);
@@ -228,6 +242,26 @@
     .cat-Earnings { background: rgba(210,153,34,0.15); color: #d29922; }
     .cat-Fleet    { background: rgba(240,136,62,0.15); color: #f0883e; }
     .cat-Outlook  { background: rgba(0,212,170,0.15);  color: #00d4aa; }
+    .sector-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      border: 1px solid rgba(139,148,158,0.35);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .sector-FPSOFLNG {
+      border-color: rgba(88,166,255,0.35);
+      color: var(--blue);
+      background: rgba(88,166,255,0.08);
+    }
+    .sector-Drilling {
+      border-color: rgba(0,212,170,0.35);
+      color: var(--accent);
+      background: rgba(0,212,170,0.08);
+    }
 
     /* Title */
     .card-title {
@@ -366,8 +400,15 @@
   </header>
 
   <div class="controls-bar">
-    <div class="filter-row" id="filter-row">
-      <!-- category buttons populated by JS -->
+    <div class="filter-row">
+      <div class="filter-group">
+        <span class="filter-label">Sector</span>
+        <div class="filter-row" id="sector-filter-row"><!-- sector buttons populated by JS --></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Category</span>
+        <div class="filter-row" id="category-filter-row"><!-- category buttons populated by JS --></div>
+      </div>
     </div>
     <input class="search-input" type="text" id="search-input" placeholder="Search news, companies...">
   </div>
@@ -382,6 +423,7 @@
 (async function () {
 
   let newsData = null;
+  let currentSector = 'All';
   let currentCategory = 'All';
   let searchQuery = '';
 
@@ -412,6 +454,10 @@
     return map[category] || 'cat-Outlook';
   }
 
+  function sectorClass(sector) {
+    return sector === 'FPSO/FLNG' ? 'sector-FPSOFLNG' : 'sector-Drilling';
+  }
+
   /* ─── Render Cards ─── */
   function renderCards(items) {
     const grid = document.getElementById('news-grid');
@@ -426,11 +472,11 @@
       if (resetBtn) {
         resetBtn.addEventListener('click', () => {
           currentCategory = 'All';
+          currentSector = 'All';
           searchQuery = '';
           document.getElementById('search-input').value = '';
-          document.querySelectorAll('.filter-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.category === 'All');
-          });
+          renderSectorFilters();
+          renderCategoryFilters();
           filterAndRender();
         });
       }
@@ -445,7 +491,10 @@
       return `
         <div class="news-card" data-id="${item.id}">
           <div class="card-top">
-            <span class="cat-badge ${catClass(item.category)}">${esc(item.category)}</span>
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <span class="sector-badge ${sectorClass(item.sector)}">${esc(item.sector || 'Market')}</span>
+              <span class="cat-badge ${catClass(item.category)}">${esc(item.category)}</span>
+            </div>
             <span class="card-date">${esc(item.date)}</span>
           </div>
           <div class="card-title">${esc(item.title)}</div>
@@ -483,6 +532,10 @@
   function filterAndRender() {
     let filtered = newsData.items;
 
+    if (currentSector !== 'All') {
+      filtered = filtered.filter(n => n.sector === currentSector);
+    }
+
     if (currentCategory !== 'All') {
       filtered = filtered.filter(n => n.category === currentCategory);
     }
@@ -492,6 +545,7 @@
       filtered = filtered.filter(n =>
         n.title.toLowerCase().includes(q) ||
         n.summary.toLowerCase().includes(q) ||
+        (n.sector || '').toLowerCase().includes(q) ||
         n.companies.some(c => c.toLowerCase().includes(q))
       );
     }
@@ -500,30 +554,63 @@
   }
 
   /* ─── Count per category ─── */
+  function countBySector(sector) {
+    if (sector === 'All') return newsData.items.length;
+    return newsData.items.filter(n => n.sector === sector).length;
+  }
+
+  function sectorFilteredItems() {
+    return currentSector === 'All'
+      ? newsData.items
+      : newsData.items.filter(n => n.sector === currentSector);
+  }
+
   function countByCategory(category) {
-    if (category === 'All') return newsData.items.length;
-    return newsData.items.filter(n => n.category === category).length;
+    const base = sectorFilteredItems();
+    if (category === 'All') return base.length;
+    return base.filter(n => n.category === category).length;
+  }
+
+  function buildFilterButtons(targetId, items, activeValue, dataName, countFn) {
+    const row = document.getElementById(targetId);
+    row.innerHTML = items.map(item => {
+      const count = countFn(item);
+      const label = `${esc(item)} <span class="count">(${count})</span>`;
+      return `<button class="filter-btn${item === activeValue ? ' active' : ''}" data-${dataName}="${esc(item)}">${label}</button>`;
+    }).join('');
+    return row;
+  }
+
+  function renderCategoryFilters() {
+    const categories = ['All', 'Contract', 'M&A', 'Earnings', 'Fleet', 'Outlook'];
+    const row = buildFilterButtons('category-filter-row', categories, currentCategory, 'category', countByCategory);
+    row.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentCategory = btn.dataset.category;
+        renderCategoryFilters();
+        filterAndRender();
+      });
+    });
+  }
+
+  function renderSectorFilters() {
+    const sectors = ['All', 'Drilling', 'FPSO/FLNG'];
+    const row = buildFilterButtons('sector-filter-row', sectors, currentSector, 'sector', countBySector);
+    row.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentSector = btn.dataset.sector;
+        if (countByCategory(currentCategory) === 0) currentCategory = 'All';
+        renderSectorFilters();
+        renderCategoryFilters();
+        filterAndRender();
+      });
+    });
   }
 
   /* ─── Init Controls ─── */
   function initControls() {
-    const categories = ['All', 'Contract', 'M&A', 'Earnings', 'Fleet', 'Outlook'];
-    const filterRow = document.getElementById('filter-row');
-
-    filterRow.innerHTML = categories.map(cat => {
-      const count = countByCategory(cat);
-      const label = cat === 'All' ? `All <span class="count">(${count})</span>` : `${esc(cat)} <span class="count">(${count})</span>`;
-      return `<button class="filter-btn${cat === 'All' ? ' active' : ''}" data-category="${esc(cat)}">${label}</button>`;
-    }).join('');
-
-    filterRow.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterRow.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentCategory = btn.dataset.category;
-        filterAndRender();
-      });
-    });
+    renderSectorFilters();
+    renderCategoryFilters();
 
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('input', e => {
