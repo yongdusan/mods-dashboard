@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-03",
+  "updated": "2026-05-05",
   "day_rates": [
     { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Rigzone" },
     { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Rigzone" },
@@ -36,11 +36,12 @@
       "notes": "Baker Marine Pacific Class 375"
     },
     {
-      "date": "2024-11",
-      "rig_type": "Drillship (UDW)",
-      "yard": "Daewoo (DSME)",
-      "price_musd": 750,
-      "notes": "20,000ft WD, dual BOP"
+      "date": "2022-11",
+      "rig_type": "Drillship (UDW, 7th Gen)",
+      "yard": "DSME / Hanwha Ocean",
+      "price_musd": 200,
+      "basis": "Undelivered hull acquisition",
+      "notes": "Hull 3623 / ex-West Aquila; ordered in 2013 and acquired from DSME by Liquila / Transocean JV, not a fresh-cycle newbuild order."
     },
     {
       "date": "2025-02",

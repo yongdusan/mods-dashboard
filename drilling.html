@@ -818,12 +818,12 @@
     </div>
   </div>
 
-  <!-- Newbuild Prices Table -->
+  <!-- Yard & Reactivation Benchmarks Table -->
   <div class="newbuild-section">
     <div class="panel">
       <div class="panel-header">
-        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Newbuild Price Benchmarks</span>
-        <span class="panel-subtitle">Yard pricing references</span>
+        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Yard &amp; Reactivation Benchmarks</span>
+        <span class="panel-subtitle">Newbuild, acquired hull and upgrade references</span>
       </div>
       <div id="newbuild-table"></div>
     </div>
@@ -1618,7 +1618,7 @@
   window.toggleProjectCard = toggleProjectCard;
 
   /* ─────────────────────────────────────────
-     Newbuild Prices Table (Tabulator)
+     Yard & Reactivation Benchmarks Table (Tabulator)
   ───────────────────────────────────────── */
   function renderNewbuildTable() {
     const tableData = rates.newbuild_prices.map(p => ({
@@ -1626,6 +1626,7 @@
       rig_type: p.rig_type,
       yard: p.yard,
       price_musd: p.price_musd,
+      basis: p.basis || 'Newbuild benchmark',
       notes: p.notes,
     }));
 
@@ -1653,11 +1654,17 @@
           formatter: cell => `<span style="color:var(--blue)">${esc(cell.getValue())}</span>`,
         },
         {
-          title: 'Price ($M)',
+          title: 'Value ($M)',
           field: 'price_musd',
           widthGrow: 0.7,
           hozAlign: 'right',
           formatter: cell => `<span class="mono" style="color:var(--accent)">$${cell.getValue()}M</span>`,
+        },
+        {
+          title: 'Basis',
+          field: 'basis',
+          widthGrow: 1.1,
+          formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Notes',
