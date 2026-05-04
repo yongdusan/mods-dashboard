@@ -76,6 +76,12 @@
       color: var(--text-muted);
       font-family: var(--font-mono);
     }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
     .header-meta {
       display: flex;
       flex-direction: column;
@@ -110,123 +116,21 @@
       50% { opacity: 0.3; }
     }
 
-    /* ─── Market Overview ─── */
-    .market-overview {
-      display: grid;
-      grid-template-columns: minmax(280px, 0.85fr) minmax(520px, 1.35fr);
-      gap: 20px;
+    /* ─── Page Title ─── */
+    .page-title-section {
       margin-bottom: 24px;
-      align-items: stretch;
     }
-    @media (max-width: 1024px) {
-      .market-overview { grid-template-columns: 1fr; }
-    }
-    .overview-copy {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 22px 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 220px;
-    }
-    .overview-copy h2 {
-      font-size: 28px;
-      line-height: 1.12;
+    .page-title-section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
       letter-spacing: -0.2px;
-      margin-bottom: 12px;
-      color: var(--text);
+      margin-bottom: 4px;
     }
-    .overview-copy p {
-      color: var(--text-muted);
-      font-size: 13px;
-      line-height: 1.7;
-      max-width: 560px;
-    }
-    .overview-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-    .overview-chip {
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 5px 8px;
-      color: var(--text-muted);
-      font-size: 11px;
-      font-family: var(--font-mono);
-      background: rgba(13,17,23,0.45);
-    }
-    .sector-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-    }
-    @media (max-width: 720px) {
-      .sector-grid { grid-template-columns: 1fr; }
-    }
-    .sector-card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px 18px;
-      color: var(--text);
-      text-decoration: none;
-      min-height: 126px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: border-color 0.15s, transform 0.15s;
-    }
-    .sector-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .sector-card.active {
-      border-color: rgba(0,212,170,0.55);
-      background: linear-gradient(180deg, rgba(0,212,170,0.08), var(--panel));
-    }
-    .sector-card-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: flex-start;
-    }
-    .sector-label {
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 8px;
-    }
-    .sector-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-    .sector-desc {
-      color: var(--text-muted);
+    .page-title-section .page-subtitle {
       font-size: 12px;
-      line-height: 1.55;
-    }
-    .sector-metric {
-      flex-shrink: 0;
-      color: var(--accent);
+      color: var(--text-muted);
       font-family: var(--font-mono);
-      font-size: 18px;
-      font-weight: 700;
-      text-align: right;
-      white-space: nowrap;
-    }
-    .sector-foot {
-      margin-top: 14px;
-      color: var(--blue);
-      font-size: 11px;
-      font-weight: 600;
     }
 
     /* ─── KPI Grid ─── */
@@ -380,6 +284,9 @@
     }
     .panel-body {
       padding: 16px;
+    }
+    .summary-section {
+      margin-bottom: 20px;
     }
     .chart-container {
       position: relative;
@@ -786,89 +693,40 @@
       <h1>Offshore Market Intelligence</h1>
       <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrates, CAPEX &amp; Yard Pricing</span>
     </div>
-    <nav class="header-nav">
-      <a href="index.html" class="nav-link">Overview</a>
-      <span class="nav-link active">Drilling / MODU</span>
-      <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
-      <a href="earnings.html" class="nav-link">Drilling Financials</a>
-      <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
-      <a href="news.html" class="nav-link">Market News</a>
-    </nav>
-    <div class="header-meta" id="header-meta">
-      <!-- populated by JS -->
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Overview</a>
+        <span class="nav-link active">Drilling / MODU</span>
+        <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
+        <a href="earnings.html" class="nav-link">Drilling Financials</a>
+        <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
+        <a href="news.html" class="nav-link">Market News</a>
+      </nav>
+      <div class="header-meta" id="header-meta">
+        <!-- populated by JS -->
+      </div>
     </div>
   </header>
 
-  <!-- Market Overview -->
-  <section class="market-overview">
-    <div class="overview-copy">
-      <div>
-        <h2>Drilling / MODU Fleet Intelligence</h2>
-        <p>
-          해양 시추 리그의 fleet status, dayrate, CAPEX, yard pricing을 따로 보는 Drilling 섹터 화면입니다.
-          전체 시장 흐름과 뉴스는 Overview 첫 화면에서 확인할 수 있습니다.
-        </p>
-      </div>
-      <div class="overview-meta">
-        <span class="overview-chip" id="overview-fleet-date">Fleet data: —</span>
-        <span class="overview-chip" id="overview-production-date">Production assets: —</span>
-        <span class="overview-chip" id="overview-capex-date">CAPEX: —</span>
-      </div>
-    </div>
-    <div class="sector-grid">
-      <a class="sector-card active" href="drilling.html">
-        <div class="sector-card-top">
-          <div>
-            <div class="sector-label">Sector</div>
-            <div class="sector-title">Drilling / MODU</div>
-            <div class="sector-desc">Global fleet status, dayrate trend, contractor exposure and yard pricing.</div>
-          </div>
-          <div class="sector-metric" id="sector-rig-count">—</div>
-        </div>
-        <div class="sector-foot">Current section</div>
-      </a>
-      <a class="sector-card" href="fpso.html">
-        <div class="sector-card-top">
-          <div>
-            <div class="sector-label">Sector</div>
-            <div class="sector-title">FPSO / FLNG Assets</div>
-            <div class="sector-desc">Production assets, notable vessels, orderbook and charter rate trends.</div>
-          </div>
-          <div class="sector-metric" id="sector-fpso-count">—</div>
-        </div>
-        <div class="sector-foot">Open assets view</div>
-      </a>
-      <a class="sector-card" href="earnings.html">
-        <div class="sector-card-top">
-          <div>
-            <div class="sector-label">Financials</div>
-            <div class="sector-title">Drilling Contractors</div>
-            <div class="sector-desc">Quarterly revenue, EBITDA margin, utilization and backlog by contractor.</div>
-          </div>
-          <div class="sector-metric" id="sector-drilling-earnings-count">—</div>
-        </div>
-        <div class="sector-foot">Open financials</div>
-      </a>
-      <a class="sector-card" href="fpso_earnings.html">
-        <div class="sector-card-top">
-          <div>
-            <div class="sector-label">Financials</div>
-            <div class="sector-title">FPSO / FLNG Operators</div>
-            <div class="sector-desc">Operator earnings, lease units, contract backlog and key operating assets.</div>
-          </div>
-          <div class="sector-metric" id="sector-fpso-earnings-count">—</div>
-        </div>
-        <div class="sector-foot">Open operator view</div>
-      </a>
-    </div>
+  <!-- Page Title -->
+  <section class="page-title-section">
+    <h2>Drilling / MODU Fleet</h2>
+    <span class="page-subtitle">시추 리그 현황 · 가동률 · Dayrate · CAPEX · Yard pricing</span>
   </section>
-
-  <div class="section-label">Fleet Intelligence</div>
 
   <!-- KPI Grid -->
   <section class="kpi-grid" id="kpi-grid">
     <!-- populated by JS -->
   </section>
+
+  <!-- Contractor Summary -->
+  <div class="panel summary-section">
+    <div class="panel-header">
+      <span class="panel-title"><span class="dot"></span>Contractor Summary</span>
+      <span class="panel-subtitle">주요 시추선사별 리그 구성 · 계약 상태 · 평균 dayrate</span>
+    </div>
+    <div id="contractor-table"></div>
+  </div>
 
   <!-- Filter Bar -->
   <div class="filter-bar">
@@ -991,7 +849,7 @@
   /* ─────────────────────────────────────────
      Data loading
   ───────────────────────────────────────── */
-  let fleet, rates, capex, fpso, drillingEarnings, fpsoEarnings;
+  let fleet, rates, capex;
   let allRigs = [];
   let dayRateChart = null;
   let capexChart = null;
@@ -999,19 +857,17 @@
   let capexMode = 'upstream'; // 'upstream' | 'total'
   let selectedCapexCompany = null;
   let newbuildTable = null;
+  let contractorTable = null;
 
   function esc(str) {
     if (str == null) return '';
     return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
   try {
-    [fleet, rates, capex, fpso, drillingEarnings, fpsoEarnings] = await Promise.all([
+    [fleet, rates, capex] = await Promise.all([
       fetch('./data/fleet.json').then(r => r.json()),
       fetch('./data/rates.json').then(r => r.json()),
       fetch('./data/capex.json').then(r => r.json()),
-      fetch('./data/fpso.json').then(r => r.json()),
-      fetch('./data/earnings.json').then(r => r.json()),
-      fetch('./data/fpso_earnings.json').then(r => r.json()),
     ]);
     allRigs = fleet.rigs;
   } catch (err) {
@@ -1040,22 +896,6 @@
         <span class="value">${esc(capex.updated)}</span>
       </div>
     `;
-  }
-
-  function setText(id, text) {
-    const el = document.getElementById(id);
-    if (el) el.textContent = text;
-  }
-
-  function renderMarketOverview() {
-    setText('overview-fleet-date', `Fleet data: ${fleet.updated || '—'}`);
-    setText('overview-production-date', `Production assets: ${fpso.updated || '—'}`);
-    setText('overview-capex-date', `CAPEX: ${capex.updated || '—'}`);
-
-    setText('sector-rig-count', `${fleet.rigs.length} rigs`);
-    setText('sector-fpso-count', `${fpso.vessels.length} assets`);
-    setText('sector-drilling-earnings-count', `${drillingEarnings.companies.length} cos`);
-    setText('sector-fpso-earnings-count', `${fpsoEarnings.companies.length} cos`);
   }
 
   /* ─────────────────────────────────────────
@@ -1117,6 +957,115 @@
         <div class="kpi-delta neutral">Global · not filtered</div>
       </div>
     `;
+  }
+
+  function renderContractorSummary() {
+    const byContractor = new Map();
+    fleet.rigs.forEach(rig => {
+      const name = rig.contractor || 'Unknown';
+      if (!byContractor.has(name)) {
+        byContractor.set(name, {
+          contractor: name,
+          total: 0,
+          drillships: 0,
+          semisubmersibles: 0,
+          jackups: 0,
+          on_contract: 0,
+          idle_stacked: 0,
+          rates: [],
+        });
+      }
+      const row = byContractor.get(name);
+      row.total += 1;
+      if (rig.type === 'Drillship') row.drillships += 1;
+      if (rig.type === 'Semisubmersible') row.semisubmersibles += 1;
+      if (rig.type === 'Jack-up') row.jackups += 1;
+      if (rig.status === 'On Contract') row.on_contract += 1;
+      if (rig.status === 'Idle' || rig.status === 'Cold Stacked') row.idle_stacked += 1;
+      if (rig.day_rate_kusd != null) row.rates.push(rig.day_rate_kusd);
+    });
+
+    const tableData = [...byContractor.values()]
+      .map(row => ({
+        ...row,
+        utilization_pct: row.total ? Math.round((row.on_contract / row.total) * 1000) / 10 : 0,
+        avg_day_rate_kusd: row.rates.length
+          ? Math.round(row.rates.reduce((sum, rate) => sum + rate, 0) / row.rates.length)
+          : null,
+      }))
+      .sort((a, b) => b.total - a.total);
+
+    if (contractorTable) {
+      contractorTable.setData(tableData);
+      return;
+    }
+
+    contractorTable = new Tabulator('#contractor-table', {
+      data: tableData,
+      layout: 'fitColumns',
+      columns: [
+        {
+          title: 'Contractor',
+          field: 'contractor',
+          minWidth: 150,
+          formatter: cell => `<strong>${esc(cell.getValue())}</strong>`,
+        },
+        {
+          title: 'Total',
+          field: 'total',
+          width: 80,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Drillships',
+          field: 'drillships',
+          width: 100,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--accent)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Semis',
+          field: 'semisubmersibles',
+          width: 90,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--blue)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Jackups',
+          field: 'jackups',
+          width: 90,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--yellow)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'On Contract',
+          field: 'on_contract',
+          width: 120,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono" style="color:var(--green)">${cell.getValue()}</span>`,
+        },
+        {
+          title: 'Util. (%)',
+          field: 'utilization_pct',
+          width: 100,
+          hozAlign: 'right',
+          formatter: cell => `<span class="mono">${cell.getValue().toFixed(1)}%</span>`,
+        },
+        {
+          title: 'Avg Rate (k$)',
+          field: 'avg_day_rate_kusd',
+          width: 120,
+          hozAlign: 'right',
+          formatter: cell => {
+            const v = cell.getValue();
+            return v != null
+              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
+              : '<span style="color:var(--text-muted)">—</span>';
+          },
+        },
+      ],
+    });
   }
 
   /* ─────────────────────────────────────────
@@ -1887,8 +1836,8 @@
      Main Init
   ───────────────────────────────────────── */
   renderHeader();
-  renderMarketOverview();
   renderKPIs(fleet.rigs, false);
+  renderContractorSummary();
   renderFleetTable(fleet.rigs);
   renderDayRateChart();
   renderCapexChart();
