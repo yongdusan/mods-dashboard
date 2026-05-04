@@ -331,7 +331,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">Market overview, sector dashboards, financials and latest offshore news</span>
+      <span class="subtitle">Offshore drilling, floating production, financials and market news</span>
     </div>
     <nav class="header-nav">
       <span class="nav-link active">Overview</span>
@@ -413,8 +413,8 @@
           <div>
             <h2>Offshore Market Overview</h2>
             <p>
-              해양 시추와 부유식 생산설비를 한 화면에서 출발하는 시장 허브입니다.
-              상세 MODU fleet 화면은 별도 섹터로 분리하고, 첫 화면은 주요 섹터와 최신 뉴스 흐름을 보여줍니다.
+              Offshore drilling과 FPSO/FLNG 시장을 함께 보는 출발점입니다.
+              자산 현황, 계약 가동률, dayrate, operator CAPEX, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
             </p>
           </div>
           <div class="update-row">
@@ -431,7 +431,7 @@
               <div>
                 <div class="label">Sector</div>
                 <div class="sector-title">Drilling / MODU</div>
-                <div class="sector-desc">Fleet status, dayrate trend, CAPEX and yard pricing.</div>
+                <div class="sector-desc">Fleet status, contract utilization, dayrate trend and rig demand.</div>
               </div>
               <div class="metric">${fleet.rigs.length} rigs</div>
             </div>
@@ -442,7 +442,7 @@
               <div>
                 <div class="label">Sector</div>
                 <div class="sector-title">FPSO / FLNG Assets</div>
-                <div class="sector-desc">Production assets, orderbook and charter rates.</div>
+                <div class="sector-desc">Operating assets, orderbook, project pipeline and charter rates.</div>
               </div>
               <div class="metric">${fpso.vessels.length} assets</div>
             </div>
@@ -453,7 +453,7 @@
               <div>
                 <div class="label">Financials</div>
                 <div class="sector-title">Drilling Contractors</div>
-                <div class="sector-desc">Revenue, EBITDA, utilization and backlog by company.</div>
+                <div class="sector-desc">Contractor revenue, EBITDA margin, fleet mix and backlog.</div>
               </div>
               <div class="metric">${drillingEarnings.companies.length} cos</div>
             </div>
@@ -464,7 +464,7 @@
               <div>
                 <div class="label">Financials</div>
                 <div class="sector-title">FPSO / FLNG Operators</div>
-                <div class="sector-desc">Operator earnings, lease units and contract backlog.</div>
+                <div class="sector-desc">Operator earnings, lease fleet, turnkey exposure and backlog.</div>
               </div>
               <div class="metric">${fpsoEarnings.companies.length} cos</div>
             </div>
