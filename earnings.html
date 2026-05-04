@@ -157,7 +157,7 @@
       margin-bottom: 24px;
     }
     .drilldown-panel.open {
-      max-height: 1400px;
+      max-height: 2600px;
     }
     .drilldown-header {
       display: flex;
@@ -433,6 +433,139 @@
       height: 260px;
     }
 
+    /* ─── Company Overview ─── */
+    .company-overview {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 20px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .company-overview { grid-template-columns: 1fr; }
+    }
+    .co-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px 16px;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 700px) {
+      .co-meta-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .co-meta-item { display: flex; flex-direction: column; gap: 3px; }
+    .co-meta-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+    .co-meta-value {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      color: var(--text);
+      font-weight: 500;
+    }
+    .co-model-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 10px;
+      border-left: 2px solid var(--accent);
+      padding-left: 10px;
+    }
+    .co-strategy-text { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+    .co-notable {
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--accent);
+      line-height: 1.55;
+      padding: 8px 10px;
+      background: rgba(0,212,170,0.06);
+      border-radius: 4px;
+      border: 1px solid rgba(0,212,170,0.2);
+    }
+    .co-right { display: flex; flex-direction: column; gap: 12px; }
+    .co-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    .co-box-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+    .co-rig-mix {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .co-rig-stat { display: flex; flex-direction: column; gap: 2px; align-items: center; }
+    .co-rig-stat-val {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--text);
+      line-height: 1;
+    }
+    .co-rig-stat-lbl { font-size: 10px; color: var(--text-muted); text-align: center; }
+    .co-clients-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .co-client-tag {
+      padding: 3px 8px;
+      background: rgba(88,166,255,0.1);
+      border: 1px solid rgba(88,166,255,0.25);
+      border-radius: 4px;
+      font-size: 11px;
+      color: var(--blue);
+      font-weight: 500;
+    }
+    .co-rigs-section {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .co-rigs-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+    .co-rig-row {
+      display: grid;
+      grid-template-columns: 210px 150px 1fr 90px 120px;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(48,54,61,0.5);
+      font-size: 12px;
+    }
+    .co-rig-row:last-child { border-bottom: none; }
+    .co-rig-row.header-row {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .co-rig-name { font-weight: 600; color: var(--text); }
+    .co-rig-type { color: var(--blue); font-size: 11px; }
+    .co-rig-region { color: var(--text-muted); font-size: 11px; }
+    .co-rig-depth { font-family: var(--font-mono); font-size: 11px; color: var(--yellow); text-align: right; }
+    @media (max-width: 800px) {
+      .co-rig-row { grid-template-columns: 1fr 1fr; }
+      .co-rig-row.header-row { display: none; }
+    }
+
     /* detail table label */
     .detail-table-label {
       font-size: 12px;
@@ -481,6 +614,7 @@
         <span id="drilldown-title"></span>
         <button class="close-btn" id="close-drilldown">×</button>
       </div>
+      <div id="company-overview-section"></div>
       <div class="kpi-grid" id="drilldown-kpis"></div>
       <div class="two-col">
         <div>
@@ -767,6 +901,95 @@
         }
       },
     });
+
+    comparisonTable.on('rowClick', function(e, row) {
+      const data = row.getData();
+      const company = data._company;
+
+      comparisonTable.getRows().forEach(r => {
+        r.getElement().classList.remove('row-selected');
+      });
+
+      if (selectedCompany && selectedCompany.name === company.name) {
+        closeDrillDown();
+      } else {
+        row.getElement().classList.add('row-selected');
+        renderDrillDown(company);
+      }
+    });
+  }
+
+  /* ─── Render company overview ─── */
+  function renderCompanyOverview(company) {
+    const el = document.getElementById('company-overview-section');
+    if (!el) return;
+    const p = company.company_profile;
+    if (!p) { el.innerHTML = ''; return; }
+
+    const mix = p.rig_mix || {};
+    const clients = (p.key_clients || []).map(c =>
+      `<span class="co-client-tag">${esc(c)}</span>`
+    ).join('');
+
+    const rigs = (p.key_rigs || []).map(r => {
+      const status = r.status || '';
+      const badgeClass = status.includes('Available') || status.includes('Reactivation')
+        ? 'badge-yellow'
+        : status.includes('Marketing')
+        ? 'badge-orange'
+        : 'badge-green';
+      const depth = r.water_depth_ft != null ? `${Number(r.water_depth_ft).toLocaleString()} ft` : '—';
+      return `
+        <div class="co-rig-row">
+          <div class="co-rig-name">${esc(r.name)}</div>
+          <div class="co-rig-type">${esc(r.type)}</div>
+          <div class="co-rig-region">${esc(r.region)}</div>
+          <div class="co-rig-depth">${depth}</div>
+          <div><span class="badge ${badgeClass}" style="font-size:10px">${esc(status || 'Active')}</span></div>
+        </div>`;
+    }).join('');
+
+    el.innerHTML = `
+      <div class="company-overview">
+        <div>
+          <div class="co-meta-grid">
+            ${p.founded ? `<div class="co-meta-item"><span class="co-meta-label">설립연도</span><span class="co-meta-value">${esc(String(p.founded))}</span></div>` : ''}
+            ${p.hq ? `<div class="co-meta-item"><span class="co-meta-label">본사</span><span class="co-meta-value">${esc(p.hq)}</span></div>` : ''}
+            ${p.employees ? `<div class="co-meta-item"><span class="co-meta-label">직원 수</span><span class="co-meta-value">${esc(p.employees)}</span></div>` : ''}
+            ${p.market_cap_busd != null ? `<div class="co-meta-item"><span class="co-meta-label">시가총액</span><span class="co-meta-value">$${p.market_cap_busd.toFixed(1)}B</span></div>` : ''}
+          </div>
+          ${p.business_model ? `<div class="co-model-text">${esc(p.business_model)}</div>` : ''}
+          ${p.strategy ? `<div class="co-strategy-text">${esc(p.strategy)}</div>` : ''}
+          ${p.notable ? `<div class="co-notable">★ ${esc(p.notable)}</div>` : ''}
+        </div>
+        <div class="co-right">
+          <div class="co-box">
+            <div class="co-box-title">Rig Mix</div>
+            <div class="co-rig-mix">
+              ${mix.drillships != null ? `<div class="co-rig-stat"><div class="co-rig-stat-val" style="color:var(--accent)">${mix.drillships}</div><div class="co-rig-stat-lbl">Drillships</div></div>` : ''}
+              ${mix.semisubmersibles != null ? `<div class="co-rig-stat"><div class="co-rig-stat-val" style="color:var(--blue)">${mix.semisubmersibles}</div><div class="co-rig-stat-lbl">Semis</div></div>` : ''}
+              ${mix.jackups != null ? `<div class="co-rig-stat"><div class="co-rig-stat-val" style="color:var(--yellow)">${mix.jackups}</div><div class="co-rig-stat-lbl">Jackups</div></div>` : ''}
+              ${mix.total != null ? `<div class="co-rig-stat"><div class="co-rig-stat-val" style="color:var(--text-muted)">${mix.total}</div><div class="co-rig-stat-lbl">Total</div></div>` : ''}
+            </div>
+          </div>
+          ${clients ? `
+          <div class="co-box">
+            <div class="co-box-title">주요 고객</div>
+            <div class="co-clients-list">${clients}</div>
+          </div>` : ''}
+        </div>
+      </div>
+      ${rigs ? `
+      <div class="co-rigs-section">
+        <div class="co-rigs-title">주요 리그</div>
+        <div>
+          <div class="co-rig-row header-row">
+            <div>리그명</div><div>유형</div><div>지역</div><div>수심</div><div>상태</div>
+          </div>
+          ${rigs}
+        </div>
+      </div>` : ''}
+    `;
   }
 
   /* ─── Render drill-down ─── */
@@ -813,6 +1036,7 @@
     }, 50);
 
     // Render chart, table and highlights
+    renderCompanyOverview(company);
     renderDetailChart(company);
     renderDetailTable(company);
     renderHighlights(company);
@@ -867,6 +1091,8 @@
     selectedCompany = null;
     const panel = document.getElementById('drilldown-panel');
     panel.classList.remove('open');
+    const overviewEl = document.getElementById('company-overview-section');
+    if (overviewEl) overviewEl.innerHTML = '';
 
     // Deselect all rows
     if (comparisonTable) {

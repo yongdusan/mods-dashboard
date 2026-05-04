@@ -1,70 +1,122 @@
 {
-  "updated": "2026-05-03",
+  "updated": "2026-05-04",
   "companies": [
     {
       "name": "Transocean",
       "ticker": "RIG",
       "note": "Acquiring Valaris for $5.8B (announced Feb 2026). Q1 2026 reports May 4.",
+      "company_profile": {
+        "founded": 1953,
+        "hq": "Steinhausen, Switzerland",
+        "employees": "~5,000",
+        "market_cap_busd": 4.8,
+        "business_model": "Ultra-deepwater와 harsh-environment floater 중심의 offshore drilling contractor. 고사양 drillship과 semisubmersible을 장기 계약으로 운용한다.",
+        "strategy": "Valaris 인수로 글로벌 floater 규모를 확대하고, 고사양 7세대 drillship과 harsh-environment 리그의 dayrate 회복을 수익성 개선의 핵심 축으로 둔다.",
+        "rig_mix": {
+          "drillships": 18,
+          "semisubmersibles": 14,
+          "jackups": 0,
+          "total": 32
+        },
+        "key_clients": [
+          "Chevron",
+          "bp",
+          "Shell",
+          "Equinor",
+          "Petrobras"
+        ],
+        "key_rigs": [
+          {
+            "name": "Deepwater Atlas",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Deepwater Titan",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Transocean Norge",
+            "type": "Harsh Environment Semi",
+            "region": "Norway",
+            "water_depth_ft": 10000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Deepwater Asgard",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          }
+        ],
+        "notable": "업계 최대 수준의 ultra-deepwater backlog를 보유한 순수 floater 강자. Valaris 인수 완료 시 jackup exposure까지 포함한 대형 통합 offshore driller가 된다."
+      },
       "quarters": [
         {
           "period": "Q1 2025",
-          "revenue_musd": 965,
-          "adj_ebitda_musd": 315,
-          "ebitda_margin_pct": 32.6,
-          "utilization_pct": 79,
+          "revenue_musd": 906,
+          "adj_ebitda_musd": 244,
+          "ebitda_margin_pct": 26.9,
+          "utilization_pct": 63,
           "avg_day_rate_kusd": 441,
           "backlog_busd": 8.8,
           "source": "Q1 2025 Earnings",
           "highlights": [
-            "Backlog $8.8B로 업계 최대 수준 유지",
+            "Backlog 약 $8B로 업계 최대 수준 유지",
             "Deepwater Atlas(삼성 96K) 첫 풀 가동 분기 — $465K/day",
-            "Ultra-deepwater 세그먼트 가동률 79% 달성",
+            "Fleet utilization 63.4%, revenue efficiency 96.5% 기록",
             "7th Gen 리그 계약 갱신 협상 진행 중"
           ]
         },
         {
           "period": "Q2 2025",
-          "revenue_musd": 970,
-          "adj_ebitda_musd": 330,
-          "ebitda_margin_pct": 34.0,
-          "utilization_pct": 80,
+          "revenue_musd": 988,
+          "adj_ebitda_musd": 344,
+          "ebitda_margin_pct": 34.8,
+          "utilization_pct": 67,
           "avg_day_rate_kusd": 448,
           "backlog_busd": 8.5,
           "source": "Q2 2025 Earnings",
           "highlights": [
-            "평균 day rate $448K로 분기 기록 경신",
-            "Harsh Environment 세그먼트(노르웨이) 가동률 상승",
+            "Contract drilling revenue $988M, Adjusted EBITDA $344M 기록",
+            "Fleet utilization 67.3%, uptime 97.3% 기록",
             "Ultra-deepwater 신규 계약 2건 추가 확보",
             "재무 레버리지 개선 — 부채 상환 진행"
           ]
         },
         {
           "period": "Q3 2025",
-          "revenue_musd": 950,
-          "adj_ebitda_musd": 340,
-          "ebitda_margin_pct": 35.8,
-          "utilization_pct": 81,
+          "revenue_musd": 1028,
+          "adj_ebitda_musd": 397,
+          "ebitda_margin_pct": 38.6,
+          "utilization_pct": 76,
           "avg_day_rate_kusd": 455,
           "backlog_busd": 7.8,
           "source": "Q3 2025 Earnings",
           "highlights": [
-            "EBITDA 마진 35.8%로 3분기 연속 개선",
+            "Adjusted EBITDA 마진 38.6%로 전분기 대비 개선",
             "Deepwater Titan — Chevron 계약 순조롭게 이행 중",
-            "노르웨이 Harsh Environment 리그 고가동 유지",
+            "Fleet utilization 76.0%, revenue efficiency 97.0% 기록",
             "2026년 Ultra-deepwater 시장 타이트 전망 제시"
           ]
         },
         {
           "period": "Q4 2025",
-          "revenue_musd": 1040,
+          "revenue_musd": 1043,
           "adj_ebitda_musd": 385,
-          "ebitda_margin_pct": 37.0,
+          "ebitda_margin_pct": 36.9,
           "utilization_pct": 82,
           "avg_day_rate_kusd": 461,
           "backlog_busd": 6.1,
           "source": "Q4 2025 Earnings (Feb 2026)",
           "highlights": [
-            "FY2025 Revenue $3.925B — 연간 최고치 경신",
+            "FY2025 Contract drilling revenue $3.965B, Adjusted EBITDA $1.370B",
             "Valaris 인수 $5.8B 발표(2026.02) — 통합 후 Fleet 62개 예상",
             "통합 완료 시 연간 시너지 효과 $50M+ 전망",
             "Backlog $6.1B — 인수 완료 후 $11B+ 예상"
@@ -76,12 +128,64 @@
       "name": "Valaris",
       "ticker": "VAL",
       "note": "Merger with Transocean pending ($5.8B, announced Feb 2026). Q1 2026 reports May 4. Earnings calls discontinued.",
+      "company_profile": {
+        "founded": 1975,
+        "hq": "Hamilton, Bermuda / Houston, USA",
+        "employees": "~4,500",
+        "market_cap_busd": 5.8,
+        "business_model": "Drillship, semisubmersible, jackup을 모두 보유한 diversified offshore drilling contractor. Deepwater와 jackup 계약을 함께 운용한다.",
+        "strategy": "Transocean과의 합병 전까지 backlog 방어와 fleet utilization 개선에 집중한다. 합병 완료 후에는 Transocean의 floater 중심 포트폴리오와 통합될 예정이다.",
+        "rig_mix": {
+          "drillships": 11,
+          "semisubmersibles": 4,
+          "jackups": 30,
+          "total": 45
+        },
+        "key_clients": [
+          "bp",
+          "Equinor",
+          "TotalEnergies",
+          "Saudi Aramco",
+          "Shell"
+        ],
+        "key_rigs": [
+          {
+            "name": "VALARIS DS-17",
+            "type": "Drillship",
+            "region": "Brazil / Atlantic",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "VALARIS DS-18",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "VALARIS 123",
+            "type": "Jackup",
+            "region": "Middle East",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          },
+          {
+            "name": "VALARIS Norway",
+            "type": "Harsh Environment Jackup",
+            "region": "North Sea",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          }
+        ],
+        "notable": "Transocean과의 합병 발표 이후 독립 실적 가이던스와 earnings call을 중단한 상태다. 현재 데이터는 합병 전 stand-alone Valaris 기준이다."
+      },
       "quarters": [
         {
           "period": "Q1 2025",
-          "revenue_musd": 606,
-          "adj_ebitda_musd": 98,
-          "ebitda_margin_pct": 16.2,
+          "revenue_musd": 621,
+          "adj_ebitda_musd": 181,
+          "ebitda_margin_pct": 29.1,
           "utilization_pct": 74,
           "avg_day_rate_kusd": 385,
           "backlog_busd": 4.2,
@@ -90,20 +194,20 @@
             "잭업 리그 비중 높아 평균 day rate 상대적으로 낮음 ($385K)",
             "드릴십 리그 신규 계약 협상 진행",
             "Backlog $4.2B — 향후 계약 갱신 집중",
-            "EBITDA 마진 16.2%로 업계 내 개선 여지 있음"
+            "Adjusted EBITDA $181M, 마진 29.1% 기록"
           ]
         },
         {
           "period": "Q2 2025",
-          "revenue_musd": 620,
-          "adj_ebitda_musd": 105,
-          "ebitda_margin_pct": 16.9,
+          "revenue_musd": 615,
+          "adj_ebitda_musd": 201,
+          "ebitda_margin_pct": 32.7,
           "utilization_pct": 75,
           "avg_day_rate_kusd": 390,
           "backlog_busd": 4.4,
           "source": "Q2 2025 Earnings",
           "highlights": [
-            "EBITDA 마진 소폭 개선(16.9%) — 운영 효율화 효과",
+            "Adjusted EBITDA 마진 32.7% — 운영 효율화 효과",
             "드릴십 3기 계약 연장 확보",
             "Backlog $4.4B로 상승",
             "잭업 시장 중동·동남아 수요 견조"
@@ -111,32 +215,32 @@
         },
         {
           "period": "Q3 2025",
-          "revenue_musd": 600,
-          "adj_ebitda_musd": 112,
-          "ebitda_margin_pct": 18.7,
+          "revenue_musd": 596,
+          "adj_ebitda_musd": 163,
+          "ebitda_margin_pct": 27.3,
           "utilization_pct": 76,
           "avg_day_rate_kusd": 393,
           "backlog_busd": 4.6,
           "source": "Q3 2025 Earnings",
           "highlights": [
-            "EBITDA 마진 18.7%로 분기 최고 — 비용 절감 가시화",
+            "Adjusted EBITDA $163M, 마진 27.3% 기록",
             "Valaris DS-17 노르웨이 신규 계약 체결",
             "잭업 리그 평균 가동률 76% — 중동 수요 견조",
-            "2026년 마진 20%+ 달성 목표 제시"
+            "Transocean 합병 전 stand-alone 실적 반영"
           ]
         },
         {
           "period": "Q4 2025",
           "revenue_musd": 537,
-          "adj_ebitda_musd": 108,
-          "ebitda_margin_pct": 20.1,
+          "adj_ebitda_musd": 97,
+          "ebitda_margin_pct": 18.1,
           "utilization_pct": 73,
           "avg_day_rate_kusd": 388,
           "backlog_busd": 4.7,
           "source": "Q4 2025 Earnings (Feb 2026)",
           "highlights": [
             "Transocean $5.8B 인수 협상 완료 — 주주 승인 절차 진행",
-            "EBITDA 마진 20.1%로 역대 최고 달성",
+            "Adjusted EBITDA $97M, 마진 18.1% 기록",
             "향후 분기 실적 발표 및 가이던스 제공 중단 발표",
             "Backlog $4.7B — 통합 완료 시 Transocean 풀로 흡수"
           ]
@@ -147,12 +251,64 @@
       "name": "Noble",
       "ticker": "NE",
       "note": "Acquired Diamond Offshore in 2024. Sold jackups to Borr Drilling (Jan 2026). Now pureplay deepwater.",
+      "company_profile": {
+        "founded": 1921,
+        "hq": "Sugar Land, Texas, USA",
+        "employees": "~4,000",
+        "market_cap_busd": 6.0,
+        "business_model": "Deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. Diamond Offshore 인수 후 deepwater pure-play로 재편했다.",
+        "strategy": "잭업 매각 이후 고사양 floater 중심으로 포트폴리오를 단순화하고, Petrobras, Shell, Chevron 등 deepwater 고객의 장기 계약을 확대한다.",
+        "rig_mix": {
+          "drillships": 19,
+          "semisubmersibles": 13,
+          "jackups": 0,
+          "total": 32
+        },
+        "key_clients": [
+          "Petrobras",
+          "Shell",
+          "Chevron",
+          "ExxonMobil",
+          "TotalEnergies"
+        ],
+        "key_rigs": [
+          {
+            "name": "Noble Voyager",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Noble Venturer",
+            "type": "Drillship",
+            "region": "Brazil",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Noble Developer",
+            "type": "Drillship",
+            "region": "Guyana / Atlantic",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "Noble Deliverer",
+            "type": "Semisubmersible",
+            "region": "North Sea",
+            "water_depth_ft": 10000,
+            "status": "Reactivation"
+          }
+        ],
+        "notable": "Diamond Offshore 인수와 jackup 매각 이후 deepwater pure-play 성격이 강해졌다. Q1 2026 실적이 이미 반영된 유일한 시추선사다."
+      },
       "quarters": [
         {
           "period": "Q1 2025",
-          "revenue_musd": 810,
-          "adj_ebitda_musd": 248,
-          "ebitda_margin_pct": 30.6,
+          "revenue_musd": 832,
+          "adj_ebitda_musd": 338,
+          "ebitda_margin_pct": 40.6,
           "utilization_pct": 76,
           "avg_day_rate_kusd": 412,
           "backlog_busd": 6.8,
@@ -160,15 +316,15 @@
           "highlights": [
             "Diamond Offshore 통합 완료 후 첫 완전 분기",
             "딥워터 Fleet 확장 — 마케팅 리그 35개",
-            "통합 시너지 연 $50M 달성 조기 확인",
+            "Adjusted EBITDA $338M, 마진 40.6% 기록",
             "잭업 리그 Borr Drilling 매각 논의 시작"
           ]
         },
         {
           "period": "Q2 2025",
-          "revenue_musd": 825,
-          "adj_ebitda_musd": 255,
-          "ebitda_margin_pct": 30.9,
+          "revenue_musd": 812,
+          "adj_ebitda_musd": 282,
+          "ebitda_margin_pct": 34.7,
           "utilization_pct": 77,
           "avg_day_rate_kusd": 418,
           "backlog_busd": 7.0,
@@ -177,20 +333,20 @@
             "Noble Venturer — Petrobras 계약 연장 확보",
             "잭업 5기 Borr Drilling 매각 협상 진전",
             "딥워터 가동률 77%로 상승",
-            "Backlog $7.0B 유지 — 신규 계약 파이프라인 강함"
+            "Backlog 약 $6.9B — 신규 계약 파이프라인 강함"
           ]
         },
         {
           "period": "Q3 2025",
-          "revenue_musd": 851,
-          "adj_ebitda_musd": 263,
-          "ebitda_margin_pct": 30.9,
+          "revenue_musd": 757,
+          "adj_ebitda_musd": 254,
+          "ebitda_margin_pct": 33.6,
           "utilization_pct": 78,
           "avg_day_rate_kusd": 422,
           "backlog_busd": 7.0,
           "source": "Q3 2025 Earnings",
           "highlights": [
-            "Revenue $851M으로 분기 최고 달성",
+            "Contract drilling services revenue $757M 기록",
             "Noble Reacher 브라질 계약 연장",
             "Noble Courage 장기 계약 협상 진행 중",
             "잭업 매각 2026년 1월 완료 예정 발표"
@@ -198,16 +354,16 @@
         },
         {
           "period": "Q4 2025",
-          "revenue_musd": 800,
-          "adj_ebitda_musd": 252,
-          "ebitda_margin_pct": 31.5,
+          "revenue_musd": 705,
+          "adj_ebitda_musd": 232,
+          "ebitda_margin_pct": 32.9,
           "utilization_pct": 76,
           "avg_day_rate_kusd": 425,
           "backlog_busd": 7.5,
           "source": "Q4 2025 Earnings (Feb 2026)",
           "highlights": [
             "잭업 5기 Borr Drilling 매각 완료(2026.01) $175M — 딥워터 퓨어플레이 전환",
-            "FY2025 Revenue $3.287B, EBITDA $1.018B",
+            "Q4 Contract drilling services revenue $705M, Adjusted EBITDA $232M",
             "2026 가이던스 발표: Revenue $2.8–3.0B, EBITDA $940M–$1.02B",
             "Backlog $7.5B — Noble Deliverer 재활성화 포함"
           ]
@@ -236,18 +392,70 @@
       "name": "Seadrill",
       "ticker": "SDRL",
       "note": "FY2025 Adj. EBITDA $353M. 2026 guidance: Rev $1.40–1.45B, EBITDA $350–400M. Q1 2026 date TBD.",
+      "company_profile": {
+        "founded": 2005,
+        "hq": "Hamilton, Bermuda",
+        "employees": "~2,600",
+        "market_cap_busd": 2.3,
+        "business_model": "High-spec ultra-deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. 재무구조 재편 이후 고사양 floater에 집중한다.",
+        "strategy": "브라질, US Gulf of Mexico, 서아프리카 deepwater 수요에 맞춰 drillship 가동률과 dayrate를 회복시키는 데 집중한다.",
+        "rig_mix": {
+          "drillships": 8,
+          "semisubmersibles": 3,
+          "jackups": 0,
+          "total": 11
+        },
+        "key_clients": [
+          "Petrobras",
+          "LLOG",
+          "Talos",
+          "TotalEnergies",
+          "Shell"
+        ],
+        "key_rigs": [
+          {
+            "name": "West Tellus",
+            "type": "Drillship",
+            "region": "Brazil",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "West Carina",
+            "type": "Drillship",
+            "region": "Brazil",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "West Neptune",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "On Contract"
+          },
+          {
+            "name": "West Jupiter",
+            "type": "Drillship",
+            "region": "US Gulf of Mexico",
+            "water_depth_ft": 12000,
+            "status": "Available / Marketing"
+          }
+        ],
+        "notable": "상대적으로 작은 floater 포트폴리오지만 브라질과 US Gulf deepwater exposure가 크다. 2026년 가이던스는 EBITDA 회복을 전제로 한다."
+      },
       "quarters": [
         {
           "period": "Q1 2025",
           "revenue_musd": 335,
-          "adj_ebitda_musd": 99,
-          "ebitda_margin_pct": 29.6,
+          "adj_ebitda_musd": 73,
+          "ebitda_margin_pct": 21.8,
           "utilization_pct": 78,
           "avg_day_rate_kusd": 395,
           "backlog_busd": 1.6,
           "source": "Q1 2025 Earnings",
           "highlights": [
-            "파산 재편(2022) 후 안정적 운영 기반 확립",
+            "Total operating revenues $335M, Adjusted EBITDA $73M",
             "드릴십 포트폴리오 집중 — 잭업 제로",
             "West Africa 및 중동 시장 선택적 계약 전략",
             "Backlog $1.6B — 계약 기간 짧아 갱신 리스크 존재"
@@ -255,16 +463,16 @@
         },
         {
           "period": "Q2 2025",
-          "revenue_musd": 332,
-          "adj_ebitda_musd": 80,
-          "ebitda_margin_pct": 24.1,
+          "revenue_musd": 377,
+          "adj_ebitda_musd": 106,
+          "ebitda_margin_pct": 28.1,
           "utilization_pct": 74,
           "avg_day_rate_kusd": 390,
           "backlog_busd": 1.8,
           "source": "Q2 2025 Earnings",
           "highlights": [
-            "드릴십 일부 계약 공백(gap) 발생으로 EBITDA 마진 하락",
-            "EBITDA 마진 24.1%로 분기 내 하락",
+            "Total operating revenues $377M, Adjusted EBITDA $106M",
+            "EBITDA 마진 28.1%로 전분기 대비 개선",
             "Seadrill Aquila West Africa 신규 계약 확보",
             "Backlog $1.8B로 소폭 상승"
           ]
@@ -308,18 +516,70 @@
       "name": "Borr Drilling",
       "ticker": "BORR",
       "note": "Pure-play jackup. 29 modern jackups (all post-2008). Acquired 5 Noble jackups Jan 2026. Q1 2026 reports May 20.",
+      "company_profile": {
+        "founded": 2016,
+        "hq": "Hamilton, Bermuda",
+        "employees": "~1,900",
+        "market_cap_busd": 1.5,
+        "business_model": "Modern premium jackup pure-play. 중동, 동남아, 멕시코 등 shallow-water drilling 수요에 집중한다.",
+        "strategy": "Noble에서 인수한 잭업 5기를 포함해 premium jackup 규모를 확대하고, 높은 utilization과 낮은 unit cost를 통해 EBITDA 마진을 방어한다.",
+        "rig_mix": {
+          "drillships": 0,
+          "semisubmersibles": 0,
+          "jackups": 29,
+          "total": 29
+        },
+        "key_clients": [
+          "Saudi Aramco",
+          "ADNOC",
+          "Pemex",
+          "PTTEP",
+          "TotalEnergies"
+        ],
+        "key_rigs": [
+          {
+            "name": "Arabia I",
+            "type": "Premium Jackup",
+            "region": "Middle East",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          },
+          {
+            "name": "Gerd",
+            "type": "Premium Jackup",
+            "region": "Mexico",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          },
+          {
+            "name": "Prospector 1",
+            "type": "Premium Jackup",
+            "region": "North Sea",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          },
+          {
+            "name": "Natt",
+            "type": "Premium Jackup",
+            "region": "Southeast Asia",
+            "water_depth_ft": 400,
+            "status": "On Contract"
+          }
+        ],
+        "notable": "대형 floater 업체들과 달리 premium jackup에 특화되어 dayrate 수준은 낮지만, utilisation과 EBITDA margin이 높은 편이다."
+      },
       "quarters": [
         {
           "period": "Q1 2025",
-          "revenue_musd": 236,
-          "adj_ebitda_musd": 108,
-          "ebitda_margin_pct": 45.8,
+          "revenue_musd": 217,
+          "adj_ebitda_musd": 96,
+          "ebitda_margin_pct": 44.2,
           "utilization_pct": 84,
           "avg_day_rate_kusd": 138,
           "backlog_busd": 1.3,
           "source": "Q1 2025 Earnings",
           "highlights": [
-            "EBITDA 마진 45.8% — 업계 최고 수준",
+            "Total operating revenues $217M, Adjusted EBITDA $96M",
             "순수 프리미엄 잭업 포트폴리오의 운영 효율 입증",
             "중동·동남아 드릴링 수요 견조",
             "신조 리그 2기 인도 예정 — Fleet 확장 가속"
@@ -327,32 +587,32 @@
         },
         {
           "period": "Q2 2025",
-          "revenue_musd": 248,
-          "adj_ebitda_musd": 115,
-          "ebitda_margin_pct": 46.4,
+          "revenue_musd": 268,
+          "adj_ebitda_musd": 133,
+          "ebitda_margin_pct": 49.6,
           "utilization_pct": 85,
           "avg_day_rate_kusd": 140,
           "backlog_busd": 1.2,
           "source": "Q2 2025 Earnings",
           "highlights": [
             "Day rate $140K로 상승 — 중동 프리미엄 잭업 수요 강세",
-            "EBITDA 마진 46.4%로 분기 최고",
+            "Total operating revenues $268M, Adjusted EBITDA $133M",
             "중동 및 동남아 신규 계약 추가",
             "Noble 잭업 인수 협상 본격화"
           ]
         },
         {
           "period": "Q3 2025",
-          "revenue_musd": 255,
-          "adj_ebitda_musd": 120,
-          "ebitda_margin_pct": 47.1,
+          "revenue_musd": 277,
+          "adj_ebitda_musd": 136,
+          "ebitda_margin_pct": 49.1,
           "utilization_pct": 86,
           "avg_day_rate_kusd": 142,
           "backlog_busd": 1.2,
           "source": "Q3 2025 Earnings",
           "highlights": [
             "가동률 86%로 상승 — 분기 최고",
-            "EBITDA 마진 47.1% 달성",
+            "Total operating revenues $277M, Adjusted EBITDA $136M",
             "신규 프리미엄 잭업 리그 3기 인도 완료",
             "Noble 잭업 5기 인수 $175M 합의 발표"
           ]
@@ -360,14 +620,14 @@
         {
           "period": "Q4 2025",
           "revenue_musd": 259,
-          "adj_ebitda_musd": 118,
-          "ebitda_margin_pct": 45.6,
+          "adj_ebitda_musd": 105,
+          "ebitda_margin_pct": 40.5,
           "utilization_pct": 85,
           "avg_day_rate_kusd": 143,
           "backlog_busd": 1.2,
           "source": "Q4 2025 Earnings (Feb 2026)",
           "highlights": [
-            "FY2025 Revenue $998M, Adj. EBITDA $470M",
+            "FY2025 Revenue 약 $1.02B, Adj. EBITDA 약 $470M",
             "Noble 잭업 5기 인수 완료(2026.01) — Fleet 29기로 확대",
             "인수 리그 즉시 중동 계약 투입 예정",
             "Q1 2026 결과 발표 예정: 2026.05.20",
