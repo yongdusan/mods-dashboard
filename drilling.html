@@ -691,7 +691,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrate, Rig Demand &amp; Yard Pricing</span>
+      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrate, Rig Demand &amp; Asset Values</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
@@ -711,7 +711,7 @@
   <!-- Page Title -->
   <section class="page-title-section">
     <h2>Drilling / MODU Market</h2>
-    <span class="page-subtitle">시추 리그 현황 · 계약 가동률 · Dayrate · Rig demand · Yard pricing</span>
+    <span class="page-subtitle">시추 리그 현황 · 계약 가동률 · Dayrate · Rig demand · Asset values</span>
   </section>
 
   <!-- KPI Grid -->
@@ -818,12 +818,12 @@
     </div>
   </div>
 
-  <!-- Yard & Reactivation Benchmarks Table -->
+  <!-- MODU Asset Value Benchmarks Table -->
   <div class="newbuild-section">
     <div class="panel">
       <div class="panel-header">
-        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Yard &amp; Reactivation Benchmarks</span>
-        <span class="panel-subtitle">Newbuild, acquired hull and upgrade references</span>
+        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>MODU Asset Value Benchmarks</span>
+        <span class="panel-subtitle">Newbuild obligations, acquired hulls and cancelled-order transactions</span>
       </div>
       <div id="newbuild-table"></div>
     </div>
@@ -1618,7 +1618,7 @@
   window.toggleProjectCard = toggleProjectCard;
 
   /* ─────────────────────────────────────────
-     Yard & Reactivation Benchmarks Table (Tabulator)
+     MODU Asset Value Benchmarks Table (Tabulator)
   ───────────────────────────────────────── */
   function renderNewbuildTable() {
     const tableData = rates.newbuild_prices.map(p => ({
@@ -1627,6 +1627,7 @@
       yard: p.yard,
       price_musd: p.price_musd,
       basis: p.basis || 'Newbuild benchmark',
+      source: p.source || '—',
       notes: p.notes,
     }));
 
@@ -1665,6 +1666,12 @@
           field: 'basis',
           widthGrow: 1.1,
           formatter: cell => `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`,
+        },
+        {
+          title: 'Source',
+          field: 'source',
+          widthGrow: 0.9,
+          formatter: cell => `<span style="color:var(--blue);font-size:11px">${esc(cell.getValue())}</span>`,
         },
         {
           title: 'Notes',

@@ -22,18 +22,22 @@
   ],
   "newbuild_prices": [
     {
-      "date": "2024-03",
-      "rig_type": "Jack-up (Premium)",
+      "date": "2017-05",
+      "rig_type": "Jack-up (Premium, high-spec)",
       "yard": "Keppel FELS",
-      "price_musd": 230,
-      "notes": "KFELS B Class, harsh environment"
+      "price_musd": 216,
+      "basis": "Amended newbuild obligation",
+      "source": "Transocean / Offshore Technology",
+      "notes": "Five Keppel FELS jack-ups under construction were transferred with Transocean's jack-up fleet sale to Borr; reported per-unit newbuild obligation was reduced from about $219M to $216M. Not a 2024 fresh-cycle newbuild order."
     },
     {
-      "date": "2024-07",
-      "rig_type": "Jack-up (Standard)",
+      "date": "2010-11",
+      "rig_type": "Jack-up (Pacific Class 400)",
       "yard": "PPL Shipyard",
       "price_musd": 195,
-      "notes": "Baker Marine Pacific Class 375"
+      "basis": "Rig under construction sale",
+      "source": "Sembcorp Marine / Hart Energy",
+      "notes": "PPL sold a jack-up already under construction to Transocean for $195M; it was Pacific Class 400, not a 2024 Pacific Class 375 fresh newbuild benchmark."
     },
     {
       "date": "2022-11",
@@ -41,21 +45,17 @@
       "yard": "DSME / Hanwha Ocean",
       "price_musd": 200,
       "basis": "Undelivered hull acquisition",
+      "source": "Transocean",
       "notes": "Hull 3623 / ex-West Aquila; ordered in 2013 and acquired from DSME by Liquila / Transocean JV, not a fresh-cycle newbuild order."
     },
     {
-      "date": "2025-02",
-      "rig_type": "Semisubmersible",
-      "yard": "Samsung Heavy",
-      "price_musd": 680,
-      "notes": "10,000ft WD, harsh environment"
-    },
-    {
-      "date": "2025-09",
-      "rig_type": "Jack-up (Premium)",
-      "yard": "Keppel FELS",
-      "price_musd": 245,
-      "notes": "Increased steel costs reflected"
+      "date": "2018-04",
+      "rig_type": "Semi-submersible (HE, CS-60)",
+      "yard": "Samsung Heavy Industries",
+      "price_musd": 505,
+      "basis": "Cancelled-order acquisition",
+      "source": "Odfjell Drilling / Offshore Energy",
+      "notes": "Deepsea Nordkapp / former Stena MidMax; originally ordered by Stena in 2013, cancelled in 2017 and acquired by Odfjell from SHI for $505M. Not a 2025 fresh-cycle semi-sub newbuild order."
     }
   ]
 }
