@@ -691,7 +691,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrates, CAPEX &amp; Yard Pricing</span>
+      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrate, Rig Demand &amp; Yard Pricing</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
@@ -710,8 +710,8 @@
 
   <!-- Page Title -->
   <section class="page-title-section">
-    <h2>Drilling / MODU Fleet</h2>
-    <span class="page-subtitle">시추 리그 현황 · 가동률 · Dayrate · CAPEX · Yard pricing</span>
+    <h2>Drilling / MODU Market</h2>
+    <span class="page-subtitle">시추 리그 현황 · 계약 가동률 · Dayrate · Rig demand · Yard pricing</span>
   </section>
 
   <!-- KPI Grid -->
@@ -722,8 +722,8 @@
   <!-- Contractor Summary -->
   <div class="panel summary-section">
     <div class="panel-header">
-      <span class="panel-title"><span class="dot"></span>Contractor Summary</span>
-      <span class="panel-subtitle">주요 시추선사별 리그 구성 · 계약 상태 · 평균 dayrate</span>
+      <span class="panel-title"><span class="dot"></span>Drilling Contractor Summary</span>
+      <span class="panel-subtitle">리그 보유 현황 · 계약 가동률 · 평균 dayrate</span>
     </div>
     <div id="contractor-table"></div>
   </div>
@@ -734,7 +734,7 @@
       <span class="filter-label">RIG TYPE</span>
       <button class="filter-btn type-btn active" data-filter="All">All</button>
       <button class="filter-btn type-btn" data-filter="Drillship">Drillship</button>
-      <button class="filter-btn type-btn" data-filter="Semisubmersible">Semisubmersible</button>
+      <button class="filter-btn type-btn" data-filter="Semisubmersible">Semi-sub</button>
       <button class="filter-btn type-btn" data-filter="Jack-up">Jack-up</button>
     </div>
     <div class="filter-row">
@@ -748,7 +748,7 @@
     </div>
   </div>
 
-  <!-- Two-column: Fleet Table | Day Rate Chart -->
+  <!-- Two-column: Fleet Table | Dayrate Chart -->
   <div class="two-col">
     <div class="panel">
       <div class="panel-header">
@@ -759,8 +759,8 @@
     </div>
     <div class="panel">
       <div class="panel-header">
-        <span class="panel-title"><span class="dot" style="background:var(--blue)"></span>Day Rate Trend</span>
-        <span class="panel-subtitle">k$/day · quarterly</span>
+        <span class="panel-title"><span class="dot" style="background:var(--blue)"></span>Dayrate Trend</span>
+        <span class="panel-subtitle">US$k/day · quarterly</span>
       </div>
       <div class="panel-body">
         <div class="chart-container">
@@ -772,11 +772,11 @@
 
   <!-- CAPEX Section -->
   <div class="capex-section">
-    <div class="section-label">CAPEX Guidance</div>
+    <div class="section-label">E&amp;P CAPEX &amp; Rig Demand</div>
     <div class="two-col">
       <div class="panel">
         <div class="panel-header">
-          <span class="panel-title"><span class="dot" style="background:var(--orange)"></span>Annual CAPEX by Company</span>
+          <span class="panel-title"><span class="dot" style="background:var(--orange)"></span>Operator CAPEX by Company</span>
           <div class="capex-toggle">
             <button class="capex-toggle-btn active" id="capex-btn-upstream" onclick="switchCapexMode('upstream')">Upstream</button>
             <button class="capex-toggle-btn" id="capex-btn-total" onclick="switchCapexMode('total')">Total</button>
@@ -790,8 +790,8 @@
       </div>
       <div class="panel">
         <div class="panel-header">
-          <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>CAPEX Summary</span>
-          <span class="panel-subtitle">Latest year per company</span>
+          <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Operator CAPEX Summary</span>
+          <span class="panel-subtitle">Latest guidance year per company</span>
         </div>
         <div id="capex-table"></div>
       </div>
@@ -807,11 +807,11 @@
       </div>
       <div class="capex-drilldown-body">
         <div>
-          <div class="capex-sub-label">Key Upstream Projects</div>
+          <div class="capex-sub-label">Key Offshore Projects</div>
           <div class="project-list" id="capex-project-list"></div>
         </div>
         <div>
-          <div class="capex-sub-label">Drilling Highlights</div>
+          <div class="capex-sub-label">Rig Demand Highlights</div>
           <ul class="drill-list" id="capex-drill-list"></ul>
         </div>
       </div>
@@ -822,8 +822,8 @@
   <div class="newbuild-section">
     <div class="panel">
       <div class="panel-header">
-        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Newbuild &amp; Repair Prices</span>
-        <span class="panel-subtitle">Yard contract data</span>
+        <span class="panel-title"><span class="dot" style="background:var(--yellow)"></span>Newbuild Price Benchmarks</span>
+        <span class="panel-subtitle">Yard pricing references</span>
       </div>
       <div id="newbuild-table"></div>
     </div>
@@ -952,8 +952,8 @@
         <div class="kpi-delta ${idleDelta.cls}">${idleDelta.text} vs prev week</div>
       </div>
       <div class="kpi-card blue">
-        <div class="kpi-label">Avg Day Rate (UDW Drillship)</div>
-        <div class="kpi-value">${avgRate !== null ? avgRate : '—'}<span class="unit">k$/day</span></div>
+        <div class="kpi-label">Avg Dayrate (UDW Drillship)</div>
+        <div class="kpi-value">${avgRate !== null ? avgRate : '—'}<span class="unit">US$k/day</span></div>
         <div class="kpi-delta neutral">Global · not filtered</div>
       </div>
     `;
@@ -1025,14 +1025,14 @@
           formatter: cell => `<span class="mono" style="color:var(--accent)">${cell.getValue()}</span>`,
         },
         {
-          title: 'Semis',
+          title: 'Semi-subs',
           field: 'semisubmersibles',
           width: 90,
           hozAlign: 'right',
           formatter: cell => `<span class="mono" style="color:var(--blue)">${cell.getValue()}</span>`,
         },
         {
-          title: 'Jackups',
+          title: 'Jack-ups',
           field: 'jackups',
           width: 90,
           hozAlign: 'right',
@@ -1053,7 +1053,7 @@
           formatter: cell => `<span class="mono">${cell.getValue().toFixed(1)}%</span>`,
         },
         {
-          title: 'Avg Rate (k$)',
+          title: 'Avg Dayrate (US$k/d)',
           field: 'avg_day_rate_kusd',
           width: 120,
           hozAlign: 'right',
@@ -1186,7 +1186,7 @@
           },
         },
         {
-          title: 'Rate (k$)',
+          title: 'Dayrate (US$k/d)',
           field: 'day_rate_kusd',
           minWidth: 90,
           hozAlign: 'right',
@@ -1212,7 +1212,7 @@
   }
 
   /* ─────────────────────────────────────────
-     Day Rate Chart (Chart.js)
+     Dayrate Chart (Chart.js)
   ───────────────────────────────────────── */
   function renderDayRateChart() {
     const allDates = [...new Set(rates.day_rates.map(r => r.date))].sort();
@@ -1252,7 +1252,7 @@
             spanGaps: true,
           },
           {
-            label: 'Semisubmersible',
+            label: 'Semi-sub',
             data: buildDataset('Semisubmersible', 'Deepwater'),
             borderColor: '#58a6ff',
             backgroundColor: makeGradient(ctx, '#58a6ff'),
@@ -1707,8 +1707,8 @@
             <span class="contract-row-value">${esc(rig.operator || '—')}</span>
           </div>
           <div class="contract-row">
-            <span class="contract-row-label">Day Rate</span>
-            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + ' k$/day' : '—'}</span>
+            <span class="contract-row-label">Dayrate</span>
+            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + ' US$k/day' : '—'}</span>
           </div>
           <div class="contract-row">
             <span class="contract-row-label">Period</span>
