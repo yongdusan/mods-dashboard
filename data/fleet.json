@@ -1,9 +1,9 @@
 {
-  "updated": "2026-05-02",
+  "updated": "2026-05-05",
   "prev_week": {
-    "total": 58,
-    "on_contract": 47,
-    "idle_stacked": 11
+    "total": 77,
+    "on_contract": 67,
+    "idle_stacked": 10
   },
   "rigs": [
     {
@@ -12,11 +12,11 @@
       "type": "Drillship",
       "water_depth_ft": 20000,
       "status": "On Contract",
-      "operator": "Chevron",
+      "operator": "Beacon Offshore Energy",
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-06",
-      "contract_end": "2027-03",
-      "day_rate_kusd": 465,
+      "contract_start": "2025-08",
+      "contract_end": "2030-05",
+      "day_rate_kusd": 505,
       "specs": {
         "build_year": 2022,
         "build_yard": "Samsung Heavy Industries",
@@ -27,7 +27,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 6500,
         "generation": "8th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Titan",
@@ -35,11 +38,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Shell",
+      "operator": "Chevron",
       "location": "US Gulf of Mexico",
-      "contract_start": "2023-09",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 455,
+      "contract_start": "2023-04",
+      "contract_end": "2028-04",
+      "day_rate_kusd": 462,
       "specs": {
         "build_year": 2022,
         "build_yard": "Samsung Heavy Industries",
@@ -50,7 +53,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 6500,
         "generation": "8th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Aquila",
@@ -60,9 +66,9 @@
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2024-07",
+      "contract_start": "2024-06",
       "contract_end": "2027-06",
-      "day_rate_kusd": 445,
+      "day_rate_kusd": 457,
       "specs": {
         "build_year": 2014,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -73,7 +79,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Asgard",
@@ -81,9 +90,9 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Hess",
+      "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-06",
+      "contract_start": "2025-06",
       "contract_end": "2026-06",
       "day_rate_kusd": 515,
       "specs": {
@@ -96,7 +105,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Invictus",
@@ -104,11 +116,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "BP",
+      "operator": "bp",
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-03",
-      "contract_end": "2027-01",
-      "day_rate_kusd": 450,
+      "contract_start": "2025-04",
+      "contract_end": "2028-04",
+      "day_rate_kusd": 485,
       "specs": {
         "build_year": 2023,
         "build_yard": "Samsung Heavy Industries",
@@ -119,7 +131,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 6000,
         "generation": "8th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Proteus",
@@ -129,9 +144,9 @@
       "status": "On Contract",
       "operator": "Shell",
       "location": "US Gulf of Mexico",
-      "contract_start": "2023-11",
-      "contract_end": "2026-11",
-      "day_rate_kusd": 430,
+      "contract_start": "2016-08",
+      "contract_end": "2026-05",
+      "day_rate_kusd": 498,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -142,7 +157,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Poseidon",
@@ -150,11 +168,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Equinor",
+      "operator": "Shell",
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-01",
-      "contract_end": "2027-04",
-      "day_rate_kusd": 435,
+      "contract_start": "2017-09",
+      "contract_end": "2028-02",
+      "day_rate_kusd": 499,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -165,7 +183,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Orion",
@@ -173,11 +194,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Murphy Oil",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-05",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 425,
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2024-03",
+      "contract_end": "2027-03",
+      "day_rate_kusd": 428,
       "specs": {
         "build_year": 2013,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -188,7 +209,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Conqueror",
@@ -196,11 +220,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "TotalEnergies",
-      "location": "West Africa",
-      "contract_start": "2024-02",
-      "contract_end": "2027-02",
-      "day_rate_kusd": 440,
+      "operator": null,
+      "location": "US Gulf of Mexico",
+      "contract_start": "2025-10",
+      "contract_end": "2026-09",
+      "day_rate_kusd": 530,
       "specs": {
         "build_year": 2014,
         "build_yard": "Samsung Heavy Industries",
@@ -211,7 +235,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Corcovado",
@@ -221,9 +248,9 @@
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2023-08",
-      "contract_end": "2026-10",
-      "day_rate_kusd": 420,
+      "contract_start": "2023-09",
+      "contract_end": "2027-09",
+      "day_rate_kusd": 416,
       "specs": {
         "build_year": 2012,
         "build_yard": "Hyundai Heavy Industries",
@@ -234,7 +261,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Mykonos",
@@ -244,9 +274,9 @@
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2023-10",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 415,
+      "contract_start": "2026-01",
+      "contract_end": "2027-07",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -257,7 +287,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Thalassa",
@@ -265,11 +298,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "BP",
-      "location": "Angola",
-      "contract_start": "2024-04",
-      "contract_end": "2027-05",
-      "day_rate_kusd": 430,
+      "operator": "Woodside",
+      "location": "Mexico",
+      "contract_start": "2026-03",
+      "contract_end": "2029-02",
+      "day_rate_kusd": 480,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -280,7 +313,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Deepwater Stavanger",
@@ -303,7 +339,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "low",
+      "data_note": "Not found in Transocean Feb 2026 FSR; data unverified"
     },
     {
       "name": "Transocean Spitsbergen",
@@ -313,9 +353,9 @@
       "status": "On Contract",
       "operator": "Equinor",
       "location": "Norway",
-      "contract_start": "2024-08",
-      "contract_end": "2027-08",
-      "day_rate_kusd": 400,
+      "contract_start": "2025-06",
+      "contract_end": "2027-10",
+      "day_rate_kusd": 396,
       "specs": {
         "build_year": 2010,
         "build_yard": "Kvaerner Verdal",
@@ -326,7 +366,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Enabler",
@@ -336,9 +379,9 @@
       "status": "On Contract",
       "operator": "Equinor",
       "location": "Norway",
-      "contract_start": "2024-06",
-      "contract_end": "2027-06",
-      "day_rate_kusd": 395,
+      "contract_start": "2025-06",
+      "contract_end": "2028-01",
+      "day_rate_kusd": 415,
       "specs": {
         "build_year": 2013,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -349,7 +392,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Encourage",
@@ -357,11 +403,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Aker BP",
+      "operator": null,
       "location": "Norway",
-      "contract_start": "2024-01",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 380,
+      "contract_start": "2026-01",
+      "contract_end": "2028-03",
+      "day_rate_kusd": 490,
       "specs": {
         "build_year": 2014,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -372,7 +418,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Endurance",
@@ -382,9 +431,9 @@
       "status": "On Contract",
       "operator": "Woodside",
       "location": "Australia",
-      "contract_start": "2024-08",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 385,
+      "contract_start": "2026-02",
+      "contract_end": "2026-10",
+      "day_rate_kusd": 390,
       "specs": {
         "build_year": 2015,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -395,7 +444,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Equinox",
@@ -403,11 +455,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Woodside",
+      "operator": null,
       "location": "Australia",
-      "contract_start": "2024-09",
-      "contract_end": "2027-09",
-      "day_rate_kusd": 390,
+      "contract_start": "2025-04",
+      "contract_end": "2027-01",
+      "day_rate_kusd": 485,
       "specs": {
         "build_year": 2014,
         "build_yard": "Kvaerner Verdal",
@@ -418,7 +470,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Barents",
@@ -426,11 +481,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Vår Energi",
-      "location": "Norway",
-      "contract_start": "2024-03",
-      "contract_end": "2027-03",
-      "day_rate_kusd": 375,
+      "operator": "OMV Petrom",
+      "location": "Romania",
+      "contract_start": "2025-03",
+      "contract_end": "2027-02",
+      "day_rate_kusd": 465,
       "specs": {
         "build_year": 2012,
         "build_yard": "Kvaerner Verdal",
@@ -441,19 +496,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Transocean Norge",
       "contractor": "Transocean",
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
-      "status": "Idle",
-      "operator": null,
+      "status": "On Contract",
+      "operator": "Harbour Energy / OMV",
       "location": "Norway",
-      "contract_start": null,
-      "contract_end": null,
-      "day_rate_kusd": null,
+      "contract_start": "2026-01",
+      "contract_end": "2027-12",
+      "day_rate_kusd": 452,
       "specs": {
         "build_year": 2011,
         "build_yard": "Kvaerner Verdal",
@@ -464,7 +522,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-7",
@@ -472,11 +533,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Chevron",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-01",
-      "contract_end": "2027-01",
-      "day_rate_kusd": 450,
+      "operator": "Azule Energy",
+      "location": "Angola",
+      "contract_start": "2024-06",
+      "contract_end": "2027-09",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -487,7 +548,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-8",
@@ -495,11 +559,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "BP",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-05",
-      "contract_end": "2026-11",
-      "day_rate_kusd": 435,
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2023-12",
+      "contract_end": "2026-12",
+      "day_rate_kusd": 428,
       "specs": {
         "build_year": 2014,
         "build_yard": "Samsung Heavy Industries",
@@ -510,7 +574,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-9",
@@ -518,11 +585,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Shell",
-      "location": "West Africa",
-      "contract_start": "2024-03",
-      "contract_end": "2027-03",
-      "day_rate_kusd": 440,
+      "operator": "ExxonMobil",
+      "location": "Angola",
+      "contract_start": "2022-07",
+      "contract_end": "2028-07",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -533,19 +600,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-10",
       "contractor": "Valaris",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "TotalEnergies",
-      "location": "East Africa",
-      "contract_start": "2024-07",
-      "contract_end": "2027-07",
-      "day_rate_kusd": 430,
+      "status": "Idle",
+      "operator": null,
+      "location": "Spain",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2015,
         "build_yard": "Samsung Heavy Industries",
@@ -556,7 +626,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-12",
@@ -565,7 +638,7 @@
       "water_depth_ft": 12000,
       "status": "Idle",
       "operator": null,
-      "location": "Shipyard",
+      "location": "Spain",
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
@@ -579,7 +652,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DS-17",
@@ -587,11 +663,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Petrobras",
+      "operator": "Equinor",
       "location": "Brazil",
-      "contract_start": "2024-09",
-      "contract_end": "2027-09",
-      "day_rate_kusd": 445,
+      "contract_start": "2025-05",
+      "contract_end": "2028-01",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2019,
         "build_yard": "Hyundai Heavy Industries",
@@ -602,19 +678,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high"
     },
     {
       "name": "Valaris DPS-1",
       "contractor": "Valaris",
       "type": "Semisubmersible",
       "water_depth_ft": 8000,
-      "status": "On Contract",
-      "operator": "Equinor",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-02",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 375,
+      "status": "Idle",
+      "operator": null,
+      "location": null,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2009,
         "build_yard": "Jurong Shipyard",
@@ -625,7 +704,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Feb 17 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Classified as held for sale with intent to recycle per Feb 2026 FSR"
     },
     {
       "name": "Valaris Norway",
@@ -865,9 +948,9 @@
       "status": "On Contract",
       "operator": "Murphy Oil",
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-08",
+      "contract_start": "2025-02",
       "contract_end": "2027-08",
-      "day_rate_kusd": 430,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -878,7 +961,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "high"
     },
     {
       "name": "Noble Venturer",
@@ -886,11 +972,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Shell",
-      "location": "West Africa",
-      "contract_start": "2024-01",
-      "contract_end": "2026-10",
-      "day_rate_kusd": 420,
+      "operator": "Tullow Oil",
+      "location": "Ghana",
+      "contract_start": "2025-11",
+      "contract_end": "2026-08",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Samsung Heavy Industries",
@@ -901,7 +987,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "high"
     },
     {
       "name": "Noble Valiant",
@@ -909,11 +998,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "Idle",
-      "operator": "TotalEnergies",
-      "location": "Suriname",
-      "contract_start": "2026-10",
-      "contract_end": "2028-04",
-      "day_rate_kusd": 440,
+      "operator": null,
+      "location": "US Gulf of Mexico",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Jurong Shipyard",
@@ -924,7 +1013,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "high",
+      "data_note": "Available; TotalEnergies Suriname 16-well contract commences Q4 2026"
     },
     {
       "name": "Noble Globetrotter I",
@@ -947,19 +1040,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "6th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "low"
     },
     {
       "name": "Noble Globetrotter II",
       "contractor": "Noble",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "Shell",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-06",
-      "contract_end": "2027-06",
-      "day_rate_kusd": 420,
+      "status": "Idle",
+      "operator": null,
+      "location": null,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -970,7 +1066,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "6th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "high",
+      "data_note": "Held for sale per Aug 2025 FSR"
     },
     {
       "name": "Noble Gerry de Souza",
@@ -993,7 +1093,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "low"
     },
     {
       "name": "Noble Regina Allen",
@@ -1016,7 +1119,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "low"
     },
     {
       "name": "Noble Resolve",
@@ -1039,7 +1145,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "low"
     },
     {
       "name": "Noble Developer",
@@ -1062,7 +1171,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4000,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
+      "confidence": "low",
+      "data_note": "Likely Noble Deliverer (semi-sub reactivation); 5-well Woodside contract starts Q2-Q3 2027"
     },
     {
       "name": "West Vela",
@@ -1070,11 +1183,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "BP",
+      "operator": "Talos Energy",
       "location": "US Gulf of Mexico",
-      "contract_start": "2026-08",
-      "contract_end": "2028-02",
-      "day_rate_kusd": 460,
+      "contract_start": "2026-05",
+      "contract_end": "2026-07",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -1085,7 +1198,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Short-term: Walter Oil & Gas Feb-Apr 2026, then Talos May-Jul 2026 per Feb 2026 FSR"
     },
     {
       "name": "West Neptune",
@@ -1093,11 +1210,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Chevron",
+      "operator": "LLOG",
       "location": "US Gulf of Mexico",
-      "contract_start": "2026-09",
-      "contract_end": "2027-09",
-      "day_rate_kusd": 455,
+      "contract_start": "2025-11",
+      "contract_end": "2026-09",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -1108,7 +1225,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Capella",
@@ -1116,11 +1236,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "PETRONAS",
+      "operator": "PTTEP",
       "location": "Malaysia",
       "contract_start": "2026-04",
       "contract_end": "2027-06",
-      "day_rate_kusd": 430,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Samsung Heavy Industries",
@@ -1131,7 +1251,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Jupiter",
@@ -1141,9 +1264,9 @@
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2026-01",
-      "contract_end": "2029-01",
-      "day_rate_kusd": 450,
+      "contract_start": "2026-04",
+      "contract_end": "2029-03",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Samsung Heavy Industries",
@@ -1154,7 +1277,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Carina",
@@ -1162,11 +1288,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Shell",
-      "location": "West Africa",
-      "contract_start": "2024-06",
-      "contract_end": "2027-06",
-      "day_rate_kusd": 440,
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2022-11",
+      "contract_end": "2026-04",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Samsung Heavy Industries",
@@ -1177,19 +1303,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Tellus",
       "contractor": "Seadrill",
-      "type": "Semisubmersible",
+      "type": "Drillship",
       "water_depth_ft": 10000,
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2026-01",
-      "contract_end": "2029-01",
-      "day_rate_kusd": 455,
+      "contract_start": "2026-06",
+      "contract_end": "2029-06",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -1200,7 +1329,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Drillship (misclassified as Semisubmersible); TCV ~$539m"
     },
     {
       "name": "West Saturn",
@@ -1209,10 +1342,10 @@
       "water_depth_ft": 10000,
       "status": "On Contract",
       "operator": "Equinor",
-      "location": "Norway",
-      "contract_start": "2024-04",
-      "contract_end": "2027-04",
-      "day_rate_kusd": 390,
+      "location": "Brazil",
+      "contract_start": "2022-10",
+      "contract_end": "2027-10",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
         "build_yard": "Hyundai Heavy Industries",
@@ -1223,7 +1356,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Auriga",
@@ -1231,11 +1367,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "TotalEnergies",
-      "location": "West Africa",
-      "contract_start": "2024-02",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 375,
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2024-12",
+      "contract_end": "2027-11",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "Jurong Shipyard",
@@ -1246,7 +1382,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Polaris",
@@ -1254,11 +1393,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "BP",
-      "location": "Norway",
-      "contract_start": "2024-03",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 380,
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2025-02",
+      "contract_end": "2028-01",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2009,
         "build_yard": "Jurong Shipyard",
@@ -1269,7 +1408,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Elara",
@@ -1277,11 +1419,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Equinor",
+      "operator": "ConocoPhillips",
       "location": "Norway",
-      "contract_start": "2026-07",
-      "contract_end": "2028-01",
-      "day_rate_kusd": 385,
+      "contract_start": "2018-05",
+      "contract_end": "2027-11",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -1292,18 +1434,22 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "ConocoPhillips through Sep-26; Equinor accommodation contract Sep-26 to Nov-27"
     },
     {
       "name": "West Gemini",
       "contractor": "Seadrill",
       "type": "Semisubmersible",
       "water_depth_ft": 8000,
-      "status": "Idle",
-      "operator": null,
-      "location": null,
-      "contract_start": null,
-      "contract_end": null,
+      "status": "On Contract",
+      "operator": "Sonangol",
+      "location": "Angola",
+      "contract_start": "2026-02",
+      "contract_end": "2026-11",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2010,
@@ -1315,7 +1461,11 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Sonadrill JV — Seadrill earns management fee, not dayrate"
     },
     {
       "name": "Sevan Louisiana",
@@ -1323,11 +1473,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Talos Energy",
+      "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": "2024-05",
-      "contract_end": "2026-11",
-      "day_rate_kusd": 360,
+      "contract_start": "2026-03",
+      "contract_end": "2026-05",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
         "build_yard": "Sevan Marine / Cosco",
@@ -1338,7 +1488,10 @@
         "dp_class": "DP-3",
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
-      }
+      },
+      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "Borr Gerd",
