@@ -1,24 +1,36 @@
 {
   "updated": "2026-05-05",
+  "data_quality": {
+    "day_rates": {
+      "confidence": "low",
+      "basis": "Indicative market curve",
+      "notes": "Directional dayrate trend only. Individual points are not yet tied to contract-level URLs or a published market index methodology."
+    },
+    "asset_values": {
+      "confidence": "medium",
+      "basis": "Named transaction benchmarks",
+      "notes": "Rows are classified by transaction basis; values should not be read as fresh-cycle MODU newbuild prices unless basis explicitly says so."
+    }
+  },
   "day_rates": [
-    { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Rigzone" },
-    { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Rigzone" },
-    { "date": "2025-07", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 458, "source": "Rigzone" },
-    { "date": "2025-10", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 463, "source": "Rigzone" },
-    { "date": "2026-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 468, "source": "Rigzone" },
-    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 475, "source": "Rigzone" },
-    { "date": "2025-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 330, "source": "Rigzone" },
-    { "date": "2025-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 345, "source": "Rigzone" },
-    { "date": "2025-07", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 360, "source": "Rigzone" },
-    { "date": "2025-10", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 368, "source": "Rigzone" },
-    { "date": "2026-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 375, "source": "Rigzone" },
-    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 382, "source": "Rigzone" },
-    { "date": "2025-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 120, "source": "Rigzone" },
-    { "date": "2025-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 128, "source": "Rigzone" },
-    { "date": "2025-07", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 133, "source": "Rigzone" },
-    { "date": "2025-10", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 138, "source": "Rigzone" },
-    { "date": "2026-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 142, "source": "Rigzone" },
-    { "date": "2026-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 145, "source": "Rigzone" }
+    { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Indicative estimate" },
+    { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Indicative estimate" },
+    { "date": "2025-07", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 458, "source": "Indicative estimate" },
+    { "date": "2025-10", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 463, "source": "Indicative estimate" },
+    { "date": "2026-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 468, "source": "Indicative estimate" },
+    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 475, "source": "Indicative estimate" },
+    { "date": "2025-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 330, "source": "Indicative estimate" },
+    { "date": "2025-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 345, "source": "Indicative estimate" },
+    { "date": "2025-07", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 360, "source": "Indicative estimate" },
+    { "date": "2025-10", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 368, "source": "Indicative estimate" },
+    { "date": "2026-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 375, "source": "Indicative estimate" },
+    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 382, "source": "Indicative estimate" },
+    { "date": "2025-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 120, "source": "Indicative estimate" },
+    { "date": "2025-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 128, "source": "Indicative estimate" },
+    { "date": "2025-07", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 133, "source": "Indicative estimate" },
+    { "date": "2025-10", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 138, "source": "Indicative estimate" },
+    { "date": "2026-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 142, "source": "Indicative estimate" },
+    { "date": "2026-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 145, "source": "Indicative estimate" }
   ],
   "newbuild_prices": [
     {

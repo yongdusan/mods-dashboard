@@ -1,0 +1,62 @@
+{
+  "updated": "2026-05-05",
+  "scope": "Numeric data source audit for offshore market dashboard JSON files",
+  "summary": {
+    "high_risk": [
+      {
+        "file": "fleet.json",
+        "issue": "Rig-level dayrates, contract periods, rig specs and weekly deltas have no item-level source fields.",
+        "recommended_action": "Add source/basis/confidence per rig, starting with active dayrate and contract end dates from fleet status reports."
+      },
+      {
+        "file": "fpso.json",
+        "issue": "Market summary, contractor fleet counts/backlog and many vessel capacity fields are not tied to source URLs.",
+        "recommended_action": "Prioritize contractor backlog/fleet counts and orderbook project capacities; add source_url or confidence fields."
+      },
+      {
+        "file": "rates.json",
+        "issue": "Dayrate trend is indicative rather than contract-level verified.",
+        "recommended_action": "Replace curve points with named contract observations or label as indicative in the UI."
+      }
+    ],
+    "medium_risk": [
+      {
+        "file": "capex.json",
+        "issue": "Company CAPEX guidance has source labels, but project capacity/reserve/timeline values often rely on nested detail.source text without URLs.",
+        "recommended_action": "Add source_url for major project pages or filings; mark estimates separately."
+      },
+      {
+        "file": "earnings.json",
+        "issue": "Quarterly financial values have source labels but no source URLs; market caps and key rig specs lack item-level sources.",
+        "recommended_action": "Add filing/news-release URLs per company-period and mark market cap as snapshot/volatile."
+      },
+      {
+        "file": "fpso_earnings.json",
+        "issue": "Quarterly financial values have source labels but no source URLs; market caps and key asset capacities lack item-level sources.",
+        "recommended_action": "Add filing/news-release URLs per company-period and source key asset capacities from operator/contractor pages."
+      }
+    ],
+    "lower_risk": [
+      {
+        "file": "news.json",
+        "issue": "News items include URLs and source names.",
+        "recommended_action": "Keep using primary company releases where available; use trade press only for market color."
+      }
+    ]
+  },
+  "current_counts": {
+    "fleet.json": { "numeric_fields": 533, "source_fields": 0, "url_fields": 0 },
+    "fpso.json": { "numeric_fields": 266, "source_fields": 18, "url_fields": 0 },
+    "capex.json": { "numeric_fields": 228, "source_fields": 85, "url_fields": 0 },
+    "earnings.json": { "numeric_fields": 176, "source_fields": 21, "url_fields": 0 },
+    "fpso_earnings.json": { "numeric_fields": 247, "source_fields": 40, "url_fields": 0 },
+    "rates.json": { "numeric_fields": 22, "source_fields": 22, "url_fields": 0 },
+    "news.json": { "numeric_items_with_urls": true }
+  },
+  "source_policy": {
+    "primary": "Company filings, earnings releases, fleet status reports, contractor project pages and operator project pages.",
+    "secondary": "Offshore Energy, Offshore Magazine, World Oil, Rigzone and other trade press for transaction context or market color.",
+    "volatile_values": "Market cap, current dayrate, active fleet count and backlog should carry snapshot dates.",
+    "estimates": "Estimated or directional values must be labelled with basis and confidence, not presented as verified observations."
+  }
+}
