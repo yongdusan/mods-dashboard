@@ -3,8 +3,8 @@
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
-      "basis": "48 of 77 rigs carry FSR-derived source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
-      "notes": "Source coverage is strongest for Transocean, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
+      "basis": "49 of 78 rigs carry source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
+      "notes": "Source coverage is strongest for Transocean, Hanwha Drilling, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
     },
     "dayrates": {
       "confidence": "medium",
@@ -17,12 +17,19 @@
       "notes": "Rig specs may describe design capability rather than current contractual operating conditions."
     },
     "coverage": {
-      "total_rigs": 77,
-      "rigs_with_source_url": 48,
-      "high_confidence": 42,
+      "total_rigs": 78,
+      "rigs_with_source_url": 49,
+      "high_confidence": 43,
       "low_confidence": 6,
       "unsourced": 29
-    }
+    },
+    "listed_contractor_expansion": [
+      { "name": "COSL", "listing": "HKEX 2883 / SSE 601808", "segment": "Integrated offshore oilfield services; large jack-up and semi-sub fleet", "status": "tracked_for_future_fleet_expansion" },
+      { "name": "ADNOC Drilling", "listing": "ADX ADNOCDRILL", "segment": "Middle East onshore/offshore drilling; large jack-up fleet", "status": "tracked_for_future_fleet_expansion" },
+      { "name": "Shelf Drilling", "listing": "Oslo SHLF", "segment": "Shallow-water jack-up specialist", "status": "tracked_for_future_fleet_expansion" },
+      { "name": "Odfjell Drilling", "listing": "Oslo ODL", "segment": "Harsh-environment semi-sub specialist", "status": "tracked_for_future_fleet_expansion" },
+      { "name": "Arabian Drilling", "listing": "Tadawul 2381", "segment": "Saudi onshore/offshore drilling contractor", "status": "tracked_for_future_fleet_expansion" }
+    ]
   },
   "prev_week": {
     "total": 77,
@@ -1953,6 +1960,35 @@
         "variable_deck_load_t": 5000,
         "generation": "Premium"
       }
+    },
+    {
+      "name": "Tidal Action",
+      "contractor": "Hanwha Drilling",
+      "type": "Drillship",
+      "water_depth_ft": 11811,
+      "status": "On Contract",
+      "operator": "Petrobras",
+      "location": "Brazil / Campos Basin / Roncador",
+      "contract_start": "2025-09",
+      "contract_end": "2028-03",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2025,
+        "build_yard": "Hanwha Ocean",
+        "design": "Hanwha / DSME 7th Gen UDW Drillship",
+        "max_water_depth_ft": 11811,
+        "max_drilling_depth_ft": 39370,
+        "bop_rating_psi": 20000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": null,
+        "generation": "7th Gen"
+      },
+      "source": "Hanwha Drilling / OE Digital, Sep 2025",
+      "source_url": "https://www.oedigital.com/news/530152-hanwha-ocean-s-tidal-action-drillship-starts-maiden-job-with-petrobras",
+      "fleet_source_url": "https://www.hanwhadrilling.com/fleet/",
+      "contract_source_url": "https://www.hanwhadrilling.com/2024/09/hanwha-drilling-and-constellation-secure-a-500-million-deal-for-drillship-tidal-action/",
+      "confidence": "high",
+      "data_note": "Tidal Action commenced its maiden Petrobras contract on 2025-09-17. The contract is described as approximately $500M for 30 months plus options and is managed with Constellation Oil Services; rig-level dayrate is not disclosed."
     }
   ]
 }
