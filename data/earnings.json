@@ -126,6 +126,25 @@
             "Backlog $6.1B — 인수 완료 후 $11B+ 예상"
           ],
           "source_url": "https://www.deepwater.com/investors/financial-information/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 1081,
+          "adj_ebitda_musd": 440,
+          "ebitda_margin_pct": 40.7,
+          "utilization_pct": 87,
+          "avg_day_rate_kusd": 476,
+          "backlog_busd": 7.1,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/04/3287226/0/en/transocean-ltd-reports-first-quarter-2026-results.html",
+          "highlights": [
+            "Q1 2026 매출 $1.08B, Adj EBITDA $440M (마진 40.7%) — 분기 기준 사상 최대 수준",
+            "함대 가동률 86.7% (UDW 82.1% / HE 100%), 수익 효율 97.3% 달성",
+            "신규 계약 $1.6B 추가 확보 — 가중평균 요율 ~$410k/day",
+            "부채 $358M 조기 상환 (2028만기 8.375% 선순위 담보채); 총 유동성 $1.125B",
+            "FY2026 가이던스: 매출 $3,800~3,900M, 유동성 $1,250~1,350M",
+            "CEO Adamson: '멀티년 업사이클 초기 단계' 강조 — UDW 공급 타이트 전망 유지"
+          ]
         }
       ]
     },
@@ -254,6 +273,24 @@
             "Backlog $4.7B — 통합 완료 시 Transocean 풀로 흡수"
           ],
           "source_url": "https://www.valaris.com/investors/financial-information/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 465,
+          "adj_ebitda_musd": null,
+          "ebitda_margin_pct": null,
+          "utilization_pct": null,
+          "avg_day_rate_kusd": null,
+          "backlog_busd": null,
+          "source": "Q1 2026 Earnings (May 2026) — adj EBITDA·가동률·요율 미확인",
+          "source_url": "https://www.valaris.com/investors/",
+          "highlights": [
+            "Q1 2026 매출 $465M — 전년동기($621M) 대비 25% 감소",
+            "GAAP EBITDA $63M — Transocean 합병 관련 일회성 거래비용 반영으로 하락",
+            "Transocean 합병($5.8B, 2026.02 발표) 완료 시 통합 함대 약 62기 예상",
+            "2026년 FY 매출 97% 확정 계약 확보 (Q4 2025 가이던스 기준)",
+            "합병 완료 전 마지막 독립 실적 발표 — 2026년 하반기 합병 종결 예상"
+          ]
         }
       ]
     },
