@@ -6,8 +6,8 @@
     "medium_risk": [
       {
         "file": "fleet.json",
-        "issue": "57 of 86 rigs carry source/source_url/confidence from FSR cross-reference plus Hanwha Drilling and Odfjell Drilling source enrichment (2026-05-05). Remaining 29 rigs lack item-level source fields. fleet.json now carries data_quality coverage metadata.",
-        "recommended_action": "Extend source enrichment to remaining rigs using next FSR cycle; prioritise Valaris and Borr jack-ups on contract with no source_url."
+        "issue": "90 of 119 rigs carry source/source_url/confidence from FSR cross-reference plus Hanwha, Odfjell and Shelf Drilling source enrichment (2026-05-05). Remaining 29 rigs lack item-level source fields. fleet.json now carries data_quality coverage metadata.",
+        "recommended_action": "Extend source enrichment to remaining rigs using next FSR cycle; prioritise Valaris and Borr jack-ups on contract with no source_url. Refresh Shelf Drilling when a newer FSR is available."
       },
       {
         "file": "fpso.json",
@@ -44,7 +44,7 @@
     ]
   },
   "current_counts": {
-    "fleet.json":        { "total_rigs": 86, "rigs_with_source": 57, "rigs_with_source_url": 57, "rigs_with_confidence": 57, "high_confidence": 51, "low_confidence": 6, "unsourced": 29, "numeric_fields": 571, "data_quality": true },
+    "fleet.json":        { "total_rigs": 119, "rigs_with_source": 90, "rigs_with_source_url": 90, "rigs_with_confidence": 90, "high_confidence": 51, "medium_confidence": 33, "low_confidence": 6, "unsourced": 29, "numeric_fields": 638, "data_quality": true },
     "fpso.json":         { "contractors_with_source_url": 10, "numeric_fields": 266, "source_fields": 28, "url_fields": 8 },
     "capex.json":        { "capex_guidance_with_source_url": 30, "numeric_fields": 228, "source_fields": 85, "url_fields": 30 },
     "earnings.json":     { "quarters_with_source_url": 21, "numeric_fields": 176, "source_fields": 21, "url_fields": 21 },
