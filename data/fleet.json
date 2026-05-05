@@ -3,13 +3,13 @@
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
-      "basis": "49 of 78 rigs carry source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
-      "notes": "Source coverage is strongest for Transocean, Hanwha Drilling, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
+      "basis": "57 of 86 rigs carry source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
+      "notes": "Source coverage is strongest for Transocean, Hanwha Drilling, Odfjell Drilling, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
     },
     "dayrates": {
       "confidence": "medium",
-      "basis": "FSR-verified where source_url exists; otherwise indicative legacy value.",
-      "notes": "Use rig-level confidence before treating a day_rate_kusd value as verified. Unsourced jack-up rates should not be used as contract observations."
+      "basis": "FSR-verified where source_url exists; otherwise indicative legacy value. Implied values are marked separately and should not be treated as disclosed dayrates.",
+      "notes": "Use rig-level confidence and day_rate_basis before treating a day_rate_kusd value as verified. Unsourced jack-up rates should not be used as contract observations."
     },
     "rig_specs": {
       "confidence": "medium",
@@ -17,9 +17,9 @@
       "notes": "Rig specs may describe design capability rather than current contractual operating conditions."
     },
     "coverage": {
-      "total_rigs": 78,
-      "rigs_with_source_url": 49,
-      "high_confidence": 43,
+      "total_rigs": 86,
+      "rigs_with_source_url": 57,
+      "high_confidence": 51,
       "low_confidence": 6,
       "unsourced": 29
     },
@@ -32,9 +32,9 @@
     ]
   },
   "prev_week": {
-    "total": 77,
+    "total": 78,
     "on_contract": 67,
-    "idle_stacked": 10
+    "idle_stacked": 11
   },
   "rigs": [
     {
@@ -1971,7 +1971,8 @@
       "location": "Brazil / Campos Basin / Roncador",
       "contract_start": "2025-09",
       "contract_end": "2028-03",
-      "day_rate_kusd": null,
+      "day_rate_kusd": 548,
+      "day_rate_basis": "implied_contract_value",
       "specs": {
         "build_year": 2025,
         "build_yard": "Hanwha Ocean",
@@ -1988,7 +1989,223 @@
       "fleet_source_url": "https://www.hanwhadrilling.com/fleet/",
       "contract_source_url": "https://www.hanwhadrilling.com/2024/09/hanwha-drilling-and-constellation-secure-a-500-million-deal-for-drillship-tidal-action/",
       "confidence": "high",
-      "data_note": "Tidal Action commenced its maiden Petrobras contract on 2025-09-17. The contract is described as approximately $500M for 30 months plus options and is managed with Constellation Oil Services; rig-level dayrate is not disclosed."
+      "data_note": "Tidal Action commenced its maiden Petrobras contract on 2025-09-17. The contract is described as approximately $500M for 30 months plus options and is managed with Constellation Oil Services. Dayrate shown is an implied contract value (~$500M / 30 months), not a disclosed rig-level dayrate."
+    },
+    {
+      "name": "Deepsea Aberdeen",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 9843,
+      "status": "On Contract",
+      "operator": "Equinor",
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": "2031",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2014,
+        "build_yard": "DSME",
+        "design": "GVA7500 Enhanced",
+        "max_water_depth_ft": 9843,
+        "max_drilling_depth_ft": 35007,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 7500,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-aberdeen/",
+      "confidence": "high",
+      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Nordkapp",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 6562,
+      "status": "On Contract",
+      "operator": "Aker BP",
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": "2029",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2019,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Moss CS60E",
+        "max_water_depth_ft": 6562,
+        "max_drilling_depth_ft": 35007,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 7000,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-nordkapp/",
+      "confidence": "high",
+      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Atlantic",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 9843,
+      "status": "On Contract",
+      "operator": "Adura",
+      "location": "UK",
+      "contract_start": null,
+      "contract_end": "2030",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2009,
+        "build_yard": "DSME",
+        "design": "GVA7500 Enhanced",
+        "max_water_depth_ft": 9843,
+        "max_drilling_depth_ft": 35007,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 7500,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-atlantic/",
+      "confidence": "high",
+      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Stavanger",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 9843,
+      "status": "On Contract",
+      "operator": "Aker BP",
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": "2030",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2010,
+        "build_yard": "DSME",
+        "design": "GVA7500 Enhanced",
+        "max_water_depth_ft": 9843,
+        "max_drilling_depth_ft": 35007,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 7500,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-stavanger/",
+      "confidence": "high",
+      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Yantai",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 3937,
+      "status": "On Contract",
+      "operator": "Various",
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": "2029",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2019,
+        "build_yard": "CIMC Raffles",
+        "design": "GM4D",
+        "max_water_depth_ft": 3937,
+        "max_drilling_depth_ft": 27887,
+        "bop_rating_psi": null,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 4000,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-yantai/",
+      "confidence": "high",
+      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Bergen",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 9843,
+      "status": "On Contract",
+      "operator": "OMV",
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": "2032",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2019,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "Moss CS60E",
+        "max_water_depth_ft": 9843,
+        "max_drilling_depth_ft": 39370,
+        "bop_rating_psi": 15000,
+        "dp_class": null,
+        "variable_deck_load_t": 7000,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-bollsta/",
+      "confidence": "high",
+      "data_note": "Former Deepsea Bollsta, renamed Deepsea Bergen after Odfjell acquisition; current client and broad timeline from Odfjell Our Fleet page. Rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Hercules",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 9843,
+      "status": "Idle",
+      "operator": null,
+      "location": "Norway",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2008,
+        "build_yard": "DSME",
+        "design": "GVA7500",
+        "max_water_depth_ft": 9843,
+        "max_drilling_depth_ft": 35007,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5200,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/hercules/",
+      "confidence": "high",
+      "data_note": "Odfjell rig page lists Client None; broad timeline may include availability/optional periods rather than firm work. Rig-level dayrate is not disclosed."
+    },
+    {
+      "name": "Deepsea Mira",
+      "contractor": "Odfjell Drilling",
+      "type": "Semisubmersible",
+      "water_depth_ft": 10663,
+      "status": "Idle",
+      "operator": null,
+      "location": "Namibia",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2018,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "Moss CS60E",
+        "max_water_depth_ft": 10663,
+        "max_drilling_depth_ft": 39370,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 7000,
+        "generation": "Harsh Environment"
+      },
+      "source": "Odfjell Drilling fleet page, May 2026",
+      "source_url": "https://www.odfjelldrilling.com/rig/deepsea-mira/",
+      "confidence": "high",
+      "data_note": "Odfjell Our Fleet page shows no current client and location Namibia; broad timeline may include availability/optional periods rather than firm work. Rig-level dayrate is not disclosed."
     }
   ]
 }

@@ -809,6 +809,7 @@
       <button class="filter-btn contractor-btn" data-contractor="Seadrill">Seadrill</button>
       <button class="filter-btn contractor-btn" data-contractor="Borr Drilling">Borr Drilling</button>
       <button class="filter-btn contractor-btn" data-contractor="Hanwha Drilling">Hanwha Drilling</button>
+      <button class="filter-btn contractor-btn" data-contractor="Odfjell Drilling">Odfjell Drilling</button>
     </div>
   </div>
 
@@ -1069,7 +1070,12 @@
       if (rig.type === 'Jack-up') row.jackups += 1;
       if (rig.status === 'On Contract') row.on_contract += 1;
       if (rig.status === 'Idle' || rig.status === 'Cold Stacked') row.idle_stacked += 1;
-      if (rig.day_rate_kusd != null) row.rates.push(rig.day_rate_kusd);
+      if (rig.day_rate_kusd != null) {
+        row.rates.push({
+          value: rig.day_rate_kusd,
+          basis: rig.day_rate_basis || 'disclosed',
+        });
+      }
     });
 
     const tableData = [...byContractor.values()]
@@ -1077,12 +1083,17 @@
         ...row,
         utilization_pct: row.total ? Math.round((row.on_contract / row.total) * 1000) / 10 : 0,
         avg_day_rate_kusd: row.rates.length
-          ? Math.round(row.rates.reduce((sum, rate) => sum + rate, 0) / row.rates.length)
+          ? Math.round(row.rates.reduce((sum, rate) => sum + rate.value, 0) / row.rates.length)
           : null,
+        has_implied_dayrate: row.rates.some(rate => rate.basis === 'implied_contract_value'),
       }))
       .map(row => {
         if (row.avg_day_rate_kusd != null) {
-          return { ...row, avg_dayrate_basis: 'rig_level', avg_dayrate_period: null };
+          return {
+            ...row,
+            avg_dayrate_basis: row.has_implied_dayrate ? 'implied_contract_value' : 'rig_level',
+            avg_dayrate_period: null,
+          };
         }
         const fallback = latestCompanyDayrate(row.contractor);
         return fallback
@@ -1165,10 +1176,13 @@
             if (v == null) return '<span style="color:var(--text-muted)">—</span>';
             const data = cell.getData();
             const isFallback = data.avg_dayrate_basis === 'company_average';
+            const isImplied = data.avg_dayrate_basis === 'implied_contract_value';
             const title = isFallback
               ? `Company average from ${esc(data.avg_dayrate_period || 'latest earnings')}; rig-level dayrates undisclosed`
-              : 'Average of disclosed rig-level dayrates';
-            return `<span class="mono" title="${title}" style="color:var(--accent);font-weight:600">${v}${isFallback ? '*' : ''}</span>`;
+              : isImplied
+                ? 'Implied from disclosed contract value; rig-level dayrate undisclosed'
+                : 'Average of disclosed rig-level dayrates';
+            return `<span class="mono" title="${title}" style="color:var(--accent);font-weight:600">${v}${isFallback || isImplied ? '*' : ''}</span>`;
           },
         },
       ],
@@ -1299,8 +1313,9 @@
           hozAlign: 'right',
           formatter: cell => {
             const v = cell.getValue();
+            const isImplied = cell.getData().day_rate_basis === 'implied_contract_value';
             return v !== null && v !== undefined
-              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
+              ? `<span class="mono" title="${isImplied ? 'Implied from disclosed contract value; rig-level dayrate undisclosed' : 'Disclosed rig-level dayrate'}" style="color:var(--accent);font-weight:600">${v}${isImplied ? '*' : ''}</span>`
               : '<span style="color:var(--text-muted)">—</span>';
           },
         },
@@ -1829,7 +1844,7 @@
           </div>
           <div class="contract-row">
             <span class="contract-row-label">Dayrate</span>
-            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + ' US$k/day' : '—'}</span>
+            <span class="contract-row-value" style="color:var(--accent)">${rig.day_rate_kusd != null ? rig.day_rate_kusd + (rig.day_rate_basis === 'implied_contract_value' ? '* US$k/day' : ' US$k/day') : '—'}</span>
           </div>
           <div class="contract-row">
             <span class="contract-row-label">Period</span>
