@@ -1148,7 +1148,7 @@
           formatter: cell => {
             const v = cell.getValue();
             return v != null
-              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
+              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span><span style="color:var(--text-muted);font-size:10px;margin-left:3px">US$k/d</span>`
               : '<span style="color:var(--text-muted)">—</span>';
           },
         },
