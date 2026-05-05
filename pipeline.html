@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E&amp;P Pipeline — Offshore Market Intelligence</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Tabulator CDN -->
+  <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+  <style>
+    /* ─── CSS Variables ─── */
+    :root {
+      --bg:         #0a0e1a;
+      --surface:    #111827;
+      --surface2:   #1a2236;
+      --border:     #1e2d45;
+      --text:       #e2e8f0;
+      --text-muted: #64748b;
+      --accent:     #3b82f6;
+      --blue:       #60a5fa;
+      --green:      #10b981;
+      --yellow:     #f59e0b;
+      --orange:     #f97316;
+      --font-mono:  'JetBrains Mono', monospace;
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 16px 32px;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 100%;
+    }
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .header-title h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .header-title .subtitle {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .nav-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .nav-link:hover { text-decoration: underline; }
+    .nav-link.active {
+      color: var(--text);
+      cursor: default;
+      font-weight: 600;
+    }
+    .nav-link.active:hover { text-decoration: none; }
+
+    /* ─── Page Content ─── */
+    .content {
+      padding-top: 24px;
+    }
+
+    /* ─── Page Title ─── */
+    .page-title-section {
+      margin-bottom: 24px;
+    }
+    .page-title-section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.2px;
+      margin-bottom: 4px;
+    }
+    .page-title-section .page-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ─── KPI Grid ─── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .kpi-grid-b {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 900px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .kpi-card:hover { border-color: var(--accent); }
+    .kpi-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 8px 0 0 8px;
+    }
+    .kpi-card.accent::before  { background: var(--accent); }
+    .kpi-card.yellow::before  { background: var(--yellow); }
+    .kpi-card.blue::before    { background: var(--blue); }
+    .kpi-card.green::before   { background: var(--green); }
+
+    .kpi-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+    .kpi-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 4px;
+      font-family: var(--font-mono);
+    }
+    .kpi-card.accent .kpi-value { color: var(--accent); }
+    .kpi-card.yellow .kpi-value { color: var(--yellow); }
+    .kpi-card.blue .kpi-value   { color: var(--blue); }
+    .kpi-card.green .kpi-value  { color: var(--green); }
+    .kpi-card-b .kpi-value { font-size: 20px; }
+    .kpi-sub {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ─── Section Label ─── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+
+    /* ─── Phase × Region Matrix ─── */
+    .matrix-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: auto;
+      margin-bottom: 20px;
+    }
+    .matrix-title {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .matrix-table th {
+      padding: 10px 12px;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .matrix-table th.region-header {
+      text-align: left;
+      min-width: 150px;
+    }
+    .matrix-table td {
+      padding: 8px 12px;
+      text-align: center;
+      border-bottom: 1px solid rgba(30,45,69,0.5);
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+    .matrix-table td.region-cell {
+      text-align: left;
+      color: var(--text-muted);
+      font-size: 11px;
+      white-space: nowrap;
+      font-family: 'Inter', sans-serif;
+    }
+    .matrix-table tr:last-child td { border-bottom: none; }
+    .matrix-cell-empty {
+      color: var(--border);
+    }
+    .matrix-cell-data {
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 4px 8px;
+      transition: all 0.15s;
+      display: inline-block;
+      min-width: 32px;
+    }
+    .matrix-cell-data:hover {
+      outline: 1px solid var(--accent);
+    }
+    .matrix-cell-data.active {
+      outline: 2px solid var(--accent);
+      background: rgba(59,130,246,0.15) !important;
+    }
+
+    /* ─── Company Filter Buttons ─── */
+    .company-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+    .company-filter-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-right: 4px;
+    }
+    .filter-btn {
+      padding: 5px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0a0e1a;
+      font-weight: 600;
+    }
+
+    /* ─── Table section ─── */
+    .table-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .table-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ─── Tabulator overrides ─── */
+    #project-table {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .tabulator {
+      background: var(--surface) !important;
+      border: none !important;
+      border-radius: 8px;
+    }
+    .tabulator .tabulator-header {
+      background: var(--surface2) !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+    .tabulator .tabulator-header .tabulator-col {
+      background: var(--surface2) !important;
+      border-right: 1px solid var(--border) !important;
+      color: var(--text-muted) !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.6px !important;
+    }
+    .tabulator .tabulator-row {
+      background: var(--surface) !important;
+      border-bottom: 1px solid var(--border) !important;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .tabulator .tabulator-row:hover {
+      background: var(--surface2) !important;
+    }
+    .tabulator .tabulator-row.tabulator-row-even {
+      background: rgba(26, 34, 54, 0.4) !important;
+    }
+    .tabulator .tabulator-row.tabulator-row-even:hover {
+      background: var(--surface2) !important;
+    }
+    .tabulator .tabulator-cell {
+      border-right: 1px solid rgba(30,45,69,0.4) !important;
+      color: var(--text) !important;
+      font-size: 13px !important;
+      padding: 10px 12px !important;
+    }
+
+    /* ─── Phase Badge ─── */
+    .phase-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      font-weight: 500;
+    }
+    .phase-badge.pre-feed   { background: rgba(100,116,139,0.15); color: var(--text-muted); border: 1px solid rgba(100,116,139,0.3); }
+    .phase-badge.feed       { background: rgba(245,158,11,0.15);  color: var(--yellow);     border: 1px solid rgba(245,158,11,0.3); }
+    .phase-badge.fid        { background: rgba(249,115,22,0.15);  color: var(--orange);     border: 1px solid rgba(249,115,22,0.3); }
+    .phase-badge.execution  { background: rgba(59,130,246,0.15);  color: var(--accent);     border: 1px solid rgba(59,130,246,0.3); }
+    .phase-badge.production { background: rgba(16,185,129,0.15);  color: var(--green);      border: 1px solid rgba(16,185,129,0.3); }
+
+    /* ─── Drawer ─── */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .drawer-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .drawer {
+      position: fixed;
+      top: 0; right: 0; bottom: 0;
+      width: 420px;
+      max-width: 95vw;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      z-index: 300;
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .drawer.open {
+      transform: translateX(0);
+    }
+    .drawer-header {
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 1;
+    }
+    .drawer-close {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: color 0.15s;
+    }
+    .drawer-close:hover { color: var(--text); }
+    .drawer-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      padding-right: 40px;
+    }
+    .drawer-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .drawer-body {
+      padding: 20px;
+      flex: 1;
+    }
+    .drawer-section {
+      margin-bottom: 20px;
+    }
+    .drawer-section-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+    .drawer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .drawer-field {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .drawer-field-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .drawer-field-value {
+      font-size: 13px;
+      color: var(--text);
+      font-family: var(--font-mono);
+    }
+    .drawer-capex-big {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      margin: 8px 0;
+    }
+    .drawer-notes {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .drawer-source {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .drawer-source a {
+      color: var(--accent);
+    }
+
+    /* ─── Error Banner ─── */
+    .error-banner {
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 8px;
+      padding: 14px 18px;
+      color: var(--orange);
+      font-size: 13px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .error-banner.visible { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="header-title">
+      <h1>Offshore Market Intelligence</h1>
+      <span class="subtitle">E&amp;P Project Pipeline · IOC/NOC Upstream CAPEX · Phase Tracking</span>
+    </div>
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Overview</a>
+        <span class="nav-link active">E&amp;P Pipeline</span>
+        <a href="drilling.html" class="nav-link">Drilling / MODU</a>
+        <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
+        <a href="earnings.html" class="nav-link">Drilling Financials</a>
+        <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
+        <a href="news.html" class="nav-link">Market News</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container content">
+
+    <!-- Error Banner -->
+    <div class="error-banner" id="error-banner">
+      Failed to load data. Please ensure the local server is running and data files exist.
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title-section">
+      <h2>E&amp;P Project Pipeline</h2>
+      <span class="page-subtitle">Major offshore projects · 9 IOCs · $1B+ CAPEX · 2026-05-05</span>
+    </section>
+
+    <!-- KPI Row A -->
+    <div class="kpi-grid" id="kpi-row-a">
+      <div class="kpi-card accent">
+        <div class="kpi-label">Projects Tracked</div>
+        <div class="kpi-value" id="kpi-total">—</div>
+      </div>
+      <div class="kpi-card accent">
+        <div class="kpi-label">Total CAPEX</div>
+        <div class="kpi-value" id="kpi-capex">—</div>
+      </div>
+      <div class="kpi-card yellow">
+        <div class="kpi-label">FID Imminent</div>
+        <div class="kpi-value" id="kpi-fid">—</div>
+        <div class="kpi-sub">FEED + FID phase</div>
+      </div>
+    </div>
+
+    <!-- KPI Row B -->
+    <div class="section-label">Upstream CAPEX 2026E by Company</div>
+    <div class="kpi-grid-b" id="kpi-row-b">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- Phase × Region Matrix -->
+    <div class="matrix-wrap">
+      <div class="matrix-title">Phase × Region Matrix</div>
+      <div id="matrix-container" style="overflow-x:auto;">
+        <table class="matrix-table" id="matrix-table">
+          <!-- populated by JS -->
+        </table>
+      </div>
+    </div>
+
+    <!-- Company Filter -->
+    <div class="company-filter" id="company-filter">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- Project Table -->
+    <div class="table-header-row">
+      <div class="section-label" style="margin-bottom:0">Projects</div>
+      <div class="table-count" id="table-count">— of — projects</div>
+    </div>
+    <div id="project-table"></div>
+
+  </div><!-- .container -->
+
+  <!-- Drawer Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <button class="drawer-close" id="drawer-close">✕</button>
+      <div class="drawer-title" id="drawer-title">—</div>
+      <div class="drawer-subtitle" id="drawer-subtitle">—</div>
+    </div>
+    <div class="drawer-body" id="drawer-body">
+      <!-- populated by JS -->
+    </div>
+  </div>
+
+  <script>
+    const PHASES  = ['Pre-FEED', 'FEED', 'FID', 'Execution', 'Production'];
+    const REGIONS = [
+      'Gulf of Mexico', 'Brazil', 'Guyana', 'West Africa',
+      'North Sea/Norway', 'Middle East', 'Asia Pacific', 'East Africa', 'Other'
+    ];
+
+    let allProjects  = [];
+    let activeCell   = null; // { region, phase }
+    let activeCompany = 'All';
+    let table        = null;
+
+    // ─── Phase badge helper ─────────────────────────────────────────
+    function phaseBadge(phase) {
+      const cls = {
+        'Pre-FEED':   'pre-feed',
+        'FEED':       'feed',
+        'FID':        'fid',
+        'Execution':  'execution',
+        'Production': 'production',
+      }[phase] || 'pre-feed';
+      return `<span class="phase-badge ${cls}">${phase}</span>`;
+    }
+
+    // ─── Format CAPEX ───────────────────────────────────────────────
+    function fmtCapex(v) {
+      if (v == null) return '—';
+      return '$' + v.toFixed(1) + 'B';
+    }
+
+    // ─── Build Phase×Region Matrix ──────────────────────────────────
+    function buildMatrix(projects) {
+      // Build lookup: { region: { phase: { count, capex } } }
+      const lookup = {};
+      REGIONS.forEach(r => {
+        lookup[r] = {};
+        PHASES.forEach(p => { lookup[r][p] = { count: 0, capex: 0 }; });
+      });
+
+      projects.forEach(proj => {
+        const r = REGIONS.includes(proj.region) ? proj.region : 'Other';
+        const p = proj.phase;
+        if (lookup[r] && lookup[r][p] !== undefined) {
+          lookup[r][p].count++;
+          if (proj.capex_busd != null) lookup[r][p].capex += proj.capex_busd;
+        }
+      });
+
+      // Find max capex for heatmap
+      let maxCapex = 0;
+      REGIONS.forEach(r => PHASES.forEach(p => {
+        if (lookup[r][p].capex > maxCapex) maxCapex = lookup[r][p].capex;
+      }));
+
+      const table = document.getElementById('matrix-table');
+      let html = '<thead><tr>';
+      html += '<th class="region-header">Region \\ Phase</th>';
+      PHASES.forEach(p => { html += `<th>${p}</th>`; });
+      html += '</tr></thead><tbody>';
+
+      REGIONS.forEach(region => {
+        html += `<tr><td class="region-cell">${region}</td>`;
+        PHASES.forEach(phase => {
+          const cell = lookup[region][phase];
+          if (cell.count === 0) {
+            html += `<td><span class="matrix-cell-empty">·</span></td>`;
+          } else {
+            const intensity = maxCapex > 0 ? cell.capex / maxCapex : 0;
+            const alpha = 0.08 + intensity * 0.5;
+            const bg = `rgba(59,130,246,${alpha.toFixed(2)})`;
+            const isActive = activeCell && activeCell.region === region && activeCell.phase === phase;
+            const activeCls = isActive ? ' active' : '';
+            html += `<td>
+              <span class="matrix-cell-data${activeCls}"
+                style="background:${bg};color:var(--blue);"
+                data-region="${region}" data-phase="${phase}"
+                title="${region} / ${phase}: ${cell.count} project(s), CAPEX ${cell.capex > 0 ? '$' + cell.capex.toFixed(1) + 'B' : 'n/a'}">
+                ${cell.count}
+              </span>
+            </td>`;
+          }
+        });
+        html += '</tr>';
+      });
+
+      html += '</tbody>';
+      table.innerHTML = html;
+
+      // Attach click handlers
+      table.querySelectorAll('.matrix-cell-data').forEach(el => {
+        el.addEventListener('click', () => {
+          const region = el.dataset.region;
+          const phase  = el.dataset.phase;
+          if (activeCell && activeCell.region === region && activeCell.phase === phase) {
+            activeCell = null;
+          } else {
+            activeCell = { region, phase };
+          }
+          buildMatrix(projects);
+          applyFilters();
+        });
+      });
+    }
+
+    // ─── Build Company Filters ──────────────────────────────────────
+    function buildCompanyFilter(projects) {
+      const companies = [...new Set(projects.map(p => p.company))].sort();
+      const container = document.getElementById('company-filter');
+      let html = '<span class="company-filter-label">Company</span>';
+      html += `<button class="filter-btn${activeCompany === 'All' ? ' active' : ''}" data-company="All">All</button>`;
+      companies.forEach(c => {
+        html += `<button class="filter-btn${activeCompany === c ? ' active' : ''}" data-company="${c}">${c}</button>`;
+      });
+      container.innerHTML = html;
+      container.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeCompany = btn.dataset.company;
+          buildCompanyFilter(projects);
+          applyFilters();
+        });
+      });
+    }
+
+    // ─── Apply Filters ──────────────────────────────────────────────
+    function applyFilters() {
+      let filtered = allProjects;
+      if (activeCell) {
+        filtered = filtered.filter(p =>
+          p.region === activeCell.region && p.phase === activeCell.phase
+        );
+      }
+      if (activeCompany !== 'All') {
+        filtered = filtered.filter(p => p.company === activeCompany);
+      }
+      if (table) {
+        table.setData(filtered);
+      }
+      updateCount(filtered.length);
+    }
+
+    function updateCount(shown) {
+      document.getElementById('table-count').textContent =
+        `${shown} of ${allProjects.length} projects`;
+    }
+
+    // ─── Build Tabulator ────────────────────────────────────────────
+    function buildTable(projects) {
+      table = new Tabulator('#project-table', {
+        data: projects,
+        layout: 'fitColumns',
+        height: '480px',
+        rowClick: function(e, row) { openDrawer(row.getData()); },
+        columns: [
+          {
+            title: 'Company',
+            field: 'company',
+            width: 120,
+            formatter: (cell) => `<strong>${cell.getValue()}</strong>`,
+          },
+          {
+            title: 'Project',
+            field: 'project',
+            minWidth: 150,
+          },
+          {
+            title: 'Region',
+            field: 'region',
+            width: 140,
+          },
+          {
+            title: 'Phase',
+            field: 'phase',
+            width: 110,
+            formatter: (cell) => phaseBadge(cell.getValue()),
+            headerFilter: false,
+          },
+          {
+            title: 'CAPEX ($B)',
+            field: 'capex_busd',
+            width: 100,
+            hozAlign: 'right',
+            formatter: (cell) => {
+              const v = cell.getValue();
+              return v != null
+                ? `<span style="font-family:var(--font-mono);color:var(--accent)">${fmtCapex(v)}</span>`
+                : `<span style="color:var(--text-muted)">—</span>`;
+            },
+            sorter: 'number',
+          },
+          {
+            title: 'FID',
+            field: 'fid_date',
+            width: 90,
+            formatter: (cell) => {
+              const v = cell.getValue();
+              return `<span style="font-family:var(--font-mono);font-size:11px">${v || '—'}</span>`;
+            },
+          },
+          {
+            title: 'First Production',
+            field: 'first_production',
+            width: 120,
+            formatter: (cell) => {
+              const v = cell.getValue();
+              return `<span style="font-family:var(--font-mono);font-size:11px">${v || '—'}</span>`;
+            },
+          },
+          {
+            title: 'Type',
+            field: 'asset_type',
+            minWidth: 130,
+            formatter: (cell) => `<span style="font-size:11px;color:var(--text-muted)">${cell.getValue()}</span>`,
+          },
+        ],
+      });
+    }
+
+    // ─── Project Drawer ─────────────────────────────────────────────
+    function openDrawer(proj) {
+      document.getElementById('drawer-title').textContent = proj.project;
+      document.getElementById('drawer-subtitle').textContent =
+        `${proj.company} · ${proj.region}`;
+
+      const confColor = { high: 'var(--green)', medium: 'var(--yellow)', low: 'var(--text-muted)' }[proj.confidence] || 'var(--text-muted)';
+      const sourceHtml = proj.source_url
+        ? `<a href="${proj.source_url}" target="_blank" rel="noopener">${proj.source}</a>`
+        : proj.source || '—';
+
+      document.getElementById('drawer-body').innerHTML = `
+        <div class="drawer-section">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+            ${phaseBadge(proj.phase)}
+            <span style="font-size:11px;color:${confColor};font-family:var(--font-mono);">
+              ${proj.confidence ? proj.confidence.toUpperCase() + ' confidence' : ''}
+            </span>
+          </div>
+        </div>
+
+        <div class="drawer-section">
+          <div class="drawer-section-title">CAPEX</div>
+          <div class="drawer-capex-big">${proj.capex_busd != null ? fmtCapex(proj.capex_busd) : '—'}</div>
+        </div>
+
+        <div class="drawer-section">
+          <div class="drawer-grid">
+            <div class="drawer-field">
+              <span class="drawer-field-label">Asset Type</span>
+              <span class="drawer-field-value" style="font-family:'Inter',sans-serif;font-size:12px">${proj.asset_type || '—'}</span>
+            </div>
+            <div class="drawer-field">
+              <span class="drawer-field-label">Region</span>
+              <span class="drawer-field-value" style="font-family:'Inter',sans-serif;font-size:12px">${proj.region}</span>
+            </div>
+            <div class="drawer-field">
+              <span class="drawer-field-label">FID Date</span>
+              <span class="drawer-field-value">${proj.fid_date || '—'}</span>
+            </div>
+            <div class="drawer-field">
+              <span class="drawer-field-label">First Production</span>
+              <span class="drawer-field-value">${proj.first_production || '—'}</span>
+            </div>
+          </div>
+        </div>
+
+        ${proj.notes ? `
+        <div class="drawer-section">
+          <div class="drawer-section-title">Notes</div>
+          <div class="drawer-notes">${proj.notes}</div>
+        </div>` : ''}
+
+        <div class="drawer-section">
+          <div class="drawer-section-title">Source</div>
+          <div class="drawer-source">${sourceHtml}</div>
+        </div>
+      `;
+
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
+    }
+
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
+    }
+
+    document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+    document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
+
+    // ─── Main Init ──────────────────────────────────────────────────
+    async function init() {
+      try {
+        const [pipelineRes, capexRes] = await Promise.all([
+          fetch('data/pipeline.json'),
+          fetch('data/capex.json'),
+        ]);
+
+        if (!pipelineRes.ok || !capexRes.ok) throw new Error('Fetch failed');
+
+        const pipelineData = await pipelineRes.json();
+        const capexData    = await capexRes.json();
+
+        allProjects = pipelineData.projects || [];
+
+        // ─── KPI Row A ──────────────────────────────────────────────
+        const total = allProjects.length;
+        const capexSum = allProjects
+          .filter(p => p.capex_busd != null)
+          .reduce((s, p) => s + p.capex_busd, 0);
+        const fidCount = allProjects.filter(p => p.phase === 'FEED' || p.phase === 'FID').length;
+
+        document.getElementById('kpi-total').textContent = total;
+        document.getElementById('kpi-capex').textContent = '$' + capexSum.toFixed(1) + 'B';
+        document.getElementById('kpi-fid').textContent   = fidCount;
+
+        // ─── KPI Row B ──────────────────────────────────────────────
+        const rowB = document.getElementById('kpi-row-b');
+        const companies = capexData.companies || [];
+        rowB.innerHTML = companies.map(co => {
+          const g2026 = (co.capex_guidance || []).find(g => g.year === 2026);
+          const val = g2026
+            ? (g2026.upstream_capex_busd != null ? g2026.upstream_capex_busd : g2026.total_capex_busd)
+            : null;
+          const display = val != null ? '$' + val.toFixed(1) + 'B' : '—';
+          return `
+            <div class="kpi-card kpi-card-b blue">
+              <div class="kpi-label">${co.name}</div>
+              <div class="kpi-value">${display}</div>
+              <div class="kpi-sub">Upstream 2026E</div>
+            </div>`;
+        }).join('');
+
+        // ─── Matrix ─────────────────────────────────────────────────
+        buildMatrix(allProjects);
+
+        // ─── Company filter ─────────────────────────────────────────
+        buildCompanyFilter(allProjects);
+
+        // ─── Table ──────────────────────────────────────────────────
+        buildTable(allProjects);
+        updateCount(allProjects.length);
+
+      } catch (err) {
+        console.error(err);
+        document.getElementById('error-banner').classList.add('visible');
+        document.getElementById('error-banner').textContent =
+          'Failed to load data: ' + err.message + '. Ensure the server is running and data/pipeline.json + data/capex.json exist.';
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
