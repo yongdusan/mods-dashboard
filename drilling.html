@@ -786,7 +786,7 @@
   <div class="panel summary-section">
     <div class="panel-header">
       <span class="panel-title"><span class="dot"></span>Drilling Contractor Summary</span>
-      <span class="panel-subtitle">리그 보유 현황 · 계약 가동률 · 평균 dayrate</span>
+      <span class="panel-subtitle">리그 보유 현황 · 계약 가동률 · 평균 dayrate · * company avg</span>
     </div>
     <div id="contractor-table"></div>
   </div>
@@ -928,7 +928,7 @@
   /* ─────────────────────────────────────────
      Data loading
   ───────────────────────────────────────── */
-  let fleet, rates, capex;
+  let fleet, rates, capex, earnings;
   let allRigs = [];
   let dayRateChart = null;
   let capexChart = null;
@@ -943,10 +943,11 @@
     return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
   try {
-    [fleet, rates, capex] = await Promise.all([
+    [fleet, rates, capex, earnings] = await Promise.all([
       fetch('./data/fleet.json').then(r => r.json()),
       fetch('./data/rates.json').then(r => r.json()),
       fetch('./data/capex.json').then(r => r.json()),
+      fetch('./data/earnings.json').then(r => r.json()),
     ]);
     allRigs = fleet.rigs;
   } catch (err) {
@@ -1039,6 +1040,12 @@
   }
 
   function renderContractorSummary() {
+    function latestCompanyDayrate(contractor) {
+      const company = earnings?.companies?.find(c => c.name === contractor);
+      const latest = company?.quarters?.slice().reverse().find(q => q.avg_day_rate_kusd != null);
+      return latest ? { rate: latest.avg_day_rate_kusd, period: latest.period } : null;
+    }
+
     const byContractor = new Map();
     fleet.rigs.forEach(rig => {
       const name = rig.contractor || 'Unknown';
@@ -1072,6 +1079,20 @@
           ? Math.round(row.rates.reduce((sum, rate) => sum + rate, 0) / row.rates.length)
           : null,
       }))
+      .map(row => {
+        if (row.avg_day_rate_kusd != null) {
+          return { ...row, avg_dayrate_basis: 'rig_level', avg_dayrate_period: null };
+        }
+        const fallback = latestCompanyDayrate(row.contractor);
+        return fallback
+          ? {
+              ...row,
+              avg_day_rate_kusd: fallback.rate,
+              avg_dayrate_basis: 'company_average',
+              avg_dayrate_period: fallback.period,
+            }
+          : { ...row, avg_dayrate_basis: 'not_available', avg_dayrate_period: null };
+      })
       .sort((a, b) => b.total - a.total);
 
     if (contractorTable) {
@@ -1140,9 +1161,13 @@
           hozAlign: 'right',
           formatter: cell => {
             const v = cell.getValue();
-            return v != null
-              ? `<span class="mono" style="color:var(--accent);font-weight:600">${v}</span>`
-              : '<span style="color:var(--text-muted)">—</span>';
+            if (v == null) return '<span style="color:var(--text-muted)">—</span>';
+            const data = cell.getData();
+            const isFallback = data.avg_dayrate_basis === 'company_average';
+            const title = isFallback
+              ? `Company average from ${esc(data.avg_dayrate_period || 'latest earnings')}; rig-level dayrates undisclosed`
+              : 'Average of disclosed rig-level dayrates';
+            return `<span class="mono" title="${title}" style="color:var(--accent);font-weight:600">${v}${isFallback ? '*' : ''}</span>`;
           },
         },
       ],
