@@ -28,7 +28,7 @@
       { "name": "COSL", "listing": "HKEX 2883 / SSE 601808", "segment": "Integrated offshore oilfield services; large jack-up and semi-sub fleet", "status": "tracked_for_future_fleet_expansion" },
       { "name": "ADNOC Drilling", "listing": "ADX ADNOCDRILL", "segment": "Middle East onshore/offshore drilling; large jack-up fleet", "status": "tracked_for_future_fleet_expansion" },
       { "name": "Shelf Drilling", "listing": "Oslo SHLF", "segment": "Shallow-water jack-up specialist", "status": "tracked_for_future_fleet_expansion" },
-      { "name": "Odfjell Drilling", "listing": "Oslo ODL", "segment": "Harsh-environment semi-sub specialist", "status": "tracked_for_future_fleet_expansion" },
+      { "name": "Odfjell Drilling", "listing": "Oslo ODL", "segment": "Harsh-environment semi-sub specialist", "status": "fleet_added_2026-05-05" },
       { "name": "Arabian Drilling", "listing": "Tadawul 2381", "segment": "Saudi onshore/offshore drilling contractor", "status": "tracked_for_future_fleet_expansion" }
     ]
   },
