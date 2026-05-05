@@ -685,7 +685,7 @@
             html += `<td><span class="matrix-cell-empty">·</span></td>`;
           } else {
             const intensity = maxCapex > 0 ? cell.capex / maxCapex : 0;
-            const alpha = 0.08 + intensity * 0.5;
+            const alpha = cell.capex > 0 ? 0.08 + intensity * 0.5 : 0;
             const bg = `rgba(59,130,246,${alpha.toFixed(2)})`;
             const isActive = activeCell && activeCell.region === region && activeCell.phase === phase;
             const activeCls = isActive ? ' active' : '';
@@ -768,7 +768,6 @@
         data: projects,
         layout: 'fitColumns',
         height: '480px',
-        rowClick: function(e, row) { openDrawer(row.getData()); },
         columns: [
           {
             title: 'Company',
@@ -832,6 +831,7 @@
           },
         ],
       });
+      table.on('rowClick', function(e, row) { openDrawer(row.getData()); });
     }
 
     // ─── Project Drawer ─────────────────────────────────────────────
