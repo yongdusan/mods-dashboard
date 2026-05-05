@@ -1646,12 +1646,18 @@
     "capex_guidance": {
       "confidence": "high",
       "basis": "Company quarterly and annual earnings releases",
-      "notes": "CAPEX guidance values sourced directly from official company IR materials. source_url points to company IR landing page; specific press release may differ by period."
+      "source_url_granularity": "landing_page",
+      "notes": "CAPEX guidance values are sourced from official company IR materials, but source_url generally points to IR/results landing pages rather than exact report PDFs or release pages."
     },
     "key_projects": {
       "confidence": "medium",
       "basis": "Company IR pages, trade press (Offshore Magazine, Upstream Online, OE Digital)",
       "notes": "Project capacity and reserve estimates are operator-disclosed or trade press figures. Construction progress % is indicative."
+    },
+    "source_url_precision": {
+      "confidence": "medium",
+      "basis": "Company IR landing pages are present for capex_guidance; project-level exact URLs remain a follow-up task.",
+      "notes": "Next cleanup should add exact annual report, quarterly release or project page URLs for major CAPEX and key project figures."
     }
   }
 }

@@ -6,8 +6,8 @@
     "medium_risk": [
       {
         "file": "fleet.json",
-        "issue": "48 of 77 rigs carry source/source_url/confidence from FSR cross-reference (2026-05-05). Remaining 29 rigs lack item-level source fields.",
-        "recommended_action": "Extend source enrichment to remaining rigs using next FSR cycle; prioritise rigs on contract with no source_url."
+        "issue": "48 of 77 rigs carry source/source_url/confidence from FSR cross-reference (2026-05-05). Remaining 29 rigs lack item-level source fields. fleet.json now carries data_quality coverage metadata.",
+        "recommended_action": "Extend source enrichment to remaining rigs using next FSR cycle; prioritise Valaris and Borr jack-ups on contract with no source_url."
       },
       {
         "file": "fpso.json",
@@ -16,24 +16,24 @@
       },
       {
         "file": "capex.json",
-        "issue": "capex_guidance entries now carry source_url (IR landing pages). Key project capacity/reserve/timeline values still rely on source text without item-level URLs.",
-        "recommended_action": "Add source_url for major project pages or filings in next update cycle."
+        "issue": "capex_guidance entries now carry source_url, but most are IR landing pages. Key project capacity/reserve/timeline values still rely on source text without item-level URLs.",
+        "recommended_action": "Replace landing-page links with exact annual report, quarterly release or project page URLs in next update cycle."
       },
       {
         "file": "earnings.json",
-        "issue": "Quarterly financials now carry source_url (IR landing pages) and market_cap_snapshot_date. Specific press release URLs per quarter not yet linked.",
-        "recommended_action": "Link specific quarterly press release PDFs/pages per period when updating."
+        "issue": "Quarterly financials now carry source_url and market_cap_snapshot_date. Q1 2026 Transocean/Valaris use exact URLs; many older periods still use IR landing pages.",
+        "recommended_action": "Replace landing-page links with exact quarterly press release, SEC filing or PDF URLs period by period."
       },
       {
         "file": "fpso_earnings.json",
-        "issue": "Quarterly financials now carry source_url (IR landing pages) and market_cap_snapshot_date. Non-calendar fiscal years (MODEC, Yinson) require careful period mapping.",
+        "issue": "Quarterly financials now carry source_url and market_cap_snapshot_date, but most URLs are IR landing pages. Non-calendar fiscal years (MODEC, Yinson) require careful period mapping.",
         "recommended_action": "Link specific earnings releases per period; verify MODEC/Yinson fiscal year alignment."
       }
     ],
     "lower_risk": [
       {
         "file": "rates.json",
-        "issue": "named_observations added (9 FSR-verified contracts with source_url). Indicative curve confidence upgraded to medium. Jack-up tier still lacks contract-level anchors.",
+        "issue": "named_observations added (9 FSR-verified contracts with source_url). Drillship/semi-sub curve is medium confidence, but jack-up tier remains low confidence because it lacks contract-level anchors.",
         "recommended_action": "Add jack-up named observations from Borr / Valaris jack-up FSR in next cycle."
       },
       {
@@ -44,12 +44,12 @@
     ]
   },
   "current_counts": {
-    "fleet.json":        { "total_rigs": 77, "rigs_with_source": 48, "rigs_with_source_url": 48, "rigs_with_confidence": 48, "numeric_fields": 533 },
+    "fleet.json":        { "total_rigs": 77, "rigs_with_source": 48, "rigs_with_source_url": 48, "rigs_with_confidence": 48, "high_confidence": 42, "low_confidence": 6, "unsourced": 29, "numeric_fields": 533, "data_quality": true },
     "fpso.json":         { "contractors_with_source_url": 10, "numeric_fields": 266, "source_fields": 28, "url_fields": 8 },
     "capex.json":        { "capex_guidance_with_source_url": 30, "numeric_fields": 228, "source_fields": 85, "url_fields": 30 },
     "earnings.json":     { "quarters_with_source_url": 21, "numeric_fields": 176, "source_fields": 21, "url_fields": 21 },
     "fpso_earnings.json":{ "quarters_with_source_url": 40, "numeric_fields": 247, "source_fields": 40, "url_fields": 40 },
-    "rates.json":        { "named_observations": 9, "named_obs_with_source_url": 9, "numeric_fields": 22, "source_fields": 22, "url_fields": 9 },
+    "rates.json":        { "named_observations": 9, "named_obs_with_source_url": 9, "jack_up_named_observations": 0, "numeric_fields": 22, "source_fields": 22, "url_fields": 9 },
     "news.json":         { "numeric_items_with_urls": true }
   },
   "source_policy": {

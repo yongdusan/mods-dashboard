@@ -1,5 +1,29 @@
 {
   "updated": "2026-05-05",
+  "data_quality": {
+    "contract_data": {
+      "confidence": "medium",
+      "basis": "48 of 77 rigs carry FSR-derived source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
+      "notes": "Source coverage is strongest for Transocean, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
+    },
+    "dayrates": {
+      "confidence": "medium",
+      "basis": "FSR-verified where source_url exists; otherwise indicative legacy value.",
+      "notes": "Use rig-level confidence before treating a day_rate_kusd value as verified. Unsourced jack-up rates should not be used as contract observations."
+    },
+    "rig_specs": {
+      "confidence": "medium",
+      "basis": "Company fleet status reports and public rig specification sheets where available.",
+      "notes": "Rig specs may describe design capability rather than current contractual operating conditions."
+    },
+    "coverage": {
+      "total_rigs": 77,
+      "rigs_with_source_url": 48,
+      "high_confidence": 42,
+      "low_confidence": 6,
+      "unsourced": 29
+    }
+  },
   "prev_week": {
     "total": 77,
     "on_contract": 67,

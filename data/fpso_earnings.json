@@ -999,7 +999,8 @@
     "quarterly_financials": {
       "confidence": "high",
       "basis": "Company earnings press releases and annual/half-year reports",
-      "notes": "Revenue, EBITDA from official releases. source_url points to IR landing page; specific quarterly release linked within. MODEC and Yinson report on non-calendar fiscal years."
+      "source_url_granularity": "landing_page",
+      "notes": "Revenue, EBITDA from official releases. Most source_url values currently point to IR landing pages; exact quarterly release/PDF URLs should be added period by period. MODEC and Yinson report on non-calendar fiscal years."
     },
     "market_cap": {
       "confidence": "low",
@@ -1010,6 +1011,11 @@
       "confidence": "medium",
       "basis": "Operator/contractor project pages and trade press",
       "notes": "FPSO oil/gas capacity from public project pages. Values may be nameplate vs. actual production capacity."
+    },
+    "source_url_precision": {
+      "confidence": "medium",
+      "basis": "IR landing pages for historical periods; exact releases still needed.",
+      "notes": "Next cleanup should replace landing-page URLs with specific earnings releases, presentations or annual reports, especially for SBM, BW Offshore, Golar and Yinson."
     }
   }
 }

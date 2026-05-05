@@ -830,7 +830,7 @@
           <canvas id="dayRateChart"></canvas>
         </div>
         <div class="obs-table-wrap" id="named-obs-wrap" style="display:none">
-          <div class="obs-table-label">FSR 검증 계약 기준점 (Transocean · Valaris Feb/Mar 2026 FSR)</div>
+          <div class="obs-table-label">FSR 검증 계약 기준점 (Drillship/Semi-sub 중심 · Jack-up 관측치 미반영)</div>
           <table class="obs-table" id="named-obs-table">
             <thead>
               <tr>
@@ -1933,7 +1933,7 @@
 
     function badge(conf) {
       if (!conf) return '';
-      const cls = conf === 'low' ? 'confidence-low' : conf === 'medium' ? 'confidence-medium' : '';
+      const cls = conf === 'low' ? 'confidence-low' : conf === 'medium' || conf === 'mixed' ? 'confidence-medium' : '';
       const icon = conf === 'low' ? '⚠' : 'ℹ';
       return `<span class="confidence-badge ${cls}">${icon} ${conf} confidence</span>`;
     }

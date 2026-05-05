@@ -705,7 +705,8 @@
     "quarterly_financials": {
       "confidence": "high",
       "basis": "Company earnings press releases / SEC Form 8-K filings",
-      "notes": "Revenue, EBITDA, utilization from official press releases. source_url points to company IR landing page; specific quarterly press release linked within."
+      "source_url_granularity": "mixed",
+      "notes": "Revenue, EBITDA, utilization from official press releases. Some source_url values point to exact releases/SEC exhibits, while older periods still point to company IR landing pages."
     },
     "market_cap": {
       "confidence": "low",
@@ -716,6 +717,11 @@
       "confidence": "medium",
       "basis": "Fleet Status Reports and company project pages",
       "notes": "Key rig specs (water_depth_ft, status) from FSR cross-reference."
+    },
+    "source_url_precision": {
+      "confidence": "medium",
+      "basis": "Exact URL for Q1 2026 Transocean and Valaris; IR landing pages for many historical quarters.",
+      "notes": "Next cleanup should replace landing-page URLs with exact press release, SEC filing or PDF URLs period by period."
     }
   }
 }

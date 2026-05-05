@@ -2,9 +2,23 @@
   "updated": "2026-05-05",
   "data_quality": {
     "day_rates": {
-      "confidence": "medium",
-      "basis": "Indicative market curve anchored on FSR-verified contracts",
-      "notes": "Directional trend only; not a published market index. 2026-Q2 values are calibrated against Transocean Feb 2026 FSR contract data. See named_observations for contract-level benchmarks."
+      "confidence": "mixed",
+      "basis": "Indicative market curve anchored on FSR-verified contracts where available",
+      "notes": "Directional trend only; not a published market index. Drillship and semi-sub 2026-Q2 values are calibrated against FSR observations. Jack-up curve remains unanchored and should be treated as low confidence."
+    },
+    "day_rates_by_type": {
+      "drillship": {
+        "confidence": "medium",
+        "basis": "FSR-anchored indicative curve with named drillship observations"
+      },
+      "semisubmersible": {
+        "confidence": "medium",
+        "basis": "FSR-anchored indicative curve with named semi-sub observations"
+      },
+      "jack_up": {
+        "confidence": "low",
+        "basis": "Indicative curve only; no jack-up named_observations yet"
+      }
     },
     "asset_values": {
       "confidence": "medium",
