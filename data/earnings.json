@@ -277,19 +277,20 @@
         {
           "period": "Q1 2026",
           "revenue_musd": 465,
-          "adj_ebitda_musd": null,
-          "ebitda_margin_pct": null,
-          "utilization_pct": null,
-          "avg_day_rate_kusd": null,
-          "backlog_busd": null,
-          "source": "Q1 2026 Earnings (May 2026) — adj EBITDA·가동률·요율 미확인",
-          "source_url": "https://www.valaris.com/investors/",
+          "adj_ebitda_musd": 67,
+          "ebitda_margin_pct": 14.4,
+          "utilization_pct": 49,
+          "avg_day_rate_kusd": 436,
+          "backlog_busd": 4.9,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/314808/000031480826000097/a03312026ex991pressrelease.htm",
           "highlights": [
-            "Q1 2026 매출 $465M — 전년동기($621M) 대비 25% 감소",
-            "GAAP EBITDA $63M — Transocean 합병 관련 일회성 거래비용 반영으로 하락",
-            "Transocean 합병($5.8B, 2026.02 발표) 완료 시 통합 함대 약 62기 예상",
-            "2026년 FY 매출 97% 확정 계약 확보 (Q4 2025 가이던스 기준)",
-            "합병 완료 전 마지막 독립 실적 발표 — 2026년 하반기 합병 종결 예상"
+            "Q1 2026 매출 $465M, Adj EBITDA $67M (마진 14.4%) — 합병 관련 일회성 비용 $14M 제외 기준",
+            "Active Fleet Drillship 가동률 49% — VALARIS DS-17 계약 준비 기간 중 수익 미인식 영향",
+            "Drillship 평균 요율 $436k/day (전분기 $434k 대비 소폭 개선)",
+            "수익 효율 98% 달성 — 안정적 운영 기조 유지",
+            "백로그 $4.9B (Valaris 단독, 2026.05.04 기준) — Q4 2025($4.7B) 대비 $200M 증가",
+            "Transocean 합병($5.8B) 발표(2026.02) 후 향후 어닝스 콜 미개최 및 FY 가이던스 업데이트 중단"
           ]
         }
       ]
