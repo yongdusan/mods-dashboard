@@ -55,7 +55,7 @@
       "id": "exxonmobil-yellowtail",
       "company": "ExxonMobil",
       "project": "Yellowtail",
-      "region": "Brazil",
+      "region": "Guyana",
       "asset_type": "Deepwater Oil",
       "phase": "Execution",
       "capex_busd": 10.0,
@@ -70,7 +70,7 @@
       "id": "exxonmobil-hammerhead",
       "company": "ExxonMobil",
       "project": "Hammerhead",
-      "region": "Brazil",
+      "region": "Guyana",
       "asset_type": "Deepwater Oil",
       "phase": "FEED",
       "capex_busd": 7.0,
@@ -303,7 +303,7 @@
       "first_production": null,
       "source": "TotalEnergies Annual Report 2024",
       "source_url": null,
-      "confidence": "high",
+      "confidence": "medium",
       "notes": "Area 1, Cabo Delgado Province. FID taken 2019. Force majeure declared April 2021 due to security situation; restart contingent on stabilisation. ~13 Mtpa LNG at full build-out."
     }
   ]
