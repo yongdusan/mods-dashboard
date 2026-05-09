@@ -1,8 +1,63 @@
 {
-  "updated": "2026-05-04",
+  "updated": "2026-05-09",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 28,
+      "date": "2026-05-07",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "BW Offshore Extends FPSO BW Catcher Contract Through 2030",
+      "summary": "BW Offshore amended the FPSO BW Catcher contract with the Catcher field partners, setting a defined end-of-term framework to December 31, 2030 plus or minus six months. The revised terms are expected to add about $490 million of firm operating cash-flow backlog and improve redeployment visibility for the high-specification harsh-environment FPSO.",
+      "companies": ["BW Offshore"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/07/3290360/0/en/bw-offshore-bw-catcher-contract-extension.html"
+    },
+    {
+      "id": 27,
+      "date": "2026-05-07",
+      "sector": "FPSO/FLNG",
+      "category": "Earnings",
+      "title": "SBM Offshore Q1 2026 Revenue Jumps to $3.5B; Guidance Raised",
+      "summary": "SBM Offshore reported year-to-date Directional revenue of $3.5 billion for Q1 2026, raised full-year Directional revenue guidance to above $6.9 billion and maintained baseline Directional EBITDA guidance around $1.8 billion. The update also highlighted the ExxonMobil Guyana Longtail FEED award and two new Fast4Ward MPF hull orders.",
+      "companies": ["SBM Offshore", "ExxonMobil"],
+      "source": "SBM Offshore",
+      "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
+    },
+    {
+      "id": 26,
+      "date": "2026-05-05",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Weatherford Wins Deepwater MPD Work with Noble in Guyana and Nigeria",
+      "summary": "Weatherford secured multiple managed pressure drilling contracts and a global aftermarket agreement with Noble. The awards include two deepwater MPD systems for Noble's Guyana operations, an MPD system upgrade for Nigeria and fleet-wide aftermarket support for Noble's MPD systems.",
+      "companies": ["Weatherford", "Noble"],
+      "source": "World Oil",
+      "url": "https://www.worldoil.com/news/2026/5/5/weatherford-wins-mpd-contracts-with-noble-for-deepwater-drilling-operations/"
+    },
+    {
+      "id": 25,
+      "date": "2026-05-04",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Clarkson Forecasts 2026 Offshore Oil & Gas CAPEX Down 24% to $85B",
+      "summary": "Clarkson Research expects global offshore oil and gas project CAPEX to fall to about $85 billion in 2026 from $111.9 billion of 2025 FIDs, with roughly $34 billion already committed. The forecast frames a more selective offshore investment environment despite continued deepwater activity in Brazil, Guyana, West Africa and the North Sea.",
+      "companies": ["Clarkson Research"],
+      "source": "Oil & Gas Journal",
+      "url": "https://www.ogj.com/general-interest/news/55375196/otc-2026-clarkson-forecasts-24-decline-in-offshore-oil-gas-capex"
+    },
+    {
+      "id": 24,
+      "date": "2026-05-04",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Equinor Commits $1.6B to Drilling and Well Services on the NCS",
+      "summary": "Equinor extended drilling and well services agreements worth about NOK 17 billion, or $1.6 billion, on the Norwegian Continental Shelf. The awards support fixed installations and mobile rigs, with new wells expected to become increasingly important for sustaining North Sea production through 2035.",
+      "companies": ["Equinor", "Baker Hughes", "Halliburton", "SLB"],
+      "source": "World Oil",
+      "url": "https://www.worldoil.com/news/2026/5/4/equinor-commits-1-6-billion-to-drilling-activity-on-norwegian-continental-shelf/"
+    },
     {
       "id": 1,
       "date": "2026-04-29",
@@ -46,6 +101,17 @@
       "companies": ["Transocean"],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/04/14/3273137/0/en/Transocean-Ltd-Announces-425-Million-Additional-Backlog-for-Ultra-Deepwater-Drillship.html"
+    },
+    {
+      "id": 29,
+      "date": "2026-04-14",
+      "sector": "E&P/CAPEX",
+      "category": "Project",
+      "title": "Petrobras Takes FID on SEAP I, Advancing $12B Sergipe Deepwater Development",
+      "summary": "Petrobras approved the final investment decision for SEAP I in Brazil's Sergipe-Alagoas basin, following SEAP II approval in late 2025. The broader Sergipe Deepwater development involves more than R$60 billion of investment, two FPSOs expected from SBM Offshore under a BOT model, 32 wells and subsea infrastructure tied to a new gas export route.",
+      "companies": ["Petrobras", "SBM Offshore"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/petrobras-bringing-12-billion-oil-gas-project-pair-to-life-with-sbm-offshore-on-fpso-duty-for-both/"
     },
     {
       "id": 5,

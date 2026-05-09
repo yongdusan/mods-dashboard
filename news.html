@@ -248,6 +248,7 @@
     .cat-MA       { background: rgba(88,166,255,0.15); color: #58a6ff; }
     .cat-Earnings { background: rgba(210,153,34,0.15); color: #d29922; }
     .cat-Fleet    { background: rgba(240,136,62,0.15); color: #f0883e; }
+    .cat-Project  { background: rgba(163,113,247,0.15); color: #a371f7; }
     .cat-Outlook  { background: rgba(0,212,170,0.15);  color: #00d4aa; }
     .sector-badge {
       display: inline-block;
@@ -268,6 +269,11 @@
       border-color: rgba(0,212,170,0.35);
       color: var(--accent);
       background: rgba(0,212,170,0.08);
+    }
+    .sector-EPCAPEX {
+      border-color: rgba(210,153,34,0.38);
+      color: var(--yellow);
+      background: rgba(210,153,34,0.08);
     }
 
     /* Title */
@@ -458,12 +464,14 @@
 
   /* ─── Category badge CSS class ─── */
   function catClass(category) {
-    const map = { 'Contract': 'cat-Contract', 'M&A': 'cat-MA', 'Earnings': 'cat-Earnings', 'Fleet': 'cat-Fleet', 'Outlook': 'cat-Outlook' };
+    const map = { 'Contract': 'cat-Contract', 'M&A': 'cat-MA', 'Earnings': 'cat-Earnings', 'Fleet': 'cat-Fleet', 'Project': 'cat-Project', 'Outlook': 'cat-Outlook' };
     return map[category] || 'cat-Outlook';
   }
 
   function sectorClass(sector) {
-    return sector === 'FPSO/FLNG' ? 'sector-FPSOFLNG' : 'sector-Drilling';
+    if (sector === 'FPSO/FLNG') return 'sector-FPSOFLNG';
+    if (sector === 'E&P/CAPEX') return 'sector-EPCAPEX';
+    return 'sector-Drilling';
   }
 
   /* ─── Render Cards ─── */
@@ -590,7 +598,7 @@
   }
 
   function renderCategoryFilters() {
-    const categories = ['All', 'Contract', 'M&A', 'Earnings', 'Fleet', 'Outlook'];
+    const categories = ['All', 'Contract', 'Project', 'M&A', 'Earnings', 'Fleet', 'Outlook'];
     const row = buildFilterButtons('category-filter-row', categories, currentCategory, 'category', countByCategory);
     row.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -602,7 +610,7 @@
   }
 
   function renderSectorFilters() {
-    const sectors = ['All', 'Drilling', 'FPSO/FLNG'];
+    const sectors = ['All', 'Drilling', 'FPSO/FLNG', 'E&P/CAPEX'];
     const row = buildFilterButtons('sector-filter-row', sectors, currentSector, 'sector', countBySector);
     row.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
