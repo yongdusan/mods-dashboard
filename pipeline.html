@@ -607,17 +607,19 @@
     <!-- KPI Row A -->
     <div class="kpi-grid" id="kpi-row-a">
       <div class="kpi-card accent">
-        <div class="kpi-label">Projects Tracked</div>
+        <div class="kpi-label">Active Pipeline</div>
         <div class="kpi-value" id="kpi-total">—</div>
+        <div class="kpi-sub" id="kpi-total-sub">projects excl. Production</div>
       </div>
-      <div class="kpi-card accent">
-        <div class="kpi-label">Total CAPEX</div>
+      <div class="kpi-card blue">
+        <div class="kpi-label">EPC Demand Pipeline</div>
         <div class="kpi-value" id="kpi-capex">—</div>
+        <div class="kpi-sub" id="kpi-capex-sub">— Sanctioned · — Pre-FID</div>
       </div>
       <div class="kpi-card yellow">
         <div class="kpi-label">FID Imminent</div>
         <div class="kpi-value" id="kpi-fid">—</div>
-        <div class="kpi-sub">FEED + FID phase</div>
+        <div class="kpi-sub">FEED phase · FID targeted</div>
       </div>
     </div>
 
@@ -730,19 +732,26 @@
         html += `<tr><td class="region-cell">${region}</td>`;
         PHASES.forEach(phase => {
           const cell = lookup[region][phase];
+          const isProd = phase === 'Production';
           if (cell.count === 0) {
             html += `<td><span class="matrix-cell-empty">·</span></td>`;
           } else {
             const intensity = maxCapex > 0 ? cell.capex / maxCapex : 0;
             const alpha = cell.capex > 0 ? 0.08 + intensity * 0.5 : 0;
-            const bg = `rgba(59,130,246,${alpha.toFixed(2)})`;
+            // Production: muted grey tint to signal "already complete"
+            const bg = isProd
+              ? `rgba(120,120,120,${(alpha * 0.6).toFixed(2)})`
+              : `rgba(59,130,246,${alpha.toFixed(2)})`;
+            const color = isProd ? 'var(--text-muted)' : 'var(--blue)';
             const isActive = activeCell && activeCell.region === region && activeCell.phase === phase;
             const activeCls = isActive ? ' active' : '';
+            const capexLabel = cell.capex > 0 ? '$' + cell.capex.toFixed(1) + 'B' : 'n/a';
+            const prodNote = isProd ? ' · already producing' : '';
             html += `<td>
               <span class="matrix-cell-data${activeCls}"
-                style="background:${bg};color:var(--blue);"
+                style="background:${bg};color:${color};"
                 data-region="${region}" data-phase="${phase}"
-                title="${region} / ${phase}: ${cell.count} project(s), CAPEX ${cell.capex > 0 ? '$' + cell.capex.toFixed(1) + 'B' : 'n/a'}">
+                title="${region} / ${phase}: ${cell.count} project(s), CAPEX ${capexLabel}${prodNote}">
                 ${cell.count}
               </span>
             </td>`;
@@ -977,14 +986,26 @@
         `;
 
         // ─── KPI Row A ──────────────────────────────────────────────
-        const total = allProjects.length;
-        const capexSum = allProjects
-          .filter(p => p.capex_busd != null)
+        const forwardProjects = allProjects.filter(p => p.phase !== 'Production');
+        const total = forwardProjects.length;
+        const prodCount = allProjects.length - total;
+
+        const capexExec = allProjects
+          .filter(p => p.phase === 'Execution' && p.capex_busd != null)
           .reduce((s, p) => s + p.capex_busd, 0);
+        const capexFeed = allProjects
+          .filter(p => (p.phase === 'FEED' || p.phase === 'FID') && p.capex_busd != null)
+          .reduce((s, p) => s + p.capex_busd, 0);
+        const capexForward = capexExec + capexFeed;
+
         const fidCount = allProjects.filter(p => p.phase === 'FEED' || p.phase === 'FID').length;
 
         document.getElementById('kpi-total').textContent = total;
-        document.getElementById('kpi-capex').textContent = '$' + capexSum.toFixed(1) + 'B';
+        document.getElementById('kpi-total-sub').textContent =
+          'projects · ' + prodCount + ' in Production (excl.)';
+        document.getElementById('kpi-capex').textContent = '$' + Math.round(capexForward) + 'B';
+        document.getElementById('kpi-capex-sub').textContent =
+          '$' + Math.round(capexExec) + 'B Sanctioned · $' + Math.round(capexFeed) + 'B Pre-FID';
         document.getElementById('kpi-fid').textContent   = fidCount;
 
         // ─── KPI Row B ──────────────────────────────────────────────
