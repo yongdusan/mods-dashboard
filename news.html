@@ -387,6 +387,31 @@
       font-size: 12px;
       color: var(--accent);
     }
+    /* Shared header alignment */
+    .header {
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) minmax(0, auto);
+      align-items: start;
+      gap: 12px 24px;
+    }
+    .header-right,
+    .header-nav { justify-self: end; }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .header { grid-template-columns: 1fr; }
+      .header-right,
+      .header-nav {
+        justify-self: start;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
   </style>
 </head>
 <body>

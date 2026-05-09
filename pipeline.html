@@ -518,11 +518,43 @@
       display: none;
     }
     .error-banner.visible { display: block; }
+    /* Shared header alignment */
+    .header {
+      position: static;
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) minmax(0, auto);
+      align-items: start;
+      gap: 12px 24px;
+      max-width: 1440px;
+      margin: 0 auto 28px;
+      padding: 24px 32px 20px;
+    }
+    .header-right,
+    .header-nav { justify-self: end; }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .header-title h1 { font-size: 22px; }
+    .header-title .subtitle { font-size: 12px; }
+    .content { padding-top: 0; }
+    @media (max-width: 900px) {
+      .header { grid-template-columns: 1fr; }
+      .header-right,
+      .header-nav {
+        justify-self: start;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Sticky Header -->
+  <!-- Header -->
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
