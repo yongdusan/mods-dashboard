@@ -60,6 +60,7 @@
       color: var(--text-muted);
       font-size: 12px;
       font-family: var(--font-mono);
+      white-space: nowrap;
     }
     .header-nav {
       display: flex;
@@ -125,7 +126,10 @@
       color: var(--text-muted);
       font-size: 13px;
       line-height: 1.65;
-      max-width: 920px;
+      max-width: 980px;
+    }
+    .hero-copy p span {
+      display: block;
     }
     .sector-grid {
       display: grid;
@@ -307,6 +311,8 @@
         align-items: flex-start;
         justify-content: flex-start;
       }
+      .subtitle { white-space: normal; }
+      .hero-copy p span { display: inline; }
     }
   </style>
 </head>
@@ -315,7 +321,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">E&amp;P pipeline, deepwater drilling, floating production, financials and market news</span>
+      <span class="subtitle">Deepwater offshore market dashboard</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
@@ -418,8 +424,8 @@
         <div class="hero-copy">
           <h2>Offshore Market Overview</h2>
           <p>
-            Offshore drilling과 FPSO/FLNG 시장을 함께 보는 출발점입니다.
-            E&amp;P 프로젝트/CAPEX, UDW·Deepwater rig, FPSO/FLNG 자산, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
+            <span>Deepwater drilling, FPSO/FLNG, E&amp;P CAPEX를 함께 보는 출발점입니다.</span>
+            <span>각 섹터의 자산, 실적, 프로젝트와 뉴스 흐름을 세부 대시보드로 연결합니다.</span>
           </p>
         </div>
         <div class="sector-grid">
