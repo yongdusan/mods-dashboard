@@ -3,8 +3,8 @@
 
   "data_quality": {
     "confidence": "medium",
-    "basis": "Company filings, earnings releases and project announcements",
-    "notes": "Phase and CAPEX figures reflect latest disclosed status; subject to FID revision. Projects marked low confidence lack disclosed CAPEX or firm FID timeline."
+    "basis": "Company filings, earnings releases and press releases (2024–2026)",
+    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-09. Individual project sources and vintages shown in the 'source' field per project. Projects that reached Production since last update: Ballymore (Apr 2025), Whale (Jan 2025), Penguins (Feb 2025), Tortue FLNG (Jan 2025). New FIDs since last update: Bonga North (Dec 2024), Suriname Block 58 (Oct 2024), Kaskida (Jul 2024), Hammerhead (Sep 2025). Mozambique LNG force majeure lifted Nov 2025; construction restarted Jan 2026. Brulpadda/Luiperd removed: TotalEnergies exited Block 11B/12B late 2024."
   },
   "projects": [
     {
@@ -28,14 +28,14 @@
       "project": "Whale",
       "region": "Gulf of Mexico",
       "asset_type": "Deepwater Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 8.0,
       "fid_date": "2022",
-      "first_production": "2026",
-      "source": "Shell Annual Report 2022",
+      "first_production": "2025",
+      "source": "Shell Q1 2025 Results (May 2025)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "FPSO; ~100k boe/d. Shell 60% (op), Chevron 40%."
+      "confidence": "high",
+      "notes": "Alaminos Canyon Block 773, ~2,620m WD. First oil January 9, 2025 — ahead of schedule. Semi-sub TLP; ~100k boe/d peak. Shell 60% (op), Chevron 40%."
     },
     {
       "id": "bp-mad-dog-ph2",
@@ -58,14 +58,14 @@
       "project": "Ballymore",
       "region": "Gulf of Mexico",
       "asset_type": "Deepwater Oil",
-      "phase": "FEED",
-      "capex_busd": 7.0,
-      "fid_date": null,
-      "first_production": "2030",
-      "source": "Chevron 2024 Investor Day",
+      "phase": "Production",
+      "capex_busd": 1.6,
+      "fid_date": "2022-05",
+      "first_production": "2025",
+      "source": "Chevron Q1 2025 Earnings (Apr 2025)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Garden Banks area, ~2,000m WD. Chevron 100% (op). FPSO concept; ~75k bbl/d. CAPEX estimate indicative; FID timing subject to oil price and cost environment."
+      "confidence": "high",
+      "notes": "Garden Banks area, ~2,000m WD. First oil achieved April 2025. Subsea tieback to Blind Faith semi-FPS (~75k bbl/d plateau). Chevron 60% (op), TotalEnergies 40%. CAPEX ~$1.6B (tieback, not FPSO)."
     },
     {
       "id": "bp-kaskida",
@@ -73,14 +73,14 @@
       "project": "Kaskida",
       "region": "Gulf of Mexico",
       "asset_type": "Deepwater Oil",
-      "phase": "FEED",
+      "phase": "Execution",
       "capex_busd": 5.0,
-      "fid_date": null,
+      "fid_date": "2024-07",
       "first_production": "2029",
-      "source": "bp Annual Report 2024",
+      "source": "bp Q2 2024 Earnings (Jul 2024)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Keathley Canyon, ~1,800m WD. bp 100% (op). Submitted development plan to BOEM 2024. ~$4–5B CAPEX indicative; FID subject to regulatory approvals."
+      "confidence": "high",
+      "notes": "Keathley Canyon, ~1,800m WD. bp 100% (op). FID taken July 2024. CAPEX ~$5B. First production targeted 2029. Semi-sub hub concept."
     },
     {
       "id": "exxonmobil-yellowtail",
@@ -88,14 +88,14 @@
       "project": "Yellowtail",
       "region": "Guyana",
       "asset_type": "Deepwater Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 10.0,
       "fid_date": "2022-04",
       "first_production": "2025",
-      "source": "ExxonMobil Q2 2022 Earnings",
-      "source_url": null,
+      "source": "ExxonMobil Press Release (Aug 2025)",
+      "source_url": "https://corporate.exxonmobil.com/news/news-releases/2025/0808_exxonmobil-guyana-begins-production-at-fourth-offshore-guyana-project",
       "confidence": "high",
-      "notes": "Offshore Guyana (Stabroek Block). One Guyana FPSO; ~250k bbl/d. ExxonMobil 45% (op), Hess 30%, CNOOC 25%."
+      "notes": "Offshore Guyana (Stabroek Block). One Guyana FPSO; ~250k bbl/d peak. First oil August 8, 2025 — 4 months ahead of schedule. ExxonMobil 45% (op), Hess 30%, CNOOC 25%. Brings total Stabroek capacity to ~900k bopd."
     },
     {
       "id": "exxonmobil-hammerhead",
@@ -103,14 +103,14 @@
       "project": "Hammerhead",
       "region": "Guyana",
       "asset_type": "Deepwater Oil",
-      "phase": "FEED",
-      "capex_busd": 7.0,
-      "fid_date": null,
+      "phase": "Execution",
+      "capex_busd": 6.8,
+      "fid_date": "2025-09",
       "first_production": "2029",
-      "source": "ExxonMobil 2024 Investor Day",
+      "source": "ExxonMobil Q3 2025 Earnings (Oct 2025)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Offshore Guyana (Stabroek Block). 4th development FPSO. CAPEX estimate indicative."
+      "confidence": "high",
+      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO development. FID taken September 2025. CAPEX ~$6.8B confirmed. ExxonMobil 45% (op), Hess 30%, CNOOC 25%."
     },
     {
       "id": "exxonmobil-whiptail",
@@ -163,14 +163,14 @@
       "project": "Sépia Incremental",
       "region": "Brazil",
       "asset_type": "Deepwater Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 2.5,
       "fid_date": "2022",
-      "first_production": "2025",
+      "first_production": "2021",
       "source": "Petrobras 2025–2029 Business Plan",
       "source_url": null,
       "confidence": "medium",
-      "notes": "FPSO Carioca. TotalEnergies 28%, Petrogal Brasil 7% participate."
+      "notes": "FPSO Carioca MV30, pre-salt Santos Basin. Phase 1 first oil August 2021; incremental development (additional wells) sanctioned 2022. Petrobras 30% (op), TotalEnergies 28%, TotalEnergies EP Brasil 35%, Petrogal Brasil 7%."
     },
     {
       "id": "bp-tortue-flng",
@@ -178,14 +178,14 @@
       "project": "Greater Tortue Ahmeyim FLNG Ph1",
       "region": "West Africa",
       "asset_type": "Deepwater Gas / FLNG",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 4.8,
       "fid_date": "2020-02",
       "first_production": "2025",
-      "source": "bp Annual Report 2024",
-      "source_url": null,
+      "source": "bp Press Release (Jan 2025)",
+      "source_url": "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/bp-flows-first-gas-at-greater-tortue-ahmeyim-lng-project.html",
       "confidence": "high",
-      "notes": "Mauritania/Senegal maritime border. bp 56% (op), Kosmos 27%, SMHPM/Petrosen 17%. ~2.5 Mtpa LNG."
+      "notes": "Mauritania/Senegal maritime border. First gas Dec 31, 2024; first LNG cargo (FLNG Gimi) Jan 23, 2025; COD reached June 2025. Producing above 2.7 Mtpa nameplate capacity. bp 56% (op), Kosmos 27%, PETROSEN/SMHPM 17%."
     },
     {
       "id": "totalenergies-venus",
@@ -193,14 +193,14 @@
       "project": "Venus",
       "region": "West Africa",
       "asset_type": "Deepwater Oil",
-      "phase": "Pre-FEED",
+      "phase": "FEED",
       "capex_busd": 16.0,
       "fid_date": null,
       "first_production": "2030",
-      "source": "TotalEnergies 2024 Investor Day",
+      "source": "TotalEnergies Q1 2025 Results (Apr 2025)",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 40% (op), QatarEnergy 30%, Impact Oil & Gas 20%, NAMCOR 10%. FPSO concept; requires UDW drillship for appraisal/development. FID repeatedly deferred; CAPEX estimate indicative."
+      "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 40% (op), QatarEnergy 30%, Impact Oil & Gas 20%, NAMCOR 10%. FPSO concept; requires UDW drillship for appraisal/development. FID targeting late 2026; first production 2029–2030. CAPEX $16B+ indicative."
     },
     {
       "id": "shell-graff",
@@ -218,34 +218,19 @@
       "notes": "Orange Basin, offshore Namibia, PEL 39 (~2,000–3,000m WD). Shell 45% (op), QatarEnergy 45%, NAMCOR 10%. Appraisal drilling ongoing; development concept and FID timeline to be determined."
     },
     {
-      "id": "totalenergies-brulpadda",
-      "company": "TotalEnergies",
-      "project": "Brulpadda / Luiperd",
-      "region": "West Africa",
-      "asset_type": "Deepwater Gas",
-      "phase": "FEED",
-      "capex_busd": null,
-      "fid_date": null,
-      "first_production": null,
-      "source": "TotalEnergies 2024 Investor Day",
-      "source_url": null,
-      "confidence": "low",
-      "notes": "Offshore South Africa, Block 11B/12B. TotalEnergies 45% (op). FID timeline uncertain; gas monetisation route under evaluation."
-    },
-    {
       "id": "shell-bonga-north",
       "company": "Shell",
       "project": "Bonga North",
       "region": "West Africa",
       "asset_type": "Deepwater Oil",
-      "phase": "FEED",
+      "phase": "Execution",
       "capex_busd": 5.0,
-      "fid_date": null,
-      "first_production": "2029",
-      "source": "Shell Annual Report 2024",
-      "source_url": null,
-      "confidence": "medium",
-      "notes": "Offshore Nigeria, OML 118 (~1,000m WD). Shell 55% (op), TotalEnergies 12.5%, ENI 12.5%, ExxonMobil 12.5%, NAPIMS 7.5%. FPSO development; FID deferred multiple times due to fiscal terms."
+      "fid_date": "2024-12",
+      "first_production": "2030",
+      "source": "Shell Global Press Release (Dec 2024)",
+      "source_url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2024/shell-invests-in-bonga-north-deep-water-project-nigeria.html",
+      "confidence": "high",
+      "notes": "Offshore Nigeria, OML 118 (~1,000m WD). FID taken December 2024. Subsea tie-back to existing Bonga Main FPSO. Shell 55% (op), ExxonMobil 20%, ENI (Agip) 12.5%, TotalEnergies 12.5% at FID; Shell subsequently acquired TotalEnergies' 12.5% stake (2025). Peak ~110k bbl/d."
     },
     {
       "id": "shell-jackdaw",
@@ -256,11 +241,11 @@
       "phase": "Execution",
       "capex_busd": 2.0,
       "fid_date": "2023",
-      "first_production": "2025",
-      "source": "Shell Annual Report 2023",
+      "first_production": "2026",
+      "source": "Shell Annual Report 2024",
       "source_url": null,
       "confidence": "medium",
-      "notes": "UK North Sea. Subsea tie-back to Shearwater hub. Shell 100% (op)."
+      "notes": "UK North Sea, uHPHT gas condensate. Subsea tie-back to Shearwater hub; ~40k boepd. Shell 100% (op). Topside installed October 2025; first gas delayed to Q3–Q4 2026."
     },
     {
       "id": "bp-clair-south",
@@ -284,13 +269,13 @@
       "region": "North Sea/Norway",
       "asset_type": "Deepwater Oil (HE)",
       "phase": "FEED",
-      "capex_busd": 10.0,
+      "capex_busd": 10.2,
       "fid_date": null,
       "first_production": "2031",
-      "source": "TotalEnergies 2024 Investor Day",
+      "source": "Equinor / TotalEnergies 2024 Investor Day",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Norwegian Barents Sea, northernmost NCS oil discovery. TotalEnergies 35% (op), Equinor 35%, Petoro 20%, others. Arctic-rated HE FPSO concept; requires HE semi-sub for drilling phase. FID timeline repeatedly deferred; OPEX economics under review."
+      "notes": "Norwegian Barents Sea, northernmost NCS oil discovery (~300m WD). Equinor 35% (op per Equinor sources), TotalEnergies 35%, Petoro 20%, INPEX Idemitsu 10%. CAPEX ~NOK 104B (~$10.2B USD). Arctic-rated power-from-shore FPSO concept. FID target end-2026 (repeatedly deferred from 2022); first production 2031. Early-works agreement with SLB signed May 2024."
     },
     {
       "id": "shell-penguins",
@@ -298,14 +283,14 @@
       "project": "Penguins Redevelopment",
       "region": "North Sea/Norway",
       "asset_type": "Deepwater Oil (HE)",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 2.0,
       "fid_date": "2021",
-      "first_production": "2026",
-      "source": "Shell Annual Report 2023",
+      "first_production": "2025",
+      "source": "Shell Q1 2025 Results (May 2025)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "UK North Sea, Block 211/13a (~150m WD, HE). Shell 50% (op), ExxonMobil 50%. New-build HE FPSO replacing ageing infrastructure. First NCS-style FPSO for UK harsh-environment redevelopment."
+      "confidence": "high",
+      "notes": "UK North Sea, Block 211/13a (~150m WD, HE). Shell 50% (op), NEO Energy 50%. First oil February 2025. New-build HE FPSO replacing ageing infrastructure."
     },
     {
       "id": "adnoc-hail-ghasha",
@@ -355,17 +340,17 @@
     {
       "id": "totalenergies-suriname-block58",
       "company": "TotalEnergies",
-      "project": "Suriname Block 58",
+      "project": "Suriname Block 58 (GranMorgu)",
       "region": "Other",
       "asset_type": "Deepwater Oil",
-      "phase": "FEED",
-      "capex_busd": 10.0,
-      "fid_date": null,
-      "first_production": "2030",
-      "source": "TotalEnergies 2024 Investor Day",
-      "source_url": null,
-      "confidence": "medium",
-      "notes": "Offshore Suriname, ~1,500m WD. TotalEnergies 50% (op), APA Corp 50%. Significant deepwater oil discovery (Sapakara, Kwaskwasi, Keskesi). FPSO development; FID deferred multiple times. CAPEX estimate indicative."
+      "phase": "Execution",
+      "capex_busd": 10.5,
+      "fid_date": "2024-10",
+      "first_production": "2028",
+      "source": "TotalEnergies / APA Corp FID Announcement (Oct 2024)",
+      "source_url": "https://totalenergies.com/news/press-releases/suriname-totalenergies-announces-final-investment-decision-granmorgu",
+      "confidence": "high",
+      "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. FPSO hull delivered February 2025."
     },
     {
       "id": "petronas-kasawari",
@@ -433,14 +418,14 @@
       "project": "Mozambique LNG",
       "region": "East Africa",
       "asset_type": "Deepwater Gas / LNG",
-      "phase": "FID",
-      "capex_busd": 20.0,
+      "phase": "Execution",
+      "capex_busd": 20.5,
       "fid_date": "2019-06",
-      "first_production": null,
-      "source": "TotalEnergies Annual Report 2024",
-      "source_url": null,
+      "first_production": "2029",
+      "source": "TotalEnergies / Mozambique President Restart Announcement (Jan 2026)",
+      "source_url": "https://totalenergies.com/news/press-releases/mozambique-lng-announces-full-restart-all-its-activities-onshore-and-offshore",
       "confidence": "medium",
-      "notes": "Area 1, Cabo Delgado Province. FID taken 2019. Force majeure declared April 2021 due to security situation; restart contingent on stabilisation. ~13 Mtpa LNG at full build-out."
+      "notes": "Area 1, Cabo Delgado Province. FID 2019; force majeure declared April 2021 (security situation). Force majeure lifted November 2025; full construction restart January 2026 (~42% complete). CAPEX revised to ~$20.5B (+$4.5B cost overrun). First LNG targeted H1 2029. ~13 Mtpa at full build-out. TotalEnergies 26.5% (op); partners include ENI, ExxonMobil, CNPC, Mitsui, PTT, ONGC, Bharat."
     }
   ]
 }
