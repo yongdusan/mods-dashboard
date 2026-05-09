@@ -194,7 +194,7 @@
     }
     .pulse-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 12px;
       margin-bottom: 24px;
     }
@@ -331,10 +331,11 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">Offshore drilling, floating production, financials and market news</span>
+      <span class="subtitle">E&amp;P pipeline, deepwater drilling, floating production, financials and market news</span>
     </div>
     <nav class="header-nav">
       <span class="nav-link active">Overview</span>
+      <a href="pipeline.html" class="nav-link">E&amp;P Pipeline</a>
       <a href="drilling.html" class="nav-link">Drilling / MODU</a>
       <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
       <a href="earnings.html" class="nav-link">Drilling Financials</a>
@@ -352,6 +353,7 @@
 (async function () {
   const dataFiles = [
     './data/fleet.json',
+    './data/pipeline.json',
     './data/fpso.json',
     './data/earnings.json',
     './data/fpso_earnings.json',
@@ -389,15 +391,20 @@
   }
 
   try {
-    const [fleet, fpso, drillingEarnings, fpsoEarnings, news] = await Promise.all(
+    const [fleet, pipeline, fpso, drillingEarnings, fpsoEarnings, news] = await Promise.all(
       dataFiles.map(url => fetch(url).then(r => {
         if (!r.ok) throw new Error(`${url} ${r.status}`);
         return r.json();
       }))
     );
 
-    const onContract = fleet.rigs.filter(r => r.status === 'On Contract').length;
-    const idleStacked = fleet.rigs.filter(r => r.status === 'Idle' || r.status === 'Cold Stacked').length;
+    const deepwaterRigs = fleet.rigs.filter(r => r.type === 'Drillship' || r.type === 'Semisubmersible');
+    const deepwaterOnContract = deepwaterRigs.filter(r => r.status === 'On Contract').length;
+    const deepwaterIdleStacked = deepwaterRigs.filter(r => r.status === 'Idle' || r.status === 'Cold Stacked').length;
+    const pipelineProjects = pipeline.projects || [];
+    const pipelineCapex = pipelineProjects
+      .filter(p => p.capex_busd != null)
+      .reduce((sum, p) => sum + p.capex_busd, 0);
     const sortedNews = [...news.items].sort((a, b) => b.date.localeCompare(a.date));
     const drillingNews = sortedNews.filter(n => n.sector === 'Drilling').slice(0, 3);
     const fpsoNews = sortedNews.filter(n => n.sector === 'FPSO/FLNG').slice(0, 3);
@@ -414,11 +421,12 @@
             <h2>Offshore Market Overview</h2>
             <p>
               Offshore drilling과 FPSO/FLNG 시장을 함께 보는 출발점입니다.
-              자산 현황, 계약 가동률, dayrate, operator CAPEX, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
+              E&amp;P 프로젝트/CAPEX, UDW·Deepwater rig, FPSO/FLNG 자산, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
             </p>
           </div>
           <div class="update-row">
             <span class="chip">Fleet: ${esc(fleet.updated)}</span>
+            <span class="chip">Pipeline: ${esc(pipeline.updated)}</span>
             <span class="chip">FPSO / FLNG: ${esc(fpso.updated)}</span>
             <span class="chip">Financials: ${esc(drillingEarnings.updated)}</span>
             <span class="chip">News: ${esc(news.updated)}</span>
@@ -430,12 +438,23 @@
             <div class="sector-top">
               <div>
                 <div class="label">Sector</div>
-                <div class="sector-title">Drilling / MODU</div>
-                <div class="sector-desc">Fleet status, contract utilization, dayrate trend and rig demand.</div>
+                <div class="sector-title">UDW / Deepwater Rigs</div>
+                <div class="sector-desc">Drillship and deepwater / harsh-environment semi-sub fleet status, utilization and dayrate trend.</div>
               </div>
-              <div class="metric">${fleet.rigs.length} rigs</div>
+              <div class="metric">${deepwaterRigs.length} rigs</div>
             </div>
             <div class="sector-foot">Open drilling dashboard</div>
+          </a>
+          <a class="sector-card" href="pipeline.html">
+            <div class="sector-top">
+              <div>
+                <div class="label">Demand</div>
+                <div class="sector-title">E&amp;P Pipeline</div>
+                <div class="sector-desc">Major offshore projects, phase tracking and upstream CAPEX by operator.</div>
+              </div>
+              <div class="metric">${pipelineProjects.length} projects</div>
+            </div>
+            <div class="sector-foot">Open pipeline dashboard</div>
           </a>
           <a class="sector-card" href="fpso.html">
             <div class="sector-top">
@@ -475,9 +494,14 @@
 
       <section class="pulse-grid">
         <div class="pulse-item">
-          <div class="label">Drilling Fleet</div>
-          <div class="pulse-value">${fleet.rigs.length}</div>
-          <div class="pulse-note">${onContract} on contract · ${idleStacked} idle/stacked</div>
+          <div class="label">Deepwater Fleet</div>
+          <div class="pulse-value">${deepwaterRigs.length}</div>
+          <div class="pulse-note">Deepwater focus · ${deepwaterOnContract} on contract · ${deepwaterIdleStacked} idle/stacked</div>
+        </div>
+        <div class="pulse-item blue">
+          <div class="label">E&amp;P Pipeline</div>
+          <div class="pulse-value">${pipelineProjects.length}</div>
+          <div class="pulse-note">$${pipelineCapex.toFixed(1)}B tracked project CAPEX</div>
         </div>
         <div class="pulse-item blue">
           <div class="label">Production Assets</div>
