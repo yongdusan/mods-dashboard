@@ -564,6 +564,98 @@
         justify-content: flex-start;
       }
     }
+
+    /* ─── EPC Demand Detail ─── */
+    .demand-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 900px) { .demand-grid { grid-template-columns: 1fr; } }
+    .demand-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+    }
+    .demand-panel-title {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .demand-legend {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 14px;
+      font-size: 10px;
+      color: var(--text-muted);
+      align-items: center;
+    }
+    .legend-dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 2px;
+      margin-right: 4px;
+    }
+    .legend-dot.exec { background: rgba(59,130,246,0.7); }
+    .legend-dot.feed { background: rgba(234,179,8,0.55); }
+    /* Regional bars */
+    .region-bar-row {
+      display: grid;
+      grid-template-columns: 110px 1fr 42px;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+    .region-bar-label { font-size: 10px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .region-bar-track {
+      height: 12px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      display: flex;
+    }
+    .region-bar-exec { height: 100%; background: rgba(59,130,246,0.7); }
+    .region-bar-feed { height: 100%; background: rgba(234,179,8,0.55); }
+    .region-bar-value { font-size: 10px; font-family: var(--font-mono); color: var(--text); text-align: right; }
+    /* Spend profile bars */
+    .year-bars-wrap {
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+      padding-bottom: 0;
+    }
+    .year-bar-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 0;
+    }
+    .year-bar-col.current-yr .year-bar-label { color: var(--accent); font-weight: 600; }
+    .year-bar-value {
+      font-size: 8px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      margin-bottom: 3px;
+      white-space: nowrap;
+    }
+    .year-bar-bars {
+      position: relative;
+      height: 110px;
+      width: 100%;
+      border-radius: 2px;
+    }
+    .year-bar-label {
+      font-size: 9px;
+      color: var(--text-muted);
+      margin-top: 5px;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -639,6 +731,27 @@
       </div>
     </div>
 
+    <!-- EPC Demand Detail -->
+    <div class="section-label">EPC Demand Detail</div>
+    <div class="demand-grid">
+      <div class="demand-panel">
+        <div class="demand-panel-title">Regional CAPEX Breakdown</div>
+        <div class="demand-legend">
+          <span><span class="legend-dot exec"></span>Sanctioned (Execution)</span>
+          <span><span class="legend-dot feed"></span>Pre-FID est. (FEED)</span>
+        </div>
+        <div id="region-chart"><!-- populated by JS --></div>
+      </div>
+      <div class="demand-panel">
+        <div class="demand-panel-title">Annual EPC Spend Profile (est. linear)</div>
+        <div class="demand-legend">
+          <span><span class="legend-dot exec"></span>Sanctioned</span>
+          <span><span class="legend-dot feed"></span>Pre-FID (indicative)</span>
+        </div>
+        <div class="year-bars-wrap" id="spend-profile"><!-- populated by JS --></div>
+      </div>
+    </div>
+
     <!-- Company Filter -->
     <div class="company-filter" id="company-filter">
       <!-- populated by JS -->
@@ -696,6 +809,102 @@
     function fmtCapex(v) {
       if (v == null) return '—';
       return '$' + v.toFixed(1) + 'B';
+    }
+
+    // ─── Regional CAPEX Breakdown ────────────────────────────────────
+    function buildRegionChart(projects) {
+      const regionExec = {}, regionFeed = {};
+      projects.forEach(p => {
+        if (!p.capex_busd) return;
+        const r = p.region;
+        if (p.phase === 'Execution') {
+          regionExec[r] = (regionExec[r] || 0) + p.capex_busd;
+        } else if (p.phase === 'FEED' || p.phase === 'FID') {
+          regionFeed[r] = (regionFeed[r] || 0) + p.capex_busd;
+        }
+      });
+      const allR = [...new Set([...Object.keys(regionExec), ...Object.keys(regionFeed)])];
+      const rows = allR.map(r => ({
+        region: r,
+        exec: regionExec[r] || 0,
+        feed: regionFeed[r] || 0,
+        total: (regionExec[r] || 0) + (regionFeed[r] || 0)
+      })).sort((a, b) => b.total - a.total);
+      const maxTotal = Math.max(...rows.map(r => r.total));
+      document.getElementById('region-chart').innerHTML = rows.map(row => {
+        const execPct = (row.exec / maxTotal * 100).toFixed(1);
+        const feedPct = (row.feed / maxTotal * 100).toFixed(1);
+        const label = row.exec > 0 && row.feed > 0
+          ? `$${row.exec.toFixed(0)}B + $${row.feed.toFixed(0)}B`
+          : `$${row.total.toFixed(0)}B`;
+        return `<div class="region-bar-row">
+          <div class="region-bar-label" title="${row.region}">${row.region}</div>
+          <div class="region-bar-track">
+            <div class="region-bar-exec" style="width:${execPct}%"></div>
+            <div class="region-bar-feed" style="width:${feedPct}%"></div>
+          </div>
+          <div class="region-bar-value">${label}</div>
+        </div>`;
+      }).join('');
+    }
+
+    // ─── Annual EPC Spend Profile ────────────────────────────────────
+    function buildSpendProfile(projects) {
+      const YEARS = [2024,2025,2026,2027,2028,2029,2030,2031,2032];
+      const execY = {}, feedY = {};
+      YEARS.forEach(y => { execY[y] = 0; feedY[y] = 0; });
+
+      projects.forEach(p => {
+        if (!p.capex_busd || !p.first_production) return;
+        const isExec = p.phase === 'Execution';
+        const isFeed = p.phase === 'FEED' || p.phase === 'FID';
+        if (!isExec && !isFeed) return;
+
+        const fpYear = parseInt(String(p.first_production).substring(0, 4));
+        if (isNaN(fpYear)) return;
+
+        let capex = p.capex_busd;
+        let startYear;
+
+        // Mozambique LNG: ~58% remaining from 2026 restart
+        if (p.id === 'totalenergies-mozambique-lng') {
+          capex = p.capex_busd * 0.58;
+          startYear = 2026;
+        } else if (p.fid_date) {
+          startYear = parseInt(String(p.fid_date).substring(0, 4));
+        } else {
+          startYear = fpYear - 4; // FEED without FID: assume 4yr construction
+        }
+
+        const duration = fpYear - startYear;
+        if (duration <= 0) return;
+        const annual = capex / duration;
+        const bucket = isExec ? execY : feedY;
+        for (let y = startYear; y < fpYear; y++) {
+          if (bucket[y] !== undefined) bucket[y] += annual;
+        }
+      });
+
+      const BAR_MAX = 110;
+      const maxVal = Math.max(...YEARS.map(y => (execY[y] || 0) + (feedY[y] || 0)));
+      const curYear = new Date().getFullYear();
+
+      document.getElementById('spend-profile').innerHTML = YEARS.map(y => {
+        const e = execY[y] || 0, f = feedY[y] || 0, tot = e + f;
+        const eH = maxVal > 0 ? Math.round(e / maxVal * BAR_MAX) : 0;
+        const fH = maxVal > 0 ? Math.round(f / maxVal * BAR_MAX) : 0;
+        const totH = eH + fH;
+        const valLabel = tot > 0.5 ? '$' + tot.toFixed(0) + 'B' : '';
+        const isNow = y === curYear;
+        return `<div class="year-bar-col${isNow ? ' current-yr' : ''}">
+          <div class="year-bar-value">${valLabel}</div>
+          <div class="year-bar-bars">
+            ${fH > 0 ? `<div style="position:absolute;bottom:${eH}px;left:0;right:0;height:${fH}px;background:rgba(234,179,8,0.55);border-radius:2px 2px 0 0"></div>` : ''}
+            ${eH > 0 ? `<div style="position:absolute;bottom:0;left:0;right:0;height:${eH}px;background:rgba(59,130,246,0.7);border-radius:${fH===0?'2px 2px 0 0':'0'}"></div>` : ''}
+          </div>
+          <div class="year-bar-label">${y}</div>
+        </div>`;
+      }).join('');
     }
 
     // ─── Build Phase×Region Matrix ──────────────────────────────────
@@ -1027,6 +1236,10 @@
 
         // ─── Matrix ─────────────────────────────────────────────────
         buildMatrix(allProjects);
+
+        // ─── EPC Demand Detail ───────────────────────────────────────
+        buildRegionChart(allProjects);
+        buildSpendProfile(allProjects);
 
         // ─── Company filter ─────────────────────────────────────────
         buildCompanyFilter(allProjects);
