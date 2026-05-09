@@ -1,5 +1,6 @@
 {
   "updated": "2026-05-09",
+
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and project announcements",
@@ -52,6 +53,36 @@
       "notes": "Argos FPS; 140k bbl/d. bp 60.5% (op), BHP 23.9%, Union Oil 15.6%."
     },
     {
+      "id": "chevron-ballymore",
+      "company": "Chevron",
+      "project": "Ballymore",
+      "region": "Gulf of Mexico",
+      "asset_type": "Deepwater Oil",
+      "phase": "FEED",
+      "capex_busd": 7.0,
+      "fid_date": null,
+      "first_production": "2030",
+      "source": "Chevron 2024 Investor Day",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Garden Banks area, ~2,000m WD. Chevron 100% (op). FPSO concept; ~75k bbl/d. CAPEX estimate indicative; FID timing subject to oil price and cost environment."
+    },
+    {
+      "id": "bp-kaskida",
+      "company": "bp",
+      "project": "Kaskida",
+      "region": "Gulf of Mexico",
+      "asset_type": "Deepwater Oil",
+      "phase": "FEED",
+      "capex_busd": 5.0,
+      "fid_date": null,
+      "first_production": "2029",
+      "source": "bp Annual Report 2024",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Keathley Canyon, ~1,800m WD. bp 100% (op). Submitted development plan to BOEM 2024. ~$4–5B CAPEX indicative; FID subject to regulatory approvals."
+    },
+    {
       "id": "exxonmobil-yellowtail",
       "company": "ExxonMobil",
       "project": "Yellowtail",
@@ -80,6 +111,21 @@
       "source_url": null,
       "confidence": "medium",
       "notes": "Offshore Guyana (Stabroek Block). 4th development FPSO. CAPEX estimate indicative."
+    },
+    {
+      "id": "exxonmobil-whiptail",
+      "company": "ExxonMobil",
+      "project": "Whiptail",
+      "region": "Guyana",
+      "asset_type": "Deepwater Oil",
+      "phase": "Pre-FEED",
+      "capex_busd": null,
+      "fid_date": null,
+      "first_production": "2031",
+      "source": "ExxonMobil 2024 Investor Day",
+      "source_url": null,
+      "confidence": "low",
+      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO concept. Contingent on Hammerhead FID and production ramp-up. CAPEX and timeline indicative."
     },
     {
       "id": "petrobras-buzios-6",
@@ -140,6 +186,36 @@
       "source_url": null,
       "confidence": "high",
       "notes": "Mauritania/Senegal maritime border. bp 56% (op), Kosmos 27%, SMHPM/Petrosen 17%. ~2.5 Mtpa LNG."
+    },
+    {
+      "id": "totalenergies-venus",
+      "company": "TotalEnergies",
+      "project": "Venus",
+      "region": "West Africa",
+      "asset_type": "Deepwater Oil",
+      "phase": "Pre-FEED",
+      "capex_busd": 16.0,
+      "fid_date": null,
+      "first_production": "2030",
+      "source": "TotalEnergies 2024 Investor Day",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 40% (op), QatarEnergy 30%, Impact Oil & Gas 20%, NAMCOR 10%. FPSO concept; requires UDW drillship for appraisal/development. FID repeatedly deferred; CAPEX estimate indicative."
+    },
+    {
+      "id": "shell-graff",
+      "company": "Shell",
+      "project": "Graff",
+      "region": "West Africa",
+      "asset_type": "Deepwater Oil",
+      "phase": "Pre-FEED",
+      "capex_busd": null,
+      "fid_date": null,
+      "first_production": null,
+      "source": "Shell Annual Report 2024",
+      "source_url": null,
+      "confidence": "low",
+      "notes": "Orange Basin, offshore Namibia, PEL 39 (~2,000–3,000m WD). Shell 45% (op), QatarEnergy 45%, NAMCOR 10%. Appraisal drilling ongoing; development concept and FID timeline to be determined."
     },
     {
       "id": "totalenergies-brulpadda",
@@ -217,6 +293,21 @@
       "notes": "Norwegian Barents Sea, northernmost NCS oil discovery. TotalEnergies 35% (op), Equinor 35%, Petoro 20%, others. Arctic-rated HE FPSO concept; requires HE semi-sub for drilling phase. FID timeline repeatedly deferred; OPEX economics under review."
     },
     {
+      "id": "shell-penguins",
+      "company": "Shell",
+      "project": "Penguins Redevelopment",
+      "region": "North Sea/Norway",
+      "asset_type": "Deepwater Oil (HE)",
+      "phase": "Execution",
+      "capex_busd": 2.0,
+      "fid_date": "2021",
+      "first_production": "2026",
+      "source": "Shell Annual Report 2023",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "UK North Sea, Block 211/13a (~150m WD, HE). Shell 50% (op), ExxonMobil 50%. New-build HE FPSO replacing ageing infrastructure. First NCS-style FPSO for UK harsh-environment redevelopment."
+    },
+    {
       "id": "adnoc-hail-ghasha",
       "company": "ADNOC",
       "project": "Hail & Ghasha",
@@ -260,6 +351,21 @@
       "source_url": null,
       "confidence": "medium",
       "notes": "Arabian Gulf offshore. +250k bbl/d increment. Saudi Aramco 100%."
+    },
+    {
+      "id": "totalenergies-suriname-block58",
+      "company": "TotalEnergies",
+      "project": "Suriname Block 58",
+      "region": "Other",
+      "asset_type": "Deepwater Oil",
+      "phase": "FEED",
+      "capex_busd": 10.0,
+      "fid_date": null,
+      "first_production": "2030",
+      "source": "TotalEnergies 2024 Investor Day",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Offshore Suriname, ~1,500m WD. TotalEnergies 50% (op), APA Corp 50%. Significant deepwater oil discovery (Sapakara, Kwaskwasi, Keskesi). FPSO development; FID deferred multiple times. CAPEX estimate indicative."
     },
     {
       "id": "petronas-kasawari",
