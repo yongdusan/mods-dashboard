@@ -763,7 +763,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">Mobile Offshore Drilling Units — Fleet, Dayrate, Rig Demand &amp; Asset Values</span>
+      <span class="subtitle">UDW &amp; Deepwater Drilling Units — Fleet, Dayrate, Rig Demand &amp; Asset Values</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
@@ -783,8 +783,8 @@
 
   <!-- Page Title -->
   <section class="page-title-section">
-    <h2>Drilling / MODU Market</h2>
-    <span class="page-subtitle">시추 리그 현황 · 계약 가동률 · Dayrate · Rig demand · Asset values</span>
+    <h2>UDW / Deepwater Rig Market</h2>
+    <span class="page-subtitle">UDW drillship · deepwater / harsh-environment semi-sub · 계약 가동률 · Dayrate · Asset values</span>
   </section>
 
   <!-- KPI Grid -->
@@ -795,8 +795,8 @@
   <!-- Contractor Summary -->
   <div class="panel summary-section">
     <div class="panel-header">
-      <span class="panel-title"><span class="dot"></span>Drilling Contractor Summary</span>
-      <span class="panel-subtitle">리그 보유 현황 · 계약 가동률 · 평균 dayrate · * company avg</span>
+      <span class="panel-title"><span class="dot"></span>Deepwater Contractor Summary</span>
+      <span class="panel-subtitle">Drillship + Semi-sub 기준 · Jack-up 제외 · 평균 dayrate · * company avg / implied</span>
     </div>
     <div id="contractor-table"></div>
   </div>
@@ -805,10 +805,11 @@
   <div class="filter-bar">
     <div class="filter-row">
       <span class="filter-label">RIG TYPE</span>
-      <button class="filter-btn type-btn active" data-filter="All">All</button>
+      <button class="filter-btn type-btn active" data-filter="Deepwater">Deepwater</button>
       <button class="filter-btn type-btn" data-filter="Drillship">Drillship</button>
       <button class="filter-btn type-btn" data-filter="Semisubmersible">Semi-sub</button>
       <button class="filter-btn type-btn" data-filter="Jack-up">Jack-up</button>
+      <button class="filter-btn type-btn" data-filter="All">All MODU</button>
     </div>
     <div class="filter-row">
       <span class="filter-label">CONTRACTOR</span>
@@ -957,6 +958,11 @@
     if (str == null) return '';
     return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
+
+  function isDeepwaterRig(rig) {
+    return rig.type === 'Drillship' || rig.type === 'Semisubmersible';
+  }
+
   try {
     [fleet, rates, capex, earnings] = await Promise.all([
       fetch('./data/fleet.json').then(r => r.json()),
@@ -1024,27 +1030,28 @@
   function renderKPIs(rigs, isFiltered) {
     const { total, onContract, idleStacked } = calcKPIs(rigs);
     const avgRate = getAvgDayRate();
+    const totalLabel = currentTypeFilter === 'Deepwater' ? 'Deepwater Rigs' : 'Total Rigs';
 
     const pw = fleet.prev_week;
-    const totalDelta   = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(total, pw.total);
-    const contractDelta = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(onContract, pw.on_contract);
-    const idleDelta    = isFiltered ? { text: '—', cls: 'neutral' } : deltaText(idleStacked, pw.idle_stacked);
+    const totalDelta   = isFiltered ? { text: 'Deepwater focus', cls: 'neutral' } : deltaText(total, pw.total);
+    const contractDelta = isFiltered ? { text: 'Filtered view', cls: 'neutral' } : deltaText(onContract, pw.on_contract);
+    const idleDelta    = isFiltered ? { text: 'Filtered view', cls: 'neutral' } : deltaText(idleStacked, pw.idle_stacked);
 
     document.getElementById('kpi-grid').innerHTML = `
       <div class="kpi-card accent">
-        <div class="kpi-label">Total Rigs</div>
+        <div class="kpi-label">${totalLabel}</div>
         <div class="kpi-value">${total}</div>
-        <div class="kpi-delta ${totalDelta.cls}">${totalDelta.text} vs prev week</div>
+        <div class="kpi-delta ${totalDelta.cls}">${isFiltered ? totalDelta.text : totalDelta.text + ' vs prev week'}</div>
       </div>
       <div class="kpi-card green">
         <div class="kpi-label">On Contract</div>
         <div class="kpi-value">${onContract}</div>
-        <div class="kpi-delta ${contractDelta.cls}">${contractDelta.text} vs prev week</div>
+        <div class="kpi-delta ${contractDelta.cls}">${isFiltered ? contractDelta.text : contractDelta.text + ' vs prev week'}</div>
       </div>
       <div class="kpi-card red">
         <div class="kpi-label">Idle + Stacked</div>
         <div class="kpi-value">${idleStacked}</div>
-        <div class="kpi-delta ${idleDelta.cls}">${idleDelta.text} vs prev week</div>
+        <div class="kpi-delta ${idleDelta.cls}">${isFiltered ? idleDelta.text : idleDelta.text + ' vs prev week'}</div>
       </div>
       <div class="kpi-card blue">
         <div class="kpi-label">Avg Dayrate (UDW Drillship)</div>
@@ -1062,7 +1069,7 @@
     }
 
     const byContractor = new Map();
-    fleet.rigs.forEach(rig => {
+    fleet.rigs.filter(isDeepwaterRig).forEach(rig => {
       const name = rig.contractor || 'Unknown';
       if (!byContractor.has(name)) {
         byContractor.set(name, {
@@ -1070,7 +1077,6 @@
           total: 0,
           drillships: 0,
           semisubmersibles: 0,
-          jackups: 0,
           on_contract: 0,
           idle_stacked: 0,
           rates: [],
@@ -1080,7 +1086,6 @@
       row.total += 1;
       if (rig.type === 'Drillship') row.drillships += 1;
       if (rig.type === 'Semisubmersible') row.semisubmersibles += 1;
-      if (rig.type === 'Jack-up') row.jackups += 1;
       if (rig.status === 'On Contract') row.on_contract += 1;
       if (rig.status === 'Idle' || rig.status === 'Cold Stacked') row.idle_stacked += 1;
       if (rig.day_rate_kusd != null) {
@@ -1138,9 +1143,9 @@
           formatter: cell => `<strong>${esc(cell.getValue())}</strong>`,
         },
         {
-          title: 'Total',
+          title: 'Deepwater Rigs',
           field: 'total',
-          width: 90,
+          width: 150,
           hozAlign: 'right',
           formatter: cell => `<span class="mono">${cell.getValue()}</span>`,
         },
@@ -1157,13 +1162,6 @@
           width: 132,
           hozAlign: 'right',
           formatter: cell => `<span class="mono" style="color:var(--blue)">${cell.getValue()}</span>`,
-        },
-        {
-          title: 'Jack-ups',
-          field: 'jackups',
-          width: 132,
-          hozAlign: 'right',
-          formatter: cell => `<span class="mono" style="color:var(--yellow)">${cell.getValue()}</span>`,
         },
         {
           title: 'Contracted',
@@ -1235,6 +1233,7 @@
       contract_start: r.contract_start,
       contract_end: r.contract_end,
       day_rate_kusd: r.day_rate_kusd,
+      day_rate_basis: r.day_rate_basis,
     }));
 
     if (fleetTable) {
@@ -1952,19 +1951,22 @@
   /* ─────────────────────────────────────────
      Filter Logic
   ───────────────────────────────────────── */
-  let currentTypeFilter = 'All';
+  let currentTypeFilter = 'Deepwater';
   let currentContractorFilter = 'All';
 
   function applyFilters() {
     const isFiltered = currentTypeFilter !== 'All' || currentContractorFilter !== 'All';
     const filtered = fleet.rigs.filter(r => {
-      const typeMatch = currentTypeFilter === 'All' || r.type === currentTypeFilter;
+      const typeMatch = currentTypeFilter === 'All'
+        || (currentTypeFilter === 'Deepwater' && isDeepwaterRig(r))
+        || r.type === currentTypeFilter;
       const contractorMatch = currentContractorFilter === 'All' || r.contractor === currentContractorFilter;
       return typeMatch && contractorMatch;
     });
     renderKPIs(filtered, isFiltered);
     renderFleetTable(filtered);
-    document.getElementById('fleet-count').textContent = `${filtered.length} rigs`;
+    const scope = currentTypeFilter === 'Deepwater' ? 'deepwater rigs' : 'rigs';
+    document.getElementById('fleet-count').textContent = `${filtered.length} ${scope}`;
   }
 
   function initFilters() {
@@ -2037,9 +2039,8 @@
      Main Init
   ───────────────────────────────────────── */
   renderHeader();
-  renderKPIs(fleet.rigs, false);
   renderContractorSummary();
-  renderFleetTable(fleet.rigs);
+  applyFilters();
   renderDayRateChart();
   renderCapexChart();
   renderCapexTable();
