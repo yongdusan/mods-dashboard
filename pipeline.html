@@ -540,6 +540,20 @@
     }
     .header-title h1 { font-size: 22px; }
     .header-title .subtitle { font-size: 12px; }
+    .header-meta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      flex-wrap: wrap;
+    }
+    .header-meta .value {
+      color: var(--accent);
+      font-weight: 500;
+    }
     .content { padding-top: 0; }
     @media (max-width: 900px) {
       .header { grid-template-columns: 1fr; }
@@ -570,6 +584,9 @@
         <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
         <a href="news.html" class="nav-link">Market News</a>
       </nav>
+      <div class="header-meta" id="header-meta">
+        <!-- populated by JS -->
+      </div>
     </div>
   </header>
 
@@ -951,6 +968,13 @@
         const capexData    = await capexRes.json();
 
         allProjects = pipelineData.projects || [];
+        const updateDates = [pipelineData.updated, capexData.updated].filter(Boolean).sort();
+        document.getElementById('header-meta').innerHTML = `
+          <span>Updated:</span>
+          <span class="value">${updateDates.pop() || '—'}</span>
+          <span>·</span>
+          <span>Pipeline / CAPEX</span>
+        `;
 
         // ─── KPI Row A ──────────────────────────────────────────────
         const total = allProjects.length;

@@ -793,15 +793,15 @@
   ───────────────────────────────────────── */
   function renderHeader() {
     const el = document.getElementById('header-meta');
+    const latestUpdate = [fleet.updated, rates.updated].filter(Boolean).sort().pop() || '—';
     el.innerHTML = `
       <div class="meta-row">
         <span class="live-dot"></span>
-        <span class="label">Fleet data:</span>
-        <span class="value">${esc(fleet.updated)}</span>
+        <span class="label">Updated:</span>
+        <span class="value">${esc(latestUpdate)}</span>
       </div>
       <div class="meta-row">
-        <span class="label">Day rates:</span>
-        <span class="value">${esc(rates.updated)}</span>
+        <span class="label">Fleet / day rates</span>
       </div>
     `;
   }

@@ -68,6 +68,26 @@
       gap: 16px;
       flex-wrap: wrap;
     }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    .header-meta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      flex-wrap: wrap;
+    }
+    .header-meta .value {
+      color: var(--accent);
+      font-weight: 500;
+    }
     .nav-link {
       color: var(--accent);
       text-decoration: none;
@@ -111,25 +131,6 @@
       font-size: 13px;
       line-height: 1.75;
       max-width: 620px;
-    }
-    .update-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-    .chip {
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 5px 8px;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      font-size: 11px;
-      background: rgba(13,17,23,0.45);
-    }
-    .chip.wide {
-      max-width: 100%;
-      white-space: normal;
     }
     .sector-grid {
       display: grid;
@@ -358,15 +359,20 @@
       <h1>Offshore Market Intelligence</h1>
       <span class="subtitle">E&amp;P pipeline, deepwater drilling, floating production, financials and market news</span>
     </div>
-    <nav class="header-nav">
-      <span class="nav-link active">Overview</span>
-      <a href="pipeline.html" class="nav-link">E&amp;P Pipeline</a>
-      <a href="drilling.html" class="nav-link">Deepwater Drilling</a>
-      <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
-      <a href="earnings.html" class="nav-link">Drilling Financials</a>
-      <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
-      <a href="news.html" class="nav-link">Market News</a>
-    </nav>
+    <div class="header-right">
+      <nav class="header-nav">
+        <span class="nav-link active">Overview</span>
+        <a href="pipeline.html" class="nav-link">E&amp;P Pipeline</a>
+        <a href="drilling.html" class="nav-link">Deepwater Drilling</a>
+        <a href="fpso.html" class="nav-link">FPSO / FLNG Assets</a>
+        <a href="earnings.html" class="nav-link">Drilling Financials</a>
+        <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
+        <a href="news.html" class="nav-link">Market News</a>
+      </nav>
+      <div class="header-meta" id="header-meta">
+        <!-- populated by JS -->
+      </div>
+    </div>
   </header>
 
   <main id="app">
@@ -438,25 +444,30 @@
       drillingNews[1], fpsoNews[1],
       drillingNews[2], fpsoNews[2],
     ].filter(Boolean);
+    const latestUpdate = [
+      fleet.updated,
+      pipeline.updated,
+      fpso.updated,
+      drillingEarnings.updated,
+      fpsoEarnings.updated,
+      news.updated,
+    ].filter(Boolean).sort().pop() || '—';
+
+    document.getElementById('header-meta').innerHTML = `
+      <span>Updated:</span>
+      <span class="value">${esc(latestUpdate)}</span>
+      <span>·</span>
+      <span>${esc(news.update_frequency_ko || news.update_frequency || 'Weekly review + ad hoc updates')}</span>
+    `;
 
     document.getElementById('app').innerHTML = `
       <section class="hero">
         <div class="hero-copy">
-          <div>
-            <h2>Offshore Market Overview</h2>
-            <p>
-              Offshore drilling과 FPSO/FLNG 시장을 함께 보는 출발점입니다.
-              E&amp;P 프로젝트/CAPEX, UDW·Deepwater rig, FPSO/FLNG 자산, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
-            </p>
-          </div>
-          <div class="update-row">
-            <span class="chip">Fleet: ${esc(fleet.updated)}</span>
-            <span class="chip">Pipeline: ${esc(pipeline.updated)}</span>
-            <span class="chip">FPSO / FLNG: ${esc(fpso.updated)}</span>
-            <span class="chip">Financials: ${esc(drillingEarnings.updated)}</span>
-            <span class="chip">News: ${esc(news.updated)}</span>
-            <span class="chip wide">News cycle: ${esc(news.update_frequency_ko || news.update_frequency || 'Weekly review + ad hoc updates')}</span>
-          </div>
+          <h2>Offshore Market Overview</h2>
+          <p>
+            Offshore drilling과 FPSO/FLNG 시장을 함께 보는 출발점입니다.
+            E&amp;P 프로젝트/CAPEX, UDW·Deepwater rig, FPSO/FLNG 자산, 실적과 뉴스 흐름을 섹터별 대시보드로 연결합니다.
+          </p>
         </div>
         <div class="sector-grid">
           <a class="sector-card" href="drilling.html">
