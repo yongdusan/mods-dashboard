@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-09",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and project announcements",
@@ -157,6 +157,21 @@
       "notes": "Offshore South Africa, Block 11B/12B. TotalEnergies 45% (op). FID timeline uncertain; gas monetisation route under evaluation."
     },
     {
+      "id": "shell-bonga-north",
+      "company": "Shell",
+      "project": "Bonga North",
+      "region": "West Africa",
+      "asset_type": "Deepwater Oil",
+      "phase": "FEED",
+      "capex_busd": 5.0,
+      "fid_date": null,
+      "first_production": "2029",
+      "source": "Shell Annual Report 2024",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Offshore Nigeria, OML 118 (~1,000m WD). Shell 55% (op), TotalEnergies 12.5%, ENI 12.5%, ExxonMobil 12.5%, NAPIMS 7.5%. FPSO development; FID deferred multiple times due to fiscal terms."
+    },
+    {
       "id": "shell-jackdaw",
       "company": "Shell",
       "project": "Jackdaw",
@@ -187,11 +202,26 @@
       "notes": "West of Shetland. bp 45.1% (op). Concept selection stage; long lead-time development."
     },
     {
+      "id": "totalenergies-wisting",
+      "company": "TotalEnergies",
+      "project": "Wisting",
+      "region": "North Sea/Norway",
+      "asset_type": "Deepwater Oil (HE)",
+      "phase": "FEED",
+      "capex_busd": 10.0,
+      "fid_date": null,
+      "first_production": "2031",
+      "source": "TotalEnergies 2024 Investor Day",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Norwegian Barents Sea, northernmost NCS oil discovery. TotalEnergies 35% (op), Equinor 35%, Petoro 20%, others. Arctic-rated HE FPSO concept; requires HE semi-sub for drilling phase. FID timeline repeatedly deferred; OPEX economics under review."
+    },
+    {
       "id": "adnoc-hail-ghasha",
       "company": "ADNOC",
       "project": "Hail & Ghasha",
       "region": "Middle East",
-      "asset_type": "Offshore Gas",
+      "asset_type": "Shallow Offshore Gas",
       "phase": "Execution",
       "capex_busd": 17.0,
       "fid_date": "2023",
@@ -206,7 +236,7 @@
       "company": "Saudi Aramco",
       "project": "Marjan Increment",
       "region": "Middle East",
-      "asset_type": "Offshore Oil",
+      "asset_type": "Shallow Offshore Oil",
       "phase": "Execution",
       "capex_busd": 17.0,
       "fid_date": "2020",
@@ -221,7 +251,7 @@
       "company": "Saudi Aramco",
       "project": "Berri Increment",
       "region": "Middle East",
-      "asset_type": "Offshore Oil",
+      "asset_type": "Shallow Offshore Oil",
       "phase": "Execution",
       "capex_busd": 8.0,
       "fid_date": "2022",
