@@ -570,6 +570,34 @@
       color: var(--accent);
       font-weight: 500;
     }
+    .refresh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--surface2);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      cursor: pointer;
+      transition: color .15s, border-color .15s, background .15s;
+      white-space: nowrap;
+    }
+    .refresh-btn:hover { color: var(--text); border-color: var(--accent); background: var(--surface); }
+    .refresh-btn:active { opacity: .7; }
+    .refresh-btn.loading { pointer-events: none; color: var(--accent); }
+    .refresh-btn .spin { display: inline-block; }
+    .refresh-btn.loading .spin { animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .refresh-status {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+    .refresh-status.ok   { color: var(--green); }
+    .refresh-status.err  { color: var(--orange); }
     .content { padding-top: 0; }
     @media (max-width: 900px) {
       .header { grid-template-columns: 1fr; }
@@ -692,8 +720,12 @@
         <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
         <a href="news.html" class="nav-link">Market News</a>
       </nav>
-      <div class="header-meta" id="header-meta">
-        <!-- populated by JS -->
+      <div style="display:flex;align-items:center;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
+        <div class="header-meta" id="header-meta"><!-- populated by JS --></div>
+        <button class="refresh-btn" id="refresh-btn" title="데이터 새로고침">
+          <span class="spin">⟳</span><span>새로고침</span>
+        </button>
+        <span class="refresh-status" id="refresh-status"></span>
       </div>
     </div>
   </header>
@@ -1240,12 +1272,33 @@
     document.getElementById('drawer-close').addEventListener('click', closeDrawer);
     document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
 
-    // ─── Main Init ──────────────────────────────────────────────────
-    async function init() {
+    // ─── Refresh tracking ───────────────────────────────────────────
+    let lastRefreshedAt = null;
+    let refreshTimer    = null;
+
+    function updateRefreshStatus() {
+      const el = document.getElementById('refresh-status');
+      if (!lastRefreshedAt || !el) return;
+      const sec = Math.round((Date.now() - lastRefreshedAt) / 1000);
+      if (sec < 5)        el.textContent = '✓ 방금 새로고침';
+      else if (sec < 60)  el.textContent = `✓ ${sec}초 전`;
+      else if (sec < 3600) el.textContent = `✓ ${Math.floor(sec/60)}분 전`;
+      else                el.textContent = '';
+      el.className = 'refresh-status ' + (sec < 10 ? 'ok' : '');
+    }
+
+    // ─── Load data (called on init + manual refresh) ─────────────────
+    async function loadData() {
+      const btn = document.getElementById('refresh-btn');
+      const statusEl = document.getElementById('refresh-status');
+      if (btn) btn.classList.add('loading');
+
+      // Cache-bust: append ?ts= so browser always fetches fresh copy
+      const ts = Date.now();
       try {
         const [pipelineRes, capexRes] = await Promise.all([
-          fetch('data/pipeline.json'),
-          fetch('data/capex.json'),
+          fetch('data/pipeline.json?ts=' + ts),
+          fetch('data/capex.json?ts=' + ts),
         ]);
 
         if (!pipelineRes.ok || !capexRes.ok) throw new Error('Fetch failed');
@@ -1283,7 +1336,7 @@
         document.getElementById('kpi-capex').textContent = '$' + Math.round(capexForward) + 'B';
         document.getElementById('kpi-capex-sub').textContent =
           '$' + Math.round(capexExec) + 'B Sanctioned · $' + Math.round(capexFeed) + 'B Pre-FID';
-        document.getElementById('kpi-fid').textContent   = fidCount;
+        document.getElementById('kpi-fid').textContent = fidCount;
 
         // ─── KPI Row B ──────────────────────────────────────────────
         const rowB = document.getElementById('kpi-row-b');
@@ -1306,8 +1359,8 @@
         const staleProjects = allProjects.filter(p =>
           p.phase !== 'Production' && daysSince(p.verified) > 180
         );
+        const banner = document.getElementById('stale-banner');
         if (staleProjects.length > 0) {
-          const banner = document.getElementById('stale-banner');
           banner.classList.add('visible');
           document.getElementById('stale-list').innerHTML =
             `<strong>${staleProjects.length}개</strong> 프로젝트 검증일 180일 초과 · ` +
@@ -1315,6 +1368,8 @@
               `<span style="color:var(--text)">${p.project}</span>`
             ).join(', ') +
             (staleProjects.length > 5 ? ` 외 ${staleProjects.length - 5}건` : '');
+        } else {
+          banner.classList.remove('visible');
         }
 
         // ─── Matrix ─────────────────────────────────────────────────
@@ -1331,15 +1386,29 @@
         buildTable(allProjects);
         updateCount(allProjects.length);
 
+        // ─── Refresh timestamp ──────────────────────────────────────
+        lastRefreshedAt = Date.now();
+        if (refreshTimer) clearInterval(refreshTimer);
+        refreshTimer = setInterval(updateRefreshStatus, 15000);
+        updateRefreshStatus();
+        document.getElementById('error-banner').classList.remove('visible');
+
       } catch (err) {
         console.error(err);
         document.getElementById('error-banner').classList.add('visible');
         document.getElementById('error-banner').textContent =
-          'Failed to load data: ' + err.message + '. Ensure the server is running and data/pipeline.json + data/capex.json exist.';
+          'Failed to load data: ' + err.message + '. Ensure the server is running and data files exist.';
+        if (statusEl) { statusEl.textContent = '오류 발생'; statusEl.className = 'refresh-status err'; }
+      } finally {
+        if (btn) btn.classList.remove('loading');
       }
     }
 
-    init();
+    // ─── Refresh button ─────────────────────────────────────────────
+    document.getElementById('refresh-btn').addEventListener('click', loadData);
+
+    // ─── Main Init ──────────────────────────────────────────────────
+    loadData();
   </script>
 </body>
 </html>
