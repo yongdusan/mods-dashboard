@@ -109,33 +109,6 @@
       max-width: 520px;
       text-align: right;
     }
-    .refresh-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 5px;
-      background: transparent;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      font-size: 11px;
-      cursor: pointer;
-      transition: color .15s, border-color .15s;
-      white-space: nowrap;
-    }
-    .refresh-btn:hover { color: var(--text); border-color: var(--accent); }
-    .refresh-btn.loading { pointer-events: none; color: var(--accent); }
-    .refresh-btn .spin { display: inline-block; }
-    .refresh-btn.loading .spin { animation: spin .7s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .refresh-status {
-      font-size: 10px;
-      font-family: var(--font-mono);
-      color: var(--text-muted);
-    }
-    .refresh-status.ok  { color: var(--green); }
-    .refresh-status.err { color: var(--red); }
     .live-dot {
       width: 6px;
       height: 6px;
@@ -459,13 +432,7 @@
         <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
         <span class="nav-link active">Market News</span>
       </nav>
-      <div style="display:flex;align-items:center;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
-        <div class="header-meta" id="header-meta"><!-- populated by JS --></div>
-        <button class="refresh-btn" id="refresh-btn">
-          <span class="spin">⟳</span><span>새로고침</span>
-        </button>
-        <span class="refresh-status" id="refresh-status"></span>
-      </div>
+      <div class="header-meta" id="header-meta"><!-- populated by JS --></div>
     </div>
   </header>
 
@@ -506,54 +473,16 @@
       .replace(/"/g, '&quot;');
   }
 
-  /* ─── Refresh state ─── */
-  let lastRefreshedAt = null;
-  let refreshTimer    = null;
-
-  function updateRefreshStatus() {
-    const el = document.getElementById('refresh-status');
-    if (!lastRefreshedAt || !el) return;
-    const sec = Math.round((Date.now() - lastRefreshedAt) / 1000);
-    if (sec < 5)         el.textContent = '✓ 방금 새로고침';
-    else if (sec < 60)   el.textContent = `✓ ${sec}초 전`;
-    else if (sec < 3600) el.textContent = `✓ ${Math.floor(sec/60)}분 전`;
-    else                 el.textContent = '';
-    el.className = 'refresh-status ' + (sec < 10 ? 'ok' : '');
-  }
-
   /* ─── Load Data ─── */
   async function loadData() {
-    const btn      = document.getElementById('refresh-btn');
-    const statusEl = document.getElementById('refresh-status');
-    if (btn) btn.classList.add('loading');
     try {
-      newsData = await fetch('./data/news.json?ts=' + Date.now()).then(r => r.json());
-      lastRefreshedAt = Date.now();
-      if (refreshTimer) clearInterval(refreshTimer);
-      refreshTimer = setInterval(updateRefreshStatus, 15000);
-      updateRefreshStatus();
+      newsData = await fetch('./data/news.json').then(r => r.json());
     } catch (err) {
       document.getElementById('news-grid').innerHTML =
         `<div class="loading">&#9888; 데이터 로드 실패: ${esc(err.message)}<br>로컬 서버로 실행하세요: <code>python3 -m http.server 8080</code></div>`;
-      if (statusEl) { statusEl.textContent = '오류 발생'; statusEl.className = 'refresh-status err'; }
-      if (btn) btn.classList.remove('loading');
       return false;
     }
-    if (btn) btn.classList.remove('loading');
     return true;
-  }
-
-  /* ─── Refresh handler ─── */
-  function setupRefreshBtn() {
-    const btn = document.getElementById('refresh-btn');
-    if (!btn) return;
-    btn.addEventListener('click', async () => {
-      const ok = await loadData();
-      if (ok) {
-        renderHeaderMeta();
-        filterAndRender();
-      }
-    });
   }
 
   /* ─── Category badge CSS class ─── */
@@ -747,7 +676,6 @@
   renderHeaderMeta();
   initControls();
   filterAndRender();
-  setupRefreshBtn();
 
 })();
 </script>
