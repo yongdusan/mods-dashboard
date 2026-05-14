@@ -191,6 +191,22 @@
       font-family: var(--font-mono);
     }
 
+    /* ─── Stale Data Banner ─── */
+    .stale-banner {
+      display: none;
+      background: rgba(249,115,22,0.12);
+      border: 1px solid rgba(249,115,22,0.4);
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: var(--orange);
+      font-family: var(--font-mono);
+    }
+    .stale-banner.visible { display: flex; align-items: center; gap: 10px; }
+    .stale-banner strong { color: #fff; }
+    .stale-list { color: var(--text-muted); flex: 1; }
+
     /* ─── Section Label ─── */
     .section-label {
       font-size: 11px;
@@ -721,6 +737,12 @@
       <!-- populated by JS -->
     </div>
 
+    <!-- Stale Data Banner -->
+    <div class="stale-banner" id="stale-banner">
+      <span>⚠ 재확인 필요</span>
+      <span class="stale-list" id="stale-list"></span>
+    </div>
+
     <!-- Phase × Region Matrix -->
     <div class="matrix-wrap">
       <div class="matrix-title">Phase × Region Matrix</div>
@@ -792,6 +814,26 @@
     let activeCell   = null; // { region, phase }
     let activeCompany = 'All';
     let table        = null;
+
+    // ─── Data freshness helpers ─────────────────────────────────────
+    const TODAY_MS = Date.now();
+    function daysSince(dateStr) {
+      if (!dateStr) return 9999;
+      const d = new Date(dateStr);
+      return Math.floor((TODAY_MS - d.getTime()) / 86400000);
+    }
+    function stalenessColor(days) {
+      if (days < 90)  return 'var(--green)';
+      if (days < 180) return 'var(--yellow)';
+      return 'var(--orange)';
+    }
+    function stalenessLabel(days) {
+      if (days >= 9999) return 'unknown';
+      if (days === 0)   return 'today';
+      if (days < 90)   return days + 'd ago';
+      if (days < 180)  return Math.floor(days/30) + 'mo ago';
+      return Math.floor(days/30) + 'mo ago ⚠';
+    }
 
     // ─── Phase badge helper ─────────────────────────────────────────
     function phaseBadge(phase) {
@@ -1096,6 +1138,18 @@
             minWidth: 130,
             formatter: (cell) => `<span style="font-size:11px;color:var(--text-muted)">${cell.getValue()}</span>`,
           },
+          {
+            title: 'Verified',
+            field: 'verified',
+            width: 88,
+            sorter: 'string',
+            formatter: (cell) => {
+              const v = cell.getValue();
+              const days = daysSince(v);
+              const color = stalenessColor(days);
+              return `<span style="font-family:var(--font-mono);font-size:10px;color:${color}">${stalenessLabel(days)}</span>`;
+            },
+          },
         ],
       });
       table.on('rowClick', function(e, row) { openDrawer(row.getData()); });
@@ -1157,6 +1211,20 @@
         <div class="drawer-section">
           <div class="drawer-section-title">Source</div>
           <div class="drawer-source">${sourceHtml}</div>
+        </div>
+
+        <div class="drawer-section">
+          <div class="drawer-section-title">Data Freshness</div>
+          <div style="font-family:var(--font-mono);font-size:12px;">
+            ${(() => {
+              const days = daysSince(proj.verified);
+              const color = stalenessColor(days);
+              const label = proj.verified || '—';
+              const ago = proj.verified ? ` (${stalenessLabel(days)})` : '';
+              const warn = days > 180 ? ' — <span style="color:var(--orange)">재확인 필요</span>' : '';
+              return `<span style="color:${color}">${label}${ago}</span>${warn}`;
+            })()}
+          </div>
         </div>
       `;
 
@@ -1233,6 +1301,21 @@
               <div class="kpi-sub">Upstream 2026E</div>
             </div>`;
         }).join('');
+
+        // ─── Stale data banner ──────────────────────────────────────
+        const staleProjects = allProjects.filter(p =>
+          p.phase !== 'Production' && daysSince(p.verified) > 180
+        );
+        if (staleProjects.length > 0) {
+          const banner = document.getElementById('stale-banner');
+          banner.classList.add('visible');
+          document.getElementById('stale-list').innerHTML =
+            `<strong>${staleProjects.length}개</strong> 프로젝트 검증일 180일 초과 · ` +
+            staleProjects.slice(0, 5).map(p =>
+              `<span style="color:var(--text)">${p.project}</span>`
+            ).join(', ') +
+            (staleProjects.length > 5 ? ` 외 ${staleProjects.length - 5}건` : '');
+        }
 
         // ─── Matrix ─────────────────────────────────────────────────
         buildMatrix(allProjects);
