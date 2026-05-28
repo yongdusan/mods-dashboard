@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-28",
   "companies": [
     {
       "name": "Equinor",
@@ -356,14 +356,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 21.0,
-          "upstream_capex_busd": 13.0,
-          "source": "2026 Capital Discipline Guidance",
+          "total_capex_busd": 25.0,
+          "upstream_capex_busd": 17.0,
+          "source": "Q1 2026 Earnings (May 2026)",
           "source_url": "https://www.shell.com/investors/results-and-reporting/quarterly-results.html"
         }
       ],
       "upstream_focus": "deepwater, LNG",
-      "notes": "Upstream 비중 ~62%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지.",
+      "notes": "Upstream 비중 ~68%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지. 2026 가이던스 $24–26B(중간값 $25B)로 상향 — ARC Resources 인수($4B) 반영. 2027–2028 가이던스는 $20–22B로 복귀 예정.",
       "upstream_plan": {
         "horizon": "2026–2028",
         "total_commitment_busd": null,
@@ -871,14 +871,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 16.0,
+          "total_capex_busd": 15.0,
           "upstream_capex_busd": 10.0,
-          "source": "2025 Results & 2026 Objectives (Feb 2026)",
+          "source": "Q1 2026 Earnings (Apr 2026)",
           "source_url": "https://totalenergies.com/investors/publications-and-regulated-information/quarterly-results"
         }
       ],
       "upstream_focus": "Africa deepwater, Middle East, Brazil",
-      "notes": "Upstream 비중 ~63%. 저탄소/통합전력 ~$4B 별도. 2026 net capex ~$16B로 하향(기존 $17.5B). Angola, Nigeria, Congo 집중.",
+      "notes": "Upstream 비중 ~67%. 저탄소/통합전력 ~$3B 별도. 2026 net capex $15B로 추가 하향(기존 $16B) — $7.5B 비용 절감 프로그램의 일환으로 연 $1B 삭감. Angola, Nigeria, Congo 집중.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": null,
