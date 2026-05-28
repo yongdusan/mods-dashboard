@@ -36,7 +36,8 @@ jobs:
           CLAUDE_DISABLE_NONINTERACTIVE_CONFIRMATIONS: "1"
         run: |
           claude --allowedTools "WebSearch,Read,Write,Bash" \
-                 --max-turns 30 \
+                 --model claude-haiku-4-5-20251001 \
+                 --max-turns 15 \
                  -p "$(cat <<'PROMPT'
           You are updating data/news.json for the MODU Intelligence Dashboard.
           The project root is the current working directory.
