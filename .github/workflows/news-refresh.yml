@@ -1,0 +1,87 @@
+name: News Refresh
+
+# Triggered manually via Cloudflare Pages Function → POST /api/refresh
+on:
+  workflow_dispatch:
+
+# Prevent overlapping runs
+concurrency:
+  group: news-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Update news.json via Claude
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write   # needed to push the updated file
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (for Claude CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run news refresh
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_DISABLE_NONINTERACTIVE_CONFIRMATIONS: "1"
+        run: |
+          claude --allowedTools "WebSearch,Read,Write,Bash" \
+                 --max-turns 30 \
+                 -p "$(cat <<'PROMPT'
+          You are updating data/news.json for the MODU Intelligence Dashboard.
+          The project root is the current working directory.
+
+          ## Task
+          1. Read data/news.json. Note the current max `id` and the most recent `date`.
+          2. Search the web for offshore drilling and E&P news from the past 2 weeks using these sources:
+             - https://www.offshore-energy.biz
+             - https://www.rigzone.com/news/
+             - https://www.oedigital.com
+          3. Find up to 5 items that are NEW (not already in news.json) and match these categories:
+             - Contract: rig contract award ≥ $50M, or major FPSO/subsea contract
+             - Earnings: offshore contractor quarterly results
+             - Fleet: rig delivery, scrapping, or reactivation
+             - M&A: merger, acquisition, or fleet transaction ≥ $200M
+             - Outlook: market outlook, day rate surveys, utilization data
+          4. For each new item, build a JSON object:
+             {
+               "id": <max_existing_id + N>,
+               "date": "YYYY-MM-DD",
+               "category": "Contract|Earnings|Fleet|M&A|Outlook",
+               "title": "Concise English title (under 80 chars)",
+               "summary": "2~3문장 한국어 요약",
+               "companies": ["CompanyName"],
+               "source": "Source name",
+               "url": "https://..."
+             }
+          5. Insert new items at the TOP of the `items` array (newest first).
+          6. Remove items with `date` older than 6 months from today.
+          7. Update the top-level `"updated"` field to today's date (YYYY-MM-DD).
+          8. Write the updated JSON back to data/news.json.
+          9. Output a brief summary of what you added and removed.
+
+          Today's date: $(date -u +%Y-%m-%d)
+          PROMPT
+          )"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: auto-refresh news.json $(date -u +%Y-%m-%d)"
+            git push
+          fi

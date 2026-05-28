@@ -178,6 +178,50 @@
       opacity: 0.75;
       font-weight: 400;
     }
+
+    /* ─── Refresh Button ─── */
+    .refresh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .refresh-btn:hover:not(:disabled) {
+      background: var(--accent);
+      color: #0d1117;
+    }
+    .refresh-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .refresh-btn svg {
+      flex-shrink: 0;
+      transition: transform 0.6s linear;
+    }
+    .refresh-btn.spinning svg {
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .refresh-toast {
+      display: none;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+    }
+    .refresh-toast.success { background: rgba(63,185,80,0.12); border: 1px solid var(--green); color: var(--green); }
+    .refresh-toast.error   { background: rgba(248,81,73,0.10); border: 1px solid var(--red);   color: var(--red); }
     .search-input {
       padding: 7px 14px;
       border: 1px solid var(--border);
@@ -447,7 +491,16 @@
         <div class="filter-row" id="category-filter-row"><!-- category buttons populated by JS --></div>
       </div>
     </div>
-    <input class="search-input" type="text" id="search-input" placeholder="Search deepwater news, companies, projects...">
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+      <input class="search-input" type="text" id="search-input" placeholder="Search deepwater news, companies, projects...">
+      <button class="refresh-btn" id="refresh-btn" title="Claude가 최신 뉴스를 웹에서 검색하여 업데이트합니다 (약 2~3분 소요)">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.65 2.35A8 8 0 1 0 15 8h-2a6 6 0 1 1-1.06-3.36L10 7h5V2l-1.35.35z" fill="currentColor"/>
+        </svg>
+        뉴스 업데이트
+      </button>
+      <div class="refresh-toast" id="refresh-toast"></div>
+    </div>
   </div>
 
   <div class="news-grid" id="news-grid">
@@ -669,6 +722,46 @@
     `;
   }
 
+  /* ─── News Refresh Button ─── */
+  function initRefreshButton() {
+    const btn   = document.getElementById('refresh-btn');
+    const toast = document.getElementById('refresh-toast');
+
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      btn.classList.add('spinning');
+      btn.querySelector('span') && (btn.querySelector('span').textContent = '업데이트 중…');
+
+      // Replace button text node
+      const textNodes = [...btn.childNodes].filter(n => n.nodeType === 3);
+      if (textNodes.length) textNodes[textNodes.length - 1].textContent = ' 업데이트 중…';
+
+      toast.style.display = 'none';
+
+      try {
+        const res  = await fetch('/api/refresh', { method: 'POST' });
+        const data = await res.json();
+
+        if (data.ok) {
+          toast.className = 'refresh-toast success';
+          toast.textContent = data.message || '업데이트 요청이 전송되었습니다. 2~3분 후 페이지를 새로고침하세요.';
+        } else {
+          toast.className = 'refresh-toast error';
+          toast.textContent = `오류: ${data.error || '알 수 없는 오류가 발생했습니다.'}`;
+        }
+      } catch (err) {
+        toast.className = 'refresh-toast error';
+        toast.textContent = `네트워크 오류: ${err.message}`;
+      }
+
+      toast.style.display = 'block';
+      btn.disabled = false;
+      btn.classList.remove('spinning');
+      const textNodes2 = [...btn.childNodes].filter(n => n.nodeType === 3);
+      if (textNodes2.length) textNodes2[textNodes2.length - 1].textContent = ' 뉴스 업데이트';
+    });
+  }
+
   /* ─── Main ─── */
   const ok = await loadData();
   if (!ok) return;
@@ -676,6 +769,7 @@
   renderHeaderMeta();
   initControls();
   filterAndRender();
+  initRefreshButton();
 
 })();
 </script>
