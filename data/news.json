@@ -1,8 +1,58 @@
 {
-  "updated": "2026-05-09",
+  "updated": "2026-05-28",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 34,
+      "date": "2026-05-07",
+      "category": "Contract",
+      "title": "Subsea7 and OneSubsea Join Equinor Alliance for Bay du Nord Subsea Work",
+      "summary": "Equinor과 Subsea Integration Alliance(Subsea7, OneSubsea 포함)가 협력 협약을 체결했다. 협약은 캐나다 Bay du Nord 프로젝트와 노르웨이 Wisting 프로젝트의 초기 개념 연구(concept studies)를 공동으로 진행한다. 두 프로젝트는 각각 $10B 이상 규모의 주요 개발 프로젝트다.",
+      "companies": ["Equinor", "Subsea7", "OneSubsea"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/subsea7-and-onesubsea-hired-to-work-on-wisting-and-bay-du-nord-oil-projects/"
+    },
+    {
+      "id": 33,
+      "date": "2026-04-23",
+      "category": "M&A",
+      "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
+      "summary": "Helix Energy Solutions와 Hornbeck Offshore Services가 전액주식 거래로 합병에 합의했다. Hornbeck 주주는 결합 회사의 약 55%를 소유하게 된다. 합병으로 인한 연간 시너지는 3년 내 $75M 이상 예상되며, 2026년 하반기 마감 목표다.",
+      "companies": ["Helix Energy Solutions", "Hornbeck Offshore Services"],
+      "source": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260423559009/en/Helix-and-Hornbeck-to-Combine-to-Create-a-Premier-Integrated-Offshore-Services-Company"
+    },
+    {
+      "id": 32,
+      "date": "2026-05-15",
+      "category": "Contract",
+      "title": "Valaris Contract Awards and Extensions Lift Backlog to $4.9B",
+      "summary": "Valaris가 다수의 새로운 계약 및 연장 계약을 수주하여 총 약 $560M의 백로그를 추가했다. 주요 수주는 Petrobras의 1,064일 Valaris DS-4 드릴십 연장($447M)과 여러 잭업 리그의 북해, 인도네시아, 브루나이 작업 계약이다. 총 백로그는 $4.9B로 증가했다.",
+      "companies": ["Valaris", "Petrobras"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/valaris-batch-of-rig-deals-lifts-total-contract-backlog-to-4-9-billion/"
+    },
+    {
+      "id": 31,
+      "date": "2026-05-04",
+      "category": "Outlook",
+      "title": "Transocean Quarterly Fleet Status: $1.6B New Contracts, $7.1B Total Backlog",
+      "summary": "Transocean이 2026년 1분기 선단 상태 보고서를 발표했다. 신규 및 연장 계약으로 약 $1.6B의 백로그를 추가했으며, 총 백로그는 $7.1B에 도달했다. Barents, Orion, Aquila, Corcovado, Asgard 등 5개 장비가 노르웨이, 브라질, 동부 지중해에서 계약을 받았다.",
+      "companies": ["Transocean"],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/04/3287225/0/en/Transocean-Ltd-Provides-Quarterly-Fleet-Status-Report.html"
+    },
+    {
+      "id": 30,
+      "date": "2026-04-29",
+      "category": "Contract",
+      "title": "BW Offshore Awarded FPSO FEED for Equinor's Bay du Nord Project",
+      "summary": "BW Offshore가 캐나다 Equinor의 Bay du Nord FPSO FEED 계약을 수주했다. FEED는 2026년 말까지 진행될 예정이며, FPSO 설계 최적화, 발주처와의 상용 협상, 주요 협력사 선정 등을 포함한다. Bay du Nord는 약 $12B 규모의 깊은 수심 유전 프로젝트로 2027년 FID를 목표로 한다.",
+      "companies": ["BW Offshore", "Equinor"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/fpso-feed-award-to-bw-offshore-turning-the-key-on-canadas-12-billion-oil-project/"
+    },
     {
       "id": 28,
       "date": "2026-05-07",
@@ -310,17 +360,6 @@
       "companies": ["Noble", "Borr Drilling"],
       "source": "Rigzone",
       "url": "https://www.rigzone.com/news/noble_to_sell_6_jackups_become_pureplay_deepwater_driller-09-dec-2025-182483-article/"
-    },
-    {
-      "id": 23,
-      "date": "2025-09-30",
-      "sector": "FPSO/FLNG",
-      "category": "Contract",
-      "title": "MODEC Awarded Full EPCI Scope for ExxonMobil's Hammerhead FPSO",
-      "summary": "MODEC was awarded the full EPCI scope to develop the Hammerhead FPSO for ExxonMobil Guyana following FID. The unit is expected to produce 150,000 barrels of oil per day, operate in about 1,025 meters of water and receive 10 years of O&M service from MODEC after first oil.",
-      "companies": ["MODEC", "ExxonMobil"],
-      "source": "MODEC",
-      "url": "https://www.modec.com/news/2025/20250930_pr_Hammerhead-FID.html"
     }
   ]
 }
