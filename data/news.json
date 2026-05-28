@@ -53,6 +53,31 @@
       "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-borr-drilling-q1-2026-results-disappoint-stock-drops-93CH-4704355"
     },
     {
+      "id": 41,
+      "date": "2026-05-18",
+      "category": "Earnings",
+      "title": "BW Offshore Q1 2026: 100% Utilization; EBITDA Guidance Cut on BW Opal Downtime",
+      "summary": "BW Offshore가 Q1 2026 매출 $130M, EBITDA $48M을 기록했으며 함대 전체 가중평균 가동률 100%를 달성했다. BW Opal의 압축기 씰 교체 완료로 5월 초 가스 생산이 재개됐으나, 다운타임 영향을 반영해 연간 EBITDA 가이던스를 $3.4~3.7억에서 $3.1~3.4억으로 하향 조정했다. Equinor의 Bay du Nord FPSO FEED 계약 체결로 파이프라인은 확대됐다.",
+      "companies": [
+        "BW Offshore"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html"
+    },
+    {
+      "id": 42,
+      "date": "2026-05-16",
+      "category": "Contract",
+      "title": "Petrobras Awards ~$7.8B SEAP FPSO Contracts to SBM Offshore for Two Units",
+      "summary": "페트로브라스가 세르지피-알라고아스(SEAP) 심해 프로젝트를 위해 SBM Offshore와 FPSO 2척(P-81·P-87) BOT 계약을 체결했으며, 계약 규모는 약 $7.8B으로 추정된다. 두 FPSO의 합산 생산 용량은 하루 24만 배럴·가스 2,200만 m³이며, SEAP II 초도 생산은 2030년으로 예정된다. FID는 4월에 완료됐으며, 이번 계약으로 SBM Offshore는 Búzios 8에 이어 브라질 최대 규모 FPSO 수주를 추가 확보했다.",
+      "companies": [
+        "Petrobras",
+        "SBM Offshore"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/petrobras-bringing-12-billion-oil-gas-project-pair-to-life-with-sbm-offshore-on-fpso-duty-for-both/"
+    },
+    {
       "id": 32,
       "date": "2026-05-15",
       "category": "Contract",
