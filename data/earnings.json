@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-28",
   "companies": [
     {
       "name": "Transocean",
@@ -568,6 +568,24 @@
             "안전 기록 신기록 달성 — TRIR(총 재해율) 업계 최저 수준"
           ],
           "source_url": "https://www.seadrill.com/investors/financial-information/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 358,
+          "adj_ebitda_musd": 97,
+          "ebitda_margin_pct": 27.1,
+          "utilization_pct": 95,
+          "avg_day_rate_kusd": 343,
+          "backlog_busd": 3.1,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "highlights": [
+            "연간 가이던스 상향: Revenue $1.43–1.48B, EBITDA $370–420M (기존 $350–400M)",
+            "신규 계약 $860M+ 추가 (GoM·브라질·앙골라) — Backlog $3.1B로 확대",
+            "경제적 가동률 95% (전년 동기 84% 대비 대폭 개선)",
+            "West Capella·West Jupiter 리활성화 프로젝트 예정보다 빠르게 완료",
+            "순손실 $7M, 현금 $329M 유지 (총 부채 $625M, 순부채 $296M)"
+          ],
+          "source_url": "https://www.seadrill.com/investors/financial-information/"
         }
       ]
     },
@@ -695,6 +713,24 @@
             "인수 리그 즉시 중동 계약 투입 예정",
             "Q1 2026 결과 발표 예정: 2026.05.20",
             "잭업 공급 타이트 유지 — 2026년 Day rate 상승 기대"
+          ],
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 247,
+          "adj_ebitda_musd": 89,
+          "ebitda_margin_pct": 36.0,
+          "utilization_pct": 97,
+          "avg_day_rate_kusd": 137,
+          "backlog_busd": 1.17,
+          "source": "Q1 2026 Earnings (May 2026)",
+          "highlights": [
+            "Revenue $247M·EBITDA $89M — QoQ 하락 (Q4 2025: $259M·$105M), 기대치 하회",
+            "Noble 잭업 5기 인수 완료(1월) — Fleet 29기로 확대",
+            "$300M 전환사채 발행 완료, $195M 2028년 만기 채권 상환 — 만기 구조 개선",
+            "2026년 YTD 계약 13건 체결, $274M Backlog 추가 (Eni·BW Energy·Vestigo 등)",
+            "2026 coverage 71% (평균 $137K) — 근시일 가시성 확보, 단가 압박은 지속"
           ],
           "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
         }
