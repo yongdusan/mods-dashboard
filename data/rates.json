@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-28",
   "data_quality": {
     "day_rates": {
       "confidence": "mixed",
@@ -27,24 +27,132 @@
     }
   },
   "day_rates": [
-    { "date": "2025-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 430, "source": "Indicative estimate" },
-    { "date": "2025-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 445, "source": "Indicative estimate" },
-    { "date": "2025-07", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 458, "source": "Indicative estimate" },
-    { "date": "2025-10", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 463, "source": "Indicative estimate" },
-    { "date": "2026-01", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 468, "source": "Indicative estimate" },
-    { "date": "2026-04", "rig_type": "Drillship", "tier": "Ultra-deepwater", "rate_kusd": 480, "source": "FSR-anchored indicative (Transocean Feb 2026 FSR)" },
-    { "date": "2025-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 330, "source": "Indicative estimate" },
-    { "date": "2025-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 345, "source": "Indicative estimate" },
-    { "date": "2025-07", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 360, "source": "Indicative estimate" },
-    { "date": "2025-10", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 368, "source": "Indicative estimate" },
-    { "date": "2026-01", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 375, "source": "Indicative estimate" },
-    { "date": "2026-04", "rig_type": "Semisubmersible", "tier": "Deepwater", "rate_kusd": 400, "source": "FSR-anchored indicative (Transocean Feb 2026 FSR; HE semis 452–490k)" },
-    { "date": "2025-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 120, "source": "Indicative estimate" },
-    { "date": "2025-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 128, "source": "Indicative estimate" },
-    { "date": "2025-07", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 133, "source": "Indicative estimate" },
-    { "date": "2025-10", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 138, "source": "Indicative estimate" },
-    { "date": "2026-01", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 142, "source": "Indicative estimate" },
-    { "date": "2026-04", "rig_type": "Jack-up", "tier": "Premium", "rate_kusd": 145, "source": "Indicative estimate" }
+    {
+      "date": "2025-01",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 430,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-04",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 445,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-07",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 458,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-10",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 463,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2026-01",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 450,
+      "source": "Q1 2026 Earnings avg (RIG $476K / VAL $436K / NE $438K)"
+    },
+    {
+      "date": "2026-04",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 460,
+      "source": "Q1 2026 Earnings-anchored estimate (Q1 actual avg $450K + modest uptick)"
+    },
+    {
+      "date": "2025-01",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 330,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-04",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 345,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-07",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 360,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-10",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 368,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2026-01",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 375,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2026-04",
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 400,
+      "source": "FSR-anchored indicative (Transocean Feb 2026 FSR; HE semis 452–490k)"
+    },
+    {
+      "date": "2025-01",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 120,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-04",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 128,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-07",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 133,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-10",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 138,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2026-01",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 137,
+      "source": "Q1 2026 Earnings (Borr Drilling Q1 2026 fleet avg $137K)"
+    },
+    {
+      "date": "2026-04",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 138,
+      "source": "Q1 2026 Earnings-anchored (Borr 2026 coverage avg $137K; pricing pressure noted)"
+    }
   ],
   "named_observations": [
     {

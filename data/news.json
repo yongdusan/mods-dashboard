@@ -4,12 +4,52 @@
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
     {
+      "id": 35,
+      "date": "2026-05-20",
+      "category": "Earnings",
+      "title": "Golar LNG Q1 2026: EBITDA +158% YoY; Goldman Sachs Hired for Strategic Review",
+      "summary": "Golar LNG이 Q1 2026 매출 $138M(+120% YoY), EBITDA $106M(+158% YoY)의 강력한 실적을 발표했다. FLNG Hilli 100% 가동률 유지 및 FLNG Gimi의 계약 초과 생산이 성장을 견인했다. 전략적 대안 검토(FLNG 성장 가속화·주주가치 제고) 자문사로 골드만삭스를 선임, M&A 가능성에 시장의 관심이 쏠리고 있다.",
+      "companies": [
+        "Golar LNG"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html"
+    },
+    {
+      "id": 36,
+      "date": "2026-05-11",
+      "category": "Earnings",
+      "title": "Seadrill Q1 2026: Utilization Jumps to 95%; Full-Year Guidance Raised",
+      "summary": "Seadrill이 Q1 2026 매출 $358M, 경제적 가동률 95%(전년 동기 84%)를 기록했다. West Capella·West Jupiter 리활성화 프로젝트를 예정보다 일찍 완료하고 $860M 이상 신규 계약을 추가하며 Backlog를 $3.1B로 확대했다. 연간 Revenue 가이던스를 $1.43–1.48B, EBITDA 가이던스를 $370–420M으로 상향 조정했다.",
+      "companies": [
+        "Seadrill"
+      ],
+      "source": "Seadrill IR",
+      "url": "https://www.seadrill.com/investors/financial-information/"
+    },
+    {
+      "id": 37,
+      "date": "2026-05-20",
+      "category": "Earnings",
+      "title": "Borr Drilling Q1 2026 Disappoints: Revenue Falls QoQ Despite High Utilization",
+      "summary": "Borr Drilling의 Q1 2026 매출이 $247M으로 전분기($259M) 대비 4.8% 감소하며 시장 기대치를 하회, 주가가 급락했다. 가동률 97%의 높은 운영 효율성에도 불구하고 평균 Day rate 하락과 Noble 잭업 5기 인수 비용 부담이 실적을 눌렀다. 2026년 커버리지는 71%(평균 $137K)로, 근시일 가시성은 확보했으나 단가 압박이 지속되고 있다.",
+      "companies": [
+        "Borr Drilling"
+      ],
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-borr-drilling-q1-2026-results-disappoint-stock-drops-93CH-4704355"
+    },
+    {
       "id": 34,
       "date": "2026-05-07",
       "category": "Contract",
       "title": "Subsea7 and OneSubsea Join Equinor Alliance for Bay du Nord Subsea Work",
       "summary": "Equinor과 Subsea Integration Alliance(Subsea7, OneSubsea 포함)가 협력 협약을 체결했다. 협약은 캐나다 Bay du Nord 프로젝트와 노르웨이 Wisting 프로젝트의 초기 개념 연구(concept studies)를 공동으로 진행한다. 두 프로젝트는 각각 $10B 이상 규모의 주요 개발 프로젝트다.",
-      "companies": ["Equinor", "Subsea7", "OneSubsea"],
+      "companies": [
+        "Equinor",
+        "Subsea7",
+        "OneSubsea"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/subsea7-and-onesubsea-hired-to-work-on-wisting-and-bay-du-nord-oil-projects/"
     },
@@ -19,7 +59,10 @@
       "category": "M&A",
       "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
       "summary": "Helix Energy Solutions와 Hornbeck Offshore Services가 전액주식 거래로 합병에 합의했다. Hornbeck 주주는 결합 회사의 약 55%를 소유하게 된다. 합병으로 인한 연간 시너지는 3년 내 $75M 이상 예상되며, 2026년 하반기 마감 목표다.",
-      "companies": ["Helix Energy Solutions", "Hornbeck Offshore Services"],
+      "companies": [
+        "Helix Energy Solutions",
+        "Hornbeck Offshore Services"
+      ],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260423559009/en/Helix-and-Hornbeck-to-Combine-to-Create-a-Premier-Integrated-Offshore-Services-Company"
     },
@@ -29,7 +72,10 @@
       "category": "Contract",
       "title": "Valaris Contract Awards and Extensions Lift Backlog to $4.9B",
       "summary": "Valaris가 다수의 새로운 계약 및 연장 계약을 수주하여 총 약 $560M의 백로그를 추가했다. 주요 수주는 Petrobras의 1,064일 Valaris DS-4 드릴십 연장($447M)과 여러 잭업 리그의 북해, 인도네시아, 브루나이 작업 계약이다. 총 백로그는 $4.9B로 증가했다.",
-      "companies": ["Valaris", "Petrobras"],
+      "companies": [
+        "Valaris",
+        "Petrobras"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/valaris-batch-of-rig-deals-lifts-total-contract-backlog-to-4-9-billion/"
     },
@@ -39,7 +85,9 @@
       "category": "Outlook",
       "title": "Transocean Quarterly Fleet Status: $1.6B New Contracts, $7.1B Total Backlog",
       "summary": "Transocean이 2026년 1분기 선단 상태 보고서를 발표했다. 신규 및 연장 계약으로 약 $1.6B의 백로그를 추가했으며, 총 백로그는 $7.1B에 도달했다. Barents, Orion, Aquila, Corcovado, Asgard 등 5개 장비가 노르웨이, 브라질, 동부 지중해에서 계약을 받았다.",
-      "companies": ["Transocean"],
+      "companies": [
+        "Transocean"
+      ],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/05/04/3287225/0/en/Transocean-Ltd-Provides-Quarterly-Fleet-Status-Report.html"
     },
@@ -49,7 +97,10 @@
       "category": "Contract",
       "title": "BW Offshore Awarded FPSO FEED for Equinor's Bay du Nord Project",
       "summary": "BW Offshore가 캐나다 Equinor의 Bay du Nord FPSO FEED 계약을 수주했다. FEED는 2026년 말까지 진행될 예정이며, FPSO 설계 최적화, 발주처와의 상용 협상, 주요 협력사 선정 등을 포함한다. Bay du Nord는 약 $12B 규모의 깊은 수심 유전 프로젝트로 2027년 FID를 목표로 한다.",
-      "companies": ["BW Offshore", "Equinor"],
+      "companies": [
+        "BW Offshore",
+        "Equinor"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/fpso-feed-award-to-bw-offshore-turning-the-key-on-canadas-12-billion-oil-project/"
     },
@@ -60,7 +111,9 @@
       "category": "Contract",
       "title": "BW Offshore Extends FPSO BW Catcher Contract Through 2030",
       "summary": "BW Offshore amended the FPSO BW Catcher contract with the Catcher field partners, setting a defined end-of-term framework to December 31, 2030 plus or minus six months. The revised terms are expected to add about $490 million of firm operating cash-flow backlog and improve redeployment visibility for the high-specification harsh-environment FPSO.",
-      "companies": ["BW Offshore"],
+      "companies": [
+        "BW Offshore"
+      ],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/05/07/3290360/0/en/bw-offshore-bw-catcher-contract-extension.html"
     },
@@ -71,7 +124,10 @@
       "category": "Earnings",
       "title": "SBM Offshore Q1 2026 Revenue Jumps to $3.5B; Guidance Raised",
       "summary": "SBM Offshore reported year-to-date Directional revenue of $3.5 billion for Q1 2026, raised full-year Directional revenue guidance to above $6.9 billion and maintained baseline Directional EBITDA guidance around $1.8 billion. The update also highlighted the ExxonMobil Guyana Longtail FEED award and two new Fast4Ward MPF hull orders.",
-      "companies": ["SBM Offshore", "ExxonMobil"],
+      "companies": [
+        "SBM Offshore",
+        "ExxonMobil"
+      ],
       "source": "SBM Offshore",
       "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
     },
@@ -82,7 +138,10 @@
       "category": "Contract",
       "title": "Weatherford Wins Deepwater MPD Work with Noble in Guyana and Nigeria",
       "summary": "Weatherford secured multiple managed pressure drilling contracts and a global aftermarket agreement with Noble. The awards include two deepwater MPD systems for Noble's Guyana operations, an MPD system upgrade for Nigeria and fleet-wide aftermarket support for Noble's MPD systems.",
-      "companies": ["Weatherford", "Noble"],
+      "companies": [
+        "Weatherford",
+        "Noble"
+      ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/5/5/weatherford-wins-mpd-contracts-with-noble-for-deepwater-drilling-operations/"
     },
@@ -93,7 +152,9 @@
       "category": "Outlook",
       "title": "Clarkson Forecasts 2026 Offshore Oil & Gas CAPEX Down 24% to $85B",
       "summary": "Clarkson Research expects global offshore oil and gas project CAPEX to fall to about $85 billion in 2026 from $111.9 billion of 2025 FIDs, with roughly $34 billion already committed. The forecast frames a more selective offshore investment environment despite continued deepwater activity in Brazil, Guyana, West Africa and the North Sea.",
-      "companies": ["Clarkson Research"],
+      "companies": [
+        "Clarkson Research"
+      ],
       "source": "Oil & Gas Journal",
       "url": "https://www.ogj.com/general-interest/news/55375196/otc-2026-clarkson-forecasts-24-decline-in-offshore-oil-gas-capex"
     },
@@ -104,7 +165,12 @@
       "category": "Contract",
       "title": "Equinor Commits $1.6B to Drilling and Well Services on the NCS",
       "summary": "Equinor extended drilling and well services agreements worth about NOK 17 billion, or $1.6 billion, on the Norwegian Continental Shelf. The awards support fixed installations and mobile rigs, with new wells expected to become increasingly important for sustaining North Sea production through 2035.",
-      "companies": ["Equinor", "Baker Hughes", "Halliburton", "SLB"],
+      "companies": [
+        "Equinor",
+        "Baker Hughes",
+        "Halliburton",
+        "SLB"
+      ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/5/4/equinor-commits-1-6-billion-to-drilling-activity-on-norwegian-continental-shelf/"
     },
@@ -115,7 +181,10 @@
       "category": "Contract",
       "title": "ExxonMobil Awards Noble Drillship Contract at $375k/day in Guyana",
       "summary": "ExxonMobil awarded Noble Corporation a new drillship contract offshore Guyana at a day rate of $375,000. The contract supports continued development drilling at the Stabroek Block, one of the world's most prolific deepwater discoveries.",
-      "companies": ["Noble", "ExxonMobil"],
+      "companies": [
+        "Noble",
+        "ExxonMobil"
+      ],
       "source": "Kaieteur News",
       "url": "https://kaieteurnewsonline.com/2026/04/29/exxon-awards-new-rig-contract-to-noble-at-us375000-day-rate/"
     },
@@ -126,7 +195,9 @@
       "category": "Contract",
       "title": "Seadrill Adds $260M Backlog with U.S. Gulf Drillship Awards",
       "summary": "Seadrill secured two drillship contract awards in the U.S. Gulf of Mexico. The West Neptune received a 365-day extension commencing September 2026, and the West Vela secured a 270-day contract starting August 2026, adding approximately $260 million in backlog.",
-      "companies": ["Seadrill"],
+      "companies": [
+        "Seadrill"
+      ],
       "source": "World Oil",
       "url": "https://worldoil.com/news/2026/4/22/seadrill-adds-260-million-backlog-with-u-s-gulf-drillship-awards/"
     },
@@ -137,7 +208,11 @@
       "category": "Contract",
       "title": "CoreMarine and Jumbo Offshore Win FLNG Installation Work in Argentina",
       "summary": "CoreMarine and Jumbo Offshore were awarded transport, installation and hook-up work for the Hilli Episeyo FLNG and MKII FLNG vessels in Argentina's Golfo San Matias. The scope covers soft-yoke mooring systems and offshore installation for the Southern Energy FLNG development.",
-      "companies": ["CoreMarine", "Jumbo Offshore", "Golar LNG"],
+      "companies": [
+        "CoreMarine",
+        "Jumbo Offshore",
+        "Golar LNG"
+      ],
       "source": "Offshore Magazine",
       "url": "https://www.offshore-mag.com/field-development/news/55370931/coremarine-jumbo-offshore-to-manage-mooring-operations-for-two-flng-vessels-in-argentina"
     },
@@ -148,7 +223,9 @@
       "category": "Contract",
       "title": "Transocean Announces $425M Additional Backlog for Ultra-Deepwater Drillship",
       "summary": "Transocean secured $425 million in additional contract backlog for an ultra-deepwater drillship. The award reflects continued operator demand for high-specification 8th generation assets.",
-      "companies": ["Transocean"],
+      "companies": [
+        "Transocean"
+      ],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/04/14/3273137/0/en/Transocean-Ltd-Announces-425-Million-Additional-Backlog-for-Ultra-Deepwater-Drillship.html"
     },
@@ -159,7 +236,10 @@
       "category": "Project",
       "title": "Petrobras Takes FID on SEAP I, Advancing $12B Sergipe Deepwater Development",
       "summary": "Petrobras approved the final investment decision for SEAP I in Brazil's Sergipe-Alagoas basin, following SEAP II approval in late 2025. The broader Sergipe Deepwater development involves more than R$60 billion of investment, two FPSOs expected from SBM Offshore under a BOT model, 32 wells and subsea infrastructure tied to a new gas export route.",
-      "companies": ["Petrobras", "SBM Offshore"],
+      "companies": [
+        "Petrobras",
+        "SBM Offshore"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/petrobras-bringing-12-billion-oil-gas-project-pair-to-life-with-sbm-offshore-on-fpso-duty-for-both/"
     },
@@ -170,7 +250,10 @@
       "category": "Contract",
       "title": "Transocean Wins $1B in Offshore Rig Contracts for Norway and Brazil",
       "summary": "Transocean announced contract awards totaling approximately $1.0 billion. The Transocean Barents was awarded a 1,095-day contract with Var Energi in Norway at $450k/day (~$490M backlog). The Deepwater Orion secured a 1,095-day extension with Petrobras in Brazil (~$420M), and the Deepwater Aquila received a 365-day Petrobras extension (~$160M).",
-      "companies": ["Transocean", "Petrobras"],
+      "companies": [
+        "Transocean",
+        "Petrobras"
+      ],
       "source": "World Oil",
       "url": "https://worldoil.com/news/2026/4/2/transocean-lands-1-billion-in-brazil-norway-offshore-rig-contracts/"
     },
@@ -181,7 +264,9 @@
       "category": "Contract",
       "title": "Transocean Deepwater Asgard Wins $158M Eastern Mediterranean Contract",
       "summary": "The Deepwater Asgard was awarded a five-well contract in the Eastern Mediterranean Sea with an undisclosed operator, adding approximately $158 million of backlog. The estimated 390-day campaign is expected to begin in Q4 2026.",
-      "companies": ["Transocean"],
+      "companies": [
+        "Transocean"
+      ],
       "source": "StockTitan",
       "url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html"
     },
@@ -192,7 +277,11 @@
       "category": "Outlook",
       "title": "Yinson Starts Carbon Capture System on FPSO Agogo Offshore Angola",
       "summary": "Yinson Production put a post-combustion carbon capture system into operation on the Agogo FPSO offshore Angola. The system, developed with Azule Energy and Carbon Circle, is described as the first offshore post-combustion CO2 capture plant operating on an active production facility.",
-      "companies": ["Yinson", "Azule Energy", "Carbon Circle"],
+      "companies": [
+        "Yinson",
+        "Azule Energy",
+        "Carbon Circle"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/history-written-as-ccs-technology-starts-operating-on-board-fpso/"
     },
@@ -203,7 +292,10 @@
       "category": "Contract",
       "title": "Petrobras Awards Foresea $465M Drillship Contract for Mero Field",
       "summary": "Petrobras awarded Foresea a long-term contract to operate the ultra-deepwater drillship ODN I offshore Brazil. The 1,443-day campaign supports development activity in the Mero field in the Santos Basin, contributing approximately $465 million to backlog.",
-      "companies": ["Petrobras", "Foresea"],
+      "companies": [
+        "Petrobras",
+        "Foresea"
+      ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/3/25/petrobras-awards-foresea-long-term-drillship-contract-for-mero-field-offshore-brazil/"
     },
@@ -214,7 +306,10 @@
       "category": "M&A",
       "title": "Golar LNG Launches Strategic Review to Accelerate FLNG Growth",
       "summary": "Golar LNG initiated a strategic review and appointed Goldman Sachs as financial advisor. The review will evaluate alternatives including a sale, merger, asset divestiture or corporate optimization as Golar positions itself as a pure-play FLNG company.",
-      "companies": ["Golar LNG", "Goldman Sachs"],
+      "companies": [
+        "Golar LNG",
+        "Goldman Sachs"
+      ],
       "source": "Nasdaq",
       "url": "https://www.nasdaq.com/press-release/golar-lng-limited-announces-strategic-review-maximize-stakeholder-value-and-0"
     },
@@ -225,7 +320,9 @@
       "category": "Earnings",
       "title": "Yinson Q4 FY2026 Supported by FPSO Assets Entering Charter Phase",
       "summary": "Yinson reported Q4 FY2026 PATAMI of RM228 million, broadly stable quarter-on-quarter, with growing operational contribution from FPSO assets including Maria Quiteria, Atlanta and Agogo after entering charter periods.",
-      "companies": ["Yinson"],
+      "companies": [
+        "Yinson"
+      ],
       "source": "Yinson",
       "url": "https://www.yinson.com/news/yinson-records-steady-q4fy2026-earnings-supported-by-growing-operational-contributions/"
     },
@@ -236,7 +333,9 @@
       "category": "Earnings",
       "title": "SBM Offshore FY2025: Revenue $5.1B, EBITDA $1.7B, Backlog $31.1B",
       "summary": "SBM Offshore reported 2025 Directional revenue of $5.1 billion and Directional EBITDA of $1.7 billion, both above guidance. Directional backlog stood at $31.1 billion, and the company issued 2026 baseline guidance of around $6.5 billion revenue and $1.8 billion EBITDA.",
-      "companies": ["SBM Offshore"],
+      "companies": [
+        "SBM Offshore"
+      ],
       "source": "SBM Offshore",
       "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-full-year-2025-earnings/"
     },
@@ -247,7 +346,9 @@
       "category": "Earnings",
       "title": "Golar LNG Q4 2025: FLNG Hilli and Gimi Outperform Production Targets",
       "summary": "Golar LNG reported Q4 2025 total operating revenue of $133 million and adjusted EBITDA of $91 million. FLNG Hilli exceeded its 2025 production target, FLNG Gimi overproduced versus committed volume in Q4, and MKII construction remained on time and on budget.",
-      "companies": ["Golar LNG"],
+      "companies": [
+        "Golar LNG"
+      ],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/02/25/3244404/0/en/Golar-LNG-Limited-Preliminary-fourth-quarter-and-financial-year-2025-results.html"
     },
@@ -258,7 +359,9 @@
       "category": "Earnings",
       "title": "Seadrill Q4 2025: Revenue $362M, EBITDA $88M - 2026 Guidance $1.4-1.45B",
       "summary": "Seadrill reported Q4 2025 revenue of $362 million and Adjusted EBITDA of $88 million (24.3% margin), with a net loss of $10 million. Full-year 2025 Adjusted EBITDA was $353 million. Backlog rose to $2.5 billion. 2026 guidance: revenue $1.40-1.45 billion, Adjusted EBITDA $350-400 million.",
-      "companies": ["Seadrill"],
+      "companies": [
+        "Seadrill"
+      ],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260225741746/en/Seadrill-Announces-Fourth-Quarter-and-Full-Year-2025-Results"
     },
@@ -269,7 +372,9 @@
       "category": "Earnings",
       "title": "Transocean FY2025: Revenue Up 13% to $3.97B, EBITDA Up 19% to $1.37B",
       "summary": "Transocean reported full-year 2025 contract drilling revenues of $3.965 billion (up 13% YoY) and Adjusted EBITDA of $1.37 billion (up 19%). Q4 2025 revenue was $1.04 billion with a 37% EBITDA margin. Total backlog stood at approximately $6.1 billion.",
-      "companies": ["Transocean"],
+      "companies": [
+        "Transocean"
+      ],
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/02/20/3241645/0/en/Transocean-Ltd-Reports-Fourth-Quarter-and-Full-Year-2025-Results.html"
     },
@@ -280,7 +385,10 @@
       "category": "Earnings",
       "title": "Valaris Q4 2025: Revenue $537M, Backlog $4.7B - Merger with Transocean Pending",
       "summary": "Valaris reported Q4 2025 revenue of $537 million and net income of $717 million including a tax benefit. Full-year 2025 revenue was $2.36 billion. Backlog expanded to $4.7 billion with about 97% of 2026 revenue midpoint already contracted.",
-      "companies": ["Valaris", "Transocean"],
+      "companies": [
+        "Valaris",
+        "Transocean"
+      ],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260218978659/en/Valaris-Reports-Fourth-Quarter-2025-Results"
     },
@@ -291,7 +399,10 @@
       "category": "M&A",
       "title": "Transocean to Acquire Valaris for $5.8B, Creating World's Largest Offshore Driller",
       "summary": "Transocean announced an all-stock acquisition of Valaris valued at approximately $5.8 billion. The combined entity would operate 73 offshore rigs - 33 UDW drillships, 9 semisubmersibles and 31 jackups - with a combined contract backlog of approximately $10 billion.",
-      "companies": ["Transocean", "Valaris"],
+      "companies": [
+        "Transocean",
+        "Valaris"
+      ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
     },
@@ -302,7 +413,9 @@
       "category": "Earnings",
       "title": "Borr Drilling Q4 2025: Revenue $259M, FY EBITDA $470M at Top of Guidance",
       "summary": "Borr Drilling reported Q4 2025 operating revenue of $259.4 million and full-year 2025 Adjusted EBITDA of $470.1 million, at the top of guidance. Q4 net loss was $1.0 million and backlog stood at $1.2 billion.",
-      "companies": ["Borr Drilling"],
+      "companies": [
+        "Borr Drilling"
+      ],
       "source": "StockTitan",
       "url": "https://www.stocktitan.net/news/BORR/borr-drilling-limited-announces-fourth-quarter-2025-7dlxv6zs1s87.html"
     },
@@ -324,7 +437,10 @@
       "category": "M&A",
       "title": "ExxonMobil Guyana Completes $2.32B Purchase of FPSO ONE GUYANA",
       "summary": "SBM Offshore and ExxonMobil Guyana completed the FPSO ONE GUYANA purchase transaction ahead of the maximum lease term. ExxonMobil assumes ownership while SBM Offshore continues operations and maintenance through 2035; cash consideration was approximately $2.32 billion.",
-      "companies": ["SBM Offshore", "ExxonMobil"],
+      "companies": [
+        "SBM Offshore",
+        "ExxonMobil"
+      ],
       "source": "SBM Offshore",
       "url": "https://www.sbmoffshore.com/newsroom/fpso-one-guyana-purchase-by-exxonmobil-guyana-completed/"
     },
@@ -335,7 +451,10 @@
       "category": "Fleet",
       "title": "Noble Completes $360M Sale of Five Jackups to Borr Drilling",
       "summary": "Noble Corporation completed the sale of five premium jack-up drilling rigs to Borr Drilling for approximately $360 million, expanding Borr's fleet to 29 jackups and moving Noble further toward a pure-play deepwater profile.",
-      "companies": ["Noble", "Borr Drilling"],
+      "companies": [
+        "Noble",
+        "Borr Drilling"
+      ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
     },
@@ -346,7 +465,10 @@
       "category": "Contract",
       "title": "Seadrill Announces Multiple Contract Awards in Malaysia, Norway and Brazil",
       "summary": "Seadrill secured three rig awards: West Capella contracted in Malaysia for about 440 days at $157 million, West Elara secured an accommodation contract with Equinor in Norway worth $78 million, and West Carina was extended in Brazil.",
-      "companies": ["Seadrill", "Equinor"],
+      "companies": [
+        "Seadrill",
+        "Equinor"
+      ],
       "source": "Seadrill IR",
       "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
     },
@@ -357,7 +479,10 @@
       "category": "Fleet",
       "title": "Noble to Sell 6 Jackups to Become Pureplay Deepwater Driller",
       "summary": "Noble Corporation announced the sale of six jackup rigs - five to Borr Drilling and one to Ocean Oilfield - to become a pureplay deepwater drilling company. The strategic shift aligns Noble with the higher day rate UDW floater market.",
-      "companies": ["Noble", "Borr Drilling"],
+      "companies": [
+        "Noble",
+        "Borr Drilling"
+      ],
       "source": "Rigzone",
       "url": "https://www.rigzone.com/news/noble_to_sell_6_jackups_become_pureplay_deepwater_driller-09-dec-2025-182483-article/"
     }
