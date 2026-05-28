@@ -4,6 +4,31 @@
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
     {
+      "id": 38,
+      "date": "2026-05-26",
+      "category": "Earnings",
+      "title": "Vantage Drilling Q1 2026: Returns to Profit, ONGC Contract Begins Ramp-Up",
+      "summary": "Vantage Drilling이 Q1 2026에 순이익 $0.4M을 기록하며 전년 동기 순손실 $18.9M에서 흑자 전환에 성공했다. ONGC와의 3년·$261M 규모 Platinum Explorer 계약 준비를 위해 보증금 $17.9M을 납부했으며, 향후 실적 개선의 기반이 마련됐다. 현금 잔고는 $65.3M으로 감소했으나 계약 커버리지 확대에 따른 현금흐름 개선이 기대된다.",
+      "companies": [
+        "Vantage Drilling",
+        "ONGC"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/26/3301130/0/en/Vantage-Drilling-International-Ltd-Reports-First-Quarter-2026-Results.html"
+    },
+    {
+      "id": 39,
+      "date": "2026-05-21",
+      "category": "Outlook",
+      "title": "Borr CEO: Middle East Conflict Boosts Long-Term Jack-Up Outlook Despite Near-Term Delays",
+      "summary": "Borr Drilling CEO Bruno Morand은 중동 분쟁이 단기 텐더 지연을 야기하지만, 에너지 안보 부각과 유가 상승을 통해 장기 오프쇼어 드릴링 전망을 강화하고 있다고 밝혔다. 유가 상승 효과가 데이레이트와 활동량에 반영되기까지 6~12개월이 소요될 것으로 예상하며, 2027~2028년 전망에 자신감을 표명했다. 단기 단가 압박에도 불구하고 잭업 공급 타이트 구조는 유지되고 있다.",
+      "companies": [
+        "Borr Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/borr-drillings-ceo-middle-east-conflict-brings-uncertainty-but-empowers-long-term-rig-outlook/"
+    },
+    {
       "id": 35,
       "date": "2026-05-20",
       "category": "Earnings",
@@ -16,18 +41,6 @@
       "url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html"
     },
     {
-      "id": 36,
-      "date": "2026-05-11",
-      "category": "Earnings",
-      "title": "Seadrill Q1 2026: Utilization Jumps to 95%; Full-Year Guidance Raised",
-      "summary": "Seadrill이 Q1 2026 매출 $358M, 경제적 가동률 95%(전년 동기 84%)를 기록했다. West Capella·West Jupiter 리활성화 프로젝트를 예정보다 일찍 완료하고 $860M 이상 신규 계약을 추가하며 Backlog를 $3.1B로 확대했다. 연간 Revenue 가이던스를 $1.43–1.48B, EBITDA 가이던스를 $370–420M으로 상향 조정했다.",
-      "companies": [
-        "Seadrill"
-      ],
-      "source": "Seadrill IR",
-      "url": "https://www.seadrill.com/investors/financial-information/"
-    },
-    {
       "id": 37,
       "date": "2026-05-20",
       "category": "Earnings",
@@ -38,33 +51,6 @@
       ],
       "source": "Investing.com",
       "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-borr-drilling-q1-2026-results-disappoint-stock-drops-93CH-4704355"
-    },
-    {
-      "id": 34,
-      "date": "2026-05-07",
-      "category": "Contract",
-      "title": "Subsea7 and OneSubsea Join Equinor Alliance for Bay du Nord Subsea Work",
-      "summary": "Equinor과 Subsea Integration Alliance(Subsea7, OneSubsea 포함)가 협력 협약을 체결했다. 협약은 캐나다 Bay du Nord 프로젝트와 노르웨이 Wisting 프로젝트의 초기 개념 연구(concept studies)를 공동으로 진행한다. 두 프로젝트는 각각 $10B 이상 규모의 주요 개발 프로젝트다.",
-      "companies": [
-        "Equinor",
-        "Subsea7",
-        "OneSubsea"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/subsea7-and-onesubsea-hired-to-work-on-wisting-and-bay-du-nord-oil-projects/"
-    },
-    {
-      "id": 33,
-      "date": "2026-04-23",
-      "category": "M&A",
-      "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
-      "summary": "Helix Energy Solutions와 Hornbeck Offshore Services가 전액주식 거래로 합병에 합의했다. Hornbeck 주주는 결합 회사의 약 55%를 소유하게 된다. 합병으로 인한 연간 시너지는 3년 내 $75M 이상 예상되며, 2026년 하반기 마감 목표다.",
-      "companies": [
-        "Helix Energy Solutions",
-        "Hornbeck Offshore Services"
-      ],
-      "source": "Business Wire",
-      "url": "https://www.businesswire.com/news/home/20260423559009/en/Helix-and-Hornbeck-to-Combine-to-Create-a-Premier-Integrated-Offshore-Services-Company"
     },
     {
       "id": 32,
@@ -80,29 +66,30 @@
       "url": "https://www.offshore-energy.biz/valaris-batch-of-rig-deals-lifts-total-contract-backlog-to-4-9-billion/"
     },
     {
-      "id": 31,
-      "date": "2026-05-04",
-      "category": "Outlook",
-      "title": "Transocean Quarterly Fleet Status: $1.6B New Contracts, $7.1B Total Backlog",
-      "summary": "Transocean이 2026년 1분기 선단 상태 보고서를 발표했다. 신규 및 연장 계약으로 약 $1.6B의 백로그를 추가했으며, 총 백로그는 $7.1B에 도달했다. Barents, Orion, Aquila, Corcovado, Asgard 등 5개 장비가 노르웨이, 브라질, 동부 지중해에서 계약을 받았다.",
+      "id": 36,
+      "date": "2026-05-11",
+      "category": "Earnings",
+      "title": "Seadrill Q1 2026: Utilization Jumps to 95%; Full-Year Guidance Raised",
+      "summary": "Seadrill이 Q1 2026 매출 $358M, 경제적 가동률 95%(전년 동기 84%)를 기록했다. West Capella·West Jupiter 리활성화 프로젝트를 예정보다 일찍 완료하고 $860M 이상 신규 계약을 추가하며 Backlog를 $3.1B로 확대했다. 연간 Revenue 가이던스를 $1.43–1.48B, EBITDA 가이던스를 $370–420M으로 상향 조정했다.",
       "companies": [
-        "Transocean"
+        "Seadrill"
       ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/05/04/3287225/0/en/Transocean-Ltd-Provides-Quarterly-Fleet-Status-Report.html"
+      "source": "Seadrill IR",
+      "url": "https://www.seadrill.com/investors/financial-information/"
     },
     {
-      "id": 30,
-      "date": "2026-04-29",
+      "id": 34,
+      "date": "2026-05-07",
       "category": "Contract",
-      "title": "BW Offshore Awarded FPSO FEED for Equinor's Bay du Nord Project",
-      "summary": "BW Offshore가 캐나다 Equinor의 Bay du Nord FPSO FEED 계약을 수주했다. FEED는 2026년 말까지 진행될 예정이며, FPSO 설계 최적화, 발주처와의 상용 협상, 주요 협력사 선정 등을 포함한다. Bay du Nord는 약 $12B 규모의 깊은 수심 유전 프로젝트로 2027년 FID를 목표로 한다.",
+      "title": "Subsea7 and OneSubsea Join Equinor Alliance for Bay du Nord Subsea Work",
+      "summary": "Equinor과 Subsea Integration Alliance(Subsea7, OneSubsea 포함)가 협력 협약을 체결했다. 협약은 캐나다 Bay du Nord 프로젝트와 노르웨이 Wisting 프로젝트의 초기 개념 연구(concept studies)를 공동으로 진행한다. 두 프로젝트는 각각 $10B 이상 규모의 주요 개발 프로젝트다.",
       "companies": [
-        "BW Offshore",
-        "Equinor"
+        "Equinor",
+        "Subsea7",
+        "OneSubsea"
       ],
       "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/fpso-feed-award-to-bw-offshore-turning-the-key-on-canadas-12-billion-oil-project/"
+      "url": "https://www.offshore-energy.biz/subsea7-and-onesubsea-hired-to-work-on-wisting-and-bay-du-nord-oil-projects/"
     },
     {
       "id": 28,
@@ -132,6 +119,19 @@
       "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
     },
     {
+      "id": 40,
+      "date": "2026-05-06",
+      "category": "M&A",
+      "title": "Transocean-Valaris $5.8B Merger Faces DOJ Second Request, Closing Delayed to H2 2026",
+      "summary": "미국 법무부(DOJ)가 Transocean의 Valaris 인수($5.8B) 건에 대해 추가 자료 제출 요청(Second Request)을 발부하며 합병 일정이 지연됐다. 두 회사는 합병 시 드릴십 33척을 포함한 73척 리그를 보유한 기업가치 $17B 규모의 최대 offshore drilling 업체가 탄생할 예정이다. 양사는 DOJ와 협조적 검토 절차를 지속 중이며 거래 완료는 2026년 하반기로 예상된다.",
+      "companies": [
+        "Transocean",
+        "Valaris"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/transoceans-5-8-billion-merger-with-valaris-pending-us-antitrust-clearance/"
+    },
+    {
       "id": 26,
       "date": "2026-05-05",
       "sector": "Drilling",
@@ -144,6 +144,18 @@
       ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/5/5/weatherford-wins-mpd-contracts-with-noble-for-deepwater-drilling-operations/"
+    },
+    {
+      "id": 31,
+      "date": "2026-05-04",
+      "category": "Outlook",
+      "title": "Transocean Quarterly Fleet Status: $1.6B New Contracts, $7.1B Total Backlog",
+      "summary": "Transocean이 2026년 1분기 선단 상태 보고서를 발표했다. 신규 및 연장 계약으로 약 $1.6B의 백로그를 추가했으며, 총 백로그는 $7.1B에 도달했다. Barents, Orion, Aquila, Corcovado, Asgard 등 5개 장비가 노르웨이, 브라질, 동부 지중해에서 계약을 받았다.",
+      "companies": [
+        "Transocean"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/05/04/3287225/0/en/Transocean-Ltd-Provides-Quarterly-Fleet-Status-Report.html"
     },
     {
       "id": 25,
@@ -175,6 +187,19 @@
       "url": "https://www.worldoil.com/news/2026/5/4/equinor-commits-1-6-billion-to-drilling-activity-on-norwegian-continental-shelf/"
     },
     {
+      "id": 30,
+      "date": "2026-04-29",
+      "category": "Contract",
+      "title": "BW Offshore Awarded FPSO FEED for Equinor's Bay du Nord Project",
+      "summary": "BW Offshore가 캐나다 Equinor의 Bay du Nord FPSO FEED 계약을 수주했다. FEED는 2026년 말까지 진행될 예정이며, FPSO 설계 최적화, 발주처와의 상용 협상, 주요 협력사 선정 등을 포함한다. Bay du Nord는 약 $12B 규모의 깊은 수심 유전 프로젝트로 2027년 FID를 목표로 한다.",
+      "companies": [
+        "BW Offshore",
+        "Equinor"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/fpso-feed-award-to-bw-offshore-turning-the-key-on-canadas-12-billion-oil-project/"
+    },
+    {
       "id": 1,
       "date": "2026-04-29",
       "sector": "Drilling",
@@ -187,6 +212,19 @@
       ],
       "source": "Kaieteur News",
       "url": "https://kaieteurnewsonline.com/2026/04/29/exxon-awards-new-rig-contract-to-noble-at-us375000-day-rate/"
+    },
+    {
+      "id": 33,
+      "date": "2026-04-23",
+      "category": "M&A",
+      "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
+      "summary": "Helix Energy Solutions와 Hornbeck Offshore Services가 전액주식 거래로 합병에 합의했다. Hornbeck 주주는 결합 회사의 약 55%를 소유하게 된다. 합병으로 인한 연간 시너지는 3년 내 $75M 이상 예상되며, 2026년 하반기 마감 목표다.",
+      "companies": [
+        "Helix Energy Solutions",
+        "Hornbeck Offshore Services"
+      ],
+      "source": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260423559009/en/Helix-and-Hornbeck-to-Combine-to-Create-a-Premier-Integrated-Offshore-Services-Company"
     },
     {
       "id": 2,
