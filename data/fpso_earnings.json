@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-28",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -202,6 +202,24 @@
             "2026 가이던스: Directional Revenue 약 $6.5B, Directional EBITDA 약 $1.8B 제시"
           ],
           "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 610,
+          "adj_ebitda_musd": null,
+          "ebitda_margin_pct": null,
+          "units_on_lease": 16,
+          "backlog_busd": 31.1,
+          "source": "Q1 2026 Trading Update (May 2026) — L&O 반복 매출 $610M (FPSO ONE GUYANA 매각 $2.3B 제외)",
+          "highlights": [
+            "FPSO ONE GUYANA를 ExxonMobil에 $23억에 매각, 총 Directional Revenue는 $3,489M으로 YoY +216% (일회성 효과)",
+            "함대 가동률 97.9% 유지, Q1 무재해(사망·영구장해 零) 달성",
+            "연간 매출 가이던스 $65억 → $69억 이상으로 상향; 연간 EBITDA 가이던스 ~$18억 유지",
+            "ExxonMobil로부터 가이아나 Longtail 개발 FEED 계약 수주",
+            "Fast4Ward 표준선체 2척 추가 발주(누적 12척); Jaguar·Chalchi·GranMorgu 건조 순항",
+            "$1억 현금배당 지급, $2.7억 자사주 매입 프로그램 진행 중"
+          ],
+          "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
         }
       ]
     },
@@ -406,6 +424,23 @@
             "floating offshore oil and gas production facilities 수요 견조 — 대형 초심해 프로젝트 중심"
           ],
           "source_url": "https://www.modec.com/ir/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 1077,
+          "adj_ebitda_musd": 128,
+          "ebitda_margin_pct": 11.9,
+          "units_on_lease": null,
+          "backlog_busd": 25.9,
+          "source": "Q1 FY2026 Results (May 2026)",
+          "highlights": [
+            "매출 $1,077M (+23% YoY), 조정 EBITDA $128M (+59% YoY) — 분기 실적 사상 최고",
+            "Gato do Mato·Hammerhead·Raia·Uaru 등 4개 FPSO EPCI 프로젝트 차질 없이 진행",
+            "EPS 전년 동기 대비 79% 급증, 자기자본비율 31.2%로 개선",
+            "FY2026 연간 매출 가이던스($46억) 23% 조기 달성 — 연간 전망 유지",
+            "2026 연간 배당 증가 계획 발표 — 재무건전성 자신감 반영"
+          ],
+          "source_url": "https://www.modec.com/ir/library/presentation/assets/pdf/2026_1Q_presentation_en.pdf"
         }
       ]
     },
@@ -606,6 +641,23 @@
             "2026년에도 FPSO 신규 기회와 floating offshore wind 투자 병행"
           ],
           "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 130,
+          "adj_ebitda_musd": 48,
+          "ebitda_margin_pct": 36.9,
+          "units_on_lease": null,
+          "backlog_busd": null,
+          "source": "Q1 2026 Results (May 2026)",
+          "highlights": [
+            "함대 전체 가중평균 가동률 100% 달성 — BW Opal 가스 생산 5월 초 재개",
+            "Equinor의 Bay du Nord FPSO FEED 계약 체결(4월) — 캐나다 뉴펀들랜드, FID 2027년 초 목표",
+            "BW Catcher 계약 조건 개정으로 운영현금흐름 확정잔고 $4.9억 추가(~2030년)",
+            "연간 EBITDA 가이던스 $3.4–3.7억 → $3.1–3.4억으로 하향 (BW Opal 다운타임 반영)",
+            "가용 유동성 $5.68억, 주당 $0.063 배당 선언"
+          ],
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html"
         }
       ]
     },
@@ -807,6 +859,23 @@
             "주당 배당 5센(FY2025 대비 +22%), 자사주 매입 1.11억 주(RM244M) — 주주환원 강화"
           ],
           "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 657,
+          "adj_ebitda_musd": null,
+          "ebitda_margin_pct": null,
+          "units_on_lease": null,
+          "backlog_busd": null,
+          "source": "Q1 2026 Results (May 2026) — MYR 2,891M, 환율 4.4 적용",
+          "highlights": [
+            "매출 MYR 28.9억(+2.7% YoY), 영업이익 MYR 7.7억(-10.5% YoY) — FPSO 1기 운영 중단 영향",
+            "영업현금흐름 MYR 12.5억(+61.7% YoY) 대폭 개선 — 자산 안정성 반영",
+            "FPSO Ruby II Petrovietnam 계약 연장, ExxonMobil PNG FSO 나용선 신규 체결",
+            "QatarEnergy향 LNG 선박 인도 완료; PETRONAS와 LNG 운반선 5척 장기 용선 계약 확보",
+            "남미·아프리카·아태 FPSO 발주 파이프라인 확대 — 해양 사업 2026년 하반기 회복 기대"
+          ],
+          "source_url": "https://www.oedigital.com/news/539628-misc-reports-first-quarter-increase-in-revenue"
         }
       ]
     },
@@ -991,6 +1060,24 @@
             "Argentina FLNG 프로젝트와 MK II 계열 신조가 2026년 이후 성장축"
           ],
           "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 138,
+          "adj_ebitda_musd": 106,
+          "ebitda_margin_pct": 76.9,
+          "units_on_lease": 2,
+          "backlog_busd": null,
+          "source": "Q1 2026 Interim Results (May 2026)",
+          "highlights": [
+            "매출 $138M(+120% YoY), EBITDA $106M(+158% YoY) — FLNG Gimi 풀가동 기여",
+            "FLNG Hilli 가동률 100% 유지; 4월 LNG 150번째 화물 선적 달성",
+            "FLNG Gimi Q1 인보이스 일일요율이 계약 대비 19% 초과 달성 — 생산량 계약 초과",
+            "MKII FLNG 개조 일정·예산 준수(누적 1,000만 작업시간); 4번째 FLNG 발주 2026년 내 목표",
+            "골드만삭스 전략적 대안 검토 자문사 선임 — FLNG 성장 가속화 및 주주가치 제고 탐색",
+            "주당 $0.25 분기 배당 선언(6월 10일 지급)"
+          ],
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html"
         }
       ]
     }
