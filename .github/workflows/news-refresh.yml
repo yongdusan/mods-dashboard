@@ -84,5 +84,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "data: auto-refresh news.json $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
             git push
           fi
