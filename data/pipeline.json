@@ -3,7 +3,7 @@
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
-    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers corrected (P-80=Phase8, P-81=Phase9, P-82=Phase10, P-83=Phase11); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek. 2026-05-29 REVIEW: petrobras-sepia-1 removed (5yr production threshold). No new FIDs or major changes since 2026-05-14. Venus/Wisting/Papua LNG/Aphrodite/Masela remain FEED. Búzios 6 H1 2026 first oil on track but not officially confirmed — remains Execution."
+    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers corrected (P-80=Phase8, P-81=Phase9, P-82=Phase10, P-83=Phase11); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek. 2026-05-29 REVIEW: petrobras-sepia-1 removed (5yr production threshold). No new FIDs or major changes since 2026-05-14. Venus/Wisting/Papua LNG/Aphrodite/Masela remain FEED. Búzios 6 H1 2026 first oil on track but not officially confirmed — remains Execution. 2026-05-29: adnoc-upper-zakum 제거 (인공섬 기반, MODU 수요 無). Gallaf + Maydan Mazam 추가 (Shallow Offshore Fixed Platform 스코프 확장)."
   },
   "projects": [
     {
@@ -727,22 +727,6 @@
       "notes": "North Field, Qatar. 2 LNG trains × 8 Mtpa = 16 Mtpa increment. Completes Qatar's North Field expansion program. Partners: QatarEnergy majority, TotalEnergies, Shell. CAPEX ~$10B (EPC contract basis; all-in not publicly disclosed). First LNG 2027–2028."
     },
     {
-      "id": "adnoc-upper-zakum",
-      "company": "ADNOC",
-      "project": "Upper Zakum Expansion",
-      "region": "Middle East",
-      "asset_type": "Shallow Offshore Oil",
-      "phase": "Execution",
-      "capex_busd": 10.0,
-      "fid_date": "2023",
-      "first_production": "2027",
-      "verified": "2026-05-14",
-      "source": "ADNOC Offshore announcements 2024–2025",
-      "source_url": null,
-      "confidence": "low",
-      "notes": "Arabian Gulf, artificial-island development. Phased program: 1.0 → 1.2 Mbpd (current execution, target 2026–2027) then 1.2 → 1.5 Mbpd (tender issued, 2027+). Total program lifecycle ~$30B; CAPEX $10B indicative for active execution phase only. ADNOC Offshore (op), ExxonMobil, JODCO (INPEX). Active EPC packages include Target Engineering ($500M) and ADNOC Drilling island-rig contract ($733M)."
-    },
-    {
       "id": "chevron-aphrodite",
       "company": "Chevron",
       "project": "Aphrodite",
@@ -853,6 +837,38 @@
       "source_url": null,
       "confidence": "medium",
       "notes": "Masela Block, Arafura Sea, Indonesia (~800m WD). ~9.5 Mtpa LNG. JGC awarded FEED contract August 2025. FID targeted 2027–2028 if FEED completes on schedule. CAPEX ~$20B estimate. INPEX Masela 65% (op), Pertamina Hulu Energi, PETRONAS Masela."
+    },
+    {
+      "id": "qatarenergy-gallaf",
+      "company": "QatarEnergy / TotalEnergies",
+      "project": "Gallaf (Al-Shaheen Ph.3)",
+      "region": "Middle East",
+      "asset_type": "Shallow Offshore Oil",
+      "phase": "Execution",
+      "capex_busd": 5.0,
+      "fid_date": null,
+      "first_production": "2024",
+      "verified": "2026-05-29",
+      "source": "North Oil Company / Upstream Online (2024–2025)",
+      "source_url": "https://www.upstreamonline.com/exclusive/qatar-expansion-scheme-chase-begins-for-giant-gallaf-offshore-development-project/2-1-1090192",
+      "confidence": "medium",
+      "notes": "Al-Shaheen oilfield, offshore Qatar, ~100m WD. Operator: North Oil Company (QatarEnergy + TotalEnergies JV). Multi-batch fixed platform expansion: 8 wellhead platforms (up to 19,000t). Batch 3 first oil Dec 2024; central processing platform installation ongoing late 2025. CAPEX ~$5B (indicative). Jackup 수요 지속."
+    },
+    {
+      "id": "adnoc-maydan-mazam",
+      "company": "ADNOC",
+      "project": "Maydan Mazam Redevelopment",
+      "region": "Middle East",
+      "asset_type": "Shallow Offshore Oil",
+      "phase": "FEED",
+      "capex_busd": 4.5,
+      "fid_date": null,
+      "first_production": "2028",
+      "verified": "2026-05-29",
+      "source": "ADNOC / Upstream Online (2025)",
+      "source_url": "https://www.upstreamonline.com/field-development/adnoc-starts-expansion-push-at-major-offshore-development-project/2-1-1994237",
+      "confidence": "medium",
+      "notes": "120km offshore Abu Dhabi, Arabian Gulf. Fixed platform 재개발. EPC tender 발행 2025-02, 주요 입찰사: McDermott·Saipem·NPCC·L&T·Technip·Petrofac. 공급망 이슈·지정학적 긴장으로 지연. FID 2025–2026 예상. CAPEX $4–5B (추정). 잭업 리그 수요."
     }
   ]
 }

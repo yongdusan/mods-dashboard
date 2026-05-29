@@ -194,7 +194,7 @@
 | 기준 | 조건 |
 |------|------|
 | CAPEX | **≥ $2B** (indicative 포함) |
-| 자산 유형 | 오프쇼어 (해저 생산설비 동반 시 LNG 트레인도 포함) |
+| 자산 유형 | 오프쇼어 — Deepwater FPSO·Fixed Platform·Shallow Offshore Platform 모두 포함 (LNG 트레인은 해저 생산설비 동반 시 포함) |
 | 단계 | Pre-FEED 이상 |
 | 지역 | 전 세계 |
 
@@ -260,7 +260,7 @@
   "company": "회사명",
   "project": "프로젝트명",
   "region": "Gulf of Mexico | Brazil | Guyana/Suriname | Africa | North Sea/Norway | Middle East | Asia Pacific",
-  "asset_type": "Deepwater Oil | Deepwater Gas | Shallow Offshore Oil | Offshore Gas / LNG | Deepwater Gas / LNG | Deepwater Gas / CCUS",
+  "asset_type": "Deepwater Oil | Deepwater Gas | Deepwater Oil (HE) | Shallow Offshore Oil | Shallow Offshore Gas | Offshore Gas / LNG | Deepwater Gas / LNG | Deepwater Gas / FLNG | Deepwater Gas / CCUS",
   "phase": "Pre-FEED | FEED | FID | Execution | Production",
   "capex_busd": 0.0,
   "fid_date": "YYYY-MM",
