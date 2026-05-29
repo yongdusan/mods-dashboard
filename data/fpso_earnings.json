@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-05-29",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -430,7 +430,7 @@
           "revenue_musd": 1077,
           "adj_ebitda_musd": 128,
           "ebitda_margin_pct": 11.9,
-          "units_on_lease": null,
+          "units_on_lease": 20,
           "backlog_busd": 25.9,
           "source": "Q1 FY2026 Results (May 2026)",
           "highlights": [
@@ -647,8 +647,8 @@
           "revenue_musd": 130,
           "adj_ebitda_musd": 48,
           "ebitda_margin_pct": 36.9,
-          "units_on_lease": null,
-          "backlog_busd": null,
+          "units_on_lease": 4,
+          "backlog_busd": 2.3,
           "source": "Q1 2026 Results (May 2026)",
           "highlights": [
             "함대 전체 가중평균 가동률 100% 달성 — BW Opal 가스 생산 5월 초 재개",
@@ -859,23 +859,6 @@
             "주당 배당 5센(FY2025 대비 +22%), 자사주 매입 1.11억 주(RM244M) — 주주환원 강화"
           ],
           "source_url": "https://www.yinson.com/investor-relations/annual-report/"
-        },
-        {
-          "period": "Q1 2026",
-          "revenue_musd": 657,
-          "adj_ebitda_musd": null,
-          "ebitda_margin_pct": null,
-          "units_on_lease": null,
-          "backlog_busd": null,
-          "source": "Q1 2026 Results (May 2026) — MYR 2,891M, 환율 4.4 적용",
-          "highlights": [
-            "매출 MYR 28.9억(+2.7% YoY), 영업이익 MYR 7.7억(-10.5% YoY) — FPSO 1기 운영 중단 영향",
-            "영업현금흐름 MYR 12.5억(+61.7% YoY) 대폭 개선 — 자산 안정성 반영",
-            "FPSO Ruby II Petrovietnam 계약 연장, ExxonMobil PNG FSO 나용선 신규 체결",
-            "QatarEnergy향 LNG 선박 인도 완료; PETRONAS와 LNG 운반선 5척 장기 용선 계약 확보",
-            "남미·아프리카·아태 FPSO 발주 파이프라인 확대 — 해양 사업 2026년 하반기 회복 기대"
-          ],
-          "source_url": "https://www.oedigital.com/news/539628-misc-reports-first-quarter-increase-in-revenue"
         }
       ]
     },
@@ -1067,7 +1050,7 @@
           "adj_ebitda_musd": 106,
           "ebitda_margin_pct": 76.9,
           "units_on_lease": 2,
-          "backlog_busd": null,
+          "backlog_busd": 17.0,
           "source": "Q1 2026 Interim Results (May 2026)",
           "highlights": [
             "매출 $138M(+120% YoY), EBITDA $106M(+158% YoY) — FLNG Gimi 풀가동 기여",
