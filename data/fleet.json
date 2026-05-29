@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-29",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -25,17 +25,42 @@
       "unsourced": 29
     },
     "listed_contractor_expansion": [
-      { "name": "COSL", "listing": "HKEX 2883 / SSE 601808", "segment": "Integrated offshore oilfield services; large jack-up and semi-sub fleet", "status": "tracked_for_future_fleet_expansion" },
-      { "name": "ADNOC Drilling", "listing": "ADX ADNOCDRILL", "segment": "Middle East onshore/offshore drilling; large jack-up fleet", "status": "tracked_for_future_fleet_expansion" },
-      { "name": "Shelf Drilling", "listing": "Oslo SHLF", "segment": "Shallow-water jack-up specialist", "status": "tracked_for_future_fleet_expansion" },
-      { "name": "Odfjell Drilling", "listing": "Oslo ODL", "segment": "Harsh-environment semi-sub specialist", "status": "fleet_added_2026-05-05" },
-      { "name": "Arabian Drilling", "listing": "Tadawul 2381", "segment": "Saudi onshore/offshore drilling contractor", "status": "tracked_for_future_fleet_expansion" }
+      {
+        "name": "COSL",
+        "listing": "HKEX 2883 / SSE 601808",
+        "segment": "Integrated offshore oilfield services; large jack-up and semi-sub fleet",
+        "status": "tracked_for_future_fleet_expansion"
+      },
+      {
+        "name": "ADNOC Drilling",
+        "listing": "ADX ADNOCDRILL",
+        "segment": "Middle East onshore/offshore drilling; large jack-up fleet",
+        "status": "tracked_for_future_fleet_expansion"
+      },
+      {
+        "name": "Shelf Drilling",
+        "listing": "Oslo SHLF",
+        "segment": "Shallow-water jack-up specialist",
+        "status": "tracked_for_future_fleet_expansion"
+      },
+      {
+        "name": "Odfjell Drilling",
+        "listing": "Oslo ODL",
+        "segment": "Harsh-environment semi-sub specialist",
+        "status": "fleet_added_2026-05-05"
+      },
+      {
+        "name": "Arabian Drilling",
+        "listing": "Tadawul 2381",
+        "segment": "Saudi onshore/offshore drilling contractor",
+        "status": "tracked_for_future_fleet_expansion"
+      }
     ]
   },
   "prev_week": {
-    "total": 86,
-    "on_contract": 73,
-    "idle_stacked": 13
+    "total": 97,
+    "on_contract": 80,
+    "idle_stacked": 17
   },
   "rigs": [
     {
@@ -99,7 +124,7 @@
       "operator": "Petrobras",
       "location": "Brazil",
       "contract_start": "2024-06",
-      "contract_end": "2027-06",
+      "contract_end": "2028-06",
       "day_rate_kusd": 457,
       "specs": {
         "build_year": 2014,
@@ -112,7 +137,7 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source": "Transocean / Offshore Energy (Apr 2026) — 365d ext.",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high"
     },
@@ -123,10 +148,10 @@
       "water_depth_ft": 12000,
       "status": "On Contract",
       "operator": null,
-      "location": "US Gulf of Mexico",
-      "contract_start": "2025-06",
-      "contract_end": "2026-06",
-      "day_rate_kusd": 515,
+      "location": "Eastern Mediterranean",
+      "contract_start": "2026-10",
+      "contract_end": "2027-10",
+      "day_rate_kusd": 405,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -138,8 +163,8 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "source": "Transocean / StockTitan (Apr 2026) — 5-well Eastern Med",
+      "source_url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html",
       "confidence": "high"
     },
     {
@@ -173,12 +198,12 @@
       "contractor": "Transocean",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "Shell",
+      "status": "Idle",
+      "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": "2016-08",
-      "contract_end": "2026-05",
-      "day_rate_kusd": 498,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Hyundai Heavy Industries",
@@ -190,9 +215,9 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Fleet status 2026-05-29 (contract expired)",
+      "source_url": null,
+      "confidence": "medium"
     },
     {
       "name": "Deepwater Poseidon",
@@ -229,7 +254,7 @@
       "operator": "Petrobras",
       "location": "Brazil",
       "contract_start": "2024-03",
-      "contract_end": "2027-03",
+      "contract_end": "2030-04",
       "day_rate_kusd": 428,
       "specs": {
         "build_year": 2013,
@@ -242,7 +267,7 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source": "Transocean / Offshore Energy (Apr 2026) — 1,095d ext.",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high"
     },
@@ -513,11 +538,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "OMV Petrom",
-      "location": "Romania",
-      "contract_start": "2025-03",
-      "contract_end": "2027-02",
-      "day_rate_kusd": 465,
+      "operator": "Var Energi",
+      "location": "Norway (NCS)",
+      "contract_start": "2026-06",
+      "contract_end": "2029-06",
+      "day_rate_kusd": 450,
       "specs": {
         "build_year": 2012,
         "build_yard": "Kvaerner Verdal",
@@ -529,7 +554,7 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
+      "source": "Transocean Fleet Status / Offshore Energy (Apr 2026)",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high"
     },
@@ -1029,12 +1054,12 @@
       "contractor": "Noble",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "Idle",
-      "operator": null,
-      "location": "US Gulf of Mexico",
-      "contract_start": null,
+      "status": "On Contract",
+      "operator": "ExxonMobil",
+      "location": "Guyana (Stabroek Block)",
+      "contract_start": "2026-05",
       "contract_end": null,
-      "day_rate_kusd": null,
+      "day_rate_kusd": 375,
       "specs": {
         "build_year": 2014,
         "build_yard": "Jurong Shipyard",
@@ -1046,9 +1071,9 @@
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
       },
-      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
-      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
-      "confidence": "high",
+      "source": "Kaieteur News / Offshore Energy (Apr 2026) — rig name not disclosed",
+      "source_url": "https://kaieteurnewsonline.com/2026/04/29/exxon-awards-new-rig-contract-to-noble-at-us375000-day-rate/",
+      "confidence": "medium",
       "data_note": "Available; TotalEnergies Suriname 16-well contract commences Q4 2026"
     },
     {
@@ -1215,10 +1240,10 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Talos Energy",
+      "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": "2026-05",
-      "contract_end": "2026-07",
+      "contract_start": "2026-08",
+      "contract_end": "2027-04",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
@@ -1231,7 +1256,7 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source": "Seadrill / World Oil (Apr 2026) — 270d new contract",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
       "confidence": "high",
       "data_note": "Short-term: Walter Oil & Gas Feb-Apr 2026, then Talos May-Jul 2026 per Feb 2026 FSR"
@@ -1245,7 +1270,7 @@
       "operator": "LLOG",
       "location": "US Gulf of Mexico",
       "contract_start": "2025-11",
-      "contract_end": "2026-09",
+      "contract_end": "2027-09",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
@@ -1258,7 +1283,7 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
+      "source": "Seadrill / World Oil (Apr 2026) — 365d ext.",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
       "confidence": "high"
     },
@@ -1319,11 +1344,11 @@
       "contractor": "Seadrill",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "Petrobras",
+      "status": "Idle",
+      "operator": null,
       "location": "Brazil",
-      "contract_start": "2022-11",
-      "contract_end": "2026-04",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
@@ -1336,9 +1361,9 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high"
+      "source": "Fleet status 2026-05-29 (contract expired)",
+      "source_url": null,
+      "confidence": "medium"
     },
     {
       "name": "West Tellus",
@@ -1504,11 +1529,11 @@
       "contractor": "Seadrill",
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
-      "status": "On Contract",
+      "status": "Idle",
       "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": "2026-03",
-      "contract_end": "2026-05",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
@@ -1521,9 +1546,9 @@
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high"
+      "source": "Fleet status 2026-05-29 (contract expired)",
+      "source_url": null,
+      "confidence": "medium"
     },
     {
       "name": "Borr Gerd",
@@ -1783,12 +1808,12 @@
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 400,
-      "status": "On Contract",
-      "operator": "Saudi Aramco",
+      "status": "Idle",
+      "operator": null,
       "location": "Saudi Arabia",
-      "contract_start": "2023-05",
-      "contract_end": "2026-05",
-      "day_rate_kusd": 152,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Keppel FELS",
@@ -1799,7 +1824,10 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Fleet status 2026-05-29 (contract expired)",
+      "source_url": null,
+      "confidence": "medium"
     },
     {
       "name": "Borr Arabia II",
@@ -2213,11 +2241,11 @@
       "contractor": "Dolphin Drilling",
       "type": "Semisubmersible",
       "water_depth_ft": 6000,
-      "status": "On Contract",
-      "operator": "Oil India",
+      "status": "Idle",
+      "operator": null,
       "location": "India",
-      "contract_start": "2024-11",
-      "contract_end": "2026-05",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 1974,
@@ -2230,8 +2258,8 @@
         "variable_deck_load_t": null,
         "generation": "5th Gen"
       },
-      "source": "Dolphin Drilling fleet page / Blackford contract extension, Nov 2025",
-      "source_url": "https://www.dolphindrilling.com/news/dolphin-drilling-blackford-contract-extended",
+      "source": "Fleet status 2026-05-29 (contract expired)",
+      "source_url": null,
       "fleet_source_url": "https://www.dolphindrilling.com/our-fleet/blackford-dolphin",
       "confidence": "medium",
       "data_note": "Oil India option extended operations through 2026-05-10; refresh after May 2026 because current term is near expiry. Rig-level dayrate is not disclosed."
@@ -2515,6 +2543,32 @@
       "source_url": "https://www.globenewswire.com/news-release/2026/02/10/3235035/0/en/vantage-drilling-international-ltd-announces-ongc-notification-of-award-for-platinum-explorer.html",
       "confidence": "medium",
       "data_note": "ONGC NOA is for a 3-year firm plus 1-year optional campaign with estimated TCV of $261M excluding MPD services. Dayrate shown is an implied contract value over 3 years, not a disclosed rig-level dayrate. Commencement is no later than 180 days after the Feb 10 2026 NOA."
+    },
+    {
+      "name": "Valaris DS-4",
+      "contractor": "Valaris",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "On Contract",
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2026-06",
+      "contract_end": "2029-04",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2011,
+        "build_yard": "Hyundai Heavy Industries",
+        "design": "HHI",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "6th Gen"
+      },
+      "source": "Valaris / Offshore Energy (May 2026) — 1,064d Petrobras ext. $447M",
+      "source_url": "https://www.offshore-energy.biz/valaris-batch-of-rig-deals-lifts-total-contract-backlog-to-4-9-billion/",
+      "confidence": "high"
     }
   ]
 }
