@@ -1,84 +1,39 @@
 name: News Refresh
 
-# Triggered manually via Cloudflare Pages Function → POST /api/refresh
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'  # 매주 월요일 09:00 KST (00:00 UTC)
+  workflow_dispatch:       # GitHub Actions UI에서 수동 실행 가능
 
-# Prevent overlapping runs
 concurrency:
   group: news-refresh
   cancel-in-progress: false
 
 jobs:
   refresh:
-    name: Update news.json via Claude
+    name: Update news.json via Claude Haiku
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     permissions:
-      contents: write   # needed to push the updated file
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js (for Claude CLI)
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: "20"
+          python-version: "3.12"
 
-      - name: Install Claude CLI
-        run: npm install -g @anthropic-ai/claude-code
+      - name: Install dependencies
+        run: pip install anthropic requests
 
       - name: Run news refresh
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CLAUDE_DISABLE_NONINTERACTIVE_CONFIRMATIONS: "1"
-        run: |
-          claude --allowedTools "WebSearch,Read,Write,Bash" \
-                 --model claude-haiku-4-5-20251001 \
-                 --max-turns 15 \
-                 -p "$(cat <<'PROMPT'
-          You are updating data/news.json for the MODU Intelligence Dashboard.
-          The project root is the current working directory.
-
-          ## Task
-          1. Read data/news.json. Note the current max `id` and the most recent `date`.
-          2. Search the web for offshore drilling and E&P news from the past 2 weeks using these sources:
-             - https://www.offshore-energy.biz
-             - https://www.rigzone.com/news/
-             - https://www.oedigital.com
-          3. Find up to 5 items that are NEW (not already in news.json) and match these categories:
-             - Contract: rig contract award ≥ $50M, or major FPSO/subsea contract
-             - Earnings: offshore contractor quarterly results
-             - Fleet: rig delivery, scrapping, or reactivation
-             - M&A: merger, acquisition, or fleet transaction ≥ $200M
-             - Outlook: market outlook, day rate surveys, utilization data
-          4. For each new item, build a JSON object:
-             {
-               "id": <max_existing_id + N>,
-               "date": "YYYY-MM-DD",
-               "sector": "Drilling|FPSO/FLNG|E&P/CAPEX",
-               "category": "Contract|Earnings|Fleet|M&A|Outlook",
-               "title": "Concise English title (under 80 chars)",
-               "summary": "2~3문장 한국어 요약",
-               "companies": ["CompanyName"],
-               "source": "Source name",
-               "url": "https://..."
-             }
-             sector 분류 기준:
-             - "Drilling": 시추선(drillship/semi/jackup) 계약·실적·시장 동향 (Transocean, Valaris, Noble, Seadrill, Borr 등)
-             - "FPSO/FLNG": FPSO·FLNG 계약·실적·프로젝트 (SBM Offshore, BW Offshore, Golar LNG, Yinson, MODEC 등)
-             - "E&P/CAPEX": IOC·NOC의 투자계획·CAPEX 가이던스·시장 전망 (ExxonMobil, Shell, bp, Petrobras, Clarkson 리포트 등)
-          5. Insert new items at the TOP of the `items` array (newest first).
-          6. Remove items with `date` older than 6 months from today.
-          7. Update the top-level `"updated"` field to today's date (YYYY-MM-DD).
-          8. Write the updated JSON back to data/news.json.
-          9. Output a brief summary of what you added and removed.
-
-          Today's date: $(date -u +%Y-%m-%d)
-          PROMPT
-          )"
+        run: python scripts/refresh_news.py
 
       - name: Commit and push if changed
         run: |
