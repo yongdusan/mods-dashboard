@@ -14,6 +14,12 @@
         "credit_rating": "BBB-",
         "business_model": "Lease & Operate (L&O) 전문 — Fast4Ward® 표준화 선체 플랫폼으로 건조 기간을 40개월로 단축",
         "strategy": "브라질 Petrobras 및 가이아나 ExxonMobil 심해 프로젝트 집중. Fast4Ward 표준화로 원가 경쟁력 확보. 2030년까지 운영 FPSO 18기 목표.",
+        "reporting_schedule": [
+          {"label": "Q1 Trading Update", "month": "May", "type": "partial", "note": "L&O Revenue only — EBITDA 미공개"},
+          {"label": "H1 Interim Results", "month": "Aug", "type": "full", "note": "Full P&L (EBITDA, Net Income 공개)"},
+          {"label": "Q3 Trading Update", "month": "Nov", "type": "partial", "note": "L&O Revenue only — EBITDA 미공개"},
+          {"label": "FY Full-Year Results", "month": "Feb", "type": "full", "note": "Full P&L + 연간 결산"}
+        ],
         "key_clients": [
           "ExxonMobil",
           "Petrobras",

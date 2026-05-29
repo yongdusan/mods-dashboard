@@ -178,11 +178,11 @@
     .drilldown-panel {
       overflow: hidden;
       max-height: 0;
-      transition: max-height 0.3s ease;
+      transition: max-height 0.35s ease;
       margin-bottom: 24px;
     }
     .drilldown-panel.open {
-      max-height: 1400px;
+      max-height: 5600px;
     }
     .drilldown-header {
       display: flex;
@@ -270,6 +270,63 @@
       color: var(--text-muted);
       margin-left: 2px;
     }
+
+    /* ─── Reporting schedule timeline ─── */
+    .reporting-schedule {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+    .rs-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 10px;
+    }
+    .rs-track {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      position: relative;
+    }
+    .rs-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .rs-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
+    .rs-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+    }
+    .rs-dot.full  { border-color: var(--accent); background: var(--accent); }
+    .rs-dot.partial { border-color: var(--text-muted); background: var(--bg); }
+    .rs-dot.current { box-shadow: 0 0 0 3px rgba(0,210,190,.25); }
+    .rs-meta { margin-top: 6px; text-align: center; }
+    .rs-month { font-size: 11px; font-weight: 600; color: var(--text); font-family: var(--font-mono); }
+    .rs-title { font-size: 9px; color: var(--text-muted); margin-top: 2px; line-height: 1.3; }
+    .rs-note  { font-size: 9px; color: var(--text-muted); margin-top: 3px; line-height: 1.3; max-width: 80px; }
+    .rs-dot.full  + .rs-meta .rs-month { color: var(--accent); }
 
     /* ─── Two-column layout ─── */
     .two-col {
@@ -741,6 +798,7 @@
       <!-- Company Overview (populated by JS) -->
       <div id="company-overview-section"></div>
       <div class="kpi-grid" id="drilldown-kpis"></div>
+      <div id="drilldown-reporting-schedule"></div>
       <div class="two-col">
         <div>
           <div class="chart-title">Revenue &amp; EBITDA Margin — Quarterly</div>
@@ -1137,6 +1195,42 @@
         ${backlogDelta}
       </div>
     `;
+
+    // Reporting schedule (shown when EBITDA is null)
+    const rsEl = document.getElementById('drilldown-reporting-schedule');
+    if (rsEl) {
+      const schedule = company.company_profile && company.company_profile.reporting_schedule;
+      if (schedule && latest.adj_ebitda_musd == null) {
+        // Determine current quarter's month to highlight the right node
+        const periodMatch = latest.period && latest.period.match(/Q(\d)\s+(\d{4})/);
+        const qNum = periodMatch ? parseInt(periodMatch[1]) : null;
+        // Map quarter → which schedule item is "current"
+        const qToIdx = { 1: 0, 2: 1, 3: 2, 4: 3 };
+        const currentIdx = qNum != null ? qToIdx[qNum] : -1;
+
+        const items = schedule.map((s, i) => {
+          const isCurrent = i === currentIdx;
+          const dotClass = `rs-dot ${s.type}${isCurrent ? ' current' : ''}`;
+          return `
+            <div class="rs-item">
+              <div class="${dotClass}"></div>
+              <div class="rs-meta">
+                <div class="rs-month">${esc(s.month)}</div>
+                <div class="rs-title">${esc(s.label)}</div>
+                <div class="rs-note">${esc(s.note)}</div>
+              </div>
+            </div>`;
+        }).join('');
+
+        rsEl.innerHTML = `
+          <div class="reporting-schedule">
+            <div class="rs-label">실적 공개 일정 — EBITDA는 반기(H1/FY) 보고서에서만 공개</div>
+            <div class="rs-track">${items}</div>
+          </div>`;
+      } else {
+        rsEl.innerHTML = '';
+      }
+    }
 
     // Open panel
     panel.classList.add('open');
