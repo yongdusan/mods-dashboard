@@ -954,6 +954,7 @@
             const v = cell.getValue();
             const row = cell.getData();
             const color = marginColor(row.ebitda_margin_pct);
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             return `<span class="mono" style="color:${color};font-weight:600">${v.toLocaleString()}</span>`
                  + deltaTag(v, row.prev_ebitda_musd, row.prev_period, 'pct');
           },
@@ -968,6 +969,7 @@
             const v = cell.getValue();
             const row = cell.getData();
             const color = marginColor(v);
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`
                  + deltaTag(v, row.prev_margin_pct, row.prev_period, 'pp');
           },
@@ -992,6 +994,7 @@
           formatter: function(cell) {
             const v = cell.getValue();
             const row = cell.getData();
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`
                  + deltaTag(v, row.prev_backlog_busd, row.prev_period, 'pct');
           },
