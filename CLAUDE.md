@@ -13,6 +13,7 @@
 | 파일 | 주기 | 트리거 |
 |------|------|--------|
 | `pipeline.json` | **매월 10일** | 그 시점까지 발표된 분기 실적·IR 자료 반영 (→ §6 참조) |
+| `fpso.json` | **매월 10일** | pipeline.json과 동시 업데이트 — FPSO 컨트랙터 backlog, orderbook, market_summary 반영 (→ §7 참조) |
 | `fleet.json` | **주간** | 신규 계약 공시, 계약 해지/만료, 리그 이동 |
 | `rates.json` → `day_rates` | **분기** | 1월·4월·7월·10월 — 분기 시작 직후 |
 | `rates.json` → `newbuild_prices` | **비정기** | 신조/수리 계약 공시 시 |
@@ -311,6 +312,70 @@
 - `updated` 필드 = 오늘 날짜
 - `data_quality.notes`에 변경 내용 한 줄 기록
 - commit message: `data: update pipeline.json YYYY-MM-DD`
+
+---
+
+## 7. fpso.json 업데이트 절차
+
+> **업데이트 주기:** 매월 10일 — pipeline.json과 동시 진행.
+
+### 업데이트 항목
+
+#### 7-1. contractors — backlog_busd
+
+| 컨트랙터 | 실적 발표 시기 | 소스 |
+|---------|-------------|------|
+| SBM Offshore | 분기 Trading Update (1·5·8·11월) | https://www.sbmoffshore.com/newsroom/ |
+| MODEC | 분기 결산 (일본 회계연도 기준) | https://www.modec.com/ir/ |
+| BW Offshore | 분기 결산 (2·5·8·11월) | https://bwoffshore.com/pressreleases/ |
+| Yinson Holdings | 분기 결산 (말레이시아 회계연도 기준) | https://www.yinson.com/investors/ |
+| Golar LNG | 분기 결산 (2·5·8·11월) | https://www.golarlng.com/investors/ |
+
+- `backlog_busd`: 각 사 최신 발표 기준 총 계약 잔고 (directional backlog 또는 order book)
+- 신규 BOT 계약 발표 시 수시 반영 (뉴스 트리거)
+
+#### 7-2. orderbook — 신규 FPSO·FLNG 발주 추가
+
+추가 트리거:
+- BOT/EPCI 계약 체결 공시
+- FEED → FID 전환으로 건조 착수 확정
+- LOI(의향서) 단계는 추가하지 않음 — 계약 확정 시만 추가
+
+항목 구조:
+```json
+{
+  "name": "FPSO 명칭",
+  "type": "FPSO|FLNG",
+  "owner": "운영사",
+  "client": "오퍼레이터",
+  "field": "유전명 (블록명)",
+  "region": "South America|West Africa|...",
+  "yard": "건조 조선소",
+  "contract_value_busd": 0.0,
+  "oil_capacity_kboed": 0,
+  "delivery": "YYYY-QN",
+  "status": "Under Construction",
+  "notes": "주요 특이사항",
+  "detail": { ... }
+}
+```
+
+제거 트리거: 인도 완료 후 → `vessels` 배열로 이동, status `"On Production"` 또는 `"On Charter"` 설정
+
+#### 7-3. market_summary — 글로벌 Fleet 수치
+
+업데이트 시 현재 값을 `prev_quarter`로 이동 후 수정:
+- `active_fleet`: 전체 FPSO·FLNG 활성 선박 수
+- `on_production`: 생산 가동 중인 선박 수
+- `under_construction`: 건조 중 선박 수 (orderbook 기준으로 직접 카운트)
+- `flng_active` / `flng_construction`: FLNG 전용 카운트
+
+소스: Rystad Energy, Westwood Global, Wood Mackenzie FPSO Intelligence 리포트
+
+#### 7-4. vessels — 상태 변경
+
+- orderbook 선박 인도 완료 시 → vessels로 이동, status `"On Production"`
+- 계약 만료·재배치 시 → status `"Idle/Warm Stacked"` 또는 `"Redeployment"`
 
 ---
 
