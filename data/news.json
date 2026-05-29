@@ -1,11 +1,12 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-05-29",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
     {
       "id": 38,
       "date": "2026-05-26",
+      "sector": "Drilling",
       "category": "Earnings",
       "title": "Vantage Drilling Q1 2026: Returns to Profit, ONGC Contract Begins Ramp-Up",
       "summary": "Vantage Drilling이 Q1 2026에 순이익 $0.4M을 기록하며 전년 동기 순손실 $18.9M에서 흑자 전환에 성공했다. ONGC와의 3년·$261M 규모 Platinum Explorer 계약 준비를 위해 보증금 $17.9M을 납부했으며, 향후 실적 개선의 기반이 마련됐다. 현금 잔고는 $65.3M으로 감소했으나 계약 커버리지 확대에 따른 현금흐름 개선이 기대된다.",
@@ -19,6 +20,7 @@
     {
       "id": 39,
       "date": "2026-05-21",
+      "sector": "Drilling",
       "category": "Outlook",
       "title": "Borr CEO: Middle East Conflict Boosts Long-Term Jack-Up Outlook Despite Near-Term Delays",
       "summary": "Borr Drilling CEO Bruno Morand은 중동 분쟁이 단기 텐더 지연을 야기하지만, 에너지 안보 부각과 유가 상승을 통해 장기 오프쇼어 드릴링 전망을 강화하고 있다고 밝혔다. 유가 상승 효과가 데이레이트와 활동량에 반영되기까지 6~12개월이 소요될 것으로 예상하며, 2027~2028년 전망에 자신감을 표명했다. 단기 단가 압박에도 불구하고 잭업 공급 타이트 구조는 유지되고 있다.",
@@ -31,6 +33,7 @@
     {
       "id": 35,
       "date": "2026-05-20",
+      "sector": "FPSO/FLNG",
       "category": "Earnings",
       "title": "Golar LNG Q1 2026: EBITDA +158% YoY; Goldman Sachs Hired for Strategic Review",
       "summary": "Golar LNG이 Q1 2026 매출 $138M(+120% YoY), EBITDA $106M(+158% YoY)의 강력한 실적을 발표했다. FLNG Hilli 100% 가동률 유지 및 FLNG Gimi의 계약 초과 생산이 성장을 견인했다. 전략적 대안 검토(FLNG 성장 가속화·주주가치 제고) 자문사로 골드만삭스를 선임, M&A 가능성에 시장의 관심이 쏠리고 있다.",
@@ -43,6 +46,7 @@
     {
       "id": 37,
       "date": "2026-05-20",
+      "sector": "Drilling",
       "category": "Earnings",
       "title": "Borr Drilling Q1 2026 Disappoints: Revenue Falls QoQ Despite High Utilization",
       "summary": "Borr Drilling의 Q1 2026 매출이 $247M으로 전분기($259M) 대비 4.8% 감소하며 시장 기대치를 하회, 주가가 급락했다. 가동률 97%의 높은 운영 효율성에도 불구하고 평균 Day rate 하락과 Noble 잭업 5기 인수 비용 부담이 실적을 눌렀다. 2026년 커버리지는 71%(평균 $137K)로, 근시일 가시성은 확보했으나 단가 압박이 지속되고 있다.",
@@ -55,6 +59,7 @@
     {
       "id": 41,
       "date": "2026-05-18",
+      "sector": "FPSO/FLNG",
       "category": "Earnings",
       "title": "BW Offshore Q1 2026: 100% Utilization; EBITDA Guidance Cut on BW Opal Downtime",
       "summary": "BW Offshore가 Q1 2026 매출 $130M, EBITDA $48M을 기록했으며 함대 전체 가중평균 가동률 100%를 달성했다. BW Opal의 압축기 씰 교체 완료로 5월 초 가스 생산이 재개됐으나, 다운타임 영향을 반영해 연간 EBITDA 가이던스를 $3.4~3.7억에서 $3.1~3.4억으로 하향 조정했다. Equinor의 Bay du Nord FPSO FEED 계약 체결로 파이프라인은 확대됐다.",
@@ -67,6 +72,7 @@
     {
       "id": 42,
       "date": "2026-05-16",
+      "sector": "FPSO/FLNG",
       "category": "Contract",
       "title": "Petrobras Awards ~$7.8B SEAP FPSO Contracts to SBM Offshore for Two Units",
       "summary": "페트로브라스가 세르지피-알라고아스(SEAP) 심해 프로젝트를 위해 SBM Offshore와 FPSO 2척(P-81·P-87) BOT 계약을 체결했으며, 계약 규모는 약 $7.8B으로 추정된다. 두 FPSO의 합산 생산 용량은 하루 24만 배럴·가스 2,200만 m³이며, SEAP II 초도 생산은 2030년으로 예정된다. FID는 4월에 완료됐으며, 이번 계약으로 SBM Offshore는 Búzios 8에 이어 브라질 최대 규모 FPSO 수주를 추가 확보했다.",
@@ -80,6 +86,7 @@
     {
       "id": 32,
       "date": "2026-05-15",
+      "sector": "Drilling",
       "category": "Contract",
       "title": "Valaris Contract Awards and Extensions Lift Backlog to $4.9B",
       "summary": "Valaris가 다수의 새로운 계약 및 연장 계약을 수주하여 총 약 $560M의 백로그를 추가했다. 주요 수주는 Petrobras의 1,064일 Valaris DS-4 드릴십 연장($447M)과 여러 잭업 리그의 북해, 인도네시아, 브루나이 작업 계약이다. 총 백로그는 $4.9B로 증가했다.",
@@ -93,6 +100,7 @@
     {
       "id": 36,
       "date": "2026-05-11",
+      "sector": "Drilling",
       "category": "Earnings",
       "title": "Seadrill Q1 2026: Utilization Jumps to 95%; Full-Year Guidance Raised",
       "summary": "Seadrill이 Q1 2026 매출 $358M, 경제적 가동률 95%(전년 동기 84%)를 기록했다. West Capella·West Jupiter 리활성화 프로젝트를 예정보다 일찍 완료하고 $860M 이상 신규 계약을 추가하며 Backlog를 $3.1B로 확대했다. 연간 Revenue 가이던스를 $1.43–1.48B, EBITDA 가이던스를 $370–420M으로 상향 조정했다.",
@@ -105,6 +113,7 @@
     {
       "id": 34,
       "date": "2026-05-07",
+      "sector": "FPSO/FLNG",
       "category": "Contract",
       "title": "Subsea7 and OneSubsea Join Equinor Alliance for Bay du Nord Subsea Work",
       "summary": "Equinor과 Subsea Integration Alliance(Subsea7, OneSubsea 포함)가 협력 협약을 체결했다. 협약은 캐나다 Bay du Nord 프로젝트와 노르웨이 Wisting 프로젝트의 초기 개념 연구(concept studies)를 공동으로 진행한다. 두 프로젝트는 각각 $10B 이상 규모의 주요 개발 프로젝트다.",
@@ -146,6 +155,7 @@
     {
       "id": 40,
       "date": "2026-05-06",
+      "sector": "Drilling",
       "category": "M&A",
       "title": "Transocean-Valaris $5.8B Merger Faces DOJ Second Request, Closing Delayed to H2 2026",
       "summary": "미국 법무부(DOJ)가 Transocean의 Valaris 인수($5.8B) 건에 대해 추가 자료 제출 요청(Second Request)을 발부하며 합병 일정이 지연됐다. 두 회사는 합병 시 드릴십 33척을 포함한 73척 리그를 보유한 기업가치 $17B 규모의 최대 offshore drilling 업체가 탄생할 예정이다. 양사는 DOJ와 협조적 검토 절차를 지속 중이며 거래 완료는 2026년 하반기로 예상된다.",
@@ -173,6 +183,7 @@
     {
       "id": 31,
       "date": "2026-05-04",
+      "sector": "Drilling",
       "category": "Outlook",
       "title": "Transocean Quarterly Fleet Status: $1.6B New Contracts, $7.1B Total Backlog",
       "summary": "Transocean이 2026년 1분기 선단 상태 보고서를 발표했다. 신규 및 연장 계약으로 약 $1.6B의 백로그를 추가했으며, 총 백로그는 $7.1B에 도달했다. Barents, Orion, Aquila, Corcovado, Asgard 등 5개 장비가 노르웨이, 브라질, 동부 지중해에서 계약을 받았다.",
@@ -214,6 +225,7 @@
     {
       "id": 30,
       "date": "2026-04-29",
+      "sector": "FPSO/FLNG",
       "category": "Contract",
       "title": "BW Offshore Awarded FPSO FEED for Equinor's Bay du Nord Project",
       "summary": "BW Offshore가 캐나다 Equinor의 Bay du Nord FPSO FEED 계약을 수주했다. FEED는 2026년 말까지 진행될 예정이며, FPSO 설계 최적화, 발주처와의 상용 협상, 주요 협력사 선정 등을 포함한다. Bay du Nord는 약 $12B 규모의 깊은 수심 유전 프로젝트로 2027년 FID를 목표로 한다.",
@@ -241,6 +253,7 @@
     {
       "id": 33,
       "date": "2026-04-23",
+      "sector": "Drilling",
       "category": "M&A",
       "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
       "summary": "Helix Energy Solutions와 Hornbeck Offshore Services가 전액주식 거래로 합병에 합의했다. Hornbeck 주주는 결합 회사의 약 55%를 소유하게 된다. 합병으로 인한 연간 시너지는 3년 내 $75M 이상 예상되며, 2026년 하반기 마감 목표다.",
@@ -295,8 +308,8 @@
     {
       "id": 29,
       "date": "2026-04-14",
-      "sector": "E&P/CAPEX",
-      "category": "Project",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
       "title": "Petrobras Takes FID on SEAP I, Advancing $12B Sergipe Deepwater Development",
       "summary": "Petrobras approved the final investment decision for SEAP I in Brazil's Sergipe-Alagoas basin, following SEAP II approval in late 2025. The broader Sergipe Deepwater development involves more than R$60 billion of investment, two FPSOs expected from SBM Offshore under a BOT model, 32 wells and subsea infrastructure tied to a new gas export route.",
       "companies": [
