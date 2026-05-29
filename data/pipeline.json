@@ -1,9 +1,9 @@
 {
-  "updated": "2026-05-14",
+  "updated": "2026-05-29",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
-    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers corrected (P-80=Phase8, P-81=Phase9, P-82=Phase10, P-83=Phase11); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek."
+    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers corrected (P-80=Phase8, P-81=Phase9, P-82=Phase10, P-83=Phase11); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek. 2026-05-29 REVIEW: petrobras-sepia-1 removed (5yr production threshold). No new FIDs or major changes since 2026-05-14. Venus/Wisting/Papua LNG/Aphrodite/Masela remain FEED. Búzios 6 H1 2026 first oil on track but not officially confirmed — remains Execution."
   },
   "projects": [
     {
@@ -181,22 +181,6 @@
       "source_url": null,
       "confidence": "high",
       "notes": "FPSO P-79; 7th FPSO for Búzios field, pre-salt Santos Basin. First oil achieved May 2026. Petrobras 100% (op) in transfer-of-rights area."
-    },
-    {
-      "id": "petrobras-sepia-1",
-      "company": "Petrobras",
-      "project": "Sépia Phase 1 (FPSO Carioca)",
-      "region": "Brazil",
-      "asset_type": "Deepwater Oil",
-      "phase": "Production",
-      "capex_busd": 2.5,
-      "fid_date": "2018",
-      "first_production": "2021",
-      "verified": "2026-05-14",
-      "source": "Petrobras 2025–2029 Business Plan",
-      "source_url": null,
-      "confidence": "medium",
-      "notes": "FPSO Carioca MV30, pre-salt Santos Basin. First oil August 2021. Petrobras 30% (op), TotalEnergies 28%, TotalEnergies EP Brasil 35%, Petrogal Brasil 7%."
     },
     {
       "id": "petrobras-mero-4",
