@@ -811,7 +811,7 @@
   /* ─── Load data ─── */
   async function loadData() {
     try {
-      const res = await fetch('./data/fpso_earnings.json');
+      const res = await fetch('./data/fpso_earnings.json?v=' + Date.now());
       if (!res.ok) throw new Error('HTTP ' + res.status);
       earningsData = await res.json();
     } catch (err) {
@@ -1123,17 +1123,17 @@
       </div>
       <div class="kpi-card green">
         <div class="kpi-label">${esc(latest.period)} Adj. EBITDA</div>
-        <div class="kpi-value">${latest.adj_ebitda_musd.toLocaleString()}<span class="unit">$M</span></div>
+        <div class="kpi-value">${latest.adj_ebitda_musd != null ? latest.adj_ebitda_musd.toLocaleString() + '<span class="unit">$M</span>' : '<span style="color:var(--text-muted)">—</span>'}</div>
         ${ebitdaDelta}
       </div>
       <div class="kpi-card yellow">
         <div class="kpi-label">EBITDA Margin</div>
-        <div class="kpi-value">${latest.ebitda_margin_pct.toFixed(1)}<span class="unit">%</span></div>
+        <div class="kpi-value">${latest.ebitda_margin_pct != null ? latest.ebitda_margin_pct.toFixed(1) + '<span class="unit">%</span>' : '<span style="color:var(--text-muted)">—</span>'}</div>
         ${marginDelta}
       </div>
       <div class="kpi-card blue">
         <div class="kpi-label">Backlog</div>
-        <div class="kpi-value">${latest.backlog_busd.toFixed(1)}<span class="unit">$B</span></div>
+        <div class="kpi-value">${latest.backlog_busd != null ? latest.backlog_busd.toFixed(1) + '<span class="unit">$B</span>' : '<span style="color:var(--text-muted)">—</span>'}</div>
         ${backlogDelta}
       </div>
     `;
@@ -1380,6 +1380,7 @@
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             const pct = cell.getData().ebitda_margin_pct;
             const color = marginColor(pct);
             return `<span class="mono" style="color:${color}">${v.toLocaleString()}</span>`;
@@ -1392,6 +1393,7 @@
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             const color = marginColor(v);
             return `<span class="mono" style="color:${color};font-weight:600">${v.toFixed(1)}%</span>`;
           },
@@ -1403,6 +1405,7 @@
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
             return `<span class="mono" style="color:var(--yellow)">${v}</span>`;
           },
         },
@@ -1412,7 +1415,9 @@
           widthGrow: 0.7,
           hozAlign: 'right',
           formatter: function(cell) {
-            return `<span class="mono" style="color:var(--blue)">${cell.getValue().toFixed(1)}</span>`;
+            const v = cell.getValue();
+            if (v == null) return `<span style="color:var(--text-muted)">—</span>`;
+            return `<span class="mono" style="color:var(--blue)">${v.toFixed(1)}</span>`;
           },
         },
       ],
