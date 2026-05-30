@@ -596,21 +596,23 @@
   </div>
 
   <!-- Notable Vessels -->
-  <div class="panel">
+  <div class="panel" id="vessel-section">
     <div class="panel-header">
-      <span class="panel-title"><span class="dot"></span>Notable Vessels</span>
-      <span class="panel-subtitle">Deepwater 생산설비 현황 — 클릭 시 상세 정보</span>
+      <span class="panel-title"><span class="dot"></span>Notable Vessels
+        <span id="vessel-contractor-badge" style="display:none;margin-left:8px;font-size:11px;padding:2px 8px;border-radius:4px;background:var(--accent);color:var(--bg);font-weight:600;font-family:var(--font-mono)"></span>
+      </span>
+      <span class="panel-subtitle">Deepwater production assets — click row for detail</span>
     </div>
     <div class="filter-bar" id="vessel-filter-bar">
       <div class="filter-row">
-        <span class="filter-label">유형</span>
+        <span class="filter-label">Type</span>
         <button class="filter-btn active" onclick="window.setVesselFilter('type','all',this)">All</button>
         <button class="filter-btn" onclick="window.setVesselFilter('type','FPSO',this)">FPSO</button>
         <button class="filter-btn" onclick="window.setVesselFilter('type','FLNG',this)">FLNG</button>
         <button class="filter-btn" onclick="window.setVesselFilter('type','FSO',this)">FSO</button>
       </div>
       <div class="filter-row">
-        <span class="filter-label">지역</span>
+        <span class="filter-label">Region</span>
         <button class="filter-btn active" onclick="window.setVesselFilter('region','all',this)">All</button>
         <button class="filter-btn" onclick="window.setVesselFilter('region','South America',this)">South America</button>
         <button class="filter-btn" onclick="window.setVesselFilter('region','West Africa',this)">West Africa</button>
@@ -619,7 +621,7 @@
         <button class="filter-btn" onclick="window.setVesselFilter('region','East Africa',this)">East Africa</button>
       </div>
       <div class="filter-row">
-        <span class="filter-label">상태</span>
+        <span class="filter-label">Status</span>
         <button class="filter-btn active" onclick="window.setVesselFilter('status','all',this)">All</button>
         <button class="filter-btn" onclick="window.setVesselFilter('status','On Production',this)">On Production</button>
         <button class="filter-btn" onclick="window.setVesselFilter('status','Under Construction',this)">Under Construction</button>
@@ -684,6 +686,8 @@
 
   let fpsoData = null;
   let vesselTable = null;
+  let contractorTable = null;
+  let selectedContractor = null;
   const vesselFilters = { type: 'all', region: 'all', status: 'all', owner: 'all', client: 'all' };
   const obFilters = { owner: 'all', client: 'all', yard: 'all' };
 
@@ -761,11 +765,11 @@
 
   /* ─── Contractor Table ─── */
   function renderContractorTable(data) {
-    new Tabulator('#contractor-table', {
+    contractorTable = new Tabulator('#contractor-table', {
       data: data.contractors,
       layout: 'fitColumns',
       responsiveLayout: 'collapse',
-      selectable: 1,
+      selectable: false,
       columns: [
         { title: 'Company',       field: 'name',              minWidth: 160, formatter: function(cell) { return `<strong>${esc(cell.getValue())}</strong>`; } },
         { title: 'HQ',            field: 'hq',                width: 120 },
@@ -776,6 +780,38 @@
         { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
         { title: 'Notes',         field: 'notes',             minWidth: 200, formatter: function(cell) { return `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`; } }
       ]
+    });
+
+    contractorTable.on('rowClick', function(e, row) {
+      const c = row.getData();
+      const isSelected = row.getElement().classList.contains('row-selected');
+
+      // Deselect all rows
+      contractorTable.getRows().forEach(function(r) { r.getElement().classList.remove('row-selected'); });
+
+      if (isSelected) {
+        // Toggle off — clear owner filter
+        selectedContractor = null;
+        vesselFilters.owner = 'all';
+        if (vesselTable) vesselTable.clearFilter();
+        // Reset filter badge
+        const badge = document.getElementById('vessel-contractor-badge');
+        if (badge) badge.style.display = 'none';
+      } else {
+        // Select — filter Notable Vessels by this owner
+        row.getElement().classList.add('row-selected');
+        selectedContractor = c.name;
+        // Normalize: strip parenthetical suffix e.g. "Shell (FLNG)" → "Shell"
+        const ownerKey = c.name.replace(/\s*\(.*\)$/, '').trim();
+        vesselFilters.owner = ownerKey;
+        if (vesselTable) vesselTable.setFilter([{ field: 'owner', type: '=', value: ownerKey }]);
+        // Show filter badge in Notable Vessels panel
+        const badge = document.getElementById('vessel-contractor-badge');
+        if (badge) { badge.textContent = ownerKey; badge.style.display = 'inline'; }
+        // Scroll to Notable Vessels
+        const vesselSection = document.getElementById('vessel-section');
+        if (vesselSection) vesselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   }
 
