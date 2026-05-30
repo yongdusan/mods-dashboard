@@ -35,14 +35,14 @@
       "type": "FPSO Lessor",
       "hq": "Netherlands",
       "ticker": "SBMO.AS",
-      "fleet_owned": 14,
+      "fleet_owned": 13,
       "on_lease": 13,
-      "under_construction": 2,
+      "under_construction": 3,
       "backlog_busd": 38.9,
       "source": "SBM Offshore FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
-      "notes": "World's largest FPSO lessor; Fast4Ward standardised hull."
+      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026."
     },
     {
       "name": "MODEC",
@@ -63,14 +63,14 @@
       "type": "FPSO Lessor",
       "hq": "Norway",
       "ticker": "BWO.OL",
-      "fleet_owned": 9,
-      "on_lease": 8,
+      "fleet_owned": 5,
+      "on_lease": 4,
       "under_construction": 0,
       "backlog_busd": 2.3,
-      "source": "BW Offshore Q4 2025 Results",
-      "as_of": "2025-12-31",
+      "source": "BW Offshore Q1 2026 Results",
+      "as_of": "2026-03-31",
       "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
-      "notes": "Norway-based FPSO lessor; includes BW Gimi (FLNG)."
+      "notes": "Norway-based FPSO lessor. 4 units on active charter: BW Catcher, BW Adolo, BW Opal, BW Gimi (FLNG). Q1 2026 EBITDA margin ~37%; backlog $2.3B."
     },
     {
       "name": "Yinson Holdings",
