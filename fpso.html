@@ -773,9 +773,12 @@
       responsiveLayout: 'collapse',
       selectable: false,
       columns: [
-        { title: 'Company',       field: 'name',              minWidth: 160, formatter: function(cell) { return `<strong>${esc(cell.getValue())}</strong>`; } },
-        { title: 'HQ',            field: 'hq',                width: 120 },
-        { title: 'Ticker',        field: 'ticker',            width: 100, formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
+        { title: 'Company',       field: 'name',              minWidth: 130, widthGrow: 1.2, formatter: function(cell) {
+            const row = cell.getData();
+            const ticker = row.ticker ? `<span class="mono" style="font-size:10px;color:var(--text-muted);margin-left:6px;background:rgba(255,255,255,0.06);padding:1px 5px;border-radius:3px;border:1px solid var(--border)">${esc(row.ticker)}</span>` : '';
+            return `<strong>${esc(cell.getValue())}</strong>${ticker}`;
+          } },
+        { title: 'HQ',            field: 'hq',                width: 110 },
         { title: 'Fleet',         field: 'fleet_owned',       width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
         { title: 'On Lease',      field: 'on_lease',          width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
         { title: 'U/C',           field: 'under_construction',width: 70,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
