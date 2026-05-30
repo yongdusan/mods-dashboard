@@ -42,7 +42,7 @@
       "source": "SBM Offshore FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
-      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull cuts construction to ~40 months. 13 units on L&O as of Q1 2026; One Guyana sold to ExxonMobil."
+      "notes": "World's largest FPSO lessor; Fast4Ward standardised hull."
     },
     {
       "name": "MODEC",
@@ -56,7 +56,7 @@
       "source": "MODEC FY 2025 Annual Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.modec.com/ir/",
-      "notes": "Japan's largest FPSO contractor. 20 units operating across Brazil, West Africa and SE Asia. Q1 2026 revenue $1.1B; backlog $25.9B."
+      "notes": "Japan's largest FPSO contractor; Brazil, West Africa & SE Asia focus."
     },
     {
       "name": "BW Offshore",
@@ -70,7 +70,7 @@
       "source": "BW Offshore Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
-      "notes": "Norway-based FPSO lessor. 4 FPSOs on lease including BW Gimi (FLNG). Q1 2026 EBITDA margin ~37%; backlog $2.3B (firm+probable)."
+      "notes": "Norway-based FPSO lessor; includes BW Gimi (FLNG)."
     },
     {
       "name": "Yinson Holdings",
@@ -84,7 +84,7 @@
       "source": "Yinson Holdings FY 2025 Annual Report (Jan 2025)",
       "as_of": "2025-01-31",
       "source_url": "https://www.yinson.com/investor-relations/annual-report/",
-      "notes": "Malaysia's leading FPSO lessor. 8 FPSOs on lease as of Q4 2025. Backlog $19.5B; 2 newbuilds under construction."
+      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory."
     },
     {
       "name": "Altera Infrastructure",
@@ -99,7 +99,7 @@
       "as_of": "2025-12-31",
       "source_url": "https://www.alterainfrastructure.com/",
       "confidence": "low",
-      "notes": "Formerly Teekay Offshore. Operates in North Sea and West Africa. Private company with limited financial disclosure."
+      "notes": "Formerly Teekay Offshore; North Sea & West Africa. Private."
     },
     {
       "name": "Bluewater Energy Services",
@@ -114,7 +114,7 @@
       "as_of": "2025-12-31",
       "source_url": "https://www.bluewater.com/",
       "confidence": "low",
-      "notes": "North Sea-focused FPSO operator. Fleet includes Aoka Mizu. Private company with limited financial disclosure."
+      "notes": "North Sea-focused FPSO operator; includes Aoka Mizu. Private."
     },
     {
       "name": "Saipem",
@@ -128,7 +128,7 @@
       "source": "Saipem FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.saipem.com/en/investors/financial-results",
-      "notes": "Italian EPC contractor and FPSO operator. Executing Gato do Mato FPSO for Shell/TotalEnergies/Petrobras."
+      "notes": "Italian EPC contractor; executing Gato do Mato FPSO."
     },
     {
       "name": "Golar LNG",
@@ -142,7 +142,7 @@
       "source": "Golar LNG Q4 2025 Earnings Release",
       "as_of": "2025-12-31",
       "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
-      "notes": "First commercial FLNG operator. FLNG Hilli and Tundra on production. FLNG Mk II FID Q4 2025 (SHI KR); backlog $17B."
+      "notes": "First commercial FLNG operator; FLNG Hilli & Tundra on production."
     },
     {
       "name": "Petrobras",
@@ -156,7 +156,7 @@
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "World's largest FPSO self-operator. Core driver of Brazil's pre-salt development. 26 FPSOs operating; 5 under construction."
+      "notes": "World's largest FPSO self-operator; Brazil pre-salt core."
     },
     {
       "name": "Shell",
@@ -170,7 +170,7 @@
       "source": "Shell Annual Report 2025 / Integrated Gas Segment",
       "as_of": "2025-12-31",
       "source_url": "https://www.shell.com/investors/results-and-reporting.html",
-      "notes": "Operates Prelude FLNG — world's largest floating LNG facility (3.6 mtpa) off NW Australia."
+      "notes": "Operates Prelude FLNG (3.6 mtpa) off NW Australia."
     }
   ],
   "vessels": [

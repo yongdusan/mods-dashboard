@@ -781,9 +781,23 @@
         { title: 'HQ',            field: 'hq',                width: 105 },
         { title: 'Fleet',         field: 'fleet_owned',       width: 70,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
         { title: 'On Lease',      field: 'on_lease',          width: 80,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'U/C',           field: 'under_construction',width: 55,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'Newbuilds',     field: 'under_construction',width: 85,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
         { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 105, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
-        { title: 'Notes',         field: 'notes',             minWidth: 180, widthGrow: 1, formatter: function(cell) { return `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`; } }
+        { title: 'Notes',         field: 'notes',             minWidth: 180, widthGrow: 1, formatter: function(cell) {
+            const c = cell.getData();
+            const desc = esc(c.notes || '');
+            // Append latest earnings data if available
+            const eq = (window._fpsoEarningsMap || {})[c.name];
+            if (!eq) return `<span style="color:var(--text-muted);font-size:11px">${desc}</span>`;
+            const parts = [];
+            if (eq.revenue_musd != null) parts.push(`Rev $${eq.revenue_musd.toLocaleString()}M`);
+            if (eq.adj_ebitda_musd != null) parts.push(`EBITDA $${eq.adj_ebitda_musd.toLocaleString()}M`);
+            if (eq.ebitda_margin_pct != null) parts.push(`margin ${eq.ebitda_margin_pct.toFixed(1)}%`);
+            const eqStr = parts.length
+              ? ` <span style="color:var(--accent);font-size:10px;opacity:.8">· ${esc(eq.period)}: ${parts.join(' · ')}</span>`
+              : '';
+            return `<span style="color:var(--text-muted);font-size:11px">${desc}${eqStr}</span>`;
+          } }
       ]
     });
 
@@ -1163,13 +1177,24 @@
   };
 
   /* ─── Main init ─── */
-  fetch('./data/fpso.json')
-    .then(function(r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    })
-    .then(function(data) {
+  Promise.all([
+    fetch('./data/fpso.json?v=' + Date.now()).then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }),
+    fetch('./data/fpso_earnings.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : null; }).catch(function() { return null; })
+  ])
+    .then(function(results) {
+      const data = results[0];
+      const earningsData = results[1];
       fpsoData = data;
+
+      // Build earnings lookup: company name → latest quarter
+      window._fpsoEarningsMap = {};
+      if (earningsData && earningsData.companies) {
+        earningsData.companies.forEach(function(c) {
+          if (c.quarters && c.quarters.length) {
+            window._fpsoEarningsMap[c.name] = c.quarters[c.quarters.length - 1];
+          }
+        });
+      }
 
       // Update header date
       const dateEl = document.getElementById('updated-date');
@@ -1185,11 +1210,10 @@
       });
     })
     .catch(function(err) {
-      console.error('Failed to load fpso.json:', err);
+      console.error('Failed to load data:', err);
       document.getElementById('kpi-grid').innerHTML =
         `<div class="loading" style="grid-column:1/-1">
-          데이터 로드 실패: <code>${err.message}</code><br>
-          <code>data/fpso.json</code> 파일을 확인하세요.
+          Data load failed: <code>${err.message}</code>
         </div>`;
     });
 
