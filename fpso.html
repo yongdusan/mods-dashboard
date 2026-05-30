@@ -872,15 +872,17 @@
         if (vBadge) vBadge.style.display = 'none';
         if (oBadge) oBadge.style.display = 'none';
       } else {
-        // Select — filter Notable Vessels + Orderbook by this owner
+        // Select — filter Notable Vessels + Orderbook by this contractor
         row.getElement().classList.add('row-selected');
         selectedContractor = c.name;
-        // Normalize: strip parenthetical suffix e.g. "Shell (FLNG)" → "Shell"
-        const ownerKey = c.name.replace(/\s*\(.*\)$/, '').trim();
-        vesselFilters.owner = ownerKey;
-        const ownerFilter = [{ field: 'owner', type: '=', value: ownerKey }];
-        if (vesselTable) vesselTable.setFilter(ownerFilter);
-        if (obTable) obTable.setFilter(ownerFilter);
+        const contractorKey = c.name.replace(/\s*\(.*\)$/, '').trim();
+        // Self-operators filter by client (they charter from lessors); lessors filter by owner
+        const isOperator = c.type && (c.type.includes('Self-Operator') || c.type.includes('FLNG Operator') || c.type.includes('FPSO Operator'));
+        const filterField = isOperator ? 'client' : 'owner';
+        vesselFilters.owner = contractorKey;
+        const contractorFilter = [{ field: filterField, type: '=', value: contractorKey }];
+        if (vesselTable) vesselTable.setFilter(contractorFilter);
+        if (obTable) obTable.setFilter(contractorFilter);
         // Show filter badges
         const vBadge = document.getElementById('vessel-contractor-badge');
         const oBadge = document.getElementById('ob-contractor-badge');
