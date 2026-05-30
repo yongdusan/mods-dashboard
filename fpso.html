@@ -781,7 +781,8 @@
           } },
         { title: 'Fleet',         field: 'fleet_owned',       width: 80,  minWidth: 80,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
         { title: 'On Lease',      field: 'on_lease',          width: 100, minWidth: 100, hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'Newbuilds',     field: 'under_construction',width: 110, minWidth: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'NB Owned',      field: 'newbuilds_owned',   width: 100, minWidth: 100, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'NB Op.',        field: 'newbuilds_operated',width: 90,  minWidth: 90,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--accent)' : 'var(--text-muted)'}">${v}</span>`; } },
         { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 125, minWidth: 125, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
         { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
@@ -806,7 +807,8 @@
         'name':              'Contractor name and stock ticker (if listed)',
         'fleet_owned':       'Total number of FPSO / FLNG vessels owned by the contractor',
         'on_lease':          'Vessels currently on charter to an oil company operator',
-        'under_construction':'Vessels under construction — ordered but not yet delivered',
+        'newbuilds_owned':   'Vessels the contractor owns and is currently building (BOT/lease model)',
+        'newbuilds_operated':'Vessels being built for the operator\'s own fields — includes third-party-owned FPSOs on contract',
         'backlog_busd':      'Contracted revenue backlog: total future income locked in from existing long-term charter agreements ($B)',
         'notes':             'Key characteristics and latest quarterly financials (Revenue · EBITDA · Margin)',
       };

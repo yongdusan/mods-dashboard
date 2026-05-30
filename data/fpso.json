@@ -37,12 +37,13 @@
       "ticker": "SBMO.AS",
       "fleet_owned": 13,
       "on_lease": 13,
-      "under_construction": 3,
       "backlog_busd": 38.9,
       "source": "SBM Offshore FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
-      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026."
+      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026.",
+      "newbuilds_owned": 6,
+      "newbuilds_operated": 0
     },
     {
       "name": "MODEC",
@@ -51,12 +52,13 @@
       "ticker": "6269.T",
       "fleet_owned": 20,
       "on_lease": 19,
-      "under_construction": 1,
       "backlog_busd": 14.8,
       "source": "MODEC FY 2025 Annual Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.modec.com/ir/",
-      "notes": "Japan's largest FPSO contractor; Brazil, West Africa & SE Asia focus."
+      "notes": "Japan's largest FPSO contractor; Brazil, West Africa & SE Asia focus.",
+      "newbuilds_owned": 1,
+      "newbuilds_operated": 0
     },
     {
       "name": "BW Offshore",
@@ -65,12 +67,13 @@
       "ticker": "BWO.OL",
       "fleet_owned": 5,
       "on_lease": 4,
-      "under_construction": 0,
       "backlog_busd": 2.3,
       "source": "BW Offshore Q1 2026 Results",
       "as_of": "2026-03-31",
       "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
-      "notes": "Norway-based FPSO lessor. 4 units on active charter: BW Catcher, BW Adolo, BW Opal, BW Gimi (FLNG). Q1 2026 EBITDA margin ~37%; backlog $2.3B."
+      "notes": "Norway-based FPSO lessor. 4 units on active charter: BW Catcher, BW Adolo, BW Opal, BW Gimi (FLNG). Q1 2026 EBITDA margin ~37%; backlog $2.3B.",
+      "newbuilds_owned": 0,
+      "newbuilds_operated": 0
     },
     {
       "name": "Yinson Holdings",
@@ -79,12 +82,13 @@
       "ticker": "7293.KL",
       "fleet_owned": 9,
       "on_lease": 8,
-      "under_construction": 2,
       "backlog_busd": 20.5,
       "source": "Yinson Holdings FY 2025 Annual Report (Jan 2025)",
       "as_of": "2025-01-31",
       "source_url": "https://www.yinson.com/investor-relations/annual-report/",
-      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory."
+      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory.",
+      "newbuilds_owned": 2,
+      "newbuilds_operated": 0
     },
     {
       "name": "Altera Infrastructure",
@@ -93,13 +97,14 @@
       "ticker": null,
       "fleet_owned": 7,
       "on_lease": 6,
-      "under_construction": 0,
       "backlog_busd": 3.1,
       "source": "Altera Infrastructure company disclosures (private)",
       "as_of": "2025-12-31",
       "source_url": "https://www.alterainfrastructure.com/",
       "confidence": "low",
-      "notes": "Formerly Teekay Offshore; North Sea & West Africa. Private."
+      "notes": "Formerly Teekay Offshore; North Sea & West Africa. Private.",
+      "newbuilds_owned": 0,
+      "newbuilds_operated": 0
     },
     {
       "name": "Bluewater Energy Services",
@@ -108,13 +113,14 @@
       "ticker": null,
       "fleet_owned": 5,
       "on_lease": 4,
-      "under_construction": 0,
       "backlog_busd": 2.3,
       "source": "Bluewater Energy Services company disclosures (private)",
       "as_of": "2025-12-31",
       "source_url": "https://www.bluewater.com/",
       "confidence": "low",
-      "notes": "North Sea-focused FPSO operator; includes Aoka Mizu. Private."
+      "notes": "North Sea-focused FPSO operator; includes Aoka Mizu. Private.",
+      "newbuilds_owned": 0,
+      "newbuilds_operated": 0
     },
     {
       "name": "Saipem",
@@ -123,12 +129,13 @@
       "ticker": "SPM.MI",
       "fleet_owned": 6,
       "on_lease": 5,
-      "under_construction": 1,
       "backlog_busd": 7.4,
       "source": "Saipem FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.saipem.com/en/investors/financial-results",
-      "notes": "Italian EPC contractor; executing Gato do Mato FPSO."
+      "notes": "Italian EPC contractor; executing Gato do Mato FPSO.",
+      "newbuilds_owned": 1,
+      "newbuilds_operated": 0
     },
     {
       "name": "Golar LNG",
@@ -137,12 +144,13 @@
       "ticker": "GLNG",
       "fleet_owned": 3,
       "on_lease": 2,
-      "under_construction": 1,
       "backlog_busd": 17.0,
       "source": "Golar LNG Q4 2025 Earnings Release",
       "as_of": "2025-12-31",
       "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
-      "notes": "First commercial FLNG operator; FLNG Hilli & Tundra on production."
+      "notes": "First commercial FLNG operator; FLNG Hilli & Tundra on production.",
+      "newbuilds_owned": 2,
+      "newbuilds_operated": 0
     },
     {
       "name": "Petrobras",
@@ -151,12 +159,13 @@
       "ticker": "PBR",
       "fleet_owned": 26,
       "on_lease": 26,
-      "under_construction": 5,
       "backlog_busd": null,
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "World's largest FPSO self-operator; Brazil pre-salt core."
+      "notes": "World's largest FPSO self-operator; Brazil pre-salt core.",
+      "newbuilds_owned": 1,
+      "newbuilds_operated": 5
     },
     {
       "name": "Shell",
@@ -165,12 +174,13 @@
       "ticker": "SHEL",
       "fleet_owned": 1,
       "on_lease": 1,
-      "under_construction": 0,
       "backlog_busd": null,
       "source": "Shell Annual Report 2025 / Integrated Gas Segment",
       "as_of": "2025-12-31",
       "source_url": "https://www.shell.com/investors/results-and-reporting.html",
-      "notes": "Operates Prelude FLNG (3.6 mtpa) off NW Australia."
+      "notes": "Operates Prelude FLNG (3.6 mtpa) off NW Australia.",
+      "newbuilds_owned": 0,
+      "newbuilds_operated": 2
     }
   ],
   "vessels": [
