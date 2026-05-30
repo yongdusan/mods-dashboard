@@ -845,7 +845,7 @@
 
     document.getElementById('vessel-detail-grid').innerHTML = `
       ${d.hull_type ? `<div class="ob-detail-item"><span class="ob-detail-label">선형 / 선체</span><span class="ob-detail-value">${esc(d.hull_type)}</span></div>` : ''}
-      ${d.yard ? `<div class="ob-detail-item"><span class="ob-detail-label">건조 / 개조 조선소</span><span class="ob-detail-value">${esc(d.yard)}</span></div>` : ''}
+      ${d.yard ? `<div class="ob-detail-item"><span class="ob-detail-label">Shipyard / Conversion</span><span class="ob-detail-value">${esc(d.yard)}</span></div>` : ''}
       ${d.mooring ? `<div class="ob-detail-item"><span class="ob-detail-label">계류 방식</span><span class="ob-detail-value">${esc(d.mooring)}</span></div>` : ''}
       ${vessel.water_depth_m != null ? `<div class="ob-detail-item"><span class="ob-detail-label">수심</span><span class="ob-detail-value">${vessel.water_depth_m.toLocaleString()}m</span></div>` : ''}
       ${vessel.storage_mmbbl != null ? `<div class="ob-detail-item"><span class="ob-detail-label">저장 용량</span><span class="ob-detail-value">${vessel.storage_mmbbl} MMbbl</span></div>` : ''}
@@ -965,16 +965,16 @@
       layout: 'fitColumns',
       responsiveLayout: 'collapse',
       columns: [
-        { title: '설비명',          field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
-        { title: '유형',            field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
-        { title: '소유사',          field: 'owner',             minWidth: 130 },
-        { title: '발주사',          field: 'client',            minWidth: 110 },
-        { title: '광구/프로젝트',   field: 'field',             minWidth: 160 },
-        { title: '조선소',          field: 'yard',              minWidth: 140 },
-        { title: '용량(kboed)',      field: 'oil_capacity_kboed',width: 95,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v}</span>` : '—'; } },
-        { title: '인도예정',        field: 'delivery',          width: 100, formatter: function(cell) { return `<span class="mono" style="color:var(--yellow)">${esc(cell.getValue())}</span>`; } },
-        { title: '계약금액($B)',    field: 'contract_value_busd',width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono" style="color:var(--accent)">$${v.toFixed(1)}B</span>` : '—'; } },
-        { title: '상태',            field: 'status',            width: 130, formatter: function(cell) { return statusBadge(cell.getValue()); } }
+        { title: 'Asset',            field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
+        { title: 'Type',             field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
+        { title: 'Owner',            field: 'owner',             minWidth: 130 },
+        { title: 'Client',           field: 'client',            minWidth: 110 },
+        { title: 'Field / Project',  field: 'field',             minWidth: 160 },
+        { title: 'Shipyard',         field: 'yard',              minWidth: 140 },
+        { title: 'Capacity (kboed)', field: 'oil_capacity_kboed',width: 115, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v}</span>` : '—'; } },
+        { title: 'Delivery',         field: 'delivery',          width: 100, formatter: function(cell) { return `<span class="mono" style="color:var(--yellow)">${esc(cell.getValue())}</span>`; } },
+        { title: 'Contract ($B)',    field: 'contract_value_busd',width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono" style="color:var(--accent)">$${v.toFixed(1)}B</span>` : '—'; } },
+        { title: 'Status',           field: 'status',            width: 130, formatter: function(cell) { return statusBadge(cell.getValue()); } }
       ]
     });
     obTable.on('rowClick', function(e, row) {
@@ -994,9 +994,9 @@
     const obOwners  = [...new Set(data.orderbook.map(function(o) { return o.owner; }).filter(Boolean))].sort();
     const obClients = [...new Set(data.orderbook.map(function(o) { return o.client; }).filter(Boolean))].sort();
     const obYards   = [...new Set(data.orderbook.map(function(o) { return o.yard; }).filter(Boolean))].sort();
-    buildFilterRow('ob-filter-bar', '소유자', 'owner',  obOwners,  window.setObFilter);
-    buildFilterRow('ob-filter-bar', '발주사', 'client', obClients, window.setObFilter);
-    buildFilterRow('ob-filter-bar', '조선소', 'yard',   obYards,   window.setObFilter);
+    buildFilterRow('ob-filter-bar', 'Owner',    'owner',  obOwners,  window.setObFilter);
+    buildFilterRow('ob-filter-bar', 'Client',   'client', obClients, window.setObFilter);
+    buildFilterRow('ob-filter-bar', 'Shipyard', 'yard',   obYards,   window.setObFilter);
   }
 
   /* ─── Charter Rates Chart ─── */
