@@ -590,7 +590,7 @@
   <div class="panel">
     <div class="panel-header">
       <span class="panel-title"><span class="dot"></span>Contractor Summary</span>
-      <span class="panel-subtitle">주요 deepwater FPSO/FLNG 임대사 · 운영사</span>
+      <span class="panel-subtitle">Major deepwater FPSO / FLNG lessors &amp; operators</span>
     </div>
     <div id="contractor-table"></div>
   </div>
@@ -629,14 +629,14 @@
     <div id="vessel-table"></div>
     <!-- Under Construction 안내 -->
     <div id="vessel-uc-notice" style="display:none;padding:14px 16px;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border);">
-      ℹ️ &nbsp;건조 중인 설비(Under Construction)는 아래 <strong style="color:var(--accent)">Orderbook</strong> 섹션에서 상세 정보를 확인할 수 있습니다.
+      ℹ️ &nbsp;Units under construction are listed in the <strong style="color:var(--accent)">Orderbook</strong> section below.
     </div>
     <!-- Vessel Drilldown -->
     <div class="ob-drilldown" id="vessel-drilldown">
       <div class="ob-drilldown-inner">
         <div class="ob-drilldown-header">
           <div class="ob-drilldown-title" id="vessel-drilldown-title">—</div>
-          <button class="ob-close-btn" onclick="window.closeVesselDrilldown()">✕ 닫기</button>
+          <button class="ob-close-btn" onclick="window.closeVesselDrilldown()">✕ Close</button>
         </div>
         <div class="ob-detail-grid" id="vessel-detail-grid"></div>
       </div>
@@ -697,7 +697,7 @@
   }
 
   function fmtDelta(val, higherIsBetter) {
-    if (val === 0) return '<span class="kpi-delta neutral">─ 변동없음</span>';
+    if (val === 0) return '<span class="kpi-delta neutral">─ No change</span>';
     const positive = higherIsBetter ? val > 0 : val < 0;
     const cls = positive ? 'positive' : 'negative';
     const arrow = val > 0 ? '▲' : '▼';
@@ -753,7 +753,7 @@
     grid.innerHTML = cards.map(c => `
       <div class="kpi-card ${c.color}">
         <div class="kpi-label">${esc(c.label)}</div>
-        <div class="kpi-value">${c.value}<span class="unit">척</span></div>
+        <div class="kpi-value">${c.value}</div>
         ${c.sub ? `<div class="kpi-delta neutral">${esc(c.sub)}</div>` : fmtDelta(c.delta, c.higherIsBetter)}
       </div>
     `).join('');
@@ -767,14 +767,14 @@
       responsiveLayout: 'collapse',
       selectable: 1,
       columns: [
-        { title: '회사명',       field: 'name',              minWidth: 160, formatter: function(cell) { return `<strong>${esc(cell.getValue())}</strong>`; } },
-        { title: '본사',         field: 'hq',                width: 120 },
-        { title: '티커',         field: 'ticker',            width: 100, formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
-        { title: '보유 척수',    field: 'fleet_owned',       width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: '임대 중',      field: 'on_lease',          width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: '건조 중',      field: 'under_construction',width: 90,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
-        { title: '수주잔량($B)', field: 'backlog_busd',      width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
-        { title: '비고',         field: 'notes',             minWidth: 200, formatter: function(cell) { return `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`; } }
+        { title: 'Company',       field: 'name',              minWidth: 160, formatter: function(cell) { return `<strong>${esc(cell.getValue())}</strong>`; } },
+        { title: 'HQ',            field: 'hq',                width: 120 },
+        { title: 'Ticker',        field: 'ticker',            width: 100, formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
+        { title: 'Fleet',         field: 'fleet_owned',       width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'On Lease',      field: 'on_lease',          width: 90,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'U/C',           field: 'under_construction',width: 70,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
+        { title: 'Notes',         field: 'notes',             minWidth: 200, formatter: function(cell) { return `<span style="color:var(--text-muted);font-size:11px">${esc(cell.getValue())}</span>`; } }
       ]
     });
   }
@@ -791,7 +791,7 @@
     const titleEl = document.getElementById('vessel-drilldown-title');
     let titleHtml = `<span style="color:${typeColor};font-weight:800">${esc(vessel.type)}</span> ${esc(vessel.name)}`;
     if (vessel.status === 'On Production') titleHtml += ` <span class="badge badge-green" style="font-size:10px">On Production</span>`;
-    if (vessel.contract_end) titleHtml += ` <span class="badge badge-muted" style="font-size:10px;margin-left:4px">계약 ~${esc(vessel.contract_end)}</span>`;
+    if (vessel.contract_end) titleHtml += ` <span class="badge badge-muted" style="font-size:10px;margin-left:4px">Until ${esc(vessel.contract_end)}</span>`;
     titleEl.innerHTML = titleHtml;
 
     // Detail grid
@@ -834,16 +834,16 @@
       selectable: 1,
       initialSort: [{ column: 'year_delivered', dir: 'desc' }],
       columns: [
-        { title: '설비명',          field: 'name',              minWidth: 170, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
-        { title: '유형',            field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : v === 'FSO' ? 'muted' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
-        { title: '소유사',          field: 'owner',             minWidth: 120 },
-        { title: '운영사',          field: 'client',            minWidth: 110 },
-        { title: '유전/광구',       field: 'field',             minWidth: 160 },
-        { title: '지역',            field: 'region',            width: 120 },
-        { title: '수심(m)',         field: 'water_depth_m',     width: 85,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v.toLocaleString()}</span>` : '—'; } },
-        { title: '처리용량(kboed)', field: 'oil_capacity_kboed',width: 115, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v}</span>` : '—'; } },
-        { title: '계약종료',        field: 'contract_end',      width: 95,  formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
-        { title: '상태',            field: 'status',            width: 140, formatter: function(cell) { return statusBadge(cell.getValue()); } }
+        { title: 'Asset',            field: 'name',              minWidth: 170, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
+        { title: 'Type',             field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : v === 'FSO' ? 'muted' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
+        { title: 'Owner',            field: 'owner',             minWidth: 120 },
+        { title: 'Operator',         field: 'client',            minWidth: 110 },
+        { title: 'Field / Block',    field: 'field',             minWidth: 160 },
+        { title: 'Region',           field: 'region',            width: 120 },
+        { title: 'WD (m)',           field: 'water_depth_m',     width: 85,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v.toLocaleString()}</span>` : '—'; } },
+        { title: 'Capacity (kboed)', field: 'oil_capacity_kboed',width: 115, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">${v}</span>` : '—'; } },
+        { title: 'Contract End',     field: 'contract_end',      width: 105, formatter: function(cell) { const v = cell.getValue(); return v ? `<span class="mono">${esc(v)}</span>` : '—'; } },
+        { title: 'Status',           field: 'status',            width: 140, formatter: function(cell) { return statusBadge(cell.getValue()); } }
       ]
     });
     vesselTable.on('rowClick', function(e, row) {
@@ -862,8 +862,8 @@
     // Build dynamic owner / client filter rows
     const vOwners  = [...new Set(data.vessels.map(function(v) { return v.owner; }).filter(Boolean))].sort();
     const vClients = [...new Set(data.vessels.map(function(v) { return v.client; }).filter(Boolean))].sort();
-    buildFilterRow('vessel-filter-bar', '소유자', 'owner',  vOwners,  window.setVesselFilter);
-    buildFilterRow('vessel-filter-bar', '운영사', 'client', vClients, window.setVesselFilter);
+    buildFilterRow('vessel-filter-bar', 'Owner',    'owner',  vOwners,  window.setVesselFilter);
+    buildFilterRow('vessel-filter-bar', 'Operator', 'client', vClients, window.setVesselFilter);
   }
 
   /* ─── Orderbook Drilldown ─── */
