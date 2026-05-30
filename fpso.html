@@ -646,10 +646,12 @@
   </div>
 
   <!-- Orderbook -->
-  <div class="panel">
+  <div class="panel" id="orderbook-section">
     <div class="panel-header">
-      <span class="panel-title"><span class="dot"></span>Orderbook</span>
-      <span class="panel-subtitle">Deepwater/FLNG 신규 설비 · 발주 완료 설비 — 클릭 시 상세 정보</span>
+      <span class="panel-title"><span class="dot"></span>Orderbook
+        <span id="ob-contractor-badge" style="display:none;margin-left:8px;font-size:11px;padding:2px 8px;border-radius:4px;background:var(--blue);color:var(--bg);font-weight:600;font-family:var(--font-mono)"></span>
+      </span>
+      <span class="panel-subtitle">Deepwater / FLNG newbuilds &amp; confirmed orders — click row for detail</span>
     </div>
     <div class="filter-bar" id="ob-filter-bar"></div>
     <div id="orderbook-table"></div>
@@ -658,7 +660,7 @@
       <div class="ob-drilldown-inner">
         <div class="ob-drilldown-header">
           <div class="ob-drilldown-title" id="ob-drilldown-title">—</div>
-          <button class="ob-close-btn" onclick="window.closeObDrilldown()">✕ 닫기</button>
+          <button class="ob-close-btn" onclick="window.closeObDrilldown()">✕ Close</button>
         </div>
         <div class="ob-detail-grid" id="ob-detail-grid"></div>
       </div>
@@ -790,24 +792,31 @@
       contractorTable.getRows().forEach(function(r) { r.getElement().classList.remove('row-selected'); });
 
       if (isSelected) {
-        // Toggle off — clear owner filter
+        // Toggle off — clear all filters
         selectedContractor = null;
         vesselFilters.owner = 'all';
         if (vesselTable) vesselTable.clearFilter();
-        // Reset filter badge
-        const badge = document.getElementById('vessel-contractor-badge');
-        if (badge) badge.style.display = 'none';
+        if (obTable) obTable.clearFilter();
+        // Hide badges
+        const vBadge = document.getElementById('vessel-contractor-badge');
+        const oBadge = document.getElementById('ob-contractor-badge');
+        if (vBadge) vBadge.style.display = 'none';
+        if (oBadge) oBadge.style.display = 'none';
       } else {
-        // Select — filter Notable Vessels by this owner
+        // Select — filter Notable Vessels + Orderbook by this owner
         row.getElement().classList.add('row-selected');
         selectedContractor = c.name;
         // Normalize: strip parenthetical suffix e.g. "Shell (FLNG)" → "Shell"
         const ownerKey = c.name.replace(/\s*\(.*\)$/, '').trim();
         vesselFilters.owner = ownerKey;
-        if (vesselTable) vesselTable.setFilter([{ field: 'owner', type: '=', value: ownerKey }]);
-        // Show filter badge in Notable Vessels panel
-        const badge = document.getElementById('vessel-contractor-badge');
-        if (badge) { badge.textContent = ownerKey; badge.style.display = 'inline'; }
+        const ownerFilter = [{ field: 'owner', type: '=', value: ownerKey }];
+        if (vesselTable) vesselTable.setFilter(ownerFilter);
+        if (obTable) obTable.setFilter(ownerFilter);
+        // Show filter badges
+        const vBadge = document.getElementById('vessel-contractor-badge');
+        const oBadge = document.getElementById('ob-contractor-badge');
+        if (vBadge) { vBadge.textContent = ownerKey; vBadge.style.display = 'inline'; }
+        if (oBadge) { oBadge.textContent = ownerKey; oBadge.style.display = 'inline'; }
         // Scroll to Notable Vessels
         const vesselSection = document.getElementById('vessel-section');
         if (vesselSection) vesselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });

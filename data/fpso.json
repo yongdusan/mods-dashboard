@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29",
+  "updated": "2026-05-30",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -35,8 +35,8 @@
       "type": "FPSO Lessor",
       "hq": "Netherlands",
       "ticker": "SBMO.AS",
-      "fleet_owned": 15,
-      "on_lease": 14,
+      "fleet_owned": 14,
+      "on_lease": 13,
       "under_construction": 2,
       "backlog_busd": 38.9,
       "source": "SBM Offshore FY 2025 Full Year Results",
@@ -177,7 +177,7 @@
     {
       "name": "One Guyana",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "ExxonMobil",
       "client": "ExxonMobil",
       "field": "Yellowtail (Stabroek Block)",
       "region": "South America",
