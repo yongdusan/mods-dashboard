@@ -131,6 +131,24 @@
       50% { opacity: 0.3; }
     }
 
+    /* ─── Custom Tooltip ─── */
+    #col-tooltip {
+      position: fixed;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 11px;
+      font-family: var(--font-mono);
+      line-height: 1.5;
+      padding: 6px 10px;
+      border-radius: 4px;
+      pointer-events: none;
+      z-index: 9999;
+      max-width: 320px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      display: none;
+    }
+
     /* ─── Page Title ─── */
     .page-title-section {
       margin-bottom: 24px;
@@ -546,6 +564,7 @@
   </style>
 </head>
 <body>
+<div id="col-tooltip"></div>
 <div class="container">
 
   <!-- Header -->
@@ -809,15 +828,28 @@
       const tooltips = {
         'name':              'Contractor name and stock ticker (if listed)',
         'fleet_owned':       'Total number of FPSO / FLNG vessels owned by the contractor',
-        'on_lease':          'Lessors: vessels currently on charter to an oil company · Self-operators (Petrobras, Shell): vessels in active production',
+        'on_lease':          'Lessors: vessels currently on charter to an oil company\nSelf-operators (Petrobras, Shell): vessels in active production',
         'newbuilds_owned':   'Vessels the contractor owns and is currently building (BOT/lease model)',
         'newbuilds_operated':'Vessels being built for the operator\'s own fields — includes third-party-owned FPSOs on contract',
         'backlog_busd':      'Contracted revenue backlog: total future income locked in from existing long-term charter agreements ($B)',
         'notes':             'Key characteristics and latest quarterly financials (Revenue · EBITDA · Margin)',
       };
+      const tipEl = document.getElementById('col-tooltip');
       contractorTable.getColumns().forEach(function(col) {
-        const tip = tooltips[col.getField()];
-        if (tip) col.getElement().setAttribute('title', tip);
+        const text = tooltips[col.getField()];
+        if (!text) return;
+        const el = col.getElement();
+        el.addEventListener('mouseenter', function() {
+          tipEl.innerHTML = text.replace(/\n/g, '<br>');
+          tipEl.style.display = 'block';
+        });
+        el.addEventListener('mousemove', function(e) {
+          tipEl.style.left = (e.clientX + 14) + 'px';
+          tipEl.style.top  = (e.clientY + 18) + 'px';
+        });
+        el.addEventListener('mouseleave', function() {
+          tipEl.style.display = 'none';
+        });
       });
     });
 
