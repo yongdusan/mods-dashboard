@@ -801,6 +801,21 @@
       ]
     });
 
+    contractorTable.on('tableBuilt', function() {
+      const tooltips = {
+        'name':              'Contractor name and stock ticker (if listed)',
+        'fleet_owned':       'Total number of FPSO / FLNG vessels owned by the contractor',
+        'on_lease':          'Vessels currently on charter to an oil company operator',
+        'under_construction':'Vessels under construction — ordered but not yet delivered',
+        'backlog_busd':      'Contracted revenue backlog: total future income locked in from existing long-term charter agreements ($B)',
+        'notes':             'Key characteristics and latest quarterly financials (Revenue · EBITDA · Margin)',
+      };
+      contractorTable.getColumns().forEach(function(col) {
+        const tip = tooltips[col.getField()];
+        if (tip) col.getElement().setAttribute('title', tip);
+      });
+    });
+
     contractorTable.on('rowClick', function(e, row) {
       const c = row.getData();
       const isSelected = row.getElement().classList.contains('row-selected');
