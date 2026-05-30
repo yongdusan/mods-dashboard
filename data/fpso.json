@@ -101,8 +101,8 @@
       "source": "Saipem FY 2025 Full Year Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.saipem.com/en/investors/financial-results",
-      "notes": "Italian EPC contractor; executing Gato do Mato FPSO.",
-      "newbuilds_owned": 1,
+      "notes": "Italian EPC contractor; Gato do Mato EPC contract terminated Nov 2022.",
+      "newbuilds_owned": 0,
       "newbuilds_operated": 0
     },
     {
@@ -148,7 +148,7 @@
       "source_url": "https://www.shell.com/investors/results-and-reporting.html",
       "notes": "Operates Prelude FLNG (3.6 mtpa) off NW Australia.",
       "newbuilds_owned": 0,
-      "newbuilds_operated": 2
+      "newbuilds_operated": 1
     }
   ],
   "vessels": [
@@ -1051,7 +1051,7 @@
       "client": "ExxonMobil",
       "field": "Hammerhead (Stabroek Block)",
       "region": "South America",
-      "yard": "SHI (KR) + Seatrium (SG)",
+      "yard": "Seatrium (SG) + SHI (KR)",
       "contract_value_busd": 4.2,
       "oil_capacity_kboed": 120,
       "delivery": "2027-Q3",
@@ -1108,16 +1108,16 @@
     {
       "name": "Gato do Mato FPSO",
       "type": "FPSO",
-      "owner": "Saipem / Shell / Petrobras",
+      "owner": "MODEC",
       "client": "Shell",
       "field": "Gato do Mato Field (C-M-411)",
       "region": "South America",
-      "yard": "CSSC (CN) + Fincantieri (IT)",
+      "yard": "Sumitomo (JP) + COSCO Qidong (CN)",
       "contract_value_busd": 5.0,
       "oil_capacity_kboed": 100,
       "delivery": "2027-Q4",
       "status": "Under Construction",
-      "notes": "Shell 수석 운영사. Saipem EPC 수행 중.",
+      "notes": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029.",
       "detail": {
         "hull_type": "VLCC 개조 (Saipem 전환)",
         "water_depth_m": 2100,
@@ -1137,39 +1137,7 @@
       }
     },
     {
-      "name": "Bonga North FPSO",
-      "type": "FPSO",
-      "owner": "Shell / NNPC / Eni / TotalEnergies",
-      "client": "Shell",
-      "field": "Bonga North (OML 118)",
-      "region": "West Africa",
-      "yard": "SHI (KR)",
-      "contract_value_busd": 5.5,
-      "oil_capacity_kboed": 150,
-      "delivery": "2028-Q2",
-      "status": "Under Construction",
-      "notes": "나이지리아 심해 개발. FID 2023년 9월.",
-      "detail": {
-        "hull_type": "신조 FPSO (SHI 건조)",
-        "water_depth_m": 1000,
-        "storage_mmbbl": 1.5,
-        "gas_capacity_mmscfd": 180,
-        "mooring": "Turret Mooring",
-        "fid_date": "2023-Q3",
-        "construction_progress_pct": 20,
-        "financing": "JV 직발주 (자가 소유)",
-        "key_equipment": "SHI 한국 신조. OML 118 블록 기존 Bonga FPSO 인접 배치. 수중 처리 시스템.",
-        "rig_demand": "드릴십 1기 — 2026~2028년 Bonga North 개발정 8공 시추 계획",
-        "partners": [
-          "Shell 55% op",
-          "NNPC 20%",
-          "TotalEnergies 12.5%",
-          "ENI 12.5%"
-        ]
-      }
-    },
-    {
-      "name": "Coral Sul 2 FLNG",
+      "name": "Coral Norte FLNG",
       "type": "FLNG",
       "owner": "ENI / Galp / KOGAS / CNPC",
       "client": "ENI",
@@ -1208,7 +1176,7 @@
       "client": "ENAUTA",
       "field": "Atlanta Field (BS-4)",
       "region": "South America",
-      "yard": "Seatrium (SG)",
+      "yard": "Drydocks World Dubai (UAE)",
       "contract_value_busd": 1.9,
       "oil_capacity_kboed": 50,
       "delivery": "2026-Q3",
@@ -1386,44 +1354,13 @@
       }
     },
     {
-      "name": "MODEC MV34 (Libra NW)",
-      "type": "FPSO",
-      "owner": "MODEC",
-      "client": "Petrobras",
-      "field": "Buzios NW / Atapu",
-      "region": "South America",
-      "yard": "SHI (KR)",
-      "contract_value_busd": 3.0,
-      "oil_capacity_kboed": 180,
-      "delivery": "2028-Q2",
-      "status": "Under Construction",
-      "notes": "MODEC MV34. Petrobras 발주 브라질 신규 FPSO.",
-      "detail": {
-        "hull_type": "신조 FPSO (MODEC MV34 선형)",
-        "water_depth_m": 2000,
-        "storage_mmbbl": 1.8,
-        "gas_capacity_mmscfd": 170,
-        "mooring": "Turret Mooring",
-        "fid_date": "2024",
-        "construction_progress_pct": 15,
-        "financing": "20년 임대 (Petrobras)",
-        "key_equipment": "MODEC MV34 표준 선형. SHI 한국 신조. Búzios NW/Atapu 프리솔트 레이어 복합 개발 전용.",
-        "rig_demand": "드릴십 2기 — Búzios NW 개발정 시추 2027~2029년 집중 배치",
-        "partners": [
-          "Petrobras 65% op",
-          "TotalEnergies 22.5%",
-          "Shell 12.5%"
-        ]
-      }
-    },
-    {
       "name": "FLNG Mk II (Golar)",
       "type": "FLNG",
       "owner": "Golar LNG",
-      "client": "TBD",
+      "client": "SESA (Argentina)",
       "field": "TBD",
       "region": "TBD",
-      "yard": "SHI (KR)",
+      "yard": "CIMC Raffles (CN)",
       "contract_value_busd": 3.5,
       "oil_capacity_kboed": null,
       "delivery": "2029-Q2",
