@@ -773,17 +773,17 @@
       responsiveLayout: 'collapse',
       selectable: false,
       columns: [
-        { title: 'Company',       field: 'name',              minWidth: 160, widthGrow: 3, formatter: function(cell) {
+        { title: 'Company',       field: 'name',              width: 205, formatter: function(cell) {
             const row = cell.getData();
             const ticker = row.ticker ? `<span class="mono" style="font-size:10px;color:var(--text-muted);margin-left:6px;background:rgba(255,255,255,0.06);padding:1px 5px;border-radius:3px;border:1px solid var(--border)">${esc(row.ticker)}</span>` : '';
-            return `<strong>${esc(cell.getValue())}</strong>${ticker}`;
+            const hq = row.hq ? `<div style="font-size:10px;color:var(--text-muted);margin-top:1px;line-height:1.2">${esc(row.hq)}</div>` : '';
+            return `<div><strong>${esc(cell.getValue())}</strong>${ticker}${hq}</div>`;
           } },
-        { title: 'HQ',            field: 'hq',                minWidth: 80, widthGrow: 1.5 },
-        { title: 'Fleet',         field: 'fleet_owned',       minWidth: 55, widthGrow: 0.7, hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'On Lease',      field: 'on_lease',          minWidth: 65, widthGrow: 0.7, hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'Newbuilds',     field: 'under_construction',minWidth: 75, widthGrow: 0.7, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
-        { title: 'Backlog ($B)',  field: 'backlog_busd',      minWidth: 90, widthGrow: 1,   hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
-        { title: 'Notes',         field: 'notes',             minWidth: 160, widthGrow: 1, formatter: function(cell) {
+        { title: 'Fleet',         field: 'fleet_owned',       width: 58,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'On Lease',      field: 'on_lease',          width: 72,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'Newbuilds',     field: 'under_construction',width: 82,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 105, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
+        { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
             const desc = esc(c.notes || '');
             // Append latest earnings data if available
