@@ -769,7 +769,7 @@
   function renderContractorTable(data) {
     contractorTable = new Tabulator('#contractor-table', {
       data: data.contractors,
-      layout: 'fitColumns',
+      layout: 'fitDataStretch',
       responsiveLayout: 'collapse',
       selectable: false,
       columns: [
@@ -779,10 +779,10 @@
             const hq = row.hq ? `<div style="font-size:10px;color:var(--text-muted);margin-top:1px;line-height:1.2">${esc(row.hq)}</div>` : '';
             return `<div><strong>${esc(cell.getValue())}</strong>${ticker}${hq}</div>`;
           } },
-        { title: 'Fleet',         field: 'fleet_owned',       width: 58,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'On Lease',      field: 'on_lease',          width: 72,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
-        { title: 'Newbuilds',     field: 'under_construction',width: 82,  hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
-        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 105, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
+        { title: 'Fleet',         field: 'fleet_owned',       width: 80,  minWidth: 80,  hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'On Lease',      field: 'on_lease',          width: 100, minWidth: 100, hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
+        { title: 'Newbuilds',     field: 'under_construction',width: 110, minWidth: 110, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
+        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 125, minWidth: 125, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
         { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
             const desc = esc(c.notes || '');
