@@ -642,19 +642,8 @@
         <button class="filter-btn" onclick="window.setVesselFilter('region','Asia Pacific',this)">Asia Pacific</button>
         <button class="filter-btn" onclick="window.setVesselFilter('region','East Africa',this)">East Africa</button>
       </div>
-      <div class="filter-row">
-        <span class="filter-label">Status</span>
-        <button class="filter-btn active" onclick="window.setVesselFilter('status','all',this)">All</button>
-        <button class="filter-btn" onclick="window.setVesselFilter('status','On Production',this)">On Production</button>
-        <button class="filter-btn" onclick="window.setVesselFilter('status','Under Construction',this)">Under Construction</button>
-        <button class="filter-btn" onclick="window.setVesselFilter('status','Idle/Warm Stacked',this)">Idle</button>
-      </div>
     </div>
     <div id="vessel-table"></div>
-    <!-- Under Construction 안내 -->
-    <div id="vessel-uc-notice" style="display:none;padding:14px 16px;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border);">
-      ℹ️ &nbsp;Units under construction are listed in the <strong style="color:var(--accent)">Orderbook</strong> section below.
-    </div>
     <!-- Vessel Drilldown -->
     <div class="ob-drilldown" id="vessel-drilldown">
       <div class="ob-drilldown-inner">
@@ -712,7 +701,7 @@
   let vesselTable = null;
   let contractorTable = null;
   let selectedContractor = null;
-  const vesselFilters = { type: 'all', region: 'all', status: 'all', owner: 'all', client: 'all' };
+  const vesselFilters = { type: 'all', region: 'all', owner: 'all', client: 'all' };
   const obFilters = { owner: 'all', client: 'all', yard: 'all' };
 
   /* ─── Utilities ─── */
@@ -1187,16 +1176,13 @@
     // Close any open drilldown on filter change
     closeVesselDrilldown();
 
-    // Show UC notice when filtering for Under Construction (no vessels in this status — they're in Orderbook)
-    const ucNotice = document.getElementById('vessel-uc-notice');
-    if (ucNotice) ucNotice.style.display = (vesselFilters.status === 'Under Construction') ? 'block' : 'none';
+
 
     if (!vesselTable) return;
 
     const activeFilters = [];
     if (vesselFilters.type   !== 'all') activeFilters.push({ field: 'type',   type: '=', value: vesselFilters.type });
     if (vesselFilters.region !== 'all') activeFilters.push({ field: 'region', type: '=', value: vesselFilters.region });
-    if (vesselFilters.status !== 'all') activeFilters.push({ field: 'status', type: '=', value: vesselFilters.status });
     if (vesselFilters.owner  !== 'all') activeFilters.push({ field: 'owner',  type: '=', value: vesselFilters.owner });
     if (vesselFilters.client !== 'all') activeFilters.push({ field: 'client', type: '=', value: vesselFilters.client });
 
