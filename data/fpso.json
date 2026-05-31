@@ -527,14 +527,13 @@
         "mooring": "Spread Mooring",
         "fid_date": "2014-06",
         "partners": [
-          "Repsol 50% op",
-          "Harbour Energy 25% (구 Premier Oil)",
-          "MOL 20%",
-          "Predator Oil & Gas 5%"
+          "Harbour Energy 50% op",
+          "Waldorf Production 40% (Harbour Energy 인수 진행 중, 2026 완료 예정)",
+          "ONE-Dyas E&P 10%"
         ],
         "financing": "20년 베어보트 임대 (BW Offshore)",
         "rig_demand": "드릴십 1기 — 북해 Catcher 지역 연간 유지보수 시추 2~3공",
-        "notable": "영국 북해 최신 FPSO 중 하나. 170m 천해 최적화 Spread Mooring 설계."
+        "notable": "영국 북해 Catcher Area FPSO. Spread Mooring. 2026-05 UK 법원, Harbour의 Waldorf 40% 인수 ($170M) 승인. 완료 시 Harbour 90%, ONE-Dyas 10%."
       }
     },
     {
@@ -606,7 +605,7 @@
       "type": "FPSO",
       "owner": "Yinson Holdings",
       "client": "Eni",
-      "field": "Pecan Field (DWT/CTP Block)",
+      "field": "Sankofa-Gye Nyame (OCTP Block), Ghana",
       "region": "West Africa",
       "country": "Ghana",
       "water_depth_m": 2500,
@@ -622,7 +621,7 @@
         "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 40,
         "mooring": "Turret Mooring",
-        "fid_date": "2019-12",
+        "fid_date": "2014-12",
         "partners": [
           "ENI 44.44% op",
           "Vitol 35.56%",
@@ -630,7 +629,7 @@
         ],
         "financing": "20년 임대 (Sankofa-Gye Nyame 컨소시엄)",
         "rig_demand": "드릴십 1기 — Sankofa/Gye Nyame 연간 유지보수 시추 2~3공",
-        "notable": "가나 Sankofa-Gye Nyame 유전 전용. ENI 운영. VLCC 전환. 2017 first oil."
+        "notable": "가나 Sankofa-Gye Nyame (OCTP) 유전 전용. ENI 운영. VLCC 전환. First oil 2017-07. FID 2014-12."
       }
     },
     {
@@ -687,13 +686,13 @@
         "yard": "Keppel FELS (SG) — LNG carrier conversion",
         "gas_capacity_mmscfd": 190,
         "mooring": "Spread Mooring (FLNG)",
-        "fid_date": "2015-07",
+        "fid_date": "2015-11",
         "partners": [
           "Perenco 100% op (SNH 국가 지분 포함)"
         ],
         "financing": "장기 임대 (Golar — Perenco/SNH)",
         "rig_demand": "MODU 수요 최소 — 자체 가스전 유지보수 한정",
-        "notable": "세계 최초 상업 운전 FLNG. 1.2MTPA 용량. Moss-type LNG 운반선 개조. 카메룬 Kribi."
+        "notable": "세계 최초 상업 운전 FLNG. 설계 2.45 MTPA; 현재 ~1.6 MTPA 운영. Cameroon 헌장 2026-07 만료 후 Seatrium Singapore 업그레이드(동절화 등) → 2027년 아르헨티나 Gulf of San Matias 재배치 (20년 계약)."
       }
     },
     {
@@ -748,19 +747,20 @@
       "detail": {
         "hull_type": "Purpose-built FLNG (SHI 신조)",
         "yard": "SHI (KR)",
-        "gas_capacity_mmscfd": 550,
-        "mooring": "Spread Mooring (FLNG)",
+        "gas_capacity_mmscfd": 490,
+        "mooring": "Internal Turret Mooring (SOFEC)",
         "fid_date": "2017-06",
         "partners": [
-          "ENI 50% op",
-          "XRG (ADNOC) 10% (구 Galp, 2025-03 매각)",
-          "KOGAS 10%",
+          "ENI 25% op (Mozambique Rovuma Venture)",
+          "ExxonMobil 25% (MRV)",
           "CNPC 20%",
-          "EMHH 10%"
+          "KOGAS 10%",
+          "ENH (Mozambique NOC) 10%",
+          "XRG (ADNOC) 10% (구 Galp)"
         ],
         "financing": "20년 장기 임대 — BP 전량 off-take 계약",
         "rig_demand": "MODU 수요 없음 — Coral South 자체 가스전 생산",
-        "notable": "모잠비크 최초 LNG 생산설비. SHI 신조 3.4MTPA FLNG. 2,000m 수심. BP 전량 구매 계약."
+        "notable": "모잠비크 최초 LNG 생산설비. SHI 신조 3.4 MTPA FLNG. ~2,000m 수심. BP 100% 장기 오프테이크 계약. First LNG 2022-11. 2025-04 100번째 화물 달성."
       }
     },
     {
@@ -931,7 +931,7 @@
       "storage_mmbbl": 1.8,
       "contract_start": "2025-06",
       "contract_end": "2045-06",
-      "status": "On Production",
+      "status": "Idle",
       "year_delivered": 2025,
       "notes": "Yinson 8번째 임대 설비. Q2 2025 인도. 가나 Pecan 심해 첫 생산 설비.",
       "detail": {
@@ -941,14 +941,14 @@
         "mooring": "Disconnectable Turret",
         "fid_date": "2022",
         "partners": [
-          "Aker Energy 50% op",
-          "GNPC 15%",
-          "Lukoil 25%",
-          "Fueltrade 10%"
+          "Pecan Energies (AFC) 50% op",
+          "Lukoil 38%",
+          "GNPC 10%",
+          "Fueltrade 2%"
         ],
         "financing": "20년 FPSO 임대 (Aker Energy / GNPC 보증)",
         "rig_demand": "드릴십 1기 — 가나 Pecan 개발정 시추 2025~2027년 집중",
-        "notable": "Yinson 역대 최대 단일 프로젝트. Q2 2025 인도로 8기 운영 체제 진입. 수주잔량 $15.5B 이정표."
+        "notable": "가나 Pecan 유전. FPSO는 인도 완료(구 Ocean Yield 선박)됐으나 FID 미취득 상태 — 2026-05 기준 스리랑카 Warm Stack 중. Aker Energy → Pecan Energies (AFC 100% 소유)로 2024년 개명."
       }
     },
     {
@@ -1350,7 +1350,7 @@
       "detail": {
         "hull_type": "Newbuild (SembCorp Marine, Jurong Aracruz Brazil)",
         "mooring": "Spread mooring",
-        "notable": "Berbigão & Sururu development; BM-S-11A block",
+        "notable": "Berbigão & Sururu 개발 (BM-S-11A). 2026-05 ANP 승인 PIA(생산개별화협정): Sururu Petrobras 45.4%/Shell 23.7%/TotalEnergies 21.4%/Petrogal 9.5%; Berbigão Petrobras 62.9%/Shell 16.1%/TotalEnergies 14.5%.",
         "partners": [
           "Petrobras 42.5%",
           "Shell 25%",
@@ -1409,9 +1409,9 @@
         "mooring": "Spread mooring",
         "notable": "Atapu TOR; 300m × 74m; exceptional reservoir performance",
         "partners": [
-          "Petrobras 56.37%",
-          "Shell 23.63%",
-          "TotalEnergies 20%"
+          "Petrobras 52.5% op",
+          "Shell 25%",
+          "TotalEnergies 22.5%"
         ],
         "yard": "COSCO Changxing (CN) + COOEC (CN)"
       }
