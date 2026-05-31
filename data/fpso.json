@@ -170,7 +170,7 @@
       "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium topsides 통합)",
-        "yard": "CIMC (CN) + Seatrium (SG)",
+        "yard": "CMHI (CN) + Seatrium (SG)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-04",
@@ -202,7 +202,7 @@
       "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Keppel topsides 통합)",
-        "yard": "CIMC (CN) + Keppel (SG)",
+        "yard": "SWS (CN) + Keppel FELS (SG)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
@@ -234,7 +234,7 @@
       "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (SWS hull + Keppel topsides 통합)",
-        "yard": "SWS (CN) + Keppel (SG)",
+        "yard": "SWS (CN) + Keppel FELS (SG)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
@@ -265,8 +265,8 @@
       "year_delivered": 2019,
       "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비.",
       "detail": {
-        "hull_type": "VLCC 전환 FPSO (Keppel Singapore)",
-        "yard": "Keppel (SG) — VLCC conversion",
+        "hull_type": "VLCC 전환 FPSO (Keppel FELS Singapore)",
+        "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 100,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2016-06",
@@ -298,7 +298,7 @@
       "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium 통합)",
-        "yard": "CIMC (CN) + Seatrium (SG) + BrasFELS (BR)",
+        "yard": "CMHI (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-02",
@@ -426,7 +426,7 @@
       "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비.",
       "detail": {
         "hull_type": "신조 FPSO (Yinson)",
-        "yard": "Seatrium (SG)",
+        "yard": "Keppel FELS (SG) — tanker conversion",
         "gas_capacity_mmscfd": 45,
         "mooring": "Spread Mooring",
         "fid_date": "2020-07",
@@ -457,7 +457,7 @@
       "notes": "호주 서부 Vincent 유전 운영 중. 계약 만료 예정.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO",
-        "yard": "Seatrium (SG) — VLCC conversion",
+        "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 40,
         "mooring": "Spread Mooring",
         "fid_date": "2005",
@@ -555,7 +555,7 @@
       "notes": "가봉 Dussafu 개발 전용 전환 FPSO.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO",
-        "yard": "Seatrium (SG) — VLCC conversion",
+        "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 20,
         "mooring": "Spread Mooring",
         "fid_date": "2016",
@@ -585,8 +585,8 @@
       "year_delivered": 2002,
       "notes": "코트디부아르 장기 운영 FPSO. 2026년 계약 만료 예정.",
       "detail": {
-        "hull_type": "VLCC 전환 FPSO",
-        "yard": "Seatrium (SG) — VLCC conversion",
+        "hull_type": "Suezmax 전환 FPSO (Keppel FELS Singapore, 2001)",
+        "yard": "Keppel FELS (SG) — Suezmax conversion",
         "gas_capacity_mmscfd": 60,
         "mooring": "Spread Mooring",
         "fid_date": "2000",
@@ -618,7 +618,7 @@
       "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO.",
       "detail": {
         "hull_type": "신조 FPSO (Yinson)",
-        "yard": "Seatrium (SG)",
+        "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 40,
         "mooring": "Turret Mooring",
         "fid_date": "2019-12",
@@ -683,7 +683,7 @@
       "notes": "세계 최초 상업 운전 FLNG. 1.2 MTPA 용량. Hilli Episeyo 개조.",
       "detail": {
         "hull_type": "Golar MK I FLNG (Moss-type LNG 운반선 전환)",
-        "yard": "Seatrium (SG) — LNG carrier conversion",
+        "yard": "Keppel FELS (SG) — LNG carrier conversion",
         "gas_capacity_mmscfd": 190,
         "mooring": "Spread Mooring (FLNG)",
         "fid_date": "2015-07",
@@ -809,7 +809,7 @@
       "notes": "Petrobras 자가운영 9번째 Buzios FPSO.",
       "detail": {
         "hull_type": "신조 FPSO (Petrobras 자가 소유 P-82)",
-        "yard": "Seatrium (SG) + BrasFELS (BR)",
+        "yard": "COSCO Qidong (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring",
         "fid_date": "2023",
@@ -1027,12 +1027,13 @@
       "status": "On Production",
       "notes": "VLCC conversion; 1st Búzios TOR FPSO; first oil April 2018.",
       "detail": {
-        "hull_type": "VLCC conversion",
+        "hull_type": "VLCC 전환 (Inhaúma 조선소, 브라질)",
         "mooring": "Spread mooring",
         "notable": "First FPSO in Búzios TOR area; Petrobras 100%",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Enseada/Inhaúma (BR) — VLCC conversion"
       }
     },
     {
@@ -1052,12 +1053,13 @@
       "status": "On Production",
       "notes": "VLCC conversion; 2nd Búzios TOR FPSO; first oil November 2018.",
       "detail": {
-        "hull_type": "VLCC conversion",
+        "hull_type": "VLCC 전환 (Inhaúma 조선소, 브라질)",
         "mooring": "Spread mooring",
         "notable": "Sister to P-74",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Enseada/Inhaúma (BR) — VLCC conversion"
       }
     },
     {
@@ -1077,12 +1079,13 @@
       "status": "On Production",
       "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019.",
       "detail": {
-        "hull_type": "VLCC conversion",
+        "hull_type": "VLCC 전환 (Inhaúma 조선소, 브라질)",
         "mooring": "Spread mooring",
         "notable": "Larger topsides than P-74/75; 180kboed",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Enseada/Inhaúma (BR) — VLCC conversion"
       }
     },
     {
@@ -1102,12 +1105,13 @@
       "status": "On Production",
       "notes": "VLCC conversion; 4th Búzios TOR FPSO; first oil December 2019.",
       "detail": {
-        "hull_type": "VLCC conversion",
+        "hull_type": "VLCC 전환 (Inhaúma 조선소, 브라질)",
         "mooring": "Spread mooring",
         "notable": "Sister to P-74/75",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Enseada/Inhaúma (BR) — VLCC conversion"
       }
     },
     {
@@ -1127,12 +1131,13 @@
       "status": "On Production",
       "notes": "Newbuild; first oil December 31, 2025; 350m hull by HHI (KR) + Seatrium topsides (SG).",
       "detail": {
-        "hull_type": "Newbuild (HHI hull + Seatrium topsides)",
+        "hull_type": "Newbuild — HD Hyundai (KR) hull + Seatrium (SG) topsides",
         "mooring": "Spread mooring",
         "notable": "6th FPSO at Búzios TOR; first gas injection March 2026",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "HD Hyundai (KR) + Seatrium (SG)"
       }
     },
     {
@@ -1152,12 +1157,13 @@
       "status": "On Production",
       "notes": "Newbuild; first oil May 1, 2026 (ahead of schedule); brings Búzios installed capacity to ~1.33 MMbopd.",
       "detail": {
-        "hull_type": "Newbuild (Saipem / DSME)",
+        "hull_type": "Newbuild — Hanwha Ocean (구 DSME), 한국",
         "mooring": "Spread mooring",
         "notable": "8th FPSO at Búzios TOR; 14 wells (8 producers, 6 injectors)",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Hanwha Ocean (KR)"
       }
     },
     {
@@ -1184,7 +1190,8 @@
           "Petrobras 67.2%",
           "Shell 23%",
           "Petrogal 9.2%"
-        ]
+        ],
+        "yard": "COSCO Dalian (CN) — VLCC conversion"
       }
     },
     {
@@ -1211,7 +1218,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "COSCO (CN) + BrasFELS (BR)"
       }
     },
     {
@@ -1238,7 +1246,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "COSCO (CN) + BrasFELS (BR)"
       }
     },
     {
@@ -1265,7 +1274,8 @@
           "Petrobras 45%",
           "Repsol Sinopec Brasil 35%",
           "Shell 20%"
-        ]
+        ],
+        "yard": "Keppel FELS (SG) — VLCC conversion"
       }
     },
     {
@@ -1292,7 +1302,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "Keppel FELS (SG) + BrasFELS (BR)"
       }
     },
     {
@@ -1319,7 +1330,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "COSCO/CXG (CN) + BRASA/BrasFELS (BR)"
       }
     },
     {
@@ -1339,14 +1351,15 @@
       "status": "On Production",
       "notes": "First consortium-owned Lula FPSO (not chartered); newbuild; first oil May 17, 2017.",
       "detail": {
-        "hull_type": "Newbuild",
+        "hull_type": "Newbuild (최초 브라질 내 완전 건조 FPSO 선체)",
         "mooring": "Spread mooring",
         "notable": "Lula Sul; 10 producers + 8 injectors; 290km offshore RJ",
         "partners": [
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "Rio Grande 1 (BR) + BrasFELS (BR)"
       }
     },
     {
@@ -1373,7 +1386,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "COSCO (CN) + BrasFELS (BR)"
       }
     },
     {
@@ -1393,7 +1407,7 @@
       "status": "On Production",
       "notes": "Newbuild; hull by Jurong Aracruz (Sembcorp); first oil November 2019; 316m × 54m.",
       "detail": {
-        "hull_type": "Newbuild (Jurong Aracruz / Sembcorp Marine)",
+        "hull_type": "Newbuild (SembCorp Marine, Jurong Aracruz Brazil)",
         "mooring": "Spread mooring",
         "notable": "Berbigão & Sururu development; BM-S-11A block",
         "partners": [
@@ -1401,7 +1415,8 @@
           "Shell 25%",
           "TotalEnergies 22.5%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "SembCorp Marine / Jurong Aracruz (BR)"
       }
     },
     {
@@ -1428,7 +1443,8 @@
           "Petrobras 65%",
           "Shell 25%",
           "Petrogal 10%"
-        ]
+        ],
+        "yard": "COSCO (CN) + BrasFELS (BR)"
       }
     },
     {
@@ -1448,14 +1464,15 @@
       "status": "On Production",
       "notes": "M350 hull designed by MODEC, built by COOEC (Qingdao); first oil June 2020; reached 150kboed with only 4 wells.",
       "detail": {
-        "hull_type": "Newbuild M350 (COOEC, CN)",
+        "hull_type": "Newbuild M350 (COSCO Changxing hull + COOEC Qingdao 통합)",
         "mooring": "Spread mooring",
         "notable": "Atapu TOR; 300m × 74m; exceptional reservoir performance",
         "partners": [
           "Petrobras 56.37%",
           "Shell 23.63%",
           "TotalEnergies 20%"
-        ]
+        ],
+        "yard": "COSCO Changxing (CN) + COOEC (CN)"
       }
     },
     {
@@ -1480,7 +1497,8 @@
         "notable": "Post-salt Jubarte field; 311m × 56m; contract value ~$1.25B",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "Keppel FELS (SG) + BrasFELS (BR)"
       }
     },
     {
@@ -1505,7 +1523,8 @@
         "notable": "Jubarte pre-salt; 8 producers + 8 injectors; Yinson-Petrobras 23yr charter to 2047",
         "partners": [
           "Petrobras 100%"
-        ]
+        ],
+        "yard": "COSCO Shanghai (CN) — newbuild FPSO"
       }
     }
   ],
