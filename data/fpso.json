@@ -176,7 +176,7 @@
         "fid_date": "2022-04",
         "partners": [
           "ExxonMobil 45% op",
-          "Hess 30%",
+          "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
         "financing": "20년 BFOO 장기 임대",
@@ -201,14 +201,14 @@
       "year_delivered": 2023,
       "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Keppel topsides 통합)",
+        "hull_type": "SBM Fast4Ward 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "SWS (CN) + Keppel FELS (SG)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
         "partners": [
           "ExxonMobil 45% op",
-          "Hess 30%",
+          "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
         "financing": "20년 BFOO 장기 임대",
@@ -240,7 +240,7 @@
         "fid_date": "2019-09",
         "partners": [
           "ExxonMobil 45% op",
-          "Hess 30%",
+          "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
         "financing": "20년 BFOO 장기 임대",
@@ -272,7 +272,7 @@
         "fid_date": "2016-06",
         "partners": [
           "ExxonMobil 45% op",
-          "Hess 30%",
+          "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
         "financing": "20년 BFOO 장기 임대",
@@ -297,14 +297,15 @@
       "year_delivered": 2024,
       "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium 통합)",
+        "hull_type": "SBM Fast4Ward 신조 (CMHI hull + Seatrium 통합)",
         "yard": "CMHI (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-02",
         "partners": [
           "Petrobras 65% op",
-          "PPSA 자원 관리"
+          "TotalEnergies 22.5%",
+          "Shell 12.5%"
         ],
         "financing": "22.5년 장기 임대 (Petrobras)",
         "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 연간 유지보수 및 인필 시추",
@@ -368,14 +369,13 @@
         "mooring": "Spread Mooring",
         "fid_date": "2019-01",
         "partners": [
-          "Shell 30% op",
-          "Petrobras 30%",
-          "TotalEnergies 28%",
-          "PPSA 12%"
+          "Petrobras 33.3% op",
+          "Shell 33.3%",
+          "TotalEnergies 33.3%"
         ],
         "financing": "25년 임대 (Sépia 컨소시엄)",
         "rig_demand": "드릴십 1기 — Sépia 프리솔트 연간 인필 시추 3~5공",
-        "notable": "MODEC MV31 선형. 브라질 Santos Basin Sépia 2 개발 전용. 2,190m 초심해 설계."
+        "notable": "MODEC MV30 선형. 브라질 Santos Basin Sépia 2 개발 전용. 2,190m 초심해 설계."
       }
     },
     {
@@ -383,7 +383,7 @@
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
+      "field": "Marlim Sul / Campos Basin",
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 2000,
@@ -404,18 +404,18 @@
           "Petrobras 100% op"
         ],
         "financing": "25년 임대 (Petrobras 단독)",
-        "rig_demand": "드릴십 1기 — Búzios 프리솔트 연간 유지보수 시추 3~5공",
-        "notable": "MODEC MV32 선형. Búzios 5번째 FPSO. Petrobras 단독 운영 설비."
+        "rig_demand": "드릴십 1기 — Marlim Sul 캄포스 분지 연간 유지보수 시추",
+        "notable": "MODEC MV33 신조. Marlim Sul 필드 (Campos Basin) 전용. Petrobras 단독 운영."
       }
     },
     {
       "name": "FPSO Abigail Joseph",
       "type": "FPSO",
       "owner": "Yinson Holdings",
-      "client": "Woodside Energy",
-      "field": "Sangomar Field (Block FAR)",
+      "client": "First E&P",
+      "field": "Anyala-Madu (OML 83/85), Nigeria",
       "region": "West Africa",
-      "country": "Senegal",
+      "country": "Nigeria",
       "water_depth_m": 800,
       "oil_capacity_kboed": 100,
       "storage_mmbbl": 1.3,
@@ -425,25 +425,24 @@
       "year_delivered": 2024,
       "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비.",
       "detail": {
-        "hull_type": "신조 FPSO (Yinson)",
-        "yard": "Keppel FELS (SG) — tanker conversion",
+        "hull_type": "brownfield FPSO 개조 (구 탱커, Keppel Benoi Singapore)",
+        "yard": "Keppel Benoi (SG) — brownfield conversion",
         "gas_capacity_mmscfd": 45,
         "mooring": "Spread Mooring",
         "fid_date": "2020-07",
         "partners": [
-          "Woodside 82% op",
-          "Petrosen 18%"
+          "First E&P 100% op (OML 83/85)"
         ],
-        "financing": "20년 임대 (Woodside Energy)",
+        "financing": "7년 임대 (First E&P)",
         "rig_demand": "드릴십 1기 — Sangomar Phase 1 연간 유지보수 시추 2~3공",
-        "notable": "세네갈 최초 FPSO. 2024년 First Oil 달성. Sangomar Phase 1 100kboed 설계."
+        "notable": "Nigeria OML 83/85 얕은 수심 개발. 50,000 bopd / 550,000 bbl 저장. Keppel Benoi 7개월 최단기 개조 (세계 기록). 2020-10 초도 생산."
       }
     },
     {
       "name": "FPSO Ngujima-Yin",
       "type": "FPSO",
-      "owner": "MODEC",
-      "client": "Chevron",
+      "owner": "Woodside Energy",
+      "client": "Woodside Energy",
       "field": "Vincent Field (WA-26-L)",
       "region": "Asia Pacific",
       "country": "Australia",
@@ -462,14 +461,12 @@
         "mooring": "Spread Mooring",
         "fid_date": "2005",
         "partners": [
-          "Woodside 57% op",
-          "BHP 26.5%",
-          "CITIC 5%",
-          "기타 11.5%"
+          "Woodside 60% op",
+          "Mitsui E&P Australia 40%"
         ],
-        "financing": "장기 임대 (Woodside 계약, Chevron 운영)",
+        "financing": "Woodside 자가 소유 (2011년 Maersk FPSOs로부터 매입)",
         "rig_demand": "드릴십 1기 — 연간 유지보수 시추 2~3공 (수명 연장 생산)",
-        "notable": "호주 서부 480m 수심 Vincent 유전 전용. 2027년 계약 만료 후 처리 방향 검토 중."
+        "notable": "Vincent 유전 + Greater Enfield 연계. 2011년 Woodside가 Maersk로부터 인수. Keppel FELS 2008년 개조."
       }
     },
     {
@@ -496,7 +493,7 @@
         "fid_date": "2011-05",
         "partners": [
           "Petrobras 45% op",
-          "BG Group 30%",
+          "Shell 30% (구 BG Group)",
           "Repsol 25%"
         ],
         "financing": "20년 임대 (Petrobras/BG Group/Repsol)",
@@ -528,7 +525,7 @@
         "fid_date": "2014-06",
         "partners": [
           "Repsol 50% op",
-          "Premier Oil 25%",
+          "Harbour Energy 25% (구 Premier Oil)",
           "MOL 20%",
           "Predator Oil & Gas 5%"
         ],
@@ -604,7 +601,7 @@
       "name": "FPSO John Agyekum Kufuor",
       "type": "FPSO",
       "owner": "Yinson Holdings",
-      "client": "Aker Energy",
+      "client": "Eni",
       "field": "Pecan Field (DWT/CTP Block)",
       "region": "West Africa",
       "country": "Ghana",
@@ -617,7 +614,7 @@
       "year_delivered": 2025,
       "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO.",
       "detail": {
-        "hull_type": "신조 FPSO (Yinson)",
+        "hull_type": "VLCC 전환 (Keppel FELS Singapore, 2017)",
         "yard": "Keppel FELS (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 40,
         "mooring": "Turret Mooring",
@@ -629,7 +626,7 @@
         ],
         "financing": "20년 임대 (Sankofa-Gye Nyame 컨소시엄)",
         "rig_demand": "드릴십 1기 — Sankofa/Gye Nyame 연간 유지보수 시추 2~3공",
-        "notable": "가나 Sankofa-Gye Nyame OML 전용. ENI 운영 서아프리카 심해 생산 거점."
+        "notable": "가나 Sankofa-Gye Nyame 유전 전용. ENI 운영. VLCC 전환. 2017 first oil."
       }
     },
     {
@@ -696,34 +693,36 @@
       }
     },
     {
-      "name": "Golar Tundra",
+      "name": "FLNG Gimi",
       "type": "FLNG",
       "owner": "Golar LNG",
       "client": "Eni",
-      "field": "Baleine Field (CI-101)",
+      "field": "Greater Tortue Ahmeyim (GTA), Mauritania/Senegal",
       "region": "West Africa",
-      "country": "Ivory Coast",
-      "water_depth_m": 1200,
+      "country": "Mauritania / Senegal",
+      "water_depth_m": 2700,
       "oil_capacity_kboed": null,
       "storage_mmbbl": null,
-      "contract_start": "2023-12",
-      "contract_end": "2043-12",
+      "contract_start": "2025-06",
+      "contract_end": "2045-06",
       "status": "On Production",
-      "year_delivered": 2023,
+      "year_delivered": 2025,
       "notes": "코트디부아르 Baleine 가스전 개발. 1.2 MTPA.",
       "detail": {
-        "hull_type": "Golar MK II FLNG (LNG 운반선 전환)",
-        "yard": "Wison (CN) — conversion",
-        "gas_capacity_mmscfd": 400,
+        "hull_type": "LNG 운반선 전환 (Moss-type, Keppel FELS Singapore)",
+        "yard": "Keppel FELS (SG) — LNG carrier conversion",
+        "gas_capacity_mmscfd": 330,
         "mooring": "Spread Mooring (FLNG)",
-        "fid_date": "2019-06",
+        "fid_date": "2019-02",
         "partners": [
-          "ENI 90% op",
-          "Petroci 10%"
+          "BP 56% op",
+          "Kosmos Energy 27%",
+          "PETROSEN 10%",
+          "SMH (Mauritania) 7%"
         ],
-        "financing": "20년 임대 (Golar — ENI)",
-        "rig_demand": "MODU 수요 없음 — 자체 가스전 생산 한정",
-        "notable": "Baleine 가스전 전용 FLNG. ENI GTA 프로젝트 핵심. 코트디부아르 첫 LNG 생산."
+        "financing": "20년 L&O 계약 (BP — Golar LNG)",
+        "rig_demand": "MODU 수요 없음 — 자체 가스전 생산",
+        "notable": "COD 2025-06. GTA 프로젝트 — 모리타니/세네갈 해상경계 FLNG. 2.5 MTPA. 세계 최초 cross-border LNG 개발. Golar Tundra(FSRU)와 무관."
       }
     },
     {
@@ -750,7 +749,7 @@
         "fid_date": "2017-06",
         "partners": [
           "ENI 50% op",
-          "Galp 10%",
+          "XRG (ADNOC) 10% (구 Galp, 2025-03 매각)",
           "KOGAS 10%",
           "CNPC 20%",
           "EMHH 10%"
@@ -784,7 +783,8 @@
         "fid_date": "2022-12",
         "partners": [
           "Petrobras 65% op",
-          "PPSA 자원 관리"
+          "TotalEnergies 22.5%",
+          "Shell 12.5%"
         ],
         "financing": "22.5년 장기 임대 (Petrobras)",
         "rig_demand": "드릴십 2기 — Búzios 7 프리솔트 개발정 시추 및 인필 드릴링",
@@ -811,11 +811,10 @@
         "hull_type": "신조 FPSO (Petrobras 자가 소유 P-82)",
         "yard": "COSCO Qidong (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
-        "mooring": "Turret Mooring",
+        "mooring": "Spread Mooring",
         "fid_date": "2023",
         "partners": [
-          "Petrobras 65% op",
-          "PPSA 자원 관리"
+          "Petrobras 100% (TOR 구역)"
         ],
         "financing": "Petrobras 자가 소유 (BNDES 금융 지원)",
         "rig_demand": "드릴십 2기 — Búzios 9 프리솔트 개발정 집중 시추",
@@ -913,68 +912,6 @@
         "financing": "20년 임대 (Jubilee 컨소시엄)",
         "rig_demand": "드릴십 1기 — 가나 Jubilee 연간 유지보수 및 인필 시추 3~4공",
         "notable": "가나 Jubilee 유전 전용 FPSO. 서아프리카 심해 개발 선도 사례. 2010년 초도 생산."
-      }
-    },
-    {
-      "name": "SBM Fast4Ward #7 (Búzios 9)",
-      "type": "FPSO",
-      "owner": "SBM Offshore",
-      "client": "Petrobras",
-      "field": "Búzios (Santos Basin Pre-salt)",
-      "region": "South America",
-      "country": "Brazil",
-      "water_depth_m": 1900,
-      "oil_capacity_kboed": 225,
-      "storage_mmbbl": 2.0,
-      "contract_start": "2025-09",
-      "contract_end": "2045-09",
-      "status": "On Production",
-      "year_delivered": 2025,
-      "notes": "SBM 14번째 임대 설비. Q3 2025 인도 완료. Búzios 프리솔트 집중 배치.",
-      "detail": {
-        "hull_type": "SBM Fast4Ward 신조",
-        "yard": "Seatrium (SG)",
-        "gas_capacity_mmscfd": 180,
-        "mooring": "Internal Turret",
-        "fid_date": "2023",
-        "partners": [
-          "Petrobras 65% op",
-          "TotalEnergies 22.5%",
-          "Shell 12.5%"
-        ],
-        "financing": "20년 BFOO 임대 (Petrobras)",
-        "rig_demand": "드릴십 1~2기 — Búzios 프리솔트 연간 시추 캠페인 지속",
-        "notable": "SBM Fast4Ward 표준 선형 7호. Q3 2025 Petrobras 인도 완료로 SBM 14기 운영 체제 진입."
-      }
-    },
-    {
-      "name": "MODEC MV32 (PETRONAS FPSO)",
-      "type": "FPSO",
-      "owner": "MODEC",
-      "client": "PETRONAS",
-      "field": "Kasawari (Sarawak, Malaysia)",
-      "region": "Asia Pacific",
-      "country": "Malaysia",
-      "water_depth_m": 120,
-      "oil_capacity_kboed": 90,
-      "storage_mmbbl": 1.2,
-      "contract_start": "2025-09",
-      "contract_end": "2040-09",
-      "status": "On Production",
-      "year_delivered": 2025,
-      "notes": "MODEC 19번째 임대 설비. Q3 2025 인도. 말레이시아 가스전 개발 전용.",
-      "detail": {
-        "hull_type": "신조 FPSO (MODEC MV32 선형)",
-        "yard": "Seatrium (SG)",
-        "gas_capacity_mmscfd": 400,
-        "mooring": "Spread Mooring",
-        "fid_date": "2022",
-        "partners": [
-          "PETRONAS 100% op"
-        ],
-        "financing": "15년 임대 (PETRONAS)",
-        "rig_demand": "잭업 리그 — Kasawari 가스전 개발정 보완 시추",
-        "notable": "MODEC의 동남아 최대 단일 계약. 말레이시아 Kasawari 대규모 가스전 개발 핵심 설비. Q3 2025 인도로 MODEC 19기 운영."
       }
     },
     {
