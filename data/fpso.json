@@ -42,7 +42,7 @@
       "as_of": "2025-12-31",
       "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
       "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026.",
-      "newbuilds_owned": 6,
+      "newbuilds_owned": 4,
       "newbuilds_operated": 0
     },
     {
@@ -1562,18 +1562,18 @@
     {
       "name": "Kaminho FPSO",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "TotalEnergies",
       "client": "TotalEnergies",
       "field": "Kaminho (Angola Block 20/11)",
       "region": "West Africa",
-      "yard": "Seatrium (SG) + SHI (KR)",
+      "yard": "CMHI (CN) — VLCC Alsace conversion",
       "contract_value_busd": 3.5,
       "oil_capacity_kboed": 70,
       "delivery": "2027-Q1",
       "status": "Under Construction",
       "notes": "SBM Fast4Ward 선형. 앙골라 심해 개발.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
+        "hull_type": "VLCC 전환 (VLCC Alsace, Saipem EPC)",
         "water_depth_m": 1800,
         "storage_mmbbl": 1.7,
         "gas_capacity_mmscfd": 120,
@@ -1588,7 +1588,8 @@
           "Sonangol 30%",
           "ENI 15%",
           "Galp 15%"
-        ]
+        ],
+        "notable": "Saipem $3.7B EPC 계약 (2024-05). TotalEnergies 40% / PAEPAL 40% / Sonangol 20%."
       }
     },
     {
@@ -1598,14 +1599,14 @@
       "client": "ExxonMobil",
       "field": "Hammerhead (Stabroek Block)",
       "region": "South America",
-      "yard": "Seatrium (SG) + SHI (KR)",
+      "yard": "SWS (CN) + Seatrium (SG)",
       "contract_value_busd": 4.2,
       "oil_capacity_kboed": 120,
       "delivery": "2027-Q3",
       "status": "Under Construction",
       "notes": "SBM Fast4Ward 선형. 가이아나 5번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
+        "hull_type": "SBM Fast4Ward MPF5 신조 (SWS hull + Seatrium 통합)",
         "water_depth_m": 1600,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 150,
@@ -1625,18 +1626,18 @@
     {
       "name": "Marechal Duque de Caxias (P-83)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "Petrobras",
       "client": "Petrobras",
       "field": "Buzios Field (BM-S-11)",
       "region": "South America",
-      "yard": "SHI (KR) + BrasFELS (BR)",
+      "yard": "CIMC Raffles (CN) + Seatrium (SG) + BrasFELS (BR)",
       "contract_value_busd": 3.8,
       "oil_capacity_kboed": 225,
       "delivery": "2027-Q2",
       "status": "Under Construction",
       "notes": "Buzios 10번째 FPSO. SBM Fast4Ward.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
+        "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
         "water_depth_m": 2000,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 212,
@@ -1649,7 +1650,8 @@
         "partners": [
           "Petrobras 65% op",
           "PPSA 자원 관리"
-        ]
+        ],
+        "notable": "P-83 Búzios; Seatrium/Keppel O&M EPC; 225,000 bopd; delivery H1 2027."
       }
     },
     {
@@ -1666,7 +1668,7 @@
       "status": "Under Construction",
       "notes": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029.",
       "detail": {
-        "hull_type": "VLCC 개조 (Saipem 전환)",
+        "hull_type": "MODEC Next Generation 신조 (VLCC 전환 아님)",
         "water_depth_m": 2100,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 90,
@@ -1680,7 +1682,8 @@
           "Shell 50% op",
           "Petrobras 25%",
           "TotalEnergies 25%"
-        ]
+        ],
+        "notable": "MODEC가 2025-03 Saipem EPC 계약 인수. 선체: Sumitomo(JP) forward + COSCO Qidong(CN) aft 분할 건조."
       }
     },
     {
@@ -1723,14 +1726,14 @@
       "client": "Petrobras",
       "field": "Buzios Field (BM-S-11)",
       "region": "South America",
-      "yard": "Seatrium (SG) + BrasFELS (BR)",
+      "yard": "CIMC Raffles (CN) + Seatrium (SG) + BrasFELS/Seatrium Angra (BR)",
       "contract_value_busd": 3.4,
       "oil_capacity_kboed": 225,
       "delivery": "2028-Q1",
       "status": "Under Construction",
       "notes": "Petrobras 직발주 Buzios 11번째 FPSO.",
       "detail": {
-        "hull_type": "신조 FPSO (Petrobras 자가 소유)",
+        "hull_type": "Newbuild (CIMC Raffles hull, Seatrium $8.15B EPC — P-84/P-85 패키지)",
         "water_depth_m": 2100,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 212,
@@ -1753,7 +1756,7 @@
       "client": "TotalEnergies / Suriname State",
       "field": "Block 58 (Suriname)",
       "region": "South America",
-      "yard": "Seatrium (SG) + SHI (KR)",
+      "yard": "CMHI Haimen (CN) + BOMESC/COSCO (CN) + Technip Energies",
       "contract_value_busd": 4.0,
       "oil_capacity_kboed": 220,
       "delivery": "2028-Q3",
@@ -1761,7 +1764,7 @@
       "confidence": "low",
       "notes": "수리남 첫 심해 FPSO. FID 미확정 (2025년 예상). 용량·일정은 잠정 수치.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
+        "hull_type": "SBM Fast4Ward MPF 신조 (CMHI hull; SBM+Technip Energies 50/50 JV EPC)",
         "water_depth_m": 700,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 200,
@@ -1776,7 +1779,8 @@
           "APA Corp 25%",
           "Staatsolie 20%",
           "Shell 15%"
-        ]
+        ],
+        "notable": "FID Oct 2024. STS JV = SBM + Technip Energies. 강재 절단: BOMESC(5월), CMHI(5월), COSCO(6월) 2025."
       }
     },
     {
@@ -1794,7 +1798,7 @@
       "confidence": "low",
       "notes": "2025년 Q4 FID 확정. Golar 3번째 FLNG. 삼성중공업 건조 계약 $3.5B. 운영사·적용 가스전 미정.",
       "detail": {
-        "hull_type": "전용 FLNG 신조 (개조 아님)",
+        "hull_type": "LNG 운반선 전환 (Fuji LNG, 2004년 건조)",
         "water_depth_m": null,
         "storage_mmbbl": null,
         "gas_capacity_mmscfd": 500,
@@ -1806,7 +1810,8 @@
         "rig_demand": "드릴십 불필요 — 기존 가스전 연계 또는 신규 발견 LNG전 개발 지원 예정",
         "partners": [
           "Golar LNG 100% (파트너 선정 중)"
-        ]
+        ],
+        "notable": "Fuji LNG 선박 개조; CIMC Raffles Yantai에서 선체 분리 후 중간 액화 모듈 삽입 방식. $1.6B EPC."
       }
     },
     {
@@ -1819,7 +1824,7 @@
       "yard": "SBM (Fast4Ward hull, yard TBD)",
       "contract_value_busd": 3.9,
       "oil_capacity_kboed": 120,
-      "delivery": "2030-Q1",
+      "delivery": "2031-Q1",
       "status": "Under Construction",
       "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04.",
       "detail": {
@@ -1844,7 +1849,7 @@
       "yard": "SBM (Fast4Ward hull, yard TBD)",
       "contract_value_busd": 3.9,
       "oil_capacity_kboed": 120,
-      "delivery": "2031-Q1",
+      "delivery": "2030-Q1",
       "status": "Under Construction",
       "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정.",
       "detail": {
