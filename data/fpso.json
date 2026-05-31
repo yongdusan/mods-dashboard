@@ -1009,6 +1009,504 @@
         "rig_demand": "드릴십 1기 — 가나 Pecan 개발정 시추 2025~2027년 집중",
         "notable": "Yinson 역대 최대 단일 프로젝트. Q2 2025 인도로 8기 운영 체제 진입. 수주잔량 $15.5B 이정표."
       }
+    },
+    {
+      "name": "P-74 (Búzios 1)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.4,
+      "year_delivered": 2018,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "VLCC conversion; 1st Búzios TOR FPSO; first oil April 2018.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "First FPSO in Búzios TOR area; Petrobras 100%",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "P-75 (Búzios 2)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.4,
+      "year_delivered": 2018,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "VLCC conversion; 2nd Búzios TOR FPSO; first oil November 2018.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Sister to P-74",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "P-76 (Búzios 3)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2019,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Larger topsides than P-74/75; 180kboed",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "P-77 (Búzios 4)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.4,
+      "year_delivered": 2019,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "VLCC conversion; 4th Búzios TOR FPSO; first oil December 2019.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Sister to P-74/75",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "P-78 (Búzios 6)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2100,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": 2.0,
+      "year_delivered": 2025,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "Newbuild; first oil December 31, 2025; 350m hull by HHI (KR) + Seatrium topsides (SG).",
+      "detail": {
+        "hull_type": "Newbuild (HHI hull + Seatrium topsides)",
+        "mooring": "Spread mooring",
+        "notable": "6th FPSO at Búzios TOR; first gas injection March 2026",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "P-79 (Búzios 8)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2100,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": 2.0,
+      "year_delivered": 2026,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "Newbuild; first oil May 1, 2026 (ahead of schedule); brings Búzios installed capacity to ~1.33 MMbopd.",
+      "detail": {
+        "hull_type": "Newbuild (Saipem / DSME)",
+        "mooring": "Spread mooring",
+        "notable": "8th FPSO at Búzios TOR; 14 wells (8 producers, 6 injectors)",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de Angra dos Reis (MV22)",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Lula (Piloto) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2149,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2010,
+      "contract_start": "2010-01",
+      "contract_end": "2030-12",
+      "status": "On Production",
+      "notes": "First high-capacity pre-salt FPSO in Santos Basin; VLCC conversion; charter extended to 2030.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Lula field pioneer; 20-yr charter extended Jan 2025",
+        "partners": [
+          "Petrobras 67.2%",
+          "Shell 23%",
+          "Petrogal 9.2%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de Mangaratiba (MV24)",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Lula (Iracema Sul) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2014,
+      "contract_start": "2014-10",
+      "contract_end": "2034-10",
+      "status": "On Production",
+      "notes": "VLCC conversion; MODEC EPCI; first oil October 2014; 20-year charter.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Iracema Sul development",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de Itaguaí (MV26)",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Lula (Iracema Norte) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2240,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2015,
+      "contract_start": "2015-07",
+      "contract_end": "2035-07",
+      "status": "On Production",
+      "notes": "VLCC conversion; delivered 5 months early; first oil July 31, 2015.",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Iracema Norte development; early delivery record",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de São Paulo (MV23)",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Sapinhoá / BM-S-9A",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2200,
+      "oil_capacity_kboed": 120,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2013,
+      "contract_start": "2013-01",
+      "contract_end": "2033-01",
+      "status": "On Production",
+      "notes": "VLCC conversion; 300km offshore; first oil January 2013; Repsol Sinopec Brasil operated.",
+      "detail": {
+        "hull_type": "VLCC conversion (Radiant Jewel)",
+        "mooring": "Spread mooring",
+        "notable": "Sapinhoá field pioneer; 2.1 Bboe reserves",
+        "partners": [
+          "Petrobras 45%",
+          "Repsol Sinopec Brasil 35%",
+          "Shell 20%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de Paraty",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "Petrobras",
+      "field": "Lula (Nordeste) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2100,
+      "oil_capacity_kboed": 120,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2013,
+      "contract_start": "2013-06",
+      "contract_end": "2033-06",
+      "status": "On Production",
+      "notes": "SBM newbuild hull; CO₂ removal facility; 20-year charter from June 2013.",
+      "detail": {
+        "hull_type": "Newbuild",
+        "mooring": "Spread mooring",
+        "notable": "Lula Nordeste development; SBM/QGOG/NYK/ITOCHU JV ownership",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Cidade de Saquarema",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "Petrobras",
+      "field": "Lula (Central) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2120,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2016,
+      "contract_start": "2016-07",
+      "contract_end": "2036-07",
+      "status": "On Production",
+      "notes": "VLCC conversion; 18 wells; formally on hire July 8, 2016; SBM-led consortium (56%).",
+      "detail": {
+        "hull_type": "VLCC conversion",
+        "mooring": "Spread mooring",
+        "notable": "Lula Central development; SBM 56% JV with Mitsubishi/NYK/QGOG",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "P-66 (Lula Sul)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Lula (Sul) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2150,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.67,
+      "year_delivered": 2017,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "First consortium-owned Lula FPSO (not chartered); newbuild; first oil May 17, 2017.",
+      "detail": {
+        "hull_type": "Newbuild",
+        "mooring": "Spread mooring",
+        "notable": "Lula Sul; 10 producers + 8 injectors; 290km offshore RJ",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "P-67 (Lula Norte)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Lula (Norte) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2130,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2019,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "Standardized hull (sister to P-66/P-69); first oil February 2019; 9th unit in Lula field.",
+      "detail": {
+        "hull_type": "Newbuild (standardized)",
+        "mooring": "Spread mooring",
+        "notable": "Lula Norte; 260km offshore RJ",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "P-68 (Berbigão & Sururu)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Berbigão & Sururu / BM-S-11A",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2280,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2019,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "Newbuild; hull by Jurong Aracruz (Sembcorp); first oil November 2019; 316m × 54m.",
+      "detail": {
+        "hull_type": "Newbuild (Jurong Aracruz / Sembcorp Marine)",
+        "mooring": "Spread mooring",
+        "notable": "Berbigão & Sururu development; BM-S-11A block",
+        "partners": [
+          "Petrobras 42.5%",
+          "Shell 25%",
+          "TotalEnergies 22.5%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "P-69 (Lula Extremo Sul)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Lula (Extremo Sul) / BM-S-11",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2150,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2018,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "Standardized hull (sister to P-66/P-67); first oil October 2018; 8th unit in Lula field.",
+      "detail": {
+        "hull_type": "Newbuild (standardized)",
+        "mooring": "Spread mooring",
+        "notable": "Lula Extremo Sul; 290km offshore RJ",
+        "partners": [
+          "Petrobras 65%",
+          "Shell 25%",
+          "Petrogal 10%"
+        ]
+      }
+    },
+    {
+      "name": "P-70 (Atapu)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Atapu / BM-S-9A (Transfer of Rights)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 2300,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "year_delivered": 2020,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "notes": "M350 hull designed by MODEC, built by COOEC (Qingdao); first oil June 2020; reached 150kboed with only 4 wells.",
+      "detail": {
+        "hull_type": "Newbuild M350 (COOEC, CN)",
+        "mooring": "Spread mooring",
+        "notable": "Atapu TOR; 300m × 74m; exceptional reservoir performance",
+        "partners": [
+          "Petrobras 56.37%",
+          "Shell 23.63%",
+          "TotalEnergies 20%"
+        ]
+      }
+    },
+    {
+      "name": "P-57 (Jubarte)",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "Petrobras",
+      "field": "Jubarte (Parque das Baleias) / ES",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 1260,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": 1.4,
+      "year_delivered": 2010,
+      "contract_start": "2010-12",
+      "contract_end": "2033-12",
+      "status": "On Production",
+      "notes": "VLCC conversion at Keppel/BrasFELS; first oil December 17, 2010; heavy crude; Petrobras 100% Jubarte.",
+      "detail": {
+        "hull_type": "VLCC conversion (Keppel/BrasFELS, BR)",
+        "mooring": "Spread mooring",
+        "notable": "Post-salt Jubarte field; 311m × 56m; contract value ~$1.25B",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
+    },
+    {
+      "name": "FPSO Maria Quitéria",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "Petrobras",
+      "field": "Jubarte (Pre-salt) / Campos Basin",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 1385,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": null,
+      "year_delivered": 2024,
+      "contract_start": "2024-10",
+      "contract_end": "2047-10",
+      "status": "On Production",
+      "notes": "First oil October 15, 2024 (ahead of schedule); 333m hull; ~24% GHG reduction vs baseline; 23-year charter.",
+      "detail": {
+        "hull_type": "Newbuild",
+        "mooring": "Spread mooring",
+        "notable": "Jubarte pre-salt; 8 producers + 8 injectors; Yinson-Petrobras 23yr charter to 2047",
+        "partners": [
+          "Petrobras 100%"
+        ]
+      }
     }
   ],
   "orderbook": [
