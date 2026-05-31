@@ -87,7 +87,7 @@
       "as_of": "2025-01-31",
       "source_url": "https://www.yinson.com/investor-relations/annual-report/",
       "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory.",
-      "newbuilds_owned": 2,
+      "newbuilds_owned": 0,
       "newbuilds_operated": 0
     },
     {
@@ -117,7 +117,7 @@
       "as_of": "2025-12-31",
       "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
       "notes": "First commercial FLNG operator; FLNG Hilli & Tundra on production.",
-      "newbuilds_owned": 2,
+      "newbuilds_owned": 1,
       "newbuilds_operated": 0
     },
     {
@@ -1526,6 +1526,36 @@
         ],
         "yard": "COSCO Shanghai (CN) — newbuild FPSO"
       }
+    },
+    {
+      "name": "Yinson FPSO Atlanta",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "ENAUTA",
+      "field": "Atlanta Field (BS-4)",
+      "country": "Brazil",
+      "region": "South America",
+      "water_depth_m": 1500,
+      "oil_capacity_kboed": 50,
+      "storage_mmbbl": 1.0,
+      "year_delivered": 2024,
+      "contract_start": "2024-01",
+      "contract_end": "2049-01",
+      "status": "On Production",
+      "notes": "Former OSX-2 FPSO; converted at Drydocks World Dubai (UAE); first oil 2024; Atlanta field heavy crude (API ~14°); 25-year charter with ENAUTA.",
+      "detail": {
+        "hull_type": "FPSO 전환 (구 OSX-2, Drydocks World Dubai)",
+        "mooring": "Turret Mooring",
+        "yard": "Drydocks World Dubai (UAE)",
+        "financing": "25년 임대 (ENAUTA)",
+        "gas_capacity_mmscfd": 50,
+        "storage_mmbbl": 1.0,
+        "water_depth_m": 1500,
+        "notable": "Atlanta 중질유(API 14°) 처리 특화 설계; 브라질 Santos Basin",
+        "partners": [
+          "ENAUTA 100% op"
+        ]
+      }
     }
   ],
   "orderbook": [
@@ -1687,65 +1717,6 @@
       }
     },
     {
-      "name": "Yinson FPSO Atlanta (FPSO Atlanta)",
-      "type": "FPSO",
-      "owner": "Yinson Holdings",
-      "client": "ENAUTA",
-      "field": "Atlanta Field (BS-4)",
-      "region": "South America",
-      "yard": "Drydocks World Dubai (UAE)",
-      "contract_value_busd": 1.9,
-      "oil_capacity_kboed": 50,
-      "delivery": "2026-Q3",
-      "status": "Under Construction",
-      "notes": "브라질 Santos Basin Atlanta 전용. Yinson 최신 프로젝트.",
-      "detail": {
-        "hull_type": "VLCC 개조 (Yinson)",
-        "water_depth_m": 1500,
-        "storage_mmbbl": 1.0,
-        "gas_capacity_mmscfd": 50,
-        "mooring": "Turret Mooring",
-        "fid_date": "2023",
-        "construction_progress_pct": 75,
-        "financing": "25년 임대 (ENAUTA)",
-        "key_equipment": "Jurong 싱가포르 개조 작업 진행. Atlanta 필드 중질유(API 14°) 처리 특화 설계.",
-        "rig_demand": "드릴십 1기 — Atlanta 중질유 개발정 시추 2026년 하반기 착수",
-        "partners": [
-          "ENAUTA 100% op (단독 운영)"
-        ]
-      }
-    },
-    {
-      "name": "Yinson FPSO PM3-CAA",
-      "type": "FPSO",
-      "owner": "Yinson Holdings",
-      "client": "PETRONAS",
-      "field": "PM3-CAA Block",
-      "region": "Asia Pacific",
-      "yard": "Seatrium (SG)",
-      "contract_value_busd": 1.4,
-      "oil_capacity_kboed": 40,
-      "delivery": "2026-Q4",
-      "status": "Under Construction",
-      "notes": "말레이시아 PETRONAS 프로젝트. 연장 옵션 포함.",
-      "detail": {
-        "hull_type": "개조 FPSO",
-        "water_depth_m": 70,
-        "storage_mmbbl": 0.8,
-        "gas_capacity_mmscfd": 40,
-        "mooring": "Spread Mooring",
-        "fid_date": "2023",
-        "construction_progress_pct": 65,
-        "financing": "10년 임대 + 연장 옵션 (PETRONAS)",
-        "key_equipment": "말레이시아·베트남 해상 경계 블록 전용. 얕은 수심 최적화 설계.",
-        "rig_demand": "잭업 리그 1기 — 인필 시추 및 유지보수 용도",
-        "partners": [
-          "PETRONAS 50% op",
-          "PetroVietnam 50%"
-        ]
-      }
-    },
-    {
       "name": "Buzios 11 (P-84)",
       "type": "FPSO",
       "owner": "Petrobras",
@@ -1805,68 +1776,6 @@
           "APA Corp 25%",
           "Staatsolie 20%",
           "Shell 15%"
-        ]
-      }
-    },
-    {
-      "name": "FLNG Sorrento",
-      "type": "FLNG",
-      "owner": "Golar LNG",
-      "client": "Woodside / BP",
-      "field": "Scarborough Field (WA-1-R)",
-      "region": "Asia Pacific",
-      "yard": "Wison (CN)",
-      "contract_value_busd": 3.2,
-      "oil_capacity_kboed": null,
-      "delivery": "2027-Q2",
-      "status": "Under Construction",
-      "notes": "호주 Scarborough 가스전 FLNG. Golar MK II 설계. 3.5 MTPA.",
-      "detail": {
-        "hull_type": "Golar MK II FLNG (개조 LNG 운반선)",
-        "water_depth_m": 950,
-        "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 560,
-        "mooring": "Spread Mooring (FLNG)",
-        "fid_date": "2023-Q4",
-        "construction_progress_pct": 25,
-        "financing": "20년 임대 (Woodside)",
-        "key_equipment": "Golar MK II 설계 (Hilli 자매선 기반). Wison 중국 개조. LNG 액화 용량 3.5 MTPA. APCI 액화 공정.",
-        "rig_demand": "반잠수식 리그 1기 — Scarborough 가스전 개발정 시추 병행",
-        "partners": [
-          "Woodside 73% op",
-          "BHP 27%"
-        ]
-      }
-    },
-    {
-      "name": "Dalia 2 FPSO (Angola)",
-      "type": "FPSO",
-      "owner": "TotalEnergies",
-      "client": "TotalEnergies",
-      "field": "Dalia Phase 2 (Block 17)",
-      "region": "West Africa",
-      "yard": "HHI (KR)",
-      "contract_value_busd": 2.8,
-      "oil_capacity_kboed": 80,
-      "delivery": "2027-Q4",
-      "status": "Under Construction",
-      "notes": "앙골라 Block 17 Dalia Phase 2. TotalEnergies 자가 운영.",
-      "detail": {
-        "hull_type": "신조 FPSO (HHI)",
-        "water_depth_m": 1400,
-        "storage_mmbbl": 1.5,
-        "gas_capacity_mmscfd": 80,
-        "mooring": "Turret Mooring (SOFEC)",
-        "fid_date": "2024",
-        "construction_progress_pct": 20,
-        "financing": "TotalEnergies 자가 소유 직발주",
-        "key_equipment": "HHI 현대중공업 신조. Block 17 기존 Dalia FPSO 인근 배치. 딥워터 앙골라 3번째 TTE 자가 FPSO.",
-        "rig_demand": "드릴십 1기 — Dalia Phase 2 개발정 6공 시추 2027~2029년",
-        "partners": [
-          "TotalEnergies 36.75% op",
-          "Sonangol 30%",
-          "bp 16.67%",
-          "ExxonMobil 20%"
         ]
       }
     },
