@@ -169,9 +169,9 @@
       "year_delivered": 2024,
       "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium topsides 통합)",
+        "hull_type": "SBM Fast4Ward MPF3 신조 (CMHI hull + Seatrium 통합)",
         "yard": "CMHI (CN) + Seatrium (SG)",
-        "gas_capacity_mmscfd": 170,
+        "gas_capacity_mmscfd": 450,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-04",
         "partners": [
@@ -181,7 +181,7 @@
         ],
         "financing": "20년 BFOO 장기 임대",
         "rig_demand": "드릴십 2기 장기 계약 — Yellowtail 개발정 지속 시추",
-        "notable": "SBM Fast4Ward 5호 선형. Stabroek 4번째 FPSO. 세계 최초 20,000ft WD 설계."
+        "notable": "SBM Fast4Ward MPF3 (3호) 선형. Stabroek 4번째 FPSO. Yellowtail 250,000 bopd 피크 생산. First oil 2025-08-08."
       }
     },
     {
@@ -201,7 +201,7 @@
       "year_delivered": 2023,
       "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (SWS hull + Keppel FELS 통합)",
+        "hull_type": "SBM Fast4Ward MPF2 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "SWS (CN) + Keppel FELS (SG)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring (SBM)",
@@ -213,7 +213,7 @@
         ],
         "financing": "20년 BFOO 장기 임대",
         "rig_demand": "드릴십 1기 — Payara 개발정 연간 유지보수 시추 3~5공",
-        "notable": "SBM Fast4Ward 4호 선형. Stabroek 3번째 FPSO. Payara 220kboed 피크 생산 설계."
+        "notable": "SBM Fast4Ward MPF2 (2호) 선형. Stabroek 3번째 FPSO. Payara 220,000 bopd 피크 생산 설계."
       }
     },
     {
@@ -233,7 +233,7 @@
       "year_delivered": 2022,
       "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (SWS hull + Keppel topsides 통합)",
+        "hull_type": "SBM Fast4Ward MPF1 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "SWS (CN) + Keppel FELS (SG)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
@@ -245,7 +245,7 @@
         ],
         "financing": "20년 BFOO 장기 임대",
         "rig_demand": "드릴십 1기 — Liza Phase 2 연간 유지보수 시추 3~5공",
-        "notable": "SBM Fast4Ward 3호 선형. Stabroek 2번째 FPSO. Liza Phase 2 220kboed 생산 설계."
+        "notable": "SBM Fast4Ward MPF1 (1호) 선형. Stabroek 2번째 FPSO. Liza Phase 2 220,000 bopd 생산 설계."
       }
     },
     {
@@ -297,7 +297,7 @@
       "year_delivered": 2024,
       "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (CMHI hull + Seatrium 통합)",
+        "hull_type": "SBM Fast4Ward MPF4 신조 (CMHI hull + Seatrium 통합)",
         "yard": "CMHI (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
@@ -309,7 +309,7 @@
         ],
         "financing": "22.5년 장기 임대 (Petrobras)",
         "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 연간 유지보수 및 인필 시추",
-        "notable": "Búzios 6번째 FPSO. SBM Fast4Ward 표준 선형. 브라질 로컬 콘텐츠 요건 준수."
+        "notable": "SBM Fast4Ward MPF4 (4호) 선형. Búzios 6번째 FPSO. First oil 2025-02. 브라질 로컬 콘텐츠 준수."
       }
     },
     {
@@ -317,7 +317,7 @@
       "type": "FPSO",
       "owner": "SBM Offshore",
       "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
+      "field": "Mero Field (Libra Block, BM-S-11A)",
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 1900,
@@ -331,19 +331,20 @@
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (BOMESC hull + BrasFELS 통합)",
         "yard": "BOMESC (CN) + BrasFELS (BR)",
-        "gas_capacity_mmscfd": 150,
+        "gas_capacity_mmscfd": 424,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2020-07",
         "partners": [
-          "Shell 26.7%",
-          "Petrobras 40%",
-          "TotalEnergies 20%",
-          "CNOOC 10%",
-          "CNPC 3.3%"
+          "Petrobras 38.6% op",
+          "Shell Brasil 19.3%",
+          "TotalEnergies 19.3%",
+          "CNOOC 9.65%",
+          "CNPC 9.65%",
+          "PPSA 3.5%"
         ],
         "financing": "20년 BFOO 장기 임대 (Mero 3 / Libra 컨소시엄)",
         "rig_demand": "드릴십 1기 — Mero/Libra 블록 연간 유지보수 시추 3~4공",
-        "notable": "Mero 3 개발용 FPSO. Libra 컨소시엄 발주. 브라질 프리솔트 핵심 생산설비."
+        "notable": "Mero 2 개발용 FPSO. Libra 컨소시엄 발주. First oil 2024-01-02. 수심 2,050m."
       }
     },
     {
@@ -367,15 +368,17 @@
         "yard": "COSCO Dalian (CN) + Keppel FELS Brasil (BR)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Spread Mooring",
-        "fid_date": "2019-01",
+        "fid_date": "2017-10",
         "partners": [
-          "Petrobras 33.3% op",
-          "Shell 33.3%",
-          "TotalEnergies 33.3%"
+          "Petrobras 55.3% op",
+          "TotalEnergies 16.91%",
+          "PETRONAS 12.69%",
+          "QatarEnergy 12.69%",
+          "Petrogal Brasil 2.41%"
         ],
         "financing": "25년 임대 (Sépia 컨소시엄)",
         "rig_demand": "드릴십 1기 — Sépia 프리솔트 연간 인필 시추 3~5공",
-        "notable": "MODEC MV30 선형. 브라질 Santos Basin Sépia 2 개발 전용. 2,190m 초심해 설계."
+        "notable": "MODEC MV30. Sépia 필드(BM-S-24) Phase 1 전용. 2022-01 first oil. 수심 2,190m. Shell은 Sépia 컨소시엄에 미참여."
       }
     },
     {
@@ -538,7 +541,7 @@
       "name": "BW Adolo",
       "type": "FPSO",
       "owner": "BW Offshore",
-      "client": "Perenco",
+      "client": "BW Energy Gabon SA",
       "field": "Dussafu Marin (Gabon)",
       "region": "West Africa",
       "country": "Gabon",
@@ -557,18 +560,19 @@
         "mooring": "Spread Mooring",
         "fid_date": "2016",
         "partners": [
-          "Perenco 57.5% op",
-          "BW Energy 42.5%"
+          "BW Energy 73.5% op",
+          "Panoro Energy 17.5%",
+          "GOC (Gabon Oil Company) 9.0%"
         ],
-        "financing": "장기 FPSO 임대 (Perenco/BW JV)",
+        "financing": "BW Offshore 소유 (베어보트 임대, $100M 풋/콜 옵션 2028년). 2025-05-20부터 BW Energy Gabon SA가 직접 운영.",
         "rig_demand": "잭업 리그 1기 — Dussafu 연간 개발정 시추 2~3공",
-        "notable": "BW Offshore-Perenco 공동 개발 JV. 가봉 Dussafu Marin 전용 전환 FPSO."
+        "notable": "가봉 Dussafu Marin. BW Energy 73.5% 운영. 2025-05 BW Energy Gabon SA가 운영권 직접 인수. Perenco는 Dussafu 컨소시엄 미참여."
       }
     },
     {
       "name": "Espoir Ivoirien",
       "type": "FPSO",
-      "owner": "BW Offshore",
+      "owner": "CNR International",
       "client": "CNR International",
       "field": "Espoir Field (CI-26)",
       "region": "West Africa",
@@ -592,9 +596,9 @@
           "Tullow Oil 26.2%",
           "Petroci 14.9%"
         ],
-        "financing": "장기 임대 (CNR International)",
+        "financing": "CNR International 자가 소유 (2023-06 BW Offshore로부터 $20M 매입)",
         "rig_demand": "드릴십 1기 — 연간 유지보수 시추 2~3공 (노령 유전 수명 연장)",
-        "notable": "2002년 초도 배치 이래 20년 이상 운영 중. 2026년 계약 만료 — 후속 설비 검토 중."
+        "notable": "2002년 초도 배치 이래 운영 중. 2023-06 BW Offshore → CNR International에 FPSO 소유권 이전. Petrofac가 O&M 서비스 제공(3년 계약). BW Offshore 임대 구조 종료."
       }
     },
     {
@@ -648,7 +652,7 @@
       "detail": {
         "hull_type": "Purpose-built FLNG (Samsung — 세계 최대 부유식 구조물)",
         "yard": "SHI (KR)",
-        "gas_capacity_mmscfd": 600,
+        "gas_capacity_mmscfd": null,
         "mooring": "Spread Mooring (FLNG)",
         "fid_date": "2011-05",
         "partners": [
@@ -659,7 +663,7 @@
         ],
         "financing": "Shell 자가 소유 (JV 지분 구조)",
         "rig_demand": "MODU 수요 없음 — 자체 생산 정 유지보수 한정",
-        "notable": "세계 최대 부유식 구조물 (488m × 74m). LNG 3.6MTPA + NGL + C5+. Browse Basin 호주 NW."
+        "notable": "세계 최대 부유식 구조물 (488m × 74m × 108,000t). LNG 3.6 MTPA + 응축유 1.3 MTPA + LPG 0.4 MTPA. Browse Basin 호주 NW. 총 피드가스 처리 용량 공식 미공개 (추정 650~890 MMscfd)."
       }
     },
     {
@@ -764,7 +768,7 @@
       "type": "FPSO",
       "owner": "SBM Offshore",
       "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
+      "field": "Mero Field (Libra Block) — Mero 4",
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 2000,
@@ -776,7 +780,7 @@
       "year_delivered": 2025,
       "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
-        "hull_type": "SBM Fast4Ward 신조 (COSCO Qidong hull + 통합)",
+        "hull_type": "SBM Fast4Ward MPF5 신조 (COSCO Qidong hull)",
         "yard": "COSCO Qidong (CN)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
@@ -788,7 +792,7 @@
         ],
         "financing": "22.5년 장기 임대 (Petrobras)",
         "rig_demand": "드릴십 2기 — Búzios 7 프리솔트 개발정 시추 및 인필 드릴링",
-        "notable": "Búzios 7 전용 FPSO (SBM 명칭). 2025년 인도. SBM Fast4Ward 최신 선형."
+        "notable": "SBM Fast4Ward MPF5 (5호) 선형. Mero 4 전용 FPSO. First oil 2025-05. COSCO Qidong hull."
       }
     },
     {
@@ -904,14 +908,14 @@
         "mooring": "Turret Mooring",
         "fid_date": "2007-06",
         "partners": [
-          "Tullow Oil 35.5% op",
-          "Eni 36.3%",
-          "Kosmos Energy 18%",
-          "GNPC 10.2%"
+          "Tullow Oil 38.98% op",
+          "Kosmos Energy 38.61%",
+          "GNPC 19.69%",
+          "PetroSA 2.72%"
         ],
         "financing": "20년 임대 (Jubilee 컨소시엄)",
         "rig_demand": "드릴십 1기 — 가나 Jubilee 연간 유지보수 및 인필 시추 3~4공",
-        "notable": "가나 Jubilee 유전 전용 FPSO. 서아프리카 심해 개발 선도 사례. 2010년 초도 생산."
+        "notable": "가나 Jubilee 유전 전용. 서아프리카 심해 개발 선도 사례. First oil 2010. 2025-06 라이선스 2040년 연장 합의. Eni는 Jubilee 컨소시엄 미참여 (Sankofa 별개)."
       }
     },
     {
