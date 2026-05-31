@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30",
+  "updated": "2026-05-31",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -169,8 +169,8 @@
       "year_delivered": 2024,
       "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "Seatrium (SG) + SHI (KR)",
+        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium topsides 통합)",
+        "yard": "CIMC (CN) + Seatrium (SG)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-04",
@@ -201,8 +201,8 @@
       "year_delivered": 2023,
       "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "Seatrium (SG) + SHI (KR)",
+        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Keppel topsides 통합)",
+        "yard": "CIMC (CN) + Keppel (SG)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
@@ -233,8 +233,8 @@
       "year_delivered": 2022,
       "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "Seatrium (SG) + SHI (KR)",
+        "hull_type": "SBM Fast4Ward 신조 (SWS hull + Keppel topsides 통합)",
+        "yard": "SWS (CN) + Keppel (SG)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
@@ -265,8 +265,8 @@
       "year_delivered": 2019,
       "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비.",
       "detail": {
-        "hull_type": "SBM Turritella 전환 (VLCC 개조)",
-        "yard": "SHI (KR) — VLCC conversion",
+        "hull_type": "VLCC 전환 FPSO (Keppel Singapore)",
+        "yard": "Keppel (SG) — VLCC conversion",
         "gas_capacity_mmscfd": 100,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2016-06",
@@ -297,8 +297,8 @@
       "year_delivered": 2024,
       "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "SHI (KR) + BrasFELS (BR)",
+        "hull_type": "SBM Fast4Ward 신조 (CIMC hull + Seatrium 통합)",
+        "yard": "CIMC (CN) + Seatrium (SG) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-02",
@@ -328,8 +328,8 @@
       "year_delivered": 2024,
       "notes": "Buzios 7번째 FPSO.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "Seatrium (SG) + SHI (KR)",
+        "hull_type": "SBM Fast4Ward 신조 (BOMESC hull + BrasFELS 통합)",
+        "yard": "BOMESC (CN) + BrasFELS (BR)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2020-07",
@@ -346,7 +346,7 @@
       }
     },
     {
-      "name": "FPSO Carioca (MV31)",
+      "name": "FPSO Carioca (MV30)",
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
@@ -362,8 +362,8 @@
       "year_delivered": 2022,
       "notes": "브라질 프리-솔트 Sepia 개발용.",
       "detail": {
-        "hull_type": "MODEC MV31 신조 (Sépia 2 전용)",
-        "yard": "SHI (KR)",
+        "hull_type": "VLCC 전환 (COSCO Dalian) — MODEC MV30 (Sépia/Mero 전용)",
+        "yard": "COSCO Dalian (CN) + Keppel FELS Brasil (BR)",
         "gas_capacity_mmscfd": 170,
         "mooring": "Spread Mooring",
         "fid_date": "2019-01",
@@ -379,7 +379,7 @@
       }
     },
     {
-      "name": "FPSO Anita Garibaldi (MV32)",
+      "name": "FPSO Anita Garibaldi (MV33)",
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
@@ -395,8 +395,8 @@
       "year_delivered": 2023,
       "notes": "MODEC MV32. Buzios 5번째 FPSO.",
       "detail": {
-        "hull_type": "MODEC MV32 신조 (Búzios 전용)",
-        "yard": "SHI (KR) + BrasFELS (BR)",
+        "hull_type": "신조 (DSIC Dalian) — MODEC MV33 (Marlim 전용)",
+        "yard": "DSIC Dalian (CN) + Jurong Aracruz (BR)",
         "gas_capacity_mmscfd": 80,
         "mooring": "Spread Mooring",
         "fid_date": "2021-04",
@@ -475,7 +475,7 @@
     {
       "name": "FPSO Cidade de Ilhabela",
       "type": "FPSO",
-      "owner": "MODEC",
+      "owner": "SBM Offshore",
       "client": "Petrobras",
       "field": "Sapinhoa Field",
       "region": "South America",
@@ -489,8 +489,8 @@
       "year_delivered": 2014,
       "notes": "브라질 Sapinhoa 프리-솔트 생산설비.",
       "detail": {
-        "hull_type": "MODEC 신조 FPSO (Sapinhoá 전용)",
-        "yard": "SHI (KR)",
+        "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
+        "yard": "Chengxi (CN) + Brasa/Niterói (BR)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring",
         "fid_date": "2011-05",
@@ -777,8 +777,8 @@
       "year_delivered": 2025,
       "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "SHI (KR) + BrasFELS (BR)",
+        "hull_type": "SBM Fast4Ward 신조 (COSCO Qidong hull + 통합)",
+        "yard": "COSCO Qidong (CN)",
         "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-12",
@@ -853,7 +853,7 @@
     {
       "name": "Cidade de Maricá",
       "type": "FPSO",
-      "owner": "MODEC",
+      "owner": "SBM Offshore",
       "client": "Petrobras",
       "field": "Lula Alto / Lula South",
       "region": "South America",
@@ -867,8 +867,8 @@
       "year_delivered": 2016,
       "notes": "Petrobras Lula Alto/South 생산설비. MODEC 운영.",
       "detail": {
-        "hull_type": "MODEC 신조 FPSO (Lula 전용)",
-        "yard": "SHI (KR)",
+        "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
+        "yard": "Chengxi (CN) + Brasa/Niterói (BR)",
         "gas_capacity_mmscfd": 150,
         "mooring": "Turret Mooring",
         "fid_date": "2013-04",
@@ -899,8 +899,8 @@
       "year_delivered": 2010,
       "notes": "가나 Jubilee 유전 생산. 아프리카 대형 심해 FPSO 중 하나.",
       "detail": {
-        "hull_type": "MODEC MV21 신조 FPSO (Jubilee 전용)",
-        "yard": "SHI (KR)",
+        "hull_type": "VLCC 전환 (Jurong Singapore) — MODEC MV21 (Jubilee 전용)",
+        "yard": "Jurong Shipyard / SembCorp Marine (SG)",
         "gas_capacity_mmscfd": 120,
         "mooring": "Turret Mooring",
         "fid_date": "2007-06",
@@ -932,8 +932,8 @@
       "year_delivered": 2025,
       "notes": "SBM 14번째 임대 설비. Q3 2025 인도 완료. Búzios 프리솔트 집중 배치.",
       "detail": {
-        "hull_type": "SBM Fast4Ward (신조)",
-        "yard": "Seatrium (SG) + SHI (KR)",
+        "hull_type": "SBM Fast4Ward 신조",
+        "yard": "Seatrium (SG)",
         "gas_capacity_mmscfd": 180,
         "mooring": "Internal Turret",
         "fid_date": "2023",
