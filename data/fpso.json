@@ -1574,22 +1574,21 @@
       "notes": "SBM Fast4Ward 선형. 앙골라 심해 개발.",
       "detail": {
         "hull_type": "VLCC 전환 (VLCC Alsace, Saipem EPC)",
-        "water_depth_m": 1800,
-        "storage_mmbbl": 1.7,
+        "water_depth_m": 1700,
+        "storage_mmbbl": null,
         "gas_capacity_mmscfd": 120,
-        "mooring": "Disconnectable Turret (SOFEC)",
-        "fid_date": "2023-11",
+        "mooring": null,
+        "fid_date": "2024-05",
         "construction_progress_pct": 45,
-        "financing": "20년 BFOO 장기 임대 (TotalEnergies)",
-        "key_equipment": "SBM Fast4Ward 6호 선형. Keppel FELS 선체 + SHI 상부 공정. SOFEC 터렛 계류.",
+        "financing": "컨소시엄 직접 소유; Saipem EPCI $3.7B + 12년 O&M 계약 (+ 8년 옵션)",
+        "key_equipment": "VLCC Alsace (2012년 SHI 건조, 299,999 DWT) 개조. CMHI(Nantong) 선체 개조 담당. Saipem EPCI 계약.",
         "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 Kaminho 개발정 시추 캠페인",
         "partners": [
           "TotalEnergies 40% op",
-          "Sonangol 30%",
-          "ENI 15%",
-          "Galp 15%"
+          "PETRONAS/PAEPAL 40%",
+          "Sonangol 20%"
         ],
-        "notable": "Saipem $3.7B EPC 계약 (2024-05). TotalEnergies 40% / PAEPAL 40% / Sonangol 20%."
+        "notable": "Saipem $3.7B EPC+O&M 계약 2024-05. TotalEnergies 40% / PETRONAS PAEPAL 40% / Sonangol 20%. 70,000 bopd; 가스 전량 재주입; first oil 2028 목표."
       }
     },
     {
@@ -1609,16 +1608,16 @@
         "hull_type": "SBM Fast4Ward MPF5 신조 (SWS hull + Seatrium 통합)",
         "water_depth_m": 1600,
         "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 150,
+        "gas_capacity_mmscfd": 540,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2024-Q2",
         "construction_progress_pct": 30,
         "financing": "20년 장기 임대 (ExxonMobil)",
-        "key_equipment": "SBM Fast4Ward 7호 선형. Stabroek 블록 5번째 FPSO. 고효율 가스 처리 모듈.",
+        "key_equipment": "SBM Fast4Ward 7호 선형 (MPF5 hull, SWS Shanghai 건조). Stabroek 블록 6번째 FPSO. Seatrium 상부 통합.",
         "rig_demand": "드릴십 2기 동시 운용 — Hammerhead 개발정 집중 시추 2026~2028년",
         "partners": [
           "ExxonMobil 45% op",
-          "Chevron/Hess 30%",
+          "Chevron 30% (구 Hess, 2025-07 인수 완료)",
           "CNOOC 25%"
         ]
       }
@@ -1638,18 +1637,20 @@
       "notes": "Buzios 10번째 FPSO. SBM Fast4Ward.",
       "detail": {
         "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
-        "water_depth_m": 2000,
+        "water_depth_m": 2100,
         "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 212,
-        "mooring": "Turret Mooring",
+        "gas_capacity_mmscfd": 424,
+        "mooring": "Spread Mooring",
         "fid_date": "2023",
         "construction_progress_pct": 40,
-        "financing": "22.5년 임대 계약 (Petrobras)",
-        "key_equipment": "SBM Fast4Ward 표준 선형. 브라질 로컬 콘텐츠 요건 준수 (Brasfels 통합).",
+        "financing": "Petrobras 직접 소유; Seatrium/Keppel O&M EPC ~$2.8B",
+        "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. EPC: Seatrium/Keppel O&M. SBM Fast4Ward 아님.",
         "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 시추 지속",
         "partners": [
-          "Petrobras 65% op",
-          "PPSA 자원 관리"
+          "Petrobras ~89% op",
+          "CNOOC 7.34%",
+          "CNODC 3.67%",
+          "PPSA (PSC 관리기관)"
         ],
         "notable": "P-83 Búzios; Seatrium/Keppel O&M EPC; 225,000 bopd; delivery H1 2027."
       }
@@ -1669,19 +1670,19 @@
       "notes": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029.",
       "detail": {
         "hull_type": "MODEC Next Generation 신조 (VLCC 전환 아님)",
-        "water_depth_m": 2100,
-        "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 90,
+        "water_depth_m": 2000,
+        "storage_mmbbl": 0.85,
+        "gas_capacity_mmscfd": 384,
         "mooring": "Spread Mooring",
-        "fid_date": "2023-12",
+        "fid_date": "2025-03",
         "construction_progress_pct": 35,
-        "financing": "Shell 직발주 EPC (자가 소유)",
-        "key_equipment": "Saipem EPC 계약. CSSC 중국 조선소 선체 건조. Fincantieri 상부 공정 통합.",
+        "financing": "MODEC 소유 (PSA 체결 2025-03); 20년 O&M 계약. Shell/Ecopetrol/TotalEnergies가 클라이언트.",
+        "key_equipment": "MODEC Next Generation 신조 (VLCC 전환 아님). Sumitomo(JP) forward hull + COSCO Qidong(CN) aft hull 분할 건조. MODEC EPCI. ABB 전기 시스템.",
         "rig_demand": "드릴십 1기 — Shell/Petrobras/TTE 개발정 공동 시추 2026~2028년",
         "partners": [
           "Shell 50% op",
-          "Petrobras 25%",
-          "TotalEnergies 25%"
+          "Ecopetrol 30%",
+          "TotalEnergies 20%"
         ],
         "notable": "MODEC가 2025-03 Saipem EPC 계약 인수. 선체: Sumitomo(JP) forward + COSCO Qidong(CN) aft 분할 건조."
       }
@@ -1701,21 +1702,21 @@
       "notes": "모잠비크 Area 4 2번째 FLNG. 3.4 MTPA. FID 2024년.",
       "detail": {
         "hull_type": "Purpose-built FLNG (SHI)",
-        "water_depth_m": 2000,
+        "water_depth_m": 2600,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 550,
-        "mooring": "Spread Mooring (FLNG)",
-        "fid_date": "2024",
+        "gas_capacity_mmscfd": 470,
+        "mooring": "Internal Turret Mooring (SOFEC) — Coral Sul 자매선과 동일",
+        "fid_date": "2025-10",
         "construction_progress_pct": 15,
         "financing": "20년 FLNG 장기 임대 (ENI)",
-        "key_equipment": "SHI 모잠비크 Area 4 전용 FLNG. LNG 액화 용량 3.4 MTPA. Coral Sul 1 자매선.",
+        "key_equipment": "LNG 액화 용량 3.55 MTPA. EPC: Technip Energies + JGC + SHI 컨소시엄. SHI Geoje 선체 건조 (2026-01 진수). Coral Sul FLNG 자매선 (Area 4 2호 FLNG).",
         "rig_demand": "드릴십 1기 — Coral North 가스전 개발정 시추 2026~2027년 예정",
         "partners": [
           "ENI 50% op",
-          "Galp 10%",
-          "KOGAS 10%",
           "CNPC 20%",
-          "EMHH 10%"
+          "KOGAS 10%",
+          "ENH (Mozambique NOC) 10%",
+          "XRG (ADNOC) 10%"
         ]
       }
     },
@@ -1736,16 +1737,18 @@
         "hull_type": "Newbuild (CIMC Raffles hull, Seatrium $8.15B EPC — P-84/P-85 패키지)",
         "water_depth_m": 2100,
         "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 212,
-        "mooring": "Turret Mooring",
+        "gas_capacity_mmscfd": 354,
+        "mooring": "Spread Mooring",
         "fid_date": "2024",
         "construction_progress_pct": 20,
         "financing": "Petrobras 자가 소유 (BNDES 금융 지원)",
-        "key_equipment": "Keppel FELS 선체 + BrasFELS 브라질 통합. Petrobras 로컬 콘텐츠 65% 이상 목표.",
+        "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. Seatrium $8.15B EPC (P-84+P-85 패키지). 강재 절단 2024-11. 225,000 bopd.",
         "rig_demand": "드릴십 2기 — Búzios 11 전용 개발정 12공 시추 계획",
         "partners": [
-          "Petrobras 65% op",
-          "PPSA 자원 관리"
+          "Petrobras ~89% op",
+          "CNOOC 7.34%",
+          "CNODC 3.67%",
+          "PPSA (PSC 관리기관)"
         ]
       }
     },
@@ -1765,20 +1768,19 @@
       "notes": "수리남 첫 심해 FPSO. FID 미확정 (2025년 예상). 용량·일정은 잠정 수치.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (CMHI hull; SBM+Technip Energies 50/50 JV EPC)",
-        "water_depth_m": 700,
+        "water_depth_m": 400,
         "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 200,
-        "mooring": "Turret Mooring",
-        "fid_date": "2025 (예상)",
+        "gas_capacity_mmscfd": 500,
+        "mooring": "Spread Mooring (~400m 수심)",
+        "fid_date": "2024-10",
         "construction_progress_pct": 10,
         "financing": "20년 BFOO 임대 (TotalEnergies)",
         "key_equipment": "수리남 최초 대형 FPSO. Block 58 GranMorgu 발견 개발 전용. SBM Fast4Ward 8호 선형.",
         "rig_demand": "드릴십 1~2기 — Block 58 개발정 시추 2027년 착수 예정",
         "partners": [
           "TotalEnergies 40% op",
-          "APA Corp 25%",
-          "Staatsolie 20%",
-          "Shell 15%"
+          "APA Corp 40%",
+          "Staatsolie 20% (옵션 행사)"
         ],
         "notable": "FID Oct 2024. STS JV = SBM + Technip Energies. 강재 절단: BOMESC(5월), CMHI(5월), COSCO(6월) 2025."
       }
@@ -1801,15 +1803,19 @@
         "hull_type": "LNG 운반선 전환 (Fuji LNG, 2004년 건조)",
         "water_depth_m": null,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 500,
-        "mooring": "Spread Mooring (현장 미정)",
-        "fid_date": "2025-Q4",
+        "gas_capacity_mmscfd": 470,
+        "mooring": null,
+        "fid_date": "2025-08",
         "construction_progress_pct": 5,
-        "financing": "장기 Charter 계약 + 프로젝트 파이낸싱 (구조 확정 중)",
-        "key_equipment": "차세대 LNG 액화 트레인 (용량 Hilli 대비 2배+). 삼성중공업 SHI-FLNG 전용 설계.",
+        "financing": "20년 SESA 용선 계약 ($400M/년, 총 $8B). SESA 30년 수출 허가 (최대 8 MTPA).",
+        "key_equipment": "Fuji LNG (2004년 건조) 개조. CIMC Raffles(옌타이) 선체 분리 후 중간 액화 모듈 삽입 방식. $1.6B EPC 계약. 3.5 MTPA 액화 용량. SHI 관련 없음 — CIMC Raffles 전담.",
         "rig_demand": "드릴십 불필요 — 기존 가스전 연계 또는 신규 발견 LNG전 개발 지원 예정",
         "partners": [
-          "Golar LNG 100% (파트너 선정 중)"
+          "PAE (Pan American Energy) 30%",
+          "YPF 25%",
+          "Pampa Energía 20%",
+          "Harbour Energy 15%",
+          "Golar LNG ~10% (선주/운영사)"
         ],
         "notable": "Fuji LNG 선박 개조; CIMC Raffles Yantai에서 선체 분리 후 중간 액화 모듈 삽입 방식. $1.6B EPC."
       }
@@ -1829,14 +1835,14 @@
       "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04.",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
-        "water_depth_m": 1800,
+        "water_depth_m": 2500,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": null,
-        "mooring": null,
+        "gas_capacity_mmscfd": 355,
+        "mooring": "Spread Mooring (~2,500m)",
         "fid_date": "2026-04",
         "construction_progress_pct": 0,
         "financing": "BOT (Build-Operate-Transfer)",
-        "key_equipment": "Petrobras SEAP 심해 개발. SBM Offshore 운영."
+        "key_equipment": "SBM Fast4Ward MPF11 선형. Sergipe-Alagoas 심해 (해안 100km). 가스 134km 해저 파이프라인으로 육상 연결. FID 2026-04; 계약 체결 2026-05-29."
       }
     },
     {
@@ -1854,14 +1860,14 @@
       "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정.",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
-        "water_depth_m": 1800,
+        "water_depth_m": 2500,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": null,
-        "mooring": null,
+        "gas_capacity_mmscfd": 355,
+        "mooring": "Spread Mooring (~2,500m)",
         "fid_date": "2026-04",
         "construction_progress_pct": 0,
         "financing": "BOT (Build-Operate-Transfer)",
-        "key_equipment": "Petrobras SEAP 심해 개발. SEAP II 초도 생산 2031년."
+        "key_equipment": "SBM Fast4Ward MPF11 선형. Sergipe-Alagoas 심해 (해안 100km). 가스 134km 해저 파이프라인으로 육상 연결. FID 2026-04; 계약 체결 2026-05-29."
       }
     }
   ],
