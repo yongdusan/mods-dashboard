@@ -1157,13 +1157,13 @@
       "status": "On Production",
       "notes": "Newbuild; first oil May 1, 2026 (ahead of schedule); brings Búzios installed capacity to ~1.33 MMbopd.",
       "detail": {
-        "hull_type": "Newbuild — Hanwha Ocean (구 DSME), 한국",
+        "hull_type": "Newbuild — SAME Netherlands BV JV (Saipem 57% + Hanwha Ocean/DSME 43%); 4개국 모듈 제작",
         "mooring": "Spread mooring",
-        "notable": "8th FPSO at Búzios TOR; 14 wells (8 producers, 6 injectors)",
+        "notable": "8th FPSO at Búzios TOR; 14 wells (8 producers, 6 injectors) EBR(Rio Grande-RS)가 브라질 로컬 콘텐츠 전담. COOEC(칭다오) 압축기 모듈 13기(~3만톤). Wasco(인도네시아) 전기 모듈. 2025-11 게제 출항, 2026-02 브라질 도착.",
         "partners": [
           "Petrobras 100%"
         ],
-        "yard": "Hanwha Ocean (KR)"
+        "yard": "Hanwha Ocean (KR, Geoje) [hull + integration] + COOEC (CN) [13 modules] + EBR (BR) [7 modules, local content] + Wasco (ID) [electrical module]"
       }
     },
     {
