@@ -71,7 +71,7 @@
       "source": "BW Offshore Q1 2026 Results",
       "as_of": "2026-03-31",
       "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
-      "notes": "Norway-based FPSO lessor. 4 units on active charter: BW Catcher, BW Adolo, BW Opal, BW Gimi (FLNG). Q1 2026 EBITDA margin ~37%; backlog $2.3B.",
+      "notes": "4 units on active charter (Q1 2026): BW Catcher, BW Adolo, BW Opal, BW Pioneer. BW Hurra (formerly Nganhurra) idle/redeployment. BW Gimi는 Golar LNG 소유로 무관.",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0
     },
@@ -110,13 +110,13 @@
       "type": "FLNG Lessor",
       "hq": "Bermuda",
       "ticker": "GLNG",
-      "fleet_owned": 3,
+      "fleet_owned": 2,
       "on_lease": 2,
       "backlog_busd": 17.0,
       "source": "Golar LNG Q4 2025 Earnings Release",
       "as_of": "2025-12-31",
       "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
-      "notes": "First commercial FLNG operator; FLNG Hilli & Tundra on production.",
+      "notes": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG Mk II under construction (CIMC Raffles, delivery 2029-Q2).",
       "newbuilds_owned": 1,
       "newbuilds_operated": 0
     },
@@ -828,7 +828,7 @@
     {
       "name": "BW Connector",
       "type": "FSO",
-      "owner": "BW Offshore",
+      "owner": "Unknown",
       "client": "Ophir Energy / Fortuna LNG",
       "field": "Fortuna Block (EG-24)",
       "region": "West Africa",
@@ -840,7 +840,7 @@
       "contract_end": null,
       "status": "Idle/Warm Stacked",
       "year_delivered": 2000,
-      "notes": "Fortuna FLNG 프로젝트 무산으로 Idle 상태.",
+      "notes": "구 BW Offshore 소유. BW Q1 2026 실적 보고에서 플릿 목록 제외 — 매각/반납 추정. VAALCO Energy Etame 필드 운영 이력.",
       "detail": {
         "hull_type": "가스 응축유 FPSO 전환 (구 Tamar Spirit)",
         "yard": "Hanwha Ocean (KR) — original build",
@@ -1624,6 +1624,175 @@
       "detail": {
         "gas_capacity_mmscfd": 36.8,
         "notable": "Saipem 자체 소유 FPSO. SONANGOL과 L&O 계약. 앙골라 해상 Gimboa 유전."
+      }
+    },
+    {
+      "name": "BW Opal",
+      "type": "FPSO",
+      "owner": "BW Offshore",
+      "client": "Santos",
+      "field": "Barossa (NT/WA-474-P)",
+      "region": "Asia Pacific",
+      "country": "Australia",
+      "water_depth_m": 300,
+      "oil_capacity_kboed": 11,
+      "storage_mmbbl": 2.2,
+      "contract_start": "2025-09",
+      "contract_end": "2035",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "가스+컨덴세이트 FPSO. 850 MMscfd 가스 처리, 컨덴세이트 11,000 bpd. Darwin 북쪽 285km. 2025-09 Ready for Start-Up (RFSU) 달성, Q2 2026 100% 출력 목표.",
+      "detail": {
+        "gas_capacity_mmscfd": 850,
+        "mooring": "Turret Mooring",
+        "partners": [
+          "Santos 50% op",
+          "SK E&S 37.5%",
+          "JERA 12.5%"
+        ],
+        "notable": "세계 최대급 가스 FPSO 중 하나. BW Offshore 10년 L&O 계약(2021-03 체결). 2025-09 RFSU, 2026-Q2 전 용량 도달 예정. Darwin LNG 공급."
+      }
+    },
+    {
+      "name": "BW Pioneer",
+      "type": "FPSO",
+      "owner": "BW Offshore",
+      "client": "Murphy Oil",
+      "field": "Cascade-Chinook (Garden Banks Blk 2)",
+      "region": "Gulf of Mexico",
+      "country": "USA",
+      "water_depth_m": 2600,
+      "oil_capacity_kboed": 80,
+      "storage_mmbbl": 0.5,
+      "contract_start": "2012",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2012,
+      "notes": "미국 최초 상업 심해 FPSO. 2,600m 최심수. Murphy EXPRO 80% / Petrobras America 20% JV(MP GOM) 운영. BW Offshore 5년 O&M 계약 연장.",
+      "detail": {
+        "gas_capacity_mmscfd": 16,
+        "mooring": "Turret Mooring (Disconnectable)",
+        "partners": [
+          "Murphy EXPRO 80% op",
+          "Petrobras America 20%"
+        ],
+        "notable": "미국 GoM 최초 상업 FPSO (2012). 심해 2,600m 가동. BW Offshore 운영, Murphy Oil 소유 구조."
+      }
+    },
+    {
+      "name": "BW Hurra",
+      "type": "FPSO",
+      "owner": "BW Offshore",
+      "client": null,
+      "field": null,
+      "region": null,
+      "country": null,
+      "water_depth_m": null,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": 0.9,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "Idle/Warm Stacked",
+      "year_delivered": 2006,
+      "notes": "구 Woodside Nganhurra FPSO (West Australia Enfield 유전). BW Offshore가 2025-05 인수, BW Hurra로 개명. 재배치 기회 검토 중(2027-06 이전 목표). 100,000 bpd 용량.",
+      "detail": {
+        "hull_type": "Purpose-built FPSO (Suezmax 이중선체, 2006 건조)",
+        "mooring": "Disconnectable Turret (사이클론 회피 자항)",
+        "notable": "서호주 Enfield 유전 운영 후 말레이시아 계류. BW 2025-05 인수 후 재배치 옵션 평가. 3개 프로젝트 검토 중."
+      }
+    },
+    {
+      "name": "FPSO Anna Nery",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "Petrobras",
+      "field": "Marlim (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 927,
+      "oil_capacity_kboed": 70,
+      "storage_mmbbl": 1.6,
+      "contract_start": "2023-05",
+      "contract_end": "2048",
+      "status": "On Production",
+      "year_delivered": 2023,
+      "notes": "Yinson 63.2% / Sumitomo 25% 등 JV 소유. 25년 장기 용선(~2048). Marlim 유전 재개발 핵심 자산. 2025년 피크 생산 목표.",
+      "detail": {
+        "hull_type": "New build FPSO (COSCO Changxing, Shanghai)",
+        "gas_capacity_mmscfd": 142,
+        "mooring": "Turret Mooring",
+        "partners": [
+          "Petrobras 100% op"
+        ],
+        "notable": "Yinson 최대 규모 브라질 FPSO. Marlim 유전 재개발. 32개 연결 유정. 2023-05 첫 생산. 25년 L&O 계약."
+      }
+    },
+    {
+      "name": "FPSO Agogo",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "Azule Energy",
+      "field": "Agogo-Ndungu (Block 15/06)",
+      "region": "West Africa",
+      "country": "Angola",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 120,
+      "storage_mmbbl": null,
+      "contract_start": "2025-08",
+      "contract_end": "2040",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "세계 최초 post-combustion CCS 탑재 FPSO. 예정 4개월 앞서 2025-07-29 첫 생산. 15년 firm 용선(2025-08~). Yinson 100% 소유.",
+      "detail": {
+        "mooring": "Turret Mooring",
+        "partners": [
+          "Azule Energy 36.84% op (BP/ENI JV)",
+          "Sonangol P&P 36.84%",
+          "Sinopec International 26.32%"
+        ],
+        "notable": "최초 해상 post-combustion 탄소 포집 시스템 탑재. Azule Energy(BP+ENI 50/50) JV. Agogo+Ndungu 추정 매장량 4.5억 bbl."
+      }
+    },
+    {
+      "name": "FPSO Helang",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "ENEOS Xplora Malaysia Limited",
+      "field": "Layang",
+      "region": "Asia Pacific",
+      "country": "Malaysia",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 12,
+      "storage_mmbbl": 0.55,
+      "contract_start": "2019-12",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2019,
+      "notes": "Yinson 100% 소유. Sarawak 앞바다 Layang 유전. 이중선체 내부 터릿 계류 FPSO. 2019-12-06 첫 생산.",
+      "detail": {
+        "hull_type": "이중선체 내부 터릿 계류 FPSO",
+        "notable": "말레이시아 Layang 유전 FPSO. ENEOS Xplora (구 JX Nippon) 운영 계약."
+      }
+    },
+    {
+      "name": "FPSO PTSC Lam Son",
+      "type": "FPSO",
+      "owner": "Yinson Holdings",
+      "client": "PetroVietnam",
+      "field": "Thang Long - Dong Do (Block 1-2/97, Cuu Long Basin)",
+      "region": "Asia Pacific",
+      "country": "Vietnam",
+      "water_depth_m": 80,
+      "oil_capacity_kboed": 20,
+      "storage_mmbbl": 0.65,
+      "contract_start": "2014",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2014,
+      "notes": "Yinson 49% / PTSC 51% JV (PTSC Asia Pacific Pte. Ltd.) 소유. Keppel(SG) 전환(2014). Cuu Long Basin 천해(~80m). 계약 연장 다수 체결.",
+      "detail": {
+        "hull_type": "VLCC 전환 FPSO (Keppel, 2014)",
+        "notable": "Yinson-PTSC 합작 FPSO. 베트남 Cuu Long Basin 천해 운영. Thang Long-Dong Do 유전 통합 생산."
       }
     }
   ],
