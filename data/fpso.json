@@ -1794,6 +1794,292 @@
         "hull_type": "VLCC 전환 FPSO (Keppel, 2014)",
         "notable": "Yinson-PTSC 합작 FPSO. 베트남 Cuu Long Basin 천해 운영. Thang Long-Dong Do 유전 통합 생산."
       }
+    },
+    {
+      "name": "FPSO Guanabara MV31",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Mero-1 (Libra / BM-S-11)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 2100,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": null,
+      "contract_start": "2022-04",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2022,
+      "notes": "MODEC 22년 L&O 계약. Mero(Libra) 1차 FPSO. 브라질 전체 최대 생산자(2025 ANP 기준, 184k bopd 평균). MODEC M350 선형 이전 세대.",
+      "detail": {
+        "gas_capacity_mmscfd": null,
+        "mooring": "Spread Mooring (SOFEC)",
+        "partners": [
+          "Petrobras 38.6% op",
+          "Shell 19.3%",
+          "TotalEnergies 19.3%",
+          "CNPC 9.65%",
+          "CNOOC 9.65%",
+          "Petrogal Brasil 3.5%"
+        ],
+        "notable": "Santos Basin pre-salt Mero-1 FPSO. MODEC JV (MODEC + Mitsui + MOL + Marubeni). 180km off Rio de Janeiro. 22년 charter."
+      }
+    },
+    {
+      "name": "FPSO Almirante Barroso MV32",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Búzios (pre-salt, Santos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1900,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": null,
+      "contract_start": "2023-05",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2023,
+      "notes": "MODEC EPCI/Lease/O&M. Búzios 유전 최대 FPSO 중 하나. 2023-05 첫 생산, 5개월 내 150k bopd 피크 달성.",
+      "detail": {
+        "mooring": "Spread Mooring (SOFEC)",
+        "notable": "Búzios 유전 MODEC 소유 FPSO. 출범 후 5개월 만에 150,000 bopd 피크 달성."
+      }
+    },
+    {
+      "name": "FPSO Cidade de Caraguatatuba MV27",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "TotalEnergies",
+      "field": "Lapa (Carioca / BM-S-9A)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 2126,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": 1.6,
+      "contract_start": "2016-12",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2016,
+      "notes": "Santos Basin pre-salt Lapa(Carioca) 유전. MODEC 5번째 pre-salt FPSO. TotalEnergies 운영. 2016-12-19 첫 생산.",
+      "detail": {
+        "gas_capacity_mmscfd": 177,
+        "mooring": "Spread Mooring",
+        "partners": [
+          "TotalEnergies 40% op",
+          "Petrobras 35%",
+          "Shell 25%"
+        ],
+        "notable": "Santos Basin Lapa 유전. MODEC JV 소유. 저중력 pre-salt 원유. 177 MMscfd 가스 처리."
+      }
+    },
+    {
+      "name": "FPSO Cidade de Campos dos Goytacazes MV29",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Tartaruga Verde e Mestiça (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 765,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": null,
+      "notes": "Campos Basin, 765m. MODEC EPCI/Lease/O&M. Petrobras 운영.",
+      "detail": {
+        "mooring": "Spread Mooring",
+        "notable": "Campos Basin 중수심(765m) FPSO. 150k bopd 처리 용량."
+      }
+    },
+    {
+      "name": "FPSO Bacalhau",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Equinor",
+      "field": "Bacalhau (Carcará / BM-S-8)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 2050,
+      "oil_capacity_kboed": 220,
+      "storage_mmbbl": 2.0,
+      "contract_start": "2025-10",
+      "contract_end": "2053",
+      "status": "On Production",
+      "year_delivered": 2025,
+      "notes": "MODEC 차세대 M350 Hull 첫 적용. Equinor 최대 해외 유전. 2025-10-15 첫 생산. 2053년까지 운영 예정. 운영 초기: MODEC → 이후 Equinor 직접 운영.",
+      "detail": {
+        "hull_type": "MODEC M350 Hull (새 세대 신조 이중선체, 370m×64m)",
+        "mooring": "Spread Mooring (SOFEC)",
+        "partners": [
+          "Equinor 40% op",
+          "Petrobras 35%",
+          "ExxonMobil 25%"
+        ],
+        "notable": "MODEC 브라질 17번째 FPSO 납품. M350 Hull 첫 사례. 10억 boe 이상 추정 매장량. 185km offshore São Paulo."
+      }
+    },
+    {
+      "name": "FPSO Cidade de Niterói MV18",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Espadarte Norte / Opportunity (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1400,
+      "oil_capacity_kboed": null,
+      "storage_mmbbl": null,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2009,
+      "notes": "Campos Basin, 1,400m. MODEC EPCI/Lease/O&M. Petrobras Opportunity 필드. 2008-2009년 투입.",
+      "detail": {
+        "mooring": "Spread Mooring",
+        "notable": "MODEC MV18 계열 Campos Basin FPSO. Petrobras 장기 charter."
+      }
+    },
+    {
+      "name": "FPSO Cidade do Rio de Janeiro MV14",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Petrobras",
+      "field": "Espadarte Sul (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1350,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": 1.6,
+      "contract_start": "2007-01",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2007,
+      "notes": "Campos 해안 100km 해상. MODEC EPCI/Lease/O&M. 2007-01-09 첫 생산. 100k bopd, 87MMscfd 가스.",
+      "detail": {
+        "gas_capacity_mmscfd": 87,
+        "mooring": "Spread Mooring",
+        "notable": "MODEC MV14 Campos Basin FPSO. Espadarte Sul 유전. 2007년 운영 개시."
+      }
+    },
+    {
+      "name": "FPSO Prof. John Evans Atta Mills",
+      "type": "FPSO",
+      "owner": "MODEC",
+      "client": "Tullow Oil",
+      "field": "TEN (Tweneboa-Enyenra-Ntomme)",
+      "region": "West Africa",
+      "country": "Ghana",
+      "water_depth_m": 1500,
+      "oil_capacity_kboed": 80,
+      "storage_mmbbl": 1.7,
+      "contract_start": "2016-08",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2016,
+      "notes": "TEN 유전 FPSO. MODEC EPCI/Lease/O&M. 전 가나 대통령 이름. VLCC Centennial J 개조. Tullow Ghana Ltd 10+10년 charter. 2016-08-17 첫 생산.",
+      "detail": {
+        "hull_type": "VLCC Centennial J 개조 (Sembcorp Marine Singapore)",
+        "gas_capacity_mmscfd": 180,
+        "mooring": "External Turret Mooring (SOFEC)",
+        "partners": [
+          "Tullow Oil 47.18% op",
+          "AfrOil 21.14%",
+          "CNOOC 11%",
+          "PetroSA 12.5%",
+          "GNPC 5%"
+        ],
+        "notable": "340m 전장. Tweneboa-Enyenra-Ntomme 통합 생산. MODEC 차터 서비스."
+      }
+    },
+    {
+      "name": "P-50 (Albacora Leste)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Albacora Leste (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1240,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": null,
+      "contract_start": "2006",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2006,
+      "notes": "Campos Basin 중수심 FPSO. Petrobras 소유 운영. VLCC 개조. 16개 해저 생산정 연결.",
+      "detail": {
+        "mooring": "Spread Mooring",
+        "notable": "Campos Basin Albacora Leste 유전. Petrobras 자체 소유 및 운영."
+      }
+    },
+    {
+      "name": "P-58 (Parque das Baleias)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Parque das Baleias (Baleia Franca, Cachalote, Jubarte)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1400,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": null,
+      "contract_start": "2014-03",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2014,
+      "notes": "Espírito Santo 해안 85km, Campos Basin. Petrobras 소유. 2014-03-17 첫 생산. pre-salt + post-salt 복합 유정(8+7) 연결.",
+      "detail": {
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Spread Mooring",
+        "notable": "Parque das Baleias North 프로젝트 핵심 FPSO. 180k bopd. pre/post-salt 복합 생산."
+      }
+    },
+    {
+      "name": "P-62 (Roncador IV)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Roncador (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1600,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": null,
+      "contract_start": "2014-05",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2014,
+      "notes": "Campos Basin Roncador 유전 4번째 플랫폼. Petrobras 소유. 2014-05 첫 생산. 14개 생산정 + 8개 주입정 연결.",
+      "detail": {
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Spread Mooring",
+        "notable": "Roncador IV 개발. 180k bopd, 6 Mm³/day 가스."
+      }
+    },
+    {
+      "name": "P-63 (Papa-Terra)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Papa-Terra (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1200,
+      "oil_capacity_kboed": 140,
+      "storage_mmbbl": null,
+      "contract_start": "2013-11",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2013,
+      "notes": "Campos Basin Papa-Terra 유전. Petrobras 소유. 전 BW Nisa VLCC 개조(323k DWT). 2013-11 첫 생산. P-61 TLWP와 연동.",
+      "detail": {
+        "hull_type": "VLCC BW Nisa 개조 (323,000 DWT)",
+        "mooring": "Spread Mooring",
+        "notable": "Papa-Terra 유전. 35 MMscfd 가스, 340k bpd 주입. P-61 TLWP와 통합 개발."
+      }
     }
   ],
   "orderbook": [
