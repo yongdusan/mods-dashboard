@@ -50,13 +50,13 @@
       "type": "FPSO Lessor/EPC",
       "hq": "Japan",
       "ticker": "6269.T",
-      "fleet_owned": 20,
-      "on_lease": 19,
+      "fleet_owned": 15,
+      "on_lease": 15,
       "backlog_busd": 14.8,
       "source": "MODEC FY 2025 Annual Results",
       "as_of": "2025-12-31",
       "source_url": "https://www.modec.com/ir/",
-      "notes": "Japan's largest FPSO contractor; Brazil, West Africa & SE Asia focus.",
+      "notes": "일본 최대 FPSO 사업자. 브라질 13척(MV계열+Bacalhau) + 가나 2척(MV21, Prof. Atta Mills) = 15척 L&O. MV20 Enauta 매각(2023-12), Fluminense 해체(2024). Gato do Mato 신조 1척(orderbook).",
       "newbuilds_owned": 1,
       "newbuilds_operated": 0
     },
@@ -1878,7 +1878,7 @@
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
-      "field": "Tartaruga Verde e Mestiça (Campos Basin)",
+      "field": null,
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 765,
@@ -1888,7 +1888,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": null,
-      "notes": "Campos Basin, 765m. MODEC EPCI/Lease/O&M. Petrobras 운영.",
+      "notes": "Campos Basin, 765m. MODEC EPCI/Lease/O&M. Petrobras. 150k bopd.",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "Campos Basin 중수심(765m) FPSO. 150k bopd 처리 용량."
@@ -1926,7 +1926,7 @@
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
-      "field": "Espadarte Norte / Opportunity (Campos Basin)",
+      "field": "Marlim Leste (Campos Basin)",
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 1400,
@@ -1936,7 +1936,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2009,
-      "notes": "Campos Basin, 1,400m. MODEC EPCI/Lease/O&M. Petrobras Opportunity 필드. 2008-2009년 투입.",
+      "notes": "Campos Basin Marlim Leste. MODEC EPCI/Lease/O&M. Petrobras. 2009년 첫 생산. 1,400m.",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "MODEC MV18 계열 Campos Basin FPSO. Petrobras 장기 charter."
@@ -2079,6 +2079,29 @@
         "hull_type": "VLCC BW Nisa 개조 (323,000 DWT)",
         "mooring": "Spread Mooring",
         "notable": "Papa-Terra 유전. 35 MMscfd 가스, 340k bpd 주입. P-61 TLWP와 통합 개발."
+      }
+    },
+    {
+      "name": "P-54 (Roncador II)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Roncador (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1400,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": 2.0,
+      "contract_start": "2007-12",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2007,
+      "notes": "Campos Basin Roncador 유전 2번째 모듈. Petrobras 소유. 구 Settebello 선박 개조(Jurong Shipyard). 2007-12 첫 생산. 66,224톤.",
+      "detail": {
+        "hull_type": "VLCC Settebello 개조 (Jurong Shipyard, $628M)",
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Spread Mooring",
+        "notable": "Roncador Mod.2. 180k bopd + 6 Mm³/day 가스. Petrobras가 'P-54 복제' 계획 발표(P-62 모델로 활용)."
       }
     }
   ],
