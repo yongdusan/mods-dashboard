@@ -1,8 +1,36 @@
 {
-  "updated": "2026-05-29",
+  "updated": "2026-06-01",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 44,
+      "date": "2026-05-30",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Kretinsky Eyes Increased Stake in TotalEnergies",
+      "summary": "체코 억만장자 Daniel Kretinsky가 TotalEnergies의 지분 확대 의향을 표명했습니다. 이는 대형 석유회사의 지배구조 변화를 반영하는 주목할 만한 M&A 움직임입니다.",
+      "companies": [
+        "TotalEnergies",
+        "Daniel Kretinsky"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/kretinsky_sees_potential_to_boost_totalenergies_stake-30-may-2026-183811-article/?rss=true"
+    },
+    {
+      "id": 43,
+      "date": "2026-05-27",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Noble Appoints Halliburton CEO as Director",
+      "summary": "Noble Corporation은 Halliburton의 회장인 Jeff Miller를 이사회에 임명했습니다. 이는 드릴링 업계의 주요 인사 변동으로, 경영 전략 강화를 시사합니다.",
+      "companies": [
+        "Noble Corporation",
+        "Halliburton"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/noble_appoints_halliburton_ceo_as_director-27-may-2026-183790-article/?rss=true"
+    },
     {
       "id": 38,
       "date": "2026-05-26",
