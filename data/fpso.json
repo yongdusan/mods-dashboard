@@ -125,13 +125,13 @@
       "type": "FPSO Self-Operator",
       "hq": "Brazil",
       "ticker": "PBR",
-      "fleet_owned": 26,
-      "on_lease": 26,
+      "fleet_owned": 21,
+      "on_lease": 21,
       "backlog_busd": null,
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "World's largest FPSO self-operator; Brazil pre-salt core.",
+      "notes": "브라질 국영 석유사. 자체 소유 FPSO 21척. Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중.",
       "newbuilds_owned": 1,
       "newbuilds_operated": 5
     },
@@ -1093,10 +1093,10 @@
       "oil_capacity_kboed": 180,
       "storage_mmbbl": 2.0,
       "year_delivered": 2026,
-      "contract_start": null,
+      "contract_start": "2026-05",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Newbuild; first oil May 1, 2026 (ahead of schedule); brings Búzios installed capacity to ~1.33 MMbopd.",
+      "notes": "Búzios 8. Petrobras 소유. 2026-05-01 예정보다 조기 생산 시작. 2025-11 한국 조선소 출항. 180k bopd, 7.2 Mm³/day 가스.",
       "detail": {
         "hull_type": "Newbuild — SAME Netherlands BV JV (Saipem 57% + Hanwha Ocean/DSME 43%); 4개국 모듈 제작",
         "mooring": "Spread mooring",
@@ -1878,7 +1878,7 @@
       "type": "FPSO",
       "owner": "MODEC",
       "client": "Petrobras",
-      "field": null,
+      "field": "Espadarte (Module III, Campos Basin)",
       "region": "South America",
       "country": "Brazil",
       "water_depth_m": 765,
@@ -1888,7 +1888,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": null,
-      "notes": "Campos Basin, 765m. MODEC EPCI/Lease/O&M. Petrobras. 150k bopd.",
+      "notes": "Campos Basin, Espadarte Module III, 765m. MODEC EPCI/Lease/O&M. Petrobras 운영. 150k bopd. 2026-04 Petrobras가 잔여 50% 지분 인수 계약.",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "Campos Basin 중수심(765m) FPSO. 150k bopd 처리 용량."
@@ -2102,6 +2102,94 @@
         "gas_capacity_mmscfd": 212,
         "mooring": "Spread Mooring",
         "notable": "Roncador Mod.2. 180k bopd + 6 Mm³/day 가스. Petrobras가 'P-54 복제' 계획 발표(P-62 모델로 활용)."
+      }
+    },
+    {
+      "name": "P-31 (Albacora)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Albacora (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 330,
+      "oil_capacity_kboed": null,
+      "storage_mmbbl": 1.0,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 1997,
+      "notes": "Campos Basin Albacora 유전. Petrobras 소유. Internal Permanent Turret 계류. P-25(반잠수) 와 함께 운영. P-88 신조로 교체 예정(2030년 이후).",
+      "detail": {
+        "mooring": "Internal Permanent Turret (SOFEC)",
+        "notable": "Albacora 유전 FPSO. P-25 반잠수식과 함께 Albacora 생산. P-88 신조 FPSO로 교체 예정."
+      }
+    },
+    {
+      "name": "P-43 (Barracuda)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Barracuda (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 785,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 2.0,
+      "contract_start": "2004-12",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2004,
+      "notes": "Campos Basin Barracuda 유전, Macaé 동쪽 160km. Petrobras 소유. 구 Stena Continent 개조(Jurong Shipyard). 2004-12 첫 생산. Caratinga(P-48)와 통합 운영.",
+      "detail": {
+        "hull_type": "VLCC Stena Continent 개조 (Jurong Shipyard, Singapore)",
+        "mooring": "Internal Turret Mooring",
+        "notable": "Barracuda-Caratinga 복합 개발. 150k bopd. P-48(Caratinga)과 부분 용량 공유."
+      }
+    },
+    {
+      "name": "P-48 (Caratinga)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Caratinga (Campos Basin)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1035,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 2.0,
+      "contract_start": "2005-02",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2005,
+      "notes": "Campos Basin Caratinga 유전, 1,040m 수심. Petrobras 소유. 구 Stena Concordia 개조(BrasFELS Angra dos Reis). 2005-02 첫 생산. 150k bopd, 6 Mm³/day 가스.",
+      "detail": {
+        "hull_type": "VLCC Stena Concordia 개조 (BrasFELS, Angra dos Reis, Brazil)",
+        "mooring": "Internal Turret Mooring",
+        "notable": "Barracuda-Caratinga 복합 개발 2호. 1,040m 수심. Barracuda(P-43)와 용량 공유."
+      }
+    },
+    {
+      "name": "P-71 (Itapu)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Itapu (Santos Basin pre-salt)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 2010,
+      "oil_capacity_kboed": 150,
+      "storage_mmbbl": 1.6,
+      "contract_start": "2022-12",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2022,
+      "notes": "Santos Basin pre-salt Itapu 유전, Rio de Janeiro 200km 해상. Petrobras 100% 소유 및 운영(Transfer of Rights + PSC). 2022-12-21 첫 생산. Seatrium BrasFELS 건조.",
+      "detail": {
+        "hull_type": "New build (Seatrium BrasFELS, Angra dos Reis, 316m×54m)",
+        "gas_capacity_mmscfd": 212,
+        "mooring": "Spread Mooring",
+        "notable": "Itapu 유전 단독 FPSO. Transfer of Rights 및 PSC 2개 체제 하에 운영. 150k bopd 피크 달성(2023-11)."
       }
     }
   ],
