@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-31",
+  "updated": "2026-06-01",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -95,13 +95,13 @@
       "type": "FPSO EPC/Operator",
       "hq": "Italy",
       "ticker": "SPM.MI",
-      "fleet_owned": 6,
-      "on_lease": 5,
+      "fleet_owned": 1,
+      "on_lease": 1,
       "backlog_busd": 7.4,
-      "source": "Saipem FY 2025 Full Year Results",
+      "source": "Saipem FY 2025 Full Year Results + fleet page verification",
       "as_of": "2025-12-31",
       "source_url": "https://www.saipem.com/en/investors/financial-results",
-      "notes": "Italian EPC contractor; Gato do Mato EPC contract terminated Nov 2022.",
+      "notes": "이탈리아 FPSO EPC/운영사. FPSO Gimboa (Angola/SONANGOL) 1척 소유. Città de Vitória → BW Energy 매각(2023-08). Baleine FPSO는 ENI 소유. FY2025 보고서에 FPSO 보유 별도 미기재.",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0
     },
@@ -187,7 +187,7 @@
     {
       "name": "Prosperity",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "ExxonMobil",
       "client": "ExxonMobil",
       "field": "Payara (Stabroek Block)",
       "region": "South America",
@@ -199,7 +199,7 @@
       "contract_end": "2043-12",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO.",
+      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF2 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "SWS (CN) + Keppel FELS (SG)",
@@ -211,7 +211,7 @@
           "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
-        "financing": "20년 BFOO 장기 임대",
+        "financing": "ExxonMobil JV 소유 (2024-Q4 매입); SBM 20년 O&M 계약 유지",
         "rig_demand": "드릴십 1기 — Payara 개발정 연간 유지보수 시추 3~5공",
         "notable": "SBM Fast4Ward MPF2 (2호) 선형. Stabroek 3번째 FPSO. Payara 220,000 bopd 피크 생산 설계."
       }
@@ -251,7 +251,7 @@
     {
       "name": "Liza Destiny",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "ExxonMobil",
       "client": "ExxonMobil",
       "field": "Liza Phase 1 (Stabroek Block)",
       "region": "South America",
@@ -263,7 +263,7 @@
       "contract_end": "2039-12",
       "status": "On Production",
       "year_delivered": 2019,
-      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비.",
+      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO (Keppel FELS Singapore)",
         "yard": "Keppel FELS (SG) — VLCC conversion",
@@ -275,7 +275,7 @@
           "Chevron 30% (구 Hess, 2025-07 인수)",
           "CNOOC 25%"
         ],
-        "financing": "20년 BFOO 장기 임대",
+        "financing": "ExxonMobil JV 소유 (2024-Q4 매입); SBM 20년 O&M 계약 유지",
         "rig_demand": "드릴십 1기 — Liza Phase 1 연간 유지보수 시추 2~3공",
         "notable": "가이아나 최초 상업 생산 FPSO. Stabroek 1번째 FPSO. VLCC 개조 선형으로 건조기간 단축."
       }
@@ -1496,6 +1496,134 @@
         "partners": [
           "ENAUTA 100% op"
         ]
+      }
+    },
+    {
+      "name": "FPSO N'Goma",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "ENI Angola",
+      "field": "Block 15/06 (West Hub)",
+      "region": "West Africa",
+      "country": "Angola",
+      "water_depth_m": 1000,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": null,
+      "contract_start": "2014-11",
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2014,
+      "notes": "SBM 80% 소유 (2024-06 Sonangol EP 지분 약 $40M 인수). ENI Angola Block 15/06 West Hub 운영.",
+      "detail": {
+        "gas_capacity_mmscfd": 115,
+        "mooring": "Turret Mooring",
+        "partners": [
+          "ENI Angola 36.36% op",
+          "Sonangol P&P 36.36%",
+          "SSI Fifteen 13.33%",
+          "Falcon Oil Holding Angola 13.95%"
+        ],
+        "notable": "SBM Offshore 80%, Sonangol 20% JV로 운영. 2024년 6월 SBM이 Sonangol 잔여 지분 인수. 12년 L&O 계약(2014 기준)."
+      }
+    },
+    {
+      "name": "FPSO Saxi Batuque",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "ExxonMobil",
+      "field": "Saxi-Batuque (Block 15)",
+      "region": "West Africa",
+      "country": "Angola",
+      "water_depth_m": 800,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": 1.6,
+      "contract_start": "2008-08",
+      "contract_end": "2032",
+      "status": "On Production",
+      "year_delivered": 2008,
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). VLCC Litiopa를 Keppel Shipyard에서 개조. 2025년 12월 ExxonMobil과 2032년까지 계약 연장.",
+      "detail": {
+        "hull_type": "VLCC 'Litiopa' 개조 (Keppel Shipyard, 2006)",
+        "mooring": "External Turret Mooring",
+        "partners": [
+          "ExxonMobil 56.33% op",
+          "bp 26.67%",
+          "Sonangol P&P 17%"
+        ],
+        "notable": "Block 15 Kizomba C 개발. SBM Offshore 100% 소유. 2025-12 계약 2032년 연장 확정."
+      }
+    },
+    {
+      "name": "FPSO Mondo",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "ExxonMobil",
+      "field": "Mondo (Block 15)",
+      "region": "West Africa",
+      "country": "Angola",
+      "water_depth_m": 728,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": null,
+      "contract_start": "2008-01",
+      "contract_end": "2032",
+      "status": "On Production",
+      "year_delivered": 2008,
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). Block 15 Kizomba C. 2025년 12월 ExxonMobil과 2032년까지 계약 연장.",
+      "detail": {
+        "mooring": "Turret Mooring",
+        "partners": [
+          "ExxonMobil 56.33% op",
+          "bp 26.67%",
+          "Sonangol P&P 17%"
+        ],
+        "notable": "Block 15 Kizomba C. SBM 100% 소유. 2025-12 계약 2032년 연장 확정. Saxi Batuque와 동일 블록."
+      }
+    },
+    {
+      "name": "FPSO Espírito Santo",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "Shell",
+      "field": "Parque das Conchas (BC-10)",
+      "region": "South America",
+      "country": "Brazil",
+      "water_depth_m": 1780,
+      "oil_capacity_kboed": 100,
+      "storage_mmbbl": null,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": 2009,
+      "notes": "울트라 딥워터 중질유 FPSO. 2024-09 MISC Berhad와 지분 스왑 (SBM: Kikeh 49% 양도 / Espírito Santo 49% 인수) → SBM 단독 소유.",
+      "detail": {
+        "mooring": "Turret Mooring",
+        "partners": [
+          "Shell 50% op",
+          "Petrobras 35%",
+          "ONGC 15%"
+        ],
+        "notable": "Parque das Conchas(BC-10) 중질유(16~42° API) 생산. 1,780m 수심. 2024-09 SBM-MISC 지분 스왑으로 SBM 단독 소유 전환."
+      }
+    },
+    {
+      "name": "FPSO Gimboa",
+      "type": "FPSO",
+      "owner": "Saipem",
+      "client": "SONANGOL",
+      "field": "Gimboa",
+      "region": "West Africa",
+      "country": "Angola",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 60,
+      "storage_mmbbl": null,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "On Production",
+      "year_delivered": null,
+      "notes": "Saipem 소유 FPSO. SONANGOL 운영 계약. 36.8 MMscfd 가스 처리 능력.",
+      "detail": {
+        "gas_capacity_mmscfd": 36.8,
+        "notable": "Saipem 자체 소유 FPSO. SONANGOL과 L&O 계약. 앙골라 해상 Gimboa 유전."
       }
     }
   ],
