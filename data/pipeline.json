@@ -164,7 +164,7 @@
       "source": "Petrobras Press Release (Jan 2026)",
       "source_url": null,
       "confidence": "high",
-      "notes": "P-78. 8th FPSO for Búzios field (6번째 Petrobras 소유 Búzios FPSO). Pre-salt Santos Basin. First oil Dec 31, 2025. 180k bbl/d. Petrobras 100% (op)."
+      "notes": "P-78. 6th Búzios 개발 단계 (FPSO Búzios 6번째) (6번째 Petrobras 소유 Búzios FPSO). Pre-salt Santos Basin. First oil Dec 31, 2025. 180k bbl/d. Petrobras 100% (op)."
     },
     {
       "id": "petrobras-buzios-7",
@@ -260,7 +260,7 @@
       "source": "Petrobras 2025–2029 Business Plan",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Pre-salt Santos Basin. FPSO P-83; Keppel hull contract. First oil targeted 2027–2028. CAPEX indicative (~$3–4B). Petrobras 100% (op)."
+      "notes": "Pre-salt Santos Basin. FPSO P-83 (Búzios 11번째 FPSO). Keppel O&M 계약 $2.8B; hull CIMC Raffles(CN), 통합 Keppel(SG), 일부 Brazil. 인도 2027-H1 목표. 225,000 bopd, 12 Mm³/day 가스, 1.6 Mbbl 저장. First oil targeted 2027–2028. Petrobras 100% (op)."
     },
     {
       "id": "petrobras-atapu-2",
@@ -356,7 +356,7 @@
       "source": "TotalEnergies Q1 2025 Results (Apr 2025)",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 40% (op), QatarEnergy 30%, Impact Oil & Gas 20%, NAMCOR 10%. FPSO concept; requires UDW drillship for appraisal/development. FID targeting late 2026; first production 2029–2030. CAPEX $16B+ indicative."
+      "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 45.25% (op), QatarEnergy 35.25%, Impact Oil & Gas 9.5%, NAMCOR 10% (Impact 지분 일부 매각으로 TE/QE 증가). FPSO concept 160,000 bbl/d; FID target Q4 2026. CAPEX $16B+ indicative. First production 2029–2030."
     },
     {
       "id": "shell-graff",
@@ -692,7 +692,7 @@
       "source": "Saudi Aramco contract awards 2024–2025",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Arabian Gulf offshore. 600k bbl/d capacity increment from new central processing platform. Four major EPCI packages awarded (McDermott, Larsen & Toubro among contractors). Saudi Aramco 100%. First production revised to 2027 following 2023 production-ceiling rollback. CAPEX ~$5B based on contract disclosures; total project scope may exceed."
+      "notes": "Arabian Gulf offshore. Central processing facility 600,000 bpd. 총 Zuluf 생산 용량 1.4M bpd으로 확장(현 800k bpd+). Four major EPCI packages: McDermott, L&T/Subsea7, NPCC. CAPEX ~$5B (계약 규모 기준). 2027 완공 목표. Saudi Aramco 100%."
     },
     {
       "id": "qatarenergy-nfe",
