@@ -388,7 +388,7 @@
       "source": "Shell Global Press Release (Dec 2024)",
       "source_url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2024/shell-invests-in-bonga-north-deep-water-project-nigeria.html",
       "confidence": "high",
-      "notes": "Offshore Nigeria, OML 118 (~1,000m WD). FID taken December 2024. Subsea tie-back to existing Bonga Main FPSO. Shell 55% (op), ExxonMobil 20%, ENI (Agip) 12.5%, TotalEnergies 12.5% at FID; Shell subsequently acquired TotalEnergies' 12.5% stake (2025). Peak ~110k bbl/d."
+      "notes": "Offshore Nigeria, OML 118 (~1,000m WD). FID taken December 2024. Subsea tie-back to existing Bonga Main FPSO. FID 시점: Shell 55% (op), ExxonMobil 20%, ENI (Agip) 12.5%, TotalEnergies 12.5%. TotalEnergies 완전 매각(2025-12, $510M): Shell 10% 인수(ENI 2.5% pre-emption 행사). 현재: Shell 65% (op), ENI 15%, ExxonMobil 20%. Peak ~110k bbl/d."
     },
     {
       "id": "shell-jackdaw",
@@ -468,7 +468,7 @@
       "source": "ADNOC project announcement 2023",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Offshore Abu Dhabi sour gas. ADNOC 55% (op), ENI, OMV, Wintershall Dea, Lukoil. ~1.5 Bcf/d."
+      "notes": "Offshore Abu Dhabi sour gas megaproject. ~1.5 Bcf/d. Partner 변경 이력: Wintershall Dea→PTTEP(Jun 2024), Eni 25%→10% (ADNOC 55%→70% Apr 2024), OMV→Lukoil(2023)→ADNOC(Nov 2025 sanctions). 현재 파트너: ADNOC ~80% (op), ENI 10%, PTTEP 10%."
     },
     {
       "id": "saudi-aramco-marjan",
@@ -524,15 +524,15 @@
       "project": "Kasawari",
       "region": "Asia Pacific",
       "asset_type": "Deepwater Gas",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 3.0,
       "fid_date": "2021",
-      "first_production": "2025",
+      "first_production": "2024",
       "verified": "2026-05-14",
-      "source": "PETRONAS Annual Report 2024",
+      "source": "PETRONAS Press Release (Aug 2024)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Offshore Sarawak, Malaysia. Largest offshore gas field in Malaysia. ~900 MMscfd. PETRONAS 100%."
+      "confidence": "high",
+      "notes": "Offshore Sarawak, Malaysia, Block SK316 (~200km offshore). Largest offshore gas field in Malaysia; ~10 TCF resource. First gas August 2024 at initial 200 MMscfd; nameplate ~545 MMscfd. PETRONAS Carigali 90% (op), Exploration and Production Malaysia Venture 10%."
     },
     {
       "id": "shell-crux",
@@ -564,7 +564,7 @@
       "source": "TotalEnergies 2024 Investor Day",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Papua New Guinea. TotalEnergies 40.1% (op), ExxonMobil 37.1%, Santos 22.8%. ~5.6 Mtpa LNG. FID targeted 2025/2026."
+      "notes": "Papua New Guinea. TotalEnergies 37.55% (op), ExxonMobil 37.04%, Santos 22.83%, JX Nippon 2.58%. ~5.6 Mtpa LNG. FID target mid-2026 (delayed from 2025; cost/contract structure 논의 중)."
     },
     {
       "id": "exxonmobil-png-expansion",
@@ -676,7 +676,7 @@
       "source": "Equinor Press Release (Mar 2025)",
       "source_url": null,
       "confidence": "high",
-      "notes": "Norwegian Barents Sea (~380m WD). First oil March 31, 2025; plateau ~220k bopd reached June 2025. 450–650 MMbbl recoverable. FPSO Johan Castberg. Equinor ~50% (op), Vår Energi ~35%, Petoro ~15%. Isflak tieback FID taken Dec 2025 (~14–24 MMbbl, startup Q4 2028)."
+      "notes": "Norwegian Barents Sea (~380m WD). First oil March 31, 2025; plateau ~220k bopd reached June 2025. 450–650 MMbbl recoverable. FPSO Johan Castberg. Equinor 46.3% (op), Vår Energi 30%, Petoro 23.7%. Isflak tieback FID taken Dec 2025 (~14–24 MMbbl, startup Q4 2028)."
     },
     {
       "id": "saudi-aramco-zuluf",
@@ -708,7 +708,7 @@
       "source": "QatarEnergy LNG Announcement (May 2025)",
       "source_url": null,
       "confidence": "high",
-      "notes": "North Field, Qatar (world's largest single non-associated gas field). 4 LNG trains × 8 Mtpa = 32 Mtpa increment. First train commissioning mid-2026; full 4-train ramp by 2027. Raises Qatar LNG capacity 77 → 126 Mtpa combined with NFS. Partners: QatarEnergy 72.5%, TotalEnergies 6.25%, Shell 6.25%, ExxonMobil 6.25%, ConocoPhillips 3.125%, Eni 3.125%, Sinopec 1.25%, CNPC 1.25%."
+      "notes": "North Field, Qatar (world's largest single non-associated gas field). 4 LNG trains × 8 Mtpa = 32 Mtpa increment. First train commissioning mid-2026; full 4-train completion mid-2028 (이란 분쟁으로 공사 중단 2026-02~05; 2027→2028로 연기). Raises Qatar LNG capacity 77 → 126 Mtpa combined with NFS. Partners: QatarEnergy 72.5%, TotalEnergies 6.25%, Shell 6.25%, ExxonMobil 6.25%, ConocoPhillips 3.125%, Eni 3.125%, Sinopec 1.25%, CNPC 1.25%."
     },
     {
       "id": "qatarenergy-nfs",
