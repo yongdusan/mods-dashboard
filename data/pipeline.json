@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29",
+  "updated": "2026-06-01",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
@@ -100,7 +100,7 @@
       "source": "ExxonMobil Press Release (Aug 2025)",
       "source_url": "https://corporate.exxonmobil.com/news/news-releases/2025/0808_exxonmobil-guyana-begins-production-at-fourth-offshore-guyana-project",
       "confidence": "high",
-      "notes": "Offshore Guyana (Stabroek Block). One Guyana FPSO; ~250k bbl/d peak. First oil August 8, 2025 — 4 months ahead of schedule. ExxonMobil 45% (op), Hess 30%, CNOOC 25%. Brings total Stabroek capacity to ~900k bopd."
+      "notes": "Offshore Guyana (Stabroek Block). One Guyana FPSO; ~250k bbl/d peak. First oil August 8, 2025 — 4 months ahead of schedule. ExxonMobil 45% (op), Chevron 30% (ex-Hess, 2025-07 인수), CNOOC 25%. Brings total Stabroek capacity to ~900k bopd."
     },
     {
       "id": "exxonmobil-hammerhead",
@@ -142,13 +142,13 @@
       "asset_type": "Deepwater Oil",
       "phase": "Execution",
       "capex_busd": 10.0,
-      "fid_date": "2022",
+      "fid_date": "2023-04",
       "first_production": "2026",
       "verified": "2026-05-14",
       "source": "ExxonMobil 2024 Investor Day",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO development; ~250k bbl/d. First oil targeted 2026. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%. CAPEX indicative (~$10B based on peer project comparison)."
+      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO development; ~250k bbl/d. FID April 27, 2023. First oil targeted 2026. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%. CAPEX indicative (~$10B based on peer project comparison)."
     },
     {
       "id": "petrobras-buzios-6",
@@ -156,15 +156,15 @@
       "project": "Búzios Phase 6",
       "region": "Brazil",
       "asset_type": "Deepwater Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 3.5,
       "fid_date": "2023",
-      "first_production": "2026",
+      "first_production": "2025",
       "verified": "2026-05-14",
-      "source": "Petrobras 2025–2029 Business Plan",
+      "source": "Petrobras Press Release (Jan 2026)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "FPSO Almirante Tamandaré (P-78). Pre-salt Santos Basin. First oil targeted H1 2026."
+      "confidence": "high",
+      "notes": "P-78. 8th FPSO for Búzios field (6번째 Petrobras 소유 Búzios FPSO). Pre-salt Santos Basin. First oil Dec 31, 2025. 180k bbl/d. Petrobras 100% (op)."
     },
     {
       "id": "petrobras-buzios-7",
@@ -303,12 +303,12 @@
       "phase": "Execution",
       "capex_busd": 6.0,
       "fid_date": "2026-04",
-      "first_production": "2030",
+      "first_production": "2031",
       "verified": "2026-05-14",
       "source": "Petrobras FID Announcement (Apr 2026)",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Sergipe-Alagoas Basin. FID December 2025. SBM Offshore FPSO. Part of $12B two-FPSO SEAP development. First oil 2030. Petrobras 100% (op)."
+      "notes": "Sergipe-Alagoas Basin. FID April 14, 2026 (Module 1). FPSO P-81; SBM Offshore L&O 계약. Part of $12B two-FPSO SEAP development (P-81 + P-87). First oil 2031 (post-2030 Business Plan horizon). Petrobras 100% (op)."
     },
     {
       "id": "petrobras-seap-2",
@@ -318,13 +318,13 @@
       "asset_type": "Deepwater Oil",
       "phase": "Execution",
       "capex_busd": 6.0,
-      "fid_date": "2026-04",
-      "first_production": "2031",
+      "fid_date": "2025-12",
+      "first_production": "2030",
       "verified": "2026-05-14",
       "source": "Petrobras SEAP FID Announcement (Apr 2026)",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Sergipe-Alagoas Basin. FID April 2026. SBM Offshore FPSO. Second unit of SEAP development. First oil 2031. Petrobras 100% (op)."
+      "notes": "Sergipe-Alagoas Basin. FID December 30, 2025 (Module 2 — SEAP II가 SEAP I보다 먼저 FID). FPSO P-87; SBM Offshore L&O 계약. First oil 2030. Petrobras 100% (op)."
     },
     {
       "id": "bp-tortue-flng",
@@ -423,8 +423,8 @@
       "notes": "West of Shetland. bp 45.1% (op). Concept selection stage; long lead-time development."
     },
     {
-      "id": "totalenergies-wisting",
-      "company": "TotalEnergies",
+      "id": "equinor-wisting",
+      "company": "Equinor",
       "project": "Wisting",
       "region": "North Sea/Norway",
       "asset_type": "Deepwater Oil (HE)",
@@ -436,7 +436,7 @@
       "source": "Equinor / TotalEnergies 2024 Investor Day",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Norwegian Barents Sea, northernmost NCS oil discovery (~300m WD). Equinor 35% (op per Equinor sources), TotalEnergies 35%, Petoro 20%, INPEX Idemitsu 10%. CAPEX ~NOK 104B (~$10.2B USD). Arctic-rated power-from-shore FPSO concept. FID target end-2026 (repeatedly deferred from 2022); first production 2031. Early-works agreement with SLB signed May 2024."
+      "notes": "Norwegian Barents Sea, northernmost NCS oil discovery (~300m WD). Equinor 35% (op), TotalEnergies 35%, Petoro 20%, INPEX Idemitsu 10%. CAPEX ~NOK 104B (~$10.2B USD). Arctic-rated power-from-shore FPSO concept. FID target end-2026 (repeatedly deferred from 2022); first production 2031. Early-works agreement with SLB signed May 2024."
     },
     {
       "id": "shell-penguins",
@@ -596,7 +596,7 @@
       "source": "TotalEnergies / Mozambique President Restart Announcement (Jan 2026)",
       "source_url": "https://totalenergies.com/news/press-releases/mozambique-lng-announces-full-restart-all-its-activities-onshore-and-offshore",
       "confidence": "medium",
-      "notes": "Area 1, Cabo Delgado Province. FID 2019; force majeure declared April 2021 (security situation). Force majeure lifted November 2025; full construction restart January 2026 (~42% complete). CAPEX revised to ~$20.5B (+$4.5B cost overrun). First LNG targeted H1 2029. ~13 Mtpa at full build-out. TotalEnergies 26.5% (op); partners include ENI, ExxonMobil, CNPC, Mitsui, PTT, ONGC, Bharat."
+      "notes": "Area 1, Cabo Delgado Province. FID 2019; force majeure declared April 2021 (security situation). Force majeure lifted November 2025; full construction restart January 2026 (~42% complete). CAPEX revised to ~$20.5B (+$4.5B cost overrun). First LNG targeted H1 2029. ~13 Mtpa at full build-out. TotalEnergies 26.5% (op), Mitsui 20%, ENH (state) 15%, ONGC Videsh 10%, BPRL/Bharat 10%, Beas Rovuma (Oil India) 10%, PTTEP 8.5%."
     },
     {
       "id": "shell-gato-do-mato",
