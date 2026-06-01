@@ -68,7 +68,7 @@
       "source": "Chevron Q1 2025 Earnings (Apr 2025)",
       "source_url": null,
       "confidence": "high",
-      "notes": "Garden Banks area, ~2,000m WD. First oil achieved April 2025. Subsea tieback to Blind Faith semi-FPS (~75k bbl/d plateau). Chevron 60% (op), TotalEnergies 40%. CAPEX ~$1.6B (tieback, not FPSO)."
+      "notes": "Mississippi Canyon Block 607, ~2,000m WD, 120km off Louisiana coast. First oil achieved April 2025. Subsea tieback to Blind Faith semi-FPS (~75k bbl/d plateau). Chevron 60% (op), TotalEnergies 40%. CAPEX ~$1.6B (tieback, not FPSO)."
     },
     {
       "id": "bp-kaskida",
@@ -148,7 +148,7 @@
       "source": "ExxonMobil 2024 Investor Day",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO development; ~250k bbl/d. FID April 27, 2023. First oil targeted 2026. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%. CAPEX indicative (~$10B based on peer project comparison)."
+      "notes": "Offshore Guyana (Stabroek Block). 5th FPSO development; ~250k bbl/d. FPSO 이름: Errea Wittu. FID April 27, 2023. First oil targeted 2026. 2026-02 mooring pre-installation 완료. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%. CAPEX indicative (~$10B based on peer project comparison)."
     },
     {
       "id": "petrobras-buzios-6",
@@ -217,7 +217,7 @@
     {
       "id": "petrobras-buzios-10",
       "company": "Petrobras",
-      "project": "Búzios Phase 9 (P-81)",
+      "project": "Búzios Phase 9 (P-number TBD)",
       "region": "Brazil",
       "asset_type": "Deepwater Oil",
       "phase": "Execution",
@@ -227,8 +227,8 @@
       "verified": "2026-05-14",
       "source": "Petrobras 2025–2029 Business Plan",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Pre-salt Santos Basin. FPSO P-81; Seatrium hull contract. First oil targeted 2027. CAPEX indicative (~$3–4B). Petrobras 100% (op)."
+      "confidence": "low",
+      "notes": "Pre-salt Santos Basin. 9th Búzios FPSO slot. P-81은 2026-04 SEAP I(Sergipe)로 재지정됨 → Búzios Phase 9 P-번호 미확정. Petrobras 공식 확인 필요. 2027 목표는 변경 가능. Petrobras 100% (op)."
     },
     {
       "id": "petrobras-buzios-11",
@@ -372,7 +372,7 @@
       "source": "Shell Annual Report 2024",
       "source_url": null,
       "confidence": "low",
-      "notes": "Orange Basin, offshore Namibia, PEL 39 (~2,000–3,000m WD). Shell 45% (op), QatarEnergy 45%, NAMCOR 10%. Appraisal drilling ongoing; development concept and FID timeline to be determined."
+      "notes": "Orange Basin, offshore Namibia, PEL 39 (~2,000–3,000m WD). Shell 45% (op), QatarEnergy 45%, NAMCOR 10%. Jan 2025: Shell $400M write-down 발표 — 일부 유정 \"상업성 없음(not commercially viable)\" 판단. 2025년 시추 캠페인 일시 중단. 개발 컨셉 및 FID 타임라인 불확실. 잠재 FID 2026, first oil 2030+ (단, 상업성 재검토 완료 후)."
     },
     {
       "id": "shell-bonga-north",
@@ -404,7 +404,7 @@
       "source": "Shell Annual Report 2024",
       "source_url": null,
       "confidence": "medium",
-      "notes": "UK North Sea, uHPHT gas condensate. Subsea tie-back to Shearwater hub; ~40k boepd. Shell 100% (op). Topside installed October 2025; first gas delayed to Q3–Q4 2026."
+      "notes": "UK North Sea, uHPHT gas condensate. Subsea tie-back to Shearwater hub; ~40k boepd. Shell 100% (op). Topside installed October 2025; first gas targeted Q3–Q4 2026. 2026-03 OPRED 추가 기술정보 요청(규제 리스크 잔존)."
     },
     {
       "id": "bp-clair-south",
@@ -476,15 +476,15 @@
       "project": "Marjan Increment",
       "region": "Middle East",
       "asset_type": "Shallow Offshore Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 17.0,
       "fid_date": "2020",
       "first_production": "2025",
       "verified": "2026-05-14",
-      "source": "Saudi Aramco Annual Report 2024",
+      "source": "Saudi Aramco Annual Report 2025; Zawya (Dec 2025)",
       "source_url": null,
-      "confidence": "medium",
-      "notes": "Arabian Gulf offshore. +300k bbl/d increment. Saudi Aramco 100%."
+      "confidence": "high",
+      "notes": "Arabian Gulf offshore. +300k bbl/d capacity increment. Marjan first production commenced December 2025 (동시에 Tanajib Gas Plant 가동). Saudi Aramco 100%."
     },
     {
       "id": "saudi-aramco-berri",
@@ -724,7 +724,7 @@
       "source": "QatarEnergy Announcement 2023",
       "source_url": null,
       "confidence": "medium",
-      "notes": "North Field, Qatar. 2 LNG trains × 8 Mtpa = 16 Mtpa increment. Completes Qatar's North Field expansion program. Partners: QatarEnergy majority, TotalEnergies, Shell. CAPEX ~$10B (EPC contract basis; all-in not publicly disclosed). First LNG 2027–2028."
+      "notes": "North Field, Qatar. 2 LNG trains × 8 Mtpa = 16 Mtpa increment. Completes Qatar North Field expansion. QatarEnergy 75% (op), TotalEnergies 9.375%, Shell 9.375%, ConocoPhillips 6.25%. CAPEX ~$10B. First LNG 2027–2028."
     },
     {
       "id": "chevron-aphrodite",
@@ -772,7 +772,7 @@
       "source": "Woodside FPU Arrival Update (Jan 2026)",
       "source_url": null,
       "confidence": "high",
-      "notes": "Offshore Western Australia (~900m WD). ~94% complete as of May 2026; FPU arrived Jan 2026. First LNG targeted Q4 2026. Pluto Train 2 ~5 Mtpa + up to 3 Mtpa through existing Train 1. Woodside 73.5% upstream (op), BHP 26.5% upstream; Woodside 51%, GIP 49% for Train 2. Revised total CAPEX ~$12.5B gross."
+      "notes": "Offshore Western Australia (~900m WD). ~96% complete as of Q1 2026 (Mar 2026); FPU arrived Jan 2026. First LNG targeted Q4 2026. Pluto Train 2 ~5 Mtpa + up to 3 Mtpa through existing Train 1. Woodside 73.5% upstream (op), BHP 26.5% upstream; Woodside 51%, GIP 49% for Train 2. Revised total CAPEX ~$12.5B gross."
     },
     {
       "id": "bp-tangguh-ucc",
