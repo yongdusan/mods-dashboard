@@ -20,7 +20,7 @@
       "source": "Chevron Q4 2023 Earnings",
       "source_url": null,
       "confidence": "high",
-      "notes": "Semi-sub FPS; 75k boe/d peak. Chevron 62.5% (op), TotalEnergies 37.5%."
+      "notes": "Semi-sub FPS; 75k boe/d peak. Chevron 62.86% (op), TotalEnergies 37.14%."
     },
     {
       "id": "shell-whale",
@@ -463,7 +463,7 @@
       "phase": "Execution",
       "capex_busd": 17.0,
       "fid_date": "2023",
-      "first_production": "2027",
+      "first_production": "2028",
       "verified": "2026-05-14",
       "source": "ADNOC project announcement 2023",
       "source_url": null,
@@ -516,7 +516,7 @@
       "source": "TotalEnergies / APA Corp FID Announcement (Oct 2024)",
       "source_url": "https://totalenergies.com/news/press-releases/suriname-totalenergies-announces-final-investment-decision-granmorgu",
       "confidence": "high",
-      "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. FPSO hull delivered February 2025."
+      "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. Fast4Ward MPF-C hull CMHI 건조, 2025-02 topsides 통합 야드로 이송. 2026-04 기준 60% 완공."
     },
     {
       "id": "petronas-kasawari",
@@ -548,7 +548,7 @@
       "source": "Shell Annual Report 2023",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Offshore Western Australia. Gas tied back to Prelude FLNG. Shell 82% (op)."
+      "notes": "Offshore Western Australia, Browse Basin (~190km off Kimberley coast). Gas tied back to Prelude FLNG (~550 MMscfd). Shell 82% (op), SGH Energy (Seven Group) 15%, Osaka Gas 3%. First gas expected 2027. NOPSEMA 환경 승인 2025-03."
     },
     {
       "id": "totalenergies-papua-lng",
@@ -788,7 +788,7 @@
       "source": "bp Press Release (Nov 2024)",
       "source_url": "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/bp-and-partners-give-go-ahead-for-tangguh-ucc-project-in-papua-barat-indonesia.html",
       "confidence": "high",
-      "notes": "Berau Basin, Papua Barat, Indonesia. FID November 2024. Ubadari field development + Indonesia's first at-scale CCUS (~15 Mt CO2 sequestration capacity) + onshore compression. Saipem main EPC contractor (Nov 2024 award). First production 2028. bp 40.22% (op), MI Berau 16.30%, CNOOC Muturi 13.90%, Nippon Oil, Talisman, KG Berau/Wiriagar."
+      "notes": "Berau Basin, Papua Barat, Indonesia. FID November 2024. Ubadari field development + Indonesia first at-scale CCUS (~15 Mt CO2 sequestration). Saipem main EPC contractor. First production 2028. bp 40.22% (op), MI Berau B.V. 16.30%, CNOOC Muturi 13.90%, Nippon Oil Exploration 12.23%, KG Berau 8.56%, INGRM 7.35%, KG Wiriagar 1.44%."
     },
     {
       "id": "eni-indonesia-south-hub",
