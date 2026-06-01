@@ -52,7 +52,7 @@
       "source": "bp Annual Report 2023",
       "source_url": null,
       "confidence": "high",
-      "notes": "Argos FPS; 140k bbl/d. bp 60.5% (op), BHP 23.9%, Union Oil 15.6%."
+      "notes": "Argos FPS; 140k bbl/d. bp 60.5% (op), Woodside Energy 23.9% (구 BHP 지분, 2022 Woodside-BHP 통합), Union Oil (Chevron 자회사) 15.6%."
     },
     {
       "id": "chevron-ballymore",
@@ -492,15 +492,15 @@
       "project": "Berri Increment",
       "region": "Middle East",
       "asset_type": "Shallow Offshore Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 8.0,
       "fid_date": "2022",
-      "first_production": "2026",
+      "first_production": "2025",
       "verified": "2026-05-14",
       "source": "Saudi Aramco Annual Report 2024",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Arabian Gulf offshore. +250k bbl/d increment. Saudi Aramco 100%."
+      "notes": "Arabian Gulf offshore. +250k bbl/d increment. 2025년 생산 시작 (수주입 운영 개시 확인; Marjan과 동일 타임라인). Saudi Aramco 100%."
     },
     {
       "id": "totalenergies-suriname-block58",
@@ -836,7 +836,7 @@
       "source": "JGC FEED Award (Aug 2025)",
       "source_url": null,
       "confidence": "medium",
-      "notes": "Masela Block, Arafura Sea, Indonesia (~800m WD). ~9.5 Mtpa LNG. JGC awarded FEED contract August 2025. FID targeted 2027–2028 if FEED completes on schedule. CAPEX ~$20B estimate. INPEX Masela 65% (op), Pertamina Hulu Energi, PETRONAS Masela."
+      "notes": "Masela Block, Arafura Sea, Indonesia (~800m WD). ~9.5 Mtpa LNG. JGC awarded FEED contract August 2025. FID targeted 2027–2028 if FEED completes on schedule. CAPEX ~$20B estimate. INPEX Masela 65% (op), Pertamina Hulu Energi 20%, PETRONAS Masela 15%. Shell 2023년 지분 매각."
     },
     {
       "id": "qatarenergy-gallaf",
@@ -844,15 +844,15 @@
       "project": "Gallaf (Al-Shaheen Ph.3)",
       "region": "Middle East",
       "asset_type": "Shallow Offshore Oil",
-      "phase": "Execution",
+      "phase": "Production",
       "capex_busd": 5.0,
       "fid_date": null,
       "first_production": "2024",
       "verified": "2026-05-29",
       "source": "North Oil Company / Upstream Online (2024–2025)",
       "source_url": "https://www.upstreamonline.com/exclusive/qatar-expansion-scheme-chase-begins-for-giant-gallaf-offshore-development-project/2-1-1090192",
-      "confidence": "medium",
-      "notes": "Al-Shaheen oilfield, offshore Qatar, ~100m WD. Operator: North Oil Company (QatarEnergy + TotalEnergies JV). Multi-batch fixed platform expansion: 8 wellhead platforms (up to 19,000t). Batch 3 first oil Dec 2024; central processing platform installation ongoing late 2025. CAPEX ~$5B (indicative). Jackup 수요 지속."
+      "confidence": "high",
+      "notes": "Al-Shaheen oilfield, offshore Qatar, ~100m WD. Operator: North Oil Company (QatarEnergy 70%, TotalEnergies 30%). Multi-batch fixed platform expansion. Batch 3 (Gallaf) first oil December 2024; Project Ru'ya (다음 단계, ~100k bbl/d 추가, 2027 목표) 건설 중. CAPEX ~$5B+. Jackup 수요 지속."
     },
     {
       "id": "adnoc-maydan-mazam",
