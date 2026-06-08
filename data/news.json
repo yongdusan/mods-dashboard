@@ -1,8 +1,78 @@
 {
-  "updated": "2026-06-01",
+  "updated": "2026-06-08",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 45,
+      "date": "2026-06-05",
+      "sector": "FPSO/FLNG",
+      "category": "M&A",
+      "title": "SBM Offshore sells minority stake in Gulf of Mexico FSO to NYK",
+      "summary": "SBM Offshore가 멕시코 만 심해 유전용 신규 FSO(부유식 저장 설비)의 소수 지분을 일본 닛폰 유센(NYK)에 매각했습니다. 이는 SBM의 장기 사업 파트너십 확대를 의미합니다.",
+      "companies": [
+        "SBM Offshore",
+        "Nippon Yusen Kabushiki Kaisha"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/sbm-offshore-shedding-partial-stake-in-gulf-of-mexico-bound-fso/"
+    },
+    {
+      "id": 46,
+      "date": "2026-06-05",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Karoon takes over FPSO operatorship from Altera & Ocyan in Brazil",
+      "summary": "카룬 에너지가 알테라와 오션 JV로부터 브라질 해역 FPSO 운영권을 인수했습니다. 브라질 유전 생산 운영의 주요 변화를 나타냅니다.",
+      "companies": [
+        "Karoon Energy",
+        "Altera Infrastructure",
+        "Ocyan"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/altera-ocyan-jv-passes-fpso-operatorship-baton-to-karoon/"
+    },
+    {
+      "id": 47,
+      "date": "2026-06-05",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Canada's $4B FLNG unit launched at Samsung Heavy Industries",
+      "summary": "삼성중공업에서 캐나다 웨스트코스트 배치용 40억 달러 규모 FLNG 유닛 진수식을 개최했습니다. 수력 전원 기반의 대형 FLNG 프로젝트의 주요 이정표입니다.",
+      "companies": [
+        "Samsung Heavy Industries",
+        "Sempra Infrastructure"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/canadas-4b-hydro-powered-lng-project-advances-with-flng-launch-at-samsung-heavy-industries/"
+    },
+    {
+      "id": 48,
+      "date": "2026-06-04",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "World's largest FLNG achieves FID with $5B commitment",
+      "summary": "델핀 미드스트림이 루이지애나 LNG 프로젝트용 세계 최대 규모 FLNG에 50억 달러 최종투자결정(FID)을 승인했습니다. 부유식 LNG 업계의 기록적인 규모 프로젝트입니다.",
+      "companies": [
+        "Delfin Midstream"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/worlds-largest-flng-crosses-the-fid-finish-line-with-5-billion-committed/"
+    },
+    {
+      "id": 49,
+      "date": "2026-06-02",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Eldorado Drilling to acquire Vantage Drilling",
+      "summary": "엘도라도 드릴링이 밴티지 드릴링을 인수하여 보다 확장 가능한 해양 시추 플랫폼을 구축합니다. 드릴링 업계의 주요 M&A 거래입니다.",
+      "companies": [
+        "Eldorado Drilling",
+        "Vantage Drilling"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/eldorado_to_acquire_vantage_drilling-02-jun-2026-183834-article/?rss=true"
+    },
     {
       "id": 44,
       "date": "2026-05-30",
@@ -575,20 +645,6 @@
       ],
       "source": "Seadrill IR",
       "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
-    },
-    {
-      "id": 22,
-      "date": "2025-12-09",
-      "sector": "Drilling",
-      "category": "Fleet",
-      "title": "Noble to Sell 6 Jackups to Become Pureplay Deepwater Driller",
-      "summary": "Noble Corporation announced the sale of six jackup rigs - five to Borr Drilling and one to Ocean Oilfield - to become a pureplay deepwater drilling company. The strategic shift aligns Noble with the higher day rate UDW floater market.",
-      "companies": [
-        "Noble",
-        "Borr Drilling"
-      ],
-      "source": "Rigzone",
-      "url": "https://www.rigzone.com/news/noble_to_sell_6_jackups_become_pureplay_deepwater_driller-09-dec-2025-182483-article/"
     }
   ]
 }
