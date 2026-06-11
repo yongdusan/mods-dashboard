@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-01",
+  "updated": "2026-06-12",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
@@ -132,7 +132,7 @@
       "source": "ExxonMobil FID Press Release (Apr 2024)",
       "source_url": null,
       "confidence": "high",
-      "notes": "Offshore Guyana (Stabroek Block). 6th FPSO development; targets Whiptail, Pinktail and Tilapia fields. FID April 2024. FPSO Jaguar (SBM Offshore); ~250k bbl/d. CAPEX ~$12.7B gross. First oil 2027. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%."
+      "notes": "Offshore Guyana (Stabroek Block). 6th FPSO development; targets Whiptail, Pinktail and Tilapia fields. FID April 2024. FPSO Jaguar (SBM Offshore); ~250k bbl/d. CAPEX ~$12.7B gross. First oil 2027. ExxonMobil 45% (op), Chevron (ex-Hess) 30%, CNOOC 25%. [FPSO] Sale-and-Operate 구조(SBM 최초 적용) — 설치 전 ExxonMobil에 소유권 이전, SBM 10년 O&M 계약. Fast4Ward 7번째 hull. SBM $1.5B 프로젝트 파이낸싱 완료(2024-11; 부채분만, 총 FPSO 건조비 미공시). SBM H1 2025: 2025-07 dry dock 진입, topsides 제작 정상 진행."
     },
     {
       "id": "exxonmobil-uaru",
@@ -516,7 +516,7 @@
       "source": "TotalEnergies / APA Corp FID Announcement (Oct 2024)",
       "source_url": "https://totalenergies.com/news/press-releases/suriname-totalenergies-announces-final-investment-decision-granmorgu",
       "confidence": "high",
-      "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. Fast4Ward MPF-C hull CMHI 건조, 2025-02 topsides 통합 야드로 이송. 2026-04 기준 60% 완공."
+      "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. Fast4Ward MPF-C hull CMHI 건조, 2025-02 topsides 통합 야드로 이송. 2026-04 기준 60% 완공. [FPSO] TotalEnergies 소유(Turnkey — SBM Offshore + Technip Energies 공동 건조). FPSO 건조비 미공시. SBM O&M 계약 2025-06 체결(SBM 최초 수리남 FPSO 운영). SBM H1 2025: hull 건조 2025-H2 착수, topsides 모듈 제작 시작."
     },
     {
       "id": "petronas-kasawari",
