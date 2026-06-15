@@ -1,8 +1,63 @@
 {
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 52,
+      "date": "2026-06-13",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "ExxonMobil explores major acquisition targets including Woodside",
+      "summary": "엑손모빌이 호주 우드사이드 에너지 등 주요 M&A 대상을 검토 중이며, 글로벌 상류 입지 확대를 노리고 있다. 빅오일의 대형 재편 가능성이 높아지고 있다.",
+      "companies": [
+        "ExxonMobil",
+        "Woodside Energy"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/exxonmobil_explores_acquisitions_including_woodside-13-jun-2026-183916-article/?rss=true"
+    },
+    {
+      "id": 50,
+      "date": "2026-06-12",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Equinor awards COSL semi-sub for North Sea P&A operations",
+      "summary": "노르웨이 국영 에너지 회사 에퀴노르가 북해에서 시추공 폐기(P&A) 작업을 수행할 COSL의 2012년식 반잠수식 시추선을 선정했으며, 노르웨이 당국의 승인을 획득했다. 해당 작업은 향후 북해 자산 폐기 수요 증대를 시사한다.",
+      "companies": [
+        "Equinor",
+        "COSL Drilling Europe"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/equinors-north-sea-pa-ops-with-cosls-2012-built-rig-cleared-for-action/"
+    },
+    {
+      "id": 53,
+      "date": "2026-06-12",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Aker BP increases stake in Johan Sverdrup following redetermination",
+      "summary": "아커BP와 조인트벤처 파트너들이 북해 요한스베르드럽 유전의 재산정을 완료하여 아커BP의 지분이 2.2밀리언배럴 증가했다. 성숙 유전의 추가 가치창출 기회를 반영한다.",
+      "companies": [
+        "Aker BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/aker_bp_raises_stake_in_norways_johan_sverdrup-12-jun-2026-183913-article/?rss=true"
+    },
+    {
+      "id": 51,
+      "date": "2026-06-11",
+      "sector": "FPSO/FLNG",
+      "category": "Earnings",
+      "title": "Petrobras commences crude offloading from 8th FPSO unit",
+      "summary": "브라질 국영석유사 페트로브라스가 한화오션 건조 FPSO의 산토스 분지 유전에서 첫 원유 양하를 시작했다. 8번째 FPSO 가동으로 수익 창출이 본격화되며, 남미 심해 프로젝트 진전을 보여준다.",
+      "companies": [
+        "Petrobras",
+        "Hanwha Ocean"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/hanwha-ocean-built-fpsos-oil-offloading-opens-revenue-flows-for-petrobras/"
+    },
     {
       "id": 45,
       "date": "2026-06-05",
