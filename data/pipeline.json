@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12",
+  "updated": "2026-06-17",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
@@ -629,6 +629,22 @@
       "source_url": null,
       "confidence": "medium",
       "notes": "Pre-salt Santos Basin. 12th FPSO at Búzios field; 180k bbl/d. Designed as strategic gas hub — processes own production + exports gas from neighbouring platforms. BOT model; tender launched Oct 2025, proposals submitted ~Apr 2026, award pending. Petrobras 88.99% (op), CNOOC 7.34%, CNPC 3.67%. CAPEX indicative (~$4B)."
+    },
+    {
+      "id": "petrobras-revit-tupi",
+      "company": "Petrobras",
+      "project": "REVIT Tupi (Tupi Field Revitalization)",
+      "region": "Brazil",
+      "asset_type": "Deepwater Oil",
+      "phase": "Pre-FEED",
+      "capex_busd": 4.0,
+      "fid_date": null,
+      "first_production": "2033",
+      "verified": "2026-06-17",
+      "source": "Petrobras Business Plan 2026-2030 (Nov 2025)",
+      "source_url": null,
+      "confidence": "low",
+      "notes": "Pre-salt Santos Basin. 투피 유전(Tupi/Iracema) 생산 확대를 위한 신규 FPSO 투입 — 100k bbl/d 차터 유닛, Petrobras 100% (op). 2026-2030 Business Plan 'Under Evaluation' 포트폴리오($18B) 수록 (ICSPB, Entorno de Forno 등 6개 FPSO 검토군 중 하나). CAPEX ~$4B 내부 추정치 (미확정). FID 2030+ 예상; first oil 2033-2034 잠정. 기존 Tupi 생산 인프라(6개 FPSO 운영 중) 활용으로 subsea 비용 일부 절감 가능. FPSO 건조비: 미공시 (차터 예정)."
     },
     {
       "id": "petrobras-p88-albacora",
