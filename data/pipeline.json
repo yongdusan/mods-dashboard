@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
@@ -359,6 +359,22 @@
       "notes": "Orange Basin, offshore Namibia, Block 2913B (~3,000m WD). One of the largest deepwater discoveries of the past decade (~6 Bboe potential). TotalEnergies 45.25% (op), QatarEnergy 35.25%, Impact Oil & Gas 9.5%, NAMCOR 10% (Impact 지분 일부 매각으로 TE/QE 증가). FPSO concept 160,000 bbl/d; FID target Q4 2026. CAPEX $16B+ indicative. First production 2029–2030."
     },
     {
+      "id": "totalenergies-mopane",
+      "company": "TotalEnergies",
+      "project": "Mopane",
+      "region": "Africa",
+      "asset_type": "Deepwater Oil",
+      "phase": "Pre-FEED",
+      "capex_busd": null,
+      "fid_date": null,
+      "first_production": "2031",
+      "verified": "2026-06-18",
+      "source": "TotalEnergies Press Release (Dec 2025); TotalEnergies 2025 Results & 2026 Objectives (Feb 2026)",
+      "source_url": "https://totalenergies.com/news/press-releases/namibia-totalenergies-concludes-agreement-galp-enter-operator-prolific-pel-83",
+      "confidence": "medium",
+      "notes": "PEL 83, Orange Basin, offshore Namibia. TotalEnergies가 2025-12 Galp으로부터 운영권 인수. Partners: TotalEnergies 40% (op), Galp 40%, Namcor 10%, Custos 10%. TotalEnergies는 PEL83 탐사·평가 CAPEX 중 Galp 몫의 50% carry. 자원 추정: 800M–1.1B boe. FPSO 개념 200k+ bpd; FID 목표 2028. 탐사·평가 캠페인 2026–2027 (3공: Mopane Extension 2026 + 추가 2공 2027). CAPEX 미공시 (greenfield Namibia 프리미엄, cf. Venus $16B). First oil ~2030–2031. TotalEnergies Namibia 2번째 축(PEL 80 Venus와 병행)."
+    },
+    {
       "id": "shell-graff",
       "company": "Shell",
       "project": "Graff",
@@ -389,6 +405,22 @@
       "source_url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2024/shell-invests-in-bonga-north-deep-water-project-nigeria.html",
       "confidence": "high",
       "notes": "Offshore Nigeria, OML 118 (~1,000m WD). FID taken December 2024. Subsea tie-back to existing Bonga Main FPSO. FID 시점: Shell 55% (op), ExxonMobil 20%, ENI (Agip) 12.5%, TotalEnergies 12.5%. TotalEnergies 완전 매각(2025-12, $510M): Shell 10% 인수(ENI 2.5% pre-emption 행사). 현재: Shell 65% (op), ENI 15%, ExxonMobil 20%. Peak ~110k bbl/d."
+    },
+    {
+      "id": "exxonmobil-owowo-west",
+      "company": "ExxonMobil",
+      "project": "Owowo West",
+      "region": "Africa",
+      "asset_type": "Deepwater Oil",
+      "phase": "FEED",
+      "capex_busd": 7.5,
+      "fid_date": null,
+      "first_production": "2030",
+      "verified": "2026-06-18",
+      "source": "ExxonMobil / ThisDay Live (May 2026); Africa Oil Gas Report (Jun 2026)",
+      "source_url": null,
+      "confidence": "high",
+      "notes": "OML 222, offshore Nigeria (~1,500m WD). **신규 FPSO 없음** — 기존 Usan FPS로의 30km+ 심해 타이백. 20–40 wells. CAPEX $7–8B (ExxonMobil 확인). FID 목표 early 2027; first oil ~2030. Peak ~100k bbl/d. ExxonMobil 27% (op), Chevron Nigeria 27%, TotalEnergies 18%, Nexen Petroleum 18%, NNPC 10%. 총 $10B Nigeria 심해 프로그램(Owowo + Usan infill $1B + Bosi)의 핵심 축. 조기 착공비 ~$1B(전체의 30%) 이미 집행."
     },
     {
       "id": "shell-jackdaw",
@@ -519,6 +551,22 @@
       "notes": "Offshore Suriname, 100–1,000m WD. FID taken October 1, 2024 (GranMorgu development: Sapakara + Krabdagu fields). TotalEnergies 50% (op), APA Corp 50% (Staatsolie holds option for up to 20%). FPSO by SBM Offshore; 220k bbl/d capacity. Fast4Ward MPF-C hull CMHI 건조, 2025-02 topsides 통합 야드로 이송. 2026-04 기준 60% 완공. [FPSO] TotalEnergies 소유(Turnkey — SBM Offshore + Technip Energies 공동 건조). FPSO 건조비 미공시. SBM O&M 계약 2025-06 체결(SBM 최초 수리남 FPSO 운영). SBM H1 2025: hull 건조 2025-H2 착수, topsides 모듈 제작 시작."
     },
     {
+      "id": "petronas-suriname-block52",
+      "company": "PETRONAS",
+      "project": "Suriname Block 52 FLNG",
+      "region": "Guyana/Suriname",
+      "asset_type": "Deepwater Gas / FLNG",
+      "phase": "FEED",
+      "capex_busd": null,
+      "fid_date": null,
+      "first_production": "2030",
+      "verified": "2026-06-18",
+      "source": "PETRONAS / Wison New Energies DFS Contract (2025); Offshore Energy (2025)",
+      "source_url": null,
+      "confidence": "medium",
+      "notes": "Block 52, offshore Suriname (~450m WD, 120km offshore). 가스 발견정: Sloanea-1, Roystonea-1, Fusaea-1. 신규 FLNG vessel; Wison New Energies DFS(Detailed Feasibility Study) 계약 수주(2025). FID 목표 H2 2026; first gas ~2030. PETRONAS 80% (op), Staatsolie 자회사 POC 20%. CAPEX 미공시. 수리남 최초 해상 가스 프로젝트."
+    },
+    {
       "id": "petronas-kasawari",
       "company": "PETRONAS",
       "project": "Kasawari",
@@ -644,7 +692,7 @@
       "source": "Petrobras Business Plan 2026-2030 (Nov 2025)",
       "source_url": null,
       "confidence": "low",
-      "notes": "Pre-salt Santos Basin. 투피 유전(Tupi/Iracema) 생산 확대를 위한 신규 FPSO 투입 — 100k bbl/d 차터 유닛, Petrobras 100% (op). 2026-2030 Business Plan 'Under Evaluation' 포트폴리오($18B) 수록 (ICSPB, Entorno de Forno 등 6개 FPSO 검토군 중 하나). CAPEX ~$4B 내부 추정치 (미확정). FID 2030+ 예상; first oil 2033-2034 잠정. 기존 Tupi 생산 인프라(6개 FPSO 운영 중) 활용으로 subsea 비용 일부 절감 가능. FPSO 건조비: 미공시 (차터 예정)."
+      "notes": "Pre-salt Santos Basin. 투피 유전(Tupi/Iracema) 생산 확대를 위한 신규 FPSO 투입 — 100k bbl/d 차터 유닛, Petrobras 100% (op). 2026-2030 Business Plan 'Under Evaluation' 포트폴리오($18B) 수록 (ICSPB, Entorno de Forno 등 6개 FPSO 검토군 중 하나). CAPEX ~$4B 내부 추정치 (미확정). FID 2030+ 예상; first oil 2033-2034 잠정. 기존 Tupi 생산 인프라(6개 FPSO 운영 중) 활용으로 subsea 비용 일부 절감 가능. FPSO 건조비: 미공시 (차터 예정). P-90 지정 가능성 있으나 공식 미확인."
     },
     {
       "id": "petrobras-p88-albacora",
