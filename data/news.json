@@ -1,8 +1,64 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-19",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 57,
+      "date": "2026-06-18",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "BP Awards DeepOcean Foinaven Subsea Decommissioning Contract",
+      "summary": "BP가 영국 셰틀랜드 서쪽 Foinaven 유전 해저 인프라 철거를 DeepOcean에 위탁했다. 구 Foinaven FPSO 위치에서 유연 라이저 10기, 동적 해저 엄빌리컬 3기, 정적 엄빌리컬 1기를 회수하며 장비는 재활용 처리된다. 글로벌 노후 오프쇼어 인프라 해체 수요 증대를 반영하는 사례다.",
+      "companies": [
+        "BP",
+        "DeepOcean"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/bp-entrusts-subsea-decom-and-recycling-job-at-uk-field-to-deepocean/"
+    },
+    {
+      "id": 56,
+      "date": "2026-06-16",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Transocean Secures $185M in Contracts for Semi-Subs in Norway and Australia",
+      "summary": "Transocean이 가혹 환경 반잠수식 리그 2척에 총 $185M 규모 계약을 확보했다. Transocean Norge는 Harbour Energy와 노르웨이 5공 계약(~300일, $149M, 2028 Q1 착수), Transocean Equinox는 Santos와 호주 2공 계약(~90일, $36M, 2027 Q2 착수). 양 계약 모두 옵션 포함으로 추가 백로그 확대 여지가 있다.",
+      "companies": [
+        "Transocean",
+        "Harbour Energy",
+        "Santos"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/06/16/3313086/0/en/Transocean-Ltd-Announces-Contract-Awards-Totaling-185-Million.html"
+    },
+    {
+      "id": 55,
+      "date": "2026-06-15",
+      "sector": "FPSO/FLNG",
+      "category": "Fleet",
+      "title": "BW Opal FPSO Achieves Interim Performance Test at Barossa LNG",
+      "summary": "BW Offshore의 BW Opal FPSO가 호주 북부 Santos 운영 Barossa LNG 프로젝트에서 Interim Performance Test(IPT)를 완료했다. IPT 달성으로 지급 day rate가 85% 수준으로 상향됐으며, 다음 이정표인 Practical Completion 도달 시 15년 장기 charter 계약이 본격 개시된다. 2025년 9월 first gas 이후 2026년 5월 생산 재개, 정상 램프업 중.",
+      "companies": [
+        "BW Offshore",
+        "Santos"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/06/15/3311503/0/en/BW-Offshore-BW-Opal-achieves-Interim-Performance-Test-milestone.html"
+    },
+    {
+      "id": 54,
+      "date": "2026-06-09",
+      "sector": "FPSO/FLNG",
+      "category": "Fleet",
+      "title": "Vaalco Energy Restarts Baobab FPSO Production Offshore Côte d'Ivoire",
+      "summary": "VAALCO Energy가 코트디부아르 해상 Baobab 유전(CI-40 블록)의 생산을 재개했다. FPSO Baobab Ivoirien이 두바이에서 9개월간 개수·정비를 마치고 2026 Q2 복귀해 4개 생산정 연결 완료. 잔여 생산정 3기도 조만간 연결 예정이며, 2026 H2 Phase 5 개발시추(생산정 4기 + 주입정 2~3기) 착수 계획.",
+      "companies": [
+        "VAALCO Energy"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/06/09/3308559/0/en/VAALCO-Energy-Inc-Announces-Baobab-Field-Production-Resumes-After-Successful-FPSO-Refurbishment.html"
+    },
     {
       "id": 52,
       "date": "2026-06-13",
