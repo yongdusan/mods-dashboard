@@ -1,8 +1,82 @@
 {
-  "updated": "2026-06-19",
+  "updated": "2026-06-22",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 58,
+      "date": "2026-06-19",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Vantage Drilling merger with Eldorado approved by shareholders",
+      "summary": "밴티지 드릴링의 엘도라도 드릴링과의 합병이 주주 승인을 획득했습니다. 노르웨이 투자자 그룹이 지원하는 엘도라도와의 비즈니스 결합으로 북해 드릴링 역량이 강화될 것으로 예상됩니다.",
+      "companies": [
+        "Vantage Drilling",
+        "Eldorado Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/shareholders-cast-their-votes-in-favor-of-vantage-drillings-merger-with-eldorado/"
+    },
+    {
+      "id": 59,
+      "date": "2026-06-19",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Equinor, Aker BP secure North Sea drilling permits with COSL, Saipem rigs",
+      "summary": "에퀴노르와 아커 BP가 노르웨이 대륙붕에서 드릴링 허가를 획득했으며, COSL 드릴링 유럽과 세팀의 반잠수식 플랫폼을 활용할 예정입니다. 북해에서의 주요 드릴링 작업이 확대될 것으로 보입니다.",
+      "companies": [
+        "Equinor",
+        "Aker BP",
+        "COSL Drilling Europe",
+        "Saipem"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/two-oil-gas-operators-gearing-up-for-north-sea-drilling-ops-with-cosl-and-saipems-rigs/"
+    },
+    {
+      "id": 60,
+      "date": "2026-06-19",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Equinor leads $420M North Sea subsea development investment",
+      "summary": "에퀴노르를 비롯한 페트로, 셸, 토탈에너지스, 코노코필립스가 북해 신규 해저 개발에 약 4억 1,000만~4억 2,000만 달러를 투자할 예정입니다. 노르웨이 가스 생산 증대를 목표로 하는 주요 프로젝트입니다.",
+      "companies": [
+        "Equinor",
+        "Petoro",
+        "Shell",
+        "TotalEnergies",
+        "ConocoPhillips"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/up-to-420-million-investment-in-north-sea-subsea-project-unleashing-more-european-gas/"
+    },
+    {
+      "id": 61,
+      "date": "2026-06-18",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Equinor targets 150,000 boed production growth by 2030",
+      "summary": "에퀴노르가 2030년까지 일일 생산량을 150,000배럴유당량 증대하여 230만 배럴유당량으로 확대할 목표를 제시했습니다. 에너지 전환 시대에 오일가스 생산 성장을 추진하는 전략입니다.",
+      "companies": [
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_targets_150000_boed_production_growth_by_2030-18-jun-2026-183947-article/?rss=true"
+    },
+    {
+      "id": 62,
+      "date": "2026-06-18",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "ExxonMobil backs South Africa's first LNG import terminal",
+      "summary": "엑손모빌이 남아프리카 첫 LNG 수입 터미널인 줄루랜드 에너지 터미널과 공급 계약을 체결했습니다. 남아프리카의 에너지 안보 강화 및 LNG 시장 확대를 주도하는 주요 프로젝트입니다.",
+      "companies": [
+        "ExxonMobil",
+        "Zululand Energy Terminal"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/exxonmobil_backs_1st_south_african_lng_import_terminal_with_supply_deal-18-jun-2026-183948-article/?rss=true"
+    },
     {
       "id": 57,
       "date": "2026-06-18",
