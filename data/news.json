@@ -1,8 +1,77 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 63,
+      "date": "2026-06-26",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "SBM Offshore hires Nortrans flotel for long-term Angola assignment",
+      "summary": "싱가포르의 노트란스 오프쇼어가 네덜란드의 SBM 오프쇼어와 앙골라 블록 15의 장기 플로텔 계약을 체결했다. 이는 SBM의 부유식 해양 시설 운영 사업 확대를 나타낸다.",
+      "companies": [
+        "SBM Offshore",
+        "Nortrans Offshore"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/sbm-offshore-hires-nortrans-flotel-for-long-term-gig-in-angolan-waters/"
+    },
+    {
+      "id": 64,
+      "date": "2026-06-26",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Vår Energi greenlights Gjøa subsea projects on North Sea",
+      "summary": "노르웨이의 바르 에너지가 북해 조아 해역의 대규모 서브씨 프로젝트 최종 투자 결정을 승인했다. 이는 북해 지역 주요 개발 프로젝트의 진전을 보여준다.",
+      "companies": [
+        "Vår Energi"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/var_energi_greenlights_gjoa_projects-26-jun-2026-183997-article/?rss=true"
+    },
+    {
+      "id": 67,
+      "date": "2026-06-26",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "TotalEnergies, Petronas begin ultra-deepwater exploration in PNG",
+      "summary": "토탈에너지스와 페트로나스가 파푸아뉴기니 파푸아만에서 초심해 탐사정을 시추하는 대규모 유가스 탐사를 개시했다. 오세아니아 지역 신규 초심해 시추는 국내 첫 사례다.",
+      "companies": [
+        "TotalEnergies",
+        "Petronas"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/totalenergies-and-petronas-embark-on-major-oil-gas-search-in-oceania/"
+    },
+    {
+      "id": 65,
+      "date": "2026-06-23",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "BP, Eni greenlight Cross-Block Project offshore Angola",
+      "summary": "BP와 에니의 50:50 합작사인 아줄 에너지가 앙골라 해역 5개 유전을 아우르는 유전 개발 프로젝트를 승인했다. 앙골라 해양 유전 개발이 가속화되고 있다.",
+      "companies": [
+        "BP",
+        "Eni",
+        "Azule Energy"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_eni_greenlight_crossblock_project_offshore_angola-23-jun-2026-183973-article/?rss=true"
+    },
+    {
+      "id": 66,
+      "date": "2026-06-22",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Equinor, partners agree plan for major North Sea project",
+      "summary": "에퀴노르와 파트너사들이 노르웨이 북해의 8개 광구를 포함한 링바이 베스트 프로젝트 개발 방안에 합의했다. 북해 주요 유가스 프로젝트의 본격 추진 단계로 진입한다.",
+      "companies": [
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_partners_agree_plan_for_major_north_sea_project-22-jun-2026-183963-article/?rss=true"
+    },
     {
       "id": 58,
       "date": "2026-06-19",
