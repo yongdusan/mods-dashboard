@@ -1,8 +1,22 @@
 {
-  "updated": "2026-06-29",
+  "updated": "2026-07-02",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 68,
+      "date": "2026-06-30",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Transocean Secures $1B+ Equinor Agreement for Three Norway Semi-Subs",
+      "summary": "Transocean이 Equinor와 노르웨이 대륙붕에서 가혹 환경 반잠수식 리그 3척을 투입하는 계약을 체결했다. 총 7 rig-years에 걸쳐 $1B 이상의 백로그가 추가되며, 기본 day rate는 $399K로 조정 조항 반영 시 개시 시점 실효 day rate는 $400K를 상회한다. 노르웨이 시장의 견조한 수요와 高사양 리그 단가 유지를 보여주는 계약이다.",
+      "companies": [
+        "Transocean",
+        "Equinor"
+      ],
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/06/30/3320130/0/en/Transocean-Ltd-Announces-Agreement-with-Equinor-Valued-at-Over-1-Billion.html"
+    },
     {
       "id": 63,
       "date": "2026-06-26",
