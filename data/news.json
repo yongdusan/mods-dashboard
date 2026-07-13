@@ -1,8 +1,77 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 74,
+      "date": "2026-07-10",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Vantage Drilling exits Euronext Growth following Eldorado merger",
+      "summary": "Eldorado와의 합병 완료로 Vantage Drilling이 Euronext Growth 상장 폐지. 북미 시추선 시장 내 인수합병 동향을 반영.",
+      "companies": [
+        "Vantage Drilling",
+        "Eldorado"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/following-merger-with-eldorado-vantage-drilling-exits-euronext-growth/"
+    },
+    {
+      "id": 75,
+      "date": "2026-07-09",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "ADNOC signs 15-year LNG supply deal with INPEX for 1 MMtpa",
+      "summary": "ADNOC가 INPEX와 15년 LNG 공급계약 체결(연 100만톤). 글로벌 LNG 시장의 장기 수급 안정화 움직임.",
+      "companies": [
+        "ADNOC",
+        "INPEX"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/adnoc_scores_15year_deal_to_supply_1_mmtpa_of_lng_to_inpex-09-jul-2026-184094-article/?rss=true"
+    },
+    {
+      "id": 76,
+      "date": "2026-07-09",
+      "sector": "FPSO/FLNG",
+      "category": "Outlook",
+      "title": "TotalEnergies ships first LNG cargo from Mexican Pacific project",
+      "summary": "TotalEnergies와 Sempra Infrastructure의 멕시코 태평양 해상 LNG 프로젝트에서 첫 적재 실현. 신규 LNG 공급 시설의 가동 개시.",
+      "companies": [
+        "TotalEnergies",
+        "Sempra Infrastructure"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/totalenergies_ships_first_lng_cargo_from_mexican_pacific_coast_to_asia-09-jul-2026-184098-article/?rss=true"
+    },
+    {
+      "id": 78,
+      "date": "2026-07-08",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Equinor awards NOK 6B contracts for Norway tieback projects",
+      "summary": "Equinor이 노르웨이 해상 4개 타이백 프로젝트 계약 체결(약 6억 노르웨이 크로네). 북해 소규모 필드 개발 투자 진행.",
+      "companies": [
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_awards_contracts_for_norway_tiebacks-08-jul-2026-184084-article/?rss=true"
+    },
+    {
+      "id": 77,
+      "date": "2026-07-07",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "BP exits Bay du Nord offshore project, sells stake to Equinor",
+      "summary": "BP가 캐나다 Flemish Pass Basin의 Bay du Nord 석유 프로젝트 지분을 Equinor에 매각. 북대서양 탄화수소 개발 사업 재편.",
+      "companies": [
+        "BP",
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_exits_bay_du_nord_project_offshore_canada-07-jul-2026-184081-article/?rss=true"
+    },
     {
       "id": 69,
       "date": "2026-07-03",
