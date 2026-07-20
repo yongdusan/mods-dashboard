@@ -1,8 +1,51 @@
 {
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 79,
+      "date": "2026-07-17",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Odfjell Drilling extends NCS semi-submersible contract with Aker BP",
+      "summary": "Odfjell Drilling이 노르웨이 대륙붕(NCS)에서 운영 중인 2019년식 반잠수식 시추장비에 대해 Aker BP와의 계약을 1년 연장했습니다. 이는 Odfjell Drilling의 북해 사업 지속성을 보여주는 사례입니다.",
+      "companies": [
+        "Odfjell Drilling",
+        "Aker BP"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/odfjell-drillings-rig-remaining-with-norwegian-oil-gas-operator-for-another-year/"
+    },
+    {
+      "id": 80,
+      "date": "2026-07-17",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Borr Drilling's Mexico JV gains regulatory approval for 5-rig jackup acquisition",
+      "summary": "Borr Drilling과 CME의 50/50 합작회사가 Fontis Finance로부터 5척의 잭업 시추장비 인수에 대한 규제 승인을 획득했습니다. 멕시코 만 시추 역량 확대로 이어질 것으로 예상됩니다.",
+      "companies": [
+        "Borr Drilling",
+        "CME",
+        "Paratus Energy Services"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/borr-drillings-mexican-jv-closer-to-being-five-rigs-richer-as-sale-clears-regulatory-hurdle/"
+    },
+    {
+      "id": 81,
+      "date": "2026-07-17",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "ConocoPhillips acquires 42% of BP's Kirkuk redevelopment stake in Iraq",
+      "summary": "ConocoPhillips가 이라크의 거대 유전인 Kirkuk 재개발 프로젝트에서 BP의 42% 지분을 인수합니다. OPEC 주요 회원국의 유전 재활성화에 미국 메이저가 본격 참여하는 사례입니다.",
+      "companies": [
+        "BP",
+        "ConocoPhillips"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_and_conoco_partner_in_one_of_iraqs_oldest_oilfields-17-jul-2026-184157-article/"
+    },
     {
       "id": 74,
       "date": "2026-07-10",
