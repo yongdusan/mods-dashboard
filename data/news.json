@@ -1,8 +1,75 @@
 {
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 86,
+      "date": "2026-07-24",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Aphrodite Group Secures MOU for Cypriot Gas Sale to Egypt",
+      "summary": "Chevron이 주도하는 Aphrodite 컨소시엄이 사이프러스 가스를 이집트에 판매하기 위한 양해각서(MOU)에 서명했다. 동지중해 가스 공급 체인 확장이 진행 중이다.",
+      "companies": [
+        "Chevron",
+        "Cyprus Hydrocarbons Co",
+        "EGAS"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/aphrodite_group_secures_mou_for_sale_of_cypriot_gas_to_egypt-24-jul-2026-184206-article/?rss=true"
+    },
+    {
+      "id": 85,
+      "date": "2026-07-23",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Equinor Makes New Oil Discovery Near Johan Castberg",
+      "summary": "Equinor과 파트너사들이 Johan Castberg 필드 근처에서 신규 유전을 발견했다. 기존 인프라를 통한 개발을 검토 중이다.",
+      "companies": [
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_makes_new_oil_discovery_near_johan_castberg-23-jul-2026-184198-article/?rss=true"
+    },
+    {
+      "id": 82,
+      "date": "2026-07-22",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "ADNOC Takes FID on $6B Gas Project",
+      "summary": "ADNOC가 통합 글로벌 가스 성장 전략의 일환으로 62억 달러 규모의 가스 프로젝트에 최종투자승인(FID)을 내렸다. 이는 ADNOC의 적극적인 offshore 가스 전개 전략을 반영한다.",
+      "companies": [
+        "ADNOC"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/adnoc_takes_fid_on_6b_gas_project-22-jul-2026-184190-article/?rss=true"
+    },
+    {
+      "id": 83,
+      "date": "2026-07-22",
+      "sector": "E&P/CAPEX",
+      "category": "Earnings",
+      "title": "Equinor Profit Soars on Higher Prices",
+      "summary": "Equinor이 2분기 순이익 48.4억 달러를 기록하며 유가 상승의 혜택을 본다. 조정 순이익은 32.3억 달러로 전년 대비 증가했다.",
+      "companies": [
+        "Equinor"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_profit_soars_on_higher_prices-22-jul-2026-184187-article/?rss=true"
+    },
+    {
+      "id": 84,
+      "date": "2026-07-20",
+      "sector": "E&P/CAPEX",
+      "category": "Earnings",
+      "title": "Aker BP Posts Record Cash Flow on Higher Oil Prices",
+      "summary": "Aker BP가 역대 최고의 영업현금흐름 31.2억 달러를 기록했다. 유가 상승과 함께 유가 및 가스가격의 순차적·연간 상승이 반영되었다.",
+      "companies": [
+        "Aker BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/aker_bp_posts_record_cash_flow_on_higher_oil_prices-20-jul-2026-184163-article/?rss=true"
+    },
     {
       "id": 79,
       "date": "2026-07-17",
@@ -1081,20 +1148,6 @@
       ],
       "source": "World Oil",
       "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
-    },
-    {
-      "id": 21,
-      "date": "2026-01-26",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Seadrill Announces Multiple Contract Awards in Malaysia, Norway and Brazil",
-      "summary": "Seadrill secured three rig awards: West Capella contracted in Malaysia for about 440 days at $157 million, West Elara secured an accommodation contract with Equinor in Norway worth $78 million, and West Carina was extended in Brazil.",
-      "companies": [
-        "Seadrill",
-        "Equinor"
-      ],
-      "source": "Seadrill IR",
-      "url": "https://ir.seadrill.com/news/news-details/2026/Seadrill-Announces-Multiple-Contract-Awards/default.aspx"
     }
   ]
 }
