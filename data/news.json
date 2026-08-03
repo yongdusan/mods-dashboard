@@ -1,8 +1,71 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 90,
+      "date": "2026-07-31",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "BP launches sale of North Sea business",
+      "summary": "BP가 영국 북해의 5개 생산 허브를 포함한 북해 사업 판매를 추진 중입니다. 사업 간소화 전략의 일환으로 진행됩니다.",
+      "companies": [
+        "BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_launches_sale_of_north_sea_business-31-jul-2026-184261-article/?rss=true"
+    },
+    {
+      "id": 87,
+      "date": "2026-07-30",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "FPSO construction starts in China for Angola's ultra-deepwater",
+      "summary": "앙골라 초심해 개발을 위한 FPSO 탑사이드 건설이 중국에서 시작되었습니다. 이는 앙골라의 초심해 자원 개발의 중요한 진전을 나타냅니다.",
+      "companies": [],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/fpso-construction-starts-in-china-for-angolas-ultra-deepwater-development/"
+    },
+    {
+      "id": 88,
+      "date": "2026-07-30",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Petrobras squeezes more oil from mega platforms",
+      "summary": "브라질 국영석유회사 페트로브라스가 부주스 및 다른 심해유전의 플랫폼에서 설계 용량을 초과하는 생산량을 달성하고 있습니다.",
+      "companies": [
+        "Petrobras"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/petrobras_squeezes_more_oil_from_mega_platforms-30-jul-2026-184255-article/?rss=true"
+    },
+    {
+      "id": 89,
+      "date": "2026-07-30",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "BP starts up US Gulf expansion project",
+      "summary": "BP가 걸프만 심해 애틀란티스 유전의 생산 용량을 10,000 배럴/일 증설했습니다. 미국 메멕스의 주요 확장 프로젝트 진행 중입니다.",
+      "companies": [
+        "BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_starts_up_us_gulf_expansion_project-30-jul-2026-184258-article/?rss=true"
+    },
+    {
+      "id": 91,
+      "date": "2026-07-28",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Eni greenlights Cyprus' first hydrocarbon project",
+      "summary": "에니가 크로노스 심해 가스전 개발에 최종 투자 결정을 내렸습니다. 키프로스의 첫 석유가스 프로젝트입니다.",
+      "companies": [
+        "Eni"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/eni_greenlights_cyprus_first_hydrocarbon_project-28-jul-2026-184228-article/?rss=true"
+    },
     {
       "id": 86,
       "date": "2026-07-24",
@@ -1134,20 +1197,6 @@
       ],
       "source": "SBM Offshore",
       "url": "https://www.sbmoffshore.com/newsroom/fpso-one-guyana-purchase-by-exxonmobil-guyana-completed/"
-    },
-    {
-      "id": 20,
-      "date": "2026-01-28",
-      "sector": "Drilling",
-      "category": "Fleet",
-      "title": "Noble Completes $360M Sale of Five Jackups to Borr Drilling",
-      "summary": "Noble Corporation completed the sale of five premium jack-up drilling rigs to Borr Drilling for approximately $360 million, expanding Borr's fleet to 29 jackups and moving Noble further toward a pure-play deepwater profile.",
-      "companies": [
-        "Noble",
-        "Borr Drilling"
-      ],
-      "source": "World Oil",
-      "url": "https://www.worldoil.com/news/2026/1/28/noble-completes-360-million-sale-of-five-jackups-to-borr-drilling/"
     }
   ]
 }
