@@ -1,8 +1,77 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 92,
+      "date": "2026-08-07",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Noble's jack-up rig wins P&A contract with ConocoPhillips Norway",
+      "summary": "Noble Corporation이 2014년 건조 12년형 잭업 리그로 노르웨이 해역 ConocoPhillips 자산제거(P&A) 신규 계약을 확보했습니다. 북해 지역 드릴링 수요 지속을 보여주는 사례입니다.",
+      "companies": [
+        "Noble Corporation",
+        "ConocoPhillips"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/nobles-2014-built-jack-up-rig-scoops-up-new-pa-job-with-conocophillips/"
+    },
+    {
+      "id": 93,
+      "date": "2026-08-07",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "BP acquires Woodside's stake in Trinidad Calypso gas field",
+      "summary": "BP가 Woodside Energy의 트리니다드토바고 Calypso 가스전 70% 지분을 인수하기로 합의했습니다. 카리브해 역 심해 가스전 권익 통합으로 개발 효율성 제고를 추진 중입니다.",
+      "companies": [
+        "BP",
+        "Woodside Energy"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_buys_woodside_out_of_trinidad_and_tobago_gas_project-07-aug-2026-184328-article/?rss=true"
+    },
+    {
+      "id": 94,
+      "date": "2026-08-07",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "ExxonMobil books McDermott for Mozambique deepwater LNG project",
+      "summary": "McDermott이 ExxonMobil 모잠비크 심해 LNG 프로젝트에 대한 의향서(LOI)를 확보했습니다. 다국적 컨소시엄이 수십억 달러 규모 LNG 개발 추진 중으로 엔지니어링 수요 확대를 시사합니다.",
+      "companies": [
+        "McDermott",
+        "ExxonMobil"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/exxonmobil-books-mcdermott-for-mozambiques-multibillion-dollar-lng-project/"
+    },
+    {
+      "id": 96,
+      "date": "2026-08-07",
+      "sector": "E&P/CAPEX",
+      "category": "Earnings",
+      "title": "Petrobras profit exceeds forecasts amid supply disruptions",
+      "summary": "페트로브라스가 미국-이란 분쟁으로 인한 공급 차질이 2분기 유가를 상승시키면서 예상을 초과하는 실적을 기록했습니다. 지정학적 리스크에 따른 에너지 가격 변동성이 브라질 심해 E&P 수익성 개선을 견인했습니다.",
+      "companies": [
+        "Petrobras"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/petrobras_profit_tops_estimates-07-aug-2026-184325-article/?rss=true"
+    },
+    {
+      "id": 95,
+      "date": "2026-08-05",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "ECOnnect Energy wins Shell LNG import terminal in Bahamas",
+      "summary": "ECOnnect Energy가 Shell 조인트벤처 바하마 부유식 LNG 수입 터미널 공급 계약을 수주했습니다. 카리브해 역 가스 수입 인프라 확대로 부유식 LNG 설비 프로젝트 진행 중입니다.",
+      "companies": [
+        "ECOnnect Energy",
+        "Shell"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/econnect_energy_to_deliver_shellbacked_lng_project_in_bahamas-05-aug-2026-184299-article/?rss=true"
+    },
     {
       "id": 90,
       "date": "2026-07-31",
@@ -1159,44 +1228,6 @@
       ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
-    },
-    {
-      "id": 17,
-      "date": "2026-02-10",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Borr Drilling Q4 2025: Revenue $259M, FY EBITDA $470M at Top of Guidance",
-      "summary": "Borr Drilling reported Q4 2025 operating revenue of $259.4 million and full-year 2025 Adjusted EBITDA of $470.1 million, at the top of guidance. Q4 net loss was $1.0 million and backlog stood at $1.2 billion.",
-      "companies": [
-        "Borr Drilling"
-      ],
-      "source": "StockTitan",
-      "url": "https://www.stocktitan.net/news/BORR/borr-drilling-limited-announces-fourth-quarter-2025-7dlxv6zs1s87.html"
-    },
-    {
-      "id": 18,
-      "date": "2026-02-06",
-      "sector": "Drilling",
-      "category": "Outlook",
-      "title": "Westwood: 2026 Offshore Rig Outlook Brightens After Mid-Cycle Pause",
-      "summary": "Westwood Global Energy reported that offshore rig demand is strengthening with 355 rig-years of awarded demand for 2026 starts. The market outlook for 2027-2028 is particularly strong, with drillship demand recovery led by Brazil and the U.S. Gulf of Mexico.",
-      "companies": [],
-      "source": "Westwood Energy",
-      "url": "https://www.westwoodenergy.com/news/westwood-insight/westwood-insight-as-2025-challenges-fade-offshore-rig-outlook-brightens"
-    },
-    {
-      "id": 19,
-      "date": "2026-02-04",
-      "sector": "FPSO/FLNG",
-      "category": "M&A",
-      "title": "ExxonMobil Guyana Completes $2.32B Purchase of FPSO ONE GUYANA",
-      "summary": "SBM Offshore and ExxonMobil Guyana completed the FPSO ONE GUYANA purchase transaction ahead of the maximum lease term. ExxonMobil assumes ownership while SBM Offshore continues operations and maintenance through 2035; cash consideration was approximately $2.32 billion.",
-      "companies": [
-        "SBM Offshore",
-        "ExxonMobil"
-      ],
-      "source": "SBM Offshore",
-      "url": "https://www.sbmoffshore.com/newsroom/fpso-one-guyana-purchase-by-exxonmobil-guyana-completed/"
     }
   ]
 }
