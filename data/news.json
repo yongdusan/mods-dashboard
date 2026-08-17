@@ -1,8 +1,64 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 97,
+      "date": "2026-08-14",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Seatrium lands third FLNG conversion with Golar LNG",
+      "summary": "Golar LNG가 Seatrium과 세 번째 부유식 LNG(FLNG) 전환 프로젝트 계약을 체결했다. 이는 FLNG 중점장비 공급 부문의 지속적인 수주 활동을 시사한다.",
+      "companies": [
+        "Golar LNG",
+        "Seatrium"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/seatrium-lines-up-third-flng-conversion-assignment-with-golar-lng/"
+    },
+    {
+      "id": 98,
+      "date": "2026-08-14",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "BP secures 4 tcf Venezuelan gas license with XRG and UCC",
+      "summary": "BP와 ADNOC의 XRG, UCC Oil and Gas가 베네수엘라 해상 4조 입방피트 가스 개발 라이선스를 획득했다. 주요 에너지 기업들의 베네수엘라 해상 개발 추진이 가속화되고 있다.",
+      "companies": [
+        "BP",
+        "XRG",
+        "UCC Oil and Gas Holding"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/bp-xrg-and-ucc-on-4-tcf-venezuelan-gas-quest-as-offshore-development-gathers-pace/"
+    },
+    {
+      "id": 99,
+      "date": "2026-08-14",
+      "sector": "E&P/CAPEX",
+      "category": "Earnings",
+      "title": "Petrobras pre-salt field exceeds 4 billion barrels cumulative",
+      "summary": "페트로브라스 유전이 누적 생산 40억 배럴을 돌파했으며, 프리솔트 지역이 20주년을 맞이하며 생산의 주력이 되고 있다. 브라질 심해 개발의 견조한 성과를 보여준다.",
+      "companies": [
+        "Petrobras"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/73-years-in-the-making-petrobras-oil-field-exceeds-4-billion-barrels-as-brazils-pre-salt-turns-20/"
+    },
+    {
+      "id": 100,
+      "date": "2026-08-13",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "LLOG advances US Gulf subsea tie-back FPS development",
+      "summary": "Harbour Energy의 자회사 LLOG Exploration이 기존 부유식 생산설비(FPS)에 연결된 해저 파이프라인 개발을 승인했다. 미국 멕시코만의 신규 개발 추진이 진행 중이다.",
+      "companies": [
+        "LLOG Exploration",
+        "Harbour Energy"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/subsea-tie-back-development-to-us-gulf-oil-gas-asset-is-a-go/"
+    },
     {
       "id": 92,
       "date": "2026-08-07",
@@ -1214,20 +1270,6 @@
       ],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260218978659/en/Valaris-Reports-Fourth-Quarter-2025-Results"
-    },
-    {
-      "id": 16,
-      "date": "2026-02-13",
-      "sector": "Drilling",
-      "category": "M&A",
-      "title": "Transocean to Acquire Valaris for $5.8B, Creating World's Largest Offshore Driller",
-      "summary": "Transocean announced an all-stock acquisition of Valaris valued at approximately $5.8 billion. The combined entity would operate 73 offshore rigs - 33 UDW drillships, 9 semisubmersibles and 31 jackups - with a combined contract backlog of approximately $10 billion.",
-      "companies": [
-        "Transocean",
-        "Valaris"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/transoceans-play-for-valaris-forging-17-billion-offshore-drilling-giant-with-73-rigs/"
     }
   ]
 }
