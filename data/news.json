@@ -1,8 +1,77 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 101,
+      "date": "2026-08-21",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "$10.4B oil project nears offshore installation in Mexico",
+      "summary": "SBM Offshore의 부유식 해양시설이 멕시코 해역 초심해 석유개발 프로젝트에 투입되고 있으며, 주요 장비가 알타미라에 도착해 설치 단계에 진입했다. 100억 달러 규모의 대규모 프로젝트가 본격화되고 있다.",
+      "companies": [
+        "SBM Offshore"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/10-4b-oil-project-nears-offshore-installation-as-key-equipment-reaches-mexico/"
+    },
+    {
+      "id": 102,
+      "date": "2026-08-21",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Noble and Odfjell rigs approved for North Sea drilling campaign",
+      "summary": "노르웨이 당국이 Aker BP의 북해 시추 활동을 승인했으며, Noble Corporation과 Odfjell Drilling의 시추선이 배치될 예정이다. 노르웨이 대륙붕에서의 신규 시추 작업이 개시된다.",
+      "companies": [
+        "Aker BP",
+        "Noble Corporation",
+        "Odfjell Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/green-light-for-aker-bp-to-deploy-noble-and-odfjell-drilling-rigs-in-north-sea/"
+    },
+    {
+      "id": 103,
+      "date": "2026-08-20",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Transocean drillship wins $300M contract with India's ONGC",
+      "summary": "Transocean의 2010년식 초심해 시추선이 인도 국영 에너지 회사 ONGC와 3억 달러 규모의 장기 계약을 체결했다. 인도 해역에서의 본격적인 시추 활동이 시작된다.",
+      "companies": [
+        "Transocean",
+        "ONGC"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/transoceans-16-year-old-drillship-lands-300m-job-with-indias-ongc/"
+    },
+    {
+      "id": 105,
+      "date": "2026-08-20",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Equinor joins Chevron's Namibia offshore exploration campaign",
+      "summary": "Equinor이 나미비아 Orange Basin 해역 PEL 90 탐사 라이선스에서 17.4% 지분을 인수했다. 주요 석유메이저의 나미비아 진출로 아프리카 해상유전 개발이 확대되고 있다.",
+      "companies": [
+        "Equinor",
+        "Chevron"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_to_enter_namibia_by_joining_chevron_exploration_campaign-20-aug-2026-184421-article/?rss=true"
+    },
+    {
+      "id": 104,
+      "date": "2026-08-18",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "ExxonMobil awards $1.1B for Mozambique LNG project",
+      "summary": "ExxonMobil과 Area 4 파트너들이 모잠비크 Rovuma LNG 프로젝트를 위해 11억 달러 규모의 엔지니어링·조달·제조 계약을 발주했다. FID 전 단계에서 대규모 자본투자가 본격화되고 있다.",
+      "companies": [
+        "ExxonMobil"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/exxonmobil_awards_1-1b_contracts_for_mozambique_lng_project-18-aug-2026-184400-article/?rss=true"
+    },
     {
       "id": 97,
       "date": "2026-08-14",
@@ -1243,33 +1312,6 @@
       ],
       "source": "Business Wire",
       "url": "https://www.businesswire.com/news/home/20260225741746/en/Seadrill-Announces-Fourth-Quarter-and-Full-Year-2025-Results"
-    },
-    {
-      "id": 14,
-      "date": "2026-02-20",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Transocean FY2025: Revenue Up 13% to $3.97B, EBITDA Up 19% to $1.37B",
-      "summary": "Transocean reported full-year 2025 contract drilling revenues of $3.965 billion (up 13% YoY) and Adjusted EBITDA of $1.37 billion (up 19%). Q4 2025 revenue was $1.04 billion with a 37% EBITDA margin. Total backlog stood at approximately $6.1 billion.",
-      "companies": [
-        "Transocean"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/02/20/3241645/0/en/Transocean-Ltd-Reports-Fourth-Quarter-and-Full-Year-2025-Results.html"
-    },
-    {
-      "id": 15,
-      "date": "2026-02-18",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Valaris Q4 2025: Revenue $537M, Backlog $4.7B - Merger with Transocean Pending",
-      "summary": "Valaris reported Q4 2025 revenue of $537 million and net income of $717 million including a tax benefit. Full-year 2025 revenue was $2.36 billion. Backlog expanded to $4.7 billion with about 97% of 2026 revenue midpoint already contracted.",
-      "companies": [
-        "Valaris",
-        "Transocean"
-      ],
-      "source": "Business Wire",
-      "url": "https://www.businesswire.com/news/home/20260218978659/en/Valaris-Reports-Fourth-Quarter-2025-Results"
     }
   ]
 }
