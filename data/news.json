@@ -1,8 +1,78 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 106,
+      "date": "2026-08-28",
+      "sector": "Drilling",
+      "category": "M&A",
+      "title": "Dolphin Drilling receives GHL settlement proposal with cash and rig deployment",
+      "summary": "돌핀 드릴링이 나이지리아에서의 장기 중재 분쟁 해결을 위해 GHL로부터 현금과 리그 배치를 포함한 합의안을 제안받았다. 이 제안은 긍정적이나 합의금이 기대에 미치지 못하는 상황이다.",
+      "companies": [
+        "Dolphin Drilling",
+        "General Hydrocarbons Limited"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/dolphin-drilling-ghl-cash-and-rig-proposal-encouraging-but-settlement-offer-falls-short/"
+    },
+    {
+      "id": 107,
+      "date": "2026-08-28",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "L&T and Technip Energies hired for ADNOC's major offshore gas project",
+      "summary": "테크닙 에너제스가 ADNOC의 주요 해양 가스 프로젝트에 대한 상세 엔지니어링 서비스를 제공하기 위해 L&T에 의해 고용되었다. 이는 중동 지역의 주요 에너지 프로젝트 진행을 의미한다.",
+      "companies": [
+        "Technip Energies",
+        "L&T",
+        "ADNOC"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/lt-taps-technip-energies-for-engineering-work-on-adnocs-major-offshore-gas-project/"
+    },
+    {
+      "id": 110,
+      "date": "2026-08-28",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Petrobras explores LNG exports from offshore Brazilian fields",
+      "summary": "브라질 국영석유회사 페트로브라스가 아시아의 급증하는 수요에 대응하기 위해 해상 유전에서 LNG 수출을 검토 중이다. 브라질 에너지 산업의 새로운 수출 전략을 의미한다.",
+      "companies": [
+        "Petrobras"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/petrobras_considers_exporting_lng-28-aug-2026-184485-article/?rss=true"
+    },
+    {
+      "id": 108,
+      "date": "2026-08-27",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Aker BP launches Skarv satellite production in Norwegian Sea",
+      "summary": "아커 BP가 스카르브 필드에 연결된 노르웨이해의 세 가스·응축액 발견지에서 생산을 시작했다. 위성 유전 개발을 통한 기존 인프라 활용 전략을 보여준다.",
+      "companies": [
+        "Aker BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/aker_bp_starts_up_skarv_satellites_in_norwegian_sea-27-aug-2026-184473-article/?rss=true"
+    },
+    {
+      "id": 109,
+      "date": "2026-08-25",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Equinor, Aker BP, Vår Energi collaborate on Norwegian shelf opportunities",
+      "summary": "노르웨이 기업 에퀴노르, 아커 BP, 바르 에너지가 북해의 최대 미개발 매장량 탐사를 위해 협력을 발표했다. 이는 노르웨이 대륙붕의 전략적 활용을 강화하는 움직임이다.",
+      "companies": [
+        "Equinor",
+        "Aker BP",
+        "Vår Energi"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/equinor_aker_bp_var_energi_to_jointly_pursue_bigger_ncs_opportunities-25-aug-2026-184451-article/?rss=true"
+    },
     {
       "id": 101,
       "date": "2026-08-21",
@@ -1273,45 +1343,6 @@
       ],
       "source": "Yinson",
       "url": "https://www.yinson.com/news/yinson-records-steady-q4fy2026-earnings-supported-by-growing-operational-contributions/"
-    },
-    {
-      "id": 11,
-      "date": "2026-02-26",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "SBM Offshore FY2025: Revenue $5.1B, EBITDA $1.7B, Backlog $31.1B",
-      "summary": "SBM Offshore reported 2025 Directional revenue of $5.1 billion and Directional EBITDA of $1.7 billion, both above guidance. Directional backlog stood at $31.1 billion, and the company issued 2026 baseline guidance of around $6.5 billion revenue and $1.8 billion EBITDA.",
-      "companies": [
-        "SBM Offshore"
-      ],
-      "source": "SBM Offshore",
-      "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-full-year-2025-earnings/"
-    },
-    {
-      "id": 12,
-      "date": "2026-02-25",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "Golar LNG Q4 2025: FLNG Hilli and Gimi Outperform Production Targets",
-      "summary": "Golar LNG reported Q4 2025 total operating revenue of $133 million and adjusted EBITDA of $91 million. FLNG Hilli exceeded its 2025 production target, FLNG Gimi overproduced versus committed volume in Q4, and MKII construction remained on time and on budget.",
-      "companies": [
-        "Golar LNG"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/02/25/3244404/0/en/Golar-LNG-Limited-Preliminary-fourth-quarter-and-financial-year-2025-results.html"
-    },
-    {
-      "id": 13,
-      "date": "2026-02-25",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Seadrill Q4 2025: Revenue $362M, EBITDA $88M - 2026 Guidance $1.4-1.45B",
-      "summary": "Seadrill reported Q4 2025 revenue of $362 million and Adjusted EBITDA of $88 million (24.3% margin), with a net loss of $10 million. Full-year 2025 Adjusted EBITDA was $353 million. Backlog rose to $2.5 billion. 2026 guidance: revenue $1.40-1.45 billion, Adjusted EBITDA $350-400 million.",
-      "companies": [
-        "Seadrill"
-      ],
-      "source": "Business Wire",
-      "url": "https://www.businesswire.com/news/home/20260225741746/en/Seadrill-Announces-Fourth-Quarter-and-Full-Year-2025-Results"
     }
   ]
 }
