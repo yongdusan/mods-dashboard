@@ -1,8 +1,78 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 111,
+      "date": "2026-09-04",
+      "sector": "FPSO/FLNG",
+      "category": "M&A",
+      "title": "MISC explores consortium role in potential Yinson privatization",
+      "summary": "말레이시아 MISC 그룹이 쿠알라룸푸르 기반 FPSO 운영사 Yinson의 민영화 컨소시엄 참여를 검토 중입니다. 이는 해상 부유식 자산 운영 부문에서의 주요 M&A 움직임입니다.",
+      "companies": [
+        "MISC",
+        "Yinson",
+        "Petronas"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/misc-explores-consortium-role-in-potential-yinson-privatization/"
+    },
+    {
+      "id": 115,
+      "date": "2026-09-04",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "BP engages Baker Hughes for North Sea production optimization",
+      "summary": "BP가 Baker Hughes를 영국 북해 자산의 신규 정정 개발 및 생산 최적화 사업에 선정했습니다. 이는 기존 북해 유전의 생산성 향상을 위한 주요 기술 서비스 계약입니다.",
+      "companies": [
+        "BP",
+        "Baker Hughes"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/bp-tasks-baker-hughes-with-production-enhancement-across-uk-north-sea-assets/"
+    },
+    {
+      "id": 112,
+      "date": "2026-09-03",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Woodside, Pemex explore Gulf of Mexico deepwater opportunities",
+      "summary": "호주 Woodside와 멕시코 Pemex가 멕시코만 심해 유전 탐사를 위한 양해각서(MOU)를 체결했습니다. 양사는 새로운 심해 탄화수소 부존 가능성을 공동으로 탐색하기로 합의했습니다.",
+      "companies": [
+        "Woodside",
+        "Pemex"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/woodside-pemex-eye-new-gulf-of-mexico-deepwater-oil-gas-exploration-opportunities/"
+    },
+    {
+      "id": 113,
+      "date": "2026-09-03",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Shell joins BP's Brazil, US offshore exploration projects",
+      "summary": "BP가 Shell에게 브라질 산토스분지 Tupinambá 탐사 광구와 미국 5개 리스 지분을 매각합니다. 양사는 심해 탐사 협력을 통해 포트폴리오 최적화를 추진하고 있습니다.",
+      "companies": [
+        "BP",
+        "Shell"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/shell_joins_bp_exploration_projects_offshore_brazil_us-03-sep-2026-184534-article/?rss=true"
+    },
+    {
+      "id": 114,
+      "date": "2026-09-03",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Chevron JVs to invest $7B in Venezuela oil operations",
+      "summary": "Chevron의 베네수엘라 조인트벤처가 향후 베네수엘라 석유사업에 70억 달러 이상을 투자할 계획입니다. 이는 라틴아메리카 심해 유전 개발의 주요 자본지출 계획입니다.",
+      "companies": [
+        "Chevron"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/chevron_announces_jv_plans_to_invest_7b_in_venezuela-03-sep-2026-184529-article/?rss=true"
+    },
     {
       "id": 106,
       "date": "2026-08-28",
