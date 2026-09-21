@@ -1,8 +1,63 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 120,
+      "date": "2026-09-18",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Exmar's FLNG conversion earns Bureau Veritas' seal of approval",
+      "summary": "벨기에 해운사 Exmar의 FLNG 개념 설계가 Bureau Veritas로부터 원칙적 승인을 획득했습니다. 기존 멤브레인형 LNG 운반선 개조를 기반으로 한 프로젝트입니다.",
+      "companies": [
+        "Exmar",
+        "Bureau Veritas"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/exmars-flng-conversion-earns-bureau-veritas-seal-of-approval/"
+    },
+    {
+      "id": 121,
+      "date": "2026-09-18",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "Petrobras secures 20-year LNG supply from Sempra's US project",
+      "summary": "브라질의 Petrobras가 Sempra Infrastructure와 텍사스 Jefferson County의 LNG 프로젝트에서 20년 공급 계약을 체결했습니다. 연간 약 80만 톤 규모입니다.",
+      "companies": [
+        "Petrobras",
+        "Sempra Infrastructure"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/petrobras-locks-in-20-year-us-supply-from-sempras-lng-project-in-lone-star-state/"
+    },
+    {
+      "id": 122,
+      "date": "2026-09-18",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "TotalEnergies secures $1.8B capital from Global Infrastructure Partners",
+      "summary": "Global Infrastructure Partners가 TotalEnergies의 아프리카 유·가스 자산 지분에 18억 달러 투자를 약정했습니다. 주요 CAPEX 자금 조달 사례입니다.",
+      "companies": [
+        "TotalEnergies",
+        "Global Infrastructure Partners"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/totalenergies_secures_18b_in_capital_from_gip_for_african_assets-18-sep-2026-184649-article/?rss=true"
+    },
+    {
+      "id": 123,
+      "date": "2026-09-16",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Aker BP makes new North Sea gas discovery offshore Norway",
+      "summary": "Aker BP가 노르웨이 북해에서 예비 추정 150만~240만 세제곱미터 규모의 가스전을 발견했습니다. 북해 유전 개발 전망을 보강하는 발견입니다.",
+      "companies": [
+        "Aker BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/aker_bp_makes_new_north_sea_gas_discovery-16-sep-2026-184626-article/?rss=true"
+    },
     {
       "id": 116,
       "date": "2026-09-12",
@@ -1454,19 +1509,6 @@
       ],
       "source": "Nasdaq",
       "url": "https://www.nasdaq.com/press-release/golar-lng-limited-announces-strategic-review-maximize-stakeholder-value-and-0"
-    },
-    {
-      "id": 10,
-      "date": "2026-03-19",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "Yinson Q4 FY2026 Supported by FPSO Assets Entering Charter Phase",
-      "summary": "Yinson reported Q4 FY2026 PATAMI of RM228 million, broadly stable quarter-on-quarter, with growing operational contribution from FPSO assets including Maria Quiteria, Atlanta and Agogo after entering charter periods.",
-      "companies": [
-        "Yinson"
-      ],
-      "source": "Yinson",
-      "url": "https://www.yinson.com/news/yinson-records-steady-q4fy2026-earnings-supported-by-growing-operational-contributions/"
     }
   ]
 }
