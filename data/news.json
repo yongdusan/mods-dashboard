@@ -1,8 +1,64 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 127,
+      "date": "2026-09-25",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "North Sea Appraisal Ops Raise Discovery Projected Size",
+      "summary": "Aker BP, Equinor, DNO가 북해에서 수행한 검증 시추로 두 유전 발견의 예상 규모가 상향조정되었습니다. 노르웨이 북해의 탄화수소 발견이 초기 예상보다 커진 것입니다.",
+      "companies": [
+        "Aker BP",
+        "Equinor",
+        "DNO"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/north-sea-appraisal-ops-up-the-oil-gas-discoveries-projected-size/"
+    },
+    {
+      "id": 124,
+      "date": "2026-09-23",
+      "sector": "E&P/CAPEX",
+      "category": "Contract",
+      "title": "TotalEnergies Approves Ima Gas Development for Nigeria LNG",
+      "summary": "TotalEnergies가 나이지리아 LNG를 위한 Ima 가스 개발 프로젝트에 최종투자결정(FID)을 승인했습니다. 이 프로젝트는 최대 3억 5천만 입방피트의 가스를 공급할 수 있습니다.",
+      "companies": [
+        "TotalEnergies"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/totalenergies_approves_new_upstream_project_for_nigeria_lng-23-sep-2026-184683-article/?rss=true"
+    },
+    {
+      "id": 126,
+      "date": "2026-09-23",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Shell Completes Sale of Na Kika Platform Stake to BP",
+      "summary": "Shell이 BP가 운영하는 미국 걸프의 Na Kika 플랫폼 지분 매각을 완료했습니다. 이는 Shell의 유일한 비운영 플랫폼이었던 50:50 합작사업입니다.",
+      "companies": [
+        "Shell",
+        "BP"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/shell_exits_bps_na_kika_platform_in_us_gulf-23-sep-2026-184688-article/?rss=true"
+    },
+    {
+      "id": 125,
+      "date": "2026-09-21",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "BP Sells Browse Project Stake to Osaka Gas",
+      "summary": "BP가 호주 Browse 프로젝트의 지분 일부를 오사카 가스에 매각하기로 합의했습니다. 이는 Karratha 가스플랜트의 공급 가스를 확보하기 위한 전략적 이동입니다.",
+      "companies": [
+        "BP",
+        "Osaka Gas"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/bp_to_further_sell_down_browse_project_stake_to_osaka_gas-21-sep-2026-184659-article/?rss=true"
+    },
     {
       "id": 120,
       "date": "2026-09-18",
@@ -1466,49 +1522,6 @@
       ],
       "source": "StockTitan",
       "url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html"
-    },
-    {
-      "id": 7,
-      "date": "2026-03-30",
-      "sector": "FPSO/FLNG",
-      "category": "Outlook",
-      "title": "Yinson Starts Carbon Capture System on FPSO Agogo Offshore Angola",
-      "summary": "Yinson Production put a post-combustion carbon capture system into operation on the Agogo FPSO offshore Angola. The system, developed with Azule Energy and Carbon Circle, is described as the first offshore post-combustion CO2 capture plant operating on an active production facility.",
-      "companies": [
-        "Yinson",
-        "Azule Energy",
-        "Carbon Circle"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/history-written-as-ccs-technology-starts-operating-on-board-fpso/"
-    },
-    {
-      "id": 8,
-      "date": "2026-03-25",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Petrobras Awards Foresea $465M Drillship Contract for Mero Field",
-      "summary": "Petrobras awarded Foresea a long-term contract to operate the ultra-deepwater drillship ODN I offshore Brazil. The 1,443-day campaign supports development activity in the Mero field in the Santos Basin, contributing approximately $465 million to backlog.",
-      "companies": [
-        "Petrobras",
-        "Foresea"
-      ],
-      "source": "World Oil",
-      "url": "https://www.worldoil.com/news/2026/3/25/petrobras-awards-foresea-long-term-drillship-contract-for-mero-field-offshore-brazil/"
-    },
-    {
-      "id": 9,
-      "date": "2026-03-25",
-      "sector": "FPSO/FLNG",
-      "category": "M&A",
-      "title": "Golar LNG Launches Strategic Review to Accelerate FLNG Growth",
-      "summary": "Golar LNG initiated a strategic review and appointed Goldman Sachs as financial advisor. The review will evaluate alternatives including a sale, merger, asset divestiture or corporate optimization as Golar positions itself as a pure-play FLNG company.",
-      "companies": [
-        "Golar LNG",
-        "Goldman Sachs"
-      ],
-      "source": "Nasdaq",
-      "url": "https://www.nasdaq.com/press-release/golar-lng-limited-announces-strategic-review-maximize-stakeholder-value-and-0"
     }
   ]
 }
