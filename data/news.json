@@ -1,8 +1,77 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 130,
+      "date": "2026-10-02",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "BW Offshore-McDermott blue ammonia FPSO gains DNV approval",
+      "summary": "BW Offshore와 McDermott의 청암모니아 FPSO 컨셉이 DNV 승인을 획득했습니다. 저탄소 해양에너지 생산의 확장 가능성을 제시합니다.",
+      "companies": [
+        "BW Offshore",
+        "McDermott",
+        "DNV"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/02/bw-offshore-and-mcdermotts-blue-ammonia-fpso-concept-catches-wind-in-its-sails-with-dnv-backing"
+    },
+    {
+      "id": 128,
+      "date": "2026-10-01",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Borr Drilling's rig trio lines up jobs in Africa and Europe",
+      "summary": "Borr Drilling의 3개 석유시추선이 서아프리카, 나이지리아, 영국 해역에서 신규 계약을 확보했습니다. 이는 드릴십 함대의 가동률 향상을 의미합니다.",
+      "companies": [
+        "Borr Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/01/borr-drillings-rig-trio-lines-up-jobs-in-africa-and-europe"
+    },
+    {
+      "id": 131,
+      "date": "2026-09-29",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "OneSubsea secures Mozambique Rovuma LNG subsea systems contract",
+      "summary": "OneSubsea가 ExxonMobil로부터 모잠비크 Rovuma LNG 프로젝트 1단계 해저생산시스템 계약을 확보했습니다. 동아프리카 FLNG 프로젝트 추진을 의미합니다.",
+      "companies": [
+        "OneSubsea",
+        "ExxonMobil"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/onesubsea_to_deliver_production_systems_for_rovuma_lng-01-oct-2026-184753-article/?rss=true"
+    },
+    {
+      "id": 129,
+      "date": "2026-09-28",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Noble's 2013-built drillship scoops up 10-well job in Africa",
+      "summary": "Noble Corporation의 13년식 드릴십이 가나 해역의 Tullow Oil과 다중정 계약을 확보했습니다. 아프리카 지역 시추 수요 증가를 보여줍니다.",
+      "companies": [
+        "Noble Corporation",
+        "Tullow Oil"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/09/28/nobles-2013-built-drillship-scoops-up-10-well-job-in-africa-with-tullow-oil"
+    },
+    {
+      "id": 132,
+      "date": "2026-09-28",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "TotalEnergies targets $14-17B annual CAPEX through 2032",
+      "summary": "TotalEnergies는 향후 6년간 연 140-170억 달러의 투자로 석유·가스·전력 생산의 연 3% 성장을 목표로 합니다. IOC의 강한 CAPEX 시그널을 제시합니다.",
+      "companies": [
+        "TotalEnergies"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/totalenergies_targets_3_percent_yearly_production_growth-28-sep-2026-184712-article/?rss=true"
+    },
     {
       "id": 127,
       "date": "2026-09-25",
@@ -1495,33 +1564,6 @@
       ],
       "source": "Offshore Energy",
       "url": "https://www.offshore-energy.biz/petrobras-bringing-12-billion-oil-gas-project-pair-to-life-with-sbm-offshore-on-fpso-duty-for-both/"
-    },
-    {
-      "id": 5,
-      "date": "2026-04-02",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Transocean Wins $1B in Offshore Rig Contracts for Norway and Brazil",
-      "summary": "Transocean announced contract awards totaling approximately $1.0 billion. The Transocean Barents was awarded a 1,095-day contract with Var Energi in Norway at $450k/day (~$490M backlog). The Deepwater Orion secured a 1,095-day extension with Petrobras in Brazil (~$420M), and the Deepwater Aquila received a 365-day Petrobras extension (~$160M).",
-      "companies": [
-        "Transocean",
-        "Petrobras"
-      ],
-      "source": "World Oil",
-      "url": "https://worldoil.com/news/2026/4/2/transocean-lands-1-billion-in-brazil-norway-offshore-rig-contracts/"
-    },
-    {
-      "id": 6,
-      "date": "2026-04-02",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Transocean Deepwater Asgard Wins $158M Eastern Mediterranean Contract",
-      "summary": "The Deepwater Asgard was awarded a five-well contract in the Eastern Mediterranean Sea with an undisclosed operator, adding approximately $158 million of backlog. The estimated 390-day campaign is expected to begin in Q4 2026.",
-      "companies": [
-        "Transocean"
-      ],
-      "source": "StockTitan",
-      "url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html"
     }
   ]
 }
