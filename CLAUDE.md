@@ -1,8 +1,8 @@
 # MODU Intelligence Dashboard — 데이터 업데이트 지침
 
 ## 절대 원칙
-- `index.html`은 절대 수정하지 않는다
-- `data/` 디렉토리의 JSON 파일만 수정한다
+- 데이터 업데이트 작업에서는 `data/` 디렉토리의 JSON 파일만 수정한다 (HTML·CSS·JS는 디자인/기능 변경 요청이 있을 때만 수정)
+- 디자인 변경 시 공용 스타일은 `assets/theme.css`·`assets/theme.js`에서 수정한다 (색상·서체 토큰은 theme.css `:root`에 정의)
 - 수정 후 반드시 `updated` 필드를 오늘 날짜(YYYY-MM-DD)로 업데이트한다
 - 누락/알 수 없는 값은 `null`로 설정한다 (빈 문자열 `""` 사용 금지)
 
