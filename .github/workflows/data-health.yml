@@ -1,0 +1,59 @@
+name: Data Health
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/**', 'scripts/check_data.py']
+  schedule:
+    - cron: '0 1 * * 1'   # 매주 월요일 10:00 KST — news refresh(09:00) 이후
+  workflow_dispatch:
+
+concurrency:
+  group: data-health
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run data health check
+        id: check
+        run: |
+          set +e
+          python scripts/check_data.py --markdown > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          grep -q -- "— 0$" <(grep "^### Overdue" report.md) && echo "overdue=0" >> "$GITHUB_OUTPUT" || echo "overdue=1" >> "$GITHUB_OUTPUT"
+
+      - name: Open, update or close the tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Data health: dashboard data needs attention"
+          gh label create data-health --color D93F0B --description "Automated data health check" 2>/dev/null || true
+          NUM=$(gh issue list --label data-health --state open --json number --jq '.[0].number')
+          if [ "${{ steps.check.outputs.status }}" != "0" ] || [ "${{ steps.check.outputs.overdue }}" = "1" ]; then
+            if [ -n "$NUM" ]; then
+              gh issue comment "$NUM" --body-file report.md
+            else
+              gh issue create --title "$TITLE" --label data-health --body-file report.md
+            fi
+          elif [ -n "$NUM" ]; then
+            gh issue close "$NUM" --comment "All checks pass. Closing."
+          fi
+
+      - name: Fail on integrity errors
+        if: steps.check.outputs.status != '0'
+        run: |
+          echo "::error::Integrity errors found — see the job summary."
+          exit 1

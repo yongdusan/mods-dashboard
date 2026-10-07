@@ -76,10 +76,23 @@
   function tidyMeta() {
     var m = document.getElementById('header-meta');
     if (!m) return;
+    var page = (location.pathname.split('/').pop() || 'index.html').replace(/\?.*$/, '');
+    var cadence = { 'pipeline.html': 40, 'drilling.html': 14, 'fpso.html': 40, 'earnings.html': 100, 'fpso_earnings.html': 100, 'news.html': 10 }[page];
     var fix = function () {
       Array.prototype.forEach.call(m.querySelectorAll('span, div'), function (el) {
         if (/^\s*(last\s+)?updated\s*:?\s*$/i.test(el.textContent)) el.classList.add('label');
       });
+      var hit = (m.textContent || '').match(/\d{4}-\d{2}-\d{2}/);
+      if (!cadence || !hit || m.querySelector('.omi-overdue')) return;
+      var age = Math.floor((Date.now() - new Date(hit[0] + 'T00:00:00').getTime()) / 864e5);
+      if (age > cadence) {
+        m.classList.add('is-overdue');
+        var b = document.createElement('span');
+        b.className = 'omi-overdue';
+        b.title = 'Data last updated ' + age + ' days ago (refresh cadence ' + cadence + ' days)';
+        b.textContent = 'overdue';
+        m.appendChild(b);
+      }
     };
     fix();
     new MutationObserver(fix).observe(m, { childList: true, subtree: true });

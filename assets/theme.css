@@ -168,6 +168,8 @@ body .header-meta {
 body .header-meta .meta-row { display: flex; align-items: center; gap: 8px; }
 body .header-meta .value { color: var(--foam) !important; font-weight: 500; }
 body .header-meta .confidence-badge { display: none; }
+body .header-meta.is-overdue .value, body .header-meta.is-overdue #updated-date { color: var(--amber) !important; }
+.omi-overdue { font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--amber); border: 1px solid rgba(230,180,80,.45); border-radius: 2px; padding: 1px 5px; }
 @media (max-width: 1560px) { body .header-meta > span:first-child:not(.value), body .header-meta .label { display: none; } }
 
 @media (max-width: 1180px) {

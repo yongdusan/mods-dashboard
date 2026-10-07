@@ -81,6 +81,24 @@
 
 ---
 
+## 자동화 구성 (2026-10-08 재정비)
+
+| 파일 | 자동 실행 | 실행 위치 |
+|------|---------|---------|
+| `news.json` | GitHub Actions `news-refresh.yml` — 매주 월 09:00 KST | 클라우드 (앱 꺼져도 실행) |
+| `fleet.json` | Claude 예약 작업 `modu-fleet-weekly` — 매주 월 10:30 | Claude 데스크톱 앱 (앱 실행 중일 때) |
+| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | Claude 예약 작업 `modu-earnings-refresh` — 매월 1·16일 10:00 (새 발표분만 추가) | Claude 데스크톱 앱 |
+| `pipeline.json` · `fpso.json` | Claude 예약 작업 `modu-pipeline-fpso-monthly` — 매월 10일 09:00 (1·4·7·10월 전수 점검) | Claude 데스크톱 앱 |
+| 전체 | GitHub Actions `data-health.yml` — data push 시 + 매주 월 10:00 KST, `scripts/check_data.py` 실행. 정합성 ERROR 시 실패, 기한 초과(OVERDUE) 시 `data-health` 라벨 이슈 생성/갱신 | 클라우드 |
+
+**운영 규칙**
+- 예약 작업은 무인 실행이다. 승인 프롬프트가 뜨면 멈추므로 `.claude/settings.local.json` 허용 목록 안의 도구만 쓰고, JSON 수정은 Edit 도구로 한다.
+- 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`를 실행해 ERROR 0을 확인한다.
+- 예약 작업은 확인된 변경을 직접 `git push origin main`까지 한다(배포 포함).
+- 파일 일부만 고쳤을 때 `updated`를 오늘로 바꾸면 나머지 오래된 섹션까지 최신처럼 보인다. 섹션별 기준일이 다른 데이터는 섹션에 `as_of`를 둔다(예: `fpso.json` `market_summary.as_of`).
+
+---
+
 ## 1. fleet.json 업데이트 절차
 
 ### 소스
