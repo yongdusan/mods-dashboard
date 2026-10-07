@@ -2,317 +2,189 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Offshore Market Intelligence</title>
+  <meta name="description" content="Weekly intelligence on deepwater drilling, FPSO/FLNG assets and offshore E&amp;P capex.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2306101b'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23284360' stroke-width='2'/%3E%3Cpath d='M16 6l3 10-3 10-3-10z' fill='%23ff7a3d'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/theme.css">
+  <script src="assets/theme.js"></script>
   <style>
-    :root {
-      --bg: #0d1117;
-      --panel: #161b22;
-      --border: #30363d;
-      --accent: #00d4aa;
-      --text: #e6edf3;
-      --text-muted: #8b949e;
-      --green: #3fb950;
-      --yellow: #d29922;
-      --blue: #58a6ff;
-      --orange: #f0883e;
-      --red: #f85149;
-      --font-body: 'Inter', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.5;
-    }
-    .container {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 24px 32px 40px;
-    }
-    .header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-      padding-bottom: 20px;
-      margin-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-      flex-wrap: wrap;
-    }
-    .header-title {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    h1 {
-      font-size: 22px;
-      letter-spacing: -0.3px;
-      line-height: 1.15;
-    }
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 12px;
-      font-family: var(--font-mono);
-      white-space: nowrap;
-    }
-    .header-nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .header-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 8px;
-    }
-    .header-meta {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 8px;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      font-size: 11px;
-      flex-wrap: wrap;
-    }
-    .header-meta .value {
-      color: var(--accent);
-      font-weight: 500;
-    }
-    .nav-link {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-    }
-    .nav-link:hover { text-decoration: underline; }
-    .nav-link.active {
-      color: var(--text-muted);
-      pointer-events: none;
-    }
+    /* Overview — "sounding sheet": the headline is the week's readout,
+       set over a bathymetric contour field; everything below is an index into the chart room. */
+    .ov { max-width: 1520px; margin: 0 auto; padding-inline: clamp(16px, 3vw, 40px); }
+
+    /* ---------- hero ---------- */
     .hero {
-      display: block;
-      margin-bottom: 24px;
+      position: relative; isolation: isolate;
+      padding-block: clamp(28px, 5vw, 72px) clamp(28px, 4vw, 56px);
+      border-bottom: 1px solid var(--line);
     }
-    .hero-copy, .panel, .sector-card, .news-card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+    .hero-field {
+      position: absolute; inset: -40px calc(50% - 50vw) 0; z-index: -1; pointer-events: none;
+      overflow: hidden;
+      mask-image: linear-gradient(to bottom, transparent 0, #000 18%, #000 70%, transparent 100%);
     }
-    .hero-copy {
-      background: transparent;
-      border: none;
-      border-radius: 0;
-      padding: 0;
-      margin-bottom: 18px;
+    .hero-field canvas { width: 100%; height: 100%; display: block; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: clamp(24px, 4vw, 64px); align-items: end; }
+    .eyebrow {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px;
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--silt);
+      margin-bottom: clamp(18px, 2.4vw, 28px);
     }
-    .hero-copy h2 {
-      font-size: 28px;
-      line-height: 1.15;
-      letter-spacing: -0.2px;
-      margin-bottom: 8px;
+    .eyebrow .pip { width: 6px; height: 6px; background: var(--kelp); border-radius: 50%; box-shadow: 0 0 0 3px rgba(63,191,138,.18); }
+    .eyebrow b { color: var(--foam); font-weight: 500; }
+    .readout {
+      font-family: var(--font-display); font-stretch: 112%; font-weight: 750;
+      font-size: clamp(2.1rem, 1.1rem + 3vw, 4.1rem); line-height: 1.02; letter-spacing: -.028em;
+      max-width: 23ch; margin: 0;
     }
-    .hero-copy p {
-      color: var(--text-muted);
-      font-size: 13px;
-      line-height: 1.65;
-      max-width: 980px;
+    .readout .line { display: block; text-wrap: balance; }
+    .readout .line + .line { margin-top: .12em; }
+    .readout .num {
+      color: var(--signal); font-stretch: 100%; font-variant-numeric: tabular-nums lining-nums;
+      font-weight: 800;
     }
-    .hero-copy p span {
-      display: block;
+    .readout .soft { color: var(--silt); font-weight: 500; }
+    .lede { margin-top: clamp(18px, 2vw, 26px); max-width: 60ch; color: var(--silt); font-size: 15px; line-height: 1.65; }
+
+    /* dayrate instrument */
+    .gauge {
+      border: 1px solid var(--line); background: rgba(11,24,38,.78); border-radius: var(--radius);
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+      padding: 18px 18px 14px;
     }
-    .sector-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 12px;
+    .gauge-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    .k { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--silt); }
+    .gauge-val { font-family: var(--font-display); font-stretch: 108%; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -.02em; margin-top: 12px; font-variant-numeric: tabular-nums; }
+    .gauge-val small { font-family: var(--font-mono); font-size: 12px; color: var(--silt); font-weight: 500; letter-spacing: 0; margin-left: 4px; }
+    .gauge-delta { font-family: var(--font-mono); font-size: 11px; margin-top: 6px; }
+    .up { color: var(--kelp); } .down { color: var(--coral); }
+    .spark { display: block; width: 100%; height: 72px; margin-top: 12px; overflow: visible; }
+    .spark-axis { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--silt); margin-top: 4px; }
+    .gauge-legend { display: flex; gap: 14px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 10.5px; color: var(--silt); }
+    .gauge-legend i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 6px; }
+
+    /* ---------- soundings strip ---------- */
+    .soundings { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
+    .snd { position: relative; padding: 22px 20px 20px; border-right: 1px solid var(--line); min-width: 0; }
+    .snd:last-child { border-right: 0; }
+    .snd::before { content: ""; position: absolute; left: 20px; right: 20px; top: 0; height: 5px; background: repeating-linear-gradient(to right, var(--line-2) 0 1px, transparent 1px 8px); }
+    .snd-val { font-family: var(--font-display); font-stretch: 108%; font-weight: 700; font-size: clamp(26px, 2.4vw, 34px); letter-spacing: -.02em; line-height: 1; margin-top: 12px; font-variant-numeric: tabular-nums; }
+    .snd-val small { font-family: var(--font-mono); font-size: 11px; color: var(--silt); font-weight: 500; letter-spacing: 0; margin-left: 3px; }
+    .snd-sub { font-family: var(--font-mono); font-size: 11px; color: var(--silt); margin-top: 8px; }
+    .meter { height: 3px; background: var(--line); margin-top: 12px; position: relative; overflow: hidden; }
+    .meter > i { position: absolute; inset: 0 auto 0 0; background: var(--kelp); transform-origin: left; }
+
+    /* ---------- sections ---------- */
+    .sec { padding-block: clamp(36px, 5vw, 64px) 0; }
+    .sec-head { display: flex; justify-content: space-between; align-items: end; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 18px; }
+    .sec-title { font-family: var(--font-display); font-stretch: 112%; font-weight: 750; font-size: clamp(22px, 2vw, 30px); letter-spacing: -.015em; line-height: 1.05; margin: 0; }
+    .sec-note { font-family: var(--font-mono); font-size: 11px; color: var(--silt); }
+    .sec-link { font-size: 13px; font-weight: 500; color: var(--signal); text-decoration: none; }
+    .sec-link:hover { text-decoration: underline; }
+
+    /* chart index */
+    .index { border-top: 1px solid var(--line-2); }
+    .row {
+      display: grid; grid-template-columns: 150px minmax(0, 1.1fr) minmax(0, 1.4fr) 150px 28px; gap: 8px 24px; align-items: center;
+      padding: 18px 4px; border-bottom: 1px solid var(--line); color: var(--foam); text-decoration: none;
+      transition: background-color .2s var(--ease), padding .25s var(--ease);
     }
-    @media (max-width: 1280px) {
-      .sector-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .row:hover { background: linear-gradient(90deg, rgba(255,122,61,.07), transparent 70%); padding-left: 14px; }
+    .row-kind { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--silt); }
+    .row-title { font-family: var(--font-display); font-stretch: 110%; font-weight: 650; font-size: 19px; letter-spacing: -.01em; }
+    .row-desc { color: var(--silt); font-size: 13px; line-height: 1.5; }
+    .row-fig { font-family: var(--font-display); font-stretch: 108%; font-weight: 700; font-size: 22px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .row-fig small { font-family: var(--font-mono); font-size: 11px; color: var(--silt); font-weight: 500; margin-left: 4px; }
+    .row-arrow { color: var(--silt); transition: transform .25s var(--ease), color .2s; justify-self: end; }
+    .row:hover .row-arrow { transform: translateX(4px); color: var(--signal); }
+
+    /* funnel */
+    .split { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(20px, 3vw, 40px); }
+    .funnel { display: grid; gap: 14px; }
+    .fn { display: grid; grid-template-columns: 96px minmax(0, 1fr) 120px; gap: 14px; align-items: center; }
+    .fn-name { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--silt); }
+    .fn-track { height: 28px; background: repeating-linear-gradient(to right, rgba(40,67,96,.35) 0 1px, transparent 1px 10%); position: relative; border-left: 1px solid var(--line-2); }
+    .fn-bar { position: absolute; inset: 4px auto 4px 0; background: var(--sonar); transform-origin: left; }
+    .fn-bar.exec { background: var(--signal); }
+    .fn-bar.prod { background: var(--line-2); }
+    .fn-bar.pre { background: rgba(111,180,242,.45); }
+    .fn-val { font-family: var(--font-mono); font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+    .fn-val b { color: var(--foam); font-weight: 600; }
+    .fn-val span { color: var(--silt); }
+    .fn-scale { display: grid; grid-template-columns: 96px minmax(0, 1fr) 120px; gap: 14px; font-family: var(--font-mono); font-size: 10px; color: var(--silt); }
+    .fn-scale div { display: flex; justify-content: space-between; }
+    .mix { margin-top: 34px; }
+    .mix-bar { display: flex; height: 34px; gap: 2px; margin-top: 12px; }
+    .mix-bar > i { display: block; min-width: 3px; transition: filter .15s; }
+    .mix-bar > i:hover { filter: brightness(1.25); }
+    .mix-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 16px; margin-top: 14px; font-family: var(--font-mono); font-size: 11px; color: var(--silt); }
+    .mix-legend span { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .mix-legend i { width: 8px; height: 8px; flex: none; }
+    .mix-legend b { color: var(--foam); font-weight: 600; margin-left: auto; font-variant-numeric: tabular-nums; }
+    .card { border: 1px solid var(--line); background: var(--hull); border-radius: var(--radius); }
+    .card-head { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    .fid { list-style: none; margin: 0; padding: 0; }
+    .fid li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+    .fid li:last-child { border-bottom: 0; }
+    .fid-name { font-weight: 600; font-size: 14px; min-width: 0; }
+    .fid-cap { font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; text-align: right; }
+    .fid-meta { font-family: var(--font-mono); font-size: 11px; color: var(--silt); grid-column: 1 / -1; }
+
+    /* news */
+    .wire { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line-2); }
+    .wire-col { padding: 16px 20px 6px 0; min-width: 0; }
+    .wire-col + .wire-col { padding-left: 20px; border-left: 1px solid var(--line); }
+    .wire-col h3 { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--silt); font-weight: 600; margin: 0 0 6px; }
+    .wire-col h3 i { width: 7px; height: 7px; transform: rotate(45deg); display: inline-block; }
+    .item { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--foam); text-decoration: none; }
+    .item:last-child { border-bottom: 0; }
+    .item-meta { display: flex; gap: 10px; font-family: var(--font-mono); font-size: 10.5px; color: var(--silt); margin-bottom: 6px; }
+    .item-meta .cat { color: var(--foam); }
+    .item-title { font-weight: 600; font-size: 14.5px; line-height: 1.38; text-wrap: balance; transition: color .15s; }
+    .item:hover .item-title { color: var(--signal); }
+    .item-sum { color: var(--silt); font-size: 12.5px; line-height: 1.6; margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+    .err { margin: 40px 0; padding: 16px; border: 1px dashed var(--coral); color: var(--coral); font-family: var(--font-mono); font-size: 12px; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .readout .line { animation: omi-up .8s var(--ease) both; }
+      .readout .line:nth-child(2) { animation-delay: .08s; }
+      .readout .line:nth-child(3) { animation-delay: .16s; }
+      .fn-bar, .meter > i { animation: grow 1s var(--ease) both .2s; }
     }
-    @media (max-width: 820px) {
-      .sector-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @keyframes omi-up { from { opacity: .4; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { transform: scaleX(.02); } to { transform: none; } }
+
+    @media (max-width: 1100px) {
+      .hero-grid, .split { grid-template-columns: 1fr; }
+      .gauge { max-width: 460px; }
+            .soundings { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+      .snd { grid-column: span 2; }
+      .snd:nth-child(n+4) { grid-column: span 3; border-top: 1px solid var(--line); }
+      .snd:nth-child(3) { border-right: 0; }
+      .row { grid-template-columns: 120px minmax(0, 1fr) 120px 20px; }
+      .row-desc { display: none; }
+      .wire { grid-template-columns: 1fr; }
+      .wire-col + .wire-col { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-2); }
     }
-    @media (max-width: 560px) {
-      .sector-grid { grid-template-columns: 1fr; }
-    }
-    .sector-card {
-      min-height: 128px;
-      padding: 16px 18px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: var(--text);
-      text-decoration: none;
-      transition: border-color 0.15s, transform 0.15s;
-    }
-    .sector-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .sector-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    .label {
-      color: var(--text-muted);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .sector-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .sector-desc {
-      color: var(--text-muted);
-      font-size: 12px;
-      line-height: 1.55;
-    }
-    .metric {
-      flex-shrink: 0;
-      color: var(--accent);
-      font-family: var(--font-mono);
-      font-size: 18px;
-      font-weight: 700;
-      white-space: nowrap;
-      text-align: right;
-    }
-    .sector-foot {
-      color: var(--blue);
-      font-size: 11px;
-      font-weight: 600;
-      margin-top: 14px;
-    }
-    .section-head {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 16px;
-      margin: 8px 0 12px;
-    }
-    .section-title {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.7px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-    .section-link {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .section-link:hover { text-decoration: underline; }
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-    }
-    @media (max-width: 980px) {
-      .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 680px) {
-      .news-grid { grid-template-columns: 1fr; }
-    }
-    .news-card {
-      padding: 16px 18px;
-      min-height: 220px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .news-meta {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      margin-bottom: 10px;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      font-size: 10px;
-    }
-    .category {
-      color: #0d1117;
-      background: var(--accent);
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-family: var(--font-body);
-      font-size: 10px;
-      font-weight: 700;
-    }
-    .category.Earnings { background: var(--yellow); }
-    .category.Fleet { background: var(--blue); }
-    .category.MA { background: var(--orange); }
-    .category.Outlook { background: var(--green); }
-    .news-title {
-      color: var(--text);
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1.35;
-      margin-bottom: 9px;
-    }
-    .news-summary {
-      color: var(--text-muted);
-      font-size: 12px;
-      line-height: 1.6;
-    }
-    .news-source {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 600;
-      margin-top: 14px;
-      display: inline-flex;
-    }
-    .news-source:hover { text-decoration: underline; }
-    .loading {
-      padding: 16px;
-      color: var(--red);
-      border: 1px solid rgba(248,81,73,0.35);
-      background: rgba(248,81,73,0.06);
-      border-radius: 8px;
-    }
-    /* Shared header alignment */
-    .header {
-      display: grid;
-      grid-template-columns: minmax(280px, 1fr) minmax(0, auto);
-      align-items: start;
-      gap: 12px 24px;
-    }
-    .header-right,
-    .header-nav { justify-self: end; }
-    .header-nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    @media (max-width: 900px) {
-      .header { grid-template-columns: 1fr; }
-      .header-right,
-      .header-nav {
-        justify-self: start;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
-      .subtitle { white-space: normal; }
-      .hero-copy p span { display: inline; }
+    @media (max-width: 640px) {
+      .soundings { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .snd { border-right: 1px solid var(--line) !important; border-top: 1px solid var(--line); padding: 18px 14px 16px; }
+      .snd:nth-child(2n) { border-right: 0 !important; }
+      .snd:nth-child(-n+2) { border-top: 0; }
+      .soundings { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .snd, .snd:nth-child(n+4) { grid-column: auto; }
+      .snd:last-child { grid-column: 1 / -1; border-right: 0 !important; }
+      .snd::before { left: 14px; right: 14px; }
+      .row { grid-template-columns: minmax(0, 1fr) auto; padding: 16px 2px; }
+      .row-kind { grid-column: 1 / -1; }
+      .row-arrow { display: none; }
+      .fn { grid-template-columns: 70px minmax(0, 1fr) 92px; gap: 10px; }
+      .fn-scale { grid-template-columns: 70px minmax(0, 1fr) 92px; gap: 10px; }
     }
   </style>
 </head>
@@ -324,7 +196,7 @@
       <span class="subtitle">Deepwater offshore market dashboard</span>
     </div>
     <div class="header-right">
-      <nav class="header-nav">
+      <nav class="header-nav" aria-label="Dashboards">
         <span class="nav-link active">Overview</span>
         <a href="pipeline.html" class="nav-link">E&amp;P Pipeline</a>
         <a href="drilling.html" class="nav-link">Deepwater Drilling</a>
@@ -333,169 +205,302 @@
         <a href="fpso_earnings.html" class="nav-link">FPSO / FLNG Financials</a>
         <a href="news.html" class="nav-link">Market News</a>
       </nav>
-      <div class="header-meta" id="header-meta">
-        <!-- populated by JS -->
-      </div>
+      <div class="header-meta" id="header-meta"><span>Updated</span><span class="value">—</span></div>
     </div>
   </header>
-
-  <main id="app">
-    <div class="loading">Loading offshore market data...</div>
-  </main>
 </div>
 
+<main class="ov" id="app">
+  <section class="hero" aria-labelledby="readout">
+    <div class="hero-field" aria-hidden="true"><canvas id="field"></canvas></div>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow" id="eyebrow"><span class="pip"></span><span>Weekly readout</span></div>
+        <h2 class="readout" id="readout">
+          <span class="line"><span class="num">—</span> in offshore projects under execution.</span>
+        </h2>
+        <p class="lede">Deepwater drilling, floating production and offshore E&amp;P capex, tracked from operator IR, contract disclosures and trade press. Each figure links to its source dashboard.</p>
+      </div>
+      <aside class="gauge" id="gauge" aria-label="UDW drillship dayrate">
+        <div class="gauge-head"><span class="k">UDW drillship dayrate</span><span class="k" id="g-date">—</span></div>
+        <div class="gauge-val" id="g-val">—</div>
+        <div class="gauge-delta" id="g-delta">&nbsp;</div>
+        <svg class="spark" id="spark" viewBox="0 0 300 72" preserveAspectRatio="none" role="img" aria-label="Quarterly dayrate trend"></svg>
+        <div class="spark-axis" id="spark-axis"></div>
+        <div class="gauge-legend"><span><i style="background:var(--signal)"></i>Drillship UDW</span><span><i style="background:var(--sonar)"></i>Semi-sub DW</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="soundings" id="soundings" aria-label="Key figures"></section>
+
+  <section class="sec" aria-labelledby="idx-title">
+    <div class="sec-head">
+      <h2 class="sec-title" id="idx-title">Dashboards</h2>
+      <span class="sec-note">Demand → assets → contractor financials → news</span>
+    </div>
+    <nav class="index" id="index" aria-label="Dashboard index"></nav>
+  </section>
+
+  <section class="sec" aria-labelledby="fn-title">
+    <div class="sec-head">
+      <h2 class="sec-title" id="fn-title">Project funnel</h2>
+      <a class="sec-link" href="pipeline.html">Open E&amp;P pipeline →</a>
+    </div>
+    <div class="split">
+      <div>
+        <div class="funnel" id="funnel"></div>
+        <div class="fn-scale" id="fn-scale" style="margin-top:8px"></div>
+        <div class="mix">
+          <div class="sec-head" style="margin:0"><span class="k">Execution capex by region</span><span class="k" id="mix-total"></span></div>
+          <div class="mix-bar" id="mix-bar" role="img" aria-label="Execution-phase capex split by region"></div>
+          <div class="mix-legend" id="mix-legend"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span class="k">Largest pre-FID projects (FEED)</span><span class="k">CAPEX</span></div>
+        <ul class="fid" id="fid"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="news-title">
+    <div class="sec-head">
+      <h2 class="sec-title" id="news-title">Latest from the wire</h2>
+      <a class="sec-link" href="news.html">All market news →</a>
+    </div>
+    <div class="wire" id="wire"></div>
+  </section>
+</main>
+
 <script>
+(function () {
+  /* ---------- bathymetric contour field ---------- */
+  var cv = document.getElementById('field');
+  var ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var seeds = [];
+  (function () { var s = 41; function r() { s = (s * 16807) % 2147483647; return s / 2147483647; }
+    for (var i = 0; i < 9; i++) seeds.push({ x: r(), y: r(), a: (r() - .35) * 1.6, w: .08 + r() * .22 }); })();
+  function depth(x, y) {
+    var v = y * 1.2;                                   /* shelf slopes into the deep toward the bottom */
+    for (var i = 0; i < seeds.length; i++) {
+      var s = seeds[i], dx = x - s.x, dy = y - s.y;
+      v += s.a * Math.exp(-(dx * dx + dy * dy) / (s.w * s.w));
+    }
+    return v;
+  }
+  var ping = { x: .62, y: .2 };
+  var grid = null, W = 0, H = 0, dpr = 1;
+  function build() {
+    var r = cv.getBoundingClientRect();
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = Math.max(1, r.width); H = Math.max(1, r.height);
+    cv.width = W * dpr; cv.height = H * dpr;
+    var step = 9, cols = Math.ceil(W / step) + 1, rows = Math.ceil(H / step) + 1;
+    var g = new Float32Array(cols * rows);
+    for (var j = 0; j < rows; j++) for (var i = 0; i < cols; i++) g[j * cols + i] = depth(i * step / W, j * step / H);
+    grid = { g: g, cols: cols, rows: rows, step: step };
+  }
+  function contours() {
+    var g = grid.g, C = grid.cols, R = grid.rows, s = grid.step;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    for (var L = -0.6, n = 0; L < 2.2; L += 0.09, n++) {
+      var major = n % 5 === 0;
+      ctx.beginPath();
+      ctx.strokeStyle = major ? 'rgba(111,180,242,.30)' : 'rgba(111,180,242,.12)';
+      ctx.lineWidth = major ? 1.1 : .7;
+      for (var j = 0; j < R - 1; j++) for (var i = 0; i < C - 1; i++) {
+        var a = g[j*C+i], b = g[j*C+i+1], c = g[(j+1)*C+i+1], d = g[(j+1)*C+i];
+        var idx = (a > L) | ((b > L) << 1) | ((c > L) << 2) | ((d > L) << 3);
+        if (idx === 0 || idx === 15) continue;
+        var x = i * s, y = j * s;
+        var t = function (p, q) { return (L - p) / (q - p); };
+        var top = [x + s * t(a, b), y], right = [x + s, y + s * t(b, c)], bot = [x + s * t(d, c), y + s], left = [x, y + s * t(a, d)];
+        var segs = { 1:[left,top],2:[top,right],3:[left,right],4:[right,bot],5:[left,top,right,bot],6:[top,bot],7:[left,bot],
+                     8:[bot,left],9:[bot,top],10:[top,right,bot,left],11:[bot,right],12:[right,left],13:[right,top],14:[top,left] }[idx];
+        for (var k = 0; k < segs.length; k += 2) { ctx.moveTo(segs[k][0], segs[k][1]); ctx.lineTo(segs[k+1][0], segs[k+1][1]); }
+      }
+      ctx.stroke();
+    }
+    /* soundings (depth labels in metres) */
+    ctx.font = '10px "IBM Plex Mono", ui-monospace, monospace';
+    ctx.fillStyle = 'rgba(138,155,174,.55)';
+    var marks = [[.08,.30],[.22,.78],[.43,.42],[.58,.86],[.86,.30],[.93,.74]];
+    marks.forEach(function (m) {
+      var dm = Math.round(Math.max(60, depth(m[0], m[1]) * 1900) / 10) * 10;
+      ctx.fillText(dm.toLocaleString('en-US') + ' m', m[0] * W, m[1] * H);
+    });
+  }
+  var base = null;
+  function render() {
+    build(); contours();
+    base = ctx.getImageData(0, 0, cv.width, cv.height);
+  }
+  var t0 = performance.now();
+  function frame(t) {
+    if (!base) return;
+    ctx.putImageData(base, 0, 0);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var px = ping.x * W, py = ping.y * H, period = 4200;
+    for (var k = 0; k < 2; k++) {
+      var p = (((t - t0) + k * period / 2) % period) / period;
+      ctx.beginPath(); ctx.arc(px, py, 6 + p * Math.min(W, H) * .42, 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(255,122,61,' + (0.35 * (1 - p)).toFixed(3) + ')'; ctx.lineWidth = 1; ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(px, py, 3, 0, Math.PI * 2); ctx.fillStyle = '#ff7a3d'; ctx.fill();
+    if (!reduce && visible) requestAnimationFrame(frame);
+  }
+  var visible = true;
+  render(); frame(t0 + 900);
+  if (!reduce) requestAnimationFrame(frame);
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (e) {
+    var was = visible; visible = e[0].isIntersecting; if (visible && !was && !reduce) requestAnimationFrame(frame);
+  }).observe(cv);
+  var rz; window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(function () { render(); frame(performance.now()); }, 150); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { render(); frame(performance.now()); });
+})();
+
 (async function () {
-  const dataFiles = [
-    './data/fleet.json',
-    './data/pipeline.json',
-    './data/fpso.json',
-    './data/earnings.json',
-    './data/fpso_earnings.json',
-    './data/news.json',
-  ];
-
-  function esc(str) {
-    if (str == null) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
-
-  function categoryClass(category) {
-    if (category === 'M&A') return 'MA';
-    return category || '';
-  }
-
-  function renderNews(items) {
-    return items.slice(0, 6).map(item => `
-      <article class="news-card">
-        <div>
-          <div class="news-meta">
-            <span class="category ${esc(categoryClass(item.category))}">${esc(item.category)}</span>
-            <span>${esc(item.date)}</span>
-          </div>
-          <div class="news-title">${esc(item.title)}</div>
-          <div class="news-summary">${esc(item.summary)}</div>
-        </div>
-        <a class="news-source" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.source)} -></a>
-      </article>
-    `).join('');
-  }
-
+  function esc(s) { return s == null ? '' : String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function fmtB(v) { return '$' + (v >= 100 ? Math.round(v) : v.toFixed(1)) + 'B'; }
+  var files = ['fleet','pipeline','fpso','earnings','fpso_earnings','news','rates'];
   try {
-    const [fleet, pipeline, fpso, drillingEarnings, fpsoEarnings, news] = await Promise.all(
-      dataFiles.map(url => fetch(url).then(r => {
-        if (!r.ok) throw new Error(`${url} ${r.status}`);
-        return r.json();
-      }))
-    );
+    var D = {};
+    var res = await Promise.all(files.map(function (f) {
+      return fetch('./data/' + f + '.json').then(function (r) { if (!r.ok) throw new Error(f + '.json ' + r.status); return r.json(); });
+    }));
+    files.forEach(function (f, i) { D[f] = res[i]; });
 
-    const deepwaterRigs = fleet.rigs.filter(r => r.type === 'Drillship' || r.type === 'Semisubmersible');
-    const pipelineProjects = pipeline.projects || [];
-    const sortedNews = [...news.items].sort((a, b) => b.date.localeCompare(a.date));
-    const drillingNews = sortedNews.filter(n => n.sector === 'Drilling').slice(0, 3);
-    const fpsoNews = sortedNews.filter(n => n.sector === 'FPSO/FLNG').slice(0, 3);
-    const latestNews = [
-      drillingNews[0], fpsoNews[0],
-      drillingNews[1], fpsoNews[1],
-      drillingNews[2], fpsoNews[2],
-    ].filter(Boolean);
-    const latestUpdate = [
-      fleet.updated,
-      pipeline.updated,
-      fpso.updated,
-      drillingEarnings.updated,
-      fpsoEarnings.updated,
-      news.updated,
-    ].filter(Boolean).sort().pop() || '—';
+    var projects = D.pipeline.projects || [];
+    var sum = function (arr) { return arr.reduce(function (a, p) { return a + (p.capex_busd || 0); }, 0); };
+    var byPhase = function (ph) { return projects.filter(function (p) { return p.phase === ph; }); };
+    var execP = projects.filter(function (p) { return p.phase === 'Execution' || p.phase === 'FID'; });
+    var feedP = byPhase('FEED');
+    var dw = D.fleet.rigs.filter(function (r) { return r.type === 'Drillship' || r.type === 'Semisubmersible'; });
+    var dwOn = dw.filter(function (r) { return r.status === 'On Contract'; }).length;
+    var util = dw.length ? Math.round(dwOn / dw.length * 100) : 0;
+    var ms = D.fpso.market_summary || {};
+    var latest = [D.fleet.updated, D.pipeline.updated, D.fpso.updated, D.earnings.updated, D.fpso_earnings.updated, D.news.updated, D.rates.updated]
+      .filter(Boolean).sort().pop() || '—';
 
-    document.getElementById('header-meta').innerHTML = `
-      <span>Updated:</span>
-      <span class="value">${esc(latestUpdate)}</span>
-    `;
+    document.querySelector('#header-meta .value').textContent = latest;
 
-    document.getElementById('app').innerHTML = `
-      <section class="hero">
-        <div class="hero-copy">
-          <h2>Offshore Market Overview</h2>
-          <p>
-            <span>Your starting point for deepwater drilling, FPSO/FLNG, and E&amp;P CAPEX intelligence.</span>
-            <span>Assets, earnings, projects, and market news — each sector linked to a dedicated dashboard.</span>
-          </p>
-        </div>
-        <div class="sector-grid">
-          <a class="sector-card" href="pipeline.html">
-            <div class="sector-top">
-              <div>
-                <div class="label">Demand</div>
-                <div class="sector-title">E&amp;P Pipeline</div>
-                <div class="sector-desc">Major offshore projects, phase tracking and upstream CAPEX by operator.</div>
-              </div>
-              <div class="metric">${pipelineProjects.length} projects</div>
-            </div>
-            <div class="sector-foot">Open pipeline dashboard</div>
-          </a>
-          <a class="sector-card" href="drilling.html">
-            <div class="sector-top">
-              <div>
-                <div class="label">Sector</div>
-                <div class="sector-title">UDW / Deepwater Rigs</div>
-                <div class="sector-desc">Drillship and deepwater / harsh-environment semi-sub fleet status, utilization and dayrate trend.</div>
-              </div>
-              <div class="metric">${deepwaterRigs.length} rigs</div>
-            </div>
-            <div class="sector-foot">Open drilling dashboard</div>
-          </a>
-          <a class="sector-card" href="fpso.html">
-            <div class="sector-top">
-              <div>
-                <div class="label">Sector</div>
-                <div class="sector-title">FPSO / FLNG Assets</div>
-                <div class="sector-desc">Operating assets, orderbook, project pipeline and charter rates.</div>
-              </div>
-              <div class="metric">${fpso.vessels.length} assets</div>
-            </div>
-            <div class="sector-foot">Open asset dashboard</div>
-          </a>
-          <a class="sector-card" href="earnings.html">
-            <div class="sector-top">
-              <div>
-                <div class="label">Financials</div>
-                <div class="sector-title">Drilling Contractors</div>
-                <div class="sector-desc">Contractor revenue, EBITDA margin, fleet mix and backlog.</div>
-              </div>
-              <div class="metric">${drillingEarnings.companies.length} cos</div>
-            </div>
-            <div class="sector-foot">Open drilling financials</div>
-          </a>
-          <a class="sector-card" href="fpso_earnings.html">
-            <div class="sector-top">
-              <div>
-                <div class="label">Financials</div>
-                <div class="sector-title">FPSO / FLNG Operators</div>
-                <div class="sector-desc">Operator earnings, lease fleet, turnkey exposure and backlog.</div>
-              </div>
-              <div class="metric">${fpsoEarnings.companies.length} cos</div>
-            </div>
-            <div class="sector-foot">Open operator financials</div>
-          </a>
-        </div>
-      </section>
+    /* week number */
+    var d = new Date(latest + 'T00:00:00Z'), j1 = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    var wk = Math.ceil(((d - j1) / 864e5 + j1.getUTCDay() + 1) / 7);
+    document.getElementById('eyebrow').innerHTML =
+      '<span class="pip"></span><span>Weekly readout</span><span>W' + wk + ' · <b>' + esc(latest) + '</b></span><span>' +
+      projects.length + ' projects · ' + dw.length + ' deepwater rigs · ' + (D.fpso.vessels || []).length + ' floaters tracked</span>';
 
-      <section>
-        <div class="section-head">
-          <div class="section-title">Latest Market News</div>
-          <a class="section-link" href="news.html">View all news</a>
-        </div>
-        <div class="news-grid">${renderNews(latestNews)}</div>
-      </section>
-    `;
+    document.getElementById('readout').innerHTML =
+      '<span class="line"><span class="num">' + fmtB(sum(execP)) + '</span> of offshore projects in execution.</span>' +
+      '<span class="line"><span class="num">' + util + '%</span> of deepwater rigs on contract.</span>' +
+      '<span class="line"><span class="num">' + (ms.under_construction != null ? ms.under_construction : '—') + '</span> <span class="soft">FPSO/FLNG units under construction.</span></span>';
+
+    /* dayrate gauge */
+    var series = function (type, tier) {
+      return (D.rates.day_rates || []).filter(function (x) { return x.rig_type === type && x.tier === tier; })
+        .sort(function (a, b) { return a.date.localeCompare(b.date); });
+    };
+    var ds = series('Drillship', 'Ultra-deepwater'), ss = series('Semisubmersible', 'Deepwater');
+    if (ds.length) {
+      var last = ds[ds.length - 1], first = ds[0], prev = ds[ds.length - 2] || first;
+      document.getElementById('g-val').innerHTML = '$' + last.rate_kusd + '<small>k/day</small>';
+      document.getElementById('g-date').textContent = last.date;
+      var ch = last.rate_kusd - prev.rate_kusd, chY = ((last.rate_kusd / first.rate_kusd - 1) * 100);
+      document.getElementById('g-delta').innerHTML =
+        '<span class="' + (ch >= 0 ? 'up' : 'down') + '">' + (ch >= 0 ? '▲ +' : '▼ ') + ch + 'k q/q</span>' +
+        '<span style="color:var(--silt)"> · ' + (chY >= 0 ? '+' : '') + chY.toFixed(1) + '% since ' + first.date + '</span>';
+      var all = ds.concat(ss).map(function (x) { return x.rate_kusd; });
+      var lo = Math.floor((Math.min.apply(null, all) - 20) / 50) * 50, hi = Math.ceil((Math.max.apply(null, all) + 10) / 50) * 50;
+      var X = function (i, n) { return 4 + i * (292 / Math.max(1, n - 1)); }, Y = function (v) { return 68 - (v - lo) / (hi - lo) * 62; };
+      var path = function (arr) { return arr.map(function (x, i) { return (i ? 'L' : 'M') + X(i, arr.length).toFixed(1) + ' ' + Y(x.rate_kusd).toFixed(1); }).join(' '); };
+      var svg = '';
+      [lo, (lo + hi) / 2, hi].forEach(function (v) { svg += '<line x1="0" x2="300" y1="' + Y(v) + '" y2="' + Y(v) + '" stroke="rgba(40,67,96,.55)" stroke-width="1" vector-effect="non-scaling-stroke"/>'; });
+      svg += '<path d="' + path(ds) + ' L' + X(ds.length - 1, ds.length) + ' 72 L4 72 Z" fill="rgba(255,122,61,.10)"/>';
+      if (ss.length) svg += '<path d="' + path(ss) + '" fill="none" stroke="#6fb4f2" stroke-width="1.5" vector-effect="non-scaling-stroke"/>';
+      svg += '<path d="' + path(ds) + '" fill="none" stroke="#ff7a3d" stroke-width="2" vector-effect="non-scaling-stroke"/>';
+      document.getElementById('spark').innerHTML = svg;
+      document.getElementById('spark-axis').innerHTML = '<span>' + esc(first.date) + '</span><span>$' + lo + 'k–$' + hi + 'k</span><span>' + esc(last.date) + '</span>';
+    }
+
+    /* soundings */
+    var obVal = (D.fpso.orderbook || []).reduce(function (a, o) { return a + (o.contract_value_busd || 0); }, 0);
+    var udw = dw.filter(function (r) { return r.type === 'Drillship'; });
+    var udwRates = udw.filter(function (r) { return r.status === 'On Contract' && r.day_rate_kusd; }).map(function (r) { return r.day_rate_kusd; });
+    var avgRate = udwRates.length ? Math.round(udwRates.reduce(function (a, b) { return a + b; }, 0) / udwRates.length) : null;
+    var S = [
+      { k: 'Pre-FID pipeline', v: fmtB(sum(feedP) + sum(byPhase('Pre-FEED'))), sub: feedP.length + ' FEED · ' + byPhase('Pre-FEED').length + ' pre-FEED projects' },
+      { k: 'Deepwater rigs', v: dwOn + '<small>/ ' + dw.length + '</small>', sub: util + '% contracted', meter: util },
+      { k: 'Avg drillship rate', v: avgRate ? '$' + avgRate + '<small>k/d</small>' : '—', sub: udwRates.length + ' contracted drillships, fleet table' },
+      { k: 'Global FPSO fleet', v: (ms.active_fleet || '—') + '<small>units</small>', sub: (ms.on_production || '—') + ' producing · ' + (ms.flng_active || 0) + ' FLNG' },
+      { k: 'Tracked orderbook', v: (D.fpso.orderbook || []).length + '<small>floaters</small>', sub: obVal ? fmtB(obVal) + ' disclosed contract value' : 'contract values partly undisclosed' }
+    ];
+    document.getElementById('soundings').innerHTML = S.map(function (s) {
+      return '<div class="snd"><div class="k">' + esc(s.k) + '</div><div class="snd-val">' + s.v + '</div>' +
+        (s.meter != null ? '<div class="meter"><i style="width:' + s.meter + '%"></i></div>' : '') +
+        '<div class="snd-sub">' + esc(s.sub) + '</div></div>';
+    }).join('');
+
+    /* index */
+    var arrow = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
+    var rows = [
+      ['pipeline.html', 'Demand', 'E&amp;P Pipeline', 'Offshore projects by phase, region and operator capex; FID and first-oil tracking.', projects.length, 'projects'],
+      ['drilling.html', 'Assets', 'Deepwater Drilling', 'Drillship and semi-sub fleet status, contract coverage and dayrate trend.', dw.length, 'rigs'],
+      ['fpso.html', 'Assets', 'FPSO / FLNG Assets', 'Operating floaters, orderbook and charter rates by contractor and basin.', (D.fpso.vessels || []).length, 'units'],
+      ['earnings.html', 'Financials', 'Drilling Financials', 'Contractor revenue, EBITDA margin, utilisation and backlog by quarter.', (D.earnings.companies || []).length, 'companies'],
+      ['fpso_earnings.html', 'Financials', 'FPSO / FLNG Financials', 'Lessor earnings, lease fleet, turnkey exposure and backlog.', (D.fpso_earnings.companies || []).length, 'companies'],
+      ['news.html', 'Wire', 'Market News', 'Contracts, FIDs, M&amp;A and earnings, filtered by sector.', (D.news.items || []).length, 'items']
+    ];
+    document.getElementById('index').innerHTML = rows.map(function (r) {
+      return '<a class="row" href="' + r[0] + '"><span class="row-kind">' + r[1] + '</span><span class="row-title">' + r[2] +
+        '</span><span class="row-desc">' + r[3] + '</span><span class="row-fig">' + r[4] + '<small>' + r[5] + '</small></span><span class="row-arrow">' + arrow + '</span></a>';
+    }).join('');
+
+    /* funnel */
+    var phases = [['Pre-FEED', 'pre'], ['FEED', ''], ['Execution', 'exec'], ['Production', 'prod']];
+    var caps = phases.map(function (p) { return sum(byPhase(p[0])) + (p[0] === 'Execution' ? sum(byPhase('FID')) : 0); });
+    var maxC = Math.ceil(Math.max.apply(null, caps) / 50) * 50 || 50;
+    document.getElementById('funnel').innerHTML = phases.map(function (p, i) {
+      var n = byPhase(p[0]).length + (p[0] === 'Execution' ? byPhase('FID').length : 0);
+      return '<div class="fn"><span class="fn-name">' + p[0] + '</span><div class="fn-track"><i class="fn-bar ' + p[1] + '" style="width:' + (caps[i] / maxC * 100).toFixed(1) + '%"></i></div>' +
+        '<span class="fn-val"><b>' + fmtB(caps[i]) + '</b> <span>· ' + n + '</span></span></div>';
+    }).join('');
+    document.getElementById('fn-scale').innerHTML = '<span></span><div><span>$0</span><span>$' + maxC / 2 + 'B</span><span>$' + maxC + 'B</span></div><span style="text-align:right">capex · count</span>';
+
+    var regionTone = ['#ff7a3d', '#6fb4f2', '#3fbf8a', '#e6b450', '#b79cf0', '#8a9bae', '#284360'];
+    var reg = {};
+    execP.forEach(function (p) { reg[p.region] = (reg[p.region] || 0) + (p.capex_busd || 0); });
+    var regs = Object.keys(reg).map(function (k) { return [k, reg[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+    var regTot = regs.reduce(function (a, r) { return a + r[1]; }, 0) || 1;
+    document.getElementById('mix-total').textContent = fmtB(regTot) + ' · ' + execP.length + ' projects';
+    document.getElementById('mix-bar').innerHTML = regs.map(function (r, i) {
+      return '<i title="' + esc(r[0]) + ' ' + fmtB(r[1]) + '" style="flex:' + r[1].toFixed(2) + ';background:' + regionTone[i % regionTone.length] + '"></i>';
+    }).join('');
+    document.getElementById('mix-legend').innerHTML = regs.map(function (r, i) {
+      return '<span><i style="background:' + regionTone[i % regionTone.length] + '"></i>' + esc(r[0]) + '<b>' + Math.round(r[1] / regTot * 100) + '%</b></span>';
+    }).join('');
+
+    document.getElementById('fid').innerHTML = feedP.slice().sort(function (a, b) { return (b.capex_busd || 0) - (a.capex_busd || 0); }).slice(0, 6).map(function (p) {
+      return '<li><span class="fid-name">' + esc(p.project) + '</span><span class="fid-cap">' + (p.capex_busd ? fmtB(p.capex_busd) : 'n/d') + '</span>' +
+        '<span class="fid-meta">' + esc(p.company) + ' · ' + esc(p.region) + (p.first_production ? ' · first oil ' + esc(p.first_production) : '') + '</span></li>';
+    }).join('');
+
+    /* wire */
+    var news = (D.news.items || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+    var cols = [['Drilling', 'Deepwater drilling', 'var(--sonar)'], ['FPSO/FLNG', 'FPSO / FLNG', 'var(--signal)'], ['E&P/CAPEX', 'E&amp;P capex', 'var(--kelp)']];
+    document.getElementById('wire').innerHTML = cols.map(function (c) {
+      var items = news.filter(function (n) { return n.sector === c[0]; }).slice(0, 3);
+      return '<div class="wire-col"><h3><i style="background:' + c[2] + '"></i>' + c[1] + '</h3>' + items.map(function (n) {
+        return '<a class="item" href="' + esc(n.url) + '" target="_blank" rel="noopener noreferrer"><div class="item-meta"><span>' + esc(n.date) +
+          '</span><span class="cat">' + esc(n.category) + '</span><span>' + esc(n.source) + '</span></div><div class="item-title">' + esc(n.title) +
+          '</div><div class="item-sum">' + esc(n.summary) + '</div></a>';
+      }).join('') + '</div>';
+    }).join('');
   } catch (err) {
-    document.getElementById('app').innerHTML =
-      `<div class="loading">데이터 로드 실패: ${esc(err.message)}</div>`;
+    document.getElementById('app').insertAdjacentHTML('afterbegin', '<div class="err">Data could not be loaded (' + esc(err.message) + '). Serve the folder over HTTP, e.g. python3 -m http.server, and reload.</div>');
   }
 })();
 </script>
