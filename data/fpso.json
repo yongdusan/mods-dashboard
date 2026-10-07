@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-01",
+  "updated": "2026-10-08",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -27,7 +27,9 @@
       "active_fleet": 185,
       "on_production": 166,
       "under_construction": 20
-    }
+    },
+    "as_of": "2026-06-01",
+    "source": "Rystad Energy / Westwood Global estimates (마지막 반영 2026-06-01)"
   },
   "contractors": [
     {
@@ -131,8 +133,8 @@
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "브라질 국영 석유사. 자체 소유 FPSO 21척. Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중.",
-      "newbuilds_owned": 1,
+      "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중.",
+      "newbuilds_owned": 5,
       "newbuilds_operated": 5
     },
     {
@@ -793,36 +795,6 @@
         "financing": "22.5년 장기 임대 (Petrobras)",
         "rig_demand": "드릴십 2기 — Búzios 7 프리솔트 개발정 시추 및 인필 드릴링",
         "notable": "SBM Fast4Ward MPF5 (5호) 선형. Mero 4 전용 FPSO. First oil 2025-05. COSCO Qidong hull."
-      }
-    },
-    {
-      "name": "P-82 (Búzios 9)",
-      "type": "FPSO",
-      "owner": "Petrobras",
-      "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
-      "region": "South America",
-      "country": "Brazil",
-      "water_depth_m": 2100,
-      "oil_capacity_kboed": 225,
-      "storage_mmbbl": 1.6,
-      "contract_start": null,
-      "contract_end": null,
-      "status": "Commissioned",
-      "year_delivered": null,
-      "notes": "Búzios 10. Petrobras 소유. 2026-09 shipyard 출항 예정. 생산 시작 2027년 초 목표. 225,000 bpd 용량. Seatrium EPCC.",
-      "detail": {
-        "hull_type": "신조 FPSO (Petrobras 자가 소유 P-82)",
-        "yard": "COSCO Qidong (CN) + Seatrium (SG) + BrasFELS (BR)",
-        "gas_capacity_mmscfd": 212,
-        "mooring": "Spread Mooring",
-        "fid_date": "2023",
-        "partners": [
-          "Petrobras 100% (TOR 구역)"
-        ],
-        "financing": "Petrobras 자가 소유 (BNDES 금융 지원)",
-        "rig_demand": "드릴십 2기 — Búzios 9 프리솔트 개발정 집중 시추",
-        "notable": "Petrobras P-82. Búzios 9번째 FPSO. 2025년 인도. 225kboed 피크 생산 설계."
       }
     },
     {
@@ -2195,6 +2167,64 @@
   ],
   "orderbook": [
     {
+      "name": "P-80 (Búzios 9)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "region": "South America",
+      "yard": "Seatrium Tuas (SG); modules Seatrium BrasFELS (BR)",
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 225,
+      "delivery": "2027",
+      "status": "Under Construction",
+      "notes": "Búzios 9번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium Tuas에서 통합 마무리·출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. 계약금액 미확인.",
+      "detail": {
+        "hull_type": "Newbuild (Seatrium EPC)",
+        "water_depth_m": null,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": 424,
+        "mooring": null,
+        "fid_date": null,
+        "financing": "Petrobras 자가 소유",
+        "key_equipment": "공정 모듈 Seatrium BrasFELS(Angra dos Reis) 제작.",
+        "rig_demand": null,
+        "partners": [
+          "Petrobras op (Búzios TOR)"
+        ],
+        "source": "World Oil (2026-08-27) \"Seatrium readies P-80, P-82 FPSOs\"; OGJ (2026-08)"
+      }
+    },
+    {
+      "name": "P-82 (Búzios 10)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Búzios (BM-S-11 Transfer of Rights)",
+      "region": "South America",
+      "yard": "Seatrium Tuas (SG); modules Seatrium Aracruz (BR)",
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 225,
+      "delivery": "2027",
+      "status": "Under Construction",
+      "notes": "Búzios 10번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium에서 P-80에 이어 출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. [정정 2026-10-08] 기존 vessels에 \"P-82 (Búzios 9) / Commissioned\"로 잘못 등재 — 미가동 신조선이므로 orderbook으로 이동.",
+      "detail": {
+        "hull_type": "Newbuild (Seatrium EPC)",
+        "water_depth_m": null,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": 424,
+        "mooring": null,
+        "fid_date": null,
+        "financing": "Petrobras 자가 소유",
+        "key_equipment": "공정 모듈 Seatrium Aracruz(Espírito Santo) 제작.",
+        "rig_demand": null,
+        "partners": [
+          "Petrobras op (Búzios TOR)"
+        ],
+        "source": "World Oil (2026-08-27) \"Seatrium readies P-80, P-82 FPSOs\"; OGJ (2026-08)"
+      }
+    },
+    {
       "name": "Kaminho FPSO",
       "type": "FPSO",
       "owner": "TotalEnergies",
@@ -2224,6 +2254,39 @@
           "Sonangol 20%"
         ],
         "notable": "Saipem $3.7B EPC+O&M 계약 2024-05. TotalEnergies 40% / PETRONAS PAEPAL 40% / Sonangol 20%. 70,000 bopd; 가스 전량 재주입; first oil 2028 목표."
+      }
+    },
+    {
+      "name": "P-83 (Búzios 11)",
+      "type": "FPSO",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Buzios Field (BM-S-11)",
+      "region": "South America",
+      "yard": "CIMC Raffles (CN) + Seatrium (SG) + BrasFELS (BR)",
+      "contract_value_busd": 3.8,
+      "oil_capacity_kboed": 225,
+      "delivery": "2027-Q2",
+      "status": "Under Construction",
+      "notes": "Búzios 11번째 FPSO. Petrobras 자가 소유, Seatrium EPC. [정정 2026-10-08] 기존 명칭 \"Marechal Duque de Caxias\"는 MISC 소유 Mero-3 FPSO(2024-10 생산개시)로 별개 선박 — 오기재. 기존 notes의 \"SBM Fast4Ward\"도 오류.",
+      "detail": {
+        "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
+        "water_depth_m": 2100,
+        "storage_mmbbl": 2.0,
+        "gas_capacity_mmscfd": 424,
+        "mooring": "Spread Mooring",
+        "fid_date": "2023",
+        "construction_progress_pct": 40,
+        "financing": "Petrobras 직접 소유; Seatrium/Keppel O&M EPC ~$2.8B",
+        "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. EPC: Seatrium/Keppel O&M. SBM Fast4Ward 아님.",
+        "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 시추 지속",
+        "partners": [
+          "Petrobras ~89% op",
+          "CNOOC 7.34%",
+          "CNODC 3.67%",
+          "PPSA (PSC 관리기관)"
+        ],
+        "notable": "P-83 Búzios; Seatrium/Keppel O&M EPC; 225,000 bopd; delivery H1 2027."
       }
     },
     {
@@ -2258,39 +2321,6 @@
       }
     },
     {
-      "name": "Marechal Duque de Caxias (P-83)",
-      "type": "FPSO",
-      "owner": "Petrobras",
-      "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
-      "region": "South America",
-      "yard": "CIMC Raffles (CN) + Seatrium (SG) + BrasFELS (BR)",
-      "contract_value_busd": 3.8,
-      "oil_capacity_kboed": 225,
-      "delivery": "2027-Q2",
-      "status": "Under Construction",
-      "notes": "Buzios 10번째 FPSO. SBM Fast4Ward.",
-      "detail": {
-        "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
-        "water_depth_m": 2100,
-        "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 424,
-        "mooring": "Spread Mooring",
-        "fid_date": "2023",
-        "construction_progress_pct": 40,
-        "financing": "Petrobras 직접 소유; Seatrium/Keppel O&M EPC ~$2.8B",
-        "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. EPC: Seatrium/Keppel O&M. SBM Fast4Ward 아님.",
-        "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 시추 지속",
-        "partners": [
-          "Petrobras ~89% op",
-          "CNOOC 7.34%",
-          "CNODC 3.67%",
-          "PPSA (PSC 관리기관)"
-        ],
-        "notable": "P-83 Búzios; Seatrium/Keppel O&M EPC; 225,000 bopd; delivery H1 2027."
-      }
-    },
-    {
       "name": "Gato do Mato FPSO",
       "type": "FPSO",
       "owner": "MODEC",
@@ -2320,6 +2350,39 @@
           "TotalEnergies 20%"
         ],
         "notable": "MODEC가 2025-03 Saipem EPC 계약 인수. 선체: Sumitomo(JP) forward + COSCO Qidong(CN) aft 분할 건조."
+      }
+    },
+    {
+      "name": "GranMorgu FPSO",
+      "type": "FPSO",
+      "owner": "SBM Offshore",
+      "client": "TotalEnergies / Suriname State",
+      "field": "Block 58 (Suriname)",
+      "region": "South America",
+      "yard": "CMHI Haimen (CN) + BOMESC/COSCO (CN) + Technip Energies",
+      "contract_value_busd": 4.0,
+      "oil_capacity_kboed": 220,
+      "delivery": "2028-Q3",
+      "status": "Under Construction",
+      "confidence": "low",
+      "notes": "수리남 첫 심해 FPSO. FID 미확정 (2025년 예상). 용량·일정은 잠정 수치.",
+      "detail": {
+        "hull_type": "SBM Fast4Ward MPF 신조 (CMHI hull; SBM+Technip Energies 50/50 JV EPC)",
+        "water_depth_m": 400,
+        "storage_mmbbl": 2.0,
+        "gas_capacity_mmscfd": 500,
+        "mooring": "Spread Mooring (~400m 수심)",
+        "fid_date": "2024-10",
+        "construction_progress_pct": 10,
+        "financing": "20년 BFOO 임대 (TotalEnergies)",
+        "key_equipment": "수리남 최초 대형 FPSO. Block 58 GranMorgu 발견 개발 전용. SBM Fast4Ward 8호 선형.",
+        "rig_demand": "드릴십 1~2기 — Block 58 개발정 시추 2027년 착수 예정",
+        "partners": [
+          "TotalEnergies 40% op",
+          "APA Corp 40%",
+          "Staatsolie 20% (옵션 행사)"
+        ],
+        "notable": "FID Oct 2024. STS JV = SBM + Technip Energies. 강재 절단: BOMESC(5월), CMHI(5월), COSCO(6월) 2025."
       }
     },
     {
@@ -2356,68 +2419,68 @@
       }
     },
     {
-      "name": "Buzios 11 (P-84)",
+      "name": "P-84 (Atapu 2)",
       "type": "FPSO",
       "owner": "Petrobras",
       "client": "Petrobras",
-      "field": "Buzios Field (BM-S-11)",
+      "field": "Atapu (Santos Basin pre-salt, Transfer of Rights)",
       "region": "South America",
-      "yard": "CIMC Raffles (CN) + Seatrium (SG) + BrasFELS/Seatrium Angra (BR)",
-      "contract_value_busd": 3.4,
+      "yard": "Seatrium (SG/BR)",
+      "contract_value_busd": null,
       "oil_capacity_kboed": 225,
-      "delivery": "2028-Q1",
+      "delivery": "2029",
       "status": "Under Construction",
-      "notes": "Petrobras 직발주 Buzios 11번째 FPSO.",
+      "notes": "Atapu 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B(S$11B), 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d, all-electric. 2025-Q1 건조 착수, 인도 2029. [정정 2026-10-08] 기존 \"Buzios 11 (P-84)\"는 오류 — P-84는 Atapu 2, Búzios 11은 P-83.",
       "detail": {
-        "hull_type": "Newbuild (CIMC Raffles hull, Seatrium $8.15B EPC — P-84/P-85 패키지)",
-        "water_depth_m": 2100,
-        "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 354,
-        "mooring": "Spread Mooring",
-        "fid_date": "2024",
-        "construction_progress_pct": 20,
-        "financing": "Petrobras 자가 소유 (BNDES 금융 지원)",
-        "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. Seatrium $8.15B EPC (P-84+P-85 패키지). 강재 절단 2024-11. 225,000 bopd.",
-        "rig_demand": "드릴십 2기 — Búzios 11 전용 개발정 12공 시추 계획",
+        "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
+        "water_depth_m": null,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": 353,
+        "mooring": null,
+        "fid_date": "2024-05",
+        "financing": "Petrobras 자가 소유",
+        "key_equipment": "Seatrium EPC (P-84+P-85 합산 ~US$8.15B). All-electric 설계, 무상시 플레어링, CO2 포집. 건조 2025-Q1 착수.",
+        "rig_demand": null,
         "partners": [
-          "Petrobras ~89% op",
-          "CNOOC 7.34%",
-          "CNODC 3.67%",
-          "PPSA (PSC 관리기관)"
-        ]
+          "Petrobras 65.7% op",
+          "Shell 16.7%",
+          "TotalEnergies 15%",
+          "Petrogal 1.7%"
+        ],
+        "source": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84·P-85 각 225k bpd, 10 MMm³/d, 인도 2029"
       }
     },
     {
-      "name": "GranMorgu FPSO",
+      "name": "P-85 (Sépia 2)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
-      "client": "TotalEnergies / Suriname State",
-      "field": "Block 58 (Suriname)",
+      "owner": "Petrobras",
+      "client": "Petrobras",
+      "field": "Sépia (Santos Basin pre-salt, Transfer of Rights)",
       "region": "South America",
-      "yard": "CMHI Haimen (CN) + BOMESC/COSCO (CN) + Technip Energies",
-      "contract_value_busd": 4.0,
-      "oil_capacity_kboed": 220,
-      "delivery": "2028-Q3",
+      "yard": "Seatrium (SG/BR)",
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 225,
+      "delivery": "2029",
       "status": "Under Construction",
-      "confidence": "low",
-      "notes": "수리남 첫 심해 FPSO. FID 미확정 (2025년 예상). 용량·일정은 잠정 수치.",
+      "notes": "Sépia 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B, 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d. 인도 2029.",
       "detail": {
-        "hull_type": "SBM Fast4Ward MPF 신조 (CMHI hull; SBM+Technip Energies 50/50 JV EPC)",
-        "water_depth_m": 400,
-        "storage_mmbbl": 2.0,
-        "gas_capacity_mmscfd": 500,
-        "mooring": "Spread Mooring (~400m 수심)",
-        "fid_date": "2024-10",
-        "construction_progress_pct": 10,
-        "financing": "20년 BFOO 임대 (TotalEnergies)",
-        "key_equipment": "수리남 최초 대형 FPSO. Block 58 GranMorgu 발견 개발 전용. SBM Fast4Ward 8호 선형.",
-        "rig_demand": "드릴십 1~2기 — Block 58 개발정 시추 2027년 착수 예정",
+        "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
+        "water_depth_m": null,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": 353,
+        "mooring": null,
+        "fid_date": "2024-05",
+        "financing": "Petrobras 자가 소유",
+        "key_equipment": "All-electric 설계, 무상시 플레어링, CO2 포집.",
+        "rig_demand": null,
         "partners": [
-          "TotalEnergies 40% op",
-          "APA Corp 40%",
-          "Staatsolie 20% (옵션 행사)"
+          "Petrobras 55.3% op",
+          "TotalEnergies 16.9%",
+          "QatarEnergy 12.7%",
+          "PETRONAS 12.7%",
+          "Petrogal 2.4%"
         ],
-        "notable": "FID Oct 2024. STS JV = SBM + Technip Energies. 강재 절단: BOMESC(5월), CMHI(5월), COSCO(6월) 2025."
+        "source": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84·P-85 각 225k bpd, 10 MMm³/d, 인도 2029"
       }
     },
     {
@@ -2456,18 +2519,18 @@
       }
     },
     {
-      "name": "FPSO P-81 (SEAP I)",
+      "name": "FPSO P-87 (SEAP II)",
       "type": "FPSO",
       "owner": "SBM Offshore",
       "client": "Petrobras",
-      "field": "SEAP I (Sergipe-Alagoas Basin)",
+      "field": "SEAP II (Sergipe-Alagoas Basin)",
       "region": "South America",
       "yard": "SBM (Fast4Ward hull, yard TBD)",
       "contract_value_busd": 3.9,
       "oil_capacity_kboed": 120,
-      "delivery": "2031-Q1",
+      "delivery": "2030-Q1",
       "status": "Under Construction",
-      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04.",
+      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정.",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,
@@ -2481,18 +2544,18 @@
       }
     },
     {
-      "name": "FPSO P-87 (SEAP II)",
+      "name": "FPSO P-81 (SEAP I)",
       "type": "FPSO",
       "owner": "SBM Offshore",
       "client": "Petrobras",
-      "field": "SEAP II (Sergipe-Alagoas Basin)",
+      "field": "SEAP I (Sergipe-Alagoas Basin)",
       "region": "South America",
       "yard": "SBM (Fast4Ward hull, yard TBD)",
       "contract_value_busd": 3.9,
       "oil_capacity_kboed": 120,
-      "delivery": "2030-Q1",
+      "delivery": "2031-Q1",
       "status": "Under Construction",
-      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정.",
+      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04.",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,

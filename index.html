@@ -36,6 +36,11 @@
     }
     .eyebrow .pip { width: 6px; height: 6px; background: var(--kelp); border-radius: 50%; box-shadow: 0 0 0 3px rgba(63,191,138,.18); }
     .eyebrow b { color: var(--foam); font-weight: 500; }
+    .eyebrow .pip.warn { background: var(--amber); box-shadow: 0 0 0 3px rgba(230,180,80,.18); }
+    .asof { color: var(--foam); letter-spacing: .04em; }
+    .asof.stale { color: var(--amber); }
+    .snd-asof { font-family: var(--font-mono); font-size: 10.5px; color: var(--silt); margin-top: 6px; }
+    .snd-asof .asof { text-transform: none; letter-spacing: 0; }
     .readout {
       font-family: var(--font-display); font-stretch: 112%; font-weight: 750;
       font-size: clamp(2.1rem, 1.1rem + 3vw, 4.1rem); line-height: 1.02; letter-spacing: -.028em;
@@ -219,7 +224,7 @@
         <h2 class="readout" id="readout">
           <span class="line"><span class="num">—</span> in offshore projects under execution.</span>
         </h2>
-        <p class="lede">Deepwater drilling, floating production and offshore E&amp;P capex, tracked from operator IR, contract disclosures and trade press. Each figure links to its source dashboard.</p>
+        <p class="lede">Deepwater drilling, floating production and offshore E&amp;P capex, tracked from operator IR, contract disclosures and trade press. Project capex uses operator figures where published and indicative estimates otherwise. Each figure carries its as-of date; overdue sources are flagged.</p>
       </div>
       <aside class="gauge" id="gauge" aria-label="UDW drillship dayrate">
         <div class="gauge-head"><span class="k">UDW drillship dayrate</span><span class="k" id="g-date">—</span></div>
@@ -369,7 +374,7 @@
   try {
     var D = {};
     var res = await Promise.all(files.map(function (f) {
-      return fetch('./data/' + f + '.json').then(function (r) { if (!r.ok) throw new Error(f + '.json ' + r.status); return r.json(); });
+      return fetch('./data/' + f + '.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(f + '.json ' + r.status); return r.json(); });
     }));
     files.forEach(function (f, i) { D[f] = res[i]; });
 
@@ -387,12 +392,18 @@
 
     document.querySelector('#header-meta .value').textContent = latest;
 
-    /* week number */
-    var d = new Date(latest + 'T00:00:00Z'), j1 = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-    var wk = Math.ceil(((d - j1) / 864e5 + j1.getUTCDay() + 1) / 7);
+    /* data freshness: each figure carries its own as-of date; overdue sources are flagged */
+    var cadence = { pipeline: 40, fleet: 14, fpso: 40, earnings: 100, fpso_earnings: 100, rates: 100, news: 10 };
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var ageDays = function (f) { var u = D[f] && D[f].updated; return u ? Math.floor((today - new Date(u + 'T00:00:00')) / 864e5) : 9999; };
+    var isStale = function (f) { return ageDays(f) > cadence[f]; };
+    var msAsOf = (D.fpso.market_summary && D.fpso.market_summary.as_of) || D.fpso.updated;
+    D.fpso_market = { updated: msAsOf }; cadence.fpso_market = 100;
+    var asof = function (f) { return '<span class="asof' + (isStale(f) ? ' stale' : '') + '" title="' + (isStale(f) ? 'Overdue: last updated ' + ageDays(f) + ' days ago' : 'Updated ' + ageDays(f) + ' days ago') + '">' + esc(D[f].updated) + (isStale(f) ? ' · overdue' : '') + '</span>'; };
+    var anyStale = ['pipeline', 'fleet', 'fpso_market'].some(isStale);
     document.getElementById('eyebrow').innerHTML =
-      '<span class="pip"></span><span>Weekly readout</span><span>W' + wk + ' · <b>' + esc(latest) + '</b></span><span>' +
-      projects.length + ' projects · ' + dw.length + ' deepwater rigs · ' + (D.fpso.vessels || []).length + ' floaters tracked</span>';
+      '<span class="pip' + (anyStale ? ' warn' : '') + '"></span><span>Market readout</span>' +
+      '<span>Projects ' + asof('pipeline') + '</span><span>Rigs ' + asof('fleet') + '</span><span>Floaters ' + asof('fpso') + '</span>';
 
     document.getElementById('readout').innerHTML =
       '<span class="line"><span class="num">' + fmtB(sum(execP)) + '</span> of offshore projects in execution.</span>' +
@@ -432,16 +443,16 @@
     var udwRates = udw.filter(function (r) { return r.status === 'On Contract' && r.day_rate_kusd; }).map(function (r) { return r.day_rate_kusd; });
     var avgRate = udwRates.length ? Math.round(udwRates.reduce(function (a, b) { return a + b; }, 0) / udwRates.length) : null;
     var S = [
-      { k: 'Pre-FID pipeline', v: fmtB(sum(feedP) + sum(byPhase('Pre-FEED'))), sub: feedP.length + ' FEED · ' + byPhase('Pre-FEED').length + ' pre-FEED projects' },
-      { k: 'Deepwater rigs', v: dwOn + '<small>/ ' + dw.length + '</small>', sub: util + '% contracted', meter: util },
-      { k: 'Avg drillship rate', v: avgRate ? '$' + avgRate + '<small>k/d</small>' : '—', sub: udwRates.length + ' contracted drillships, fleet table' },
-      { k: 'Global FPSO fleet', v: (ms.active_fleet || '—') + '<small>units</small>', sub: (ms.on_production || '—') + ' producing · ' + (ms.flng_active || 0) + ' FLNG' },
-      { k: 'Tracked orderbook', v: (D.fpso.orderbook || []).length + '<small>floaters</small>', sub: obVal ? fmtB(obVal) + ' disclosed contract value' : 'contract values partly undisclosed' }
+      { k: 'Pre-FID pipeline', v: fmtB(sum(feedP) + sum(byPhase('Pre-FEED'))), sub: feedP.length + ' FEED · ' + byPhase('Pre-FEED').length + ' pre-FEED projects', f: 'pipeline' },
+      { k: 'Deepwater rigs', v: dwOn + '<small>/ ' + dw.length + '</small>', sub: util + '% contracted', meter: util, f: 'fleet' },
+      { k: 'Avg drillship rate', v: avgRate ? '$' + avgRate + '<small>k/d</small>' : '—', sub: udwRates.length + ' contracted drillships', f: 'fleet' },
+      { k: 'Global FPSO fleet', v: (ms.active_fleet || '—') + '<small>units</small>', sub: (ms.on_production || '—') + ' producing · Rystad/Westwood est.', f: 'fpso_market' },
+      { k: 'Tracked orderbook', v: (D.fpso.orderbook || []).length + '<small>floaters</small>', sub: obVal ? fmtB(obVal) + ' disclosed (some undisclosed)' : 'contract values partly undisclosed', f: 'fpso' }
     ];
     document.getElementById('soundings').innerHTML = S.map(function (s) {
       return '<div class="snd"><div class="k">' + esc(s.k) + '</div><div class="snd-val">' + s.v + '</div>' +
         (s.meter != null ? '<div class="meter"><i style="width:' + s.meter + '%"></i></div>' : '') +
-        '<div class="snd-sub">' + esc(s.sub) + '</div></div>';
+        '<div class="snd-sub">' + esc(s.sub) + '</div><div class="snd-asof">as of ' + asof(s.f) + '</div></div>';
     }).join('');
 
     /* index */
