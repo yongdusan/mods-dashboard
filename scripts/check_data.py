@@ -175,9 +175,15 @@ def run(today):
     # ---------- rates ----------
     rates = load("rates.json")
     last = max(x["date"] for x in rates["day_rates"])
-    q_start = f"{today.year}-{((today.month - 1) // 3) * 3 + 1:02d}"
-    if last < q_start and today.day > 20 or last < (dt.date(today.year, ((today.month - 1) // 3) * 3 + 1, 1) - dt.timedelta(days=95)).strftime("%Y-%m"):
-        overdue.append(f"rates.json: latest day_rates entry is {last} (current quarter starts {q_start})")
+    cq = dt.date(today.year, ((today.month - 1) // 3) * 3 + 1, 1)
+    pq = (cq - dt.timedelta(days=1)).replace(day=1)
+    pq = dt.date(pq.year, ((pq.month - 1) // 3) * 3 + 1, 1)
+    # the in-progress quarter gets an Indicative point once leading-edge data exists; by the quarter's last month it is due
+    if last < pq.strftime("%Y-%m") or (last < cq.strftime("%Y-%m") and today.month % 3 == 0):
+        overdue.append(f"rates.json: latest day_rates entry is {last} (current quarter starts {cq.strftime('%Y-%m')})")
+    for x in rates["day_rates"]:
+        if x["date"] < pq.strftime("%Y-%m") and "indicative (q" in x.get("source", "").lower():
+            notes.append(f"rates.json: {x['date']} {x['rig_type']} is still Indicative — replace with reported actual")
 
     # ---------- news ----------
     news = load("news.json")["items"]

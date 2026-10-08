@@ -4,7 +4,7 @@
     "day_rates": {
       "confidence": "mixed",
       "basis": "Indicative market curve anchored on FSR-verified contracts where available",
-      "notes": "Directional trend only; not a published market index. Drillship and semi-sub 2026-Q2 values are calibrated against FSR observations. Jack-up curve remains unanchored and should be treated as low confidence. 2026-07/10 drillship·jack-up points added from Q2 2026 earnings (Oct 2026); semisubmersible 2026-07/10 not added — no Deepwater-tier semi rate disclosed in Q2 releases (Transocean HE floaters $510K only)."
+      "notes": "2026년부터 산정 방식 통일: date = 활동 분기 시작월. 실적이 나온 분기 = 컨트랙터 공시 평균 dayrate(Drillship: Transocean UDW floaters·Valaris drillships·Noble floaters 평균, Jack-up: Valaris/Borr). 진행 중인 최신 분기 = 'Indicative' 선행지표(공시된 leading-edge/신규 계약 단가)로 기재 후, 해당 분기 실적 발표 시 실제 평균으로 교체. 2025년 값은 indicative market curve. [정정 2026-10-08] 2026-04 drillship 460(실적+상승 가정 추정)→440(Q2 실적), Q2 실적을 2026-07로 잘못 배치했던 것 바로잡음, 방식이 달랐던 2026-10 항목 삭제."
     },
     "day_rates_by_type": {
       "drillship": {
@@ -66,22 +66,64 @@
       "date": "2026-04",
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
-      "rate_kusd": 460,
-      "source": "Q1 2026 Earnings-anchored estimate (Q1 actual avg $450K + modest uptick)"
+      "rate_kusd": 440,
+      "source": "Q2 2026 actual — 컨트랙터 평균 dayrate(RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K, Aug 2026)"
     },
     {
       "date": "2026-07",
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
-      "rate_kusd": 440,
-      "source": "Q2 2026 Earnings avg (RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K)"
+      "rate_kusd": 450,
+      "source": "Indicative (Q3 진행 중) — Noble Q2 2026 release(2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. Q3 실적(11월) 발표 시 실제 평균으로 교체"
     },
     {
-      "date": "2026-10",
-      "rig_type": "Drillship",
-      "tier": "Ultra-deepwater",
-      "rate_kusd": 461,
-      "source": "Indicative — Transocean Q2 2026 신규 계약 가중평균 ~$461K/day (UDW·HE 혼합, Aug 2026)"
+      "date": "2025-01",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 120,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-04",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 128,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-07",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 133,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2025-10",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 138,
+      "source": "Indicative estimate"
+    },
+    {
+      "date": "2026-01",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 137,
+      "source": "Q1 2026 Earnings (Borr Drilling Q1 2026 fleet avg $137K)"
+    },
+    {
+      "date": "2026-04",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 134,
+      "source": "Q2 2026 actual — Valaris jackup avg daily revenue $134K; Borr 2026 coverage avg ~$134K (Aug 2026)"
+    },
+    {
+      "date": "2026-07",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 134,
+      "source": "Indicative (Q3 진행 중) — Borr Q2 2026: H2 2026 커버리지 평균 ~$134K/day (Aug 2026). Q3 실적 발표 시 교체"
     },
     {
       "date": "2025-01",
@@ -126,60 +168,11 @@
       "source": "FSR-anchored indicative (Transocean Feb 2026 FSR; HE semis 452–490k)"
     },
     {
-      "date": "2025-01",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 120,
-      "source": "Indicative estimate"
-    },
-    {
-      "date": "2025-04",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 128,
-      "source": "Indicative estimate"
-    },
-    {
-      "date": "2025-07",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 133,
-      "source": "Indicative estimate"
-    },
-    {
-      "date": "2025-10",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 138,
-      "source": "Indicative estimate"
-    },
-    {
-      "date": "2026-01",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 137,
-      "source": "Q1 2026 Earnings (Borr Drilling Q1 2026 fleet avg $137K)"
-    },
-    {
-      "date": "2026-04",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 138,
-      "source": "Q1 2026 Earnings-anchored (Borr 2026 coverage avg $137K; pricing pressure noted)"
-    },
-    {
       "date": "2026-07",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 134,
-      "source": "Q2 2026 Earnings (Valaris jackup avg daily revenue $134K; Borr 2026 coverage avg ~$134K)"
-    },
-    {
-      "date": "2026-10",
-      "rig_type": "Jack-up",
-      "tier": "Premium",
-      "rate_kusd": 134,
-      "source": "Indicative — Borr Q2 2026 기준 2026 커버리지 평균 ~$134K/day (H2 커버리지 70%, Aug 2026)"
+      "rig_type": "Semisubmersible",
+      "tier": "Deepwater",
+      "rate_kusd": 400,
+      "source": "Indicative (Q3 진행 중) — Transocean–Equinor HE semi 3척 계약(2026-06-30): base $399K, 개시 시점 실효 >$400K. Q3 실적 발표 시 교체"
     }
   ],
   "named_observations": [

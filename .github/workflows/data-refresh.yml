@@ -2,6 +2,8 @@ name: Data Refresh (Claude, cloud)
 
 # GitHub 클라우드에서 Claude Code를 실행해 데이터 파일을 갱신한다. 데스크톱 앱과 무관하게 실행됨.
 # Claude는 data/ 파일 조사·편집만 하고, 검증(check_data.py)·커밋·push는 이 워크플로가 한다.
+# 비용: 공개 저장소라 Actions 실행 시간 무료, Claude는 구독 토큰(CLAUDE_CODE_OAUTH_TOKEN) 사용 → 추가 과금 없음.
+# API 키(ANTHROPIC_API_KEY)는 쓰지 않는다.
 on:
   schedule:
     - cron: '30 1 * * 1'      # fleet          — 매주 월 10:30 KST
@@ -36,6 +38,13 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Require subscription token
+        run: |
+          if [ -z "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret is not set — refusing to run (no API-key fallback)."
+            exit 1
+          fi
+
       - name: Pick task
         id: pick
         run: |
@@ -69,7 +78,8 @@ jobs:
         env:
           TODAY: ${{ steps.pick.outputs.today }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Claude 구독(Pro/Max) 토큰으로 실행 — API 과금 없음. `claude setup-token`으로 발급해 저장소 시크릿에 등록.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           prompt: ${{ steps.pick.outputs.prompt }}
           claude_args: |

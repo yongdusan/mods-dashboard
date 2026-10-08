@@ -81,25 +81,17 @@
 
 ---
 
-## 자동화 구성 (2026-10-08 클라우드 이전)
+## 자동화 구성 (2026-10-08 — 추가 비용 없는 구성)
 
-모든 정기 갱신은 **GitHub 클라우드에서 실행**된다. 데스크톱 앱이 꺼져 있어도 돈다.
+| 파일 | 자동 실행 | 실행 위치 · 비용 |
+|------|---------|---------|
+| `news.json` | GitHub Actions `news-refresh.yml` — 매주 월 09:00 KST | 클라우드 · Claude Haiku API 소액(기존부터 사용) |
+| `fleet.json` | Claude 예약 작업 `modu-fleet-weekly` — 매주 월 10:30 | 데스크톱 앱 실행 중일 때 · 구독 내 |
+| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | Claude 예약 작업 `modu-earnings-refresh` — 매월 1·16일 10:00 | 데스크톱 · 구독 내 |
+| `pipeline.json` · `fpso.json` | Claude 예약 작업 `modu-pipeline-fpso-monthly` — 매월 10일 09:00 | 데스크톱 · 구독 내 |
+| 전체 점검 | GitHub Actions `data-health.yml` — data push 시 + 매주 월 10:00 KST, `scripts/check_data.py` | 클라우드 · 무료(LLM 미사용) |
 
-| 파일 | 자동 실행 | 방식 |
-|------|---------|------|
-| `news.json` | `news-refresh.yml` — 매주 월 09:00 KST | RSS + Claude Haiku API |
-| `fleet.json` | `data-refresh.yml` (task=fleet) — 매주 월 10:30 KST | claude-code-action |
-| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | `data-refresh.yml` (task=earnings) — 매월 1·16일 10:00 KST, 새 발표분만 | claude-code-action |
-| `pipeline.json` · `fpso.json` (+ 주요 이벤트 `news.json`) | `data-refresh.yml` (task=pipeline_fpso) — 매월 10일 09:00 KST, 1·4·7·10월 전수 점검 | claude-code-action |
-| 전체 점검 | `data-health.yml` — data push 시 + 매주 월 10:00 KST | `scripts/check_data.py` |
-
-**동작 방식**
-- 작업 지시문: `automation/prompts/{fleet,earnings,pipeline_fpso,smoke}.md` — 지시 변경은 이 파일을 고친다.
-- Claude는 `data/` 조사·편집만 한다(git 권한 없음). 워크플로가 `check_data.py`로 검증해 ERROR 0일 때만 해당 작업의 담당 파일을 커밋·push(→ Cloudflare 자동 배포).
-- 검증 실패 시 커밋하지 않고 `data-health` 라벨 이슈를 연다. 기한 초과(OVERDUE)도 `data-health.yml`이 이슈로 알린다.
-- 수동 실행: GitHub → Actions → "Data Refresh (Claude, cloud)" → Run workflow (task 선택). 연결 점검은 task=smoke(파일 수정 없음).
-- 모델: 저장소 변수 `CLAUDE_MODEL`(미설정 시 claude-sonnet-5-5). API 비용은 `ANTHROPIC_API_KEY` 시크릿 계정에 청구된다.
-- 데스크톱 예약 작업(`modu-fleet-weekly` 등)은 자동 실행을 끄고 수동 백업으로만 남겨둔다(중복 실행 방지).
+**클라우드 전환 대기 중:** `data-refresh.yml`(fleet/earnings/pipeline_fpso를 GitHub 클라우드에서 실행)은 준비돼 있으나 **비활성** 상태다. 저장소가 공개라 Actions 실행 시간은 무료이고, Claude는 API 키가 아니라 **구독 토큰**(`CLAUDE_CODE_OAUTH_TOKEN` 시크릿, `claude setup-token`으로 발급)으로만 실행되도록 되어 있어 추가 과금이 없다(토큰이 없으면 실행을 거부). 전환 절차: 시크릿 등록 → `gh workflow enable data-refresh.yml` → 데스크톱 예약 작업 3개 비활성화(중복 방지). 지시문은 `automation/prompts/`.
 
 **운영 규칙**
 - 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`로 ERROR 0을 확인한다.
