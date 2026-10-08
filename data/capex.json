@@ -23,8 +23,8 @@
           "year": 2026,
           "total_capex_busd": 13.0,
           "upstream_capex_busd": 11.7,
-          "source": "Q4 2025 Earnings & 2026 Guidance (Feb 2026)",
-          "source_url": "https://www.equinor.com/investors/reports-and-presentations"
+          "source": "Q2 2026 Results (Jul 22, 2026) — 2026 organic capex ~$13B 유지",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001140625/000114062526000025/equinorfinancialstatements.htm"
         }
       ],
       "upstream_focus": "NCS, Brazil deepwater, international",
@@ -182,12 +182,12 @@
           "year": 2026,
           "total_capex_busd": 28.0,
           "upstream_capex_busd": 21.0,
-          "source": "Q1 2026 Earnings (Apr 2026)",
-          "source_url": "https://investor.exxonmobil.com/news-releases"
+          "source": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $27–29B 유지(중간값)",
+          "source_url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1208/exxonmobil-announces-second-quarter-2026-results"
         }
       ],
       "upstream_focus": "Guyana, Permian, deepwater",
-      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B 상향. Upstream 비중 ~75%. Permian 생산 레코드 4.7Mboe/d.",
+      "notes": "Pioneer 통합 완료 + Guyana Yellowtail 생산 개시로 2026 가이던스 $28–33B 상향. Upstream 비중 ~75%. Permian 생산 레코드 4.7Mboe/d. 2026 가이던스 범위 $27–29B(Q2 재확인). upstream은 기존 비중(75%) 적용 추정.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": 140,
@@ -358,12 +358,12 @@
           "year": 2026,
           "total_capex_busd": 25.0,
           "upstream_capex_busd": 17.0,
-          "source": "Q1 2026 Earnings (May 2026)",
-          "source_url": "https://www.shell.com/investors/results-and-reporting/quarterly-results.html"
+          "source": "Q2 2026 Results (Aug 7, 2026) — 2026 cash capex $24–26B 유지(중간값, ARC Resources 인수 ~$4B 포함)",
+          "source_url": "https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-publishes-second-quarter-2026-press-/9694970"
         }
       ],
       "upstream_focus": "deepwater, LNG",
-      "notes": "Upstream 비중 ~68%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지. 2026 가이던스 $24–26B(중간값 $25B)로 상향 — ARC Resources 인수($4B) 반영. 2027–2028 가이던스는 $20–22B로 복귀 예정.",
+      "notes": "Upstream 비중 ~68%. Brazil, GOM, Nigeria deepwater 집중. LNG 포트폴리오 유지. 2026 가이던스 $24–26B(중간값 $25B)로 상향 — ARC Resources 인수($4B) 반영. 2027–2028 가이던스는 $20–22B로 복귀 예정. 2026 cash capex $24–26B(ARC 인수 ~$4B 포함), 2027–28 연 $20–22B 목표.",
       "upstream_plan": {
         "horizon": "2026–2028",
         "total_commitment_busd": null,
@@ -514,8 +514,8 @@
           "year": 2026,
           "total_capex_busd": 13.75,
           "upstream_capex_busd": 10.6,
-          "source": "Q2 2026 Earnings (Aug 2026)",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/0000313807/000165495426007201/a0879p.htm"
+          "source": "Q2 2026 Results (Aug 2026) — 2026 capex $13.5–14B로 상향(중간값)",
+          "source_url": "https://www.nasdaq.com/articles/bp-q2-earnings-beat-estimates-strong-refining-margins-pricing"
         }
       ],
       "upstream_focus": "GOM, North Sea, Azerbaijan",
@@ -697,12 +697,12 @@
           "year": 2026,
           "total_capex_busd": 18.5,
           "upstream_capex_busd": 14.0,
-          "source": "2026 Capex Budget Announcement (Dec 2025)",
-          "source_url": "https://www.chevron.com/investors/financial-information"
+          "source": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $18–19B, 하단 예상",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000093410/000009341026000162/a06302026ex9918-k.htm"
         }
       ],
       "upstream_focus": "Permian, Kazakhstan, GOM, Guyana",
-      "notes": "Upstream 비중 ~76%. Hess 인수로 Guyana 지분(30%) 확보 반영. 2026 가이던스 $18–19B로 대폭 상향.",
+      "notes": "Upstream 비중 ~76%. Hess 인수로 Guyana 지분(30%) 확보 반영. 2026 가이던스 $18–19B로 대폭 상향. Q2 실적에서 2026년 capex $18–19B 범위 하단 마감 예상(Quartr 요약). H1 집행 $8.6B.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": 90,
@@ -873,8 +873,8 @@
           "year": 2026,
           "total_capex_busd": 15.0,
           "upstream_capex_busd": 10.0,
-          "source": "Q1 2026 Earnings (Apr 2026)",
-          "source_url": "https://totalenergies.com/investors/publications-and-regulated-information/quarterly-results"
+          "source": "Q2 2026 Results (Jul 23, 2026) — 2026 net investments $15B 유지",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000879764/000110465926089374/tm2621809d1_ex99-7.htm"
         }
       ],
       "upstream_focus": "Africa deepwater, Middle East, Brazil",
@@ -1055,14 +1055,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 50.0,
-          "upstream_capex_busd": 30.0,
-          "source": "2026 Medium-Term Guidance",
-          "source_url": "https://www.saudiaramco.com/en/investors/reports-and-presentations"
+          "total_capex_busd": 52.5,
+          "upstream_capex_busd": 35.4,
+          "source": "Aramco 2026 guidance $50–55B (중간값) — MEED (Sep 14, 2026): upstream 65–70%",
+          "source_url": "https://guest.meed.com/?p=17823"
         }
       ],
       "upstream_focus": "offshore increment, Jafurah gas",
-      "notes": "Upstream 비중 60% (명시). Marjan·Berri offshore 증산($18B 프로그램). Jafurah 비전통 가스 포함.",
+      "notes": "Upstream 비중 60% (명시). Marjan·Berri offshore 증산($18B 프로그램). Jafurah 비전통 가스 포함. [정정 2026-10-08] 2026 capex 가이던스 $50–55B(기존 50은 하단값), upstream 65–70%(MEED) → upstream 중간값 67.5% 적용. H1 집행 $25.3B.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": 180,
@@ -1217,14 +1217,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 17.0,
-          "upstream_capex_busd": 14.0,
-          "source": "2026 Guidance",
-          "source_url": "https://adnoc.ae/investors"
+          "total_capex_busd": 30.0,
+          "upstream_capex_busd": 21.0,
+          "source": "ADNOC 2026–2030 Business Plan (Nov 2025) — 5년 $150B, 연평균 ~$30B (MEES)",
+          "source_url": "https://www.mees.com/2025/11/28/corporate/adnoc-keeps-annual-capex-at-30bn-out-to-2030/ef1f6d00-cc59-11f0-a11c-8766e73c64bc"
         }
       ],
       "upstream_focus": "offshore UAE, sour gas",
-      "notes": "Upstream 비중 ~82%. Umm Shaif, Abu Dhabi Offshore 2, SARB Phase 2 진행. 생산능력 500만 b/d 목표(2027).",
+      "notes": "Upstream 비중 ~82%. Umm Shaif, Abu Dhabi Offshore 2, SARB Phase 2 진행. 생산능력 500만 b/d 목표(2027). [정정 2026-10-08] 기존 2026 $17B는 근거 출처 미확인. 2026–30 계획 $150B(연평균 ~$30B, ADNOC는 연도별 미공시). upstream 21.0은 MEED 2026–28 프로젝트 발주 계획의 upstream 비중 70%(AED140bn/200bn) 적용 추정.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": 150,
@@ -1362,14 +1362,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 21.0,
-          "upstream_capex_busd": 16.6,
-          "source": "2025-2029 Business Plan",
-          "source_url": "https://investors.petrobras.com.br/en/results-and-reports/"
+          "total_capex_busd": 19.4,
+          "upstream_capex_busd": 13.9,
+          "source": "Petrobras Business Plan 2026–2030 (Nov 2025) — 2026 capex $19.4B (Energy Intelligence); 5년 $109B",
+          "source_url": "https://www.energyintel.com/0000019a-e55b-d283-abdf-f57bf5370000"
         }
       ],
       "upstream_focus": "pre-salt deepwater Brazil",
-      "notes": "E&P 비중 ~79%. Búzios, Tupi pre-salt 집중. Búzios 11·Atapu 3 FID. SEAP II FPSO 협상 진행.",
+      "notes": "E&P 비중 ~79%. Búzios, Tupi pre-salt 집중. Búzios 11·Atapu 3 FID. SEAP II FPSO 협상 진행. [정정 2026-10-08] 기존은 2025–29 계획 기준 $21B. 2026–30 계획: 5년 $109B(이행 $91B + 검토 $18B), 2026년 $19.4B. E&P 비중은 출처별 64–72% 상충 — upstream 13.9는 71.6%(World Oil) 적용 추정.",
       "upstream_plan": {
         "horizon": "2025–2029",
         "total_commitment_busd": 111,
@@ -1513,14 +1513,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 13.0,
-          "upstream_capex_busd": 8.5,
-          "source": "2026 Guidance",
-          "source_url": "https://www.petronas.com/investors"
+          "total_capex_busd": null,
+          "upstream_capex_busd": 4.1,
+          "source": "Indicative — 1H 2026 upstream capex RM8.7B(RHB) 연환산, 공식 FY2026 가이던스 미공시",
+          "source_url": "https://www.thestar.com.my/business/business-news/2026/08/28/petronas-1h-profit-rises-4-to-rm272bil-as-revenue-climbs"
         }
       ],
       "upstream_focus": "Malaysia offshore, LNG",
-      "notes": "Upstream 비중 ~65%. Kasawari CCS 포함. Malaysia 국내 offshore + LNG. GCC NOC 합산 2027년 $125B 전망.",
+      "notes": "Upstream 비중 ~65%. Kasawari CCS 포함. Malaysia 국내 offshore + LNG. GCC NOC 합산 2027년 $125B 전망. [정정 2026-10-08] 기존 2026 $13.0B/upstream $8.5B는 근거 출처 미확인. 공식 연간 가이던스 없음. 1H 2026 총 capex RM41.4B(이 중 PRefChem 출자 ~RM26B), upstream RM8.7B → 연환산 ~RM17B ≈ $4.1B(USD/MYR ~4.2). 연평균 그룹 capex는 애널리스트 RM50–60B 언급.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": null,

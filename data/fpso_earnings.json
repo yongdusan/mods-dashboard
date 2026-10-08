@@ -15,10 +15,30 @@
         "business_model": "Lease & Operate (L&O) 전문 — Fast4Ward® 표준화 선체 플랫폼으로 건조 기간을 40개월로 단축",
         "strategy": "브라질 Petrobras 및 가이아나 ExxonMobil 심해 프로젝트 집중. Fast4Ward 표준화로 원가 경쟁력 확보. 2030년까지 운영 FPSO 18기 목표.",
         "reporting_schedule": [
-          {"label": "Q1 Trading Update", "month": "May", "type": "partial", "note": "L&O Revenue only — EBITDA 미공개"},
-          {"label": "H1 Interim Results", "month": "Aug", "type": "full", "note": "Full P&L (EBITDA, Net Income 공개)"},
-          {"label": "Q3 Trading Update", "month": "Nov", "type": "partial", "note": "L&O Revenue only — EBITDA 미공개"},
-          {"label": "FY Full-Year Results", "month": "Feb", "type": "full", "note": "Full P&L + 연간 결산"}
+          {
+            "label": "Q1 Trading Update",
+            "month": "May",
+            "type": "partial",
+            "note": "L&O Revenue only — EBITDA 미공개"
+          },
+          {
+            "label": "H1 Interim Results",
+            "month": "Aug",
+            "type": "full",
+            "note": "Full P&L (EBITDA, Net Income 공개)"
+          },
+          {
+            "label": "Q3 Trading Update",
+            "month": "Nov",
+            "type": "partial",
+            "note": "L&O Revenue only — EBITDA 미공개"
+          },
+          {
+            "label": "FY Full-Year Results",
+            "month": "Feb",
+            "type": "full",
+            "note": "Full P&L + 연간 결산"
+          }
         ],
         "key_clients": [
           "ExxonMobil",
@@ -211,12 +231,12 @@
         },
         {
           "period": "Q1 2026",
-          "revenue_musd": 610,
+          "revenue_musd": 3489,
           "adj_ebitda_musd": null,
           "ebitda_margin_pct": null,
           "units_on_lease": 16,
           "backlog_busd": 31.1,
-          "source": "Q1 2026 Trading Update (May 2026) — L&O 반복 매출 $610M (FPSO ONE GUYANA 매각 $2.3B 제외)",
+          "source": "Q1 2026 Trading Update (May 2026) — Directional revenue $3,489M (FPSO ONE GUYANA 매각 ~$2.3B turnkey 인식 포함; L&O 반복 매출은 $610M). [정정 2026-10-08] Q2와 같은 directional 기준으로 통일",
           "highlights": [
             "FPSO ONE GUYANA를 ExxonMobil에 $23억에 매각, 총 Directional Revenue는 $3,489M으로 YoY +216% (일회성 효과)",
             "함대 가동률 97.9% 유지, Q1 무재해(사망·영구장해 零) 달성",
@@ -1146,7 +1166,7 @@
           "ebitda_margin_pct": 97.6,
           "units_on_lease": 2,
           "backlog_busd": 16.6,
-          "source": "Q2 2026 Interim Results (Aug 2026) — backlog는 보도자료의 자산별 Adj. EBITDA backlog 합산(Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B, Golar 70% 지분)",
+          "source": "Q2 2026 Interim Results (Aug 2026) — backlog는 보도자료의 자산별 Adj. EBITDA backlog 합산(Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B, Golar 70% 지분) (보도자료 헤드라인 ~$17B)",
           "highlights": [
             "매출 $130.5M(+72% YoY), Adj EBITDA $127.4M(+159% YoY) — 파생상품 실현이익 및 Gimi 초과생산 수익 반영; 순이익 $38.3M",
             "FLNG Gimi Q2 계약물량 대비 15% 초과 생산, 상업운전 1주년(누적 41카고)",
