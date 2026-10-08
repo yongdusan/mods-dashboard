@@ -184,21 +184,21 @@
       "operator": "Woodside",
       "contract_start": "2026-03",
       "contract_end": "2029-02",
-      "rate_kusd": 480,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "rate_kusd": 495,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Deepwater Atlas",
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
       "contractor": "Transocean",
-      "operator": "Beacon Offshore Energy",
-      "contract_start": "2025-08",
-      "contract_end": "2030-05",
-      "rate_kusd": 505,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "operator": "Beacon",
+      "contract_start": "2026-08",
+      "contract_end": "2026-10",
+      "rate_kusd": 580,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Deepwater Invictus",
@@ -209,8 +209,8 @@
       "contract_start": "2025-04",
       "contract_end": "2028-04",
       "rate_kusd": 485,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Deepwater Poseidon",
@@ -218,11 +218,11 @@
       "tier": "Ultra-deepwater",
       "contractor": "Transocean",
       "operator": "Shell",
-      "contract_start": "2017-09",
+      "contract_start": "2018-09",
       "contract_end": "2028-02",
-      "rate_kusd": 499,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "rate_kusd": 501,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Deepwater Titan",
@@ -232,9 +232,9 @@
       "operator": "Chevron",
       "contract_start": "2023-04",
       "contract_end": "2028-04",
-      "rate_kusd": 462,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "rate_kusd": 463,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Transocean Norge",
@@ -242,11 +242,11 @@
       "tier": "Deepwater (HE)",
       "contractor": "Transocean",
       "operator": "Harbour Energy / OMV",
-      "contract_start": "2026-01",
-      "contract_end": "2027-12",
-      "rate_kusd": 452,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "contract_start": "2026-06",
+      "contract_end": "2028-01",
+      "rate_kusd": 472,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Transocean Barents",
@@ -254,11 +254,11 @@
       "tier": "Deepwater (HE)",
       "contractor": "Transocean",
       "operator": "OMV Petrom",
-      "contract_start": "2025-03",
+      "contract_start": "2026-09",
       "contract_end": "2027-02",
-      "rate_kusd": 465,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "rate_kusd": 498,
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Transocean Endurance",
@@ -266,11 +266,11 @@
       "tier": "Deepwater",
       "contractor": "Transocean",
       "operator": "Woodside",
-      "contract_start": "2026-02",
-      "contract_end": "2026-10",
+      "contract_start": "2026-07",
+      "contract_end": "2026-11",
       "rate_kusd": 390,
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf"
     },
     {
       "rig": "Valaris DS-8",
@@ -281,8 +281,8 @@
       "contract_start": "2023-12",
       "contract_end": "2026-12",
       "rate_kusd": 428,
-      "source": "Valaris Fleet Status Report, Mar 2026",
-      "source_url": "https://s23.q4cdn.com/956522162/files/doc_financials/2025/q4/2025q4-fleet-status-report.pdf"
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf"
     }
   ],
   "newbuild_prices": [

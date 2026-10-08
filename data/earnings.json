@@ -13,10 +13,10 @@
         "business_model": "Ultra-deepwater와 harsh-environment floater 중심의 offshore drilling contractor. 고사양 drillship과 semisubmersible을 장기 계약으로 운용한다.",
         "strategy": "Valaris 인수로 글로벌 floater 규모를 확대하고, 고사양 7세대 drillship과 harsh-environment 리그의 dayrate 회복을 수익성 개선의 핵심 축으로 둔다.",
         "rig_mix": {
-          "drillships": 18,
-          "semisubmersibles": 14,
+          "drillships": 20,
+          "semisubmersibles": 7,
           "jackups": 0,
-          "total": 32
+          "total": 27
         },
         "key_clients": [
           "Chevron",
@@ -31,32 +31,36 @@
             "type": "Drillship",
             "region": "US Gulf of Mexico",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Beacon Offshore Energy"
           },
           {
             "name": "Deepwater Titan",
             "type": "Drillship",
             "region": "US Gulf of Mexico",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Chevron"
           },
           {
             "name": "Transocean Norge",
             "type": "Harsh Environment Semi",
             "region": "Norway",
             "water_depth_ft": 10000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Harbour Energy / OMV"
           },
           {
             "name": "Deepwater Asgard",
             "type": "Drillship",
-            "region": "US Gulf of Mexico",
+            "region": "Eastern Mediterranean",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "Idle"
           }
         ],
         "notable": "업계 최대 수준의 ultra-deepwater backlog를 보유한 순수 floater 강자. Valaris 인수 완료 시 jackup exposure까지 포함한 대형 통합 offshore driller가 된다.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "market_cap_snapshot_date": "2026-05-05",
+        "rig_mix_source": "Transocean FSR Aug 5 2026: UDW 드릴십 20(계류 3 포함) + HE 반잠수식 7"
       },
       "quarters": [
         {
@@ -179,10 +183,10 @@
         "business_model": "Drillship, semisubmersible, jackup을 모두 보유한 diversified offshore drilling contractor. Deepwater와 jackup 계약을 함께 운용한다.",
         "strategy": "Transocean과의 합병 전까지 backlog 방어와 fleet utilization 개선에 집중한다. 합병 완료 후에는 Transocean의 floater 중심 포트폴리오와 통합될 예정이다.",
         "rig_mix": {
-          "drillships": 11,
-          "semisubmersibles": 4,
-          "jackups": 30,
-          "total": 45
+          "drillships": 13,
+          "semisubmersibles": 1,
+          "jackups": 29,
+          "total": 43
         },
         "key_clients": [
           "bp",
@@ -195,16 +199,17 @@
           {
             "name": "VALARIS DS-17",
             "type": "Drillship",
-            "region": "Brazil / Atlantic",
+            "region": "Brazil",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Equinor"
           },
           {
             "name": "VALARIS DS-18",
             "type": "Drillship",
-            "region": "US Gulf of Mexico",
+            "region": "Gulf of America",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "Idle"
           },
           {
             "name": "VALARIS 123",
@@ -216,13 +221,15 @@
           {
             "name": "VALARIS Norway",
             "type": "Harsh Environment Jackup",
-            "region": "North Sea",
+            "region": "UK",
             "water_depth_ft": 400,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Ithaca Energy"
           }
         ],
         "notable": "Transocean과의 합병 발표 이후 독립 실적 가이던스와 earnings call을 중단한 상태다. 현재 데이터는 합병 전 stand-alone Valaris 기준이다.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "market_cap_snapshot_date": "2026-05-05",
+        "rig_mix_source": "Valaris FSR Aug 5 2026: 드릴십 13(계류 3), 반잠수식 MS-1, 잭업 29(ARO 임대 7 포함; 104·109 매각 제외)"
       },
       "quarters": [
         {
@@ -345,10 +352,10 @@
         "business_model": "Deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. Diamond Offshore 인수 후 deepwater pure-play로 재편했다.",
         "strategy": "잭업 매각 이후 고사양 floater 중심으로 포트폴리오를 단순화하고, Petrobras, Shell, Chevron 등 deepwater 고객의 장기 계약을 확대한다.",
         "rig_mix": {
-          "drillships": 19,
-          "semisubmersibles": 13,
-          "jackups": 0,
-          "total": 32
+          "drillships": 17,
+          "semisubmersibles": 7,
+          "jackups": 5,
+          "total": 29
         },
         "key_clients": [
           "Petrobras",
@@ -363,32 +370,35 @@
             "type": "Drillship",
             "region": "US Gulf of Mexico",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Shell"
           },
           {
             "name": "Noble Venturer",
             "type": "Drillship",
-            "region": "Brazil",
+            "region": "Ghana",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "Idle"
           },
           {
             "name": "Noble Developer",
             "type": "Drillship",
-            "region": "Guyana / Atlantic",
+            "region": "Guyana",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "ExxonMobil"
           },
           {
             "name": "Noble Deliverer",
             "type": "Semisubmersible",
-            "region": "North Sea",
+            "region": "Australia",
             "water_depth_ft": 10000,
-            "status": "Reactivation"
+            "status": "Idle"
           }
         ],
         "notable": "Diamond Offshore 인수와 jackup 매각 이후 deepwater pure-play 성격이 강해졌다. Q1 2026 실적이 이미 반영된 유일한 시추선사다.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "market_cap_snapshot_date": "2026-05-05",
+        "rig_mix_source": "Noble FSR Jul 27 2026: marketed 29척 — 드릴십 17(7G 14 + 6G 3), 반잠수식 7, UH 잭업 5"
       },
       "quarters": [
         {
@@ -511,10 +521,10 @@
         "business_model": "High-spec ultra-deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. 재무구조 재편 이후 고사양 floater에 집중한다.",
         "strategy": "브라질, US Gulf of Mexico, 서아프리카 deepwater 수요에 맞춰 drillship 가동률과 dayrate를 회복시키는 데 집중한다.",
         "rig_mix": {
-          "drillships": 8,
-          "semisubmersibles": 3,
+          "drillships": 10,
+          "semisubmersibles": 5,
           "jackups": 0,
-          "total": 11
+          "total": 15
         },
         "key_clients": [
           "Petrobras",
@@ -529,32 +539,36 @@
             "type": "Drillship",
             "region": "Brazil",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "Petrobras"
           },
           {
             "name": "West Carina",
             "type": "Drillship",
-            "region": "Brazil",
+            "region": "Namibia",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "Idle"
           },
           {
             "name": "West Neptune",
             "type": "Drillship",
             "region": "US Gulf of Mexico",
             "water_depth_ft": 12000,
-            "status": "On Contract"
+            "status": "On Contract",
+            "operator": "LLOG"
           },
           {
             "name": "West Jupiter",
             "type": "Drillship",
-            "region": "US Gulf of Mexico",
+            "region": "Brazil",
             "water_depth_ft": 12000,
-            "status": "Available / Marketing"
+            "status": "On Contract",
+            "operator": "Petrobras"
           }
         ],
         "notable": "상대적으로 작은 floater 포트폴리오지만 브라질과 US Gulf deepwater exposure가 크다. 2026년 가이던스는 EBITDA 회복을 전제로 한다.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "market_cap_snapshot_date": "2026-05-05",
+        "rig_mix_source": "Seadrill FSR Aug 10 2026: 자사 소유 드릴십 10(West Gemini 포함)·반잠수식 5(계류 3) — 이 외 Sonangol 소유 관리 드릴십 2"
       },
       "quarters": [
         {

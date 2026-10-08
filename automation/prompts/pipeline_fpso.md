@@ -20,6 +20,7 @@
    - contractors: 최근 분기 IR 기준으로 backlog_busd를 갱신한다(SBM, MODEC, BW Offshore, Yinson, Golar).
    - market_summary: 새 Rystad/Westwood 수치를 확인했을 때만 수정하고 `as_of`를 그 기준일로 바꾼다. 확인 못 했으면 그대로 둔다(as_of가 대시보드에 그대로 표시됨).
    - **P-번호 교차 확인**: 같은 P-번호가 pipeline과 fpso에서 같은 필드/모듈(예: P-80 = Búzios 9)을 가리키는지 확인한다. 다르면 출처를 확인해 바로잡는다.
+**FPSO 운영 선박 순환 대조 (매월)**: `fpso.json` `vessels`를 컨트랙터 단위로 순환 대조한다 — 실행 월 % 4 → 0: SBM Offshore·Golar, 1: MODEC·BW Offshore, 2: Yinson·Saipem·기타, 3: Petrobras·Shell. 해당 회사 IR fleet 페이지/최근 실적 자료로 선박 존재·status(On Production/Idle/매각·해체)·client·field·용선 종료를 확인하고, 운영 시작이 확인된 orderbook 선박은 vessels로 옮긴다. contractors의 fleet_owned와 vessels 수가 일치하는지 확인한다(check_data.py NOTE).
 4. 중요 이벤트(FID, first oil, 계약 ≥ $500M, 프로젝트 취소)는 news.json에 최대 5건 추가한다(id = 최대 id + 1, 최신순, sector/category 허용값 준수).
 5. 수정한 파일의 `updated`를 오늘 날짜로 바꾼다.
 6. `python3 scripts/check_data.py` 재실행해 ERROR 0을 확인한다. ERROR가 있으면 고친다. 고칠 수 없으면 해당 변경을 되돌리고 보고한다. (커밋·push는 워크플로가 한다)

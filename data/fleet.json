@@ -74,7 +74,7 @@
       "location": "US Gulf of Mexico",
       "contract_start": "2025-08",
       "contract_end": "2030-05",
-      "day_rate_kusd": 505,
+      "day_rate_kusd": 580,
       "specs": {
         "build_year": 2022,
         "build_yard": "Samsung Heavy Industries",
@@ -88,7 +88,8 @@
       },
       "source": "Transocean Fleet Status Report, Feb 19 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "confidence": "high",
+      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k."
     },
     {
       "name": "Deepwater Titan",
