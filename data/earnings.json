@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-10-08",
   "companies": [
     {
       "name": "Transocean",
       "ticker": "RIG",
-      "note": "Acquiring Valaris for $5.8B (announced Feb 2026). Q1 2026 reports May 4.",
+      "note": "Acquiring Valaris for $5.8B (announced Feb 2026); closing expected Q4 2026 per Valaris Q2 release (Aug 5, 2026). Q2 2026 reported Aug 5.",
       "company_profile": {
         "founded": 1953,
         "hq": "Steinhausen, Switzerland",
@@ -145,13 +145,32 @@
             "FY2026 가이던스: 매출 $3,800~3,900M, 유동성 $1,250~1,350M",
             "CEO Adamson: '멀티년 업사이클 초기 단계' 강조 — UDW 공급 타이트 전망 유지"
           ]
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 966,
+          "adj_ebitda_musd": 312,
+          "ebitda_margin_pct": 32.3,
+          "utilization_pct": 78,
+          "avg_day_rate_kusd": 473,
+          "backlog_busd": 6.7,
+          "source": "Q2 2026 Earnings (Aug 2026)",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/05/3339819/0/en/transocean-ltd-reports-second-quarter-2026-results.html",
+          "highlights": [
+            "Q2 2026 매출 $966M, Adj EBITDA $312M (회사 발표 마진 32.2%), 순이익 $170M — Q1 대비 매출·EBITDA 감소",
+            "함대 가동률 78.2% (UDW 72.6% / HE 94.2%), 수익 효율 97.0%",
+            "평균 일일 수익 $472.5k (UDW $455.5k / HE $510.0k)",
+            "신규 계약 $292M 추가(가중평균 ~$461k/day) — Backlog ~$6.7B (승인 대기 중인 Equinor $1.0B 제외)",
+            "FY2026 가이던스: 매출 $3,900~3,975M (Q1 시점 $3,800~3,900M에서 상향), 유동성 $1,250~1,350M, CAPEX $150M",
+            "FCF $212M, 총 유동성 $1.3B+ (미인출 RCF 포함)"
+          ]
         }
       ]
     },
     {
       "name": "Valaris",
       "ticker": "VAL",
-      "note": "Merger with Transocean pending ($5.8B, announced Feb 2026). Q1 2026 reports May 4. Earnings calls discontinued.",
+      "note": "Merger with Transocean pending ($5.8B, announced Feb 2026); on track to close in Q4 2026 (Q2 release, Aug 5, 2026). Earnings calls discontinued.",
       "company_profile": {
         "founded": 1975,
         "hq": "Hamilton, Bermuda / Houston, USA",
@@ -291,6 +310,25 @@
             "수익 효율 98% 달성 — 안정적 운영 기조 유지",
             "백로그 $4.9B (Valaris 단독, 2026.05.04 기준) — Q4 2025($4.7B) 대비 $200M 증가",
             "Transocean 합병($5.8B) 발표(2026.02) 후 향후 어닝스 콜 미개최 및 FY 가이던스 업데이트 중단"
+          ]
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 539,
+          "adj_ebitda_musd": 97,
+          "ebitda_margin_pct": 17.9,
+          "utilization_pct": 52,
+          "avg_day_rate_kusd": 451,
+          "backlog_busd": 4.6,
+          "source": "Q2 2026 Earnings (Aug 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000314808/000031480826000138/a06302026ex991pressrelease.htm",
+          "highlights": [
+            "Q2 2026 매출 $539.2M, Adj EBITDA $96.5M (Q1 $66.7M) — 중동 분쟁 영향 ~$30M(전쟁보험료·프로젝트 지연) 반영",
+            "VALARIS DS-12·DS-10 신규 계약 투입 일정·예산 내 완료 — Drillship 가동률 52%, 평균 요율 $451k/day",
+            "Jackup 가동률 64%, 평균 $134k/day; VALARIS 104·109 잭업 매각(합계 $74M)",
+            "백로그 $4.585B (2026.08.05 기준; Drillship $3.0B / Jackup $1.1B)",
+            "수익 효율 98%, 합병·통합 비용 $11M (Q1 $14M)",
+            "Transocean 합병 2026년 4분기 종결 예정(on track) — 어닝스 콜 미개최 유지"
           ]
         }
       ]
@@ -439,13 +477,32 @@
             "Free Cash Flow $169M — 주당 배당금 유지"
           ],
           "source_url": "https://www.noblecorp.com/investors/financial-information/"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 679,
+          "adj_ebitda_musd": 212,
+          "ebitda_margin_pct": 31.2,
+          "utilization_pct": 64,
+          "avg_day_rate_kusd": 413,
+          "backlog_busd": 6.8,
+          "source": "Q2 2026 Earnings (Jul 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001895262/000189526226000138/exhibit991-q22026pressrele.htm",
+          "highlights": [
+            "Contract drilling services 매출 $679M (Q1 $743M), Adj EBITDA $212M — 브라질 Noble Faye Kozack·Noble Courage 운영 중단(~$43M) 및 Globetrotter I 흑해 계약 종료 영향",
+            "29기 마케팅 리그 가동률 64% (Q1 68%), 평균 floater 요율 $413k/day",
+            "FY2026 가이던스 하향: 매출 $2.8–2.9B(기존 $2.8–3.0B), Adj EBITDA $850–925M(기존 $940M–1.02B); CAPEX $615–665M 유지",
+            "4월 FSR 이후 신규 계약 ~$200M (Noble Viking 아태 6-well, Noble Claus Bachmann bp 3-well) — Backlog $6.8B (7/27 기준)",
+            "구 Diamond 채권 $800M을 6.250% 2034년 만기 무담보채로 차환 — 연 $35M 현금 절감",
+            "순손실 $37M, FCF -$59M; Q3 배당 $0.50/주 선언"
+          ]
         }
       ]
     },
     {
       "name": "Seadrill",
       "ticker": "SDRL",
-      "note": "FY2025 Adj. EBITDA $353M. 2026 guidance: Rev $1.40–1.45B, EBITDA $350–400M. Q1 2026 date TBD.",
+      "note": "FY2025 Adj. EBITDA $353M. 2026 guidance raised twice — latest (Aug 2026): Rev $1.50–1.55B, EBITDA $420–450M.",
       "company_profile": {
         "founded": 2005,
         "hq": "Hamilton, Bermuda",
@@ -586,13 +643,31 @@
             "순손실 $7M, 현금 $329M 유지 (총 부채 $625M, 순부채 $296M)"
           ],
           "source_url": "https://www.seadrill.com/investors/financial-information/"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 449,
+          "adj_ebitda_musd": 144,
+          "ebitda_margin_pct": 32.1,
+          "utilization_pct": 96,
+          "avg_day_rate_kusd": 360,
+          "backlog_busd": 2.9,
+          "source": "Q2 2026 Earnings (Aug 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001737706/000173770626000023/seadrillpressreleaseq22026.htm",
+          "highlights": [
+            "매출 $449M (Q1 $358M), Adj EBITDA $144M, 순이익 $29M",
+            "2026 가이던스 재상향: 매출 $1.50–1.55B(기존 $1.43–1.48B, 환급매출 $50M 제외), EBITDA $420–450M(기존 $370–420M); CAPEX $200–240M 유지",
+            "경제적 가동률 96%, 평균 계약 요율 $360k/day",
+            "신규 계약 ~$200M: West Vela US Gulf 1년(~$161M), West Capella 말레이시아 연장(~$26M) — Backlog ~$2.9B (8/10 기준)",
+            "자사주 ~$20M 매입(프로그램 2026년말까지 연장); 선순위채 2034년 만기로 차환, RCF $300M로 증액(2031 만기)"
+          ]
         }
       ]
     },
     {
       "name": "Borr Drilling",
       "ticker": "BORR",
-      "note": "Pure-play jackup. 29 modern jackups (all post-2008). Acquired 5 Noble jackups Jan 2026. Q1 2026 reports May 20.",
+      "note": "Pure-play jackup. 29 modern jackups (all post-2008). Acquired 5 Noble jackups Jan 2026. 5 more premium jackups via 50/50 JV ($287M, Jul 2026). Debt fully refinanced Q2 2026.",
       "company_profile": {
         "founded": 2016,
         "hq": "Hamilton, Bermuda",
@@ -733,6 +808,25 @@
             "2026 coverage 71% (평균 $137K) — 근시일 가시성 확보, 단가 압박은 지속"
           ],
           "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 232,
+          "adj_ebitda_musd": 44,
+          "ebitda_margin_pct": 18.9,
+          "utilization_pct": 96,
+          "avg_day_rate_kusd": 134,
+          "backlog_busd": 1.13,
+          "source": "Q2 2026 Earnings (Aug 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-1.htm",
+          "highlights": [
+            "매출 $232.3M (QoQ -6%), Adj EBITDA $43.8M (QoQ -51%) — 평균 가동 리그 22.4기→21.2기",
+            "순손실 $241.4M — 2028·2030 담보채 및 2028 전환사채 차환에 따른 채무소멸손실 $176.3M",
+            "담보채 $2,035M(2032·2034 만기) + 전환사채 $300M(2033 만기) 발행으로 사실상 전 부채 차환, RCF $250M로 증액",
+            "기술 가동률 98.4%, 경제 가동률 96.4% (utilization_pct는 경제 가동률 기준)",
+            "YTD 21건·$541M 백로그 추가; 2026 커버리지 73%(평균 ~$134k/day) — 백로그 $1.04B(6/30) → $1.13B(발표일)",
+            "분기 후(7월) 50/50 JV로 프리미엄 잭업 5기 $287M 인수 완료"
+          ]
         }
       ]
     }

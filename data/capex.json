@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-10-08",
   "companies": [
     {
       "name": "Equinor",
@@ -512,14 +512,14 @@
         },
         {
           "year": 2026,
-          "total_capex_busd": 13.0,
-          "upstream_capex_busd": 10.0,
-          "source": "Q1 2026 Earnings (Apr 2026)",
-          "source_url": "https://www.bp.com/en/global/corporate/investors/results-and-reporting.html"
+          "total_capex_busd": 13.75,
+          "upstream_capex_busd": 10.6,
+          "source": "Q2 2026 Earnings (Aug 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000313807/000165495426007201/a0879p.htm"
         }
       ],
       "upstream_focus": "GOM, North Sea, Azerbaijan",
-      "notes": "Upstream(O&G) 비중 ~77%. 재생에너지 투자 축소, upstream 재집중 전략. 2026 FY 가이던스 $13.0–13.5B 유지.",
+      "notes": "Upstream(O&G) 비중 ~77%. 재생에너지 투자 축소, upstream 재집중 전략. 2026 FY 가이던스 $13.5–14.0B로 상향(Q2 2026, 기존 $13.0–13.5B) — 자산 farm-down 지연 결정 반영; total은 범위 중간값, upstream은 기존 비중(~77%) 적용 추정치.",
       "upstream_plan": {
         "horizon": "2026–2030",
         "total_commitment_busd": 50,

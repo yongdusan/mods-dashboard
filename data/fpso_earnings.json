@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29",
+  "updated": "2026-10-08",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -226,6 +226,24 @@
             "$1억 현금배당 지급, $2.7억 자사주 매입 프로그램 진행 중"
           ],
           "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 1415,
+          "adj_ebitda_musd": null,
+          "ebitda_margin_pct": null,
+          "units_on_lease": 16,
+          "backlog_busd": 35.6,
+          "source": "H1 2026 Interim Results (Aug 2026) — Q2 revenue = H1 2026 Directional $4,904M − Q1 2026 Directional $3,489M; Q1 EBITDA 미공개로 Q2 단독 EBITDA 산출 불가(null)",
+          "highlights": [
+            "H1 2026 Directional Revenue $4,904M(+112% YoY), Directional EBITDA $1,310M(+92%) — FPSO ONE GUYANA 매각 효과 포함",
+            "H1 L&O 매출 $1,191M·EBITDA $547M / Turnkey 매출 $3,713M·EBITDA $813M",
+            "FY2026 가이던스 상향: Directional Revenue ~$7.6B(기존 $6.9B+), Directional EBITDA ~$1.9B(기존 ~$1.8B)",
+            "Pro-forma Directional backlog 사상 최대 $35.6B(FY2025 $31.1B), 함대 가동률 98.9%(16기)",
+            "Petrobras SEAP I·II FPSO 설계·조달 착수(2030–31 인도), Fast4Ward 선체 누적 13척 발주; Jaguar·Chalchi·GranMorgu 공정률 50~75%",
+            "중간배당 $100M, $270M 자사주 매입 ~44% 진행; 2026–2031 최소 $2.1B 주주환원 약속"
+          ],
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html"
         }
       ]
     },
@@ -447,6 +465,24 @@
             "2026 연간 배당 증가 계획 발표 — 재무건전성 자신감 반영"
           ],
           "source_url": "https://www.modec.com/ir/library/presentation/assets/pdf/2026_1Q_presentation_en.pdf"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 1370,
+          "adj_ebitda_musd": 170,
+          "ebitda_margin_pct": 12.4,
+          "units_on_lease": 20,
+          "backlog_busd": null,
+          "source": "2026 Half-Year Financial Results (Aug 2026) — H1 2026 − Q1 2026 기준 Q2 단독 역산; adj_ebitda_musd는 operating profit proxy (H1 $293.0M − Q1 $122.7M)",
+          "highlights": [
+            "H1 2026 매출 $2,447M(+18.0% YoY), 영업이익 $293M(+70.2%), 순이익 $224M(+54.4%)",
+            "H1 누적에서 Q1(매출 $1,077M·영업이익 $122.7M)을 차감해 Q2 단독 매출 $1,370M, 영업이익 proxy $170M 산출",
+            "FPSO 건조 프로젝트 진척에 따른 매출 인식 확대가 이익 성장 견인",
+            "FY2026 가이던스 유지: 매출 $4.6B, 순이익 $370M",
+            "연간 배당 JPY 200/주 계획 (Q2 JPY 100)",
+            "수주잔량: 2차 출처 간 수치 상충($17.0B vs $25.5B)으로 1등급 확인 전까지 null"
+          ],
+          "source_url": "https://www.modec.com/ir/"
         }
       ]
     },
@@ -664,6 +700,23 @@
             "가용 유동성 $5.68억, 주당 $0.063 배당 선언"
           ],
           "source_url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 163,
+          "adj_ebitda_musd": 62.5,
+          "ebitda_margin_pct": 38.3,
+          "units_on_lease": 4,
+          "backlog_busd": 2.2,
+          "source": "Q2 2026 Results (Aug 2026) — EBITDA·backlog는 보도자료 기준; 매출 $163.1M은 Quartr 실적 요약 기준(보도자료 본문 미확인); backlog는 expected operating cashflow 기준",
+          "highlights": [
+            "Q2 EBITDA $62.5M, H1 $110.4M; BW Opal 비현금 손상 $125M으로 Q2 순손실 $102.1M (H1 손상 제외 순이익 $46.6M)",
+            "BW Opal 6/15 Interim Performance Test 통과, 명목용량 85%로 생산 중 — Practical Completion Q2 2027로 연기(제3자 장비 교체 2027 Q1), 추가 투자 ~$65M",
+            "FY2026 EBITDA 가이던스 $250–280M로 재하향(기존 $310–340M)",
+            "BW Catcher 계약 2030년말까지 연장 — 확정 백로그 ~$490M 추가; 총 백로그 $2.2B(97% firm)",
+            "Equinor Bay du Nord FPSO FEED 수행, St. John's 사무소 개설; 가용 유동성 $511M, 배당 $0.063/주"
+          ],
+          "source_url": "https://www.inderes.dk/releases/bw-offshore-second-quarter-and-first-half-results-2026"
         }
       ]
     },
@@ -865,6 +918,24 @@
             "주당 배당 5센(FY2025 대비 +22%), 자사주 매입 1.11억 주(RM244M) — 주주환원 강화"
           ],
           "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_musd": 297,
+          "adj_ebitda_musd": 187,
+          "ebitda_margin_pct": 63.0,
+          "units_on_lease": 8,
+          "backlog_busd": 19.3,
+          "source": "Q1 FY2027 Earnings (Jul 2026) — Yinson Production Enterprise Reporting; USD 기준 (Feb–Apr 2026)",
+          "highlights": [
+            "Q1 FY2027 Enterprise Reporting 매출 $297M(+26% YoY), EBITDA $193M, Adjusted EBITDA $187M(+60% YoY)",
+            "조정 순이익 $4M — 입찰비용(SG&A) 증가 및 Agogo FPSO first oil 이후 이자 비용화 영향",
+            "수주잔량 $19.3B(2026.04.30), 순차입금 $3.5B — 백로그/순차입금 ~5.5x",
+            "분기 후 Agogo FPSO 선순위 금융 모회사 보증 해제, FSO Block B $131.5M 은행 금융 확보(5월)",
+            "기술 가동률 99.8%, 상업 성과 102.2%; FSO Lac Da Vang Q4 2026 first oil 예정",
+            "감사 후 FY2026 수치 소폭 하향(Q4 매출 $301M·Adj EBITDA $192M) — Agogo 재고비용 $14M 반영"
+          ],
+          "source_url": "https://www.yinson-production.com/wp-content/uploads/YPOPL-Q1-FY2027-Final.pdf"
         }
       ]
     },
@@ -1067,6 +1138,24 @@
             "주당 $0.25 분기 배당 선언(6월 10일 지급)"
           ],
           "source_url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html"
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 130,
+          "adj_ebitda_musd": 127,
+          "ebitda_margin_pct": 97.6,
+          "units_on_lease": 2,
+          "backlog_busd": 16.6,
+          "source": "Q2 2026 Interim Results (Aug 2026) — backlog는 보도자료의 자산별 Adj. EBITDA backlog 합산(Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B, Golar 70% 지분)",
+          "highlights": [
+            "매출 $130.5M(+72% YoY), Adj EBITDA $127.4M(+159% YoY) — 파생상품 실현이익 및 Gimi 초과생산 수익 반영; 순이익 $38.3M",
+            "FLNG Gimi Q2 계약물량 대비 15% 초과 생산, 상업운전 1주년(누적 41카고)",
+            "FLNG Hilli 카메룬 8년 계약 완료(경제적 가동률 100%, 156카고) — 싱가포르 개조 후 2027년 아르헨티나 투입 예정",
+            "4번째 FLNG(MKII 3.5MTPA) CIMC Raffles와 EPC 계약(8/12) — 총 $2.45B, 2029년말 인도 목표, 통제 액화능력 12MTPA+",
+            "순차입금 $1.8B(현금 $0.9B); 분기 배당 $0.25/주(9/2 지급)",
+            "전략적 검토(strategic review) 진행 중 — 결과·시점 미공개"
+          ],
+          "source_url": "https://mfn.se/all/a/golar-lng/golar-lng-limited-interim-results-for-the-period-ended-june-30-2026-b168e773"
         }
       ]
     }

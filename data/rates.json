@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-10-08",
   "data_quality": {
     "day_rates": {
       "confidence": "mixed",
       "basis": "Indicative market curve anchored on FSR-verified contracts where available",
-      "notes": "Directional trend only; not a published market index. Drillship and semi-sub 2026-Q2 values are calibrated against FSR observations. Jack-up curve remains unanchored and should be treated as low confidence."
+      "notes": "Directional trend only; not a published market index. Drillship and semi-sub 2026-Q2 values are calibrated against FSR observations. Jack-up curve remains unanchored and should be treated as low confidence. 2026-07/10 drillship·jack-up points added from Q2 2026 earnings (Oct 2026); semisubmersible 2026-07/10 not added — no Deepwater-tier semi rate disclosed in Q2 releases (Transocean HE floaters $510K only)."
     },
     "day_rates_by_type": {
       "drillship": {
@@ -68,6 +68,20 @@
       "tier": "Ultra-deepwater",
       "rate_kusd": 460,
       "source": "Q1 2026 Earnings-anchored estimate (Q1 actual avg $450K + modest uptick)"
+    },
+    {
+      "date": "2026-07",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 440,
+      "source": "Q2 2026 Earnings avg (RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K)"
+    },
+    {
+      "date": "2026-10",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 461,
+      "source": "Indicative — Transocean Q2 2026 신규 계약 가중평균 ~$461K/day (UDW·HE 혼합, Aug 2026)"
     },
     {
       "date": "2025-01",
@@ -152,6 +166,20 @@
       "tier": "Premium",
       "rate_kusd": 138,
       "source": "Q1 2026 Earnings-anchored (Borr 2026 coverage avg $137K; pricing pressure noted)"
+    },
+    {
+      "date": "2026-07",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 134,
+      "source": "Q2 2026 Earnings (Valaris jackup avg daily revenue $134K; Borr 2026 coverage avg ~$134K)"
+    },
+    {
+      "date": "2026-10",
+      "rig_type": "Jack-up",
+      "tier": "Premium",
+      "rate_kusd": 134,
+      "source": "Indicative — Borr Q2 2026 기준 2026 커버리지 평균 ~$134K/day (H2 커버리지 70%, Aug 2026)"
     }
   ],
   "named_observations": [
