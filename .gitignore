@@ -1,2 +1,3 @@
 .wrangler/
 .claude/settings.local.json
+news_candidates.json
