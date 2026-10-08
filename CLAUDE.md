@@ -81,20 +81,28 @@
 
 ---
 
-## 자동화 구성 (2026-10-08 재정비)
+## 자동화 구성 (2026-10-08 클라우드 이전)
 
-| 파일 | 자동 실행 | 실행 위치 |
-|------|---------|---------|
-| `news.json` | GitHub Actions `news-refresh.yml` — 매주 월 09:00 KST | 클라우드 (앱 꺼져도 실행) |
-| `fleet.json` | Claude 예약 작업 `modu-fleet-weekly` — 매주 월 10:30 | Claude 데스크톱 앱 (앱 실행 중일 때) |
-| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | Claude 예약 작업 `modu-earnings-refresh` — 매월 1·16일 10:00 (새 발표분만 추가) | Claude 데스크톱 앱 |
-| `pipeline.json` · `fpso.json` | Claude 예약 작업 `modu-pipeline-fpso-monthly` — 매월 10일 09:00 (1·4·7·10월 전수 점검) | Claude 데스크톱 앱 |
-| 전체 | GitHub Actions `data-health.yml` — data push 시 + 매주 월 10:00 KST, `scripts/check_data.py` 실행. 정합성 ERROR 시 실패, 기한 초과(OVERDUE) 시 `data-health` 라벨 이슈 생성/갱신 | 클라우드 |
+모든 정기 갱신은 **GitHub 클라우드에서 실행**된다. 데스크톱 앱이 꺼져 있어도 돈다.
+
+| 파일 | 자동 실행 | 방식 |
+|------|---------|------|
+| `news.json` | `news-refresh.yml` — 매주 월 09:00 KST | RSS + Claude Haiku API |
+| `fleet.json` | `data-refresh.yml` (task=fleet) — 매주 월 10:30 KST | claude-code-action |
+| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | `data-refresh.yml` (task=earnings) — 매월 1·16일 10:00 KST, 새 발표분만 | claude-code-action |
+| `pipeline.json` · `fpso.json` (+ 주요 이벤트 `news.json`) | `data-refresh.yml` (task=pipeline_fpso) — 매월 10일 09:00 KST, 1·4·7·10월 전수 점검 | claude-code-action |
+| 전체 점검 | `data-health.yml` — data push 시 + 매주 월 10:00 KST | `scripts/check_data.py` |
+
+**동작 방식**
+- 작업 지시문: `automation/prompts/{fleet,earnings,pipeline_fpso,smoke}.md` — 지시 변경은 이 파일을 고친다.
+- Claude는 `data/` 조사·편집만 한다(git 권한 없음). 워크플로가 `check_data.py`로 검증해 ERROR 0일 때만 해당 작업의 담당 파일을 커밋·push(→ Cloudflare 자동 배포).
+- 검증 실패 시 커밋하지 않고 `data-health` 라벨 이슈를 연다. 기한 초과(OVERDUE)도 `data-health.yml`이 이슈로 알린다.
+- 수동 실행: GitHub → Actions → "Data Refresh (Claude, cloud)" → Run workflow (task 선택). 연결 점검은 task=smoke(파일 수정 없음).
+- 모델: 저장소 변수 `CLAUDE_MODEL`(미설정 시 claude-sonnet-5-5). API 비용은 `ANTHROPIC_API_KEY` 시크릿 계정에 청구된다.
+- 데스크톱 예약 작업(`modu-fleet-weekly` 등)은 자동 실행을 끄고 수동 백업으로만 남겨둔다(중복 실행 방지).
 
 **운영 규칙**
-- 예약 작업은 무인 실행이고 상위 폴더 `/Users/ahn-yongsung/Project`에서 시작된다. 승인 프롬프트가 뜨면 멈추므로 `/Users/ahn-yongsung/Project/.claude/settings.local.json`에 허용된 도구만 쓴다: `cd` 대신 `git -C <repo>`와 절대경로, JSON 수정은 Edit 도구.
-- 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`를 실행해 ERROR 0을 확인한다.
-- 예약 작업은 확인된 변경을 직접 `git push origin main`까지 한다(배포 포함).
+- 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`로 ERROR 0을 확인한다.
 - 파일 일부만 고쳤을 때 `updated`를 오늘로 바꾸면 나머지 오래된 섹션까지 최신처럼 보인다. 섹션별 기준일이 다른 데이터는 섹션에 `as_of`를 둔다(예: `fpso.json` `market_summary.as_of`).
 
 ---
