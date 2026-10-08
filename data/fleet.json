@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29",
+  "updated": "2026-10-08",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -58,9 +58,9 @@
     ]
   },
   "prev_week": {
-    "total": 97,
-    "on_contract": 80,
-    "idle_stacked": 17
+    "total": 98,
+    "on_contract": 77,
+    "idle_stacked": 21
   },
   "rigs": [
     {
@@ -146,11 +146,11 @@
       "contractor": "Transocean",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
+      "status": "Idle",
       "operator": null,
       "location": "Eastern Mediterranean",
-      "contract_start": "2026-10",
-      "contract_end": "2027-10",
+      "contract_start": "2026-12",
+      "contract_end": "2027-12",
       "day_rate_kusd": 405,
       "specs": {
         "build_year": 2014,
@@ -163,9 +163,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean / StockTitan (Apr 2026) — 5-well Eastern Med",
-      "source_url": "https://www.stocktitan.net/news/RIG/transocean-ltd-announces-158-million-award-for-ultra-deepwater-6el0lri5c0yd.html",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026 — Eastern Med firm Dec-26 to Dec-27",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "No current contract shown before the Dec-26 Eastern Med program (20 days contract preparation); marked Idle until commencement. Contract dates/dayrate refer to the upcoming firm program."
     },
     {
       "name": "Deepwater Invictus",
@@ -198,11 +199,11 @@
       "contractor": "Transocean",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "Idle",
+      "status": "On Contract",
       "operator": null,
       "location": "US Gulf of Mexico",
-      "contract_start": null,
-      "contract_end": null,
+      "contract_start": "2026-07",
+      "contract_end": "2026-11",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
@@ -215,9 +216,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Fleet status 2026-05-29 (contract expired)",
-      "source_url": null,
-      "confidence": "medium"
+      "source": "Transocean Fleet Status Report, Aug 5 2026 — two-well contract, unnamed operator",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Firm Jul-26 to Nov-26 plus priced options Nov-26 to Jan-27; operator and dayrate not disclosed."
     },
     {
       "name": "Deepwater Poseidon",
@@ -254,8 +256,8 @@
       "operator": "Petrobras",
       "location": "Brazil",
       "contract_start": "2024-03",
-      "contract_end": "2030-04",
-      "day_rate_kusd": 428,
+      "contract_end": "2030-03",
+      "day_rate_kusd": 375,
       "specs": {
         "build_year": 2013,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -267,9 +269,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean / Offshore Energy (Apr 2026) — 1,095d ext.",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Petrobras firm Apr-26 to Dec-26 at $375k, then Jan-27 to Mar-30 at $390k."
     },
     {
       "name": "Deepwater Conqueror",
@@ -280,7 +283,7 @@
       "operator": null,
       "location": "US Gulf of Mexico",
       "contract_start": "2025-10",
-      "contract_end": "2026-09",
+      "contract_end": "2027-01",
       "day_rate_kusd": 530,
       "specs": {
         "build_year": 2014,
@@ -293,8 +296,8 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
+      "source": "Transocean Fleet Status Report, Aug 5 2026 — two-well extension to Jan-27",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high"
     },
     {
@@ -306,8 +309,8 @@
       "operator": "Petrobras",
       "location": "Brazil",
       "contract_start": "2023-09",
-      "contract_end": "2027-09",
-      "day_rate_kusd": 416,
+      "contract_end": "2030-11",
+      "day_rate_kusd": 379,
       "specs": {
         "build_year": 2012,
         "build_yard": "Hyundai Heavy Industries",
@@ -319,9 +322,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Petrobras firm Apr-26 to Dec-26 at $379k, then Jan-27 to Nov-30 at $390k."
     },
     {
       "name": "Deepwater Mykonos",
@@ -329,11 +333,11 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": "Petrobras",
+      "operator": "bp",
       "location": "Brazil",
-      "contract_start": "2026-01",
-      "contract_end": "2027-07",
-      "day_rate_kusd": null,
+      "contract_start": "2026-09",
+      "contract_end": "2027-06",
+      "day_rate_kusd": 426,
       "specs": {
         "build_year": 2012,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -345,9 +349,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Out of service May-26 to Aug-26 (80 days contract preparation), then bp Brazil firm Sep-26 to Jun-27."
     },
     {
       "name": "Deepwater Thalassa",
@@ -380,12 +385,12 @@
       "contractor": "Transocean",
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
-      "status": "On Contract",
-      "operator": "Equinor",
-      "location": "Norway",
-      "contract_start": "2023-06",
-      "contract_end": "2026-06",
-      "day_rate_kusd": 390,
+      "status": "Idle",
+      "operator": null,
+      "location": null,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2009,
         "build_yard": "Kvaerner Verdal",
@@ -400,7 +405,7 @@
       "source": "Transocean Fleet Status Report, Feb 19 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "low",
-      "data_note": "Not found in Transocean Feb 2026 FSR; data unverified"
+      "data_note": "Not listed in Transocean Feb 2026 or Aug 5 2026 FSR (27-rig fleet). Prior Equinor term (to 2026-06) unverified and lapsed; no follow-on found, so contract fields cleared. Rig may no longer be in the Transocean fleet — review whether to remove."
     },
     {
       "name": "Transocean Spitsbergen",
@@ -411,8 +416,8 @@
       "operator": "Equinor",
       "location": "Norway",
       "contract_start": "2025-06",
-      "contract_end": "2027-10",
-      "day_rate_kusd": 396,
+      "contract_end": "2027-11",
+      "day_rate_kusd": 413,
       "specs": {
         "build_year": 2010,
         "build_yard": "Kvaerner Verdal",
@@ -424,9 +429,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Equinor firm Jun-26 to Mar-27 at $413k, then Mar-27 to Nov-27 at $515k."
     },
     {
       "name": "Transocean Enabler",
@@ -437,8 +443,8 @@
       "operator": "Equinor",
       "location": "Norway",
       "contract_start": "2025-06",
-      "contract_end": "2028-01",
-      "day_rate_kusd": 415,
+      "contract_end": "2028-03",
+      "day_rate_kusd": 436,
       "specs": {
         "build_year": 2013,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -450,9 +456,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Equinor firm May-26 to Jan-27 at $436k, Jan-27 to Mar-28 at $476k. A further 3-year program (Mar-28 to Mar-31, $399k) is pending Equinor license partner approvals and is excluded from contract_end."
     },
     {
       "name": "Transocean Encourage",
@@ -460,11 +467,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": null,
+      "operator": "Equinor",
       "location": "Norway",
       "contract_start": "2026-01",
-      "contract_end": "2028-03",
-      "day_rate_kusd": 490,
+      "contract_end": "2028-05",
+      "day_rate_kusd": 511,
       "specs": {
         "build_year": 2014,
         "build_yard": "Daewoo Shipbuilding & Marine Engineering",
@@ -476,9 +483,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Equinor firm Jan-26 to May-27 at $511k, May-27 to May-28 at $437k. A further 2-year program (May-28 to May-30, $399k) is pending Equinor license partner approvals and is excluded from contract_end."
     },
     {
       "name": "Transocean Endurance",
@@ -488,8 +496,8 @@
       "status": "On Contract",
       "operator": "Woodside",
       "location": "Australia",
-      "contract_start": "2026-02",
-      "contract_end": "2026-10",
+      "contract_start": "2026-07",
+      "contract_end": "2026-11",
       "day_rate_kusd": 390,
       "specs": {
         "build_year": 2015,
@@ -502,9 +510,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Woodside Australia firm Jul-26 to Nov-26. Equinor Norway 2-year program (Jun-27 to Jun-29, $399k) is pending license partner approvals."
     },
     {
       "name": "Transocean Equinox",
@@ -514,9 +523,9 @@
       "status": "On Contract",
       "operator": null,
       "location": "Australia",
-      "contract_start": "2025-04",
-      "contract_end": "2027-01",
-      "day_rate_kusd": 485,
+      "contract_start": "2026-08",
+      "contract_end": "2026-10",
+      "day_rate_kusd": 540,
       "specs": {
         "build_year": 2014,
         "build_yard": "Kvaerner Verdal",
@@ -528,9 +537,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options."
     },
     {
       "name": "Transocean Barents",
@@ -538,11 +548,11 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "Var Energi",
-      "location": "Norway (NCS)",
-      "contract_start": "2026-06",
-      "contract_end": "2029-06",
-      "day_rate_kusd": 450,
+      "operator": "OMV Petrom",
+      "location": "Romania",
+      "contract_start": "2026-09",
+      "contract_end": "2027-02",
+      "day_rate_kusd": 498,
       "specs": {
         "build_year": 2012,
         "build_yard": "Kvaerner Verdal",
@@ -554,9 +564,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status / Offshore Energy (Apr 2026)",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "OMV Petrom Romania Mar-25 to Sep-26 ($482k), then Sep-26 to Feb-27 ($498k). Vår Energi Norway firm Jul-27 to Jul-30 at $467k after ~135 days mobilization/contract preparation."
     },
     {
       "name": "Transocean Norge",
@@ -566,9 +577,9 @@
       "status": "On Contract",
       "operator": "Harbour Energy / OMV",
       "location": "Norway",
-      "contract_start": "2026-01",
-      "contract_end": "2027-12",
-      "day_rate_kusd": 452,
+      "contract_start": "2026-06",
+      "contract_end": "2028-11",
+      "day_rate_kusd": 472,
       "specs": {
         "build_year": 2011,
         "build_yard": "Kvaerner Verdal",
@@ -580,9 +591,10 @@
         "variable_deck_load_t": 5000,
         "generation": "Harsh Environment"
       },
-      "source": "Transocean Fleet Status Report, Feb 19 2026",
-      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
-      "confidence": "high"
+      "source": "Transocean Fleet Status Report, Aug 5 2026",
+      "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
+      "confidence": "high",
+      "data_note": "Harbour Energy / OMV firm Jun-26 to Jan-28 at $472k; Harbour Energy five-well contract Jan-28 to Nov-28 at $513k plus three one-well options."
     },
     {
       "name": "Valaris DS-7",
@@ -667,11 +679,11 @@
       "contractor": "Valaris",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "Idle",
-      "operator": null,
-      "location": "Spain",
-      "contract_start": null,
-      "contract_end": null,
+      "status": "On Contract",
+      "operator": "Shell",
+      "location": "Nigeria",
+      "contract_start": "2026-06",
+      "contract_end": "2028-07",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2015,
@@ -684,20 +696,21 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Valaris Fleet Status Report, Feb 17 2026",
-      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
-      "confidence": "high"
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Shell Nigeria Jun-26 to Jul-28; TCV ~$352M for two years, two 1-year options. Dayrate not disclosed."
     },
     {
       "name": "Valaris DS-12",
       "contractor": "Valaris",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "Idle",
-      "operator": null,
-      "location": "Spain",
-      "contract_start": null,
-      "contract_end": null,
+      "status": "On Contract",
+      "operator": "BP",
+      "location": "Egypt",
+      "contract_start": "2026-04",
+      "contract_end": "2027-04",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
@@ -710,9 +723,10 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Valaris Fleet Status Report, Feb 17 2026",
-      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
-      "confidence": "high"
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "BP Egypt Apr-26 to Apr-27; TCV ~$140M for ~350 days, three option wells. Dayrate not disclosed."
     },
     {
       "name": "Valaris DS-17",
@@ -722,7 +736,7 @@
       "status": "On Contract",
       "operator": "Equinor",
       "location": "Brazil",
-      "contract_start": "2025-05",
+      "contract_start": "2026-03",
       "contract_end": "2028-01",
       "day_rate_kusd": null,
       "specs": {
@@ -736,8 +750,8 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Valaris Fleet Status Report, Feb 17 2026",
-      "source_url": "https://s23.q4cdn.com/956522167/files/doc_downloads/2026/02/02172026-Fleet-Status-Report_FINAL.pdf",
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high"
     },
     {
@@ -773,11 +787,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "Aker BP",
-      "location": "North Sea",
-      "contract_start": "2024-06",
-      "contract_end": "2026-06",
-      "day_rate_kusd": 175,
+      "operator": "Ithaca Energy",
+      "location": "UK",
+      "contract_start": "2026-05",
+      "contract_end": "2027-02",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2009,
         "build_yard": "Kvaerner Verdal",
@@ -788,7 +802,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Ithaca Energy UK May-26 to Feb-27 (backlog ~$36M, ~300 days). Dayrate not disclosed. FSR lists design KFELS N Class, delivered 2011 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris Stavanger",
@@ -796,11 +814,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "Equinor",
-      "location": "North Sea",
-      "contract_start": "2024-04",
-      "contract_end": "2026-10",
-      "day_rate_kusd": 170,
+      "operator": "NEO NEXT+",
+      "location": "UK",
+      "contract_start": "2026-01",
+      "contract_end": "2027-08",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2010,
         "build_yard": "Kvaerner Verdal",
@@ -811,7 +829,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "NEO NEXT+ UK Jan-26 to Aug-27 (TCV >$75M, 600-day priced extension; two 200-day priced options). Dayrate not disclosed. FSR lists design KFELS N Class, delivered 2011 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 106",
@@ -819,11 +841,11 @@
       "type": "Jack-up",
       "water_depth_ft": 350,
       "status": "On Contract",
-      "operator": "Saudi Aramco",
-      "location": "Saudi Arabia",
-      "contract_start": "2023-06",
-      "contract_end": "2026-06",
-      "day_rate_kusd": 140,
+      "operator": "BP",
+      "location": "Indonesia",
+      "contract_start": "2026-10",
+      "contract_end": "2028-09",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2008,
         "build_yard": "Keppel FELS",
@@ -834,7 +856,11 @@
         "dp_class": null,
         "variable_deck_load_t": 3500,
         "generation": "Standard"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "BP Indonesia eight-well contract, Oct-26 to Sep-28 (TCV ~$74M, four 1-well options); ~90 days out of service for leg repairs in 3Q26. Prior Medco Energi contract terminated by mutual agreement. Dayrate not disclosed. FSR lists design KFELS MOD V-B, delivered 2005 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 110",
@@ -842,11 +868,11 @@
       "type": "Jack-up",
       "water_depth_ft": 350,
       "status": "On Contract",
-      "operator": "Saudi Aramco",
-      "location": "Saudi Arabia",
-      "contract_start": "2023-08",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 140,
+      "operator": "NOC",
+      "location": "Qatar",
+      "contract_start": "2025-10",
+      "contract_end": "2029-10",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2009,
         "build_yard": "PPL Shipyard",
@@ -857,7 +883,11 @@
         "dp_class": null,
         "variable_deck_load_t": 3500,
         "generation": "Standard"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "NOC (Qatar) four-year extension Oct-25 to Oct-29 (backlog ~$117M); resumed operations late May 2026 after suspension since early March 2026. Dayrate not disclosed. FSR lists design KFELS MOD V-B, delivered 2015 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 143",
@@ -866,7 +896,7 @@
       "water_depth_ft": 350,
       "status": "Idle",
       "operator": null,
-      "location": "Middle East",
+      "location": "UAE",
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
@@ -880,7 +910,11 @@
         "dp_class": null,
         "variable_deck_load_t": 3500,
         "generation": "Standard"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR. FSR lists design LT Super 116-E, delivered 2010 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 146",
@@ -888,11 +922,11 @@
       "type": "Jack-up",
       "water_depth_ft": 350,
       "status": "On Contract",
-      "operator": "ADNOC",
-      "location": "UAE",
-      "contract_start": "2024-01",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 145,
+      "operator": "ARO Drilling",
+      "location": "Saudi Arabia",
+      "contract_start": "2025-05",
+      "contract_end": "2030-04",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2011,
         "build_yard": "Keppel FELS",
@@ -903,19 +937,23 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Leased to ARO Drilling via bareboat charter (May-25 to Apr-30) to fulfil ARO contracts with Saudi Aramco; no dayrate (bareboat). FSR lists design LT Super 116-E, delivered 2011 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 147",
       "contractor": "Valaris",
       "type": "Jack-up",
       "water_depth_ft": 350,
-      "status": "On Contract",
-      "operator": "QatarEnergy",
-      "location": "Qatar",
-      "contract_start": "2023-10",
-      "contract_end": "2026-10",
-      "day_rate_kusd": 142,
+      "status": "Idle",
+      "operator": null,
+      "location": "UAE",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2011,
         "build_yard": "PPL Shipyard",
@@ -926,7 +964,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR; prior QatarEnergy contract entry was unsourced. FSR lists design LT Super 116-E, delivered 2013 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 148",
@@ -935,7 +977,7 @@
       "water_depth_ft": 375,
       "status": "Idle",
       "operator": null,
-      "location": "Middle East",
+      "location": "UAE",
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
@@ -949,19 +991,23 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR. FSR lists design LT Super 116-E, delivered 2013 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 248",
       "contractor": "Valaris",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "On Contract",
-      "operator": "PETRONAS",
-      "location": "Malaysia",
-      "contract_start": "2024-03",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 135,
+      "status": "Idle",
+      "operator": null,
+      "location": "UK",
+      "contract_start": "2027-04",
+      "contract_end": "2030-03",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
         "build_yard": "PPL Shipyard",
@@ -972,7 +1018,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "GE Vernova UK accommodation contract (Nov-25 to Sep-26) ended; no work shown until 41-well UK P&A contract (undisclosed operator) Apr-27 to Mar-30, backlog ~$140M, two unpriced 1-year options. Contract dates refer to the upcoming P&A program. Prior PETRONAS Malaysia entry was unsourced. FSR lists design LT Super Gorilla, delivered 2000 — legacy specs block below is unverified."
     },
     {
       "name": "Valaris 249",
@@ -980,11 +1030,11 @@
       "type": "Jack-up",
       "water_depth_ft": 375,
       "status": "On Contract",
-      "operator": "PETRONAS",
-      "location": "Malaysia",
-      "contract_start": "2024-04",
-      "contract_end": "2026-10",
-      "day_rate_kusd": 135,
+      "operator": "Shell",
+      "location": "Trinidad",
+      "contract_start": "2026-10",
+      "contract_end": "2027-10",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "PPL Shipyard",
@@ -995,7 +1045,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "medium",
+      "data_note": "BP Trinidad Apr-26 to Jul-26 then ~100 days planned maintenance in 3Q/4Q26; Shell Trinidad Oct-26 to Oct-27 (backlog ~$66M, 365 days, three priced options). Commencement in Oct-26 not yet confirmed. Prior PETRONAS Malaysia entry was unsourced. FSR lists design LT Super Gorilla, delivered 2001 — legacy specs block below is unverified."
     },
     {
       "name": "Noble Stanley Lafosse",
@@ -1028,11 +1082,11 @@
       "contractor": "Noble",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "Tullow Oil",
+      "status": "Idle",
+      "operator": null,
       "location": "Ghana",
-      "contract_start": "2025-11",
-      "contract_end": "2026-08",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
@@ -1045,9 +1099,10 @@
         "variable_deck_load_t": 4500,
         "generation": "7th Gen"
       },
-      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
-      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
-      "confidence": "high"
+      "source": "Noble Q1 2026 results (Apr 26 2026)",
+      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2026/q1/Exhibit-99-1-Q1-2026-Press-Release.pdf",
+      "confidence": "medium",
+      "data_note": "Tullow term (to 2026-08) lapsed and no current contract confirmed (Noble 2026 FSR not retrieved). Noble Q1 2026 release: one-well contract with Planet One in Ghana at $430k/day, expected to commence late 2026, plus two unpriced option wells."
     },
     {
       "name": "Noble Valiant",
@@ -1081,12 +1136,12 @@
       "contractor": "Noble",
       "type": "Drillship",
       "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "Shell",
-      "location": "US Gulf of Mexico",
-      "contract_start": "2024-03",
-      "contract_end": "2027-03",
-      "day_rate_kusd": 415,
+      "status": "Idle",
+      "operator": null,
+      "location": null,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
         "build_yard": "Samsung Heavy Industries",
@@ -1098,9 +1153,10 @@
         "variable_deck_load_t": 4500,
         "generation": "6th Gen"
       },
-      "source": "Noble Corporation Fleet Status Report, Aug 5 2025",
-      "source_url": "https://s201.q4cdn.com/439848451/files/doc_financials/2025/q2/FSR-080525-final.pdf",
-      "confidence": "low"
+      "source": "Noble Q2 2026 results (Jul 27 2026)",
+      "source_url": "https://noblecorp.com/wp-content/uploads/2026/07/Exhibit-99.1-Q2-2026-Press-Release-2.pdf",
+      "confidence": "medium",
+      "data_note": "Noble Q2 2026 release cites the conclusion of the Noble Globetrotter I contract in the Black Sea during Q2 2026; no follow-on contract confirmed. Prior Shell US GoM entry (to 2027-03) was low-confidence and is superseded."
     },
     {
       "name": "Noble Globetrotter II",
@@ -1240,62 +1296,9 @@
       "type": "Drillship",
       "water_depth_ft": 12000,
       "status": "On Contract",
-      "operator": null,
-      "location": "US Gulf of Mexico",
-      "contract_start": "2026-08",
-      "contract_end": "2027-04",
-      "day_rate_kusd": null,
-      "specs": {
-        "build_year": 2013,
-        "build_yard": "Samsung Heavy Industries",
-        "design": "Samsung 96K",
-        "max_water_depth_ft": 12000,
-        "max_drilling_depth_ft": 40000,
-        "bop_rating_psi": 15000,
-        "dp_class": "DP-3",
-        "variable_deck_load_t": 5000,
-        "generation": "7th Gen"
-      },
-      "source": "Seadrill / World Oil (Apr 2026) — 270d new contract",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high",
-      "data_note": "Short-term: Walter Oil & Gas Feb-Apr 2026, then Talos May-Jul 2026 per Feb 2026 FSR"
-    },
-    {
-      "name": "West Neptune",
-      "contractor": "Seadrill",
-      "type": "Drillship",
-      "water_depth_ft": 12000,
-      "status": "On Contract",
       "operator": "LLOG",
       "location": "US Gulf of Mexico",
-      "contract_start": "2025-11",
-      "contract_end": "2027-09",
-      "day_rate_kusd": null,
-      "specs": {
-        "build_year": 2013,
-        "build_yard": "Samsung Heavy Industries",
-        "design": "Samsung 96K",
-        "max_water_depth_ft": 12000,
-        "max_drilling_depth_ft": 40000,
-        "bop_rating_psi": 15000,
-        "dp_class": "DP-3",
-        "variable_deck_load_t": 5000,
-        "generation": "7th Gen"
-      },
-      "source": "Seadrill / World Oil (Apr 2026) — 365d ext.",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high"
-    },
-    {
-      "name": "West Capella",
-      "contractor": "Seadrill",
-      "type": "Drillship",
-      "water_depth_ft": 12000,
-      "status": "On Contract",
-      "operator": "PTTEP",
-      "location": "Malaysia",
-      "contract_start": "2026-04",
+      "contract_start": "2026-09",
       "contract_end": "2027-06",
       "day_rate_kusd": null,
       "specs": {
@@ -1309,9 +1312,64 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high"
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Talos May-26 to Aug-26, LLOG Sep-26 to Jun-27, then Talos one-year contract Jun-27 to Jun-28 (TCV ~$161M excl. additional services)."
+    },
+    {
+      "name": "West Neptune",
+      "contractor": "Seadrill",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "On Contract",
+      "operator": "LLOG",
+      "location": "US Gulf of Mexico",
+      "contract_start": "2025-11",
+      "contract_end": "2027-10",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      },
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "LLOG Nov-25 to May-26, May-26 to Oct-26, Oct-26 to Oct-27."
+    },
+    {
+      "name": "West Capella",
+      "contractor": "Seadrill",
+      "type": "Drillship",
+      "water_depth_ft": 12000,
+      "status": "On Contract",
+      "operator": "PTTEP",
+      "location": "Malaysia",
+      "contract_start": "2026-03",
+      "contract_end": "2027-08",
+      "day_rate_kusd": null,
+      "specs": {
+        "build_year": 2013,
+        "build_yard": "Samsung Heavy Industries",
+        "design": "Samsung 96K",
+        "max_water_depth_ft": 12000,
+        "max_drilling_depth_ft": 40000,
+        "bop_rating_psi": 15000,
+        "dp_class": "DP-3",
+        "variable_deck_load_t": 5000,
+        "generation": "7th Gen"
+      },
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "PTTEP Malaysia Mar-26 to Aug-27; ~75-day priced option exercised at original dayrate."
     },
     {
       "name": "West Jupiter",
@@ -1346,7 +1404,7 @@
       "water_depth_ft": 12000,
       "status": "Idle",
       "operator": null,
-      "location": "Brazil",
+      "location": "Namibia",
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
@@ -1361,9 +1419,9 @@
         "variable_deck_load_t": 5000,
         "generation": "7th Gen"
       },
-      "source": "Fleet status 2026-05-29 (contract expired)",
-      "source_url": null,
-      "confidence": "medium"
+      "source": "Seadrill Fleet Status Report, Aug 10 2026 — Available",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high"
     },
     {
       "name": "West Tellus",
@@ -1395,7 +1453,7 @@
     {
       "name": "West Saturn",
       "contractor": "Seadrill",
-      "type": "Semisubmersible",
+      "type": "Drillship",
       "water_depth_ft": 10000,
       "status": "On Contract",
       "operator": "Equinor",
@@ -1421,7 +1479,7 @@
     {
       "name": "West Auriga",
       "contractor": "Seadrill",
-      "type": "Semisubmersible",
+      "type": "Drillship",
       "water_depth_ft": 10000,
       "status": "On Contract",
       "operator": "Petrobras",
@@ -1447,14 +1505,14 @@
     {
       "name": "West Polaris",
       "contractor": "Seadrill",
-      "type": "Semisubmersible",
+      "type": "Drillship",
       "water_depth_ft": 10000,
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
       "contract_start": "2025-02",
-      "contract_end": "2028-01",
-      "day_rate_kusd": null,
+      "contract_end": "2031-01",
+      "day_rate_kusd": 413,
       "specs": {
         "build_year": 2009,
         "build_yard": "Jurong Shipyard",
@@ -1466,9 +1524,10 @@
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
-      "confidence": "high"
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Petrobras Feb-25 to Jan-31. Dayrate $413,400 from Apr 1 2026 to Mar 31 2027; $459,400 Apr 2027 to Jan 15 2028; $441,500 Jan 16 2028 to Jan 15 2031 (subject to FX). FSR lists rig type as Drillship."
     },
     {
       "name": "West Elara",
@@ -1476,10 +1535,10 @@
       "type": "Semisubmersible",
       "water_depth_ft": 10000,
       "status": "On Contract",
-      "operator": "ConocoPhillips",
+      "operator": "Equinor",
       "location": "Norway",
-      "contract_start": "2018-05",
-      "contract_end": "2027-11",
+      "contract_start": "2026-09",
+      "contract_end": "2027-12",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
@@ -1492,10 +1551,10 @@
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
       },
-      "source": "Seadrill Fleet Status Report, Feb 25 2026",
-      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "ConocoPhillips through Sep-26; Equinor accommodation contract Sep-26 to Nov-27"
+      "data_note": "ConocoPhillips May-18 to Aug-26; Equinor accommodation contract Sep-26 to Dec-27 (TCV ~$78M incl. mobilization) plus priced options ~270 days."
     },
     {
       "name": "West Gemini",
@@ -1546,9 +1605,10 @@
         "variable_deck_load_t": 4500,
         "generation": "Harsh Environment"
       },
-      "source": "Fleet status 2026-05-29 (contract expired)",
-      "source_url": null,
-      "confidence": "medium"
+      "source": "Seadrill Fleet Status Report, Aug 10 2026",
+      "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
+      "confidence": "high",
+      "data_note": "Short-term US Gulf work (Walter Oil & Gas, Guardian/LLOG) ran Jun-26 to Aug-26; no follow-on shown in Aug 2026 FSR."
     },
     {
       "name": "Borr Gerd",
@@ -1556,11 +1616,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "Saudi Aramco",
-      "location": "Saudi Arabia",
-      "contract_start": "2023-09",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 155,
+      "operator": "Foxtrot International",
+      "location": "Ivory Coast",
+      "contract_start": "2026-02",
+      "contract_end": "2027-03",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2015,
         "build_yard": "Keppel FELS",
@@ -1571,19 +1631,23 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Foxtrot International, Ivory Coast, Feb-26 to Mar-27 (extended from Feb-27). Dayrate not disclosed. FSR lists design PPL Pacific Class 400, built 2018 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Ran",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 400,
-      "status": "On Contract",
-      "operator": "ENI",
+      "status": "Idle",
+      "operator": null,
       "location": "Mexico",
-      "contract_start": "2024-09",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 148,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
         "build_yard": "Keppel FELS",
@@ -1594,7 +1658,11 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "medium",
+      "data_note": "Eni Mexico contract May-25 to Sep-26 has ended; no follow-on found as of 2026-10-08. FSR lists design KFELS Super A Class, built 2013 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Thor",
@@ -1602,11 +1670,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "PVEP",
+      "operator": "PVEP-Cuulong",
       "location": "Vietnam",
       "contract_start": "2026-07",
-      "contract_end": "2027-07",
-      "day_rate_kusd": 145,
+      "contract_end": "2026-11",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "PPL Shipyard",
@@ -1617,7 +1685,11 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Concluded HLHV JOC work in late July 2026 and commenced PVEP-Cuulong (Vietnam) in direct continuation, Jul-26 to Nov-26. Dayrate not disclosed. FSR lists design KFELS Super B Bigfoot Class, built 2019 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Joro",
@@ -1626,9 +1698,9 @@
       "water_depth_ft": 400,
       "status": "Idle",
       "operator": null,
-      "location": "North Sea",
+      "location": "UK",
       "contract_start": null,
-      "contract_end": "2026-05",
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2017,
@@ -1640,7 +1712,11 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026 / Contracting Updates, Sep 30 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Concluded Siemens Energy work in Germany late May 2026, then warm stacked in the UK. Sep 30 2026 update: UK accommodation contract with undisclosed operator expected to start mid-Oct 2026, ~60 days firm — not yet commenced as of 2026-10-08. FSR lists design Gusto MSC CJ50, built 2008 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Prospector 5",
@@ -1648,11 +1724,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "Harbour Energy",
-      "location": "North Sea",
-      "contract_start": "2024-01",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 165,
+      "operator": "BW Energy",
+      "location": "Gabon",
+      "contract_start": "2026-07",
+      "contract_end": "2027-07",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2013,
         "build_yard": "DSME",
@@ -1663,7 +1739,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Concluded Eni Congo work late May 2026; BW Energy Gabon Jul-26 to Jul-27 with option to extend. Dayrate not disclosed. FSR lists design F&G JU2000E, built 2014 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Heimdal",
@@ -1686,19 +1766,23 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": null,
+      "source_url": null,
+      "confidence": "low",
+      "data_note": "Rig name not found in Borr Drilling Aug 11 2026 Fleet Status Report (29-rig fleet). Existence and contract data unverified — review whether to remove."
     },
     {
       "name": "Borr Groa",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "On Contract",
-      "operator": "Saudi Aramco",
-      "location": "Saudi Arabia",
-      "contract_start": "2024-02",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 150,
+      "status": "Idle",
+      "operator": null,
+      "location": "UAE",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
         "build_yard": "PPL Shipyard",
@@ -1709,7 +1793,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Listed as Available / warm stacked in UAE. Prior Saudi Aramco entry was unsourced. FSR lists design PPL Pacific Class 400, built 2018 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Idun",
@@ -1717,11 +1805,11 @@
       "type": "Jack-up",
       "water_depth_ft": 375,
       "status": "On Contract",
-      "operator": "ADNOC",
-      "location": "UAE",
-      "contract_start": "2024-06",
-      "contract_end": "2026-12",
-      "day_rate_kusd": 148,
+      "operator": "HLHV JOC",
+      "location": "Vietnam",
+      "contract_start": "2026-09",
+      "contract_end": "2026-10",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
         "build_yard": "Keppel FELS",
@@ -1732,7 +1820,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Undisclosed operator Vietnam Jul-26 to Sep-26, then HLHV JOC Vietnam Sep-26 to Oct-26. Dayrate not disclosed. FSR lists design KFELS Super B Bigfoot Class, built 2013 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Saga",
@@ -1740,11 +1832,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "ONGC",
-      "location": "India",
-      "contract_start": "2024-03",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 138,
+      "operator": "Brunei Shell Petroleum",
+      "location": "Brunei",
+      "contract_start": "2022-11",
+      "contract_end": "2027-04",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "PPL Shipyard",
@@ -1755,7 +1847,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Brunei Shell Petroleum Nov-22 to Apr-27, operating with option to extend. Prior ONGC India entry was unsourced. Dayrate not disclosed. FSR lists design KFELS Super B Bigfoot Class, built 2018 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Vale",
@@ -1778,19 +1874,23 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": null,
+      "source_url": null,
+      "confidence": "low",
+      "data_note": "Rig name not found in Borr Drilling Aug 11 2026 Fleet Status Report (29-rig fleet). Existence and contract data unverified — review whether to remove."
     },
     {
       "name": "Borr Var",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "On Contract",
-      "operator": "Aker BP",
-      "location": "Norway",
-      "contract_start": "2024-07",
-      "contract_end": "2027-01",
-      "day_rate_kusd": 168,
+      "status": "Idle",
+      "operator": null,
+      "location": "Singapore",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
         "build_yard": "PPL Shipyard",
@@ -1801,18 +1901,22 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Listed as Available / warm stacked in Singapore. Prior Aker BP Norway entry was unsourced. FSR lists design KFELS Super B Bigfoot Class, built 2024 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Arabia I",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 400,
-      "status": "Idle",
-      "operator": null,
-      "location": "Saudi Arabia",
-      "contract_start": null,
-      "contract_end": null,
+      "status": "On Contract",
+      "operator": "Petrobras",
+      "location": "Brazil",
+      "contract_start": "2025-04",
+      "contract_end": "2029-04",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
@@ -1825,9 +1929,10 @@
         "variable_deck_load_t": 4500,
         "generation": "Premium"
       },
-      "source": "Fleet status 2026-05-29 (contract expired)",
-      "source_url": null,
-      "confidence": "medium"
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Petrobras Brazil Apr-25 to Apr-29, operating with option to extend. Dayrate not disclosed. FSR lists design KFELS B Class, built 2020 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Arabia II",
@@ -1835,11 +1940,11 @@
       "type": "Jack-up",
       "water_depth_ft": 400,
       "status": "On Contract",
-      "operator": "Saudi Aramco",
-      "location": "Saudi Arabia",
-      "contract_start": "2023-07",
-      "contract_end": "2026-07",
-      "day_rate_kusd": 152,
+      "operator": "Bunduq",
+      "location": "UAE",
+      "contract_start": "2025-09",
+      "contract_end": "2027-01",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2014,
         "build_yard": "Keppel FELS",
@@ -1850,7 +1955,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Bunduq UAE Sep-25 to Jan-27, operating with option to extend. Dayrate not disclosed. FSR lists design KFELS B Class, built 2019 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Arabia III",
@@ -1861,8 +1970,8 @@
       "operator": "Saudi Aramco",
       "location": "Saudi Arabia",
       "contract_start": "2023-09",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 152,
+      "contract_end": "2028-09",
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2015,
         "build_yard": "Keppel FELS",
@@ -1873,7 +1982,11 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Saudi Aramco Sep-23 to Sep-28, operating with option to extend. Dayrate not disclosed. FSR lists design KFELS Super A Class, built 2013 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Arabia IV",
@@ -1896,7 +2009,11 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": null,
+      "source_url": null,
+      "confidence": "low",
+      "data_note": "Rig name not found in Borr Drilling Aug 11 2026 Fleet Status Report (29-rig fleet). Existence and contract data unverified — review whether to remove."
     },
     {
       "name": "Borr Norve",
@@ -1905,7 +2022,7 @@
       "water_depth_ft": 375,
       "status": "Idle",
       "operator": null,
-      "location": null,
+      "location": "Gabon",
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
@@ -1919,19 +2036,23 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026 / Contracting Updates, Sep 30 2026",
+      "source_url": "https://www.placera.se/pressmeddelanden/borr-drilling-borr-drilling-limited-contracting-updates-20260930",
+      "confidence": "medium",
+      "data_note": "Vaalco Energy Gabon Nov-25 to Sep-26 ended. Sep 30 2026: binding LOA from undisclosed West Africa operator, 3 wells (~245 days) from mid-Dec 2026 into Aug 2027 plus ~175 days priced options — not yet a firm commencement. FSR lists design PPL Pacific Class 400, built 2011 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Hild",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "On Contract",
-      "operator": "TotalEnergies",
-      "location": "Denmark",
-      "contract_start": "2024-08",
-      "contract_end": "2026-08",
-      "day_rate_kusd": 162,
+      "status": "Idle",
+      "operator": null,
+      "location": "Mexico",
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2016,
         "build_yard": "Keppel FELS",
@@ -1942,19 +2063,23 @@
         "dp_class": null,
         "variable_deck_load_t": 4500,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Listed as Available / warm stacked in Mexico. Prior TotalEnergies Denmark entry was unsourced. FSR lists design KFELS Super B Class, built 2020 — legacy specs block below is unverified."
     },
     {
       "name": "Borr Frigg",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "On Contract",
-      "operator": "Wintershall Dea",
-      "location": "North Sea",
-      "contract_start": "2024-09",
-      "contract_end": "2026-09",
-      "day_rate_kusd": 160,
+      "status": "Idle",
+      "operator": null,
+      "location": null,
+      "contract_start": null,
+      "contract_end": null,
+      "day_rate_kusd": null,
       "specs": {
         "build_year": 2020,
         "build_yard": "Keppel FELS",
@@ -1965,18 +2090,22 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": null,
+      "source_url": null,
+      "confidence": "low",
+      "data_note": "Rig name not found in Borr Drilling Aug 11 2026 Fleet Status Report (29-rig fleet). Prior unsourced Wintershall Dea term (to 2026-09) lapsed; contract fields cleared. Existence unverified — review whether to remove."
     },
     {
       "name": "Borr Skald",
       "contractor": "Borr Drilling",
       "type": "Jack-up",
       "water_depth_ft": 375,
-      "status": "Idle",
-      "operator": null,
-      "location": null,
-      "contract_start": null,
-      "contract_end": null,
+      "status": "On Contract",
+      "operator": "Vestigo Petroleum",
+      "location": "Malaysia",
+      "contract_start": "2026-05",
+      "contract_end": "2026-11",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2019,
@@ -1988,7 +2117,11 @@
         "dp_class": null,
         "variable_deck_load_t": 5000,
         "generation": "Premium"
-      }
+      },
+      "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
+      "confidence": "high",
+      "data_note": "Commenced Vestigo Petroleum (Malaysia) late May 2026, May-26 to Nov-26 with option to extend. Dayrate not disclosed. FSR lists design KFELS Super B Bigfoot Class, built 2018 — legacy specs block below is unverified."
     },
     {
       "name": "Tidal Action",
@@ -2437,11 +2570,11 @@
       "contractor": "Stena Drilling",
       "type": "Drillship",
       "water_depth_ft": 10000,
-      "status": "On Contract",
-      "operator": "Undisclosed",
+      "status": "Idle",
+      "operator": null,
       "location": "Egypt",
-      "contract_start": "2026-02",
-      "contract_end": "2026-08",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2012,
@@ -2458,7 +2591,7 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-icemax/",
       "confidence": "medium",
-      "data_note": "Stena states IceMAX secured a four-well Egypt campaign starting Feb 2026 with estimated duration of about 190 days plus options. Rig-level dayrate is not disclosed."
+      "data_note": "Stena stated IceMAX secured a four-well Egypt campaign starting Feb 2026 for about 190 days plus options (estimated end Aug 2026). No option exercise or follow-on contract confirmed as of 2026-10-08, so contract fields are cleared per update rules; the rig may still be working options — re-verify."
     },
     {
       "name": "Stena Don",
@@ -2552,8 +2685,8 @@
       "status": "On Contract",
       "operator": "Petrobras",
       "location": "Brazil",
-      "contract_start": "2026-06",
-      "contract_end": "2029-04",
+      "contract_start": "2024-12",
+      "contract_end": "2030-10",
       "day_rate_kusd": null,
       "specs": {
         "build_year": 2011,
@@ -2566,9 +2699,10 @@
         "variable_deck_load_t": 5000,
         "generation": "6th Gen"
       },
-      "source": "Valaris / Offshore Energy (May 2026) — 1,064d Petrobras ext. $447M",
-      "source_url": "https://www.offshore-energy.biz/valaris-batch-of-rig-deals-lifts-total-contract-backlog-to-4-9-billion/",
-      "confidence": "high"
+      "source": "Valaris Fleet Status Report, Aug 5 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "confidence": "high",
+      "data_note": "Petrobras Dec-24 to Nov-27, then 1,064-day extension Nov-27 to Oct-30 (backlog ~$447M). Previous $450k dayrate was adjusted from Apr-26; current dayrate not disclosed."
     }
   ]
 }
