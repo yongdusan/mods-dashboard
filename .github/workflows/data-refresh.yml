@@ -47,15 +47,12 @@ jobs:
             echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret is not set — refusing to run (no API-key fallback)."
             exit 1
           fi
-          # format check only — never prints the value
-          case "$TOKEN" in sk-ant-oat*) P=ok ;; *) P=unexpected ;; esac
-          NL=$(printf '%s' "$TOKEN" | tr -cd '\n\r' | wc -c)
-          SP=$(printf '%s' "$TOKEN" | tr -cd ' \t' | wc -c)
-          echo "token length=${#TOKEN} prefix=$P newline_chars=$NL space_chars=$SP"
-          if [ "$P" != ok ] || [ "$NL" -gt 0 ] || [ "$SP" -gt 0 ]; then
-            echo "::error::CLAUDE_CODE_OAUTH_TOKEN looks malformed (re-register it without spaces/newlines)."
-            exit 1
-          fi
+          # copy/paste often adds a newline; strip whitespace, keep the value masked, never print it
+          CLEAN=$(printf '%s' "$TOKEN" | tr -d ' \t\r\n')
+          echo "::add-mask::$CLEAN"
+          case "$CLEAN" in sk-ant-oat*) ;; *) echo "::error::CLAUDE_CODE_OAUTH_TOKEN does not look like a subscription token."; exit 1 ;; esac
+          echo "token ok (length ${#CLEAN})"
+          echo "CLAUDE_TOKEN_CLEAN=$CLEAN" >> "$GITHUB_ENV"
 
       - name: Install collector dependency
         run: pip install requests
@@ -96,7 +93,7 @@ jobs:
           TODAY: ${{ steps.pick.outputs.today }}
         with:
           # Claude 구독(Pro/Max) 토큰으로 실행 — API 과금 없음. `claude setup-token`으로 발급해 저장소 시크릿에 등록.
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ env.CLAUDE_TOKEN_CLEAN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           prompt: ${{ steps.pick.outputs.prompt }}
           claude_args: |
