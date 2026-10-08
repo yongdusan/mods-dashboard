@@ -81,17 +81,25 @@
 
 ---
 
-## 자동화 구성 (2026-10-08 — 추가 비용 없는 구성, API 키 미사용)
+## 자동화 구성 (2026-10-08 — 클라우드, 추가 비용 없음)
 
-| 파일 | 자동 실행 | 실행 위치 · 비용 |
-|------|---------|---------|
-| `news.json` | Claude 예약 작업 `modu-news-weekly` — 매주 월 09:00 (RSS 후보 수집 `scripts/refresh_news.py` + Claude 선별·한국어 요약) | 데스크톱 · 구독 내 |
-| `fleet.json` | Claude 예약 작업 `modu-fleet-weekly` — 매주 월 10:30 | 데스크톱 앱 실행 중일 때 · 구독 내 |
-| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | Claude 예약 작업 `modu-earnings-refresh` — 매월 1·16일 10:00 | 데스크톱 · 구독 내 |
-| `pipeline.json` · `fpso.json` | Claude 예약 작업 `modu-pipeline-fpso-monthly` — 매월 10일 09:00 | 데스크톱 · 구독 내 |
-| 전체 점검 | GitHub Actions `data-health.yml` — data push 시 + 매주 월 10:00 KST, `scripts/check_data.py` | 클라우드 · 무료(LLM 미사용) |
+모든 정기 갱신은 **GitHub 클라우드**에서 실행된다(데스크톱 꺼져 있어도 동작). 공개 저장소라 Actions 실행 시간 무료, Claude는 **구독 토큰**(`CLAUDE_CODE_OAUTH_TOKEN` 시크릿)으로만 실행되어 API 과금 없음. `ANTHROPIC_API_KEY`는 어디에서도 쓰지 않는다.
 
-**클라우드 전환 대기 중:** `data-refresh.yml`(news/fleet/earnings/pipeline_fpso를 GitHub 클라우드에서 실행)은 준비돼 있으나 **비활성** 상태다. 저장소가 공개라 Actions 실행 시간은 무료이고, Claude는 API 키가 아니라 **구독 토큰**(`CLAUDE_CODE_OAUTH_TOKEN` 시크릿, `claude setup-token`으로 발급)으로만 실행되도록 되어 있어 추가 과금이 없다(토큰이 없으면 실행을 거부). 전환 절차: 시크릿 등록 → `gh workflow enable data-refresh.yml` → 데스크톱 예약 작업 4개 비활성화(중복 방지). 지시문은 `automation/prompts/`.
+| 파일 | 실행 (`data-refresh.yml` task) | 주기 |
+|------|---------|------|
+| `news.json` | `news` — RSS 후보 수집(`scripts/refresh_news.py`) + Claude 선별·한국어 요약 | 매주 월 09:00 KST |
+| `fleet.json` | `fleet` | 매주 월 10:30 KST |
+| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | `earnings` (새 발표분만, 데이레이트 Indicative→실제값 교체) | 매월 1·16일 10:00 KST |
+| `pipeline.json` · `fpso.json` (+ 주요 이벤트 `news.json`) | `pipeline_fpso` (1·4·7·10월 전수 점검) | 매월 10일 09:00 KST |
+| 전체 점검 | `data-health.yml` → `scripts/check_data.py` | data push 시 + 매주 월 10:00 KST |
+
+**동작 방식**
+- 지시문: `automation/prompts/{news,fleet,earnings,pipeline_fpso,smoke}.md`.
+- Claude는 `data/` 조사·편집만(git 권한 없음). 워크플로가 `check_data.py` ERROR 0일 때만 담당 파일을 커밋·push(→ Cloudflare 배포). 실패 시 `data-health` 이슈.
+- 수동 실행: GitHub → Actions → "Data Refresh (Claude, cloud)" → Run workflow. 연결 점검은 task=smoke.
+- 모델: 저장소 변수 `CLAUDE_MODEL`(미설정 시 claude-sonnet-5-5). 구독 사용량 한도 안에서 실행.
+- **토큰 만료: 발급 후 1년(2027-10).** 만료되면 워크플로가 실패하고 GitHub 알림 + data-health 이슈가 뜬다 → `claude setup-token`으로 재발급 후 시크릿 재등록(줄바꿈은 워크플로가 자동 제거).
+- 데스크톱 예약 작업(`modu-news-weekly`, `modu-fleet-weekly`, `modu-earnings-refresh`, `modu-pipeline-fpso-monthly`)은 자동 실행 꺼둔 수동 백업.
 
 **운영 규칙**
 - 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`로 ERROR 0을 확인한다.
