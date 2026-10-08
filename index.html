@@ -419,7 +419,7 @@
     if (ds.length) {
       var last = ds[ds.length - 1], first = ds[0], prev = ds[ds.length - 2] || first;
       document.getElementById('g-val').innerHTML = '$' + last.rate_kusd + '<small>k/day</small>';
-      document.getElementById('g-date').textContent = last.date;
+      document.getElementById('g-date').innerHTML = esc(last.date) + (/^indicative/i.test(last.source || '') ? ' <span class="asof stale" title="' + esc(last.source) + '">indicative</span>' : '');
       var ch = last.rate_kusd - prev.rate_kusd, chY = ((last.rate_kusd / first.rate_kusd - 1) * 100);
       document.getElementById('g-delta').innerHTML =
         '<span class="' + (ch >= 0 ? 'up' : 'down') + '">' + (ch >= 0 ? '▲ +' : '▼ ') + ch + 'k q/q</span>' +
