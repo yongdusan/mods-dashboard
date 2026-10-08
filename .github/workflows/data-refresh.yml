@@ -40,9 +40,20 @@ jobs:
           python-version: '3.12'
 
       - name: Require subscription token
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ -z "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+          if [ -z "$TOKEN" ]; then
             echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret is not set — refusing to run (no API-key fallback)."
+            exit 1
+          fi
+          # format check only — never prints the value
+          case "$TOKEN" in sk-ant-oat*) P=ok ;; *) P=unexpected ;; esac
+          NL=$(printf '%s' "$TOKEN" | tr -cd '\n\r' | wc -c)
+          SP=$(printf '%s' "$TOKEN" | tr -cd ' \t' | wc -c)
+          echo "token length=${#TOKEN} prefix=$P newline_chars=$NL space_chars=$SP"
+          if [ "$P" != ok ] || [ "$NL" -gt 0 ] || [ "$SP" -gt 0 ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN looks malformed (re-register it without spaces/newlines)."
             exit 1
           fi
 
