@@ -1,0 +1,118 @@
+name: Data Refresh (Claude, cloud)
+
+# GitHub 클라우드에서 Claude Code를 실행해 데이터 파일을 갱신한다. 데스크톱 앱과 무관하게 실행됨.
+# Claude는 data/ 파일 조사·편집만 하고, 검증(check_data.py)·커밋·push는 이 워크플로가 한다.
+on:
+  schedule:
+    - cron: '30 1 * * 1'      # fleet          — 매주 월 10:30 KST
+    - cron: '0 1 1,16 * *'    # earnings       — 매월 1·16일 10:00 KST
+    - cron: '0 0 10 * *'      # pipeline_fpso  — 매월 10일 09:00 KST
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Which refresh to run'
+        type: choice
+        options: [fleet, earnings, pipeline_fpso, smoke]
+        default: smoke
+
+concurrency:
+  group: data-refresh          # 한 번에 하나씩 — 같은 파일 동시 수정 방지
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions:
+      contents: write
+      issues: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pick task
+        id: pick
+        run: |
+          case "${{ github.event.schedule }}" in
+            '30 1 * * 1')   TASK=fleet ;;
+            '0 1 1,16 * *') TASK=earnings ;;
+            '0 0 10 * *')   TASK=pipeline_fpso ;;
+            *)              TASK="${{ inputs.task }}" ;;
+          esac
+          case "$TASK" in
+            fleet)         FILES="data/fleet.json" ;;
+            earnings)      FILES="data/earnings.json data/fpso_earnings.json data/rates.json data/capex.json" ;;
+            pipeline_fpso) FILES="data/pipeline.json data/fpso.json data/news.json" ;;
+            smoke)         FILES="" ;;
+            *) echo "unknown task $TASK"; exit 1 ;;
+          esac
+          echo "task=$TASK" >> "$GITHUB_OUTPUT"
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "today=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_OUTPUT"
+          {
+            echo 'prompt<<__PROMPT__'
+            cat "automation/prompts/$TASK.md"
+            echo
+            echo "TODAY=$(TZ=Asia/Seoul date +%F)"
+            echo '__PROMPT__'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Run Claude
+        id: claude
+        uses: anthropics/claude-code-action@v1
+        env:
+          TODAY: ${{ steps.pick.outputs.today }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: ${{ steps.pick.outputs.prompt }}
+          claude_args: |
+            --model ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5-5' }}
+            --max-turns 150
+            --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(python3 scripts/check_data.py*),Bash(python3 -m json.tool *),Bash(git status*),Bash(git diff*)"
+
+      - name: Validate
+        id: validate
+        if: steps.pick.outputs.files != ''
+        run: |
+          set +e
+          python scripts/check_data.py --markdown > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and push (only this task's files, only if valid)
+        if: steps.pick.outputs.files != '' && steps.validate.outputs.status == '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ steps.pick.outputs.files }}
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "data: cloud ${{ steps.pick.outputs.task }} refresh ${{ steps.pick.outputs.today }}"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
+
+      - name: Report invalid result
+        if: steps.pick.outputs.files != '' && steps.validate.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git diff -- data/ > rejected.diff || true
+          gh label create data-health --color D93F0B --description "Automated data health check" 2>/dev/null || true
+          gh issue create --label data-health \
+            --title "Cloud ${{ steps.pick.outputs.task }} refresh rejected (${{ steps.pick.outputs.today }})" \
+            --body "check_data.py found errors, so nothing was committed. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          $(cat report.md)"
+          exit 1
