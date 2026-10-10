@@ -1,8 +1,22 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 133,
+      "date": "2026-10-05",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Yinson, Eni Ghana FPSO John Agyekum Kufuor 가스 증설·계약 4년 연장 체결",
+      "summary": "Yinson Production이 Eni Ghana와 FPSO John Agyekum Kufuor 계약 변경을 체결했습니다(10/2). 가스 수출 능력을 355 MMscf/d로 늘리는 개조(2028-Q1 완료 예정)와 확정 계약 4년 연장(~2036)이 포함되며, 증분 일비 총액 ~$810M 중 Yinson 귀속분은 약 $600M입니다.",
+      "companies": [
+        "Yinson",
+        "Eni"
+      ],
+      "source": "OE Digital",
+      "url": "https://www.oedigital.com/news/543454-eni-taps-yinson-production-for-major-ghana-fpso-gas-upgrade"
+    },
     {
       "id": 130,
       "date": "2026-10-02",

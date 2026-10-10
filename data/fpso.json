@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -88,7 +88,7 @@
       "source": "Baird Maritime — Yinson Q2 FY2027 (Sep 2026): 가동 FPSO 선단 contracted revenue backlog",
       "as_of": "2026-07-31",
       "source_url": "https://www.bairdmaritime.com/offshore/vessels-rigs/fposfpsos/yinson-q2-cash-flow-fso",
-      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] backlog 20.5→19.3: Q2 FY2027(2026-07-31) 가동 FPSO 선단 contracted revenue backlog ~$19.3B(2등급 출처). RHB Research는 order book $18.9B 제시.",
+      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] backlog 20.5→19.3: Q2 FY2027(2026-07-31) 가동 FPSO 선단 contracted revenue backlog ~$19.3B(2등급 출처). RHB Research는 order book $18.9B 제시. [2026-10-10] 위 backlog 수치는 7/31 기준이라 미조정 — 이후 JAK 계약 변경(+~$0.6B, 2026-10-02)과 Agogo 채권 리파이낸싱($1.458B, 10/7 발행가격 결정)이 발표됨. 다음 분기 결산에서 반영.",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0
     },
@@ -617,7 +617,7 @@
       "contract_end": "2045-01",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO.",
+      "notes": "가나 Pecan 심해 개발. Yinson 최신 FPSO. [2026-10-10] 2026-10-02 Eni Ghana와 계약 변경 체결 — 가스 처리·압축 설비 증설(가스 수출 ~210-220→355 MMscf/d, 개조 2028-Q1 완료 예정), 확정 계약 4년 연장(~2036). 증분 일비 총액 ~$810M 중 Yinson 귀속 ~$600M (2등급: OE Digital, The Star).",
       "detail": {
         "hull_type": "VLCC 전환 (Keppel FELS Singapore, 2017)",
         "yard": "Keppel FELS (SG) — VLCC conversion",
