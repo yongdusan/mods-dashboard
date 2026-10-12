@@ -9,7 +9,6 @@
         "founded": 1953,
         "hq": "Steinhausen, Switzerland",
         "employees": "~5,000",
-        "market_cap_busd": 4.8,
         "business_model": "Ultra-deepwater와 harsh-environment floater 중심의 offshore drilling contractor. 고사양 drillship과 semisubmersible을 장기 계약으로 운용한다.",
         "strategy": "Valaris 인수로 글로벌 floater 규모를 확대하고, 고사양 7세대 drillship과 harsh-environment 리그의 dayrate 회복을 수익성 개선의 핵심 축으로 둔다.",
         "rig_mix": {
@@ -59,8 +58,11 @@
           }
         ],
         "notable": "업계 최대 수준의 ultra-deepwater backlog를 보유한 순수 floater 강자. Valaris 인수 완료 시 jackup exposure까지 포함한 대형 통합 offshore driller가 된다.",
-        "market_cap_snapshot_date": "2026-05-05",
-        "rig_mix_source": "Transocean FSR Aug 5 2026: UDW 드릴십 20(계류 3 포함) + HE 반잠수식 7"
+        "rig_mix_source": "Transocean FSR Aug 5 2026: UDW 드릴십 20(계류 3 포함) + HE 반잠수식 7",
+        "business_model_en": "Offshore drilling contractor focused on ultra-deepwater and harsh-environment floaters. Operates high-spec drillships and semisubmersibles on long-term contracts.",
+        "strategy_en": "Expanding global floater scale through the Valaris acquisition; dayrate recovery for high-spec 7th-generation drillships and harsh-environment rigs is the core lever for improving profitability.",
+        "notable_en": "Pure-play floater leader with one of the industry's largest ultra-deepwater backlogs. On completing the Valaris acquisition it becomes a large integrated offshore driller including jack-up exposure.",
+        "rig_mix_source_en": "Transocean FSR Aug 5 2026: 20 UDW drillships (incl. 3 stacked) + 7 HE semisubmersibles"
       },
       "quarters": [
         {
@@ -78,7 +80,13 @@
             "Fleet utilization 63.4%, revenue efficiency 96.5% 기록",
             "7th Gen 리그 계약 갱신 협상 진행 중"
           ],
-          "source_url": "https://www.deepwater.com/investors/financial-information/"
+          "source_url": "https://www.deepwater.com/investors/financial-information/",
+          "highlights_en": [
+            "Backlog maintained at ~$8B, among the largest in the industry",
+            "First full quarter of operations for Deepwater Atlas (Samsung 96K) — $465K/day",
+            "Fleet utilization 63.4%, revenue efficiency 96.5%",
+            "Contract renewal negotiations under way for 7th-gen rigs"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -95,7 +103,13 @@
             "Ultra-deepwater 신규 계약 2건 추가 확보",
             "재무 레버리지 개선 — 부채 상환 진행"
           ],
-          "source_url": "https://www.deepwater.com/investors/financial-information/"
+          "source_url": "https://www.deepwater.com/investors/financial-information/",
+          "highlights_en": [
+            "Contract drilling revenue $988M, Adjusted EBITDA $344M",
+            "Fleet utilization 67.3%, uptime 97.3%",
+            "Two new ultra-deepwater contracts secured",
+            "Financial leverage improving — debt repayment under way"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -112,7 +126,13 @@
             "Fleet utilization 76.0%, revenue efficiency 97.0% 기록",
             "2026년 Ultra-deepwater 시장 타이트 전망 제시"
           ],
-          "source_url": "https://www.deepwater.com/investors/financial-information/"
+          "source_url": "https://www.deepwater.com/investors/financial-information/",
+          "highlights_en": [
+            "Adjusted EBITDA margin improved q/q to 38.6%",
+            "Deepwater Titan — Chevron contract performing smoothly",
+            "Fleet utilization 76.0%, revenue efficiency 97.0%",
+            "Outlook for a tight ultra-deepwater market in 2026"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -129,7 +149,13 @@
             "통합 완료 시 연간 시너지 효과 $50M+ 전망",
             "Backlog $6.1B — 인수 완료 후 $11B+ 예상"
           ],
-          "source_url": "https://www.deepwater.com/investors/financial-information/"
+          "source_url": "https://www.deepwater.com/investors/financial-information/",
+          "highlights_en": [
+            "FY2025 Contract drilling revenue $3.965B, Adjusted EBITDA $1.370B",
+            "$5.8B Valaris acquisition announced (Feb 2026) — combined fleet of 62 rigs expected",
+            "Annual synergies of $50M+ expected once integration is complete",
+            "Backlog $6.1B — $11B+ expected after the acquisition closes"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -148,6 +174,14 @@
             "부채 $358M 조기 상환 (2028만기 8.375% 선순위 담보채); 총 유동성 $1.125B",
             "FY2026 가이던스: 매출 $3,800~3,900M, 유동성 $1,250~1,350M",
             "CEO Adamson: '멀티년 업사이클 초기 단계' 강조 — UDW 공급 타이트 전망 유지"
+          ],
+          "highlights_en": [
+            "Q1 2026 revenue $1.08B, Adj EBITDA $440M (40.7% margin) — near record quarterly levels",
+            "Fleet utilization 86.7% (UDW 82.1% / HE 100%), revenue efficiency 97.3%",
+            "$1.6B of new contracts added — weighted average rate ~$410k/day",
+            "Early repayment of $358M debt (8.375% senior secured notes due 2028); total liquidity $1.125B",
+            "FY2026 guidance: revenue $3,800–3,900M, liquidity $1,250–1,350M",
+            "CEO Adamson stressed the 'early stage of a multi-year upcycle' — maintains outlook for tight UDW supply"
           ]
         },
         {
@@ -167,6 +201,14 @@
             "신규 계약 $292M 추가(가중평균 ~$461k/day) — Backlog ~$6.7B (승인 대기 중인 Equinor $1.0B 제외)",
             "FY2026 가이던스: 매출 $3,900~3,975M (Q1 시점 $3,800~3,900M에서 상향), 유동성 $1,250~1,350M, CAPEX $150M",
             "FCF $212M, 총 유동성 $1.3B+ (미인출 RCF 포함)"
+          ],
+          "highlights_en": [
+            "Q2 2026 revenue $966M, Adj EBITDA $312M (company-reported margin 32.2%), net income $170M — revenue and EBITDA down vs Q1",
+            "Fleet utilization 78.2% (UDW 72.6% / HE 94.2%), revenue efficiency 97.0%",
+            "Average daily revenue $472.5k (UDW $455.5k / HE $510.0k)",
+            "$292M of new contracts added (weighted average ~$461k/day) — backlog ~$6.7B (excluding the $1.0B Equinor contract pending approval)",
+            "FY2026 guidance: revenue $3,900–3,975M (raised from $3,800–3,900M at Q1), liquidity $1,250–1,350M, CAPEX $150M",
+            "FCF $212M, total liquidity $1.3B+ (including undrawn RCF)"
           ]
         }
       ]
@@ -179,14 +221,13 @@
         "founded": 1975,
         "hq": "Hamilton, Bermuda / Houston, USA",
         "employees": "~4,500",
-        "market_cap_busd": 5.8,
         "business_model": "Drillship, semisubmersible, jackup을 모두 보유한 diversified offshore drilling contractor. Deepwater와 jackup 계약을 함께 운용한다.",
         "strategy": "Transocean과의 합병 전까지 backlog 방어와 fleet utilization 개선에 집중한다. 합병 완료 후에는 Transocean의 floater 중심 포트폴리오와 통합될 예정이다.",
         "rig_mix": {
           "drillships": 13,
-          "semisubmersibles": 1,
+          "semisubmersibles": 0,
           "jackups": 29,
-          "total": 43
+          "total": 42
         },
         "key_clients": [
           "bp",
@@ -228,8 +269,11 @@
           }
         ],
         "notable": "Transocean과의 합병 발표 이후 독립 실적 가이던스와 earnings call을 중단한 상태다. 현재 데이터는 합병 전 stand-alone Valaris 기준이다.",
-        "market_cap_snapshot_date": "2026-05-05",
-        "rig_mix_source": "Valaris FSR Aug 5 2026: 드릴십 13(계류 3), 반잠수식 MS-1, 잭업 29(ARO 임대 7 포함; 104·109 매각 제외)"
+        "rig_mix_source": "Valaris FSR Aug 5 2026: 드릴십 13(계류 3), 잭업 29(ARO 임대 7 포함; 104·109 매각 제외). 반잠수식 MS-1은 2026-09 재활용 매각으로 제외(Offshore Energy 2026-10-07)",
+        "business_model_en": "Diversified offshore drilling contractor owning drillships, semisubmersibles and jack-ups. Operates both deepwater and jack-up contracts.",
+        "strategy_en": "Until the merger with Transocean, focused on defending backlog and improving fleet utilization. After closing, it will be integrated into Transocean's floater-centric portfolio.",
+        "notable_en": "Has suspended stand-alone guidance and earnings calls since the Transocean merger announcement. Current data reflect stand-alone, pre-merger Valaris.",
+        "rig_mix_source_en": "Valaris FSR Aug 5 2026: 13 drillships (3 stacked), 29 jack-ups (incl. 7 leased to ARO; excl. sold 104 and 109). Semisub MS-1 excluded — sold for recycling Sep 2026 (Offshore Energy 2026-10-07)"
       },
       "quarters": [
         {
@@ -247,7 +291,13 @@
             "Backlog $4.2B — 향후 계약 갱신 집중",
             "Adjusted EBITDA $181M, 마진 29.1% 기록"
           ],
-          "source_url": "https://www.valaris.com/investors/financial-information/"
+          "source_url": "https://www.valaris.com/investors/financial-information/",
+          "highlights_en": [
+            "High jack-up share keeps the average day rate relatively low ($385K)",
+            "New contract negotiations under way for drillships",
+            "Backlog $4.2B — focus on upcoming contract renewals",
+            "Adjusted EBITDA $181M, 29.1% margin"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -264,7 +314,13 @@
             "Backlog $4.4B로 상승",
             "잭업 시장 중동·동남아 수요 견조"
           ],
-          "source_url": "https://www.valaris.com/investors/financial-information/"
+          "source_url": "https://www.valaris.com/investors/financial-information/",
+          "highlights_en": [
+            "Adjusted EBITDA margin 32.7% — benefit of operational efficiencies",
+            "Contract extensions secured for 3 drillships",
+            "Backlog up to $4.4B",
+            "Jack-up demand solid in the Middle East and Southeast Asia"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -281,7 +337,13 @@
             "잭업 리그 평균 가동률 76% — 중동 수요 견조",
             "Transocean 합병 전 stand-alone 실적 반영"
           ],
-          "source_url": "https://www.valaris.com/investors/financial-information/"
+          "source_url": "https://www.valaris.com/investors/financial-information/",
+          "highlights_en": [
+            "Adjusted EBITDA $163M, 27.3% margin",
+            "New Norway contract signed for Valaris DS-17",
+            "Jack-up average utilization 76% — solid Middle East demand",
+            "Reflects stand-alone results before the Transocean merger"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -298,7 +360,13 @@
             "향후 분기 실적 발표 및 가이던스 제공 중단 발표",
             "Backlog $4.7B — 통합 완료 시 Transocean 풀로 흡수"
           ],
-          "source_url": "https://www.valaris.com/investors/financial-information/"
+          "source_url": "https://www.valaris.com/investors/financial-information/",
+          "highlights_en": [
+            "$5.8B acquisition by Transocean agreed — shareholder approval process under way",
+            "Adjusted EBITDA $97M, 18.1% margin",
+            "Announced it will stop holding earnings calls and providing guidance",
+            "Backlog $4.7B — to be absorbed into Transocean's pool on completion"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -317,6 +385,14 @@
             "수익 효율 98% 달성 — 안정적 운영 기조 유지",
             "백로그 $4.9B (Valaris 단독, 2026.05.04 기준) — Q4 2025($4.7B) 대비 $200M 증가",
             "Transocean 합병($5.8B) 발표(2026.02) 후 향후 어닝스 콜 미개최 및 FY 가이던스 업데이트 중단"
+          ],
+          "highlights_en": [
+            "Q1 2026 revenue $465M, Adj EBITDA $67M (14.4% margin) — excluding $14M of one-off merger costs",
+            "Active-fleet drillship utilization 49% — no revenue recognized during VALARIS DS-17 contract preparation",
+            "Drillship average rate $436k/day (slightly up from $434k in the prior quarter)",
+            "Revenue efficiency 98% — stable operations maintained",
+            "Backlog $4.9B (Valaris stand-alone, as of 2026-05-04) — up $200M from Q4 2025 ($4.7B)",
+            "No earnings calls and no FY guidance updates following the Transocean merger ($5.8B) announcement (Feb 2026)"
           ]
         },
         {
@@ -336,6 +412,14 @@
             "백로그 $4.585B (2026.08.05 기준; Drillship $3.0B / Jackup $1.1B)",
             "수익 효율 98%, 합병·통합 비용 $11M (Q1 $14M)",
             "Transocean 합병 2026년 4분기 종결 예정(on track) — 어닝스 콜 미개최 유지"
+          ],
+          "highlights_en": [
+            "Q2 2026 revenue $539.2M, Adj EBITDA $96.5M (Q1 $66.7M) — includes ~$30M impact from the Middle East conflict (war-risk insurance, project delays)",
+            "VALARIS DS-12 and DS-10 started new contracts on schedule and on budget — drillship utilization 52%, average rate $451k/day",
+            "Jack-up utilization 64%, average $134k/day; sold jack-ups VALARIS 104 and 109 (total $74M)",
+            "Backlog $4.585B (as of 2026-08-05; drillships $3.0B / jack-ups $1.1B)",
+            "Revenue efficiency 98%; merger and integration costs $11M (Q1 $14M)",
+            "Transocean merger expected to close Q4 2026 (on track) — still no earnings calls"
           ]
         }
       ]
@@ -348,7 +432,6 @@
         "founded": 1921,
         "hq": "Sugar Land, Texas, USA",
         "employees": "~4,000",
-        "market_cap_busd": 6.0,
         "business_model": "Deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. Diamond Offshore 인수 후 deepwater pure-play로 재편했다.",
         "strategy": "잭업 매각 이후 고사양 floater 중심으로 포트폴리오를 단순화하고, Petrobras, Shell, Chevron 등 deepwater 고객의 장기 계약을 확대한다.",
         "rig_mix": {
@@ -397,8 +480,11 @@
           }
         ],
         "notable": "Diamond Offshore 인수와 jackup 매각 이후 deepwater pure-play 성격이 강해졌다. Q1 2026 실적이 이미 반영된 유일한 시추선사다.",
-        "market_cap_snapshot_date": "2026-05-05",
-        "rig_mix_source": "Noble FSR Jul 27 2026: marketed 29척 — 드릴십 17(7G 14 + 6G 3), 반잠수식 7, UH 잭업 5"
+        "rig_mix_source": "Noble FSR Jul 27 2026: marketed 29척 — 드릴십 17(7G 14 + 6G 3), 반잠수식 7, UH 잭업 5",
+        "business_model_en": "Offshore drilling contractor focused on deepwater drillships and semisubmersibles. Repositioned as a deepwater pure-play after acquiring Diamond Offshore.",
+        "strategy_en": "After selling its jack-ups, it simplifies the portfolio around high-spec floaters and expands long-term contracts with deepwater clients such as Petrobras, Shell and Chevron.",
+        "notable_en": "Has become more of a deepwater pure-play after the Diamond Offshore acquisition and jack-up sale. Was the only driller whose Q1 2026 results were already reflected.",
+        "rig_mix_source_en": "Noble FSR Jul 27 2026: 29 marketed rigs — 17 drillships (14 7G + 3 6G), 7 semisubmersibles, 5 UH jack-ups"
       },
       "quarters": [
         {
@@ -416,7 +502,13 @@
             "Adjusted EBITDA $338M, 마진 40.6% 기록",
             "잭업 리그 Borr Drilling 매각 논의 시작"
           ],
-          "source_url": "https://www.noblecorp.com/investors/financial-information/"
+          "source_url": "https://www.noblecorp.com/investors/financial-information/",
+          "highlights_en": [
+            "First full quarter after completing the Diamond Offshore integration",
+            "Deepwater fleet expanded — 35 marketed rigs",
+            "Adjusted EBITDA $338M, 40.6% margin",
+            "Talks begin on selling jack-ups to Borr Drilling"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -433,7 +525,13 @@
             "딥워터 가동률 77%로 상승",
             "Backlog 약 $6.9B — 신규 계약 파이프라인 강함"
           ],
-          "source_url": "https://www.noblecorp.com/investors/financial-information/"
+          "source_url": "https://www.noblecorp.com/investors/financial-information/",
+          "highlights_en": [
+            "Noble Venturer — Petrobras contract extension secured",
+            "Progress in negotiations to sell 5 jack-ups to Borr Drilling",
+            "Deepwater utilization rose to 77%",
+            "Backlog ~$6.9B — strong new contract pipeline"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -450,7 +548,13 @@
             "Noble Courage 장기 계약 협상 진행 중",
             "잭업 매각 2026년 1월 완료 예정 발표"
           ],
-          "source_url": "https://www.noblecorp.com/investors/financial-information/"
+          "source_url": "https://www.noblecorp.com/investors/financial-information/",
+          "highlights_en": [
+            "Contract drilling services revenue $757M",
+            "Noble Reacher Brazil contract extended",
+            "Long-term contract negotiations under way for Noble Courage",
+            "Jack-up sale announced to complete in January 2026"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -467,7 +571,13 @@
             "2026 가이던스 발표: Revenue $2.8–3.0B, EBITDA $940M–$1.02B",
             "Backlog $7.5B — Noble Deliverer 재활성화 포함"
           ],
-          "source_url": "https://www.noblecorp.com/investors/financial-information/"
+          "source_url": "https://www.noblecorp.com/investors/financial-information/",
+          "highlights_en": [
+            "Sale of 5 jack-ups to Borr Drilling completed (Jan 2026), $175M — transition to deepwater pure-play",
+            "Q4 Contract drilling services revenue $705M, Adjusted EBITDA $232M",
+            "2026 guidance: revenue $2.8–3.0B, EBITDA $940M–$1.02B",
+            "Backlog $7.5B — includes Noble Deliverer reactivation"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -486,7 +596,15 @@
             "2026 가이던스 유지: Revenue $2.8–3.0B, EBITDA $940M–$1.02B",
             "Free Cash Flow $169M — 주당 배당금 유지"
           ],
-          "source_url": "https://www.noblecorp.com/investors/financial-information/"
+          "source_url": "https://www.noblecorp.com/investors/financial-information/",
+          "highlights_en": [
+            "First quarter after the transition to deepwater pure-play — EBITDA margin jumped to 37.3%",
+            "Noble Courage 3-year contract extension + Noble Deliverer 5-well contract signed",
+            "$565M of new contracts secured — backlog maintained at $7.5B",
+            "2026 capex raised to $615–665M for the Noble Deliverer reactivation",
+            "2026 guidance maintained: revenue $2.8–3.0B, EBITDA $940M–$1.02B",
+            "Free cash flow $169M — dividend per share maintained"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -505,6 +623,15 @@
             "4월 FSR 이후 신규 계약 ~$200M (Noble Viking 아태 6-well, Noble Claus Bachmann bp 3-well) — Backlog $6.8B (7/27 기준)",
             "구 Diamond 채권 $800M을 6.250% 2034년 만기 무담보채로 차환 — 연 $35M 현금 절감",
             "순손실 $37M, FCF -$59M; Q3 배당 $0.50/주 선언"
+          ],
+          "source_en": "Q2 2026 Earnings (Jul 2026) — revenue on a contract-drilling basis (total revenue $720M; same basis as prior quarters)",
+          "highlights_en": [
+            "Contract drilling services revenue $679M (Q1 $743M), Adj EBITDA $212M — hit by operational suspensions of Noble Faye Kozack and Noble Courage in Brazil (~$43M) and the end of Globetrotter I's Black Sea contract",
+            "Utilization of 29 marketed rigs 64% (Q1 68%), average floater rate $413k/day",
+            "FY2026 guidance cut: revenue $2.8–2.9B (was $2.8–3.0B), Adj EBITDA $850–925M (was $940M–1.02B); CAPEX $615–665M unchanged",
+            "~$200M of new contracts since the April FSR (Noble Viking APAC 6-well, Noble Claus Bachmann bp 3-well) — backlog $6.8B (as of 7/27)",
+            "Refinanced $800M of legacy Diamond notes into 6.250% unsecured notes due 2034 — $35M annual cash savings",
+            "Net loss $37M, FCF -$59M; Q3 dividend of $0.50/share declared"
           ]
         }
       ]
@@ -517,7 +644,6 @@
         "founded": 2005,
         "hq": "Hamilton, Bermuda",
         "employees": "~2,600",
-        "market_cap_busd": 2.3,
         "business_model": "High-spec ultra-deepwater drillship와 semisubmersible 중심의 offshore drilling contractor. 재무구조 재편 이후 고사양 floater에 집중한다.",
         "strategy": "브라질, US Gulf of Mexico, 서아프리카 deepwater 수요에 맞춰 drillship 가동률과 dayrate를 회복시키는 데 집중한다.",
         "rig_mix": {
@@ -567,8 +693,11 @@
           }
         ],
         "notable": "상대적으로 작은 floater 포트폴리오지만 브라질과 US Gulf deepwater exposure가 크다. 2026년 가이던스는 EBITDA 회복을 전제로 한다.",
-        "market_cap_snapshot_date": "2026-05-05",
-        "rig_mix_source": "Seadrill FSR Aug 10 2026: 자사 소유 드릴십 10(West Gemini 포함)·반잠수식 5(계류 3) — 이 외 Sonangol 소유 관리 드릴십 2"
+        "rig_mix_source": "Seadrill FSR Aug 10 2026: 자사 소유 드릴십 10(West Gemini 포함)·반잠수식 5(계류 3) — 이 외 Sonangol 소유 관리 드릴십 2",
+        "business_model_en": "Offshore drilling contractor focused on high-spec ultra-deepwater drillships and semisubmersibles. Concentrates on high-spec floaters after its financial restructuring.",
+        "strategy_en": "Focused on restoring drillship utilization and dayrates in line with deepwater demand in Brazil, the US Gulf of Mexico and West Africa.",
+        "notable_en": "A relatively small floater portfolio but large exposure to Brazil and US Gulf deepwater. 2026 guidance assumes an EBITDA recovery.",
+        "rig_mix_source_en": "Seadrill FSR Aug 10 2026: 10 owned drillships (incl. West Gemini), 5 semisubmersibles (3 stacked) — plus 2 Sonangol-owned managed drillships"
       },
       "quarters": [
         {
@@ -586,7 +715,13 @@
             "West Africa 및 중동 시장 선택적 계약 전략",
             "Backlog $1.6B — 계약 기간 짧아 갱신 리스크 존재"
           ],
-          "source_url": "https://www.seadrill.com/investors/financial-information/"
+          "source_url": "https://www.seadrill.com/investors/financial-information/",
+          "highlights_en": [
+            "Total operating revenues $335M, Adjusted EBITDA $73M",
+            "Drillship-focused portfolio — zero jack-ups",
+            "Selective contracting strategy in West Africa and the Middle East",
+            "Backlog $1.6B — short contract terms create renewal risk"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -603,7 +738,13 @@
             "Seadrill Aquila West Africa 신규 계약 확보",
             "Backlog $1.8B로 소폭 상승"
           ],
-          "source_url": "https://www.seadrill.com/investors/financial-information/"
+          "source_url": "https://www.seadrill.com/investors/financial-information/",
+          "highlights_en": [
+            "Total operating revenues $377M, Adjusted EBITDA $106M",
+            "EBITDA margin improved q/q to 28.1%",
+            "New West Africa contract secured for Seadrill Aquila",
+            "Backlog edged up to $1.8B"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -620,7 +761,13 @@
             "Backlog $2.1B로 상승 — 계약 가시성 개선",
             "드릴십 시장 공급 타이트 전망으로 2026년 day rate 상승 기대"
           ],
-          "source_url": "https://www.seadrill.com/investors/financial-information/"
+          "source_url": "https://www.seadrill.com/investors/financial-information/",
+          "highlights_en": [
+            "Record quarterly revenue of $363M — successful drillship re-contracting",
+            "Follow-on contracts secured for West Jupiter and West Ceres",
+            "Backlog up to $2.1B — improved contract visibility",
+            "Tight drillship supply outlook supports expected 2026 day rate increases"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -638,7 +785,14 @@
             "2026 capex $200–240M — 장기 유지보수 포함",
             "안전 기록 신기록 달성 — TRIR(총 재해율) 업계 최저 수준"
           ],
-          "source_url": "https://www.seadrill.com/investors/financial-information/"
+          "source_url": "https://www.seadrill.com/investors/financial-information/",
+          "highlights_en": [
+            "FY2025 revenue $1.44B, EBITDA $353M finalized",
+            "2026 guidance: revenue $1.40–1.45B, EBITDA $350–400M",
+            "Backlog $2.5B — contracts secured for 5 of 8 drillships",
+            "2026 capex $200–240M — including long-term maintenance",
+            "Record safety performance — TRIR (total recordable incident rate) among the industry's lowest"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -656,7 +810,14 @@
             "West Capella·West Jupiter 리활성화 프로젝트 예정보다 빠르게 완료",
             "순손실 $7M, 현금 $329M 유지 (총 부채 $625M, 순부채 $296M)"
           ],
-          "source_url": "https://www.seadrill.com/investors/financial-information/"
+          "source_url": "https://www.seadrill.com/investors/financial-information/",
+          "highlights_en": [
+            "Annual guidance raised: revenue $1.43–1.48B, EBITDA $370–420M (was $350–400M)",
+            "$860M+ of new contracts added (GoM, Brazil, Angola) — backlog expanded to $3.1B",
+            "Economic utilization 95% (sharply up from 84% a year earlier)",
+            "West Capella and West Jupiter reactivation projects completed ahead of schedule",
+            "Net loss $7M, cash $329M (total debt $625M, net debt $296M)"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -674,6 +835,14 @@
             "경제적 가동률 96%, 평균 계약 요율 $360k/day",
             "신규 계약 ~$200M: West Vela US Gulf 1년(~$161M), West Capella 말레이시아 연장(~$26M) — Backlog ~$2.9B (8/10 기준)",
             "자사주 ~$20M 매입(프로그램 2026년말까지 연장); 선순위채 2034년 만기로 차환, RCF $300M로 증액(2031 만기)"
+          ],
+          "source_en": "Q2 2026 Earnings (Aug 2026) — backlog of $2.9B from a secondary source (not confirmed in the press release text)",
+          "highlights_en": [
+            "Revenue $449M (Q1 $358M), Adj EBITDA $144M, net income $29M",
+            "2026 guidance raised again: revenue $1.50–1.55B (was $1.43–1.48B; excludes $50M reimbursable revenue), EBITDA $420–450M (was $370–420M); CAPEX $200–240M unchanged",
+            "Economic utilization 96%, average contract rate $360k/day",
+            "~$200M of new contracts: West Vela US Gulf 1 year (~$161M), West Capella Malaysia extension (~$26M) — backlog ~$2.9B (as of 8/10)",
+            "~$20M of share buybacks (program extended to end-2026); senior notes refinanced to 2034 maturity, RCF increased to $300M (due 2031)"
           ]
         }
       ]
@@ -686,7 +855,6 @@
         "founded": 2016,
         "hq": "Hamilton, Bermuda",
         "employees": "~1,900",
-        "market_cap_busd": 1.5,
         "business_model": "Modern premium jackup pure-play. 중동, 동남아, 멕시코 등 shallow-water drilling 수요에 집중한다.",
         "strategy": "Noble에서 인수한 잭업 5기를 포함해 premium jackup 규모를 확대하고, 높은 utilization과 낮은 unit cost를 통해 EBITDA 마진을 방어한다.",
         "rig_mix": {
@@ -733,7 +901,9 @@
           }
         ],
         "notable": "대형 floater 업체들과 달리 premium jackup에 특화되어 dayrate 수준은 낮지만, utilisation과 EBITDA margin이 높은 편이다.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "Modern premium jack-up pure-play. Focused on shallow-water drilling demand in the Middle East, Southeast Asia, Mexico and elsewhere.",
+        "strategy_en": "Expanding premium jack-up scale, including the 5 jack-ups acquired from Noble, and defending EBITDA margins through high utilization and low unit costs.",
+        "notable_en": "Unlike the large floater companies it specializes in premium jack-ups, so dayrates are lower but utilization and EBITDA margin tend to be high."
       },
       "quarters": [
         {
@@ -751,7 +921,13 @@
             "중동·동남아 드릴링 수요 견조",
             "신조 리그 2기 인도 예정 — Fleet 확장 가속"
           ],
-          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/",
+          "highlights_en": [
+            "Total operating revenues $217M, Adjusted EBITDA $96M",
+            "Operating efficiency of a pure premium jack-up portfolio demonstrated",
+            "Solid drilling demand in the Middle East and Southeast Asia",
+            "Two newbuild rigs due for delivery — fleet expansion accelerating"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -768,7 +944,13 @@
             "중동 및 동남아 신규 계약 추가",
             "Noble 잭업 인수 협상 본격화"
           ],
-          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/",
+          "highlights_en": [
+            "Day rate up to $140K — strong Middle East premium jack-up demand",
+            "Total operating revenues $268M, Adjusted EBITDA $133M",
+            "New contracts added in the Middle East and Southeast Asia",
+            "Negotiations to acquire Noble jack-ups move into full swing"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -785,7 +967,13 @@
             "신규 프리미엄 잭업 리그 3기 인도 완료",
             "Noble 잭업 5기 인수 $175M 합의 발표"
           ],
-          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/",
+          "highlights_en": [
+            "Utilization up to 86% — quarterly high",
+            "Total operating revenues $277M, Adjusted EBITDA $136M",
+            "Delivery of 3 new premium jack-ups completed",
+            "Agreement announced to acquire 5 Noble jack-ups for $175M"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -803,7 +991,14 @@
             "Q1 2026 결과 발표 예정: 2026.05.20",
             "잭업 공급 타이트 유지 — 2026년 Day rate 상승 기대"
           ],
-          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/",
+          "highlights_en": [
+            "FY2025 revenue ~$1.02B, Adj. EBITDA ~$470M",
+            "Acquisition of 5 Noble jack-ups completed (Jan 2026) — fleet expanded to 29",
+            "Acquired rigs to go straight onto Middle East contracts",
+            "Q1 2026 results scheduled for 2026-05-20",
+            "Jack-up supply remains tight — 2026 day rate increases expected"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -821,7 +1016,14 @@
             "2026년 YTD 계약 13건 체결, $274M Backlog 추가 (Eni·BW Energy·Vestigo 등)",
             "2026 coverage 71% (평균 $137K) — 근시일 가시성 확보, 단가 압박은 지속"
           ],
-          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/"
+          "source_url": "https://www.borrdrilling.com/investor-relations/financial-reports/",
+          "highlights_en": [
+            "Revenue $247M, EBITDA $89M — down q/q (Q4 2025: $259M, $105M), below expectations",
+            "Acquisition of 5 Noble jack-ups completed (January) — fleet expanded to 29",
+            "$300M convertible notes issued, $195M of 2028 notes repaid — improved maturity profile",
+            "13 contracts signed YTD 2026, adding $274M of backlog (Eni, BW Energy, Vestigo, etc.)",
+            "2026 coverage 71% (average $137K) — near-term visibility secured, but rate pressure persists"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -840,6 +1042,14 @@
             "기술 가동률 98.4%, 경제 가동률 96.4% (utilization_pct는 경제 가동률 기준)",
             "YTD 21건·$541M 백로그 추가; 2026 커버리지 73%(평균 ~$134k/day) — 백로그 $1.04B(6/30) → $1.13B(발표일)",
             "분기 후(7월) 50/50 JV로 프리미엄 잭업 5기 $287M 인수 완료"
+          ],
+          "highlights_en": [
+            "Revenue $232.3M (-6% q/q), Adj EBITDA $43.8M (-51% q/q) — average operating rigs 22.4 → 21.2",
+            "Net loss $241.4M — $176.3M loss on debt extinguishment from refinancing the 2028/2030 secured notes and 2028 convertibles",
+            "Issued $2,035M secured notes (due 2032/2034) + $300M convertibles (due 2033), refinancing virtually all debt; RCF increased to $250M",
+            "Technical utilization 98.4%, economic utilization 96.4% (utilization_pct uses economic utilization)",
+            "21 contracts and $541M of backlog added YTD; 2026 coverage 73% (average ~$134k/day) — backlog $1.04B (6/30) → $1.13B (at results date)",
+            "After quarter-end (July) completed the $287M acquisition of 5 premium jack-ups via a 50/50 JV"
           ]
         }
       ]
@@ -851,11 +1061,6 @@
       "basis": "Company earnings press releases / SEC Form 8-K filings",
       "source_url_granularity": "mixed",
       "notes": "Revenue, EBITDA, utilization from official press releases. Some source_url values point to exact releases/SEC exhibits, while older periods still point to company IR landing pages."
-    },
-    "market_cap": {
-      "confidence": "low",
-      "basis": "Market snapshot — volatile figure",
-      "notes": "market_cap_busd is a point-in-time snapshot, not a fundamental value. Will change with share price. See snapshot_date field."
     },
     "rig_specs": {
       "confidence": "medium",

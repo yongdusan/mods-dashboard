@@ -104,6 +104,7 @@
 **운영 규칙**
 - 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`로 ERROR 0을 확인한다.
 - 파일 일부만 고쳤을 때 `updated`를 오늘로 바꾸면 나머지 오래된 섹션까지 최신처럼 보인다. 섹션별 기준일이 다른 데이터는 섹션에 `as_of`를 둔다(예: `fpso.json` `market_summary.as_of`).
+- **KO/EN 전환(2026-10-12~):** 헤더의 한/EN 스위치로 언어를 바꾼다(브라우저별 저장). 한국어 텍스트 필드에는 같은 객체에 `<필드>_en` 영문 필드를 함께 둔다(`notes_en`, `summary_en`, 목록은 같은 길이의 `highlights_en`). 영어 모드에서는 `assets/theme.js`가 data/*.json을 불러올 때 `_en` 값으로 바꿔 끼우므로 페이지 코드는 수정하지 않는다. HTML에 하드코딩된 한국어 라벨은 `theme.js`의 `UI_EN` 사전에 추가한다. `_en` 누락은 `check_data.py`가 NOTE로 표시한다.
 
 ---
 

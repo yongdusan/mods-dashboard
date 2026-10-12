@@ -4,7 +4,8 @@
     "day_rates": {
       "confidence": "mixed",
       "basis": "Indicative market curve anchored on FSR-verified contracts where available",
-      "notes": "2026년부터 산정 방식 통일: date = 활동 분기 시작월. 실적이 나온 분기 = 컨트랙터 공시 평균 dayrate(Drillship: Transocean UDW floaters·Valaris drillships·Noble floaters 평균, Jack-up: Valaris/Borr). 진행 중인 최신 분기 = 'Indicative' 선행지표(공시된 leading-edge/신규 계약 단가)로 기재 후, 해당 분기 실적 발표 시 실제 평균으로 교체. 2025년 값은 indicative market curve. [정정 2026-10-08] 2026-04 drillship 460(실적+상승 가정 추정)→440(Q2 실적), Q2 실적을 2026-07로 잘못 배치했던 것 바로잡음, 방식이 달랐던 2026-10 항목 삭제."
+      "notes": "2026년부터 산정 방식 통일: date = 활동 분기 시작월. 실적이 나온 분기 = 컨트랙터 공시 평균 dayrate(Drillship: Transocean UDW floaters·Valaris drillships·Noble floaters 평균, Jack-up: Valaris/Borr). 진행 중인 최신 분기 = 'Indicative' 선행지표(공시된 leading-edge/신규 계약 단가)로 기재 후, 해당 분기 실적 발표 시 실제 평균으로 교체. 2025년 값은 indicative market curve. [정정 2026-10-08] 2026-04 drillship 460(실적+상승 가정 추정)→440(Q2 실적), Q2 실적을 2026-07로 잘못 배치했던 것 바로잡음, 방식이 달랐던 2026-10 항목 삭제.",
+      "notes_en": "Unified method from 2026: date = first month of the activity quarter. Reported quarters = contractor-disclosed average dayrates (drillship: average of Transocean UDW floaters, Valaris drillships and Noble floaters; jack-up: Valaris/Borr). The latest in-progress quarter is entered as an 'Indicative' leading indicator (disclosed leading-edge/new-contract rates) and replaced with the actual average when that quarter's results are released. 2025 values are an indicative market curve. [Corrected 2026-10-08] 2026-04 drillship 460 (estimate assuming results + rise) → 440 (Q2 actual); fixed Q2 actuals that had been misplaced under 2026-07; removed the 2026-10 entry that used a different method."
     },
     "day_rates_by_type": {
       "drillship": {
@@ -67,14 +68,16 @@
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
       "rate_kusd": 440,
-      "source": "Q2 2026 actual — 컨트랙터 평균 dayrate(RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K, Aug 2026)"
+      "source": "Q2 2026 actual — 컨트랙터 평균 dayrate(RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K, Aug 2026)",
+      "source_en": "Q2 2026 actual — contractor average dayrates (RIG UDW floaters $455.5K / VAL drillships $451K / NE floaters $413K, Aug 2026)"
     },
     {
       "date": "2026-07",
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
       "rate_kusd": 450,
-      "source": "Indicative (Q3 진행 중) — Noble Q2 2026 release(2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. Q3 실적(11월) 발표 시 실제 평균으로 교체"
+      "source": "Indicative (Q3 진행 중) — Noble Q2 2026 release(2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. Q3 실적(11월) 발표 시 실제 평균으로 교체",
+      "source_en": "Indicative (Q3 in progress) — Noble Q2 2026 release (2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. To be replaced with the actual average at Q3 results (November)"
     },
     {
       "date": "2025-01",
@@ -123,7 +126,8 @@
       "rig_type": "Jack-up",
       "tier": "Premium",
       "rate_kusd": 134,
-      "source": "Indicative (Q3 진행 중) — Borr Q2 2026: H2 2026 커버리지 평균 ~$134K/day (Aug 2026). Q3 실적 발표 시 교체"
+      "source": "Indicative (Q3 진행 중) — Borr Q2 2026: H2 2026 커버리지 평균 ~$134K/day (Aug 2026). Q3 실적 발표 시 교체",
+      "source_en": "Indicative (Q3 in progress) — Borr Q2 2026: H2 2026 coverage average ~$134K/day (Aug 2026). To be replaced at Q3 results"
     },
     {
       "date": "2025-01",
@@ -172,7 +176,8 @@
       "rig_type": "Semisubmersible",
       "tier": "Deepwater",
       "rate_kusd": 400,
-      "source": "Indicative (Q3 진행 중) — Transocean–Equinor HE semi 3척 계약(2026-06-30): base $399K, 개시 시점 실효 >$400K. Q3 실적 발표 시 교체"
+      "source": "Indicative (Q3 진행 중) — Transocean–Equinor HE semi 3척 계약(2026-06-30): base $399K, 개시 시점 실효 >$400K. Q3 실적 발표 시 교체",
+      "source_en": "Indicative (Q3 in progress) — Transocean–Equinor 3-rig HE semi contract (2026-06-30): base $399K, effective >$400K at start. To be replaced at Q3 results"
     }
   ],
   "named_observations": [

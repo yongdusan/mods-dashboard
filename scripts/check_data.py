@@ -201,6 +201,34 @@ def run(today):
         if c > 1:
             errors.append(f"news.json: duplicate id {k}")
 
+    # ---------- English siblings (KO/EN switch) ----------
+    # Any Korean text field shown on the site needs a "<field>_en" sibling,
+    # otherwise English mode falls back to Korean for that field.
+    hangul = re.compile("[가-힣]")
+    internal = {"fact_check_note", "update_frequency_ko"}
+
+    def missing_en(o, path, out):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k.endswith("_en") or k in internal:
+                    continue
+                korean = (isinstance(v, str) and hangul.search(v)) or (
+                    isinstance(v, list) and any(isinstance(x, str) and hangul.search(x) for x in v))
+                if korean and f"{k}_en" not in o:
+                    out.append(f"{path}/{k}")
+                elif not korean:
+                    missing_en(v, f"{path}/{k}", out)
+        elif isinstance(o, list):
+            for n, x in enumerate(o):
+                missing_en(x, f"{path}/{n}", out)
+
+    for name in ("pipeline", "fpso", "fleet", "earnings", "fpso_earnings", "capex", "rates", "news"):
+        miss = []
+        missing_en(load(f"{name}.json"), "", miss)
+        miss = [m for m in miss if m != "/data_quality/notes"]  # pipeline change log, not displayed
+        if miss:
+            notes.append(f"{name}.json: {len(miss)} Korean field(s) without _en — e.g. {', '.join(miss[:3])}")
+
     return errors, overdue, notes
 
 

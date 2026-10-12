@@ -56,7 +56,8 @@
         "status": "tracked_for_future_fleet_expansion"
       }
     ],
-    "coverage_note_2026_10_08": "Transocean·Valaris 부유식 리그를 2026-08 FSR 기준 전수 반영(Transocean 드릴십 8척, Valaris 드릴십 6척 + MS-1 추가). 현재 FSR에 없는 Deepwater Stavanger, Valaris DPS-1 제거(선단 이탈). Valaris 잭업 중 일부(ARO 임대분, 북해·벤인 잭업 다수)와 Noble·Seadrill 등 타사는 기존 추적 범위 유지 — 전수 아님. Noble: 2026-07-27 FSR 기준 전면 재구성(부유식 23척 + UH 잭업 5척). 기존 Noble 9척 중 Regina Allen·Resolve는 현 Noble 선단에 없는 잭업이 드릴십/반잠수식으로 잘못 기재돼 있어 제거, Valiant·Developer·Gerry de Souza 계약 오류 정정. Noble Patriot(수심 1,500ft P&A 반잠수식)은 심해 범위 밖이라 제외. Seadrill: 2026-08-10 FSR 기준 Sonangol 소유 관리 드릴십 2척·계류 반잠수식 3척 추가."
+    "coverage_note_2026_10_08": "Transocean·Valaris 부유식 리그를 2026-08 FSR 기준 전수 반영(Transocean 드릴십 8척, Valaris 드릴십 6척 + MS-1 추가). 현재 FSR에 없는 Deepwater Stavanger, Valaris DPS-1 제거(선단 이탈). Valaris 잭업 중 일부(ARO 임대분, 북해·벤인 잭업 다수)와 Noble·Seadrill 등 타사는 기존 추적 범위 유지 — 전수 아님. Noble: 2026-07-27 FSR 기준 전면 재구성(부유식 23척 + UH 잭업 5척). 기존 Noble 9척 중 Regina Allen·Resolve는 현 Noble 선단에 없는 잭업이 드릴십/반잠수식으로 잘못 기재돼 있어 제거, Valiant·Developer·Gerry de Souza 계약 오류 정정. Noble Patriot(수심 1,500ft P&A 반잠수식)은 심해 범위 밖이라 제외. Seadrill: 2026-08-10 FSR 기준 Sonangol 소유 관리 드릴십 2척·계류 반잠수식 3척 추가.",
+    "coverage_note_2026_10_08_en": "Transocean and Valaris floaters fully reconciled to Aug 2026 FSRs (added 8 Transocean drillships, 6 Valaris drillships + MS-1). Removed Deepwater Stavanger and Valaris DPS-1, which no longer appear in current FSRs (left the fleet). Some Valaris jack-ups (ARO-leased units, many North Sea/Benin jack-ups) and other contractors keep their existing tracking scope — not exhaustive. Noble: fully rebuilt from the 2026-07-27 FSR (23 floaters + 5 UH jack-ups). Of the previous 9 Noble rigs, Regina Allen and Resolve were removed (jack-ups no longer in Noble's fleet, mislabeled as drillship/semisub), and contract errors on Valiant, Developer and Gerry de Souza were corrected. Noble Patriot (1,500ft P&A semisub) excluded as outside deepwater scope. Seadrill: per 2026-08-10 FSR, added 2 Sonangol-owned managed drillships and 3 stacked semisubs."
   },
   "prev_week": {
     "total": 135,
@@ -89,7 +90,8 @@
       "source": "Transocean Fleet Status Report, Feb 19 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k."
+      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k.",
+      "data_note_en": "FSR (Aug-26): continuous Beacon contracts — Aug-26–Oct-26 $580k (current), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, then bp Jun-28–Jun-30 $635k."
     },
     {
       "name": "Deepwater Titan",
@@ -1803,7 +1805,8 @@
       "source": null,
       "source_url": null,
       "confidence": "low",
-      "data_note": "[2026-10-08] 현재 상태 미확인 — 2026-08 Borr 공시·뉴스에서 Frigg 계약 현황을 찾지 못함. 이전 계약(Wintershall Dea, 2026-09 종료 예정) 이후 Idle로 가정, 확인 필요."
+      "data_note": "[2026-10-08] 현재 상태 미확인 — 2026-08 Borr 공시·뉴스에서 Frigg 계약 현황을 찾지 못함. 이전 계약(Wintershall Dea, 2026-09 종료 예정) 이후 Idle로 가정, 확인 필요.",
+      "data_note_en": "[2026-10-08] Current status unconfirmed — no Frigg contract status found in Aug 2026 Borr disclosures or news. Assumed idle after the previous contract (Wintershall Dea, ending Sep 2026); needs confirmation."
     },
     {
       "name": "Borr Skald",
@@ -2465,7 +2468,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Murphy firm Dec-25–Sep-26 $361k + one-well extension(Sep-26–Nov-26, $361k). 이후 Australia 미공개 운영사 Apr-27–Mar-28."
+      "data_note": "FSR: Murphy firm Dec-25–Sep-26 $361k + one-well extension(Sep-26–Nov-26, $361k). 이후 Australia 미공개 운영사 Apr-27–Mar-28.",
+      "data_note_en": "FSR: Murphy firm Dec-25–Sep-26 $361k + one-well extension (Sep-26–Nov-26, $361k). Then undisclosed operator in Australia Apr-27–Mar-28."
     },
     {
       "name": "Dhirubhai Deepwater KG1",
@@ -2492,7 +2496,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: 계약 준비(Jun–Aug 26) 후 Reliance firm Aug-26–Mar-28 $410k, priced options to Aug-29."
+      "data_note": "FSR: 계약 준비(Jun–Aug 26) 후 Reliance firm Aug-26–Mar-28 $410k, priced options to Aug-29.",
+      "data_note_en": "FSR: contract preparation (Jun–Aug 26), then Reliance firm Aug-26–Mar-28 $410k, priced options to Aug-29."
     },
     {
       "name": "Dhirubhai Deepwater KG2",
@@ -2519,7 +2524,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Idle since May-26."
+      "data_note": "FSR: Idle since May-26. 다음 계약: ONGC 인도 2년 구속력 LOA, 2027-Q1 착수, ~$300M(옵션 2년 포함 시 2031년 초까지)(Offshore Energy 2026-08-20).",
+      "data_note_en": "FSR: idle since May-26. Next contract: ONGC India 2-year binding LOA, starting Q1 2027, ~$300M (to early 2031 including 2-year options) (Offshore Energy 2026-08-20)."
     },
     {
       "name": "Petrobras 10000",
@@ -2654,7 +2660,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Occidental Jun-24–Jun-26, 940-day extension Jun-26–Dec-28 (DS-16/DS-18 합산 backlog ~$760M). Day rate 미공시."
+      "data_note": "FSR: Occidental Jun-24–Jun-26, 940-day extension Jun-26–Dec-28 (DS-16/DS-18 합산 backlog ~$760M). Day rate 미공시.",
+      "data_note_en": "FSR: Occidental Jun-24–Jun-26, 940-day extension Jun-26–Dec-28 (DS-16/DS-18 combined backlog ~$760M). Day rate undisclosed."
     },
     {
       "name": "Valaris DS-15",
@@ -2681,7 +2688,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Las Palmas warm stack 후 CNR Sep-26–May-27, TCV ~$135M(~250일). Day rate 미공시."
+      "data_note": "FSR: Las Palmas warm stack 후 CNR Sep-26–May-27, TCV ~$135M(~250일). Day rate 미공시.",
+      "data_note_en": "FSR: warm stacked at Las Palmas, then CNR Sep-26–May-27, TCV ~$135M (~250 days). Day rate undisclosed."
     },
     {
       "name": "Valaris DS-18",
@@ -2708,7 +2716,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026; Valaris contract awards update, Oct 7 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/content_files/10-7-2026-Valaris-Announces-Contract-Awards-and-Fleet-Status-Updates.pdf",
       "confidence": "high",
-      "data_note": "FSR(8/5): LOA 2-well(Nov-26–May-27, 미공개 운영사) 후 Occidental Jun-27–Dec-29(914일). 10/7 Valaris 공시: PETRONAS Suriname 2-well 탐사 계약(2026 Q4 개시 예정, 최대 약 7개월; trade press 보도) — 8/5 LOA와의 동일 여부는 미확인. 현재 계약 개시 전."
+      "data_note": "FSR(8/5): LOA 2-well(Nov-26–May-27, 미공개 운영사) 후 Occidental Jun-27–Dec-29(914일). 10/7 Valaris 공시: PETRONAS Suriname 2-well 탐사 계약(2026 Q4 개시 예정, 최대 약 7개월; trade press 보도) — 8/5 LOA와의 동일 여부는 미확인. 현재 계약 개시 전.",
+      "data_note_en": "FSR (8/5): LOA 2-well (Nov-26–May-27, undisclosed operator), then Occidental Jun-27–Dec-29 (914 days). Valaris 10/7 release: PETRONAS Suriname 2-well exploration contract (expected to start Q4 2026, up to ~7 months; per trade press) — whether this is the same as the 8/5 LOA is unconfirmed. Current contract not yet started."
     },
     {
       "name": "Valaris DS-14",
@@ -2816,7 +2825,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Jul-24–Jan-27. 운영 중단(operational suspension) 후 해결책 협의 중 — 실제 매출 불확실."
+      "data_note": "FSR: Petrobras Jul-24–Jan-27. 운영 중단(operational suspension) 후 해결책 협의 중 — 실제 매출 불확실. 다음 계약: Tullow Oil 가나 최대 10공, 2027년 중반 착수(Offshore Energy 2026-09-28).",
+      "data_note_en": "FSR: Petrobras Jul-24–Jan-27. Operational suspension; resolution under discussion — actual revenue uncertain. Next contract: Tullow Oil Ghana up to 10 wells, starting mid-2027 (Offshore Energy 2026-09-28)."
     },
     {
       "name": "Noble Stanley Lafosse",
@@ -2843,7 +2853,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: well-based, 작업 순서 변경으로 종료 Jan-27로 앞당겨짐."
+      "data_note": "FSR: well-based, 작업 순서 변경으로 종료 Jan-27로 앞당겨짐.",
+      "data_note_en": "FSR: well-based; end date brought forward to Jan-27 due to change in work sequence."
     },
     {
       "name": "Noble Valiant",
@@ -2870,7 +2881,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: TotalEnergies 수리남 16공(~1,060일) Nov-26–Q3-29 예정, 현재 계약 개시 전. [정정 2026-10-08] 기존 \"ExxonMobil 가이아나 $375k(2026-05~)\"는 오류 — 해당 계약은 Noble Developer(반잠수식)."
+      "data_note": "FSR: TotalEnergies 수리남 16공(~1,060일) Nov-26–Q3-29 예정, 현재 계약 개시 전. [정정 2026-10-08] 기존 \"ExxonMobil 가이아나 $375k(2026-05~)\"는 오류 — 해당 계약은 Noble Developer(반잠수식).",
+      "data_note_en": "FSR: TotalEnergies Suriname 16 wells (~1,060 days) Nov-26–Q3-29 planned; current contract not yet started. [Corrected 2026-10-08] The earlier \"ExxonMobil Guyana $375k (from May 2026)\" was wrong — that contract belongs to Noble Developer (semisub)."
     },
     {
       "name": "Noble Venturer",
@@ -2897,7 +2909,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Tullow Ghana Nov-25–Sep-26 종료. 다음 Planet One Dec-26–Feb-27 $430k → Amni Feb-27–Mar-27 $450k → Shell US Gulf Q4-27–Q3-31(4년, base $606M)."
+      "data_note": "FSR: Tullow Ghana Nov-25–Sep-26 종료. 다음 Planet One Dec-26–Feb-27 $430k → Amni Feb-27–Mar-27 $450k → Shell US Gulf Q4-27–Q3-31(4년, base $606M).",
+      "data_note_en": "FSR: Tullow Ghana Nov-25–Sep-26 ended. Next: Planet One Dec-26–Feb-27 $430k → Amni Feb-27–Mar-27 $450k → Shell US Gulf Q4-27–Q3-31 (4 years, base $606M)."
     },
     {
       "name": "Noble Viking",
@@ -2924,7 +2937,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Malaysia 미공개 Aug-26–Oct-26 + 옵션 2. 이후 Asia Pac 6-well Q1-28–Q4-28(옵션 Q1-29)."
+      "data_note": "FSR: Malaysia 미공개 Aug-26–Oct-26 + 옵션 2. 이후 Asia Pac 6-well Q1-28–Q4-28(옵션 Q1-29).",
+      "data_note_en": "FSR: undisclosed operator, Malaysia Aug-26–Oct-26 + 2 options. Then Asia Pac 6-well Q1-28–Q4-28 (option Q1-29)."
     },
     {
       "name": "Noble Voyager",
@@ -2951,7 +2965,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Shell 4년 base $606M(+성과보상 최대 20%), 1년 옵션 4."
+      "data_note": "FSR: Shell 4년 base $606M(+성과보상 최대 20%), 1년 옵션 4.",
+      "data_note_en": "FSR: Shell 4-year base $606M (+ up to 20% performance compensation), four 1-year options."
     },
     {
       "name": "Noble Tom Madden",
@@ -2978,7 +2993,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil CEA, market-based dayrate(2026-03-01 리셋 후 매년 1·7월 조정)."
+      "data_note": "FSR: ExxonMobil CEA, market-based dayrate(2026-03-01 리셋 후 매년 1·7월 조정).",
+      "data_note_en": "FSR: ExxonMobil CEA, market-based dayrate (reset 2026-03-01, then adjusted each January and July)."
     },
     {
       "name": "Noble Sam Croft",
@@ -3086,7 +3102,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 2년 $350M(MPD 별도), 1년 옵션 3."
+      "data_note": "FSR: 2년 $350M(MPD 별도), 1년 옵션 3.",
+      "data_note_en": "FSR: 2 years $350M (MPD separate), three 1-year options."
     },
     {
       "name": "Noble BlackHornet",
@@ -3113,7 +3130,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp Feb-25–Feb-27 $350M, Feb-27–Feb-29 $310M, 1년 priced option."
+      "data_note": "FSR: bp Feb-25–Feb-27 $350M, Feb-27–Feb-29 $310M, 1년 priced option.",
+      "data_note_en": "FSR: bp Feb-25–Feb-27 $350M, Feb-27–Feb-29 $310M, 1-year priced option."
     },
     {
       "name": "Noble BlackLion",
@@ -3248,7 +3266,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil Nigeria 2년 $292M + 옵션 3년. [정정 2026-10-08] 기존 \"Petrobras 브라질 $435k~2027-04\"는 오류."
+      "data_note": "FSR: ExxonMobil Nigeria 2년 $292M + 옵션 3년. [정정 2026-10-08] 기존 \"Petrobras 브라질 $435k~2027-04\"는 오류.",
+      "data_note_en": "FSR: ExxonMobil Nigeria 2 years $292M + 3-year option. [Corrected 2026-10-08] The earlier \"Petrobras Brazil $435k to Apr 2027\" was wrong."
     },
     {
       "name": "Noble Deliverer",
@@ -3302,7 +3321,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petronas 수리남 Jul-25–Sep-26 → ExxonMobil 가이아나 1-well Oct-26–Nov-26 $375k(~$22M) → bp Trinidad Dec-26–Aug-27 $375k. [정정 2026-10-08] 기존 \"Cold Stacked\"는 오류."
+      "data_note": "FSR: Petronas 수리남 Jul-25–Sep-26 → ExxonMobil 가이아나 1-well Oct-26–Nov-26 $375k(~$22M) → bp Trinidad Dec-26–Aug-27 $375k. [정정 2026-10-08] 기존 \"Cold Stacked\"는 오류.",
+      "data_note_en": "FSR: Petronas Suriname Jul-25–Sep-26 → ExxonMobil Guyana 1-well Oct-26–Nov-26 $375k (~$22M) → bp Trinidad Dec-26–Aug-27 $375k. [Corrected 2026-10-08] The earlier \"Cold Stacked\" was wrong."
     },
     {
       "name": "Noble Discoverer",
@@ -3329,7 +3349,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Colombia Jun-24–Sep-26 종료, TotalEnergies 수리남 Dec-26–Q4-29(16공) 예정."
+      "data_note": "FSR: Petrobras Colombia Jun-24–Sep-26 종료, TotalEnergies 수리남 Dec-26–Q4-29(16공) 예정.",
+      "data_note_en": "FSR: Petrobras Colombia Jun-24–Sep-26 ended; TotalEnergies Suriname Dec-26–Q4-29 (16 wells) planned."
     },
     {
       "name": "Noble Claus Bachmann",
@@ -3356,7 +3377,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK Mar-27–Sep-27 $320k(+$5M mob) → Aker BP Norway Sep-27–Sep-30(3년 $473M)."
+      "data_note": "FSR: bp UK Mar-27–Sep-27 $320k(+$5M mob) → Aker BP Norway Sep-27–Sep-30(3년 $473M).",
+      "data_note_en": "FSR: bp UK Mar-27–Sep-27 $320k (+$5M mob) → Aker BP Norway Sep-27–Sep-30 (3 years, $473M)."
     },
     {
       "name": "Noble Courage",
@@ -3383,7 +3405,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Dec-23–Dec-30. 운영 중단 후 해결책 협의 중 — 실제 매출 불확실."
+      "data_note": "FSR: Petrobras Dec-23–Dec-30. 운영 중단 후 해결책 협의 중 — 실제 매출 불확실.",
+      "data_note_en": "FSR: Petrobras Dec-23–Dec-30. Operational suspension; resolution under discussion — actual revenue uncertain."
     },
     {
       "name": "Noble Endeavor",
@@ -3410,7 +3433,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 미공개 운영사 Jan-27–Jun-28 $300k(+성과보상). 1975 건조/2006 대규모 개조."
+      "data_note": "FSR: 미공개 운영사 Jan-27–Jun-28 $300k(+성과보상). 1975 건조/2006 대규모 개조.",
+      "data_note_en": "FSR: undisclosed operator Jan-27–Jun-28 $300k (+ performance compensation). Built 1975 / major upgrade 2006."
     },
     {
       "name": "Noble Innovator",
@@ -3437,7 +3461,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK Sep-25–Sep-26 $155k 종료, 잔여 backlog Noble Intrepid로 이전."
+      "data_note": "FSR: bp UK Sep-25–Sep-26 $155k 종료, 잔여 backlog Noble Intrepid로 이전.",
+      "data_note_en": "FSR: bp UK Sep-25–Sep-26 $155k ended; remaining backlog transferred to Noble Intrepid."
     },
     {
       "name": "Noble Integrator",
@@ -3491,7 +3516,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 150일 accommodation $38.7M."
+      "data_note": "FSR: 150일 accommodation $38.7M. 다음 계약: ConocoPhillips Skandinavia Greater Ekofisk P&A, 2027-Q3 착수 ~670일(Offshore Energy 2026-08-07).",
+      "data_note_en": "FSR: 150-day accommodation $38.7M. Next contract: ConocoPhillips Skandinavia Greater Ekofisk P&A, starting Q3 2027, ~670 days (Offshore Energy 2026-08-07)."
     },
     {
       "name": "Noble Intrepid",
@@ -3518,7 +3544,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK $150k, 옵션 4공."
+      "data_note": "FSR: bp UK $150k, 옵션 4공.",
+      "data_note_en": "FSR: bp UK $150k, 4 option wells."
     },
     {
       "name": "Noble Invincible",
@@ -3572,7 +3599,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — Seadrill은 관리 수수료 수취. priced options to Jan-30."
+      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — Seadrill은 관리 수수료 수취. priced options to Jan-30.",
+      "data_note_en": "FSR: owned by Sonangol, Sonadrill JV (managed by Seadrill) — Seadrill earns a management fee. Priced options to Jan-30."
     },
     {
       "name": "Sonangol Quenguela",
@@ -3599,7 +3627,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — 관리 수수료 수취."
+      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — 관리 수수료 수취.",
+      "data_note_en": "FSR: owned by Sonangol, Sonadrill JV (managed by Seadrill) — earns a management fee."
     },
     {
       "name": "West Aquarius",

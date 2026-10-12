@@ -417,3 +417,26 @@ body .chart-container, body canvas { max-width: 100%; }
 }
 .omi-footer a { color: var(--silt); }
 .omi-footer a:hover { color: var(--foam); }
+
+/* ---- KO / EN switch (built by theme.js) ---- */
+.omi-lang { display: inline-flex; flex: none; border: 1px solid var(--line-2); border-radius: 2px; overflow: hidden; }
+.omi-lang button {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; line-height: 1;
+  min-width: 34px; min-height: 28px; padding: 0 8px; border: 0; cursor: pointer;
+  background: transparent; color: var(--silt);
+  transition: color .18s var(--ease), background-color .18s var(--ease);
+}
+.omi-lang button + button { border-left: 1px solid var(--line-2); }
+.omi-lang button:hover { color: var(--foam); background: rgba(138,155,174,.08); }
+.omi-lang button[aria-pressed="true"] { background: var(--signal); color: var(--signal-ink); cursor: default; }
+.omi-lang button:focus-visible { outline: 2px solid var(--signal); outline-offset: -2px; }
+@media (max-width: 1180px) {
+  body .header-right .omi-lang { position: absolute; top: 12px; right: clamp(16px, 3vw, 40px); }
+  body > .header .header-meta { right: calc(clamp(16px, 3vw, 40px) + 84px); }
+}
+@media (max-width: 640px) {
+  body .header-title { padding-right: 76px; }
+  body .header-title h1 { min-width: 0; }
+  body .header-title h1 a { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .omi-lang button { min-width: 30px; padding: 0 6px; }
+}

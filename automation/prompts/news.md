@@ -14,12 +14,18 @@
    ```json
    {"id": <next_id부터 1씩>, "date": "YYYY-MM-DD", "sector": "Drilling|FPSO/FLNG|E&P/CAPEX",
     "category": "Contract|Earnings|Fleet|M&A|Outlook", "title": "영문 제목 80자 이내",
-    "summary": "한국어 2~3문장 요약", "companies": ["회사명"], "source": "매체명", "url": "https://..."}
+    "summary": "한국어 2~3문장 요약", "summary_en": "같은 내용의 영어 요약", "companies": ["회사명"], "source": "매체명", "url": "https://..."}
    ```
    - summary는 RSS 설명만으로 사실관계(금액, 리그명, 기간 등)가 불분명하면 WebFetch로 기사 본문을 확인해 쓴다. 확인 안 된 수치는 쓰지 않는다.
    - sector 기준: Drilling = 드릴십·반잠수식·잭업 계약/실적/시장, FPSO/FLNG = 부유식 생산설비, E&P/CAPEX = 운영사 투자·FID·전망.
 4. 후보가 없거나 중요한 기사가 없으면 추가하지 않는다(`updated`만 오늘로).
 5. `updated`를 오늘 날짜로 바꾸고 `python3 scripts/check_data.py`로 ERROR 0 확인.
+
+## 영문 필드 (KO/EN 전환)
+- 사이트에 한국어/영어 전환 스위치가 있다. 한국어로 쓰거나 고친 텍스트 필드에는 같은 객체에 `<필드>_en` 영문 번역을 함께 쓴다. 예: `notes` → `notes_en`, `summary` → `summary_en`, 문자열 목록 `highlights` → 같은 길이·같은 순서의 `highlights_en`.
+- 한국어 원문을 고치면 `_en`도 함께 고친다. 수치·고유명사·날짜는 원문과 정확히 일치해야 한다(번역 과정에서 사실을 더하거나 빼지 않는다).
+- 이미 영어인 필드에는 `_en`을 만들지 않는다.
+- `python3 scripts/check_data.py`가 `_en` 누락을 NOTE로 알려 준다. 담당 파일의 `_en` 누락 NOTE는 0이어야 한다.
 
 ## 보고 (한국어, 짧게)
 - 추가한 기사(날짜 · 제목 · sector/category), 후보 수, 제외 사유 요약

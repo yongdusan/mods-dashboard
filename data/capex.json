@@ -24,7 +24,8 @@
           "total_capex_busd": 13.0,
           "upstream_capex_busd": 11.7,
           "source": "Q2 2026 Results (Jul 22, 2026) — 2026 organic capex ~$13B 유지",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/0001140625/000114062526000025/equinorfinancialstatements.htm"
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001140625/000114062526000025/equinorfinancialstatements.htm",
+          "source_en": "Q2 2026 Results (Jul 22, 2026) — 2026 organic capex ~$13B maintained"
         }
       ],
       "upstream_focus": "NCS, Brazil deepwater, international",
@@ -55,8 +56,11 @@
               "peak_year": "2023",
               "vessel": "플랫폼 A·B·C·D (Aibel/Kværner 건조)",
               "rig_demand": "반잠수식 리그 1~2기 — Phase 3 개발정 시추 2026~2027년",
-              "source": "Equinor IR / Johan Sverdrup Project Page"
-            }
+              "source": "Equinor IR / Johan Sverdrup Project Page",
+              "vessel_en": "Platforms A, B, C, D (built by Aibel/Kværner)",
+              "rig_demand_en": "1–2 semisubmersible rigs — Phase 3 development drilling 2026–2027"
+            },
+            "notes_en": "Largest field on the NCS. Phases 1+2 producing. Phase 3: 8 new wells, targeting 40–50 million boe of additional recovery."
           },
           {
             "name": "Bacalhau (Brazil)",
@@ -78,8 +82,11 @@
               "peak_year": "2026",
               "vessel": "Bacalhau FPSO (SBM Offshore 건조)",
               "rig_demand": "드릴십 1기 — 개발정 추가 시추 및 생산 안정화",
-              "source": "Equinor IR / Offshore Magazine"
-            }
+              "source": "Equinor IR / Offshore Magazine",
+              "vessel_en": "Bacalhau FPSO (built by SBM Offshore)",
+              "rig_demand_en": "1 drillship — additional development wells and production stabilization"
+            },
+            "notes_en": "Santos Basin. First oil 2025. Ramping up toward 220 kboed in 2026. Equinor 35% op."
           },
           {
             "name": "Bay du Nord (Canada)",
@@ -100,8 +107,13 @@
               "peak_year": "2033",
               "vessel": "FPSO (미정)",
               "rig_demand": "드릴십 1기 — 탐사/평가 시추 2029년 착수 예정",
-              "source": "Equinor IR / Canada.ca (2026.03)"
-            }
+              "source": "Equinor IR / Canada.ca (2026.03)",
+              "fid_en": "2027 (planned)",
+              "first_oil_en": "2031 (planned)",
+              "vessel_en": "FPSO (TBD)",
+              "rig_demand_en": "1 drillship — exploration/appraisal drilling expected to start 2029"
+            },
+            "notes_en": "Newfoundland deepwater. FID targeted 2027. First oil 2031. Exploration/development drilling contracts to start 2029."
           },
           {
             "name": "Troll Field (NCS)",
@@ -125,8 +137,11 @@
               "peak_year": "2001",
               "vessel": "Troll A (콘크리트 GBS), Troll B·C (반잠수식 FPU)",
               "rig_demand": "반잠수식 리그 1기 — 유지보수 시추 연간 5~8공",
-              "source": "Equinor IR / NPD"
-            }
+              "source": "Equinor IR / NPD",
+              "vessel_en": "Troll A (concrete GBS), Troll B and C (semisubmersible FPUs)",
+              "rig_demand_en": "1 semisubmersible rig — 5–8 maintenance wells per year"
+            },
+            "notes_en": "Largest gas field on the NCS. Troll A, B and C platforms. Targeting production into the 2040s."
           },
           {
             "name": "Johan Castberg (Barents Sea)",
@@ -148,8 +163,11 @@
               "peak_year": "2026",
               "vessel": "Johan Castberg FPSO (Aker Solutions, 30년 설계 수명)",
               "rig_demand": "반잠수식 리그 1기 — 인필 시추 및 유지보수 연 3~5공",
-              "source": "Equinor IR / Norwegian Petroleum Directorate"
-            }
+              "source": "Equinor IR / Norwegian Petroleum Directorate",
+              "vessel_en": "Johan Castberg FPSO (Aker Solutions, 30-year design life)",
+              "rig_demand_en": "1 semisubmersible rig — 3–5 infill and maintenance wells per year"
+            },
+            "notes_en": "Largest development in the Barents Sea. First oil January 2024. Reserves 650 MMboe. Operated by Equinor."
           }
         ],
         "drilling_highlights": [
@@ -157,8 +175,15 @@
           "Bacalhau 생산 안정화를 위한 추가 개발정 시추 — 드릴십 1기 운용",
           "NCS 플랫폼 드릴링(Troll, Oseberg, Gullfaks) — 반잠수식·잭업 복합 운용",
           "Bay du Nord 탐사 드릴링 2029 착수, 현재 FID 전 평가 시추 검토 중"
+        ],
+        "drilling_highlights_en": [
+          "Johan Sverdrup Phase 3 — 8 development wells drilled 2026–2027 with a semisubmersible rig",
+          "Additional development wells to stabilize Bacalhau production — 1 drillship",
+          "NCS platform drilling (Troll, Oseberg, Gullfaks) — mix of semisubmersibles and jack-ups",
+          "Bay du Nord exploration drilling to start 2029; pre-FID appraisal drilling currently under review"
         ]
-      }
+      },
+      "notes_en": "2026 organic capex ~$13B. NCS 60% + international O&G 30% + Power 10%. O&G investment held at ~$10B/year. Renewables budget cut by $4B (2026–27). Record 2025 production of 2.14 Mboe/d."
     },
     {
       "name": "ExxonMobil",
@@ -183,7 +208,8 @@
           "total_capex_busd": 28.0,
           "upstream_capex_busd": 21.0,
           "source": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $27–29B 유지(중간값)",
-          "source_url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1208/exxonmobil-announces-second-quarter-2026-results"
+          "source_url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1208/exxonmobil-announces-second-quarter-2026-results",
+          "source_en": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $27–29B maintained (midpoint)"
         }
       ],
       "upstream_focus": "Guyana, Permian, deepwater",
@@ -212,8 +238,10 @@
               "peak_year": "2025",
               "vessel": "One Guyana FPSO (SBM Offshore)",
               "rig_demand": "드릴십 2기 장기 계약 — 개발정 지속 시추",
-              "source": "ExxonMobil IR / Offshore Magazine"
-            }
+              "source": "ExxonMobil IR / Offshore Magazine",
+              "rig_demand_en": "2 drillships on long-term contracts — continuous development drilling"
+            },
+            "notes_en": "4th Stabroek FPSO. First oil 2024. XOM 45% op."
           },
           {
             "name": "Hammerhead (Guyana)",
@@ -235,8 +263,11 @@
               "peak_year": "2028",
               "vessel": "Jaguar FPSO (SBM Offshore)",
               "rig_demand": "드릴십 2기 — 2025~2027년 집중 개발 시추",
-              "source": "ExxonMobil IR / Rystad Energy"
-            }
+              "source": "ExxonMobil IR / Rystad Energy",
+              "first_oil_en": "2027 (planned)",
+              "rig_demand_en": "2 drillships — intensive development drilling 2025–2027"
+            },
+            "notes_en": "5th Stabroek development. FID 2024. First oil targeted 2027."
           },
           {
             "name": "Whiptail (Guyana)",
@@ -258,8 +289,13 @@
               "peak_year": null,
               "vessel": "FPSO (미정)",
               "rig_demand": "FID 후 드릴십 1~2기 추가 소요 예상",
-              "source": "ExxonMobil 2026 Investor Day"
-            }
+              "source": "ExxonMobil 2026 Investor Day",
+              "fid_en": "2026 (planned)",
+              "first_oil_en": "2029+ (planned)",
+              "vessel_en": "FPSO (TBD)",
+              "rig_demand_en": "1–2 additional drillships expected after FID"
+            },
+            "notes_en": "6th Stabroek development. Under technical evaluation."
           },
           {
             "name": "Permian Basin",
@@ -278,8 +314,11 @@
               "peak_year": "2030+",
               "vessel": "육상 (Shale/Tight Oil)",
               "rig_demand": "육상 시추 리그 연 약 1,000정 — MODU 수요 없음",
-              "source": "ExxonMobil 2030 Plan / Pioneer Acquisition"
-            }
+              "source": "ExxonMobil 2030 Plan / Pioneer Acquisition",
+              "vessel_en": "Onshore (shale/tight oil)",
+              "rig_demand_en": "Land rigs, ~1,000 wells per year — no MODU demand"
+            },
+            "notes_en": "Net production 1.4 Mboe/d after Pioneer integration. Target 2 Mboe/d by 2030."
           },
           {
             "name": "Anchor (GOM)",
@@ -300,8 +339,11 @@
               "peak_year": "2026",
               "vessel": "Anchor Semi-FPS (Kiewit 건조)",
               "rig_demand": "드릴십 1기 — 유지보수 시추 연 2~3공",
-              "source": "Chevron IR / OE Digital"
-            }
+              "source": "Chevron IR / OE Digital",
+              "vessel_en": "Anchor semi-FPS (built by Kiewit)",
+              "rig_demand_en": "1 drillship — 2–3 maintenance wells per year"
+            },
+            "notes_en": "20,000 psi high-pressure reservoir. Industry-first application of 15,000 psi subsea equipment."
           },
           {
             "name": "Papua LNG (PNG)",
@@ -323,8 +365,13 @@
               "peak_year": "2032",
               "vessel": "육상 LNG 트레인 3기 (신설)",
               "rig_demand": "해상 가스전 개발정 시추 — 잭업/반잠수식 리그 2기 예상",
-              "source": "ExxonMobil IR / TotalEnergies IR 2025"
-            }
+              "source": "ExxonMobil IR / TotalEnergies IR 2025",
+              "fid_en": "2025 (planned)",
+              "first_oil_en": "2030 (first LNG, planned)",
+              "vessel_en": "3 onshore LNG trains (new)",
+              "rig_demand_en": "Offshore gas field development drilling — 2 jack-up/semisub rigs expected"
+            },
+            "notes_en": "Papua New Guinea LNG, 3 trains, 12 Mtpa target. Operated by TotalEnergies, XOM 37.1% stake. FID 2025."
           }
         ],
         "drilling_highlights": [
@@ -333,8 +380,16 @@
           "Permian 연간 시추 약 1,000정 규모 유지",
           "GOM 심해 탐사정 2~3공 계획",
           "2030년까지 Stabroek 블록에서 6개 FPSO 운영 목표"
+        ],
+        "drilling_highlights_en": [
+          "2026 focus on Guyana Hammerhead development drilling — 2 drillships on long-term contracts",
+          "Preparing to start drilling at Papua LNG offshore gas fields — rig contract discussions under way",
+          "Permian drilling maintained at ~1,000 wells per year",
+          "2–3 GOM deepwater exploration wells planned",
+          "Target of 6 FPSOs operating on the Stabroek Block by 2030"
         ]
-      }
+      },
+      "notes_en": "2026 guidance raised to $28–33B on completion of the Pioneer integration and the start of Guyana Yellowtail production. Upstream share ~75%. Record Permian production of 4.7 Mboe/d. 2026 guidance range $27–29B (reconfirmed at Q2). Upstream estimated by applying the previous share (75%)."
     },
     {
       "name": "Shell",
@@ -359,7 +414,8 @@
           "total_capex_busd": 25.0,
           "upstream_capex_busd": 17.0,
           "source": "Q2 2026 Results (Aug 7, 2026) — 2026 cash capex $24–26B 유지(중간값, ARC Resources 인수 ~$4B 포함)",
-          "source_url": "https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-publishes-second-quarter-2026-press-/9694970"
+          "source_url": "https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-publishes-second-quarter-2026-press-/9694970",
+          "source_en": "Q2 2026 Results (Aug 7, 2026) — 2026 cash capex $24–26B maintained (midpoint; includes ~$4B ARC Resources acquisition)"
         }
       ],
       "upstream_focus": "deepwater, LNG",
@@ -388,8 +444,12 @@
               "peak_year": "2028",
               "vessel": "Gato do Mato FPSO (Saipem 건조)",
               "rig_demand": "드릴십 1기 — 개발정 시추 2025~2027년",
-              "source": "Shell IR / Upstream Online"
-            }
+              "source": "Shell IR / Upstream Online",
+              "first_oil_en": "2027 (planned)",
+              "vessel_en": "Gato do Mato FPSO (built by Saipem)",
+              "rig_demand_en": "1 drillship — development drilling 2025–2027"
+            },
+            "notes_en": "Santos Basin. Shell 50% op. First oil targeted 2027."
           },
           {
             "name": "Raia (Brazil)",
@@ -410,8 +470,13 @@
               "peak_year": null,
               "vessel": "미정",
               "rig_demand": "드릴십 1기 — 추가 평가정 시추 예정",
-              "source": "Shell IR / Offshore Magazine"
-            }
+              "source": "Shell IR / Offshore Magazine",
+              "fid_en": "TBD",
+              "first_oil_en": "2030+ (planned)",
+              "vessel_en": "TBD",
+              "rig_demand_en": "1 drillship — further appraisal wells planned"
+            },
+            "notes_en": "Santos Basin exploration block. Large gas discovery."
           },
           {
             "name": "Whale (GOM)",
@@ -432,8 +497,11 @@
               "peak_year": "2025",
               "vessel": "Appomattox Hull 타이백 (FPS)",
               "rig_demand": "드릴십 1기 — 유지보수 시추 연 2~3공",
-              "source": "Shell IR / OE Digital"
-            }
+              "source": "Shell IR / OE Digital",
+              "vessel_en": "Tie-back to the Appomattox hull (FPS)",
+              "rig_demand_en": "1 drillship — 2–3 maintenance wells per year"
+            },
+            "notes_en": "Shell 60% op. First oil 2023. Appomattox tie-back."
           },
           {
             "name": "Bonga North (Nigeria)",
@@ -456,7 +524,10 @@
               "peak_year": "2029",
               "vessel": "Bonga North FPSO (신조)",
               "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추",
-              "source": "Shell IR / Upstream Online"
+              "source": "Shell IR / Upstream Online",
+              "first_oil_en": "2028 (planned)",
+              "vessel_en": "Bonga North FPSO (newbuild)",
+              "rig_demand_en": "1 drillship — development drilling 2026–2028"
             }
           },
           {
@@ -480,8 +551,12 @@
               "peak_year": "2030",
               "vessel": "Prelude FLNG (Shell, 세계 최대 FLNG)",
               "rig_demand": "반잠수식 리그 1기 — 개발정 시추 2026~2027년",
-              "source": "Shell IR / Offshore Energy"
-            }
+              "source": "Shell IR / Offshore Energy",
+              "first_oil_en": "2028 (first gas, planned)",
+              "vessel_en": "Prelude FLNG (Shell, world's largest FLNG)",
+              "rig_demand_en": "1 semisubmersible rig — development drilling 2026–2027"
+            },
+            "notes_en": "Browse Basin gas field. Supplies feed gas to Prelude FLNG. FID 2022. First gas targeted 2028."
           }
         ],
         "drilling_highlights": [
@@ -489,8 +564,15 @@
           "GOM deepwater 탐사/개발 연 3~4공",
           "Nigeria deepwater Bonga North 개발 착수 준비",
           "2026년 upstream 드릴링 예산 $3.5B 추정"
+        ],
+        "drilling_highlights_en": [
+          "Brazil Santos Basin drilling campaign continues — 2 drillships",
+          "GOM deepwater exploration/development, 3–4 wells per year",
+          "Preparing to start Nigeria deepwater Bonga North development",
+          "2026 upstream drilling budget estimated at $3.5B"
         ]
-      }
+      },
+      "notes_en": "Upstream share ~68%. Focused on Brazil, GOM and Nigeria deepwater. LNG portfolio maintained. 2026 guidance raised to $24–26B (midpoint $25B) — reflects the ARC Resources acquisition ($4B). 2027–2028 guidance expected to return to $20–22B. 2026 cash capex $24–26B (including ~$4B for ARC), targeting $20–22B per year in 2027–28."
     },
     {
       "name": "bp",
@@ -515,7 +597,8 @@
           "total_capex_busd": 13.75,
           "upstream_capex_busd": 10.6,
           "source": "Q2 2026 Results (Aug 2026) — 2026 capex $13.5–14B로 상향(중간값)",
-          "source_url": "https://www.nasdaq.com/articles/bp-q2-earnings-beat-estimates-strong-refining-margins-pricing"
+          "source_url": "https://www.nasdaq.com/articles/bp-q2-earnings-beat-estimates-strong-refining-margins-pricing",
+          "source_en": "Q2 2026 Results (Aug 2026) — 2026 capex raised to $13.5–14B (midpoint)"
         }
       ],
       "upstream_focus": "GOM, North Sea, Azerbaijan",
@@ -544,8 +627,11 @@
               "peak_year": "2025",
               "vessel": "Argos Semi-FPS (Technip Energies 건조)",
               "rig_demand": "드릴십 1기 — 유지보수 시추 연 3~4공",
-              "source": "bp IR / OE Digital"
-            }
+              "source": "bp IR / OE Digital",
+              "vessel_en": "Argos semi-FPS (built by Technip Energies)",
+              "rig_demand_en": "1 drillship — 3–4 maintenance wells per year"
+            },
+            "notes_en": "First oil 2023. bp 60.5% op. 500 million barrels of reserves."
           },
           {
             "name": "Kaskida (GOM)",
@@ -564,8 +650,12 @@
               "peak_year": "2029",
               "vessel": "FPS (설계 중)",
               "rig_demand": "드릴십 1기 (20,000psi 장비) — 2026~2028년 개발정",
-              "source": "bp IR / Offshore Magazine"
-            }
+              "source": "bp IR / Offshore Magazine",
+              "first_oil_en": "2028 (planned)",
+              "vessel_en": "FPS (in design)",
+              "rig_demand_en": "1 drillship (20,000 psi equipment) — development wells 2026–2028"
+            },
+            "notes_en": "High-pressure deepwater development. FID 2024. First oil targeted 2028."
           },
           {
             "name": "ACG Expansion (Azerbaijan)",
@@ -592,8 +682,11 @@
               "peak_year": "2010",
               "vessel": "Central Azeri / West Azeri / East Azeri 플랫폼",
               "rig_demand": "잭업 리그 2기 — 수평정 및 유지보수 시추",
-              "source": "bp IR / AIOC"
-            }
+              "source": "bp IR / AIOC",
+              "vessel_en": "Central Azeri / West Azeri / East Azeri platforms",
+              "rig_demand_en": "2 jack-up rigs — horizontal and maintenance drilling"
+            },
+            "notes_en": "Azeri-Chirag-Gunashli expansion. Contract extended to 2050."
           },
           {
             "name": "Tangguh Expansion (Indonesia)",
@@ -618,8 +711,11 @@
               "peak_year": null,
               "vessel": "육상 LNG 트레인 3기",
               "rig_demand": "육상/얕은 해상 가스정 시추 — 잭업 1기 간헐적",
-              "source": "bp IR / LNG Industry"
-            }
+              "source": "bp IR / LNG Industry",
+              "vessel_en": "3 onshore LNG trains",
+              "rig_demand_en": "Onshore/shallow-water gas well drilling — 1 jack-up intermittently"
+            },
+            "notes_en": "Train 3 completed. LNG capacity 11.4 Mtpa."
           },
           {
             "name": "North Sea Portfolio",
@@ -640,8 +736,14 @@
               "peak_year": null,
               "vessel": "고정식 플랫폼 다수",
               "rig_demand": "반잠수식·잭업 리그 — 유지보수 시추 연 10~15공",
-              "source": "bp Annual Report 2025"
-            }
+              "source": "bp Annual Report 2025",
+              "partners_en": [
+                "Multiple JV partners"
+              ],
+              "vessel_en": "Multiple fixed platforms",
+              "rig_demand_en": "Semisub and jack-up rigs — 10–15 maintenance wells per year"
+            },
+            "notes_en": "Sustaining productivity of mature assets. Selective investment. Gradual portfolio reduction under review."
           },
           {
             "name": "Azule Energy (Angola)",
@@ -662,8 +764,17 @@
               "peak_year": "2030 (250kboed 목표)",
               "vessel": "다수 FPSO 운용 (Plutão, Saturno, Venus, Marte 등)",
               "rig_demand": "드릴십 2~3기 장기 계약 — 앙골라 deepwater 인필 시추 집중",
-              "source": "bp IR / ENI IR / Azule Energy 2024"
-            }
+              "source": "bp IR / ENI IR / Azule Energy 2024",
+              "partners_en": [
+                "Sonangol (JV by block)"
+              ],
+              "fid_en": "2022 (JV formed)",
+              "first_oil_en": "Combination of existing assets",
+              "peak_year_en": "2030 (250 kboed target)",
+              "vessel_en": "Multiple FPSOs in operation (Plutão, Saturno, Venus, Marte, etc.)",
+              "rig_demand_en": "2–3 drillships on long-term contracts — focused on Angola deepwater infill drilling"
+            },
+            "notes_en": "JV combining bp and ENI Angola assets (formed 2022). 15 licences, ~200 kboed production. Growth target 250 kboed by 2030."
           }
         ],
         "drilling_highlights": [
@@ -672,8 +783,16 @@
           "Azule Energy Angola 드릴링 캠페인 — 드릴십 2기 앙골라 deepwater 운용",
           "2025 CMD: upstream 투자 확대 선언, 재생에너지 예산 대폭 삭감",
           "연간 드릴링 예산 약 $3B 유지 (GOM + Angola 집중)"
+        ],
+        "drilling_highlights_en": [
+          "GOM Kaskida development drilling starts — using 20,000 psi equipment",
+          "Additional ACG wells in Azerbaijan to stabilize production",
+          "Azule Energy Angola drilling campaign — 2 drillships in Angola deepwater",
+          "2025 CMD: pledged higher upstream investment and deep cuts to the renewables budget",
+          "Annual drilling budget maintained at ~$3B (focused on GOM + Angola)"
         ]
-      }
+      },
+      "notes_en": "Upstream (O&G) share ~77%. Cutting renewables investment and refocusing on upstream. FY2026 guidance raised to $13.5–14.0B (Q2 2026; was $13.0–13.5B) — reflects decision to delay asset farm-downs; total is the range midpoint, upstream estimated by applying the previous share (~77%)."
     },
     {
       "name": "Chevron",
@@ -698,7 +817,8 @@
           "total_capex_busd": 18.5,
           "upstream_capex_busd": 14.0,
           "source": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $18–19B, 하단 예상",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/0000093410/000009341026000162/a06302026ex9918-k.htm"
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000093410/000009341026000162/a06302026ex9918-k.htm",
+          "source_en": "Q2 2026 Results (Jul 31, 2026) — 2026 capex $18–19B, expected at the low end"
         }
       ],
       "upstream_focus": "Permian, Kazakhstan, GOM, Guyana",
@@ -727,8 +847,10 @@
               "peak_year": "2027+",
               "vessel": "Liza Destiny / Liza Unity / One Guyana FPSO",
               "rig_demand": "드릴십 3~4기 동시 운용 — 세계 최대 deepwater 드릴링 캠페인",
-              "source": "Chevron IR / Hess Acquisition Filing"
-            }
+              "source": "Chevron IR / Hess Acquisition Filing",
+              "rig_demand_en": "3–4 drillships operating simultaneously — the world's largest deepwater drilling campaign"
+            },
+            "notes_en": "30% stake acquired through the Hess acquisition. Liza I, II and Yellowtail in operation."
           },
           {
             "name": "TCO / Tengiz Expansion (Kazakhstan)",
@@ -751,8 +873,11 @@
               "peak_year": "2026+",
               "vessel": "육상 (Chevron Technology Center 설계)",
               "rig_demand": "육상 시추 리그 — MODU 수요 없음",
-              "source": "Chevron IR / TCO"
-            }
+              "source": "Chevron IR / TCO",
+              "vessel_en": "Onshore (designed by Chevron Technology Center)",
+              "rig_demand_en": "Land rigs — no MODU demand"
+            },
+            "notes_en": "TCO FGP-WPMP completed. Target 750,000 b/d. CVX 50% stake."
           },
           {
             "name": "Permian Basin",
@@ -771,8 +896,11 @@
               "peak_year": "2027+",
               "vessel": "육상 (Shale)",
               "rig_demand": "육상 시추 리그 연 600정 — MODU 수요 없음",
-              "source": "Chevron 2026 Capital Budget"
-            }
+              "source": "Chevron 2026 Capital Budget",
+              "vessel_en": "Onshore (shale)",
+              "rig_demand_en": "Land rigs, 600 wells per year — no MODU demand"
+            },
+            "notes_en": "Targeting over 1 million boed within 2026. About 600 wells drilled per year."
           },
           {
             "name": "Anchor / Ballymore (GOM)",
@@ -793,8 +921,11 @@
               "peak_year": "2027",
               "vessel": "Anchor Semi-FPS / Ballymore FPSO",
               "rig_demand": "드릴십 1기 — 개발정 시추 및 생산 램프업",
-              "source": "Chevron IR / OE Digital"
-            }
+              "source": "Chevron IR / OE Digital",
+              "first_oil_en": "2025 (planned)",
+              "rig_demand_en": "1 drillship — development drilling and production ramp-up"
+            },
+            "notes_en": "Ballymore FID 2023. First oil targeted 2025. CVX 40% op."
           },
           {
             "name": "Aphrodite (Cyprus)",
@@ -816,8 +947,13 @@
               "peak_year": null,
               "vessel": "FPSO 또는 파이프라인 연결 미정",
               "rig_demand": "드릴십 1기 — FID 후 개발정 시추 착수",
-              "source": "Chevron IR / S&P Global"
-            }
+              "source": "Chevron IR / S&P Global",
+              "fid_en": "2025 (planned)",
+              "first_oil_en": "2029+ (planned)",
+              "vessel_en": "FPSO or pipeline connection TBD",
+              "rig_demand_en": "1 drillship — development drilling to start after FID"
+            },
+            "notes_en": "Eastern Mediterranean gas field. CVX 35% op. LNG or pipeline export under review."
           },
           {
             "name": "Pony (GOM)",
@@ -838,8 +974,13 @@
               "peak_year": null,
               "vessel": "Semi-FPS 또는 FPSO (검토 중)",
               "rig_demand": "드릴십 1기 (고압 Norphlet 능력 필수) — FID 전 추가 평가정 시추 예정",
-              "source": "Chevron IR / Offshore Magazine 2024"
-            }
+              "source": "Chevron IR / Offshore Magazine 2024",
+              "fid_en": "2026 (expected)",
+              "first_oil_en": "2030+ (expected)",
+              "vessel_en": "Semi-FPS or FPSO (under review)",
+              "rig_demand_en": "1 drillship (high-pressure Norphlet capability required) — further appraisal wells planned before FID"
+            },
+            "notes_en": "Large GOM deepwater discovery. CVX 80% op. Preparing for FID in 2026. Norphlet sandstone (~20,000 ft)."
           }
         ],
         "drilling_highlights": [
@@ -848,8 +989,16 @@
           "GOM Ballymore 개발정 시추 완료, production ramp-up",
           "Pony 추가 평가정 시추 — 고압 UDW 드릴십 필요",
           "Kazakhstan TCO 증산에 따른 공정 최적화 중심 투자"
+        ],
+        "drilling_highlights_en": [
+          "Guyana Stabroek drilling accelerating — participating in Hammerhead development wells",
+          "Permian drilling maintained at ~600 wells per year",
+          "GOM Ballymore development drilling completed, production ramping up",
+          "Additional Pony appraisal drilling — requires a high-pressure UDW drillship",
+          "Investment focused on process optimization following the Kazakhstan TCO expansion"
         ]
-      }
+      },
+      "notes_en": "Upstream share ~76%. Reflects the Guyana stake (30%) gained through the Hess acquisition. 2026 guidance raised sharply to $18–19B. At Q2 results, 2026 capex expected at the low end of the $18–19B range (Quartr summary). H1 spend $8.6B."
     },
     {
       "name": "TotalEnergies",
@@ -874,7 +1023,8 @@
           "total_capex_busd": 15.0,
           "upstream_capex_busd": 10.0,
           "source": "Q2 2026 Results (Jul 23, 2026) — 2026 net investments $15B 유지",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/0000879764/000110465926089374/tm2621809d1_ex99-7.htm"
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000879764/000110465926089374/tm2621809d1_ex99-7.htm",
+          "source_en": "Q2 2026 Results (Jul 23, 2026) — 2026 net investments $15B maintained"
         }
       ],
       "upstream_focus": "Africa deepwater, Middle East, Brazil",
@@ -904,8 +1054,11 @@
               "peak_year": "2028",
               "vessel": "Kaminho FPSO (SBM Offshore)",
               "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 개발정 시추",
-              "source": "TotalEnergies IR / Upstream Online"
-            }
+              "source": "TotalEnergies IR / Upstream Online",
+              "first_oil_en": "2027 (planned)",
+              "rig_demand_en": "1 dedicated drillship — development drilling 2025–2027"
+            },
+            "notes_en": "Block 20/11. TTE 40% op. First oil targeted 2027."
           },
           {
             "name": "Venus (Namibia)",
@@ -928,8 +1081,14 @@
               "peak_year": "2032–2035 (예상)",
               "vessel": "FPSO (설계 준비 중)",
               "rig_demand": "드릴십 2~3기 — 추가 평가정 및 개발정 계획, 시장 최고급 UDW 리그 필요",
-              "source": "TotalEnergies IR / Offshore Magazine 2024"
-            }
+              "source": "TotalEnergies IR / Offshore Magazine 2024",
+              "fid_en": "2026 (expected)",
+              "first_oil_en": "2030+ (expected)",
+              "peak_year_en": "2032–2035 (expected)",
+              "vessel_en": "FPSO (design in preparation)",
+              "rig_demand_en": "2–3 drillships — further appraisal and development wells planned; requires top-tier UDW rigs"
+            },
+            "notes_en": "Orange Basin Block 2913B. Estimated ~3 Bboe of resources — Africa's largest deepwater discovery in decades. Preparing for FID."
           },
           {
             "name": "Ikike (Nigeria)",
@@ -951,8 +1110,11 @@
               "peak_year": "2024",
               "vessel": "고정식 플랫폼",
               "rig_demand": "잭업 리그 — 유지보수 시추 연 2~3공",
-              "source": "TotalEnergies IR"
-            }
+              "source": "TotalEnergies IR",
+              "vessel_en": "Fixed platform",
+              "rig_demand_en": "Jack-up rig — 2–3 maintenance wells per year"
+            },
+            "notes_en": "OML 99. TTE 24% stake. First oil 2022."
           },
           {
             "name": "Mero / Libra (Brazil)",
@@ -976,8 +1138,12 @@
               "peak_year": "2027 (Mero 4 완공 후)",
               "vessel": "Mero 1~4 FPSO (순차 투입)",
               "rig_demand": "드릴십 2기 — Mero 3·4 개발정 시추 진행 중",
-              "source": "TotalEnergies IR / Petrobras"
-            }
+              "source": "TotalEnergies IR / Petrobras",
+              "peak_year_en": "2027 (after Mero 4 completion)",
+              "vessel_en": "Mero 1–4 FPSOs (deployed in sequence)",
+              "rig_demand_en": "2 drillships — Mero 3 and 4 development drilling under way"
+            },
+            "notes_en": "Santos Basin pre-salt. TTE 20%. Mero 3 and 4 FPSOs coming on stream in sequence."
           },
           {
             "name": "Al Shaheen (Qatar)",
@@ -998,8 +1164,11 @@
               "peak_year": "2026",
               "vessel": "고정식 플랫폼 다수 + FPSO",
               "rig_demand": "잭업 리그 2~3기 — 유지보수 및 인필 시추",
-              "source": "TotalEnergies IR / Offshore Magazine"
-            }
+              "source": "TotalEnergies IR / Offshore Magazine",
+              "vessel_en": "Multiple fixed platforms + FPSO",
+              "rig_demand_en": "2–3 jack-up rigs — maintenance and infill drilling"
+            },
+            "notes_en": "Qatar's largest offshore oil field. TTE 30% op. Long-term contract renewed in 2024."
           },
           {
             "name": "Grand Tortue Ahmeyim LNG (GTA)",
@@ -1022,8 +1191,11 @@
               "peak_year": "2025 (Phase 1) / 2030 (Phase 2)",
               "vessel": "Golar Tundra FLNG (임차, Phase 1)",
               "rig_demand": "드릴십 1기 — Phase 2 개발정 시추 2026~2027년 예상",
-              "source": "TotalEnergies IR / Offshore Energy"
-            }
+              "source": "TotalEnergies IR / Offshore Energy",
+              "vessel_en": "Golar Tundra FLNG (chartered, Phase 1)",
+              "rig_demand_en": "1 drillship — Phase 2 development drilling expected 2026–2027"
+            },
+            "notes_en": "LNG project on the Senegal–Mauritania maritime border. Phase 1 first LNG 2024. Preparing for Phase 2 FID."
           }
         ],
         "drilling_highlights": [
@@ -1032,8 +1204,16 @@
           "Namibia Venus 추가 평가정 시추 — UDW 드릴십 필요",
           "GTA Phase 2 FID 준비 — 드릴십 수요 2026년 후반 예상",
           "Africa deepwater 탐사 캠페인 유지 — 연 2~3공"
+        ],
+        "drilling_highlights_en": [
+          "Angola Kaminho development drilling starts — 1 dedicated drillship",
+          "Continued drilling of development wells linked to Brazil Mero 3 and 4",
+          "Further appraisal drilling at Namibia Venus — requires a UDW drillship",
+          "Preparing for GTA Phase 2 FID — drillship demand expected in late 2026",
+          "Africa deepwater exploration campaign maintained — 2–3 wells per year"
         ]
-      }
+      },
+      "notes_en": "Upstream share ~67%. Low-carbon/integrated power ~$3B separately. 2026 net capex cut further to $15B (was $16B) — $1B/year reduction as part of a $7.5B cost-savings program. Focused on Angola, Nigeria and Congo."
     },
     {
       "name": "Saudi Aramco",
@@ -1058,7 +1238,8 @@
           "total_capex_busd": 52.5,
           "upstream_capex_busd": 35.4,
           "source": "Aramco 2026 guidance $50–55B (중간값) — MEED (Sep 14, 2026): upstream 65–70%",
-          "source_url": "https://guest.meed.com/?p=17823"
+          "source_url": "https://guest.meed.com/?p=17823",
+          "source_en": "Aramco 2026 guidance $50–55B (midpoint) — MEED (Sep 14, 2026): upstream 65–70%"
         }
       ],
       "upstream_focus": "offshore increment, Jafurah gas",
@@ -1084,8 +1265,12 @@
               "peak_year": "2027",
               "vessel": "고정식 해상 플랫폼 + 육상 처리 시설",
               "rig_demand": "잭업 리그 10기 이상 — 2024~2026년 해상 시추 집중",
-              "source": "Aramco IR / Offshore Magazine"
-            }
+              "source": "Aramco IR / Offshore Magazine",
+              "first_oil_en": "2026 (Phase 1, planned)",
+              "vessel_en": "Fixed offshore platforms + onshore processing facilities",
+              "rig_demand_en": "10+ jack-up rigs — intensive offshore drilling 2024–2026"
+            },
+            "notes_en": "$18B program. Offshore + onshore packages. Phase 1 completion expected 2026."
           },
           {
             "name": "Berri Increment",
@@ -1104,8 +1289,12 @@
               "peak_year": "2027",
               "vessel": "고정식 해상 플랫폼",
               "rig_demand": "잭업 리그 5~6기 — Marjan과 병행 드릴링",
-              "source": "Aramco IR"
-            }
+              "source": "Aramco IR",
+              "first_oil_en": "2026 (planned)",
+              "vessel_en": "Fixed offshore platforms",
+              "rig_demand_en": "5–6 jack-up rigs — drilling in parallel with Marjan"
+            },
+            "notes_en": "Linked to the Berri gas field. Developed alongside Marjan. Completion targeted 2026."
           },
           {
             "name": "Jafurah Gas Field",
@@ -1124,8 +1313,12 @@
               "peak_year": "2030",
               "vessel": "육상 가스 처리 시설",
               "rig_demand": "육상 시추 리그 집중 — MODU 수요 없음",
-              "source": "Aramco IR / S&P Global"
-            }
+              "source": "Aramco IR / S&P Global",
+              "first_oil_en": "2025 (Phase 1 gas)",
+              "vessel_en": "Onshore gas processing facilities",
+              "rig_demand_en": "Focused on land rigs — no MODU demand"
+            },
+            "notes_en": "Saudi Arabia's largest unconventional gas field. Target 2 Bcf/d of gas by 2030. Total investment $100B+."
           },
           {
             "name": "Safaniya Field Maintenance",
@@ -1144,8 +1337,12 @@
               "peak_year": "현재",
               "vessel": "고정식 플랫폼 다수 (세계 최대 규모)",
               "rig_demand": "잭업 리그 5~8기 — 유지보수 및 인필 시추 연중 운용",
-              "source": "Aramco IR / Offshore Magazine"
-            }
+              "source": "Aramco IR / Offshore Magazine",
+              "peak_year_en": "Current",
+              "vessel_en": "Multiple fixed platforms (world's largest)",
+              "rig_demand_en": "5–8 jack-up rigs — year-round maintenance and infill drilling"
+            },
+            "notes_en": "World's largest offshore oil field. Investment to replace aging facilities and sustain uptime."
           },
           {
             "name": "Hawiyah NGL Recovery",
@@ -1164,8 +1361,12 @@
               "peak_year": null,
               "vessel": "육상 가스 처리 시설",
               "rig_demand": "MODU 수요 없음",
-              "source": "Aramco IR"
-            }
+              "source": "Aramco IR",
+              "first_oil_en": "2025 (planned)",
+              "vessel_en": "Onshore gas processing facilities",
+              "rig_demand_en": "No MODU demand"
+            },
+            "notes_en": "NGL recovery facilities linked to Jafurah. Supplies petrochemical feedstock."
           },
           {
             "name": "Zuluf Increment",
@@ -1184,8 +1385,12 @@
               "peak_year": "2028",
               "vessel": "해상 플랫폼 다수 (자켓 + 토프사이드)",
               "rig_demand": "잭업 리그 5~8기 — 아라비아만 최대 규모 해상 시추 캠페인",
-              "source": "Saudi Aramco IR / Rystad Energy"
-            }
+              "source": "Saudi Aramco IR / Rystad Energy",
+              "first_oil_en": "2026 (planned)",
+              "vessel_en": "Multiple offshore platforms (jackets + topsides)",
+              "rig_demand_en": "5–8 jack-up rigs — the Arabian Gulf's largest offshore drilling campaign"
+            },
+            "notes_en": "Largest single offshore development in the Arabian Gulf. $10B+. Targets +600,000 b/d. Production start targeted 2026."
           }
         ],
         "drilling_highlights": [
@@ -1194,8 +1399,16 @@
           "2025~2026년 해상 시추 프로그램 사상 최대 규모",
           "Jafurah 비전통 가스전 수평정 대규모 시추 착수",
           "생산능력 1,200만 b/d 유지에 집중"
+        ],
+        "drilling_highlights_en": [
+          "Focus on Marjan Phase 2 offshore platform drilling — many jack-ups on long-term contracts",
+          "Zuluf Increment — 5–8 jack-ups mobilized, the Arabian Gulf's largest drilling campaign",
+          "Largest-ever offshore drilling program in 2025–2026",
+          "Large-scale horizontal drilling starts at the Jafurah unconventional gas field",
+          "Focused on sustaining 12 million b/d production capacity"
         ]
-      }
+      },
+      "notes_en": "Upstream share 60% (stated). Marjan and Berri offshore expansions ($18B program). Includes Jafurah unconventional gas. [Corrected 2026-10-08] 2026 capex guidance $50–55B (previous 50 was the low end); upstream 65–70% (MEED) → upstream midpoint of 67.5% applied. H1 spend $25.3B."
     },
     {
       "name": "ADNOC",
@@ -1220,7 +1433,8 @@
           "total_capex_busd": 30.0,
           "upstream_capex_busd": 21.0,
           "source": "ADNOC 2026–2030 Business Plan (Nov 2025) — 5년 $150B, 연평균 ~$30B (MEES)",
-          "source_url": "https://www.mees.com/2025/11/28/corporate/adnoc-keeps-annual-capex-at-30bn-out-to-2030/ef1f6d00-cc59-11f0-a11c-8766e73c64bc"
+          "source_url": "https://www.mees.com/2025/11/28/corporate/adnoc-keeps-annual-capex-at-30bn-out-to-2030/ef1f6d00-cc59-11f0-a11c-8766e73c64bc",
+          "source_en": "ADNOC 2026–2030 Business Plan (Nov 2025) — $150B over 5 years, ~$30B annual average (MEES)"
         }
       ],
       "upstream_focus": "offshore UAE, sour gas",
@@ -1246,8 +1460,12 @@
               "peak_year": null,
               "vessel": "기존 Umm Shaif 플랫폼 증설",
               "rig_demand": "잭업 리그 2기 — 개발정 시추 2025~2027년",
-              "source": "ADNOC IR / Offshore Magazine"
-            }
+              "source": "ADNOC IR / Offshore Magazine",
+              "first_oil_en": "2027 (planned)",
+              "vessel_en": "Expansion of existing Umm Shaif platforms",
+              "rig_demand_en": "2 jack-up rigs — development drilling 2025–2027"
+            },
+            "notes_en": "Gas cap development. ADNOC Offshore op. Completion targeted 2027."
           },
           {
             "name": "Abu Dhabi Offshore 2 (ADO-2)",
@@ -1266,8 +1484,12 @@
               "peak_year": "2028",
               "vessel": "신규 해상 플랫폼",
               "rig_demand": "잭업 리그 3기 — 신규 블록 시추 집중",
-              "source": "ADNOC IR"
-            }
+              "source": "ADNOC IR",
+              "first_oil_en": "2027 (planned)",
+              "vessel_en": "New offshore platforms",
+              "rig_demand_en": "3 jack-up rigs — focused on new block drilling"
+            },
+            "notes_en": "New offshore block development. ADNOC Offshore 100%."
           },
           {
             "name": "SARB Phase 2",
@@ -1286,8 +1508,12 @@
               "peak_year": "2027",
               "vessel": "고정식 플랫폼 증설",
               "rig_demand": "잭업 리그 2기 — 2024~2026년 개발정 시추",
-              "source": "ADNOC IR / Upstream Online"
-            }
+              "source": "ADNOC IR / Upstream Online",
+              "first_oil_en": "2026 (planned)",
+              "vessel_en": "Fixed platform expansion",
+              "rig_demand_en": "2 jack-up rigs — development drilling 2024–2026"
+            },
+            "notes_en": "Satah Al Razboot expansion. Completion targeted 2026."
           },
           {
             "name": "Belbazem Phase 2",
@@ -1306,8 +1532,12 @@
               "peak_year": "2027",
               "vessel": "고정식 플랫폼",
               "rig_demand": "잭업 리그 1기 — 2024~2026년 개발정 시추",
-              "source": "ADNOC IR"
-            }
+              "source": "ADNOC IR",
+              "first_oil_en": "2026 (planned)",
+              "vessel_en": "Fixed platform",
+              "rig_demand_en": "1 jack-up rig — development drilling 2024–2026"
+            },
+            "notes_en": "Light oil production. Completion expected 2026."
           },
           {
             "name": "Hail & Ghasha (Sour Gas)",
@@ -1330,8 +1560,12 @@
               "peak_year": "2030",
               "vessel": "인공 섬 + 해상 플랫폼 복합",
               "rig_demand": "잭업 리그 3~4기 — 사우어 가스전 집중 시추",
-              "source": "ADNOC IR / ENI IR"
-            }
+              "source": "ADNOC IR / ENI IR",
+              "first_oil_en": "2026 (gas, planned)",
+              "vessel_en": "Artificial islands + offshore platforms",
+              "rig_demand_en": "3–4 jack-up rigs — intensive sour gas field drilling"
+            },
+            "notes_en": "World's largest sour gas field. ENI, Wintershall and OMV participating. Drilling concentrated in 2025–2026."
           }
         ],
         "drilling_highlights": [
@@ -1339,8 +1573,15 @@
           "Hail & Ghasha 사우어 가스전 집중 시추 — 전용 리그 다수 계약",
           "ADO-2 및 SARB Phase 2 개발정 시추 동시 진행",
           "생산능력 500만 b/d 달성을 위한 드릴링 프로그램 가속"
+        ],
+        "drilling_highlights_en": [
+          "Offshore jack-up demand surging in 2025–2026 — the Middle East's largest jack-up market",
+          "Intensive drilling at the Hail & Ghasha sour gas fields — multiple dedicated rigs contracted",
+          "ADO-2 and SARB Phase 2 development drilling under way simultaneously",
+          "Drilling program accelerating to reach 5 million b/d production capacity"
         ]
-      }
+      },
+      "notes_en": "Upstream share ~82%. Umm Shaif, Abu Dhabi Offshore 2 and SARB Phase 2 under way. Production capacity target 5 million b/d (2027). [Corrected 2026-10-08] The previous 2026 figure of $17B had no verified source. 2026–30 plan $150B (~$30B annual average; ADNOC does not disclose by year). Upstream 21.0 estimated by applying the 70% upstream share (AED140bn/200bn) of MEED's 2026–28 project award plan."
     },
     {
       "name": "Petrobras",
@@ -1365,7 +1606,8 @@
           "total_capex_busd": 19.4,
           "upstream_capex_busd": 13.9,
           "source": "Petrobras Business Plan 2026–2030 (Nov 2025) — 2026 capex $19.4B (Energy Intelligence); 5년 $109B",
-          "source_url": "https://www.energyintel.com/0000019a-e55b-d283-abdf-f57bf5370000"
+          "source_url": "https://www.energyintel.com/0000019a-e55b-d283-abdf-f57bf5370000",
+          "source_en": "Petrobras Business Plan 2026–2030 (Nov 2025) — 2026 capex $19.4B (Energy Intelligence); $109B over 5 years"
         }
       ],
       "upstream_focus": "pre-salt deepwater Brazil",
@@ -1391,8 +1633,12 @@
               "peak_year": "2027+",
               "vessel": "P-74/75/76/77 생산 중, P-78/79 건조 중 (MODEC/BW Offshore)",
               "rig_demand": "드릴십 4~5기 전용 장기 계약 — 세계 최대 단일 유전 드릴링 캠페인",
-              "source": "Petrobras IR / Offshore Magazine"
-            }
+              "source": "Petrobras IR / Offshore Magazine",
+              "fid_en": "2016 (initial)",
+              "vessel_en": "P-74/75/76/77 producing, P-78/79 under construction (MODEC/BW Offshore)",
+              "rig_demand_en": "4–5 dedicated drillships on long-term contracts — the world's largest single-field drilling campaign"
+            },
+            "notes_en": "One of the world's largest deepwater fields. FPSOs P-74 to P-79 deployed in sequence. Búzios 11 FID 2025."
           },
           {
             "name": "Tupi / Lula Field",
@@ -1414,8 +1660,10 @@
               "peak_year": "2018",
               "vessel": "P-56/57/58/66/67/68/69 FPSO",
               "rig_demand": "드릴십 2~3기 — 유지보수 및 인필 시추",
-              "source": "Petrobras IR"
-            }
+              "source": "Petrobras IR",
+              "rig_demand_en": "2–3 drillships — maintenance and infill drilling"
+            },
+            "notes_en": "First large pre-salt discovery (2006). Production stabilization and FPSO replacement investment under way."
           },
           {
             "name": "Atapu Field",
@@ -1437,8 +1685,12 @@
               "peak_year": "2030",
               "vessel": "Atapu 3 FPSO (SBM Offshore 유력)",
               "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추",
-              "source": "Petrobras IR / Offshore Magazine"
-            }
+              "source": "Petrobras IR / Offshore Magazine",
+              "first_oil_en": "2028 (planned)",
+              "vessel_en": "Atapu 3 FPSO (SBM Offshore likely)",
+              "rig_demand_en": "1 drillship — development drilling 2026–2028"
+            },
+            "notes_en": "Atapu 3 FPSO FID completed. SBM Offshore likely to win the award."
           },
           {
             "name": "Sepia Field",
@@ -1461,8 +1713,12 @@
               "peak_year": "2029",
               "vessel": "SEAP II FPSO (협상 중)",
               "rig_demand": "드릴십 1기 — 2026~2028년 개발정 시추",
-              "source": "Petrobras IR / SBM Offshore"
-            }
+              "source": "Petrobras IR / SBM Offshore",
+              "first_oil_en": "2027 (planned)",
+              "vessel_en": "SEAP II FPSO (under negotiation)",
+              "rig_demand_en": "1 drillship — development drilling 2026–2028"
+            },
+            "notes_en": "SEAP II FPSO negotiations under way. First oil targeted 2027."
           },
           {
             "name": "Equatorial Margin Exploration",
@@ -1481,8 +1737,13 @@
               "peak_year": null,
               "vessel": "미정",
               "rig_demand": "드릴십 1기 — 탐사 허가 확보 후 시추 착수",
-              "source": "Petrobras IR / Brazilian ANP"
-            }
+              "source": "Petrobras IR / Brazilian ANP",
+              "fid_en": "TBD",
+              "first_oil_en": "2032+ (planned)",
+              "vessel_en": "TBD",
+              "rig_demand_en": "1 drillship — drilling to start once exploration permit is secured"
+            },
+            "notes_en": "Northern offshore exploration. Large discoveries expected. Environmental licensing in progress."
           }
         ],
         "drilling_highlights": [
@@ -1490,8 +1751,15 @@
           "Atapu·Sepia 개발정 시추 착수 — 드릴십 2기 추가 수요",
           "2025~2029년 E&P 드릴링 예산 $111B 중 약 40% 시추 비용 추정",
           "Equatorial Margin 탐사 드릴십 1~2기 별도 계약 예정"
+        ],
+        "drilling_highlights_en": [
+          "8–10 Búzios development wells per year — 4–5 dedicated drillships on long-term contracts",
+          "Atapu and Sépia development drilling starts — demand for 2 additional drillships",
+          "Drilling estimated at ~40% of the $111B 2025–2029 E&P budget",
+          "1–2 drillships to be contracted separately for Equatorial Margin exploration"
         ]
-      }
+      },
+      "notes_en": "E&P share ~79%. Focused on Búzios and Tupi pre-salt. Búzios 11 and Atapu 3 FIDs. SEAP II FPSO negotiations under way. [Corrected 2026-10-08] Previous $21B was based on the 2025–29 plan. 2026–30 plan: $109B over 5 years ($91B in implementation + $18B under evaluation), $19.4B in 2026. E&P share conflicts across sources (64–72%) — upstream 13.9 estimated using 71.6% (World Oil)."
     },
     {
       "name": "PETRONAS",
@@ -1516,7 +1784,8 @@
           "total_capex_busd": null,
           "upstream_capex_busd": 4.1,
           "source": "Indicative — 1H 2026 upstream capex RM8.7B(RHB) 연환산, 공식 FY2026 가이던스 미공시",
-          "source_url": "https://www.thestar.com.my/business/business-news/2026/08/28/petronas-1h-profit-rises-4-to-rm272bil-as-revenue-climbs"
+          "source_url": "https://www.thestar.com.my/business/business-news/2026/08/28/petronas-1h-profit-rises-4-to-rm272bil-as-revenue-climbs",
+          "source_en": "Indicative — 1H 2026 upstream capex RM8.7B (RHB) annualized; no official FY2026 guidance disclosed"
         }
       ],
       "upstream_focus": "Malaysia offshore, LNG",
@@ -1542,8 +1811,12 @@
               "peak_year": "2027",
               "vessel": "플랫폼 + CCS 파이프라인 (연 3.3Mtpa CO₂ 저장)",
               "rig_demand": "잭업 리그 1~2기 — 개발정 및 CO₂ 주입정 시추",
-              "source": "PETRONAS IR / Offshore Energy"
-            }
+              "source": "PETRONAS IR / Offshore Energy",
+              "first_oil_en": "2025 (gas, planned)",
+              "vessel_en": "Platform + CCS pipeline (3.3 Mtpa CO₂ storage)",
+              "rig_demand_en": "1–2 jack-up rigs — development and CO₂ injection wells"
+            },
+            "notes_en": "Malaysia's largest gas field. Includes CCS facilities. Completion targeted 2025."
           },
           {
             "name": "Rosmari-Marjoram (Sarawak)",
@@ -1562,8 +1835,11 @@
               "peak_year": "2025",
               "vessel": "무인 플랫폼 + 해저 파이프라인",
               "rig_demand": "잭업 리그 1기 — 유지보수 시추 간헐적",
-              "source": "PETRONAS IR"
-            }
+              "source": "PETRONAS IR",
+              "vessel_en": "Unmanned platform + subsea pipeline",
+              "rig_demand_en": "1 jack-up rig — intermittent maintenance drilling"
+            },
+            "notes_en": "First gas 2023. Gas supply chain linked to Kasawari."
           },
           {
             "name": "Pan Malaysia Drilling",
@@ -1584,8 +1860,14 @@
               "peak_year": null,
               "vessel": "고정식 플랫폼 200+기",
               "rig_demand": "잭업 리그 10기 이상 연간 장기 계약 — 동남아 최대 잭업 수요처",
-              "source": "PETRONAS Activity Outlook 2026"
-            }
+              "source": "PETRONAS Activity Outlook 2026",
+              "partners_en": [
+                "Multiple PSC partners"
+              ],
+              "vessel_en": "200+ fixed platforms",
+              "rig_demand_en": "10+ jack-up rigs on annual long-term contracts — Southeast Asia's largest jack-up customer"
+            },
+            "notes_en": "Sustaining production from mature fields across Malaysia. Many jack-ups on long-term contracts."
           },
           {
             "name": "RAPID / Pengerang (Downstream)",
@@ -1606,8 +1888,15 @@
               "peak_year": null,
               "vessel": "육상 정제/석화 단지",
               "rig_demand": "MODU 수요 없음",
-              "source": "PETRONAS IR"
-            }
+              "source": "PETRONAS IR",
+              "partners_en": [
+                "Saudi Aramco (50% of PRPC)"
+              ],
+              "first_oil_en": "2019 (refinery start-up)",
+              "vessel_en": "Onshore refining/petrochemical complex",
+              "rig_demand_en": "No MODU demand"
+            },
+            "notes_en": "Integrated downstream complex. Includes some investment linked to upstream crude supply."
           },
           {
             "name": "International Portfolio (Iraq, Canada)",
@@ -1629,8 +1918,16 @@
               "peak_year": null,
               "vessel": "육상 (이라크·캐나다)",
               "rig_demand": "MODU 수요 없음 — 육상 리그 운용",
-              "source": "PETRONAS Annual Report 2025"
-            }
+              "source": "PETRONAS Annual Report 2025",
+              "operator_en": "PETRONAS (multiple JVs)",
+              "partners_en": [
+                "Shell (Canada)",
+                "Iraq South Oil Company"
+              ],
+              "vessel_en": "Onshore (Iraq, Canada)",
+              "rig_demand_en": "No MODU demand — land rigs"
+            },
+            "notes_en": "Iraq Gharraf, Canadian oil sands and others. Overseas assets maintained selectively."
           }
         ],
         "drilling_highlights": [
@@ -1638,8 +1935,15 @@
           "Kasawari 완공 후 신규 가스전 탐사 드릴링 캠페인 착수 예정",
           "Sarawak 심해 탐사 확대 — 드릴십 1기 계약 검토",
           "해외 자산 유지 드릴링 최소화, 국내 집중 전략"
+        ],
+        "drilling_highlights_en": [
+          "Pan Malaysia Drilling — 10+ jack-up rigs on annual long-term contracts (Southeast Asia's largest customer)",
+          "New gas field exploration drilling campaign to start after Kasawari completion",
+          "Expanding Sarawak deepwater exploration — considering a drillship contract",
+          "Minimizing overseas asset drilling; strategy focused on domestic operations"
         ]
-      }
+      },
+      "notes_en": "Upstream share ~65%. Includes Kasawari CCS. Malaysian domestic offshore + LNG. GCC NOCs combined expected at $125B in 2027. [Corrected 2026-10-08] The previous 2026 $13.0B / upstream $8.5B had no verified source. No official annual guidance. 1H 2026 total capex RM41.4B (of which ~RM26B PRefChem equity injection), upstream RM8.7B → annualized ~RM17B ≈ $4.1B (USD/MYR ~4.2). Analysts cite average group capex of RM50–60B per year."
     }
   ],
   "data_quality": {

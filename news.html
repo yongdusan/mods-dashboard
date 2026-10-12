@@ -331,14 +331,21 @@
       font-weight: 500;
     }
     .card-source {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      min-width: 0;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
       font-size: 11px;
       color: var(--text-muted);
       text-decoration: none;
-      white-space: nowrap;
       transition: color 0.15s;
       font-family: var(--font-mono);
     }
-    .card-source:hover { color: var(--accent); }
+    .card-source .src-label { color: var(--text); font-weight: 600; white-space: nowrap; }
+    .card-source .src-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+    .card-source:hover, .card-source:hover .src-label { color: var(--accent); }
 
     /* ─── Empty State ─── */
     .empty-state {
@@ -481,6 +488,9 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+  function hostOf(url) {
+    try { return new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+  }
 
   /* ─── Load Data ─── */
   async function loadData() {
@@ -550,8 +560,8 @@
           <div class="card-toggle">&#9660; more</div>
           <div class="card-footer">
             <div class="card-companies">${companies}</div>
-            <a class="card-source" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.source)} &#8594;</a>
           </div>
+          ${item.url ? `<a class="card-source" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" title="${esc(item.url)}"><span class="src-label">원문 기사</span> <span class="src-name">${esc(item.source)} · ${esc(hostOf(item.url))}</span> &#8599;</a>` : ''}
         </div>`;
     }).join('');
 

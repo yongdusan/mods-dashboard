@@ -10,7 +10,6 @@
         "founded": 1969,
         "hq": "Schiedam, Netherlands",
         "employees": "~7,000",
-        "market_cap_busd": 1.2,
         "credit_rating": "BBB-",
         "business_model": "Lease & Operate (L&O) 전문 — Fast4Ward® 표준화 선체 플랫폼으로 건조 기간을 40개월로 단축",
         "strategy": "브라질 Petrobras 및 가이아나 ExxonMobil 심해 프로젝트 집중. Fast4Ward 표준화로 원가 경쟁력 확보. 2030년까지 운영 FPSO 18기 목표.",
@@ -19,25 +18,29 @@
             "label": "Q1 Trading Update",
             "month": "May",
             "type": "partial",
-            "note": "L&O Revenue only — EBITDA 미공개"
+            "note": "L&O Revenue only — EBITDA 미공개",
+            "note_en": "L&O revenue only — EBITDA not disclosed"
           },
           {
             "label": "H1 Interim Results",
             "month": "Aug",
             "type": "full",
-            "note": "Full P&L (EBITDA, Net Income 공개)"
+            "note": "Full P&L (EBITDA, Net Income 공개)",
+            "note_en": "Full P&L (EBITDA and net income disclosed)"
           },
           {
             "label": "Q3 Trading Update",
             "month": "Nov",
             "type": "partial",
-            "note": "L&O Revenue only — EBITDA 미공개"
+            "note": "L&O Revenue only — EBITDA 미공개",
+            "note_en": "L&O revenue only — EBITDA not disclosed"
           },
           {
             "label": "FY Full-Year Results",
             "month": "Feb",
             "type": "full",
-            "note": "Full P&L + 연간 결산"
+            "note": "Full P&L + 연간 결산",
+            "note_en": "Full P&L + annual accounts"
           }
         ],
         "key_clients": [
@@ -90,7 +93,9 @@
           }
         ],
         "notable": "세계 최대 FPSO 임대운영사. Fast4Ward® 표준화 선체 플랫폼 특허 보유. 가이아나 스타브로크 광구의 핵심 파트너로 4기 운용 중.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "Lease & Operate (L&O) specialist — Fast4Ward® standardized hull platform cuts the build period to 40 months",
+        "strategy_en": "Focused on deepwater projects for Petrobras in Brazil and ExxonMobil in Guyana. Fast4Ward standardization secures cost competitiveness. Targets 18 operating FPSOs by 2030.",
+        "notable_en": "World's largest FPSO lease-and-operate company. Holds patents on the Fast4Ward® standardized hull platform. Key partner on Guyana's Stabroek Block, operating 4 units there."
       },
       "quarters": [
         {
@@ -108,7 +113,14 @@
             "2024 Directional Revenue 가이던스 $6.0B+ 유지 — L&O Revenue $2.3B+ 예상",
             "수주잔량 ~$28B 수준 — 장기 임대 운영 계약 기반 안정적 현금흐름"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "highlights_en": [
+            "Q1 2024 YTD Directional Revenue $871M (+17% YoY) — L&O $554M, Turnkey $316M",
+            "13 L&O units operating steadily — Almirante Tamandaré FPSO construction on track",
+            "Turnkey: One Guyana (Yellowtail) FPSO in late construction — Q4 2024 delivery target reconfirmed",
+            "2024 directional revenue guidance of $6.0B+ maintained — L&O revenue of $2.3B+ expected",
+            "Backlog ~$28B — stable cash flow underpinned by long-term lease & operate contracts"
+          ]
         },
         {
           "period": "Q2 2024",
@@ -125,7 +137,14 @@
             "Almirante Tamandaré FPSO 브라질 해상 배치 준비 완료",
             "One Guyana(Yellowtail) 건조 공정률 85%+ — 2024 H2 인도 목표"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "highlights_en": [
+            "H1 2024 Directional Revenue $1,840M (+23% YoY), EBITDA $620M (+36%)",
+            "H1 L&O revenue $1,178M (+26%), L&O EBITDA $679M (57.7% margin)",
+            "H1 turnkey revenue $662M — EBITDA -$12M (FPSO construction costs recognized up front)",
+            "Almirante Tamandaré FPSO ready for offshore deployment in Brazil",
+            "One Guyana (Yellowtail) construction 85%+ complete — H2 2024 delivery target"
+          ]
         },
         {
           "period": "Q3 2024",
@@ -142,7 +161,14 @@
             "2024 연간 Directional Revenue 가이던스 $6.0B 이상 상향 재확인",
             "L&O 세그먼트 9M 누적 매출 $1,801M — 운영 설비 증가 효과 가시화"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "highlights_en": [
+            "9M 2024 YTD Directional Revenue $2,838M — L&O $1,801M (+28%), Turnkey $1,036M (+24%)",
+            "One Guyana (Yellowtail) FPSO in final construction phase — delivery to ExxonMobil imminent in Q4 2024",
+            "Almirante Tamandaré FPSO deployed to Petrobras' Búzios field, commissioning started",
+            "2024 directional revenue guidance reconfirmed at above $6.0B",
+            "L&O segment 9M cumulative revenue $1,801M — effect of more operating units becoming visible"
+          ]
         },
         {
           "period": "Q4 2024",
@@ -159,7 +185,14 @@
             "수주잔량 $35.1B — One Guyana 및 Almirante Tamandaré L&O 장기 계약 포함",
             "FY2025 가이던스: Directional Revenue $6.0B+, EBITDA 마진 ~29% 수준"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "highlights_en": [
+            "One Guyana (Yellowtail) FPSO delivered to ExxonMobil — $2,707M turnkey revenue recognized in a single quarter (record)",
+            "FY2024 directional revenue $6,111M (+35%), EBITDA $1,896M (+44%) — record results",
+            "FY2024 L&O revenue $2,369M (53.2% margin) + turnkey revenue $3,743M (19.3%) finalized",
+            "Backlog $35.1B — includes One Guyana and Almirante Tamandaré long-term L&O contracts",
+            "FY2025 guidance: directional revenue $6.0B+, EBITDA margin around 29%"
+          ]
         },
         {
           "period": "Q1 2025",
@@ -176,7 +209,15 @@
             "2025 연간 가이던스 유지: Directional Revenue ~$6.0B+, EBITDA ~$1.55B",
             "수주잔량 ~$34B — 장기 임대 계약 기반 매출 가시성 유지"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "source_en": "Q1 2025 Trading Update (Apr 2025); EBITDA back-calculated from H1 2025 results",
+          "highlights_en": [
+            "Q1 2025 YTD Directional Revenue $1,103M (+27% YoY) — L&O $476M, Turnkey $627M",
+            "H1 2025 total directional EBITDA $682M (29.5% margin), H1 L&O EBITDA $497M (50.3%)",
+            "One Guyana settled into L&O after delivery — Stabroek contribution stabilizing",
+            "2025 guidance maintained: directional revenue ~$6.0B+, EBITDA ~$1.55B",
+            "Backlog ~$34B — revenue visibility maintained by long-term lease contracts"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -193,7 +234,14 @@
             "수주잔량 $33.2B — Búzios 8 FPSO(Marechal Duque de Caxias) EPC 계약 반영",
             "Fast4Ward 7호선(Kaminho) 서아프리카 앙골라 현장 이동 준비 — 2027 Q1 인도 목표"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "highlights_en": [
+            "Almirante Tamandaré FPSO started production — first oil at Brazil's Búzios field",
+            "One Guyana (Yellowtail) FPSO uptime held at 97% — record daily production on the Stabroek Block",
+            "H1 2025 L&O EBITDA $497M, L&O margin 50.3% — profitability of long-term lease contracts confirmed",
+            "Backlog $33.2B — reflects Búzios 8 FPSO (Marechal Duque de Caxias) EPC contract",
+            "Fast4Ward hull no. 7 (Kaminho) preparing to move to site in Angola, West Africa — Q1 2027 delivery target"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -210,7 +258,15 @@
             "2025 Directional EBITDA 가이던스 약 $1.6B 유지 — FY 실제 $1.709B로 상회",
             "Q3 EBITDA는 FY 2025/H1 2025 잔여분 기반 분기 배분 추정"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "source_en": "Q3 2025 Trading Update (Oct 2025); EBITDA estimated from FY 2025 less H1 2025",
+          "highlights_en": [
+            "9M 2025 directional revenue $3,571M — Q3 alone $1,260M versus H1 2025 $2,311M",
+            "9M L&O revenue $1,509M, turnkey revenue $2,060M — continued contribution from turnkey construction",
+            "Almirante Tamandaré production stabilized at Búzios, Brazil — growing contribution to the lease & operate portfolio",
+            "2025 directional EBITDA guidance of ~$1.6B maintained — FY actual $1.709B exceeded it",
+            "Q3 EBITDA is an estimated quarterly allocation of FY 2025 less H1 2025"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -227,7 +283,15 @@
             "Fast4Ward 7호선(Kaminho) 앙골라 TotalEnergies 프로젝트 인도 준비 최종 단계",
             "2026 가이던스: Directional Revenue 약 $6.5B, Directional EBITDA 약 $1.8B 제시"
           ],
-          "source_url": "https://www.sbm-offshore.com/investors/financial-information/"
+          "source_url": "https://www.sbm-offshore.com/investors/financial-information/",
+          "source_en": "FY 2025 Results (Feb 2026) — Q4 revenue = FY 2025 − 9M 2025; EBITDA estimated from FY 2025 less H1 2025",
+          "highlights_en": [
+            "FY2025 directional revenue $5.066B, directional EBITDA $1.709B finalized",
+            "Full-year contribution from Almirante Tamandaré & One Guyana maximized — L&O margin above 50%",
+            "Búzios 8 FPSO construction 40% complete — 2028 delivery target reconfirmed",
+            "Fast4Ward hull no. 7 (Kaminho) in final stage of delivery preparation for TotalEnergies' Angola project",
+            "2026 guidance: directional revenue ~$6.5B, directional EBITDA ~$1.8B"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -245,7 +309,16 @@
             "Fast4Ward 표준선체 2척 추가 발주(누적 12척); Jaguar·Chalchi·GranMorgu 건조 순항",
             "$1억 현금배당 지급, $2.7억 자사주 매입 프로그램 진행 중"
           ],
-          "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/"
+          "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/",
+          "source_en": "Q1 2026 Trading Update (May 2026) — directional revenue $3,489M (includes ~$2.3B turnkey recognition from the FPSO ONE GUYANA sale; recurring L&O revenue $610M). [Corrected 2026-10-08] Aligned to the same directional basis as Q2",
+          "highlights_en": [
+            "FPSO ONE GUYANA sold to ExxonMobil for $2.3B; total directional revenue $3,489M, +216% y/y (one-off effect)",
+            "Fleet uptime 97.9%; zero fatalities and permanent disabilities in Q1",
+            "Annual revenue guidance raised from $6.5B to above $6.9B; annual EBITDA guidance ~$1.8B maintained",
+            "Awarded FEED contract by ExxonMobil for the Longtail development in Guyana",
+            "Two more Fast4Ward standard hulls ordered (12 in total); Jaguar, Chalchi and GranMorgu construction on track",
+            "$100M cash dividend paid; $270M share buyback program under way"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -263,7 +336,16 @@
             "Petrobras SEAP I·II FPSO 설계·조달 착수(2030–31 인도), Fast4Ward 선체 누적 13척 발주; Jaguar·Chalchi·GranMorgu 공정률 50~75%",
             "중간배당 $100M, $270M 자사주 매입 ~44% 진행; 2026–2031 최소 $2.1B 주주환원 약속"
           ],
-          "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html"
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html",
+          "source_en": "H1 2026 Interim Results (Aug 2026) — Q2 revenue = H1 2026 directional $4,904M − Q1 2026 directional $3,489M; Q1 EBITDA not disclosed, so Q2 stand-alone EBITDA cannot be derived (null)",
+          "highlights_en": [
+            "H1 2026 directional revenue $4,904M (+112% y/y), directional EBITDA $1,310M (+92%) — includes FPSO ONE GUYANA sale",
+            "H1 L&O revenue $1,191M, EBITDA $547M / turnkey revenue $3,713M, EBITDA $813M",
+            "FY2026 guidance raised: directional revenue ~$7.6B (was $6.9B+), directional EBITDA ~$1.9B (was ~$1.8B)",
+            "Record pro-forma directional backlog of $35.6B (FY2025 $31.1B); fleet uptime 98.9% (16 units)",
+            "Design and procurement started on Petrobras SEAP I/II FPSOs (delivery 2030–31); 13 Fast4Ward hulls ordered in total; Jaguar, Chalchi and GranMorgu 50–75% complete",
+            "Interim dividend $100M; $270M buyback ~44% complete; commitment to at least $2.1B of shareholder returns over 2026–2031"
+          ]
         }
       ]
     },
@@ -276,7 +358,6 @@
         "founded": 1979,
         "hq": "Tokyo, Japan",
         "employees": "~3,500",
-        "market_cap_busd": 2.8,
         "credit_rating": "A-",
         "business_model": "EPCI(Engineering, Procurement, Construction, Installation) + Lease & Operate 겸업. 일본 최대 해양 플로팅 설비 전문사.",
         "strategy": "브라질 Petrobras 및 동남아 PETRONAS 중심의 장기 계약 포트폴리오. 서아프리카 가나·앙골라 운영 역량 강화. FLNG 시장 진출 검토.",
@@ -330,7 +411,9 @@
           }
         ],
         "notable": "일본 최대 해양 FPSO EPCI 기업. 브라질·서아프리카 핵심 운영 거점 보유. 18기 동시 운영으로 업계 최다 운영 설비 수 기록.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "Combines EPCI (Engineering, Procurement, Construction, Installation) with Lease & Operate. Japan's largest specialist in offshore floating facilities.",
+        "strategy_en": "Long-term contract portfolio centered on Petrobras in Brazil and PETRONAS in Southeast Asia. Strengthening operating capability in Ghana and Angola, West Africa. Considering entry into the FLNG market.",
+        "notable_en": "Japan's largest offshore FPSO EPCI company. Key operating bases in Brazil and West Africa. 18 units in simultaneous operation — the most of any operator in the industry."
       },
       "quarters": [
         {
@@ -348,7 +431,14 @@
             "Bacalhau FPSO 건조 공정률 진행 중 — 2025 H1 브라질 인도 목표",
             "수주잔량 ~$16B 수준 — EPCI·Charter 혼합 포트폴리오 성장세"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "highlights_en": [
+            "Q1 2024 Revenue $823M (+10.5% YoY), Operating Profit $77M (+272%)",
+            "Construction progressing on 3 EPCI projects (Uaru, Bacalhau, Sangomar) — driving revenue growth",
+            "9.7% margin — reflects the mixed EPCI + O&M structure (unlike L&O-only estimates of 40%+)",
+            "Bacalhau FPSO construction in progress — H1 2025 delivery target in Brazil",
+            "Backlog ~$16B — growing mixed EPCI and charter portfolio"
+          ]
         },
         {
           "period": "Q2 2024",
@@ -365,7 +455,15 @@
             "Shell Gato do Mato FPSO FEED 계약 수주 — 차세대 EPCI 파이프라인 확보",
             "H1 EBITDA 마진 11.2% — FY2024 가이던스 $4,300M 대비 H1 달성률 48%"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "H1 2024 Financial Results (Aug 2024) — back-calculated from H1 totals; Q2 separated",
+          "highlights_en": [
+            "H1 2024 revenue $1,877M (+18% y/y), Adj. EBITDA $210M (+421%) — record first half",
+            "Woodside Sangomar FPSO achieved first oil (June 2024) — O&M contract started",
+            "Public offering of Mitsui E&S's 36.9% stake completed — shareholder base diversified",
+            "FEED contract awarded for Shell's Gato do Mato FPSO — next-generation EPCI pipeline secured",
+            "H1 EBITDA margin 11.2% — 48% of FY2024 guidance ($4,300M) achieved in H1"
+          ]
         },
         {
           "period": "Q3 2024",
@@ -382,7 +480,15 @@
             "O&M 함대 가동률 개선 지속 — 1H 특수 정비(Special Maintenance) 부재로 비용 절감",
             "FY2024 매출 가이던스 $4,300M → 실현 가능 경로 확인"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "9M 2024 Financial Results (Nov 2024) — back-calculated from cumulative figures; Q3 separated",
+          "highlights_en": [
+            "9M 2024 cumulative revenue $2,995M (+20.5% y/y), operating profit $255M (+189%)",
+            "Bacalhau FPSO enters late construction — final work at Singapore yard, preparing to sail in Q4 2024",
+            "Q3 EBITDA margin 4.3% — temporary pressure from a higher share of EPCI costs during peak construction",
+            "O&M fleet uptime continues to improve — cost savings from no special maintenance in H1",
+            "Achievable path to FY2024 revenue guidance of $4,300M confirmed"
+          ]
         },
         {
           "period": "Q4 2024",
@@ -399,7 +505,14 @@
             "MV17 Charter 종료·MV12 Charter 종료 — 노후 자산 포트폴리오 최적화",
             "FY2025 가이던스: Revenue $3,700M (Bacalhau 완공으로 EPCI 감소), Op.Income $410M 상향 목표"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "highlights_en": [
+            "FY2024 revenue $4,186M (+17% y/y), Adj. EBITDA $328M (+50%) — record results",
+            "Bacalhau FPSO sailed from Singapore (Dec 2024) — en route to Equinor's site in Brazil",
+            "FY2024 operating profit $323M (+67%), net income $265M (+155%) — record",
+            "MV17 and MV12 charters ended — optimizing the aging asset portfolio",
+            "FY2025 guidance: revenue $3,700M (EPCI falls as Bacalhau completes), operating income target raised to $410M"
+          ]
         },
         {
           "period": "Q1 2025",
@@ -416,7 +529,15 @@
             "대형 초심해 FPSO 프로젝트 수요 견조 — floating production 설비 중심",
             "2025 연간 가이던스: 매출 $3.7B, operating profit $410M 유지"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "2025 First Quarter Financial Results (May 2025) — adj_ebitda_musd is an operating profit proxy",
+          "highlights_en": [
+            "Q1 2025 revenue $873M, operating profit $75M — revenue +6.1% y/y, operating profit -2.1%",
+            "New Gato do Mato FPSO construction and O&M contracts — Q1 order intake $4.8B",
+            "Backlog $17.2B — up 32.7% from prior year-end",
+            "Solid demand for large ultra-deepwater FPSO projects — focused on floating production facilities",
+            "2025 guidance maintained: revenue $3.7B, operating profit $410M"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -433,7 +554,15 @@
             "FPSO 건조 프로젝트 진행률에 따른 매출 인식 지속",
             "2025 연간 가이던스: 매출 $3.7B, operating profit $410M 유지"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "2025 Half-Year Financial Results (Aug 2025) — Q2 stand-alone back-calculated as H1 2025 − Q1 2025; adj_ebitda_musd is an operating profit proxy",
+          "highlights_en": [
+            "H1 2025 revenue $2,074M, operating profit $172M — H1 cumulative",
+            "Q2 stand-alone revenue $1,201M and operating profit proxy $97M derived by subtracting Q1 from H1",
+            "Backlog $16.6B — long-term contract base maintained after the Gato do Mato FPSO award",
+            "Revenue recognition continues in line with FPSO construction progress",
+            "2025 guidance maintained: revenue $3.7B, operating profit $410M"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -450,7 +579,15 @@
             "수주잔량 $19.1B — 전년 말 대비 +47.4%",
             "2025 연간 가이던스 상향: 매출 $4.4B, operating profit $440M"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "2025 Third Quarter Financial Results (Nov 2025) — Q3 stand-alone back-calculated as 9M 2025 − H1 2025; adj_ebitda_musd is an operating profit proxy",
+          "highlights_en": [
+            "9M 2025 revenue $3,352M, operating profit $305M — up 11.9% and 19.5% y/y",
+            "Q3 stand-alone revenue $1,277M and operating profit proxy $133M derived by subtracting H1 from 9M",
+            "New Gato do Mato and Hammerhead FPSO awards — 9M order intake $8.5B",
+            "Backlog $19.1B — up 47.4% from prior year-end",
+            "2025 guidance raised: revenue $4.4B, operating profit $440M"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -467,7 +604,15 @@
             "2026 연간 가이던스: 매출 $4.6B, operating profit $460M 제시",
             "floating offshore oil and gas production facilities 수요 견조 — 대형 초심해 프로젝트 중심"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "2025 Full-Year Financial Results (Feb 2026) — Q4 stand-alone back-calculated as FY2025 − 9M 2025; adj_ebitda_musd is an operating profit proxy",
+          "highlights_en": [
+            "FY2025 revenue $4,581M, operating profit $438M — up 9.4% and 35.5% y/y",
+            "Q4 stand-alone revenue $1,230M and operating profit proxy $132M derived by subtracting 9M 2025 from FY2025",
+            "Backlog $18.6B — reflects new Gato do Mato and Hammerhead FPSO awards",
+            "2026 guidance: revenue $4.6B, operating profit $460M",
+            "Solid demand for floating offshore oil and gas production facilities — centered on large ultra-deepwater projects"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -484,7 +629,14 @@
             "FY2026 연간 매출 가이던스($46억) 23% 조기 달성 — 연간 전망 유지",
             "2026 연간 배당 증가 계획 발표 — 재무건전성 자신감 반영"
           ],
-          "source_url": "https://www.modec.com/ir/library/presentation/assets/pdf/2026_1Q_presentation_en.pdf"
+          "source_url": "https://www.modec.com/ir/library/presentation/assets/pdf/2026_1Q_presentation_en.pdf",
+          "highlights_en": [
+            "Revenue $1,077M (+23% y/y), adjusted EBITDA $128M (+59% y/y) — record quarter",
+            "Four FPSO EPCI projects — Gato do Mato, Hammerhead, Raia, Uaru — proceeding without disruption",
+            "EPS up 79% y/y; equity ratio improved to 31.2%",
+            "23% of FY2026 revenue guidance ($4.6B) achieved early — full-year outlook maintained",
+            "Plan to raise the 2026 annual dividend — reflecting confidence in financial strength"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -502,7 +654,16 @@
             "연간 배당 JPY 200/주 계획 (Q2 JPY 100)",
             "수주잔량: 2차 출처 간 수치 상충($17.0B vs $25.5B)으로 1등급 확인 전까지 null"
           ],
-          "source_url": "https://www.modec.com/ir/"
+          "source_url": "https://www.modec.com/ir/",
+          "source_en": "2026 Half-Year Financial Results (Aug 2026) — Q2 stand-alone back-calculated as H1 2026 − Q1 2026; adj_ebitda_musd is an operating profit proxy (H1 $293.0M − Q1 $122.7M)",
+          "highlights_en": [
+            "H1 2026 revenue $2,447M (+18.0% y/y), operating profit $293M (+70.2%), net income $224M (+54.4%)",
+            "Q2 stand-alone revenue $1,370M and operating profit proxy $170M derived by subtracting Q1 (revenue $1,077M, operating profit $122.7M) from H1",
+            "Higher revenue recognition from FPSO construction progress drove profit growth",
+            "FY2026 guidance maintained: revenue $4.6B, net income $370M",
+            "Planned annual dividend JPY 200/share (Q2 JPY 100)",
+            "Backlog: secondary sources conflict ($17.0B vs $25.5B), so null until confirmed by a tier-1 source"
+          ]
         }
       ]
     },
@@ -515,7 +676,6 @@
         "founded": 2005,
         "hq": "Singapore / Oslo, Norway",
         "employees": "~900",
-        "market_cap_busd": 0.9,
         "credit_rating": "BB+",
         "business_model": "FPSO Lease & Operate 및 O&M 전문. 기존 노후 FPSO 포트폴리오를 축소하고 Barossa용 BW Opal 등 장기 계약 중심으로 재편 중.",
         "strategy": "오세아니아·서아프리카·북해 중심의 FPSO 운영 포트폴리오 유지. Bay du Nord 등 신규 FPSO 기회와 floating offshore wind 기반 전환 사업 병행.",
@@ -569,7 +729,9 @@
           }
         ],
         "notable": "FPSO 프로젝트 41건 이상을 수행한 운영 전문사. 2025년 기준 4기 운영 + 1기 계선 체제로 포트폴리오를 재편 중.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "Specialist in FPSO lease & operate and O&M. Shrinking its aging FPSO portfolio and refocusing on long-term contracts such as BW Opal for Barossa.",
+        "strategy_en": "Maintains an FPSO operating portfolio focused on Oceania, West Africa and the North Sea. Pursues new FPSO opportunities such as Bay du Nord alongside transition business in floating offshore wind.",
+        "notable_en": "Operating specialist that has executed more than 41 FPSO projects. Reshaping its portfolio to 4 operating units + 1 laid-up unit as of 2025."
       },
       "quarters": [
         {
@@ -586,7 +748,13 @@
             "EBITDA 마진 50.9% — 저장된 반올림 매출/EBITDA 기준",
             "장기 계약 기반 revenue backlog 약 $5.6B 수준 유지"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "highlights_en": [
+            "Q1 2024 operating revenues $168.6M, EBITDA $85.5M — continuing operations basis",
+            "Final delivery preparations continue for the BW Opal Barossa FPSO project",
+            "EBITDA margin 50.9% — based on stored rounded revenue/EBITDA",
+            "Revenue backlog from long-term contracts maintained at ~$5.6B"
+          ]
         },
         {
           "period": "Q2 2024",
@@ -602,7 +770,13 @@
             "EBITDA 마진 50.7% — 저장된 반올림 매출/EBITDA 기준",
             "포트폴리오 재편 전 revenue backlog 약 $5.5B 수준"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "highlights_en": [
+            "Q2 2024 operating revenues $151.9M, EBITDA $77.4M — continuing operations basis",
+            "BW Opal FPSO preparations for deployment to Barossa continue",
+            "EBITDA margin 50.7% — based on stored rounded revenue/EBITDA",
+            "Revenue backlog ~$5.5B before portfolio reshaping"
+          ]
         },
         {
           "period": "Q3 2024",
@@ -618,7 +792,13 @@
             "EBITDA 마진 55.0% — 저장된 반올림 매출/EBITDA 기준",
             "revenue backlog 약 $5.4B 수준 유지"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "highlights_en": [
+            "Q3 2024 operating revenues $150.9M, EBITDA $83.2M — continuing operations basis",
+            "BW Opal FPSO Barossa project enters delivery phase",
+            "EBITDA margin 55.0% — based on stored rounded revenue/EBITDA",
+            "Revenue backlog maintained at ~$5.4B"
+          ]
         },
         {
           "period": "Q4 2024",
@@ -634,7 +814,13 @@
             "BW Opal FPSO Barossa 프로젝트 장기 현금흐름 가시성 확보",
             "2024년 말 firm revenue backlog $5.3B"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "highlights_en": [
+            "FY2024 operating revenues $606.7M, EBITDA $318.0M — continuing operations basis",
+            "Q4 stand-alone operating revenues $135.3M, EBITDA $71.9M",
+            "Long-term cash flow visibility secured from the BW Opal FPSO Barossa project",
+            "Firm revenue backlog of $5.3B at end-2024"
+          ]
         },
         {
           "period": "Q1 2025",
@@ -651,7 +837,14 @@
             "운영 자산 4기 + 계선 자산 1기 체제 유지",
             "firm revenue backlog 약 $5.2B 수준"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "highlights_en": [
+            "Q1 2025 operating revenues $153.4M, EBITDA $91.3M — continuing operations basis",
+            "EBITDA margin 59.5% — BW Offshore's high-margin L&O portfolio maintained",
+            "Long-term contract contribution from the BW Opal FPSO Barossa project ramps up",
+            "4 operating assets + 1 laid-up asset maintained",
+            "Firm revenue backlog ~$5.2B"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -668,7 +861,15 @@
             "expected operating cashflow backlog $2.2B — metric basis 변경 반영",
             "BW Opal, BW Adolo, BW Catcher, Pioneer O&M 중심의 운영 포트폴리오"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "source_en": "Q2 2025 Earnings (Aug 2025) — backlog on an expected operating cash flow basis",
+          "highlights_en": [
+            "Q2 2025 operating revenues $127.8M, EBITDA $57.1M — continuing operations basis",
+            "EBITDA margin 44.5% — based on stored rounded revenue/EBITDA",
+            "4 operating assets + 1 laid-up asset",
+            "Expected operating cash flow backlog $2.2B — reflects change in metric basis",
+            "Operating portfolio centered on BW Opal, BW Adolo, BW Catcher and Pioneer O&M"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -685,7 +886,15 @@
             "expected operating cashflow backlog $2.1B",
             "Floating offshore wind 투자와 FPSO 신규 기회 병행 검토"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "source_en": "Q3 2025 Earnings (Nov 2025) — backlog on an expected operating cash flow basis",
+          "highlights_en": [
+            "Q3 2025 operating revenues $101.3M, EBITDA $43.9M — continuing operations basis",
+            "EBITDA margin 43.6% — based on stored rounded revenue/EBITDA",
+            "4 operating assets + 1 laid-up asset maintained",
+            "expected operating cashflow backlog $2.1B",
+            "Reviewing floating offshore wind investment alongside new FPSO opportunities"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -702,7 +911,15 @@
             "운영 자산 4기 + BW Hurra 계선 1기 체제",
             "2026년에도 FPSO 신규 기회와 floating offshore wind 투자 병행"
           ],
-          "source_url": "https://www.bwoffshore.com/investors/financial-reports/"
+          "source_url": "https://www.bwoffshore.com/investors/financial-reports/",
+          "source_en": "FY 2025 Results (Feb 2026) — Q4 revenue/EBITDA back-calculated as FY 2025 − 9M 2025; backlog on an expected operating cash flow basis",
+          "highlights_en": [
+            "FY2025 revenue $509.5M, Adj. EBITDA $240M finalized",
+            "Q4 stand-alone revenue $127M, EBITDA $48M — derived by subtracting 9M 2025 from FY 2025",
+            "Expected operating cash flow backlog of $2.2B at end-2025",
+            "4 operating assets + BW Hurra laid up",
+            "Continuing to pursue new FPSO opportunities and floating offshore wind investment in 2026"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -719,7 +936,14 @@
             "연간 EBITDA 가이던스 $3.4–3.7억 → $3.1–3.4억으로 하향 (BW Opal 다운타임 반영)",
             "가용 유동성 $5.68억, 주당 $0.063 배당 선언"
           ],
-          "source_url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html"
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html",
+          "highlights_en": [
+            "Fleet-wide weighted average uptime 100% — BW Opal gas production resumed in early May",
+            "FEED contract signed for Equinor's Bay du Nord FPSO (April) — Newfoundland, Canada; FID targeted early 2027",
+            "Revised BW Catcher contract terms add $490M of firm operating cash flow backlog (to ~2030)",
+            "Annual EBITDA guidance cut from $340–370M to $310–340M (reflecting BW Opal downtime)",
+            "Available liquidity $568M; dividend of $0.063/share declared"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -736,7 +960,15 @@
             "BW Catcher 계약 2030년말까지 연장 — 확정 백로그 ~$490M 추가; 총 백로그 $2.2B(97% firm)",
             "Equinor Bay du Nord FPSO FEED 수행, St. John's 사무소 개설; 가용 유동성 $511M, 배당 $0.063/주"
           ],
-          "source_url": "https://www.inderes.dk/releases/bw-offshore-second-quarter-and-first-half-results-2026"
+          "source_url": "https://www.inderes.dk/releases/bw-offshore-second-quarter-and-first-half-results-2026",
+          "source_en": "Q2 2026 Results (Aug 2026) — EBITDA and backlog per press release; revenue of $163.1M per Quartr earnings summary (not confirmed in the press release text); backlog on an expected operating cash flow basis",
+          "highlights_en": [
+            "Q2 EBITDA $62.5M, H1 $110.4M; $125M non-cash impairment on BW Opal led to a Q2 net loss of $102.1M (H1 net income excl. impairment $46.6M)",
+            "BW Opal passed its Interim Performance Test on 6/15 and is producing at 85% of nameplate — Practical Completion delayed to Q2 2027 (third-party equipment replacement in Q1 2027), additional investment ~$65M",
+            "FY2026 EBITDA guidance cut again to $250–280M (was $310–340M)",
+            "BW Catcher contract extended to end-2030 — ~$490M of firm backlog added; total backlog $2.2B (97% firm)",
+            "Performing FEED for Equinor's Bay du Nord FPSO, opened a St. John's office; available liquidity $511M, dividend $0.063/share"
+          ]
         }
       ]
     },
@@ -749,7 +981,6 @@
         "founded": 1983,
         "hq": "Kuala Lumpur, Malaysia",
         "employees": "~3,000",
-        "market_cap_busd": 1.6,
         "credit_rating": "BBB-",
         "business_model": "Lease & Operate 전문. 녹색 금융(Green Loan) 및 ESG 연계 금융 구조 적극 활용. 재생에너지 자회사 Yinson Renewables 병행 운영.",
         "strategy": "브라질·서아프리카·베트남 프로젝트 중심 성장 전략. Agogo, Maria Quitéria, Atlanta 등 신규 자산 가동으로 운영일수와 장기 수주잔량 확대.",
@@ -803,7 +1034,9 @@
           }
         ],
         "notable": "말레이시아 기반 FPSO 임대운영사. Yinson Production Enterprise Reporting 기준 FY2026 매출 $1.098B, Adjusted EBITDA $640M 달성.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "Lease & Operate specialist. Makes active use of green loans and ESG-linked financing. Also operates renewable energy subsidiary Yinson Renewables.",
+        "strategy_en": "Growth strategy centered on Brazil, West Africa and Vietnam projects. Expanding operating days and long-term backlog as new assets such as Agogo, Maria Quitéria and Atlanta come online.",
+        "notable_en": "Malaysia-based FPSO lease-and-operate company. FY2026 revenue $1.098B and adjusted EBITDA $640M on a Yinson Production Enterprise Reporting basis."
       },
       "quarters": [
         {
@@ -820,7 +1053,14 @@
             "FY2025 비교 기준 수치는 Q4 FY2026 Presentation의 reclassified historical quarterly data 반영",
             "FPSO 운영 포트폴리오 기반 장기 현금흐름 유지"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q4 FY2026 Presentation — FY2025 comparative Enterprise Reporting; USD basis",
+          "highlights_en": [
+            "Q1 FY2025 Enterprise Reporting revenue $132M, Adjusted EBITDA $82M",
+            "EBITDA margin 62.1% — based on stored rounded revenue/EBITDA",
+            "FY2025 comparative figures reflect reclassified historical quarterly data from the Q4 FY2026 presentation",
+            "Long-term cash flow sustained by the operating FPSO portfolio"
+          ]
         },
         {
           "period": "Q2 2024",
@@ -836,7 +1076,14 @@
             "FY2025 비교 기준 수치는 Q4 FY2026 Presentation의 reclassified historical quarterly data 반영",
             "운영 자산의 안정적인 가동으로 분기 수익성 유지"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q4 FY2026 Presentation — FY2025 comparative Enterprise Reporting; USD basis",
+          "highlights_en": [
+            "Q2 FY2025 Enterprise Reporting revenue $122M, Adjusted EBITDA $77M",
+            "EBITDA margin 63.1% — based on stored rounded revenue/EBITDA",
+            "FY2025 comparative figures reflect reclassified historical quarterly data from the Q4 FY2026 presentation",
+            "Quarterly profitability maintained through stable operation of assets"
+          ]
         },
         {
           "period": "Q3 2024",
@@ -852,7 +1099,14 @@
             "FY2025 비교 기준 수치는 Q4 FY2026 Presentation의 reclassified historical quarterly data 반영",
             "브라질 및 서아프리카 운영 포트폴리오 기여 지속"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q4 FY2026 Presentation — FY2025 comparative Enterprise Reporting; USD basis",
+          "highlights_en": [
+            "Q3 FY2025 Enterprise Reporting revenue $159M, Adjusted EBITDA $141M",
+            "EBITDA margin 88.7% — reflects high-margin operations and accounting reclassification",
+            "FY2025 comparative figures reflect reclassified historical quarterly data from the Q4 FY2026 presentation",
+            "Continued contribution from the Brazil and West Africa operating portfolio"
+          ]
         },
         {
           "period": "Q4 2024",
@@ -869,7 +1123,15 @@
             "FY2025 비교 기준 수치는 Q4 FY2026 Presentation의 reclassified historical quarterly data 반영",
             "FPSO Maria Quitéria 등 신규 자산 전환 준비 지속"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q4 FY2026 Presentation — FY2025 comparative Enterprise Reporting; USD basis",
+          "highlights_en": [
+            "FY2025 Enterprise Reporting revenue $608M, Adjusted EBITDA $392M",
+            "Q4 FY2025 revenue $195M, Adjusted EBITDA $92M — FY2025 comparative basis",
+            "Backlog $20.3B — per Jan 2025 backlog in the Q4 FY2026 presentation",
+            "FY2025 comparative figures reflect reclassified historical quarterly data from the Q4 FY2026 presentation",
+            "Ongoing preparation to bring new assets such as FPSO Maria Quitéria into service"
+          ]
         },
         {
           "period": "Q1 2025",
@@ -886,7 +1148,15 @@
             "운영일수 697일 — 전년 동기 대비 26% 증가",
             "수주잔량 $19.6B — 장기 용선 기반 매출 가시성 유지"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q1 FY2026 Presentation — Yinson Production Enterprise Reporting; USD basis",
+          "highlights_en": [
+            "Q1 FY2026 Enterprise Reporting revenue $236M, Adjusted EBITDA $117M",
+            "EBITDA margin 49.6% — based on stored rounded revenue/EBITDA",
+            "Rising charter contribution from FPSO Atlanta and FPSO Maria Quitéria",
+            "697 operating days — up 26% y/y",
+            "Backlog $19.6B — revenue visibility maintained by long-term charters"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -903,7 +1173,15 @@
             "6개월 누적 운영일수 1,428일, 전년 동기 대비 31% 증가",
             "FPSO Maria Quitéria·FPSO Atlanta 용선 기여도 증가 — 브라질 포트폴리오 강화"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q2 FY2026 Earnings (Sep 2025) — Yinson Production Enterprise Reporting; converted to USD",
+          "highlights_en": [
+            "Agogo FPSO (Angola) achieved first oil on 2025-07-29 — completed 4 months ahead of schedule",
+            "Agogo FPSO 15-year L&O contract (total contract value $5B+) — formal charter start expected 12 August",
+            "EBITDA margin 51.7% — transitional dip as EPCIC phase ends and charter begins",
+            "1,428 cumulative operating days over 6 months, up 31% y/y",
+            "Rising charter contribution from FPSO Maria Quitéria and FPSO Atlanta — Brazil portfolio strengthened"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -920,7 +1198,15 @@
             "9개월 누적 운영일수 2,237일, 전년 동기 대비 35% 증가",
             "FPSO Maria Quitéria·Atlanta·Agogo 3개 신규 자산 풀가동 — 운영 포트폴리오 확대 완료"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q3 FY2026 Earnings (Dec 2025) — Yinson Production Enterprise Reporting; converted to USD",
+          "highlights_en": [
+            "Agogo FPSO charter started 12 August — fleet now 8 operating FPSOs",
+            "Early repayment (buyout) of FPSO Atlanta project loan — $153M one-off gain recognized (excluded from Adj EBITDA)",
+            "Adj EBITDA margin 66.1% — profitability recovers with first quarter of Agogo charter contribution",
+            "2,237 cumulative operating days over 9 months, up 35% y/y",
+            "Three new assets — FPSO Maria Quitéria, Atlanta, Agogo — fully operating; portfolio expansion complete"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -937,7 +1223,15 @@
             "연간 운영일수 3,059일 — 전년 대비 34% 증가, 8기 풀가동 체제 정착",
             "주당 배당 5센(FY2025 대비 +22%), 자사주 매입 1.11억 주(RM244M) — 주주환원 강화"
           ],
-          "source_url": "https://www.yinson.com/investor-relations/annual-report/"
+          "source_url": "https://www.yinson.com/investor-relations/annual-report/",
+          "source_en": "Q4 FY2026 Earnings (Mar 2026) — Yinson Production Enterprise Reporting; converted to USD",
+          "highlights_en": [
+            "FY2026 revenue $1,098M, Adj EBITDA $640M — Yinson Production Enterprise Reporting converted to USD",
+            "Backlog of $19.5B secured — stable revenue visibility from 15–20-year charters",
+            "FSO PTSC LDV (Vietnam) primary structural work complete; first steel cut for FSO Block B — newbuild business on track",
+            "3,059 operating days for the year — up 34% y/y; 8 units now fully operating",
+            "Dividend of 5 sen/share (+22% vs FY2025), buyback of 111 million shares (RM244M) — stronger shareholder returns"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -955,7 +1249,16 @@
             "기술 가동률 99.8%, 상업 성과 102.2%; FSO Lac Da Vang Q4 2026 first oil 예정",
             "감사 후 FY2026 수치 소폭 하향(Q4 매출 $301M·Adj EBITDA $192M) — Agogo 재고비용 $14M 반영"
           ],
-          "source_url": "https://www.yinson-production.com/wp-content/uploads/YPOPL-Q1-FY2027-Final.pdf"
+          "source_url": "https://www.yinson-production.com/wp-content/uploads/YPOPL-Q1-FY2027-Final.pdf",
+          "source_en": "Q1 FY2027 Earnings (Jul 2026) — Yinson Production Enterprise Reporting; USD basis (Feb–Apr 2026)",
+          "highlights_en": [
+            "Q1 FY2027 Enterprise Reporting revenue $297M (+26% y/y), EBITDA $193M, Adjusted EBITDA $187M (+60% y/y)",
+            "Adjusted net income $4M — impacted by higher bid costs (SG&A) and interest expensed after Agogo FPSO first oil",
+            "Backlog $19.3B (2026-04-30), net debt $3.5B — backlog/net debt ~5.5x",
+            "After quarter-end, parent guarantee released on Agogo FPSO senior financing; $131.5M bank financing secured for FSO Block B (May)",
+            "Technical uptime 99.8%, commercial performance 102.2%; FSO Lac Da Vang first oil expected Q4 2026",
+            "Audited FY2026 figures revised slightly lower (Q4 revenue $301M, Adj EBITDA $192M) — reflects $14M Agogo inventory cost"
+          ]
         }
       ]
     },
@@ -968,7 +1271,6 @@
         "founded": 1946,
         "hq": "Hamilton, Bermuda",
         "employees": "~500",
-        "market_cap_busd": 2.1,
         "credit_rating": "BB",
         "business_model": "FLNG 톨링(Tolling) 전문 — 가스전 개발사에 액화 서비스 제공. 고정 수수료 + TTF 연동 변동 수수료 구조로 고수익 현금흐름 확보.",
         "strategy": "육상 LNG 인프라 없이 해상에서 직접 액화 수출 가능한 FLNG 기술 상용화 선도. Mk II FLNG 신조로 2030년 이후 성장 동력 확보. 아프리카·중동 신규 가스전 개발 지원.",
@@ -1006,7 +1308,9 @@
           }
         ],
         "notable": "세계 최초 FLNG 상업 운전 성공(Hilli Episeyo, 2018). 2025년 FLNG Gimi 상업운전 개시와 Southern Energy의 20년 FLNG 계약으로 Adjusted EBITDA backlog가 약 $14B로 확대.",
-        "market_cap_snapshot_date": "2026-05-05"
+        "business_model_en": "FLNG tolling specialist — provides liquefaction services to gas field developers. Fixed fee + TTF-linked variable fee structure delivers high-margin cash flow.",
+        "strategy_en": "Leading commercialization of FLNG technology that liquefies and exports directly offshore without onshore LNG infrastructure. Mk II FLNG newbuilds secure growth beyond 2030. Supports new gas field developments in Africa and the Middle East.",
+        "notable_en": "World's first commercial FLNG operation (Hilli Episeyo, 2018). FLNG Gimi commercial operation start in 2025 and Southern Energy's 20-year FLNG contract expanded adjusted EBITDA backlog to ~$14B."
       },
       "quarters": [
         {
@@ -1023,7 +1327,13 @@
             "FLNG Gimi는 GTA 프로젝트 투입 전 commissioning 단계",
             "EBITDA 마진 98.5% — 저장된 반올림 매출/EBITDA 기준"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q1 2024 total operating revenues $65.0M, Adjusted EBITDA $63.6M",
+            "Hilli Episeyo — stable operation of Cameroon FLNG continues",
+            "FLNG Gimi in commissioning before deployment to the GTA project",
+            "EBITDA margin 98.5% — based on stored rounded revenue/EBITDA"
+          ]
         },
         {
           "period": "Q2 2024",
@@ -1039,7 +1349,13 @@
             "FLNG Gimi GTA 프로젝트 상업운전 준비 지속",
             "EBITDA 마진 90.8% — 저장된 반올림 매출/EBITDA 기준"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q2 2024 total operating revenues $64.7M, Adjusted EBITDA $58.7M",
+            "Hilli Episeyo FLNG operating cash flow continues",
+            "FLNG Gimi preparations for GTA commercial operation continue",
+            "EBITDA margin 90.8% — based on stored rounded revenue/EBITDA"
+          ]
         },
         {
           "period": "Q3 2024",
@@ -1055,7 +1371,13 @@
             "FLNG Gimi GTA 프로젝트 commissioning 진행",
             "EBITDA 마진 90.8% — 저장된 반올림 매출/EBITDA 기준"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q3 2024 total operating revenues $64.8M, Adjusted EBITDA $59.0M",
+            "Hilli Episeyo cumulative production stable",
+            "FLNG Gimi GTA project commissioning under way",
+            "EBITDA margin 90.8% — based on stored rounded revenue/EBITDA"
+          ]
         },
         {
           "period": "Q4 2024",
@@ -1072,7 +1394,14 @@
             "FLNG Gimi는 GTA 상업운전 준비 단계",
             "2025년 Southern Energy FLNG 계약 및 Gimi COD가 주요 성장 변수"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "FY2024 total operating revenues $260.4M, Adjusted EBITDA $240.5M",
+            "Q4 2024 total operating revenues $65.9M, Adjusted EBITDA $59.2M",
+            "Stable FLNG tolling cash flow from Hilli Episeyo maintained",
+            "FLNG Gimi preparing for GTA commercial operation",
+            "The 2025 Southern Energy FLNG contract and Gimi COD are the key growth variables"
+          ]
         },
         {
           "period": "Q1 2025",
@@ -1088,7 +1417,13 @@
             "Hilli Episeyo 운영 지속",
             "EBITDA 마진 65.1% — 저장된 반올림 매출/EBITDA 기준"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q1 2025 total operating revenues ~$63M, Adjusted EBITDA ~$41M",
+            "FLNG Gimi preparing ahead of GTA commercial operation",
+            "Hilli Episeyo operations continue",
+            "EBITDA margin 65.1% — based on stored rounded revenue/EBITDA"
+          ]
         },
         {
           "period": "Q2 2025",
@@ -1105,7 +1440,14 @@
             "Southern Energy와 20년 FLNG 계약 체결 — Adjusted EBITDA backlog 약 $14B로 확대",
             "FLNG Mk II / MK II 계열 신조 성장 옵션 본격화"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q2 2025 total operating revenues ~$76M, Adjusted EBITDA ~$49M",
+            "FLNG Gimi GTA Phase 1 — Commercial Operations Date achieved",
+            "EBITDA margin 64.5% — temporarily lower due to Hilli Train 4 upgrade works",
+            "20-year FLNG contract signed with Southern Energy — adjusted EBITDA backlog expanded to ~$14B",
+            "FLNG Mk II newbuild growth options move forward"
+          ]
         },
         {
           "period": "Q3 2025",
@@ -1122,7 +1464,14 @@
             "EBITDA 마진 67.5% — 저장된 반올림 매출/EBITDA 기준",
             "Argentina FLNG 프로젝트 기술 설계 및 EPC 준비 지속"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "Q3 2025 total operating revenues $122.5M, Adjusted EBITDA $83.4M",
+            "FLNG Gimi commercial operation contribution reflected in quarterly results",
+            "Adjusted EBITDA backlog ~$14B — includes Southern Energy 20-year contract",
+            "EBITDA margin 67.5% — based on stored rounded revenue/EBITDA",
+            "Technical design and EPC preparation for the Argentina FLNG project continue"
+          ]
         },
         {
           "period": "Q4 2025",
@@ -1139,7 +1488,14 @@
             "Adjusted EBITDA backlog 약 $14B — Southern Energy FLNG 계약 반영",
             "Argentina FLNG 프로젝트와 MK II 계열 신조가 2026년 이후 성장축"
           ],
-          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/"
+          "source_url": "https://www.golarlng.com/investors/reports-and-presentations/",
+          "highlights_en": [
+            "FY2025 total operating revenues $393.5M, Adjusted EBITDA $264.6M finalized",
+            "Q4 2025 total operating revenues $132.8M, Adjusted EBITDA $91.0M",
+            "FLNG Gimi commercial operation and Hilli Episeyo operations drove FY2025 results",
+            "Adjusted EBITDA backlog ~$14B — reflects Southern Energy FLNG contract",
+            "Argentina FLNG project and Mk II newbuilds are the growth drivers from 2026"
+          ]
         },
         {
           "period": "Q1 2026",
@@ -1157,7 +1513,15 @@
             "골드만삭스 전략적 대안 검토 자문사 선임 — FLNG 성장 가속화 및 주주가치 제고 탐색",
             "주당 $0.25 분기 배당 선언(6월 10일 지급)"
           ],
-          "source_url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html"
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html",
+          "highlights_en": [
+            "Revenue $138M (+120% y/y), EBITDA $106M (+158% y/y) — contribution from full operation of FLNG Gimi",
+            "FLNG Hilli uptime held at 100%; 150th LNG cargo loaded in April",
+            "FLNG Gimi Q1 invoiced daily rate 19% above contract — production exceeded contracted volumes",
+            "MKII FLNG conversion on schedule and on budget (10 million cumulative work hours); 4th FLNG order targeted within 2026",
+            "Goldman Sachs appointed as adviser to review strategic alternatives — exploring faster FLNG growth and shareholder value",
+            "Quarterly dividend of $0.25/share declared (paid 10 June)"
+          ]
         },
         {
           "period": "Q2 2026",
@@ -1175,7 +1539,16 @@
             "순차입금 $1.8B(현금 $0.9B); 분기 배당 $0.25/주(9/2 지급)",
             "전략적 검토(strategic review) 진행 중 — 결과·시점 미공개"
           ],
-          "source_url": "https://mfn.se/all/a/golar-lng/golar-lng-limited-interim-results-for-the-period-ended-june-30-2026-b168e773"
+          "source_url": "https://mfn.se/all/a/golar-lng/golar-lng-limited-interim-results-for-the-period-ended-june-30-2026-b168e773",
+          "source_en": "Q2 2026 Interim Results (Aug 2026) — backlog is the sum of per-asset Adj. EBITDA backlog in the press release (Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B, Golar 70% share) (press release headline ~$17B)",
+          "highlights_en": [
+            "Revenue $130.5M (+72% y/y), Adj EBITDA $127.4M (+159% y/y) — includes realized derivative gains and Gimi over-production revenue; net income $38.3M",
+            "FLNG Gimi produced 15% above contracted volume in Q2; first anniversary of commercial operation (41 cargoes to date)",
+            "FLNG Hilli completed its 8-year Cameroon contract (100% economic uptime, 156 cargoes) — to be modified in Singapore and deployed to Argentina in 2027",
+            "EPC contract for 4th FLNG (MKII 3.5 MTPA) signed with CIMC Raffles (8/12) — $2.45B total, delivery targeted end-2029; controlled liquefaction capacity 12+ MTPA",
+            "Net debt $1.8B (cash $0.9B); quarterly dividend $0.25/share (paid 9/2)",
+            "Strategic review in progress — outcome and timing undisclosed"
+          ]
         }
       ]
     }
@@ -1186,11 +1559,6 @@
       "basis": "Company earnings press releases and annual/half-year reports",
       "source_url_granularity": "landing_page",
       "notes": "Revenue, EBITDA from official releases. Most source_url values currently point to IR landing pages; exact quarterly release/PDF URLs should be added period by period. MODEC and Yinson report on non-calendar fiscal years."
-    },
-    "market_cap": {
-      "confidence": "low",
-      "basis": "Market snapshot — volatile figure",
-      "notes": "market_cap_busd is a point-in-time snapshot. Will change with share price. See market_cap_snapshot_date field."
     },
     "asset_specs": {
       "confidence": "medium",

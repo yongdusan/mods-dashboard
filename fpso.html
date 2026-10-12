@@ -573,7 +573,7 @@
   <header class="header">
     <div class="header-title">
       <h1>Offshore Market Intelligence</h1>
-      <span class="subtitle">FPSO / FLNG — Assets, Orderbook &amp; Charter Rates</span>
+      <span class="subtitle">FPSO / FLNG — Assets &amp; Orderbook</span>
     </div>
     <div class="header-right">
       <nav class="header-nav">
@@ -599,7 +599,7 @@
   <!-- Page Title -->
   <section class="page-title-section">
     <h2>Deepwater FPSO / FLNG Assets</h2>
-    <span class="page-subtitle">Deepwater floating production · harsh/offshore basins · orderbook · charter rate trends</span>
+    <span class="page-subtitle">Deepwater floating production · harsh/offshore basins · contractors · orderbook</span>
   </section>
 
   <!-- KPI Cards -->
@@ -676,19 +676,6 @@
           <button class="ob-close-btn" onclick="window.closeObDrilldown()">✕ Close</button>
         </div>
         <div class="ob-detail-grid" id="ob-detail-grid"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Charter Rates Chart -->
-  <div class="panel">
-    <div class="panel-header">
-      <span class="panel-title"><span class="dot"></span>Charter Rates</span>
-      <span class="panel-subtitle">규모별 일일 용선료 추이 ($/day)</span>
-    </div>
-    <div class="panel-body">
-      <div class="chart-container">
-        <canvas id="charter-chart"></canvas>
       </div>
     </div>
   </div>
@@ -1061,91 +1048,6 @@
     buildFilterRow('ob-filter-bar', 'Shipyard', 'yard',   obYards,   window.setObFilter);
   }
 
-  /* ─── Charter Rates Chart ─── */
-  function renderCharterChart(data) {
-    const rates = data.charter_rates;
-    const dates = [...new Set(rates.map(r => r.date))].sort();
-    const classes = ['Large (>150kboed)', 'Medium (50-150kboed)', 'Small (<50kboed)'];
-    const colors = {
-      'Large (>150kboed)':   { line: '#6fb4f2', bg: 'rgba(111,180,242,0.12)' },
-      'Medium (50-150kboed)':{ line: '#3fbf8a', bg: 'rgba(63,191,138,0.12)' },
-      'Small (<50kboed)':    { line: '#b79cf0', bg: 'rgba(183,156,240,0.12)' }
-    };
-
-    const datasets = classes.map(cls => ({
-      label: cls,
-      data: dates.map(d => {
-        const entry = rates.find(r => r.date === d && r.size_class === cls);
-        return entry ? entry.rate_kusd_day : null;
-      }),
-      borderColor: colors[cls].line,
-      backgroundColor: colors[cls].bg,
-      borderWidth: 2,
-      pointRadius: 4,
-      pointHoverRadius: 6,
-      tension: 0.3,
-      fill: false
-    }));
-
-    const ctx = document.getElementById('charter-chart').getContext('2d');
-    new Chart(ctx, {
-      type: 'line',
-      data: { labels: dates, datasets },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        interaction: { mode: 'index', intersect: false },
-        plugins: {
-          legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-              color: '#8a9bae',
-              font: { family: "'Inter', sans-serif", size: 12 },
-              boxWidth: 14,
-              padding: 20
-            }
-          },
-          tooltip: {
-            backgroundColor: '#0b1826',
-            borderColor: '#1b2f45',
-            borderWidth: 1,
-            titleColor: '#e6edf2',
-            bodyColor: '#8a9bae',
-            callbacks: {
-              label: function(ctx) {
-                return ` ${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}k/day`;
-              }
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { color: 'rgba(27,47,69,0.6)' },
-            ticks: {
-              color: '#8a9bae',
-              font: { family: "'JetBrains Mono', monospace", size: 11 }
-            }
-          },
-          y: {
-            grid: { color: 'rgba(27,47,69,0.6)' },
-            ticks: {
-              color: '#8a9bae',
-              font: { family: "'JetBrains Mono', monospace", size: 11 },
-              callback: function(v) { return '$' + v + 'k'; }
-            },
-            title: {
-              display: true,
-              text: '$/day (thousands)',
-              color: '#8a9bae',
-              font: { size: 11 }
-            }
-          }
-        }
-      }
-    });
-  }
-
   /* ─── Dynamic Filter Row Builder ─── */
   function buildFilterRow(barId, label, dimension, values, handlerFn) {
     const bar = document.getElementById(barId);
@@ -1246,7 +1148,6 @@
       renderContractorTable(data);
       renderVesselTable(data);
       renderOrderbookTable(data);
-      renderCharterChart(data);
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') { closeObDrilldown(); closeVesselDrilldown(); }
       });
