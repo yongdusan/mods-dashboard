@@ -1,8 +1,65 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 137,
+      "date": "2026-10-09",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Shell to take 30% of Equinor's Bay du Nord oil project in Canada",
+      "summary": "Shell Canada Energy가 Equinor가 운영하는 캐나다 뉴펀들랜드 앞바다 Bay du Nord 프로젝트의 비운영 지분 30%를 인수하기로 했습니다(Equinor 70% 유지). 수심 600~1,170m에서 FPSO 연계 해저 개발이며 계획 투자액은 약 CAD 140억입니다. FEED 마무리 단계로 FID는 2027년 초, 첫 생산은 2031년으로 예상됩니다.",
+      "companies": [
+        "Shell",
+        "Equinor"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/09/shell-to-take-a-slice-of-equinors-dollar10-billion-oil-project-in-canada"
+    },
+    {
+      "id": 136,
+      "date": "2026-10-08",
+      "sector": "FPSO/FLNG",
+      "category": "Outlook",
+      "title": "Yinson Production closes record $1.458B FPSO project bond (Agogo)",
+      "summary": "Yinson Production 자회사 Yinson Azalea Production이 앙골라 Block 15/06 Azule Energy向 FPSO Agogo 관련 선순위 담보채 14.58억 달러를 발행했습니다. 표면금리 6.517%, 만기 약 13.3년 완전상환형이며 기존 FPSO 부채 리파이낸싱 등에 쓰입니다. FPSO 프로젝트본드 중 최대 규모이자 브라질 외 지역 첫 발행입니다.",
+      "companies": [
+        "Yinson",
+        "Azule Energy"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/08/yinson-production-achieves-industry-first-non-brazil-fpso-project-bond-at-dollar146-billion"
+    },
+    {
+      "id": 135,
+      "date": "2026-10-07",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Arabian Drilling wins four-jack-up, $533M KJO contract",
+      "summary": "Arabian Drilling이 Aramco-KPC 합작 Khafji Joint Operations(KJO)로부터 고사양 잭업 4기, 4년, 약 5.33억 달러 규모 계약을 수주했습니다. 이로써 수주잔고는 약 48억 달러로 늘었고, 매출 기여는 2026년 4분기 말부터 시작될 전망입니다.",
+      "companies": [
+        "Arabian Drilling",
+        "Khafji Joint Operations"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/07/dollar533-million-lands-on-arabian-drillings-backlog-for-rig-quartet-deal"
+    },
+    {
+      "id": 134,
+      "date": "2026-10-07",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Valaris adds ~$220M backlog across North Sea, Australia, Suriname",
+      "summary": "Valaris가 신규 계약·연장으로 약 2.2억 달러의 백로그를 추가했습니다. 드릴십 DS-18은 Petronas Suriname向 최대 7개월 2개 탐사정(2026년 4분기 시작), 잭업 Valaris 107은 호주 300일(옵션 포함 약 5천만 달러), 북해 P&A 다정 계약은 341일 4,150만 달러입니다. Valaris 122는 INEOS向 126일 연장(일비 $115,000)이 포함됩니다.",
+      "companies": [
+        "Valaris",
+        "Petronas",
+        "INEOS"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/07/valaris-rigs-find-more-work-in-north-sea-australia-and-suriname"
+    },
     {
       "id": 133,
       "date": "2026-10-05",
@@ -1536,48 +1593,6 @@
       ],
       "source": "World Oil",
       "url": "https://worldoil.com/news/2026/4/22/seadrill-adds-260-million-backlog-with-u-s-gulf-drillship-awards/"
-    },
-    {
-      "id": 3,
-      "date": "2026-04-14",
-      "sector": "FPSO/FLNG",
-      "category": "Contract",
-      "title": "CoreMarine and Jumbo Offshore Win FLNG Installation Work in Argentina",
-      "summary": "CoreMarine and Jumbo Offshore were awarded transport, installation and hook-up work for the Hilli Episeyo FLNG and MKII FLNG vessels in Argentina's Golfo San Matias. The scope covers soft-yoke mooring systems and offshore installation for the Southern Energy FLNG development.",
-      "companies": [
-        "CoreMarine",
-        "Jumbo Offshore",
-        "Golar LNG"
-      ],
-      "source": "Offshore Magazine",
-      "url": "https://www.offshore-mag.com/field-development/news/55370931/coremarine-jumbo-offshore-to-manage-mooring-operations-for-two-flng-vessels-in-argentina"
-    },
-    {
-      "id": 4,
-      "date": "2026-04-14",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Transocean Announces $425M Additional Backlog for Ultra-Deepwater Drillship",
-      "summary": "Transocean secured $425 million in additional contract backlog for an ultra-deepwater drillship. The award reflects continued operator demand for high-specification 8th generation assets.",
-      "companies": [
-        "Transocean"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/04/14/3273137/0/en/Transocean-Ltd-Announces-425-Million-Additional-Backlog-for-Ultra-Deepwater-Drillship.html"
-    },
-    {
-      "id": 29,
-      "date": "2026-04-14",
-      "sector": "FPSO/FLNG",
-      "category": "Contract",
-      "title": "Petrobras Takes FID on SEAP I, Advancing $12B Sergipe Deepwater Development",
-      "summary": "Petrobras approved the final investment decision for SEAP I in Brazil's Sergipe-Alagoas basin, following SEAP II approval in late 2025. The broader Sergipe Deepwater development involves more than R$60 billion of investment, two FPSOs expected from SBM Offshore under a BOT model, 32 wells and subsea infrastructure tied to a new gas export route.",
-      "companies": [
-        "Petrobras",
-        "SBM Offshore"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/petrobras-bringing-12-billion-oil-gas-project-pair-to-life-with-sbm-offshore-on-fpso-duty-for-both/"
     }
   ]
 }
