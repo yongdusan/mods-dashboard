@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-12",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
       "basis": "68 of 97 rigs carry source/source_url/confidence fields; remaining 29 rigs are unsourced legacy entries.",
-      "notes": "Source coverage is strongest for Transocean, Hanwha Drilling, Odfjell Drilling, Dolphin Drilling, Stena Drilling, Vantage Drilling, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap."
+      "notes": "Source coverage is strongest for Transocean, Hanwha Drilling, Odfjell Drilling, Dolphin Drilling, Stena Drilling, Vantage Drilling, Valaris drillships, Seadrill and selected Noble rigs. Valaris and Borr jack-up rows are the main remaining gap. 2026-10-12: Valaris MS-1 removed (sold for recycling Sep 2026 per Valaris Oct 7 release); Valaris DS-18 note updated (PETRONAS Suriname 2-well)."
     },
     "dayrates": {
       "confidence": "medium",
@@ -59,9 +59,9 @@
     "coverage_note_2026_10_08": "Transocean·Valaris 부유식 리그를 2026-08 FSR 기준 전수 반영(Transocean 드릴십 8척, Valaris 드릴십 6척 + MS-1 추가). 현재 FSR에 없는 Deepwater Stavanger, Valaris DPS-1 제거(선단 이탈). Valaris 잭업 중 일부(ARO 임대분, 북해·벤인 잭업 다수)와 Noble·Seadrill 등 타사는 기존 추적 범위 유지 — 전수 아님. Noble: 2026-07-27 FSR 기준 전면 재구성(부유식 23척 + UH 잭업 5척). 기존 Noble 9척 중 Regina Allen·Resolve는 현 Noble 선단에 없는 잭업이 드릴십/반잠수식으로 잘못 기재돼 있어 제거, Valiant·Developer·Gerry de Souza 계약 오류 정정. Noble Patriot(수심 1,500ft P&A 반잠수식)은 심해 범위 밖이라 제외. Seadrill: 2026-08-10 FSR 기준 Sonangol 소유 관리 드릴십 2척·계류 반잠수식 3척 추가."
   },
   "prev_week": {
-    "total": 98,
-    "on_contract": 77,
-    "idle_stacked": 21
+    "total": 135,
+    "on_contract": 91,
+    "idle_stacked": 44
   },
   "rigs": [
     {
@@ -2705,10 +2705,10 @@
         "variable_deck_load_t": null,
         "generation": null
       },
-      "source": "Valaris Fleet Status Report, Aug 5 2026",
-      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
+      "source": "Valaris Fleet Status Report, Aug 5 2026; Valaris contract awards update, Oct 7 2026",
+      "source_url": "https://s23.q4cdn.com/956522167/files/content_files/10-7-2026-Valaris-Announces-Contract-Awards-and-Fleet-Status-Updates.pdf",
       "confidence": "high",
-      "data_note": "FSR: LOA 2-well(Nov-26–May-27, 미공개 운영사) 후 Occidental Jun-27–Dec-29(914일). 현재 계약 개시 전."
+      "data_note": "FSR(8/5): LOA 2-well(Nov-26–May-27, 미공개 운영사) 후 Occidental Jun-27–Dec-29(914일). 10/7 Valaris 공시: PETRONAS Suriname 2-well 탐사 계약(2026 Q4 개시 예정, 최대 약 7개월; trade press 보도) — 8/5 LOA와의 동일 여부는 미확인. 현재 계약 개시 전."
     },
     {
       "name": "Valaris DS-14",
@@ -2790,33 +2790,6 @@
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
       "data_note": "FSR: Stacked (Spain)."
-    },
-    {
-      "name": "Valaris MS-1",
-      "contractor": "Valaris",
-      "type": "Semisubmersible",
-      "water_depth_ft": null,
-      "status": "Idle",
-      "operator": null,
-      "location": "Malaysia",
-      "contract_start": null,
-      "contract_end": null,
-      "day_rate_kusd": null,
-      "specs": {
-        "build_year": 2011,
-        "build_yard": null,
-        "design": "F&G ExD Millennium, Moored",
-        "max_water_depth_ft": null,
-        "max_drilling_depth_ft": null,
-        "bop_rating_psi": null,
-        "dp_class": null,
-        "variable_deck_load_t": null,
-        "generation": null
-      },
-      "source": "Valaris Fleet Status Report, Aug 5 2026",
-      "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
-      "confidence": "high",
-      "data_note": "FSR: Warm stacked (Malaysia)."
     },
     {
       "name": "Noble Faye Kozack",
