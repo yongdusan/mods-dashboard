@@ -5,6 +5,7 @@
       "name": "modu-dashboard",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8080"],
+      "cwd": "/Users/ahn-yongsung/Project/modu-dashboard",
       "port": 8080
     }
   ]
