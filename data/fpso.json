@@ -37,16 +37,16 @@
       "type": "FPSO Lessor",
       "hq": "Netherlands",
       "ticker": "SBMO.AS",
-      "fleet_owned": 13,
+      "fleet_owned": 12,
       "on_lease": 13,
       "backlog_busd": 35.6,
       "source": "SBM Offshore Half Year 2026 Earnings (Aug 6, 2026) — pro-forma directional backlog",
       "as_of": "2026-06-30",
       "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html",
-      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [2026-10-13 정정] 건조 중인 L&O(임대) 신조 없음 — Jaguar는 ExxonMobil 매각 후 운영, GranMorgu는 TotalEnergies 턴키, SEAP I·II(P-81·P-87)는 Petrobras 소유·SBM 건조+O&M. Kaminho는 Saipem EPC로 SBM과 무관. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B.",
+      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [2026-10-13 정정] 건조 중인 L&O(임대) 신조 없음 — Jaguar는 ExxonMobil 매각 후 운영, GranMorgu는 TotalEnergies 턴키, SEAP I·II(P-81·P-87)는 Petrobras 소유·SBM 건조+O&M. Kaminho는 Saipem EPC로 SBM과 무관. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] 보유 13→12: Liza Unity는 2023-11 ExxonMobil 매입(SBM 운영만).",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0,
-      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [Corrected 2026-10-13] No L&O (lease) newbuilds under construction — Jaguar is sold to ExxonMobil and then operated, GranMorgu is a TotalEnergies turnkey, SEAP I/II (P-81, P-87) are Petrobras-owned with SBM build + O&M. Kaminho is a Saipem EPC, unrelated to SBM. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B."
+      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [Corrected 2026-10-13] No L&O (lease) newbuilds under construction — Jaguar is sold to ExxonMobil and then operated, GranMorgu is a TotalEnergies turnkey, SEAP I/II (P-81, P-87) are Petrobras-owned with SBM build + O&M. Kaminho is a Saipem EPC, unrelated to SBM. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] Owned 13→12: Liza Unity was bought by ExxonMobil in Nov 2023 (SBM operates only)."
     },
     {
       "name": "MODEC",
@@ -256,7 +256,7 @@
     {
       "name": "Liza Unity",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "ExxonMobil",
       "client": "ExxonMobil",
       "field": "Liza Phase 2 (Stabroek Block)",
       "region": "South America",
@@ -268,7 +268,7 @@
       "contract_end": "2042-02",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO.",
+      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO. [2026-10-13 감사] 소유주 SBM→ExxonMobil: 2023-11 ExxonMobil이 매입(~$1.26B), SBM은 2033년까지 운영. 나머지 수치는 아직 미감사.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF1 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Keppel Shipyard (Seatrium), Singapore",
@@ -296,7 +296,7 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/14074711/sbms-first-fast4ward-hull-arrives-in-singapore",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design. Guyana's 2nd FPSO."
+      "notes_en": "SBM Fast4Ward design. Guyana's 2nd FPSO. [2026-10-13 audit] Owner SBM→ExxonMobil: purchased by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033. Other values not yet audited."
     },
     {
       "name": "Liza Destiny",
@@ -351,18 +351,18 @@
       "field": "Buzios Field (BM-S-11)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 2000,
+      "water_depth_m": null,
       "oil_capacity_kboed": 225,
-      "storage_mmbbl": 1.8,
-      "contract_start": "2024-06",
-      "contract_end": "2049-06",
+      "storage_mmbbl": null,
+      "contract_start": "2025-02",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형.",
+      "notes": "Buzios 6번째 FPSO. SBM Fast4Ward 선형. [2026-10-13 감사] SBM 발표: 원유 225k bpd 확인, 가스 212→424 MMscfd(12 MMm³/d). 생산 개시 2025-02-15(용선 시작 2024-06→2025-02). 저장·수심·용선 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF4 신조 (CMHI hull + Seatrium 통합)",
         "yard": "Hull: China Merchants Heavy Industry (CMHI), China · Topsides/integration: China Merchants Heavy Industry (CMHI Haimen), China",
-        "gas_capacity_mmscfd": 212,
+        "gas_capacity_mmscfd": 424,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-02",
         "partners": [
@@ -381,7 +381,9 @@
         "yard_source_url": "https://www.offshore-energy.biz/sbm-offshores-behemoth-fpso-steps-into-brazil-to-work-at-petrobras-mega-deepwater-field/",
         "yard_confidence": "high"
       },
-      "notes_en": "6th Búzios FPSO. SBM Fast4Ward design."
+      "notes_en": "6th Búzios FPSO. SBM Fast4Ward design. [2026-10-13 audit] SBM release: confirmed 225k bpd, gas 212→424 MMscfd (12 MMm³/d). Production start 2025-02-15 (charter start 2024-06→2025-02). Storage, WD and charter end unsourced → null.",
+      "source_url": "https://oilnow.gy/featured/sbm-offshore-welcomes-almirante-tamandare-brazils-largest-fpso",
+      "verified": "2026-10-13"
     },
     {
       "name": "Sepetiba",
@@ -391,14 +393,14 @@
       "field": "Mero Field (Libra Block, BM-S-11A)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 1900,
+      "water_depth_m": null,
       "oil_capacity_kboed": 180,
       "storage_mmbbl": 1.4,
-      "contract_start": "2024-10",
-      "contract_end": "2049-10",
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "Buzios 7번째 FPSO.",
+      "notes": "Buzios 7번째 FPSO. [2026-10-13 감사] SBM/Offshore Magazine: 원유 180k bpd·저장 최소 1.4 MMbbl 확인, 가스 12 백만(출처 단위 표기 불명확, 424 MMscfd 유지). 생산 개시월·용선 종료·수심은 1차 출처 미확인으로 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (CMHI 선체 + BOMESC 통합)",
         "yard": "Hull: China Merchants Heavy Industry (CMHI), China · Topsides/integration: BOMESC, Tianjin, China",
@@ -424,7 +426,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/fpso-sepetiba-sails-away",
         "yard_confidence": "high"
       },
-      "notes_en": "7th Búzios FPSO."
+      "notes_en": "7th Búzios FPSO. [2026-10-13 audit] SBM/Offshore Magazine: confirmed 180k bpd and minimum 1.4 MMbbl storage; gas '12 million' (source unit unclear; 424 MMscfd kept). Production start month, charter end and WD unconfirmed → null.",
+      "source_url": "https://www.offshore-mag.com/vessels/news/55243501/sbm-offshore-two-more-sbm-newbuild-fpsos-nearing-completion",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Carioca (MV30)",
@@ -514,18 +518,18 @@
       "field": "Anyala-Madu (OML 83/85), Nigeria",
       "region": "West Africa",
       "country": "Nigeria",
-      "water_depth_m": 800,
-      "oil_capacity_kboed": 100,
-      "storage_mmbbl": 1.3,
-      "contract_start": "2024-06",
-      "contract_end": "2044-06",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 50,
+      "storage_mmbbl": 0.87,
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
-      "year_delivered": 2024,
-      "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비.",
+      "year_delivered": null,
+      "notes": "세네갈 최초 FPSO. Sangomar 개발 핵심 설비. [2026-10-13 감사] Yinson 사양서: 원유 100→50k bopd, 저장 1.3→0.87 MMbbl, 가스 45→15 MMscfd(가스리프트 39), 선체 1992 Harland & Wolff·2007-08 Dubai 개조·2019-20 Keppel 개선. 수심·계약기간·인도연도는 출처 없어 null.",
       "detail": {
         "hull_type": "brownfield FPSO 개조 (구 탱커, Keppel Benoi Singapore)",
         "yard": "Hull: Keppel Shipyard (Benoi), Singapore (redeployment/upgrade; orig. 1992 Suezmax by Harland & Wolff, first converted Dubai Drydocks 2007-08) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 45,
+        "gas_capacity_mmscfd": 15,
         "mooring": "Spread Mooring",
         "fid_date": "2020-07",
         "partners": [
@@ -542,7 +546,9 @@
         "yard_source_url": "https://www.yinson.com/news/yinsons-fpso-abigail-joseph-sets-sail-for-nigeria/",
         "yard_confidence": "high"
       },
-      "notes_en": "Senegal's first FPSO. Core facility of the Sangomar development."
+      "notes_en": "Senegal's first FPSO. Core facility of the Sangomar development. [2026-10-13 audit] Yinson brochure: oil 100→50k bopd, storage 1.3→0.87 MMbbl, gas 45→15 MMscfd (39 gas lift), hull built 1992 Harland & Wolff, converted Dubai 2007-08, upgraded Keppel 2019-20. WD, contract term and delivery year unsourced → null.",
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_abigail_joseph_r1/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Ngujima-Yin",
@@ -761,18 +767,18 @@
       "field": "Sankofa-Gye Nyame (OCTP Block), Ghana",
       "region": "West Africa",
       "country": "Ghana",
-      "water_depth_m": 2500,
-      "oil_capacity_kboed": 110,
-      "storage_mmbbl": 1.8,
+      "water_depth_m": null,
+      "oil_capacity_kboed": 58,
+      "storage_mmbbl": 1.4,
       "contract_start": "2017-07",
       "contract_end": "2036",
       "status": "On Production",
       "year_delivered": 2017,
-      "notes": "가나 OCTP(Sankofa-Gye Nyame) 유전, Eni 운영. 2017-07 첫 생산. Yinson 74%·일본 컨소시엄 26% 소유. [2026-10-10] 2026-10-02 Eni Ghana와 계약 변경 체결 — 가스 처리·압축 설비 증설(가스 수출 ~210-220→355 MMscf/d, 개조 2028-Q1 완료 예정), 확정 계약 4년 연장(~2036). 증분 일비 총액 ~$810M 중 Yinson 귀속 ~$600M (2등급: OE Digital, The Star). [2026-10-13] 기존 'Pecan 개발·2025 인도'는 오류로 정정.",
+      "notes": "가나 OCTP(Sankofa-Gye Nyame) 유전, Eni 운영. 2017-07 첫 생산. Yinson 74%·일본 컨소시엄 26% 소유. [2026-10-10] 2026-10-02 Eni Ghana와 계약 변경 체결 — 가스 처리·압축 설비 증설(가스 수출 ~210-220→355 MMscf/d, 개조 2028-Q1 완료 예정), 확정 계약 4년 연장(~2036). 증분 일비 총액 ~$810M 중 Yinson 귀속 ~$600M (2등급: OE Digital, The Star). [2026-10-13] 기존 'Pecan 개발·2025 인도'는 오류로 정정. [2026-10-13 감사] Yinson 사양서: 원유 110→58k bopd, 저장 1.8→1.4 MMbbl, 가스 40→수출 210 MMscfd(재주입 150), 선체 SHI 1998·Keppel 2017 개조. 수심 2,500m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Keppel FELS Singapore, 2017)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 1998 Samsung Heavy-built VLCC) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 40,
+        "gas_capacity_mmscfd": 210,
         "mooring": "Turret Mooring",
         "fid_date": "2014-12",
         "partners": [
@@ -791,7 +797,9 @@
         "yard_source_url": "https://www.yinson-production.com/wp-content/uploads/our-business/pdf/Vessel_Brochure_FPSO_JAK_R1.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "Ghana OCTP (Sankofa-Gye Nyame) fields, operated by Eni. First production Jul 2017. Owned 74% by Yinson, 26% by a Japanese consortium. [2026-10-10] Contract amendment signed with Eni Ghana on 2026-10-02 — added gas processing and compression (gas export ~210–220 → 355 MMscf/d, modification due Q1 2028) and a 4-year extension of the firm term (~2036). Of ~$810M total incremental day-rate value, ~$600M is attributable to Yinson (tier 2: OE Digital, The Star). [2026-10-13] Corrected the earlier 'Pecan development / delivered 2025'."
+      "notes_en": "Ghana OCTP (Sankofa-Gye Nyame) fields, operated by Eni. First production Jul 2017. Owned 74% by Yinson, 26% by a Japanese consortium. [2026-10-10] Contract amendment signed with Eni Ghana on 2026-10-02 — added gas processing and compression (gas export ~210–220 → 355 MMscf/d, modification due Q1 2028) and a 4-year extension of the firm term (~2036). Of ~$810M total incremental day-rate value, ~$600M is attributable to Yinson (tier 2: OE Digital, The Star). [2026-10-13] Corrected the earlier 'Pecan development / delivered 2025'. [2026-10-13 audit] Yinson brochure: oil 110→58k bopd, storage 1.8→1.4 MMbbl, gas 40→210 MMscfd export (150 injection), hull SHI 1998 converted Keppel 2017. 2,500m WD unsourced → null.",
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_jak_r1/",
+      "verified": "2026-10-13"
     },
     {
       "name": "Prelude FLNG",
@@ -975,18 +983,18 @@
       "field": "Mero Field (Libra Block) — Mero 4",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 2000,
-      "oil_capacity_kboed": 225,
-      "storage_mmbbl": 1.8,
-      "contract_start": "2025-06",
-      "contract_end": "2050-06",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 180,
+      "storage_mmbbl": null,
+      "contract_start": "2025-05",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형.",
+      "notes": "Buzios 8번째 FPSO. SBM Fast4Ward 선형. [2026-10-13 감사] Petrobras 공시·SBM 발표: 원유 225→180k bpd, 가스 212→424 MMscfd(12 MMm³/d), 생산 개시 2025-05-24(용선 시작 2025-06→2025-05). 저장·수심·용선 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (SWS 선체 + COSCO Qidong 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: COSCO Shipping (Qidong) Offshore, China",
-        "gas_capacity_mmscfd": 212,
+        "gas_capacity_mmscfd": 424,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2022-12",
         "partners": [
@@ -1005,7 +1013,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/fpso-alexandre-de-gusmao-is-on-its-way-to-brazil-and-consolidates-sbm-offshores-presence-in-the-country/",
         "yard_confidence": "high"
       },
-      "notes_en": "8th Búzios FPSO. SBM Fast4Ward design."
+      "notes_en": "8th Búzios FPSO. SBM Fast4Ward design. [2026-10-13 audit] Petrobras filing and SBM release: oil 225→180k bpd, gas 212→424 MMscfd (12 MMm³/d), production start 2025-05-24 (charter start 2025-06→2025-05). Storage, WD and charter end unsourced → null.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1119639/000129281425002231/pbr20250524_6k.htm",
+      "verified": "2026-10-13"
     },
     {
       "name": "Cidade de Maricá",
@@ -1652,14 +1662,14 @@
       "field": "Jubarte (Pre-salt) / Campos Basin",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 1385,
+      "water_depth_m": null,
       "oil_capacity_kboed": 100,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 1.5,
       "year_delivered": 2024,
-      "contract_start": "2024-10",
-      "contract_end": "2047-10",
+      "contract_start": null,
+      "contract_end": "2047",
       "status": "On Production",
-      "notes": "First oil October 15, 2024 (ahead of schedule); 333m hull; ~24% GHG reduction vs baseline; 23-year charter.",
+      "notes": "First oil October 15, 2024 (ahead of schedule); 333m hull; ~24% GHG reduction vs baseline; 23-year charter. [2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO Shipping Heavy Industry 상하이)",
         "mooring": "Spread mooring",
@@ -1671,31 +1681,35 @@
         "build_type": "conversion",
         "yard_source_url": "https://en.portnews.ru/news/363818/",
         "yard_confidence": "high",
-        "hull_type_en": "VLCC conversion (COSCO Shipping Heavy Industry, Shanghai)"
-      }
+        "hull_type_en": "VLCC conversion (COSCO Shipping Heavy Industry, Shanghai)",
+        "gas_capacity_mmscfd": 177
+      },
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_mq_r1/",
+      "verified": "2026-10-13",
+      "notes_en": "First oil October 15, 2024 (ahead of schedule); 333m hull; ~24% GHG reduction vs baseline; 23-year charter. [2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 100k bopd, storage null→1.5 MMbbl, gas null→177 MMscfd, hull SHI-built 2002, converted 2024. 22.5-year firm charter to ~2047 (Petrobras/Yinson). 1,385m WD and charter start month unsourced → null."
     },
     {
       "name": "Yinson FPSO Atlanta",
       "type": "FPSO",
       "owner": "Yinson Holdings",
-      "client": "ENAUTA",
+      "client": "Brava Energia (ex-Enauta)",
       "field": "Atlanta Field (BS-4)",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 1500,
+      "water_depth_m": null,
       "oil_capacity_kboed": 50,
-      "storage_mmbbl": 1.0,
+      "storage_mmbbl": 1.2,
       "year_delivered": 2024,
-      "contract_start": "2024-01",
-      "contract_end": "2049-01",
+      "contract_start": "2024-12",
+      "contract_end": "2039",
       "status": "On Production",
-      "notes": "Former OSX-2 FPSO; converted at Drydocks World Dubai (UAE); first oil 2024; Atlanta field heavy crude (API ~14°); 25-year charter with ENAUTA.",
+      "notes": "Former OSX-2 FPSO; converted at Drydocks World Dubai (UAE); first oil 2024; Atlanta field heavy crude (API ~14°); 25-year charter with ENAUTA. [2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null.",
       "detail": {
         "hull_type": "FPSO 전환 (구 OSX-2, Drydocks World Dubai)",
         "mooring": "Turret Mooring",
         "yard": "Hull: Drydocks World Dubai, UAE (redeployment/upgrade of ex-OSX-2; 1989 HHI VLCC first converted at Keppel Singapore 2013) · Topsides/integration: Drydocks World Dubai, UAE",
         "financing": "25년 임대 (ENAUTA)",
-        "gas_capacity_mmscfd": 50,
+        "gas_capacity_mmscfd": 12.3,
         "storage_mmbbl": 1.0,
         "water_depth_m": 1500,
         "notable": "Atlanta 중질유(API 14°) 처리 특화 설계; 브라질 Santos Basin",
@@ -1708,7 +1722,10 @@
         "build_type": "conversion",
         "yard_source_url": "https://www.yinson-production.com/wp-content/uploads/our-business/pdf/Vessel_Brochure_FPSO_Atlanta_R1.pdf",
         "yard_confidence": "high"
-      }
+      },
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_atlanta_r1/",
+      "verified": "2026-10-13",
+      "notes_en": "Former OSX-2 FPSO; converted at Drydocks World Dubai (UAE); first oil 2024; Atlanta field heavy crude (API ~14°); 25-year charter with ENAUTA. [2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 50k bopd, storage 1.0→1.2 MMbbl, gas 50→12.3 MMscfd, hull HHI 1989, converted Keppel 2013 and Drydocks World 2022-23. Charter 2024-01–2049 → 2024-12–2039 (15-year firm + 5-year option, up to $1,981M). Client ENAUTA→Brava Energia (formerly Enauta). 1,500m WD unsourced → null."
     },
     {
       "name": "FPSO N'Goma",
@@ -1972,14 +1989,14 @@
       "field": "Marlim (Campos Basin)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 927,
+      "water_depth_m": null,
       "oil_capacity_kboed": 70,
-      "storage_mmbbl": 1.6,
+      "storage_mmbbl": 1.5,
       "contract_start": "2023-05",
       "contract_end": "2048",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "Yinson 63.2% / Sumitomo 25% 등 JV 소유. 25년 장기 용선(~2048). Marlim 유전 재개발 핵심 자산. 2025년 피크 생산 목표.",
+      "notes": "Yinson 63.2% / Sumitomo 25% 등 JV 소유. 25년 장기 용선(~2048). Marlim 유전 재개발 핵심 자산. 2025년 피크 생산 목표. [2026-10-13 감사] Yinson 사양서: 원유 70k bopd·가스 142 MMscfd 확인, 저장 1.6→1.5 MMbbl, 선체 SHI·COSCO Qidong 2022 개조. 25년 확정 용선 2023-05~2048(Yinson 연차보고서 2023). 수심 927m은 출처 없어 null.",
       "detail": {
         "hull_type": "New build FPSO (COSCO Changxing, Shanghai)",
         "gas_capacity_mmscfd": 142,
@@ -1994,7 +2011,9 @@
         "yard_source_url": "https://www.ship-technology.com/projects/anna-nery-fpso",
         "yard_confidence": "high"
       },
-      "notes_en": "Owned by JV of Yinson 63.2% / Sumitomo 25% and others. 25-year long-term charter (~2048). Core asset for Marlim field redevelopment. Peak production targeted 2025."
+      "notes_en": "Owned by JV of Yinson 63.2% / Sumitomo 25% and others. 25-year long-term charter (~2048). Core asset for Marlim field redevelopment. Peak production targeted 2025. [2026-10-13 audit] Yinson brochure: confirmed 70k bopd and 142 MMscfd, storage 1.6→1.5 MMbbl, hull SHI converted COSCO Qidong 2022. 25-year firm charter May 2023–2048 (Yinson Annual Report 2023). 927m WD unsourced → null.",
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_annanery_r1/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Agogo",
@@ -2004,14 +2023,14 @@
       "field": "Agogo-Ndungu (Block 15/06)",
       "region": "West Africa",
       "country": "Angola",
-      "water_depth_m": null,
+      "water_depth_m": 1700,
       "oil_capacity_kboed": 120,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 1.6,
       "contract_start": "2025-08",
       "contract_end": "2040",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "세계 최초 post-combustion CCS 탑재 FPSO. 예정 4개월 앞서 2025-07-29 첫 생산. 15년 firm 용선(2025-08~). Yinson 100% 소유.",
+      "notes": "세계 최초 post-combustion CCS 탑재 FPSO. 예정 4개월 앞서 2025-07-29 첫 생산. 15년 firm 용선(2025-08~). Yinson 100% 소유. [2026-10-13 감사] Yinson 발표: 원유 120k bopd 확인, 저장 null→1.6 MMbbl, 첫 생산 2025-07-29, 15년 확정 용선(2025-08~2040, 연 단위 최대 5년 옵션). 가스 재주입 230 MMscfd·수심 ~1,700m(Offshore Technology).",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -2024,9 +2043,12 @@
         "yard": "Hull: COSCO Shipping Heavy Industry (Shanghai), China (conversion of 2009 tanker; Baird lists Huarun Dadong Dockyard) · Topsides/integration: COSCO Shipping Heavy Industry (Shanghai), China",
         "build_type": "conversion",
         "yard_source_url": "https://www.yinson.com/news/agogo-fpso-sails-away-from-cosco-shipyard",
-        "yard_confidence": "medium"
+        "yard_confidence": "medium",
+        "gas_capacity_mmscfd": 230
       },
-      "notes_en": "World's first FPSO with post-combustion CCS. First production 2025-07-29, 4 months ahead of schedule. 15-year firm charter (from Aug 2025). 100% owned by Yinson."
+      "notes_en": "World's first FPSO with post-combustion CCS. First production 2025-07-29, 4 months ahead of schedule. 15-year firm charter (from Aug 2025). 100% owned by Yinson. [2026-10-13 audit] Yinson release: confirmed 120k bopd, storage null→1.6 MMbbl, first oil 2025-07-29, 15-year firm charter (Aug 2025–2040, annual options up to 5 years). Gas injection 230 MMscfd and ~1,700m WD (Offshore Technology).",
+      "source_url": "https://www.yinson-production.com/wp-content/uploads/2025/08/20250813-Agogo-FPSO-achieves-first-oil-four-months-ahead-of-schedule-and-begins-15-year-firm-charter-CLEAN-Rev-1.pdf",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Helang",
@@ -2039,22 +2061,25 @@
       "water_depth_m": null,
       "oil_capacity_kboed": 12,
       "storage_mmbbl": 0.55,
-      "contract_start": "2019-12",
+      "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "year_delivered": 2019,
-      "notes": "Yinson 100% 소유. Sarawak 앞바다 Layang 유전. 이중선체 내부 터릿 계류 FPSO. 2019-12-06 첫 생산.",
+      "year_delivered": null,
+      "notes": "Yinson 100% 소유. Sarawak 앞바다 Layang 유전. 이중선체 내부 터릿 계류 FPSO. 2019-12-06 첫 생산. [2026-10-13 감사] Yinson 사양서: 원유 12k bopd·저장 0.55 MMbbl 확인, 가스 null→수출 170 MMscfd. 선체는 1992 Fincantieri 건조·2002 Keppel 개조·2004 호주 재배치 — 외부 검토 시트의 'HRDD/COSCO Qidong(구 Four Rainbow)'는 오류로 정정. 계약기간·인도연도는 출처 없어 null.",
       "detail": {
         "hull_type": "이중선체 내부 터릿 계류 FPSO",
         "notable": "말레이시아 Layang 유전 FPSO. ENEOS Xplora (구 JX Nippon) 운영 계약.",
         "hull_type_en": "Double-hull internal-turret-moored FPSO",
         "notable_en": "FPSO for Malaysia's Layang field. Operating contract with ENEOS Xplora (ex-JX Nippon).",
-        "yard": "Hull: HRDD (Huarun Dadong Dockyard) then COSCO Shipping Qidong Offshore, China (ex-gas tanker Four Rainbow) · Topsides/integration: COSCO Shipping Qidong Offshore, China",
+        "yard": "Hull: Fincantieri, Italy (1992) · Conversion: Keppel Shipyard, Singapore (2002)",
         "build_type": "conversion",
-        "yard_source_url": "https://www.yinson.com/news/project-update-fpso-helang-enters-second-construction-phase/",
-        "yard_confidence": "high"
+        "yard_source_url": "https://www.yinson-production.com/vessel_brochure_fpso_helang_r1/",
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 170
       },
-      "notes_en": "100% owned by Yinson. Layang field, offshore Sarawak. Double-hull internal-turret-moored FPSO. First production 2019-12-06."
+      "notes_en": "100% owned by Yinson. Layang field, offshore Sarawak. Double-hull internal-turret-moored FPSO. First production 2019-12-06. [2026-10-13 audit] Yinson brochure: confirmed 12k bopd and 0.55 MMbbl storage, gas null→170 MMscfd export. Hull built 1992 Fincantieri, converted Keppel 2002, redeployed Australia 2004 — the review sheet's 'HRDD/COSCO Qidong (ex-Four Rainbow)' was wrong and is corrected. Contract term and delivery year unsourced → null.",
+      "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_helang_r1/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO PTSC Lam Son",
@@ -2064,14 +2089,14 @@
       "field": "Thang Long - Dong Do (Block 1-2/97, Cuu Long Basin)",
       "region": "Asia Pacific",
       "country": "Vietnam",
-      "water_depth_m": 80,
-      "oil_capacity_kboed": 20,
-      "storage_mmbbl": 0.65,
+      "water_depth_m": null,
+      "oil_capacity_kboed": 18,
+      "storage_mmbbl": 0.6,
       "contract_start": "2014",
-      "contract_end": null,
+      "contract_end": "2026-12",
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "Yinson 49% / PTSC 51% JV (PTSC Asia Pacific Pte. Ltd.) 소유. Keppel(SG) 전환(2014). Cuu Long Basin 천해(~80m). 계약 연장 다수 체결.",
+      "notes": "Yinson 49% / PTSC 51% JV (PTSC Asia Pacific Pte. Ltd.) 소유. Keppel(SG) 전환(2014). Cuu Long Basin 천해(~80m). 계약 연장 다수 체결. [2026-10-13 감사] Yinson 사양서·발표: 원유 20→18k bopd, 저장 0.65→0.6 MMbbl, 가스 압축 47 MMscfd, 선체 SHI 1994·Keppel 2014 개조, Yinson 49%·PTSC 51%. 용선 2025-01~2026-06 확정 + 2026-12까지 자동 연장. 수심 80m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO (Keppel, 2014)",
         "notable": "Yinson-PTSC 합작 FPSO. 베트남 Cuu Long Basin 천해 운영. Thang Long-Dong Do 유전 통합 생산.",
@@ -2080,9 +2105,12 @@
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 1994 Samsung Heavy-built tanker) · Topsides/integration: Keppel Shipyard, Singapore",
         "build_type": "conversion",
         "yard_source_url": "https://www.yinson-production.com/wp-content/uploads/our-business/pdf/Vessel_Brochure_FPSO_PTSC_Lam_Son_R1.pdf",
-        "yard_confidence": "high"
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 47
       },
-      "notes_en": "Owned by Yinson 49% / PTSC 51% JV (PTSC Asia Pacific Pte. Ltd.). Converted by Keppel (SG) in 2014. Cuu Long Basin shallow water (~80m). Multiple contract extensions signed."
+      "notes_en": "Owned by Yinson 49% / PTSC 51% JV (PTSC Asia Pacific Pte. Ltd.). Converted by Keppel (SG) in 2014. Cuu Long Basin shallow water (~80m). Multiple contract extensions signed. [2026-10-13 audit] Yinson brochure and release: oil 20→18k bopd, storage 0.65→0.6 MMbbl, gas compression 47 MMscfd, hull SHI 1994 converted Keppel 2014, Yinson 49% / PTSC 51%. Charter firm Jan 2025–Jun 2026 + automatic extension to Dec 2026. 80m WD unsourced → null.",
+      "source_url": "https://yinson-production.com/wp-content/uploads/2024/12/20241230-Yinson-Production-secures-contract-extension-for-FPSO-Lam-Son.pdf",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Guanabara MV31",
