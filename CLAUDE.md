@@ -52,6 +52,11 @@
 
 ---
 
+### 6. 출처 감사 (2026-10-13~, 정기 갱신마다)
+
+- 출처 없이 들어간 기존 숫자가 남아 있다(외부 검토에서 Whale capex 8.0, Atapu/Sépia 이중 집계, 가상 FPSO 2척 등 발견). 정기 갱신 때마다 `python3 scripts/audit_queue.py <pipeline|fpso|fleet> --n N`이 고른 항목을 원문 대조한다(pipeline_fpso: pipeline 6 + fpso 8, fleet: 5).
+- 확인 못 한 값은 null. 감사한 항목에는 `source_url`과 `verified`를 기록한다. 남은 수는 `check_data.py` NOTE와 `audit_queue.py --summary`로 본다.
+
 ### 과거 오류 사례 (재발 방지 참고)
 
 | 오류 유형 | 실제 사례 | 원인 |
@@ -60,6 +65,10 @@
 | 프로젝트명 혼동 | Kaminho를 SBM 프로젝트로 기재 (실제: Saipem EPC) | Kaombo(SBM)와 혼동 |
 | owner 오기 | Ilhabela·Maricá를 MODEC 소유로 기재 (실제: SBM) | 확인 없이 입력 |
 | hull_type 오기 | Fast4Ward가 아닌 FPSO를 Fast4Ward로 기재 | 패턴 대입 |
+| 출처 없는 그럴듯한 숫자 | Whale capex 8.0(실제 미공시, 추정 ~$1.25B), REVIT Tupi·P-91 4.0 | 근거 없이 비슷한 규모 값으로 채움 |
+| 금액 범위 혼동 | P-84+P-85 합산 계약액 $8.15B를 Atapu 2·Sépia 2에 각각 8.0, Marjan+Berri 합산 $18B를 17+8로 기재 | 합산액·계약액·총사업비 구분 안 함 |
+| 날짜 혼동 | Kasawari FID에 CCS FID 연도, 여러 FID에 발표·착공 연도 | FID 원문 확인 안 함 |
+| 가상 선박 | 'BW Connector', 'Yinson FPSO John Agyekum Kufuor II' | 존재 확인 없이 생성 |
 | 가상 데이터 입력 | FLNG Sorrento, Dalia 2, PM3-CAA FPSO 등 실재하지 않는 프로젝트 등재 | 검증 없이 그럴싸한 데이터 생성 |
 
 ---

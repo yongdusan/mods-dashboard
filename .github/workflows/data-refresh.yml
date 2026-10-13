@@ -99,7 +99,7 @@ jobs:
           claude_args: |
             --model ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5-5' }}
             --max-turns 150
-            --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(python3 scripts/check_data.py*),Bash(python3 scripts/refresh_news.py*),Bash(python3 -m json.tool *),Bash(git status*),Bash(git diff*)"
+            --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(python3 scripts/check_data.py*),Bash(python3 scripts/refresh_news.py*),Bash(python3 scripts/audit_queue.py*),Bash(python3 -m json.tool *),Bash(git status*),Bash(git diff*)"
 
       - name: Validate
         id: validate

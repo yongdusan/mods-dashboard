@@ -3,7 +3,7 @@
 ## 실행 환경 (GitHub Actions 클라우드 — 무인 실행)
 - 작업 폴더는 저장소 루트다. 상대 경로(`data/...`, `scripts/...`)를 쓴다.
 - 먼저 `CLAUDE.md`를 끝까지 읽고 "데이터 신뢰성 원칙"(1~2등급 출처만, 패턴 대입 금지, 불확실하면 null)을 지킨다.
-- 쓸 수 있는 도구: WebSearch, WebFetch, Read, Edit/Write(`data/` 아래만), Bash는 `python3 scripts/check_data.py`, `python3 -m json.tool data/<file>`, `git status`, `git diff`만.
+- 쓸 수 있는 도구: WebSearch, WebFetch, Read, Edit/Write(`data/` 아래만), Bash는 `python3 scripts/check_data.py`, `python3 scripts/audit_queue.py`, `python3 -m json.tool data/<file>`, `git status`, `git diff`만.
 - **git commit / push는 하지 않는다.** 작업이 끝나면 워크플로가 `scripts/check_data.py`로 검증한 뒤 담당 파일만 커밋·push한다. 검증에서 ERROR가 나면 배포되지 않으므로, 끝내기 전에 직접 check_data.py를 돌려 ERROR 0을 확인한다.
 - 오늘 날짜는 환경 변수 `TODAY`(YYYY-MM-DD)를 기준으로 한다.
 - 확인이 안 되는 항목은 건너뛰고 마지막 보고에 남긴다.
@@ -22,6 +22,15 @@
 5. 리그별 갱신 규칙(CLAUDE.md §1): 신규 계약은 status/operator/contract_start/contract_end/day_rate_kusd, 계약 종료 후 후속 미확인은 status "Idle"과 계약 필드 null. day rate가 공시되지 않으면 null. 각 수정 리그의 `source`/`source_url`에 출처를 적는다.
 6. `updated`를 오늘 날짜로 바꾼다.
 7. `python3 scripts/check_data.py` 재실행해 ERROR 0을 확인한다. ERROR가 있으면 고친다. 고칠 수 없으면 해당 변경을 되돌리고 보고한다. (커밋·push는 워크플로가 한다)
+
+## 출처 감사 (매 실행 — 그럴듯한 숫자 금지)
+- 데이터에는 출처 없이 들어간 숫자가 남아 있다. 매 실행마다 아래 대상만큼 감사한다: `python3 scripts/audit_queue.py fleet --n 5`
+- 출력된 각 항목의 **모든 숫자·날짜 필드**(capex, FID, first_production, 용량, 계약 기간·금액, 조선소, 인도연도 등)를 1~2등급 출처 원문으로 확인한다.
+  - 맞으면 그대로 두고, 틀리면 원문 값으로 고친다.
+  - 출처를 찾지 못한 값은 **null로 바꾼다**. 추정·유사 프로젝트 값·"대략" 값으로 채우지 않는다. 공시 없는 추정이 꼭 필요하면 출처(예: Wood Mackenzie 추정)를 notes에 밝히고 confidence를 low로 둔다.
+  - 존재가 확인되지 않는 항목(가상 프로젝트·선박)은 삭제하고 보고에 적는다.
+- 감사한 항목에는 `source_url`(대표 출처)과 `verified`(오늘 날짜)를 기록하고, 고친 내용을 notes(+notes_en)에 `[YYYY-MM-DD 감사] 이전값→새값: 근거` 형식으로 남긴다.
+- 보고에 감사한 항목 수, 고친 값, null 처리한 값, 남은 미확인 수(`python3 scripts/audit_queue.py --summary`)를 적는다.
 
 ## 영문 필드 (KO/EN 전환)
 - 사이트에 한국어/영어 전환 스위치가 있다. 한국어로 쓰거나 고친 텍스트 필드에는 같은 객체에 `<필드>_en` 영문 번역을 함께 쓴다. 예: `notes` → `notes_en`, `summary` → `summary_en`, 문자열 목록 `highlights` → 같은 길이·같은 순서의 `highlights_en`.

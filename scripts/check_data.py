@@ -229,6 +229,14 @@ def run(today):
         if miss:
             notes.append(f"{name}.json: {len(miss)} Korean field(s) without _en — e.g. {', '.join(miss[:3])}")
 
+    # ---------- source audit backlog ----------
+    # Records whose numbers have never been traced to a source. Worked down a
+    # few per scheduled refresh (scripts/audit_queue.py); shown as NOTE only.
+    from audit_queue import unsourced_counts
+    for kind, (unsourced, total) in unsourced_counts().items():
+        if unsourced:
+            notes.append(f"{kind}: {unsourced}/{total} records without source_url — audit queue: python3 scripts/audit_queue.py {kind}")
+
     return errors, overdue, notes
 
 
