@@ -226,8 +226,8 @@
         "rig_mix": {
           "drillships": 13,
           "semisubmersibles": 0,
-          "jackups": 29,
-          "total": 42
+          "jackups": 28,
+          "total": 41
         },
         "key_clients": [
           "bp",
@@ -269,11 +269,11 @@
           }
         ],
         "notable": "Transocean과의 합병 발표 이후 독립 실적 가이던스와 earnings call을 중단한 상태다. 현재 데이터는 합병 전 stand-alone Valaris 기준이다.",
-        "rig_mix_source": "Valaris FSR Aug 5 2026: 드릴십 13(계류 3), 잭업 29(ARO 임대 7 포함; 104·109 매각 제외). 반잠수식 MS-1은 2026-09 재활용 매각으로 제외(Offshore Energy 2026-10-07)",
+        "rig_mix_source": "Valaris FSR Aug 5 2026: 드릴십 13(계류 3), 잭업 28(ARO 임대 7 포함; 104·109 2026-06/07 매각, 111 2026-09 재활용 매각 제외). 반잠수식 MS-1은 2026-09 재활용 매각으로 제외",
         "business_model_en": "Diversified offshore drilling contractor owning drillships, semisubmersibles and jack-ups. Operates both deepwater and jack-up contracts.",
         "strategy_en": "Until the merger with Transocean, focused on defending backlog and improving fleet utilization. After closing, it will be integrated into Transocean's floater-centric portfolio.",
         "notable_en": "Has suspended stand-alone guidance and earnings calls since the Transocean merger announcement. Current data reflect stand-alone, pre-merger Valaris.",
-        "rig_mix_source_en": "Valaris FSR Aug 5 2026: 13 drillships (3 stacked), 29 jack-ups (incl. 7 leased to ARO; excl. sold 104 and 109). Semisub MS-1 excluded — sold for recycling Sep 2026 (Offshore Energy 2026-10-07)"
+        "rig_mix_source_en": "Valaris FSR Aug 5 2026: 13 drillships (3 stacked), 28 jack-ups (incl. 7 leased to ARO; excl. 104/109 sold Jun/Jul 2026 and 111 recycled Sep 2026). Semisub MS-1 excluded (recycled Sep 2026)"
       },
       "quarters": [
         {
