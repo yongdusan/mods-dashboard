@@ -85,17 +85,18 @@
       "type": "FPSO Lessor",
       "hq": "Malaysia",
       "ticker": "7293.KL",
-      "fleet_owned": 9,
+      "fleet_owned": 8,
       "on_lease": 8,
       "backlog_busd": 19.3,
       "source": "Baird Maritime — Yinson Q2 FY2027 (Sep 2026): 가동 FPSO 선단 contracted revenue backlog",
       "as_of": "2026-07-31",
       "source_url": "https://www.bairdmaritime.com/offshore/vessels-rigs/fposfpsos/yinson-q2-cash-flow-fso",
-      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] backlog 20.5→19.3: Q2 FY2027(2026-07-31) 가동 FPSO 선단 contracted revenue backlog ~$19.3B(2등급 출처). RHB Research는 order book $18.9B 제시. [2026-10-10] 위 backlog 수치는 7/31 기준이라 미조정 — 이후 JAK 계약 변경(+~$0.6B, 2026-10-02)과 Agogo 채권 리파이낸싱($1.458B, 10/7 발행가격 결정)이 발표됨. 다음 분기 결산에서 반영.",
+      "notes": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] backlog 20.5→19.3: Q2 FY2027(2026-07-31) 가동 FPSO 선단 contracted revenue backlog ~$19.3B(2등급 출처). RHB Research는 order book $18.9B 제시. [2026-10-10] 위 backlog 수치는 7/31 기준이라 미조정 — 이후 JAK 계약 변경(+~$0.6B, 2026-10-02)과 Agogo 채권 리파이낸싱($1.458B, 10/7 발행가격 결정)이 발표됨. 다음 분기 결산에서 반영. [2026-10-13] 보유 대수 9→8 정정: Yinson Production 공식 선단(자산 11개) = FPSO 8척(PTSC Lam Son, John Agyekum Kufuor, Helang, Abigail-Joseph, Anna Nery, Maria Quitéria, Atlanta, Agogo) + FSO 3척(Bien Dong 01 가동, Lac Da Vang·Block B 건조 중). 기존 9는 FSO Bien Dong 01까지 센 것으로 보임 — 이 대시보드는 FPSO/FLNG 기준. 공식 페이지 backlog는 $18.9B(2026-04-30, 옵션 포함, 지분 기준).",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0,
       "source_en": "Baird Maritime — Yinson Q2 FY2027 (Sep 2026): operating FPSO fleet contracted revenue backlog",
-      "notes_en": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] Backlog 20.5→19.3: Q2 FY2027 (2026-07-31) operating FPSO fleet contracted revenue backlog ~$19.3B (tier-2 source). RHB Research cites an order book of $18.9B. [2026-10-10] The backlog above is as of 7/31 and not yet adjusted — since then the JAK contract amendment (+~$0.6B, 2026-10-02) and the Agogo bond refinancing ($1.458B, priced 10/7) were announced. To be reflected at the next quarterly results."
+      "notes_en": "Malaysia's leading FPSO lessor; high backlog growth trajectory. [2026-10-08] Backlog 20.5→19.3: Q2 FY2027 (2026-07-31) operating FPSO fleet contracted revenue backlog ~$19.3B (tier-2 source). RHB Research cites an order book of $18.9B. [2026-10-10] The backlog above is as of 7/31 and not yet adjusted — since then the JAK contract amendment (+~$0.6B, 2026-10-02) and the Agogo bond refinancing ($1.458B, priced 10/7) were announced. To be reflected at the next quarterly results. [2026-10-13] Owned units corrected 9→8: Yinson Production's official fleet (11 assets) = 8 FPSOs (PTSC Lam Son, John Agyekum Kufuor, Helang, Abigail-Joseph, Anna Nery, Maria Quitéria, Atlanta, Agogo) + 3 FSOs (Bien Dong 01 operating; Lac Da Vang and Block B under construction). The previous 9 appears to have counted FSO Bien Dong 01 — this dashboard counts FPSO/FLNG only. The official page shows backlog of $18.9B (2026-04-30, incl. options, equity share).",
+      "fleet_source_url": "https://www.yinson-production.com/our-business/fleet/"
     },
     {
       "name": "Saipem",
