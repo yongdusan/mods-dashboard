@@ -786,7 +786,10 @@
         { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 125, minWidth: 125, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
         { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
-            const desc = esc(c.notes || '');
+            const parts0 = OMI.splitNotes(c.notes);
+            const desc = esc(parts0.summary) + (parts0.log.length
+              ? ` <span class="omi-log-chip" title="${esc(parts0.log.map(e => e.date + ' — ' + e.text).join('\n'))}">${parts0.log.length} update${parts0.log.length > 1 ? 's' : ''}</span>`
+              : '');
             // Append latest earnings data if available
             const eq = (window._fpsoEarningsMap || {})[c.name];
             if (!eq) return `<span style="color:var(--text-muted);font-size:11px">${desc}</span>`;

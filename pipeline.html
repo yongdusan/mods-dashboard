@@ -1166,6 +1166,7 @@
       const sourceHtml = proj.source_url
         ? `<a href="${proj.source_url}" target="_blank" rel="noopener">${proj.source}</a>`
         : proj.source || '—';
+      const notesParts = OMI.splitNotes(proj.notes);
 
       document.getElementById('drawer-body').innerHTML = `
         <div class="drawer-section">
@@ -1203,10 +1204,16 @@
           </div>
         </div>
 
-        ${proj.notes ? `
+        ${notesParts.summary ? `
         <div class="drawer-section">
           <div class="drawer-section-title">Notes</div>
-          <div class="drawer-notes">${proj.notes}</div>
+          <div class="drawer-notes">${OMI.esc(notesParts.summary)}</div>
+        </div>` : ''}
+
+        ${notesParts.log.length ? `
+        <div class="drawer-section">
+          <div class="drawer-section-title">Update log</div>
+          ${OMI.logHtml(notesParts.log)}
         </div>` : ''}
 
         <div class="drawer-section">

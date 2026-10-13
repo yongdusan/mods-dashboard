@@ -127,10 +127,10 @@
       "source": "Golar LNG Q2 2026 Interim Results (Sep 2026) — EBITDA backlog",
       "as_of": "2026-06-30",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001207179/000117184326005483/exh_991.htm",
-      "notes": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG MkII 3호기(Esperanza, Fuji LNG 개조, CIMC Raffles, 2027년 말 인도) + 4호기(CIMC Raffles, 2029년 말 인도, 2026-08 발주) 건조 중. [2026-10-08] Q2 2026 기준 EBITDA backlog $16.6B(자산별 합산: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar 지분, 헤드라인 ~$17B)(Hilli·Gimi·Esperanza, 2045까지, commodity upside 제외).",
+      "notes": "First commercial FLNG operator. FLNG Gimi on production (bp GTA); FLNG Hilli redeploying to Argentina (SESA, from 2027) after its Cameroon contract ended in Q3 2026. FLNG MkII 3호기(Esperanza, Fuji LNG 개조, CIMC Raffles, 2027년 말 인도) + 4호기(CIMC Raffles, 2029년 말 인도, 2026-08 발주) 건조 중. [2026-10-08] Q2 2026 기준 EBITDA backlog $16.6B(자산별 합산: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar 지분, 헤드라인 ~$17B)(Hilli·Gimi·Esperanza, 2045까지, commodity upside 제외).",
       "newbuilds_owned": 2,
       "newbuilds_operated": 0,
-      "notes_en": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG MkII #3 (Esperanza, Fuji LNG conversion, CIMC Raffles, delivery end-2027) + #4 (CIMC Raffles, delivery end-2029, ordered Aug 2026) under construction. [2026-10-08] EBITDA backlog $16.6B as of Q2 2026 (sum by asset: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar share; headline ~$17B) (Hilli, Gimi, Esperanza, through 2045, excluding commodity upside)."
+      "notes_en": "First commercial FLNG operator. FLNG Gimi on production (bp GTA); FLNG Hilli redeploying to Argentina (SESA, from 2027) after its Cameroon contract ended in Q3 2026. FLNG MkII #3 (Esperanza, Fuji LNG conversion, CIMC Raffles, delivery end-2027) + #4 (CIMC Raffles, delivery end-2029, ordered Aug 2026) under construction. [2026-10-08] EBITDA backlog $16.6B as of Q2 2026 (sum by asset: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar share; headline ~$17B) (Hilli, Gimi, Esperanza, through 2045, excluding commodity upside)."
     },
     {
       "name": "Petrobras",

@@ -430,13 +430,30 @@ body .chart-container, body canvas { max-width: 100%; }
 .omi-lang button:hover { color: var(--foam); background: rgba(138,155,174,.08); }
 .omi-lang button[aria-pressed="true"] { background: var(--signal); color: var(--signal-ink); cursor: default; }
 .omi-lang button:focus-visible { outline: 2px solid var(--signal); outline-offset: -2px; }
+/* meta + language switch travel together */
+.omi-tools { display: flex; align-items: center; gap: 14px; flex: none; }
 @media (max-width: 1180px) {
-  body .header-right .omi-lang { position: absolute; top: 12px; right: clamp(16px, 3vw, 40px); }
-  body > .header .header-meta { right: calc(clamp(16px, 3vw, 40px) + 84px); }
+  body .header-right .omi-tools { position: absolute; top: 12px; right: 0; }
+  body > .header .header-right .omi-tools { right: clamp(16px, 3vw, 40px); }
+  body .omi-tools .header-meta { position: static !important; right: auto !important; top: auto !important; }
 }
 @media (max-width: 640px) {
   body .header-title { padding-right: 76px; }
   body .header-title h1 { min-width: 0; }
   body .header-title h1 a { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .omi-lang button { min-width: 30px; padding: 0 6px; }
+}
+
+/* ---- Update log (dated note entries, built by OMI.logHtml) ---- */
+.omi-log { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 1px solid var(--line-2); display: grid; gap: 12px; }
+.omi-log li { position: relative; display: grid; gap: 3px; font-size: 12px; line-height: 1.55; color: var(--silt); }
+.omi-log li::before {
+  content: ""; position: absolute; left: -18px; top: 6px; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--hull); border: 1px solid var(--line-2);
+}
+.omi-log li:first-child::before { background: var(--signal); border-color: var(--signal); }
+.omi-log time { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .04em; color: var(--foam); }
+.omi-log-chip {
+  display: inline-block; margin-left: 6px; padding: 0 6px; border: 1px solid var(--line-2); border-radius: 2px;
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; color: var(--silt); white-space: nowrap; cursor: help;
 }

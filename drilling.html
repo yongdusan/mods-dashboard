@@ -1330,6 +1330,7 @@
   function openDrawer(rig) {
     const drawer = document.getElementById('rig-drawer');
     const overlay = document.getElementById('drawer-overlay');
+    const noteParts = OMI.splitNotes(rig.data_note);
 
     // Header
     document.getElementById('drawer-rig-name').textContent = rig.name;
@@ -1372,9 +1373,13 @@
         </div>
       </div>
 
-      ${rig.data_note ? `<div class="drawer-section">
+      ${noteParts.summary ? `<div class="drawer-section">
         <div class="drawer-section-title">Data Note</div>
-        <div class="data-note-card">${esc(rig.data_note)}</div>
+        <div class="data-note-card">${esc(noteParts.summary)}</div>
+      </div>` : ''}
+      ${noteParts.log.length ? `<div class="drawer-section">
+        <div class="drawer-section-title">Update log</div>
+        ${OMI.logHtml(noteParts.log)}
       </div>` : ''}
 
       <!-- Rig Specs -->

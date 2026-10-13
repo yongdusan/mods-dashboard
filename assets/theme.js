@@ -165,8 +165,14 @@
     }).observe(document.body, { childList: true, subtree: true, characterData: true });
   }
   function addLangToggle() {
-    var host = document.querySelector('.header-right') || document.querySelector('.header');
-    if (!host || host.querySelector('.omi-lang')) return;
+    var hdr = document.querySelector('.header-right') || document.querySelector('.header');
+    if (!hdr || hdr.querySelector('.omi-lang')) return;
+    // Group the "updated" meta and the switch so they position as one unit.
+    var host = document.createElement('div');
+    host.className = 'omi-tools';
+    var meta = hdr.querySelector('.header-meta');
+    hdr.appendChild(host);
+    if (meta) host.appendChild(meta);
     var g = document.createElement('div');
     g.className = 'omi-lang';
     g.setAttribute('role', 'group');
@@ -185,6 +191,58 @@
       g.appendChild(b);
     });
     host.appendChild(g);
+  }
+
+  /* ── Notes: separate the description from dated update entries ─────────
+     Data notes accumulate entries like "[2026-10-08] …", "[정정 2026-10-08] …",
+     "[2026-10-13 audit] …". Tables show only the description; drawers show
+     the entries as an update log, newest first. */
+  var LOG_TAG = /\[[^\]\d]{0,24}(\d{4}-\d{2}-\d{2})[^\]]{0,40}\]/g;
+  function escHtml(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function splitNotes(text) {
+    text = String(text || '');
+    var marks = [], m;
+    LOG_TAG.lastIndex = 0;
+    while ((m = LOG_TAG.exec(text))) marks.push({ at: m.index, end: LOG_TAG.lastIndex, date: m[1] });
+    if (!marks.length) return { summary: text.trim(), log: [] };
+    var log = marks.map(function (mk, i) {
+      var body = text.slice(mk.end, i + 1 < marks.length ? marks[i + 1].at : text.length).trim();
+      return { date: mk.date, text: body };
+    }).filter(function (e) { return e.text; });
+    log.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    return { summary: text.slice(0, marks[0].at).trim(), log: log };
+  }
+  function logHtml(log) {
+    if (!log || !log.length) return '';
+    return '<ol class="omi-log">' + log.map(function (e) {
+      return '<li><time>' + escHtml(e.date) + '</time><span>' + escHtml(e.text) + '</span></li>';
+    }).join('') + '</ol>';
+  }
+  window.OMI = Object.assign(window.OMI || {}, { splitNotes: splitNotes, logHtml: logHtml, esc: escHtml, lang: LANG });
+
+  /* Short nav labels so the full menu fits; full names stay in title/aria. */
+  var NAV_SHORT = {
+    'index.html': 'Overview', 'pipeline.html': 'Pipeline', 'drilling.html': 'Drilling',
+    'fpso.html': 'FPSO & FLNG', 'earnings.html': 'Driller Financials',
+    'fpso_earnings.html': 'FPSO Financials', 'news.html': 'News'
+  };
+  function shortenNav() {
+    var here = (location.pathname.split('/').pop() || 'index.html');
+    Array.prototype.forEach.call(document.querySelectorAll('.header-nav .nav-link'), function (a) {
+      var key = (a.getAttribute('href') || '').split(/[?#]/)[0] || (a.classList.contains('active') ? here : '');
+      var short = NAV_SHORT[key];
+      if (!short || a.textContent.trim() === short) return;
+      a.title = a.textContent.trim();
+      a.setAttribute('aria-label', a.title);
+      a.textContent = short;
+    });
+    // On narrow screens the menu scrolls sideways: bring the current page into view.
+    var nav = document.querySelector('.header-nav'), cur = nav && nav.querySelector('.nav-link.active');
+    if (nav && cur && nav.scrollWidth > nav.clientWidth) {
+      nav.scrollLeft = Math.max(0, cur.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2);
+    }
   }
 
   function decorate() {
@@ -230,7 +288,7 @@
     fix();
     new MutationObserver(fix).observe(m, { childList: true, subtree: true });
   }
-  function boot() { decorate(); addLangToggle(); tidyMeta(); startUiTranslate(); }
+  function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
