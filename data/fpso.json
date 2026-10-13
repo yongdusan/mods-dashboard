@@ -39,16 +39,16 @@
       "type": "FPSO Lessor",
       "hq": "Netherlands",
       "ticker": "SBMO.AS",
-      "fleet_owned": 12,
-      "on_lease": 13,
+      "fleet_owned": 11,
+      "on_lease": 11,
       "backlog_busd": 35.6,
       "source": "SBM Offshore Half Year 2026 Earnings (Aug 6, 2026) — pro-forma directional backlog",
       "as_of": "2026-06-30",
       "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html",
-      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [2026-10-13 정정] 건조 중인 L&O(임대) 신조 없음 — Jaguar는 ExxonMobil 매각 후 운영, GranMorgu는 TotalEnergies 턴키, SEAP I·II(P-81·P-87)는 Petrobras 소유·SBM 건조+O&M. Kaminho는 Saipem EPC로 SBM과 무관. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] 보유 13→12: Liza Unity는 2023-11 ExxonMobil 매입(SBM 운영만).",
+      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. [2026-10-13 정정] 건조 중인 L&O(임대) 신조 없음 — Jaguar는 ExxonMobil 매각 후 운영, GranMorgu는 TotalEnergies 턴키, SEAP I·II(P-81·P-87)는 Petrobras 소유·SBM 건조+O&M. Kaminho는 Saipem EPC로 SBM과 무관. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] 보유 13→12: Liza Unity는 2023-11 ExxonMobil 매입(SBM 운영만). [2026-10-13] 보유 12→11: P-57은 Petrobras 턴키 공급 선박.",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0,
-      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [Corrected 2026-10-13] No L&O (lease) newbuilds under construction — Jaguar is sold to ExxonMobil and then operated, GranMorgu is a TotalEnergies turnkey, SEAP I/II (P-81, P-87) are Petrobras-owned with SBM build + O&M. Kaminho is a Saipem EPC, unrelated to SBM. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] Owned 13→12: Liza Unity was bought by ExxonMobil in Nov 2023 (SBM operates only)."
+      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. [Corrected 2026-10-13] No L&O (lease) newbuilds under construction — Jaguar is sold to ExxonMobil and then operated, GranMorgu is a TotalEnergies turnkey, SEAP I/II (P-81, P-87) are Petrobras-owned with SBM build + O&M. Kaminho is a Saipem EPC, unrelated to SBM. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B. [2026-10-13] Owned 13→12: Liza Unity was bought by ExxonMobil in Nov 2023 (SBM operates only). [2026-10-13] Owned 12→11: P-57 was a turnkey supply to Petrobras."
     },
     {
       "name": "MODEC",
@@ -72,7 +72,7 @@
       "hq": "Norway",
       "ticker": "BWO.OL",
       "fleet_owned": 4,
-      "on_lease": 4,
+      "on_lease": 3,
       "backlog_busd": 2.2,
       "source": "BW Offshore Q2 & 1H 2026 Results (Aug 24, 2026)",
       "as_of": "2026-06-30",
@@ -122,7 +122,7 @@
       "hq": "Bermuda",
       "ticker": "GLNG",
       "fleet_owned": 2,
-      "on_lease": 2,
+      "on_lease": 1,
       "backlog_busd": 16.6,
       "source": "Golar LNG Q2 2026 Interim Results (Sep 2026) — EBITDA backlog",
       "as_of": "2026-06-30",
@@ -137,16 +137,16 @@
       "type": "FPSO Self-Operator",
       "hq": "Brazil",
       "ticker": "PBR",
-      "fleet_owned": 20,
+      "fleet_owned": 21,
       "on_lease": 20,
       "backlog_busd": null,
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중.",
+      "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중. [2026-10-13] 보유 20→21: P-57 포함(SBM 턴키 공급).",
       "newbuilds_owned": 7,
       "newbuilds_operated": 7,
-      "notes_en": "Brazilian national oil company. 20 owned FPSOs (per vessels list). Santos Basin (Lula/Búzios/Itapu and other pre-salt) + Campos Basin (Albacora/Roncador/Barracuda/Caratinga etc.). Older Campos FPSOs (P-18 to P-37 series) undergoing large-scale decommissioning in 2025."
+      "notes_en": "Brazilian national oil company. 20 owned FPSOs (per vessels list). Santos Basin (Lula/Búzios/Itapu and other pre-salt) + Campos Basin (Albacora/Roncador/Barracuda/Caratinga etc.). Older Campos FPSOs (P-18 to P-37 series) undergoing large-scale decommissioning in 2025. [2026-10-13] Owned 20→21: includes P-57 (SBM turnkey supply)."
     },
     {
       "name": "Shell",
@@ -176,11 +176,11 @@
       "water_depth_m": 1800,
       "oil_capacity_kboed": 250,
       "storage_mmbbl": 2.0,
-      "contract_start": "2024-01",
-      "contract_end": "2044-01",
+      "contract_start": "2025-08",
+      "contract_end": null,
       "status": "On Production",
-      "year_delivered": 2024,
-      "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용.",
+      "year_delivered": 2025,
+      "notes": "SBM Fast4Ward 선형. Yellowtail 개발 전용. [2026-10-13 감사] 250k bpd·가스 450·저장 2.0·수심 ~1,800m 확인. 생산 개시 2025-08(기존 2024-01 오류). SBM이 최대 2년 임대·운영 후 ExxonMobil로 이전(2026 1분기 매각). 용선 종료 2044는 근거 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (SWS 선체 + Seatrium 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Seatrium (ex-Keppel), Singapore",
@@ -208,7 +208,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/wp-content/uploads/2024/09/Singapore-Field-Trip-2024-001-SBM-Offshore.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design. Dedicated to Yellowtail development."
+      "notes_en": "SBM Fast4Ward design. Dedicated to Yellowtail development. [2026-10-13 audit] Confirmed 250k bpd, gas 450, 2.0 storage, ~1,800m WD. Production start Aug 2025 (was 2024-01). SBM leased/operated for up to 2 years before transfer to ExxonMobil (sold Q1 2026). 2044 end unsourced → null.",
+      "source_url": "https://jpt.spe.org/exxonmobil-brings-fourth-fpso-online-offshore-guyana",
+      "verified": "2026-10-13"
     },
     {
       "name": "Prosperity",
@@ -220,16 +222,16 @@
       "country": "Guyana",
       "water_depth_m": 1900,
       "oil_capacity_kboed": 220,
-      "storage_mmbbl": 1.6,
-      "contract_start": "2023-12",
-      "contract_end": "2043-12",
+      "storage_mmbbl": 2.0,
+      "contract_start": "2023-11",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환.",
+      "notes": "SBM Fast4Ward 선형. Guyana 3번째 FPSO. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환. [2026-10-13 감사] 220k bpd·수심 ~1,900m 확인, 가스 150→400 MMscfd, 저장 1.6→2.0 MMbbl. 생산 개시 2023-11(기존 2023-12). 2024-11 ExxonMobil 매입. 용선 종료 2043은 근거 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF2 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Keppel Shipyard (Seatrium), Singapore",
-        "gas_capacity_mmscfd": 150,
+        "gas_capacity_mmscfd": 400,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
         "partners": [
@@ -253,7 +255,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/naming-ceremony-prosperity-fpso-takes-place",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design. Guyana's 3rd FPSO. Purchased by ExxonMobil JV in Q4 2024 → switched to SBM O&M."
+      "notes_en": "SBM Fast4Ward design. Guyana's 3rd FPSO. Purchased by ExxonMobil JV in Q4 2024 → switched to SBM O&M. [2026-10-13 audit] Confirmed 220k bpd, ~1,900m WD; gas 150→400 MMscfd, storage 1.6→2.0 MMbbl. Production start Nov 2023 (was 2023-12). Bought by ExxonMobil Nov 2024. 2043 end unsourced → null.",
+      "source_url": "https://oilnow.gy/featured/dutch-ship-builder-completes-us1-05-billion-financing-for-prosperity-fpso/",
+      "verified": "2026-10-13"
     },
     {
       "name": "Liza Unity",
@@ -568,18 +572,18 @@
       "field": "Vincent Field (WA-26-L)",
       "region": "Asia Pacific",
       "country": "Australia",
-      "water_depth_m": 500,
-      "oil_capacity_kboed": 100,
-      "storage_mmbbl": 1.0,
+      "water_depth_m": null,
+      "oil_capacity_kboed": 120,
+      "storage_mmbbl": 1.2,
       "contract_start": "2008-07",
-      "contract_end": "2027-12",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "호주 서부 Vincent 유전 운영 중. 계약 만료 예정.",
+      "notes": "호주 서부 Vincent 유전 운영 중. 계약 만료 예정. [2026-10-13 감사] OGJ: 설계 120k bpd(기존 100k), 저장 1.0→1.2 MMbbl. 가스·수심·계약 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 2000 Hyundai Heavy-built VLCC Ellen Maersk) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 40,
+        "gas_capacity_mmscfd": null,
         "mooring": "Spread Mooring",
         "fid_date": "2005",
         "partners": [
@@ -597,7 +601,9 @@
         "yard_source_url": "https://www.offshore-technology.com/projects/vincent-field/",
         "yard_confidence": "high"
       },
-      "notes_en": "Operating at the Vincent field, Western Australia. Contract due to expire."
+      "notes_en": "Operating at the Vincent field, Western Australia. Contract due to expire. [2026-10-13 audit] OGJ: design 120k bpd (was 100k), storage 1.0→1.2 MMbbl. Gas, WD and contract end unsourced → null.",
+      "source_url": "https://www.ogj.com/drilling-production/production-operations/article/17217859/woodside-led-jv-starts-oil-output-from-vincent-field",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Cidade de Ilhabela",
@@ -743,18 +749,18 @@
       "field": "Espoir Field (CI-26)",
       "region": "West Africa",
       "country": "Ivory Coast",
-      "water_depth_m": 130,
-      "oil_capacity_kboed": 35,
-      "storage_mmbbl": 0.95,
+      "water_depth_m": null,
+      "oil_capacity_kboed": 45,
+      "storage_mmbbl": 1.1,
       "contract_start": "2002-01",
-      "contract_end": "2026-12",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2002,
-      "notes": "코트디부아르 장기 운영 FPSO. 2026년 계약 만료 예정.",
+      "notes": "코트디부아르 장기 운영 FPSO. 2026년 계약 만료 예정. [2026-10-13 감사] 원유 35→45k bpd, 가스 60→80 MMscfd, 저장 0.95→1.1 MMbbl. 2023 BW→CNR International 매각($20M), 연장 옵션 ~2036. 수심·계약 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "Suezmax 전환 FPSO (Keppel FELS Singapore, 2001)",
         "yard": "Hull: Keppel Shipyard, Singapore (Suezmax conversion; prep work at Subic Shipyard, Philippines) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 60,
+        "gas_capacity_mmscfd": 80,
         "mooring": "Spread Mooring",
         "fid_date": "2000",
         "partners": [
@@ -773,7 +779,9 @@
         "yard_source_url": "https://www.marinelink.com/news/converts-keppel-tanker325293",
         "yard_confidence": "high"
       },
-      "notes_en": "Long-serving FPSO in Côte d'Ivoire. Contract due to expire in 2026."
+      "notes_en": "Long-serving FPSO in Côte d'Ivoire. Contract due to expire in 2026. [2026-10-13 audit] Oil 35→45k bpd, gas 60→80 MMscfd, storage 0.95→1.1 MMbbl. Sold by BW to CNR International in 2023 ($20M); extension options to ~2036. WD and contract end unsourced → null.",
+      "source_url": "https://www.offshore-mag.com/vessels/article/14295155/bw-offshore-enters-shortterm-om-arrangement-for-cte-divoire-floater",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO John Agyekum Kufuor",
@@ -828,11 +836,11 @@
       "water_depth_m": 250,
       "oil_capacity_kboed": null,
       "storage_mmbbl": null,
-      "contract_start": "2018-06",
+      "contract_start": "2018-12",
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "세계 최대 부유식 구조물. LNG/NGL/C5+ 생산. 3.6 MTPA 용량.",
+      "notes": "세계 최대 부유식 구조물. LNG/NGL/C5+ 생산. 3.6 MTPA 용량. [2026-10-13 감사] LNG 3.6·콘덴세이트 1.3·LPG 0.4 Mtpa, 수심 ~250m 확인. 생산 개시 2018-12(기존 2018-06), 첫 LNG 화물 2019-07.",
       "detail": {
         "hull_type": "Purpose-built FLNG (Samsung — 세계 최대 부유식 구조물)",
         "yard": "Hull: Samsung Heavy Industries, Geoje, South Korea · Topsides/integration: Samsung Heavy Industries, Geoje (Technip-Samsung Consortium)",
@@ -856,7 +864,9 @@
         "yard_source_url": "https://www.technipfmc.com/en/media/news/2017/06/the-shell-prelude-facility-has-sailed-away-to-australia",
         "yard_confidence": "high"
       },
-      "notes_en": "World's largest floating structure. Produces LNG/NGL/C5+. 3.6 MTPA capacity."
+      "notes_en": "World's largest floating structure. Produces LNG/NGL/C5+. 3.6 MTPA capacity. [2026-10-13 audit] Confirmed LNG 3.6, condensate 1.3, LPG 0.4 Mtpa, ~250m WD. Production start Dec 2018 (was 2018-06); first LNG cargo Jul 2019.",
+      "source_url": "https://www.nsenergybusiness.com/projects/prelude-flng-project",
+      "verified": "2026-10-13"
     },
     {
       "name": "Golar Hilli",
@@ -947,7 +957,7 @@
     {
       "name": "Coral Sul FLNG",
       "type": "FLNG",
-      "owner": "ENI / Galp / KOGAS / CNPC / Mozambique LNG",
+      "owner": "Eni / ExxonMobil / CNPC (MRV), XRG, KOGAS, ENH",
       "client": "BP (offtaker)",
       "field": "Coral South (Area 4)",
       "region": "East Africa",
@@ -955,15 +965,15 @@
       "water_depth_m": 2000,
       "oil_capacity_kboed": null,
       "storage_mmbbl": null,
-      "contract_start": "2022-11",
-      "contract_end": "2042-11",
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "모잠비크 첫 LNG 생산설비. 3.4 MTPA. Samsung Heavy Industries 건조.",
+      "notes": "모잠비크 첫 LNG 생산설비. 3.4 MTPA. Samsung Heavy Industries 건조. [2026-10-13 감사] 액화 3.4 MTPA·수심 ~2,000m·BP 전량 구매 확인. 첫 화물 시점·계약 종료·가스 490은 1차 출처 미확인으로 null. 기존 소유주 표기의 Galp는 2025-03 XRG로 지분 매각.",
       "detail": {
         "hull_type": "Purpose-built FLNG (SHI 신조)",
         "yard": "Hull: Samsung Heavy Industries, Geoje, South Korea · Topsides/integration: Samsung Heavy Industries, Geoje (TJS consortium)",
-        "gas_capacity_mmscfd": 490,
+        "gas_capacity_mmscfd": null,
         "mooring": "Internal Turret Mooring (SOFEC)",
         "fid_date": "2017-06",
         "partners": [
@@ -993,7 +1003,9 @@
         "yard_source_url": "https://www.jgc.com/en/projects/058.html",
         "yard_confidence": "high"
       },
-      "notes_en": "Mozambique's first LNG production facility. 3.4 MTPA. Built by Samsung Heavy Industries."
+      "notes_en": "Mozambique's first LNG production facility. 3.4 MTPA. Built by Samsung Heavy Industries. [2026-10-13 audit] Confirmed 3.4 MTPA, ~2,000m WD, 100% offtake by BP. First-cargo date, contract end and gas 490 unconfirmed → null. Galp in the owner string sold its stake to XRG in Mar 2025.",
+      "source_url": "https://lngprime.com/africa/eni-says-coral-sul-flng-gets-first-gas-off-mozambique/54785",
+      "verified": "2026-10-13"
     },
     {
       "name": "Alexandre de Gusmão",
@@ -1205,7 +1217,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null.",
+      "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 감사] (재감사 대상) 150k·가스 7 MMm³/d는 업계지 보도. 1차 출처 URL 미확보.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO 착수 → Inhaúma 완료) + Techint 통합",
         "mooring": "Spread mooring",
@@ -1220,7 +1232,7 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 247
       },
-      "notes_en": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null."
+      "notes_en": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null. [2026-10-13 audit] (Re-audit pending) 150k and gas 7 MMm³/d are from trade press; no primary source URL yet."
     },
     {
       "name": "P-77 (Búzios 4)",
@@ -1543,14 +1555,14 @@
       "field": "Lula (Sul) / BM-S-11",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 2150,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.67,
+      "storage_mmbbl": null,
       "year_delivered": 2017,
-      "contract_start": null,
+      "contract_start": "2017-05",
       "contract_end": null,
       "status": "On Production",
-      "notes": "First consortium-owned Lula FPSO (not chartered); newbuild; first oil May 17, 2017.",
+      "notes": "First consortium-owned Lula FPSO (not chartered); newbuild; first oil May 17, 2017. [2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null.",
       "detail": {
         "hull_type": "Newbuild (최초 브라질 내 완전 건조 FPSO 선체)",
         "mooring": "Spread mooring",
@@ -1565,7 +1577,10 @@
         "build_type": "newbuild",
         "yard_source_url": "https://www.offshore-energy.biz/petrobras-fpso-p-66-hull-on-its-way-to-rio-shipyard/",
         "yard_confidence": "high"
-      }
+      },
+      "source_url": "https://www.offshore-mag.com/articles/2019/02/petrobras-brings-onstream-ninth-lula-field-platform-offshore-brazil.html",
+      "verified": "2026-10-13",
+      "notes_en": "First consortium-owned Lula FPSO (not chartered); newbuild; first oil May 17, 2017. [2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null. [2026-10-13 audit] Production start May 2017 (7th FPSO in BM-S-11) confirmed. Same replicant design, but capacities not individually sourced — storage 1.67 and WD → null."
     },
     {
       "name": "P-67 (Lula Norte)",
@@ -1577,12 +1592,12 @@
       "region": "South America",
       "water_depth_m": 2130,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.6,
+      "storage_mmbbl": null,
       "year_delivered": 2019,
-      "contract_start": null,
+      "contract_start": "2019-02",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Standardized hull (sister to P-66/P-69); first oil February 2019; 9th unit in Lula field.",
+      "notes": "Standardized hull (sister to P-66/P-69); first oil February 2019; 9th unit in Lula field. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (standardized)",
         "mooring": "Spread mooring",
@@ -1595,8 +1610,12 @@
         "yard": "Hull: Ecovix Estaleiro Rio Grande, Brazil (hull ~80% complete; finished in China) · Topsides/integration: COOEC Qingdao Yard, China",
         "build_type": "newbuild",
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/14176582/boka-vanguard-delivers-second-box-shaped-fpso-to-petrobras",
-        "yard_confidence": "medium"
-      }
+        "yard_confidence": "medium",
+        "gas_capacity_mmscfd": 212
+      },
+      "source_url": "https://offshore-energy.biz/?p=203653",
+      "verified": "2026-10-13",
+      "notes_en": "Standardized hull (sister to P-66/P-69); first oil February 2019; 9th unit in Lula field. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 2,130m WD, production start 2019-02-01. Storage unsourced → null."
     },
     {
       "name": "P-68 (Berbigão & Sururu)",
@@ -1643,14 +1662,14 @@
       "field": "Lula (Extremo Sul) / BM-S-11",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 2150,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.6,
+      "storage_mmbbl": null,
       "year_delivered": 2018,
-      "contract_start": null,
+      "contract_start": "2018-10",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Standardized hull (sister to P-66/P-67); first oil October 2018; 8th unit in Lula field.",
+      "notes": "Standardized hull (sister to P-66/P-67); first oil October 2018; 8th unit in Lula field. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (standardized)",
         "mooring": "Spread mooring",
@@ -1663,8 +1682,12 @@
         "yard": "Hull: Ecovix Rio Grande, Brazil / completed at COSCO, China · Topsides/integration: BrasFELS (Keppel FELS Brasil), Angra dos Reis, Brazil",
         "build_type": "newbuild",
         "yard_source_url": "https://www.nsenergybusiness.com/news/petrobras-p-69-fpso-lula-field",
-        "yard_confidence": "medium"
-      }
+        "yard_confidence": "medium",
+        "gas_capacity_mmscfd": 212
+      },
+      "source_url": "https://www.offshore-mag.com/articles/2019/02/petrobras-brings-onstream-ninth-lula-field-platform-offshore-brazil.html",
+      "verified": "2026-10-13",
+      "notes_en": "Standardized hull (sister to P-66/P-67); first oil October 2018; 8th unit in Lula field. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), production start Oct 2018. Storage and WD unsourced → null."
     },
     {
       "name": "P-70 (Atapu)",
@@ -1674,14 +1697,14 @@
       "field": "Atapu / BM-S-9A (Transfer of Rights)",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 2300,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.6,
+      "storage_mmbbl": null,
       "year_delivered": 2020,
-      "contract_start": null,
+      "contract_start": "2020-06",
       "contract_end": null,
       "status": "On Production",
-      "notes": "M350 hull designed by MODEC, built by COOEC (Qingdao); first oil June 2020; reached 150kboed with only 4 wells.",
+      "notes": "M350 hull designed by MODEC, built by COOEC (Qingdao); first oil June 2020; reached 150kboed with only 4 wells. [2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild M350 (COSCO Changxing hull + COOEC Qingdao 통합)",
         "mooring": "Spread mooring",
@@ -1695,25 +1718,29 @@
         "hull_type_en": "Newbuild M350 (COSCO Changxing hull + COOEC Qingdao integration)",
         "build_type": "newbuild",
         "yard_source_url": "https://www.cnoocengineering.com/english/Media/CompanyNewsTwo/202410/t20241022_97375.html",
-        "yard_confidence": "medium"
-      }
+        "yard_confidence": "medium",
+        "gas_capacity_mmscfd": 212
+      },
+      "source_url": "https://www.latibex.com/docs/Documentos/esp/hechosrelev/2020/Comunicado-Início%20Produção%20P-70_Ingles%20FINAL.pdf",
+      "verified": "2026-10-13",
+      "notes_en": "M350 hull designed by MODEC, built by COOEC (Qingdao); first oil June 2020; reached 150kboed with only 4 wells. [2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null. [2026-10-13 audit] Petrobras release: confirmed 150k bpd, gas 6 MMm³/d (212), production start 2020-06-25 (5th replicant). Storage and WD unsourced → null."
     },
     {
       "name": "P-57 (Jubarte)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "Petrobras",
       "client": "Petrobras",
       "field": "Jubarte (Parque das Baleias) / ES",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 1260,
+      "water_depth_m": null,
       "oil_capacity_kboed": 180,
-      "storage_mmbbl": 1.4,
+      "storage_mmbbl": 1.6,
       "year_delivered": 2010,
       "contract_start": "2010-12",
-      "contract_end": "2033-12",
+      "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC conversion at Keppel/BrasFELS; first oil December 17, 2010; heavy crude; Petrobras 100% Jubarte.",
+      "notes": "VLCC conversion at Keppel/BrasFELS; first oil December 17, 2010; heavy crude; Petrobras 100% Jubarte. [2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null.",
       "detail": {
         "hull_type": "VLCC conversion (Keppel/BrasFELS, BR)",
         "mooring": "Spread mooring",
@@ -1725,7 +1752,10 @@
         "build_type": "conversion",
         "yard_source_url": "https://www.offshore-energy.biz/brazil-keppel-delivers-fpso-p-57-to-sbm-for-petrobras/",
         "yard_confidence": "high"
-      }
+      },
+      "source_url": "https://sbmoffshore.com/newsroom/p-57-fpso-contract-confirmed-sbm-offshore-2008",
+      "verified": "2026-10-13",
+      "notes_en": "VLCC conversion at Keppel/BrasFELS; first oil December 17, 2010; heavy crude; Petrobras 100% Jubarte. [2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null. [2026-10-13 audit] Owner SBM→Petrobras: SBM turnkey supply (EPC sale), delivered to Petrobras Dec 2010. Confirmed 180k bpd; storage 1.4→1.6 MMbbl. 2033 end and WD unsourced → null."
     },
     {
       "name": "FPSO Maria Quitéria",
@@ -1808,14 +1838,14 @@
       "field": "Block 15/06 (West Hub)",
       "region": "West Africa",
       "country": "Angola",
-      "water_depth_m": 1000,
+      "water_depth_m": null,
       "oil_capacity_kboed": 100,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 1.5,
       "contract_start": "2014-11",
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "SBM 80% 소유 (2024-06 Sonangol EP 지분 약 $40M 인수). ENI Angola Block 15/06 West Hub 운영.",
+      "notes": "SBM 80% 소유 (2024-06 Sonangol EP 지분 약 $40M 인수). ENI Angola Block 15/06 West Hub 운영. [2026-10-13 감사] 100k bpd·가스 115 MMscfd 확인, 저장 null→~1.5 MMbbl. Sonasing JV(SBM 과반) 소유. 수심 1,000m은 출처 없어 null.",
       "detail": {
         "gas_capacity_mmscfd": 115,
         "mooring": "Turret Mooring",
@@ -1832,7 +1862,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/ngoma-fpso-producing-and-hire/",
         "yard_confidence": "high"
       },
-      "notes_en": "80% owned by SBM (acquired Sonangol EP's stake for ~$40M, Jun 2024). Operates ENI Angola Block 15/06 West Hub."
+      "notes_en": "80% owned by SBM (acquired Sonangol EP's stake for ~$40M, Jun 2024). Operates ENI Angola Block 15/06 West Hub. [2026-10-13 audit] Confirmed 100k bpd and 115 MMscfd; storage null→~1.5 MMbbl. Owned by Sonasing JV (SBM majority). 1,000m WD unsourced → null.",
+      "source_url": "https://www.offshore-technology.com/projects/west-hub-development-project/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Saxi Batuque",
@@ -1908,14 +1940,14 @@
       "field": "Parque das Conchas (BC-10)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 1780,
+      "water_depth_m": null,
       "oil_capacity_kboed": 100,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 2.0,
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2009,
-      "notes": "울트라 딥워터 중질유 FPSO. 2024-09 MISC Berhad와 지분 스왑 (SBM: Kikeh 49% 양도 / Espírito Santo 49% 인수) → SBM 단독 소유.",
+      "notes": "울트라 딥워터 중질유 FPSO. 2024-09 MISC Berhad와 지분 스왑 (SBM: Kikeh 49% 양도 / Espírito Santo 49% 인수) → SBM 단독 소유. [2026-10-13 감사] 100k bpd 확인, 저장 null→2.0 MMbbl. 2024 MISC 지분 인수로 SBM 단독 소유. 수심 1,780m·계약 기간은 출처 없어 null.",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -1930,7 +1962,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/wp-content/uploads/2024/03/pressrelease-20081215-original-587.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "Ultra-deepwater heavy-oil FPSO. Sept 2024 equity swap with MISC Berhad (SBM: transferred 49% of Kikeh / acquired 49% of Espírito Santo) → solely owned by SBM."
+      "notes_en": "Ultra-deepwater heavy-oil FPSO. Sept 2024 equity swap with MISC Berhad (SBM: transferred 49% of Kikeh / acquired 49% of Espírito Santo) → solely owned by SBM. [2026-10-13 audit] Confirmed 100k bpd; storage null→2.0 MMbbl. Solely SBM-owned after acquiring MISC's stake (2024). 1,780m WD and contract term unsourced → null.",
+      "source_url": "https://www.offshore-mag.com/rigs-vessels/article/16778445/keppel-delivers-fpso-espirito-santo",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Gimboa",
@@ -1942,14 +1976,14 @@
       "country": "Angola",
       "water_depth_m": null,
       "oil_capacity_kboed": 60,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 1.8,
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "year_delivered": null,
-      "notes": "Saipem 소유 FPSO. SONANGOL 운영 계약. 36.8 MMscfd 가스 처리 능력.",
+      "year_delivered": 2008,
+      "notes": "Saipem 소유 FPSO. SONANGOL 운영 계약. 36.8 MMscfd 가스 처리 능력. [2026-10-13 감사] Saipem 자료: 60k bpd 확인, 저장 null→1.8 MMbbl, 2008년부터 Saipem 운영. 가스 36.8은 출처 없어 null.",
       "detail": {
-        "gas_capacity_mmscfd": 36.8,
+        "gas_capacity_mmscfd": null,
         "notable": "Saipem 자체 소유 FPSO. SONANGOL과 L&O 계약. 앙골라 해상 Gimboa 유전.",
         "notable_en": "FPSO owned by Saipem. L&O contract with SONANGOL. Gimboa field, offshore Angola.",
         "yard": "Hull: Drydocks World Dubai, UAE (conversion of 1977 Japan-built tanker Magdelaine; per Saipem datasheet \"converted in Dubai\") · Topsides/integration: Drydocks World Dubai, UAE (inferred; Lamprell built 6 modules)",
@@ -1957,7 +1991,9 @@
         "yard_source_url": "https://www.saipem.com/sites/default/files/2024-02/Gimboa_datasheet.pdf",
         "yard_confidence": "medium"
       },
-      "notes_en": "FPSO owned by Saipem. Operating contract with SONANGOL. 36.8 MMscfd gas processing capacity."
+      "notes_en": "FPSO owned by Saipem. Operating contract with SONANGOL. 36.8 MMscfd gas processing capacity. [2026-10-13 audit] Saipem datasheet: confirmed 60k bpd; storage null→1.8 MMbbl; operated by Saipem since 2008. Gas 36.8 unsourced → null.",
+      "source_url": "https://opentalks.saipem.com/sites/default/files/2024-02/Gimboa_datasheet_0.pdf",
+      "verified": "2026-10-13"
     },
     {
       "name": "BW Opal",
@@ -2405,7 +2441,7 @@
       "name": "P-50 (Albacora Leste)",
       "type": "FPSO",
       "owner": "Petrobras",
-      "client": "Petrobras",
+      "client": "PRIO (operator, 90%)",
       "field": "Albacora Leste (Campos Basin)",
       "region": "South America",
       "country": "Brazil",
@@ -2416,7 +2452,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2006,
-      "notes": "Campos Basin 중수심 FPSO. Petrobras 소유 운영. VLCC 개조. 16개 해저 생산정 연결.",
+      "notes": "Campos Basin 중수심 FPSO. Petrobras 소유 운영. VLCC 개조. 16개 해저 생산정 연결. [2026-10-13 감사] 운영사 Petrobras→PRIO: 2023-01 PRIO가 Albacora Leste 90% 인수 완료(Repsol Sinopec 10%). FPSO P-50 소유권 이전 여부는 출처에 명시 없어 소유주는 미확인으로 유지. 180k bpd·가스 6 MMm³/d(업계지).",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "Campos Basin Albacora Leste 유전. Petrobras 자체 소유 및 운영.",
@@ -2424,9 +2460,10 @@
         "yard": "Hull: Jurong Shipyard, Singapore (conversion of VLCC Felipe Camarão) · Topsides/integration: Mauá-Jurong, Niterói, Brazil",
         "build_type": "conversion",
         "yard_source_url": "https://www.marinelink.com/news/converted-delivered317344",
-        "yard_confidence": "high"
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 212
       },
-      "notes_en": "Mid-water Campos Basin FPSO. Owned and operated by Petrobras. VLCC conversion. 16 subsea production wells connected."
+      "notes_en": "Mid-water Campos Basin FPSO. Owned and operated by Petrobras. VLCC conversion. 16 subsea production wells connected. [2026-10-13 audit] Operator Petrobras→PRIO: PRIO completed acquisition of 90% of Albacora Leste in Jan 2023 (Repsol Sinopec 10%). Whether FPSO P-50 ownership transferred is not stated in sources, so owner kept as unverified. 180k bpd, gas 6 MMm³/d (trade press)."
     },
     {
       "name": "P-58 (Parque das Baleias)",
@@ -2503,7 +2540,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2013,
-      "notes": "Campos Basin Papa-Terra 유전. Petrobras 소유. 전 BW Nisa VLCC 개조(323k DWT). 2013-11 첫 생산. P-61 TLWP와 연동.",
+      "notes": "Campos Basin Papa-Terra 유전. Petrobras 소유. 전 BW Nisa VLCC 개조(323k DWT). 2013-11 첫 생산. P-61 TLWP와 연동. [2026-10-13 감사] 140k bpd·수심 ~1,200m(3,940ft) 확인, 가스 null→1 MMm³/d(35), BW Nisa 개조(COSCO). 운영 Petrobras 62.5%·Chevron 37.5%(당시).",
       "detail": {
         "hull_type": "VLCC BW Nisa 개조 (323,000 DWT)",
         "mooring": "Spread Mooring",
@@ -2513,9 +2550,12 @@
         "yard": "Hull: COSCO (Dalian) Shipyard, China (conversion of ULCC BW Nisa) · Topsides/integration: QUIP – Estaleiro Honório Bicalho, Rio Grande, Brazil",
         "build_type": "conversion",
         "yard_source_url": "https://www.offshore-mag.com/production/article/16771771/first-oil-flows-to-papa-terra-fpso-offshore-brazil",
-        "yard_confidence": "high"
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 35
       },
-      "notes_en": "Papa-Terra field, Campos Basin. Owned by Petrobras. Converted from VLCC BW Nisa (323k DWT). First production Nov 2013. Linked with P-61 TLWP."
+      "notes_en": "Papa-Terra field, Campos Basin. Owned by Petrobras. Converted from VLCC BW Nisa (323k DWT). First production Nov 2013. Linked with P-61 TLWP. [2026-10-13 audit] Confirmed 140k bpd, ~1,200m WD (3,940 ft); gas null→1 MMm³/d (35); converted from BW Nisa (COSCO). Operator Petrobras 62.5%, Chevron 37.5% (at the time).",
+      "source_url": "https://ogj.com/drilling-production/production-operations/article/17258580/fpso-en-route-to-papa-terra-heavy-oil-field-offshore-brazil",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-54 (Roncador II)",
@@ -2525,14 +2565,14 @@
       "field": "Roncador (Campos Basin)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 1400,
+      "water_depth_m": null,
       "oil_capacity_kboed": 180,
-      "storage_mmbbl": 2.0,
+      "storage_mmbbl": null,
       "contract_start": "2007-12",
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2007,
-      "notes": "Campos Basin Roncador 유전 2번째 모듈. Petrobras 소유. 구 Settebello 선박 개조(Jurong Shipyard). 2007-12 첫 생산. 66,224톤.",
+      "notes": "Campos Basin Roncador 유전 2번째 모듈. Petrobras 소유. 구 Settebello 선박 개조(Jurong Shipyard). 2007-12 첫 생산. 66,224톤. [2026-10-13 감사] 180k bpd·가스 6 MMm³/d(212)·생산 개시 2007-12-11 확인. 저장 2.0·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC Settebello 개조 (Jurong Shipyard, $628M)",
         "gas_capacity_mmscfd": 212,
@@ -2545,7 +2585,9 @@
         "yard_source_url": "https://tnpetroleo.com.br/noticia/casco-da-p-54-chega-ao-estaleiro-maua-jurong/",
         "yard_confidence": "high"
       },
-      "notes_en": "2nd module at the Roncador field, Campos Basin. Owned by Petrobras. Converted from the former Settebello (Jurong Shipyard). First production Dec 2007. 66,224 t."
+      "notes_en": "2nd module at the Roncador field, Campos Basin. Owned by Petrobras. Converted from the former Settebello (Jurong Shipyard). First production Dec 2007. 66,224 t. [2026-10-13 audit] Confirmed 180k bpd, gas 6 MMm³/d (212), production start 2007-12-11. Storage 2.0 and WD unsourced → null.",
+      "source_url": "https://www.offshore-mag.com/production/article/16798092/petrobras-starts-p-54-contracts-p-55",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-31 (Albacora)",
@@ -2555,20 +2597,20 @@
       "field": "Albacora (Campos Basin)",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 330,
+      "water_depth_m": null,
       "oil_capacity_kboed": null,
-      "storage_mmbbl": 1.0,
+      "storage_mmbbl": null,
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 1997,
-      "notes": "Campos Basin Albacora 유전. Petrobras 소유. Internal Permanent Turret 계류. P-25(반잠수) 와 함께 운영. P-88 신조로 교체 예정(2030년 이후).",
+      "notes": "Campos Basin Albacora 유전. Petrobras 소유. Internal Permanent Turret 계류. P-25(반잠수) 와 함께 운영. P-88 신조로 교체 예정(2030년 이후). [2026-10-13 감사] 가동 중 확인(2023 계류줄 수리 30일, 2016 누출로 일시 중단). 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지. P-88 신조로 교체 예정.",
       "detail": {
         "mooring": "Internal Permanent Turret (SOFEC)",
         "notable": "Albacora 유전 FPSO. P-25 반잠수식과 함께 Albacora 생산. P-88 신조 FPSO로 교체 예정.",
         "notable_en": "Albacora field FPSO. Produces Albacora together with the P-25 semisubmersible. To be replaced by newbuild FPSO P-88."
       },
-      "notes_en": "Albacora field, Campos Basin. Owned by Petrobras. Internal permanent turret mooring. Operates alongside P-25 (semisub). To be replaced by newbuild P-88 (after 2030)."
+      "notes_en": "Albacora field, Campos Basin. Owned by Petrobras. Internal permanent turret mooring. Operates alongside P-25 (semisub). To be replaced by newbuild P-88 (after 2030). [2026-10-13 audit] Confirmed operating (30-day mooring repair in 2023; temporary shutdown for leaks in 2016). Capacity conflicts across sources (100k vs 200k bopd), kept null. To be replaced by newbuild P-88."
     },
     {
       "name": "P-43 (Barracuda)",
