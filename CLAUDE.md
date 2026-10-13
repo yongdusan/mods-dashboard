@@ -113,7 +113,8 @@
 **운영 규칙**
 - 데이터 수정 후 커밋 전 반드시 `python3 scripts/check_data.py`로 ERROR 0을 확인한다.
 - 파일 일부만 고쳤을 때 `updated`를 오늘로 바꾸면 나머지 오래된 섹션까지 최신처럼 보인다. 섹션별 기준일이 다른 데이터는 섹션에 `as_of`를 둔다(예: `fpso.json` `market_summary.as_of`).
-- **KO/EN 전환(2026-10-12~):** 헤더의 한/EN 스위치로 언어를 바꾼다(브라우저별 저장). 한국어 텍스트 필드에는 같은 객체에 `<필드>_en` 영문 필드를 함께 둔다(`notes_en`, `summary_en`, 목록은 같은 길이의 `highlights_en`). 영어 모드에서는 `assets/theme.js`가 data/*.json을 불러올 때 `_en` 값으로 바꿔 끼우므로 페이지 코드는 수정하지 않는다. HTML에 하드코딩된 한국어 라벨은 `theme.js`의 `UI_EN` 사전에 추가한다. `_en` 누락은 `check_data.py`가 NOTE로 표시한다.
+- **KO/EN 전환(2026-10-12~):** 헤더의 한/EN 스위치로 언어를 바꾼다(브라우저별 저장). 한국어 텍스트 필드에는 같은 객체에 `<필드>_en` 영문 필드를 함께 둔다(`notes_en`, `summary_en`, 목록은 같은 길이의 `highlights_en`). 영어 모드에서는 `assets/theme.js`가 data/*.json을 불러올 때 `_en` 값으로 바꿔 끼우므로 페이지 코드는 수정하지 않는다. HTML에 하드코딩된 한국어 라벨은 `theme.js`의 `UI_EN` 사전에, 영어 라벨(제목·표 머리글·설명문)은 한국어 모드용 `UI_KO` 사전(텍스트 전체 일치, 숫자가 들어간 문구는 `UI_KO_RE`)에 추가한다. 페이지에 새 영어 라벨을 넣으면 `UI_KO`에도 넣는다.
+- **최근 30일 핵심 변화(2026-10-14~):** 각 페이지 제목 아래 패널은 `theme.js` `renderChanges()`가 news.json(분야별)과 그 페이지의 추적 대상 이름을 대조해 자동으로 고른다. 별도 데이터 입력 없음 — news 항목의 `summary` 첫 문장과 `url`이 그대로 쓰이므로 news 요약 첫 문장을 핵심 사실로 쓴다. `_en` 누락은 `check_data.py`가 NOTE로 표시한다.
 
 ---
 

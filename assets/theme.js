@@ -141,24 +141,166 @@
     ['용량', 'Capacity'],
     ['일자', 'Date']
   ];
-  var HANGUL = /[가-힣]/;
+  /* The page chrome is written in English; in Korean mode whole labels are
+     swapped from this table (exact match on the trimmed text node, so names
+     of companies, projects and fields are never touched). Industry terms that
+     Korean practitioners use as-is (FPSO, FEED, FID, Drillship…) stay English. */
+  var UI_KO = {
+    // header / nav / footer
+    'Deepwater offshore market dashboard': '심해 해양 시장 대시보드',
+    'Overview': '개요', 'Pipeline': '파이프라인', 'Drilling': '시추 리그', 'FPSO & FLNG': 'FPSO·FLNG',
+    'Driller Financials': '시추사 실적', 'FPSO Financials': 'FPSO 실적', 'News': '뉴스',
+    'Updated': '갱신', 'Updated:': '갱신:',
+    'Offshore Market Intelligence · deepwater drilling, FPSO/FLNG and E&P capex': 'Offshore Market Intelligence · 심해 시추, FPSO/FLNG, E&P 투자',
+    // overview
+    'Market readout': '시장 요약',
+    'of offshore projects in execution.': '규모 해양 프로젝트가 실행 단계.',
+    'of deepwater rigs on contract.': '심해 리그 계약 중.',
+    'FPSO/FLNG units under construction.': '척 FPSO/FLNG 건조 중.',
+    'Deepwater drilling, floating production and offshore E&P capex, tracked from operator IR, contract disclosures and trade press. Project capex uses operator figures where published and indicative estimates otherwise. Each figure carries its as-of date; overdue sources are flagged.':
+      '심해 시추, 부유식 생산설비, 해양 E&P 투자를 운영사 IR·계약 공시·전문지 기준으로 추적합니다. 프로젝트 사업비는 공시값이 있으면 공시값, 없으면 추정치(indicative)입니다. 수치마다 기준일을 표시하고 갱신이 늦은 출처는 따로 표시합니다.',
+    'UDW drillship dayrate': 'UDW 드릴십 일일 용선료', 'indicative': '추정', 'k/day': 'k/일',
+    'Drillship UDW': 'Drillship UDW', 'Semi-sub DW': 'Semi-sub DW',
+    'Pre-FID pipeline': 'FID 전 파이프라인', 'Deepwater rigs': '심해 리그', 'Avg drillship rate': '드릴십 평균 용선료',
+    'Global FPSO fleet': '전 세계 FPSO 선대', 'units': '척', 'Tracked orderbook': '추적 중인 오더북', 'floaters': '척',
+    'Dashboards': '대시보드', 'Demand → assets → contractor financials → news': '수요 → 설비 → 컨트랙터 실적 → 뉴스',
+    'Demand': '수요', 'E&P Pipeline': 'E&P 파이프라인', 'projects': '건', 'Assets': '설비',
+    'Offshore projects by phase, region and operator capex; FID and first-oil timing.': '단계·지역·운영사별 해양 프로젝트 사업비, FID와 첫 생산 시점.',
+    'Deepwater Drilling': '심해 시추', 'rigs': '척',
+    'Drillship and semi-sub fleet status, contract coverage and dayrates.': '드릴십·반잠수식 리그 가동 현황, 계약 커버리지, 용선료.',
+    'FPSO / FLNG Assets': 'FPSO / FLNG 설비',
+    'Operating floaters, orderbook and charter rates by contractor.': '컨트랙터별 운영 선박, 오더북, 용선료.',
+    'Financials': '실적', 'Drilling Financials': '시추사 실적', 'companies': '개사',
+    'Contractor revenue, EBITDA margin, utilisation and backlog by quarter.': '컨트랙터 분기별 매출, EBITDA 마진, 가동률, 수주잔고.',
+    'FPSO / FLNG Financials': 'FPSO / FLNG 실적',
+    'Lessor earnings, lease fleet, turnkey exposure and backlog.': '리스사 실적, 리스 선대, 턴키 비중, 수주잔고.',
+    'Wire': '뉴스', 'Market News': '시장 뉴스', 'Contracts, FIDs, M&A and earnings, filtered by sector.': '계약·FID·M&A·실적 뉴스, 분야별 필터.',
+    'items': '건', 'Project funnel': '프로젝트 단계별 분포', 'Open E&P pipeline →': 'E&P 파이프라인 열기 →',
+    'capex · count': '사업비 · 건수', 'Execution capex by region': '지역별 실행 단계 사업비',
+    'Largest pre-FID projects (FEED)': 'FID 전 대형 프로젝트 (FEED)', 'Latest from the wire': '최근 뉴스', 'All market news →': '뉴스 전체 보기 →',
+    'Deepwater drilling': '심해 시추', 'E&P capex': 'E&P 투자',
+    // pipeline
+    'E&P Pipeline · IOC/NOC Upstream CAPEX · FID Tracking': 'E&P 파이프라인 · IOC/NOC 업스트림 투자 · FID 추적',
+    'Offshore E&P Pipeline': '해양 E&P 파이프라인', 'Active Pipeline': '진행 중 파이프라인', 'EPC Demand Pipeline': 'EPC 수요 파이프라인',
+    'FID Imminent': 'FID 임박', 'FEED phase · FID targeted': 'FEED 단계 · FID 목표', 'Upstream CAPEX 2026E by Company': '회사별 2026E 업스트림 투자',
+    'Upstream 2026E': '업스트림 2026E', 'Phase × Region Matrix': '단계 × 지역 매트릭스', 'Region \\ Phase': '지역 \\ 단계',
+    'EPC Demand Detail': 'EPC 수요 상세', 'Regional CAPEX Breakdown': '지역별 사업비', 'Sanctioned (Execution)': '승인 (Execution)',
+    'Pre-FID est. (FEED)': 'FID 전 추정 (FEED)', 'Annual EPC Spend Profile (est. linear)': '연도별 EPC 집행 추정 (선형 배분)',
+    'Sanctioned': '승인', 'Pre-FID (indicative)': 'FID 전 (추정)', 'Projects': '프로젝트', 'Project': '프로젝트',
+    'Company': '회사', 'Region': '지역', 'Phase': '단계', 'CAPEX ($B)': '사업비 ($B)', 'First Production': '첫 생산',
+    'Type': '유형', 'Verified': '확인일', 'All': '전체', 'Notes': '비고', 'Note': '비고', 'Source': '출처',
+    'Update log': '업데이트 기록',
+    // drilling
+    'UDW & Deepwater Drilling — Fleet, Dayrate & Asset Values': 'UDW·심해 시추 — 선대, 용선료, 자산가치',
+    'UDW / Deepwater Rig Market': 'UDW / 심해 리그 시장', 'Deepwater Rigs': '심해 리그', 'Deepwater focus': '심해 중심',
+    'On Contract': '계약 중', 'Filtered view': '필터 적용', 'Idle + Stacked': '유휴 + 스택',
+    'Avg Dayrate (UDW Drillship)': '평균 용선료 (UDW 드릴십)', 'US$k/day': 'US$k/일', 'Global · not filtered': '전체 · 필터 미적용',
+    'Deepwater Contractor Summary': '심해 컨트랙터 요약', 'Contractor': '컨트랙터', 'Drillships': '드릴십', 'Semi-subs': '반잠수식',
+    'Contracted': '계약', 'Utilization': '가동률', 'Avg Dayrate (US$k/d)': '평균 용선료 (US$k/일)',
+    'RIG TYPE': '리그 유형', 'CONTRACTOR': '컨트랙터', 'Deepwater': '심해', 'All MODU': '전체 MODU',
+    'Fleet Status': '선대 현황', 'Rig Name': '리그명', 'Status': '상태', 'Operator': '운영사', 'Location': '위치',
+    'Start': '시작', 'End': '종료', 'Dayrate (US$k/d)': '용선료 (US$k/일)', 'Dayrate Trend': '용선료 추이',
+    'US$k/day · quarterly': 'US$k/일 · 분기', 'ℹ mixed confidence': 'ℹ 신뢰도 혼재', 'ℹ medium confidence': 'ℹ 신뢰도 중간',
+    'Rig': '리그', 'Rate (k$)': '용선료 (k$)', 'MODU Asset Value Benchmarks': 'MODU 자산가치 기준',
+    'Newbuild obligations, acquired hulls and cancelled-order transactions.': '신조 잔금, 선체 인수, 발주 취소 선박 거래.',
+    'Date': '일자', 'Rig Type': '리그 유형', 'Yard': '조선소', 'Value ($M)': '금액 ($M)', 'Basis': '기준',
+    'Idle': '유휴', 'Cold Stacked': '콜드 스택', 'Warm Stacked': '웜 스택', 'Shipyard': '조선소', 'Ultra-deepwater': '초심해',
+    'Water Depth': '수심', 'Contract': '계약', 'Specs': '사양', 'Data Note': '데이터 메모', 'Build Year': '건조 연도', 'Design': '설계',
+    // fpso
+    'FPSO / FLNG — Assets & Orderbook': 'FPSO / FLNG — 설비 및 오더북', '⚠ some figures unverified': '⚠ 일부 수치 미확인',
+    'Deepwater FPSO / FLNG Assets': '심해 FPSO / FLNG 설비', 'Active Fleet': '운영 선대', '─ No change': '─ 변동 없음',
+    'On Production': '생산 중', 'Under Construction': '건조 중', 'FLNG Active': 'FLNG 운영',
+    'Contractor Summary': '컨트랙터 요약', 'Major deepwater FPSO / FLNG lessors & operators': '주요 심해 FPSO / FLNG 리스사·운영사',
+    'Fleet': '선대', 'In Operation': '운영 중', 'Newbuilds (Own)': '신조 (자사)', 'Newbuilds (Op.)': '신조 (운영)',
+    'Backlog ($B)': '수주잔고 ($B)', 'Notable Vessels': '주요 선박', 'Deepwater production assets — click row for detail': '심해 생산설비 — 행을 누르면 상세',
+    'Owner': '소유주', 'Asset': '설비', 'Field / Block': '유전 / 광구', 'Capacity (kboed)': '용량 (kboed)', 'Contract End': '계약 종료',
+    '✕ Close': '✕ 닫기', 'Orderbook': '오더북', 'Deepwater / FLNG newbuilds & confirmed orders — click row for detail': '심해 / FLNG 신조 및 확정 발주 — 행을 누르면 상세',
+    'Client': '발주사', 'Field / Project': '유전 / 프로젝트', 'Delivery': '인도', 'Contract ($B)': '계약액 ($B)',
+    // earnings
+    'Deepwater Drilling Contractors — Financials, Fleet Mix & Backlog': '심해 시추 컨트랙터 — 실적, 선대 구성, 수주잔고',
+    'Deepwater Drilling Contractor Financials': '심해 시추 컨트랙터 실적', 'Period': '기간', 'Revenue ($M)': '매출 ($M)',
+    'Adj. EBITDA ($M)': '조정 EBITDA ($M)', 'EBITDA Margin (%)': 'EBITDA 마진 (%)', 'Utilization (%)': '가동률 (%)',
+    'Avg Day Rate (k$)': '평균 용선료 (k$)', 'Revenue & EBITDA Margin — Quarterly': '매출 및 EBITDA 마진 — 분기',
+    'All Quarters': '전체 분기', 'Key Highlights': '주요 내용', 'FPSO / FLNG Operators — Financials & Backlog': 'FPSO / FLNG 운영사 — 실적 및 수주잔고',
+    '⚠ source URLs pending': '⚠ 출처 URL 확인 중', 'Deepwater FPSO / FLNG Operator Financials': '심해 FPSO / FLNG 운영사 실적',
+    'Quarterly earnings · backlog · leased asset overview': '분기 실적 · 수주잔고 · 리스 설비 현황', 'Units on Lease': '리스 선박',
+    // news
+    'Offshore Market News': '해양 시장 뉴스', 'Sector': '분야', 'Category': '분류', 'Earnings': '실적', 'Outlook': '전망',
+    '▼ more': '▼ 더보기', '▲ less': '▲ 접기', 'Original article': '원문 기사',
+    // subtitles / footer / misc
+    'Rigs': '리그', 'Floaters': '부유식 설비',
+    'Offshore projects by phase, region and operator capex; FID and first-oil tracking.': '단계·지역·운영사별 해양 프로젝트 사업비, FID와 첫 생산 추적.',
+    'Drillship and semi-sub fleet status, contract coverage and dayrate trend.': '드릴십·반잠수식 리그 가동 현황, 계약 커버리지, 용선료 추이.',
+    'Operating floaters, orderbook and charter rates by contractor and basin.': '컨트랙터·해역별 운영 선박, 오더북, 용선료.',
+    'Newbuild obligations, acquired hulls and cancelled-order transactions': '신조 잔금, 선체 인수, 발주 취소 선박 거래',
+    'Sources: company IR, contract disclosures, trade press. Figures marked indicative are estimates.': '출처: 회사 IR, 계약 공시, 전문지. 「추정」 표시 수치는 추정치입니다.',
+    'Failed to load data. Please ensure the local server is running and data files exist.': '데이터를 불러오지 못했습니다. 로컬 서버 실행 여부와 데이터 파일을 확인하세요.',
+    'Offshore projects · Deepwater, shallow offshore & fixed platforms · IOC/NOC CAPEX · FID and first-oil tracking': '해양 프로젝트 · 심해, 천해, 고정식 플랫폼 · IOC/NOC 투자 · FID와 첫 생산 추적',
+    'UDW drillship · deepwater / harsh-environment semi-sub · contract utilization · dayrate · asset values': 'UDW 드릴십 · 심해 / 혹한 해역 반잠수식 · 계약 가동률 · 용선료 · 자산가치',
+    'Deepwater floating production · harsh/offshore basins · contractors · orderbook': '심해 부유식 생산설비 · 해역별 · 컨트랙터 · 오더북',
+    'Global fleet estimates — Rystad Energy / Westwood Global · Contractor-level data from individual company IR': '전 세계 선대는 Rystad Energy / Westwood Global 추정 · 컨트랙터별 수치는 각 사 IR 기준',
+    'Quarterly revenue · adj. EBITDA margin · utilization · average dayrate · backlog — select a company for its quarterly history': '분기 매출 · 조정 EBITDA 마진 · 가동률 · 평균 용선료 · 수주잔고 — 회사를 선택하면 분기별 추이',
+    'Market News — Deepwater drilling, FPSO / FLNG, E&P CAPEX, contracts & earnings': '시장 뉴스 — 심해 시추, FPSO / FLNG, E&P 투자, 계약, 실적',
+    'Contracts, FIDs, M&A, earnings and outlook across deepwater drilling, FPSO / FLNG and E&P capex · refreshed weekly': '심해 시추, FPSO / FLNG, E&P 투자 분야의 계약·FID·M&A·실적·전망 · 매주 갱신'
+  };
+  var UI_KO_RE = [
+    [/^(\d+) of (\d+) projects$/, '$2건 중 $1건'],
+    [/^projects · (\d+) in Production \(excl\.\)$/, '건 · 생산 단계 $1건 제외'],
+    [/^(\d+) deepwater rigs$/, '심해 리그 $1척'],
+    [/^(\$[\d.]+B) · (\d+) projects$/, '$1 · $2건'],
+    [/^\$([\d.]+)B Sanctioned · \$([\d.]+)B Pre-FID$/, '승인 $$$1B · FID 전 $$$2B'],
+    [/^(\d+) FEED · (\d+) pre-FEED projects$/, 'FEED $1건 · pre-FEED $2건'],
+    [/^(\d+)% contracted$/, '계약률 $1%'],
+    [/^(\d+) contracted drillships$/, '계약 드릴십 $1척'],
+    [/^(\d+) producing · Rystad\/Westwood est\.$/, '생산 $1척 · Rystad/Westwood 추정'],
+    [/^(\d{4}-\d{2}-\d{2}) · overdue$/, '$1 · 갱신 지연'],
+    [/^· ([+-]?[\d.]+%) since (\d{4}-\d{2})$/, '· $2 대비 $1'],
+    [/^([▲▼]) (\d+) QoQ$/, '$1 전분기 대비 $2'],
+    [/^\$([\d.]+)B disclosed \(some undisclosed\)$/, '공시 $$$1B (일부 미공시)'],
+    [/^LATEST REPORTED QUARTER — (.+)$/i, '최근 발표 분기 — $1'],
+    [/^(.+) · first oil (\d{4})$/, '$1 · 첫 생산 $2'],
+    [/^(\d+) updates?$/, '기록 $1건']
+  ];
+  var HANGUL = /[가-힣]/, LATIN = /[A-Za-z]/;
+  var NEEDS = LANG === 'en' ? HANGUL : LATIN;
   function trText(s) {
-    for (var i = 0; i < UI_EN.length; i++) if (s.indexOf(UI_EN[i][0]) !== -1) s = s.split(UI_EN[i][0]).join(UI_EN[i][1]);
-    return s;
+    if (LANG === 'en') {
+      for (var i = 0; i < UI_EN.length; i++) if (s.indexOf(UI_EN[i][0]) !== -1) s = s.split(UI_EN[i][0]).join(UI_EN[i][1]);
+      return s;
+    }
+    var core = s.trim();
+    if (!core) return s;
+    var ko = Object.prototype.hasOwnProperty.call(UI_KO, core) ? UI_KO[core] : null;
+    for (var j = 0; ko == null && j < UI_KO_RE.length; j++) if (UI_KO_RE[j][0].test(core)) ko = core.replace(UI_KO_RE[j][0], UI_KO_RE[j][1]);
+    return ko == null ? s : s.replace(core, function () { return ko; });
+  }
+  function trAttrs(el) {
+    if (LANG !== 'ko' || !el.getAttribute) return;
+    ['title', 'aria-label', 'placeholder'].forEach(function (a) {
+      var v = el.getAttribute(a);
+      if (v && LATIN.test(v)) { var t = trText(v); if (t !== v) el.setAttribute(a, t); }
+    });
   }
   function trTree(root) {
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n, list = [];
-    while ((n = w.nextNode())) if (HANGUL.test(n.nodeValue) && !(n.parentNode && /^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName))) list.push(n);
+    while ((n = w.nextNode())) if (NEEDS.test(n.nodeValue) && !(n.parentNode && /^(SCRIPT|STYLE|OPTION|TEXTAREA)$/.test(n.parentNode.nodeName))) list.push(n);
     list.forEach(function (t) { var v = trText(t.nodeValue); if (v !== t.nodeValue) t.nodeValue = v; });
+    if (LANG === 'ko' && root.querySelectorAll) {
+      trAttrs(root);
+      root.querySelectorAll('[title],[aria-label],[placeholder]').forEach(trAttrs);
+    }
   }
   function startUiTranslate() {
-    if (LANG !== 'en' || !document.body) return;
+    if (!document.body) return;
     trTree(document.body);
     new MutationObserver(function (ms) {
       ms.forEach(function (m) {
-        if (m.type === 'characterData') { if (HANGUL.test(m.target.nodeValue)) trTree(m.target.parentNode || m.target); return; }
+        if (m.type === 'characterData') {
+          if (NEEDS.test(m.target.nodeValue)) { var v = trText(m.target.nodeValue); if (v !== m.target.nodeValue) m.target.nodeValue = v; }
+          return;
+        }
         m.addedNodes.forEach(function (nd) {
-          if (nd.nodeType === 3) { if (HANGUL.test(nd.nodeValue)) nd.nodeValue = trText(nd.nodeValue); }
+          if (nd.nodeType === 3) { if (NEEDS.test(nd.nodeValue)) { var v2 = trText(nd.nodeValue); if (v2 !== nd.nodeValue) nd.nodeValue = v2; } }
           else if (nd.nodeType === 1) trTree(nd);
         });
       });
@@ -288,7 +430,107 @@
     fix();
     new MutationObserver(fix).observe(m, { childList: true, subtree: true });
   }
-  function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); }
+  /* ── "Last 30 days" strip under each page title ──────────────────────────
+     Built only from sourced records already in data/: news items for the
+     page's sector, ranked up when they name something this page tracks, plus
+     a count of dated correction/verification entries in this page's notes.
+     Nothing is computed or estimated here. */
+  var CHANGES = {
+    'pipeline.html': { sector: ['E&P/CAPEX'], files: ['pipeline'], weak: true,
+      names: function (d) { return d.pipeline.projects.map(function (p) { return { n: p.project, c: p.company }; }); },
+      notes: function (d) { return d.pipeline.projects.map(function (p) { return p.notes; }); } },
+    'drilling.html': { sector: ['Drilling'], files: ['fleet'],
+      names: function (d) { return d.fleet.rigs.map(function (r) { return { n: r.name, c: r.contractor }; }); },
+      notes: function (d) { return d.fleet.rigs.map(function (r) { return r.data_note; }); } },
+    'fpso.html': { sector: ['FPSO/FLNG'], files: ['fpso'],
+      names: function (d) { return d.fpso.vessels.concat(d.fpso.orderbook).map(function (v) { return { n: v.name, c: v.owner }; }); },
+      notes: function (d) { return d.fpso.vessels.concat(d.fpso.orderbook, d.fpso.contractors).map(function (v) { return v.notes; }); } },
+    'earnings.html': { sector: ['Drilling'], files: ['earnings'], cats: ['Earnings', 'Contract', 'M&A'],
+      names: function (d) { return d.earnings.companies.map(function (c) { return { n: c.name }; }); } },
+    'fpso_earnings.html': { sector: ['FPSO/FLNG'], files: ['fpso_earnings'], cats: ['Earnings', 'Contract', 'M&A'],
+      names: function (d) { return d.fpso_earnings.companies.map(function (c) { return { n: c.name }; }); } }
+  };
+  var CAT_KO = { 'Contract': '계약', 'M&A': 'M&A', 'Outlook': '전망', 'Earnings': '실적', 'Fleet': '선대', 'Project': '프로젝트' };
+  function nameKeys(n) {
+    // "Búzios 6 (P-78)" → ["Búzios 6 (P-78)", "Búzios 6", "P-78"]; "Masela / Abadi LNG" → both halves
+    var out = [String(n || '').trim()], m = /^(.*?)\s*\(([^)]+)\)\s*$/.exec(out[0]);
+    if (m) out.push(m[1], m[2]);
+    out.slice().forEach(function (s) { if (s.indexOf(' / ') > 0) out = out.concat(s.split(' / ')); });
+    return out.map(function (s) { return s.trim(); }).filter(function (s) { return s.length >= 4 && !/^(FPSO|FLNG|LNG|Phase \d)$/i.test(s); });
+  }
+  function hits(text, key) {
+    var i = text.indexOf(key.toLowerCase());
+    if (i < 0) return false;
+    var a = text.charAt(i - 1), b = text.charAt(i + key.length);
+    return !/[a-z0-9]/i.test(a) && !/[a-z0-9]/i.test(b);
+  }
+  function firstSentence(s) {
+    s = String(s || '').replace(/\s+/g, ' ').trim();
+    var m = /^(.{20,}?(?:다|요|음)\.|.{20,}?\.)(\s|$)/.exec(s);
+    s = m ? m[1] : s;
+    return s.length > 150 ? s.slice(0, 148) + '…' : s;
+  }
+  function renderChanges() {
+    var page = (location.pathname.split('/').pop() || 'index.html');
+    var cfg = CHANGES[page], anchor = document.querySelector('.page-title-section');
+    if (!cfg || !anchor || document.querySelector('.omi-changes') || !window.fetch) return;
+    var files = ['news'].concat(cfg.files), D = {};
+    Promise.all(files.map(function (f) {
+      return fetch('data/' + f + '.json').then(function (r) { return r.json(); }).then(function (j) { D[f] = j; });
+    })).then(function () {
+      var ko = LANG === 'ko', DAY = 864e5, now = Date.now(), days = 30;
+      var since = function (n) { return new Date(now - n * DAY).toISOString().slice(0, 10); };
+      var names = [];
+      cfg.names(D).forEach(function (o) { nameKeys(o.n).forEach(function (k) { names.push({ key: k, label: o.n, strong: true }); }); if (o.c && cfg.weak) names.push({ key: String(o.c), label: null, strong: false }); });
+      var pool = function (cut) {
+        return (D.news.items || []).filter(function (it) {
+          return it.date >= cut && cfg.sector.indexOf(it.sector) >= 0 && (!cfg.cats || cfg.cats.indexOf(it.category) >= 0);
+        });
+      };
+      var items = pool(since(days));
+      if (items.length < 2) { days = 60; items = pool(since(days)); }
+      items.forEach(function (it) {
+        var text = ((it.title || '') + ' ' + (it.summary || '')).toLowerCase(), tag = null, score = 0;
+        names.forEach(function (n) {
+          if (!hits(text, n.key)) return;
+          if (n.strong) { if (score < 3) { score = 3; tag = n.label; } } else score = Math.max(score, 1);
+        });
+        if (it.category === 'Contract' || it.category === 'M&A' || it.category === 'Earnings') score += 1;
+        it._score = score; it._tag = tag;
+      });
+      var top = items.slice().sort(function (a, b) { return b._score - a._score || (a.date < b.date ? 1 : -1); }).slice(0, 4)
+        .sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+      var fixes = 0;
+      // Count records touched, not log lines, so KO and EN notes give the same number.
+      if (cfg.notes) cfg.notes(D).forEach(function (t) { if (splitNotes(t).log.some(function (e) { return e.date >= since(days); })) fixes++; });
+      if (!top.length && !fixes) return;
+      var rows = top.map(function (it) {
+        var line = ko ? firstSentence(it.summary) || it.title : it.title;
+        return '<li><time>' + escHtml(it.date.slice(5)) + '</time>' +
+          '<span class="omi-ch-cat">' + escHtml(ko ? (CAT_KO[it.category] || it.category) : it.category) + '</span>' +
+          '<span class="omi-ch-text">' + escHtml(line) +
+          (it._tag ? ' <span class="omi-ch-tag" title="' + (ko ? '이 페이지에서 추적 중' : 'Tracked on this page') + '">' + escHtml(it._tag) + '</span>' : '') + '</span>' +
+          (it.url ? '<a class="omi-ch-src" href="' + escHtml(it.url) + '" target="_blank" rel="noopener" title="' + escHtml(it.title) + '">' + escHtml(it.source || 'source') + ' ↗</a>' : '<span class="omi-ch-src">' + escHtml(it.source || '') + '</span>') +
+          '</li>';
+      }).join('');
+      var foot = fixes
+        ? '<p class="omi-ch-foot">' + (ko ? '최근 ' + days + '일 출처 대조로 정정·확인한 항목 ' + fixes + '건 · 행을 열면 업데이트 기록이 보입니다'
+                                        : fixes + ' records corrected or re-verified against sources in the last ' + days + ' days · open a row for its update log') + '</p>'
+        : '';
+      var box = document.createElement('section');
+      box.className = 'omi-changes';
+      box.setAttribute('aria-label', ko ? '최근 핵심 변화' : 'Recent key changes');
+      box.innerHTML =
+        '<div class="omi-ch-head"><h3>' + (ko ? '최근 ' + days + '일 핵심 변화' : 'Key changes · last ' + days + ' days') + '</h3>' +
+        '<span>' + (ko ? '뉴스 출처 기준 · 자동 선별 · ' : 'from sourced news · auto-selected · ') + escHtml(new Date(now).toISOString().slice(0, 10)) +
+        ' · <a href="news.html">' + (ko ? '뉴스 전체 →' : 'All news →') + '</a></span></div>' +
+        (rows ? '<ol class="omi-ch-list">' + rows + '</ol>' : '') + foot;
+      anchor.parentNode.insertBefore(box, anchor.nextSibling);
+    }).catch(function () {});
+  }
+  window.OMI.renderChanges = renderChanges;
+
+  function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); renderChanges(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
