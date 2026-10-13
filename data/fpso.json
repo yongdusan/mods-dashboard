@@ -43,10 +43,10 @@
       "source": "SBM Offshore Half Year 2026 Earnings (Aug 6, 2026) — pro-forma directional backlog",
       "as_of": "2026-06-30",
       "source_url": "https://www.globenewswire.com/news-release/2026/08/06/3339924/0/en/SBM-Offshore-Half-Year-2026-Earnings.html",
-      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B.",
-      "newbuilds_owned": 4,
+      "notes": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [2026-10-13 정정] 건조 중인 L&O(임대) 신조 없음 — Jaguar는 ExxonMobil 매각 후 운영, GranMorgu는 TotalEnergies 턴키, SEAP I·II(P-81·P-87)는 Petrobras 소유·SBM 건조+O&M. Kaminho는 Saipem EPC로 SBM과 무관. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] backlog 38.9→35.6 정정·갱신: FY2025 실제 directional backlog는 $31.1B(기존 38.9는 오기), H1 2026 pro-forma $35.6B(+14%). 2026 가이던스 상향: directional revenue ~$7.6B, EBITDA ~$1.9B.",
+      "newbuilds_owned": 0,
       "newbuilds_operated": 0,
-      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; 3 L&O newbuilds (Kaminho, Jaguar, GranMorgu). One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B."
+      "notes_en": "World's largest FPSO lessor. Fast4Ward standardised hull. 13 units on L&O; [Corrected 2026-10-13] No L&O (lease) newbuilds under construction — Jaguar is sold to ExxonMobil and then operated, GranMorgu is a TotalEnergies turnkey, SEAP I/II (P-81, P-87) are Petrobras-owned with SBM build + O&M. Kaminho is a Saipem EPC, unrelated to SBM. One Guyana sold to ExxonMobil Q1 2026. [2026-10-08] Backlog corrected/updated 38.9→35.6: actual FY2025 directional backlog was $31.1B (previous 38.9 was an error); H1 2026 pro-forma $35.6B (+14%). 2026 guidance raised: directional revenue ~$7.6B, EBITDA ~$1.9B."
     },
     {
       "name": "MODEC",
@@ -60,7 +60,7 @@
       "as_of": "2026-06-30",
       "source_url": "https://filingreader.com/news-wire/tokyo/2026-08-07/modec-reports-strong-profit-growth-in-first-half-of-2026",
       "notes": "일본 최대 FPSO 사업자. 브라질 13척(MV계열+Bacalhau) + 가나 2척(MV21, Prof. Atta Mills) = 15척 L&O. MV20 Enauta 매각(2023-12), Fluminense 해체(2024). Gato do Mato 신조 1척(orderbook). [2026-10-08] backlog 14.8→25.0 갱신: 1H 2026 total backlog $25.0B(FYE2025 대비 -7%, 프로젝트 진행 반영). 수주잔고(order backlog) $17.0B, 용선 backlog $8.5B(평균 잔여 11.4년). 기존 14.8은 산정 기준 불명확.",
-      "newbuilds_owned": 1,
+      "newbuilds_owned": 0,
       "newbuilds_operated": 0,
       "notes_en": "Japan's largest FPSO operator. 13 units in Brazil (MV series + Bacalhau) + 2 in Ghana (MV21, Prof. Atta Mills) = 15 units on L&O. MV20 sold to Enauta (Dec 2023), Fluminense decommissioned (2024). One newbuild for Gato do Mato (orderbook). [2026-10-08] Backlog updated 14.8→25.0: 1H 2026 total backlog $25.0B (-7% vs FYE2025, reflecting project progress). Order backlog $17.0B, charter backlog $8.5B (average remaining term 11.4 years). Previous 14.8 had an unclear basis."
     },
@@ -125,10 +125,10 @@
       "source": "Golar LNG Q2 2026 Interim Results (Sep 2026) — EBITDA backlog",
       "as_of": "2026-06-30",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001207179/000117184326005483/exh_991.htm",
-      "notes": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG Mk II under construction (CIMC Raffles, delivery 2029-Q2). [2026-10-08] Q2 2026 기준 EBITDA backlog $16.6B(자산별 합산: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar 지분, 헤드라인 ~$17B)(Hilli·Gimi·Esperanza, 2045까지, commodity upside 제외).",
-      "newbuilds_owned": 1,
+      "notes": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG MkII 3호기(Esperanza, Fuji LNG 개조, CIMC Raffles, 2027년 말 인도) + 4호기(CIMC Raffles, 2029년 말 인도, 2026-08 발주) 건조 중. [2026-10-08] Q2 2026 기준 EBITDA backlog $16.6B(자산별 합산: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar 지분, 헤드라인 ~$17B)(Hilli·Gimi·Esperanza, 2045까지, commodity upside 제외).",
+      "newbuilds_owned": 2,
       "newbuilds_operated": 0,
-      "notes_en": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG Mk II under construction (CIMC Raffles, delivery 2029-Q2). [2026-10-08] EBITDA backlog $16.6B as of Q2 2026 (sum by asset: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar share; headline ~$17B) (Hilli, Gimi, Esperanza, through 2045, excluding commodity upside)."
+      "notes_en": "First commercial FLNG operator. FLNG Hilli & Gimi on production. FLNG MkII #3 (Esperanza, Fuji LNG conversion, CIMC Raffles, delivery end-2027) + #4 (CIMC Raffles, delivery end-2029, ordered Aug 2026) under construction. [2026-10-08] EBITDA backlog $16.6B as of Q2 2026 (sum by asset: Hilli $5.7B + Esperanza $8.0B + Gimi $2.9B Golar share; headline ~$17B) (Hilli, Gimi, Esperanza, through 2045, excluding commodity upside)."
     },
     {
       "name": "Petrobras",
@@ -142,8 +142,8 @@
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
       "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중.",
-      "newbuilds_owned": 5,
-      "newbuilds_operated": 5,
+      "newbuilds_owned": 7,
+      "newbuilds_operated": 7,
       "notes_en": "Brazilian national oil company. 20 owned FPSOs (per vessels list). Santos Basin (Lula/Búzios/Itapu and other pre-salt) + Campos Basin (Albacora/Roncador/Barracuda/Caratinga etc.). Older Campos FPSOs (P-18 to P-37 series) undergoing large-scale decommissioning in 2025."
     },
     {
@@ -158,7 +158,7 @@
       "as_of": "2025-12-31",
       "source_url": "https://www.shell.com/investors/results-and-reporting.html",
       "notes": "Operates Prelude FLNG (3.6 mtpa) off NW Australia.",
-      "newbuilds_owned": 0,
+      "newbuilds_owned": 1,
       "newbuilds_operated": 1
     }
   ],
@@ -2600,7 +2600,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027",
       "status": "Under Construction",
-      "notes": "Búzios 9번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium Tuas에서 통합 마무리·출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. 계약금액 미확인.",
+      "notes": "Búzios 9번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium Tuas에서 통합 마무리·출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. 계약금액 미확인. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d(424 MMscfd)·2027 가동 확인(World Oil). 계약액은 미공시로 null 유지.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC)",
         "water_depth_m": null,
@@ -2618,7 +2618,9 @@
         "financing_en": "Owned by Petrobras",
         "key_equipment_en": "Process modules fabricated at Seatrium BrasFELS (Angra dos Reis)."
       },
-      "notes_en": "9th Búzios FPSO. Owned by Petrobras. As of Aug 2026 completing integration and preparing to sail from Seatrium Tuas; operations 2027. 225k bpd, gas 12 MMm³/d. Contract value unconfirmed."
+      "notes_en": "9th Búzios FPSO. Owned by Petrobras. As of Aug 2026 completing integration and preparing to sail from Seatrium Tuas; operations 2027. 225k bpd, gas 12 MMm³/d. Contract value unconfirmed. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d (424 MMscfd), operations 2027 (World Oil). Contract value undisclosed, kept null.",
+      "source_url": "https://worldoil.com/news/2026/8/27/seatrium-readies-p-80-p-82-fpsos-for-petrobras-buzios-field/",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-82 (Búzios 10)",
@@ -2632,7 +2634,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027",
       "status": "Under Construction",
-      "notes": "Búzios 10번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium에서 P-80에 이어 출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. [정정 2026-10-08] 기존 vessels에 \"P-82 (Búzios 9) / Commissioned\"로 잘못 등재 — 미가동 신조선이므로 orderbook으로 이동.",
+      "notes": "Búzios 10번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium에서 P-80에 이어 출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. [정정 2026-10-08] 기존 vessels에 \"P-82 (Búzios 9) / Commissioned\"로 잘못 등재 — 미가동 신조선이므로 orderbook으로 이동. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d·2027 가동 확인(World Oil). 계약액 미공시.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC)",
         "water_depth_m": null,
@@ -2650,7 +2652,9 @@
         "financing_en": "Owned by Petrobras",
         "key_equipment_en": "Process modules fabricated at Seatrium Aracruz (Espírito Santo)."
       },
-      "notes_en": "10th Búzios FPSO. Owned by Petrobras. As of Aug 2026 preparing to sail from Seatrium after P-80; operations 2027. 225k bpd, gas 12 MMm³/d. [Corrected 2026-10-08] Previously listed in vessels as \"P-82 (Búzios 9) / Commissioned\" — moved to orderbook as a newbuild not yet in service."
+      "notes_en": "10th Búzios FPSO. Owned by Petrobras. As of Aug 2026 preparing to sail from Seatrium after P-80; operations 2027. 225k bpd, gas 12 MMm³/d. [Corrected 2026-10-08] Previously listed in vessels as \"P-82 (Búzios 9) / Commissioned\" — moved to orderbook as a newbuild not yet in service. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d, operations 2027 (World Oil). Contract value undisclosed.",
+      "source_url": "https://worldoil.com/news/2026/8/27/seatrium-readies-p-80-p-82-fpsos-for-petrobras-buzios-field/",
+      "verified": "2026-10-13"
     },
     {
       "name": "Kaminho FPSO",
@@ -2660,19 +2664,19 @@
       "field": "Kaminho (Angola Block 20/11)",
       "region": "West Africa",
       "yard": "CMHI (CN) — VLCC Alsace conversion",
-      "contract_value_busd": 3.5,
+      "contract_value_busd": null,
       "oil_capacity_kboed": 70,
-      "delivery": "2027-Q1",
+      "delivery": "2028",
       "status": "Under Construction",
-      "notes": "[정정 2026-10-08] VLCC(Alsace) 개조 FPSO, Saipem EPC — 기존 \"SBM Fast4Ward 선형\"은 오류. 70k bbl/d, 수반가스 전량 재주입. 앙골라 Kwanza 분지 Cameia·Golfinho, TotalEnergies 40%(op)·PETRONAS 40%·Sonangol 20%. FID 2024-05, first oil 2028.",
+      "notes": "[정정 2026-10-08] VLCC(Alsace) 개조 FPSO, Saipem EPC — 기존 \"SBM Fast4Ward 선형\"은 오류. 70k bbl/d, 수반가스 전량 재주입. 앙골라 Kwanza 분지 Cameia·Golfinho, TotalEnergies 40%(op)·PETRONAS 40%·Sonangol 20%. FID 2024-05, first oil 2028. [2026-10-13 감사] 계약액 3.5→null: Saipem $3.7B는 FPSO EPC·12년 O&M·SURF 3건 합산이라 FPSO 단독 금액 아님. 인도 2027-Q1→2028(첫 생산 2028, FPSO 인도 시점 미공시). 수심 ~1,700m·70k bpd 확인. 공정률 45%·가스 120은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (VLCC Alsace, Saipem EPC)",
         "water_depth_m": 1700,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 120,
+        "gas_capacity_mmscfd": null,
         "mooring": null,
         "fid_date": "2024-05",
-        "construction_progress_pct": 45,
+        "construction_progress_pct": null,
         "financing": "컨소시엄 직접 소유; Saipem EPCI $3.7B + 12년 O&M 계약 (+ 8년 옵션)",
         "key_equipment": "VLCC Alsace (2012년 SHI 건조, 299,999 DWT) 개조. CMHI(Nantong) 선체 개조 담당. Saipem EPCI 계약.",
         "rig_demand": "드릴십 1기 전용 배치 — 2025~2027년 Kaminho 개발정 시추 캠페인",
@@ -2688,7 +2692,9 @@
         "rig_demand_en": "1 dedicated drillship — Kaminho development drilling campaign 2025–2027",
         "notable_en": "Saipem $3.7B EPC + O&M contract May 2024. TotalEnergies 40% / PETRONAS PAEPAL 40% / Sonangol 20%. 70,000 bopd; all gas reinjected; first oil targeted 2028."
       },
-      "notes_en": "[Corrected 2026-10-08] VLCC (Alsace) conversion FPSO, Saipem EPC — the earlier \"SBM Fast4Ward design\" was wrong. 70k bbl/d, all associated gas reinjected. Cameia and Golfinho, Kwanza Basin, Angola; TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%. FID May 2024, first oil 2028."
+      "notes_en": "[Corrected 2026-10-08] VLCC (Alsace) conversion FPSO, Saipem EPC — the earlier \"SBM Fast4Ward design\" was wrong. 70k bbl/d, all associated gas reinjected. Cameia and Golfinho, Kwanza Basin, Angola; TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%. FID May 2024, first oil 2028. [2026-10-13 audit] Contract value 3.5→null: Saipem's $3.7B covers three contracts (FPSO EPC, 12-year O&M, SURF), not the FPSO alone. Delivery 2027-Q1→2028 (first oil 2028; FPSO delivery date not disclosed). Confirmed ~1,700m WD and 70k bpd. Progress 45% and gas 120 unsourced → null.",
+      "source_url": "https://www.offshore-technology.com/news/saipem-totalenergies-angola-contracts/",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-83 (Búzios 11)",
@@ -2702,15 +2708,15 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027-Q2",
       "status": "Under Construction",
-      "notes": "Búzios 11번째 FPSO. Petrobras 자가 소유, Seatrium EPC. [정정 2026-10-08] 기존 명칭 \"Marechal Duque de Caxias\"는 MISC 소유 Mero-3 FPSO(2024-10 생산개시)로 별개 선박 — 오기재. 기존 notes의 \"SBM Fast4Ward\"도 오류. [2026-10-08] 계약금액 3.8→2.8($B, Keppel O&M EPC 2022 수주액). 선체·거주구 CIMC Raffles(중국), 상부 모듈 싱가포르·중국·브라질 분산 제작, 싱가포르 통합. P-80 반복 설계. 인도 2027 상반기 목표.",
+      "notes": "Búzios 11번째 FPSO. Petrobras 자가 소유, Seatrium EPC. [정정 2026-10-08] 기존 명칭 \"Marechal Duque de Caxias\"는 MISC 소유 Mero-3 FPSO(2024-10 생산개시)로 별개 선박 — 오기재. 기존 notes의 \"SBM Fast4Ward\"도 오류. [2026-10-08] 계약금액 3.8→2.8($B, Keppel O&M EPC 2022 수주액). 선체·거주구 CIMC Raffles(중국), 상부 모듈 싱가포르·중국·브라질 분산 제작, 싱가포르 통합. P-80 반복 설계. 인도 2027 상반기 목표. [2026-10-13 감사] Keppel 발표로 $2.8B·225k bpd·저장 200만 bbl·2027 상반기 인도 확인. 공정률 40%·수심 2,100m은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
-        "water_depth_m": 2100,
+        "water_depth_m": null,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 424,
         "mooring": "Spread Mooring",
         "fid_date": "2023",
-        "construction_progress_pct": 40,
+        "construction_progress_pct": null,
         "financing": "Petrobras 직접 소유; Seatrium/Keppel O&M EPC ~$2.8B",
         "key_equipment": "CIMC Raffles(옌타이) 신조 선체. Seatrium Angra(BrasFELS) + Seatrium Singapore 상부 공정. EPC: Seatrium/Keppel O&M. SBM Fast4Ward 아님.",
         "rig_demand": "드릴십 2기 — Búzios 프리솔트 개발정 시추 지속",
@@ -2731,29 +2737,31 @@
           "PPSA (PSC administrator)"
         ]
       },
-      "notes_en": "11th Búzios FPSO. Owned by Petrobras, Seatrium EPC. [Corrected 2026-10-08] The previous name \"Marechal Duque de Caxias\" belongs to a different vessel — MISC's Mero-3 FPSO (production started Oct 2024). The previous \"SBM Fast4Ward\" note was also wrong. [2026-10-08] Contract value 3.8→2.8 ($B, Keppel O&M EPC award 2022). Hull and living quarters by CIMC Raffles (China); topside modules fabricated across Singapore, China and Brazil; integrated in Singapore. Repeat of P-80 design. Delivery targeted H1 2027."
+      "notes_en": "11th Búzios FPSO. Owned by Petrobras, Seatrium EPC. [Corrected 2026-10-08] The previous name \"Marechal Duque de Caxias\" belongs to a different vessel — MISC's Mero-3 FPSO (production started Oct 2024). The previous \"SBM Fast4Ward\" note was also wrong. [2026-10-08] Contract value 3.8→2.8 ($B, Keppel O&M EPC award 2022). Hull and living quarters by CIMC Raffles (China); topside modules fabricated across Singapore, China and Brazil; integrated in Singapore. Repeat of P-80 design. Delivery targeted H1 2027. [2026-10-13 audit] Keppel release confirms $2.8B, 225k bpd, 2 MMbbl storage, delivery H1 2027. Progress 40% and 2,100m WD unsourced → null.",
+      "source_url": "https://www.keppel.com/media/keppel-om-secures-repeat-newbuild-fpso-contract-worth-us28b-from-petrobras/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Jaguar (Hammerhead)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "ExxonMobil (built & operated by SBM; transferred before installation)",
       "client": "ExxonMobil",
       "field": "Hammerhead (Stabroek Block)",
       "region": "South America",
       "yard": "SWS (CN) + Seatrium (SG)",
-      "contract_value_busd": 4.2,
-      "oil_capacity_kboed": 120,
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 250,
       "delivery": "2027-Q3",
       "status": "Under Construction",
-      "notes": "SBM Fast4Ward 선형. Stabroek 7번째 프로젝트(Hammerhead) FPSO. [정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu).",
+      "notes": "SBM Fast4Ward 선형. Stabroek 7번째 프로젝트(Hammerhead) FPSO. [정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu). [2026-10-13 감사] 용량 120→250k bpd(가스 540 MMscfd·저장 ~200만 bbl·수심 ~1,630m 확인). 소유: SBM 건조 후 설치 전 ExxonMobil로 이전(Sale & Operate), SBM 10년 운영. 계약액 4.2·공정률 30%는 출처 없어 null(SBM $1.5B는 프로젝트 금융액).",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF5 신조 (SWS hull + Seatrium 통합)",
-        "water_depth_m": 1600,
+        "water_depth_m": 1630,
         "storage_mmbbl": 2.0,
         "gas_capacity_mmscfd": 540,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2024-Q2",
-        "construction_progress_pct": 30,
+        "construction_progress_pct": null,
         "financing": "20년 장기 임대 (ExxonMobil)",
         "key_equipment": "SBM Fast4Ward 7호 선형 (MPF5 hull, SWS Shanghai 건조). Stabroek 블록 6번째 FPSO. Seatrium 상부 통합.",
         "rig_demand": "드릴십 2기 동시 운용 — Hammerhead 개발정 집중 시추 2026~2028년",
@@ -2772,29 +2780,31 @@
           "CNOOC 25%"
         ]
       },
-      "notes_en": "SBM Fast4Ward design. FPSO for Stabroek's 7th project (Hammerhead). [Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu)."
+      "notes_en": "SBM Fast4Ward design. FPSO for Stabroek's 7th project (Hammerhead). [Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu). [2026-10-13 audit] Capacity 120→250k bpd (confirmed gas 540 MMscfd, ~2 MMbbl storage, ~1,630m WD). Ownership: built by SBM, transferred to ExxonMobil before installation (sale & operate), SBM operates 10 years. Contract value 4.2 and progress 30% unsourced → null (SBM's $1.5B is project financing).",
+      "source_url": "https://www.offshore-mag.com/vessels/article/55017838/sbm-offshore-will-construct-and-install-fpso-jaguar",
+      "verified": "2026-10-13"
     },
     {
       "name": "Gato do Mato FPSO",
       "type": "FPSO",
-      "owner": "MODEC",
+      "owner": "Shell 50% / Ecopetrol 30% / TotalEnergies 20% (MODEC build & O&M)",
       "client": "Shell",
       "field": "Gato do Mato Field (C-M-411)",
       "region": "South America",
       "yard": "Sumitomo (JP) + COSCO Qidong (CN)",
-      "contract_value_busd": 5.0,
-      "oil_capacity_kboed": 100,
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 120,
       "delivery": "2027-Q4",
       "status": "Under Construction",
-      "notes": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029.",
+      "notes": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029. [2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029.",
       "detail": {
         "hull_type": "MODEC Next Generation 신조 (VLCC 전환 아님)",
         "water_depth_m": 2000,
-        "storage_mmbbl": 0.85,
-        "gas_capacity_mmscfd": 384,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": null,
         "mooring": "Spread Mooring",
         "fid_date": "2025-03",
-        "construction_progress_pct": 35,
+        "construction_progress_pct": null,
         "financing": "MODEC 소유 (PSA 체결 2025-03); 20년 O&M 계약. Shell/Ecopetrol/TotalEnergies가 클라이언트.",
         "key_equipment": "MODEC Next Generation 신조 (VLCC 전환 아님). Sumitomo(JP) forward hull + COSCO Qidong(CN) aft hull 분할 건조. MODEC EPCI. ABB 전기 시스템.",
         "rig_demand": "드릴십 1기 — Shell/Petrobras/TTE 개발정 공동 시추 2026~2028년",
@@ -2809,22 +2819,25 @@
         "key_equipment_en": "MODEC Next Generation newbuild (not a VLCC conversion). Split build: Sumitomo (JP) forward hull + COSCO Qidong (CN) aft hull. MODEC EPCI. ABB electrical systems.",
         "rig_demand_en": "1 drillship — joint Shell/Petrobras/TTE development drilling 2026–2028",
         "notable_en": "MODEC took over Saipem's EPC contract in Mar 2025. Hull: split build, Sumitomo (JP) forward + COSCO Qidong (CN) aft."
-      }
+      },
+      "source_url": "https://www.oedigital.com/amp/news/540864-modec-advances-construction-of-brazil-bound-gato-do-mato-fpso",
+      "verified": "2026-10-13",
+      "notes_en": "Shell terminated Saipem EPC contract Nov 2022; MODEC awarded new contract Mar 2025 (PSA). Hull split: Sumitomo Yokosuka (forward) + COSCO Qidong (aft). First oil target 2029. [2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029. [2026-10-13 audit] Capacity 100→120k bpd, ~2,000m WD confirmed. Owner MODEC→Shell consortium (MODEC builds and delivers under a purchase & sale agreement, 20-year O&M). Contract value 5.0, gas 384, storage 0.85 and progress 35% unsourced → null. Production start 2029."
     },
     {
       "name": "GranMorgu FPSO",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "TotalEnergies 50% / APA 50% (SBM + Technip Energies turnkey)",
       "client": "TotalEnergies / Suriname State",
       "field": "Block 58 (Suriname)",
       "region": "South America",
       "yard": "CMHI Haimen (CN) + BOMESC/COSCO (CN) + Technip Energies",
-      "contract_value_busd": 4.0,
+      "contract_value_busd": null,
       "oil_capacity_kboed": 220,
       "delivery": "2028-Q3",
       "status": "Under Construction",
       "confidence": "low",
-      "notes": "수리남 첫 심해 FPSO(Block 58). FID 2024-10. 220k bbl/d. [정정 2026-10-08] 기존 \"FID 미확정(2025년 예상)\"은 오류.",
+      "notes": "수리남 첫 심해 FPSO(Block 58). FID 2024-10. 220k bbl/d. [정정 2026-10-08] 기존 \"FID 미확정(2025년 예상)\"은 오류. [2026-10-13 감사] 220k bpd·가스 500 MMscfd·저장 ~200만 bbl·수심 ~400m 확인(SBM). 소유 SBM→TotalEnergies 컨소시엄(SBM+Technip Energies 턴키 건조, SBM O&M). 계약액 4.0·공정률 10%는 출처 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (CMHI hull; SBM+Technip Energies 50/50 JV EPC)",
         "water_depth_m": 400,
@@ -2832,7 +2845,7 @@
         "gas_capacity_mmscfd": 500,
         "mooring": "Spread Mooring (~400m 수심)",
         "fid_date": "2024-10",
-        "construction_progress_pct": 10,
+        "construction_progress_pct": null,
         "financing": "20년 BFOO 임대 (TotalEnergies)",
         "key_equipment": "수리남 최초 대형 FPSO. Block 58 GranMorgu 발견 개발 전용. SBM Fast4Ward 8호 선형.",
         "rig_demand": "드릴십 1~2기 — Block 58 개발정 시추 2027년 착수 예정",
@@ -2854,7 +2867,9 @@
         ],
         "notable_en": "FID Oct 2024. STS JV = SBM + Technip Energies. Steel cutting 2025: BOMESC (May), CMHI (May), COSCO (June)."
       },
-      "notes_en": "Suriname's first deepwater FPSO (Block 58). FID Oct 2024. 220k bbl/d. [Corrected 2026-10-08] The previous \"FID not confirmed (expected 2025)\" was wrong."
+      "notes_en": "Suriname's first deepwater FPSO (Block 58). FID Oct 2024. 220k bbl/d. [Corrected 2026-10-08] The previous \"FID not confirmed (expected 2025)\" was wrong. [2026-10-13 audit] Confirmed 220k bpd, gas 500 MMscfd, ~2 MMbbl storage, ~400m WD (SBM). Owner SBM→TotalEnergies consortium (turnkey build by SBM + Technip Energies, SBM O&M). Contract value 4.0 and progress 10% unsourced → null.",
+      "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-signs-an-operations-and-maintenance-contract-for-fpso-granmorgu-with-totalenergies/",
+      "verified": "2026-10-13"
     },
     {
       "name": "Coral Norte FLNG",
@@ -2864,19 +2879,19 @@
       "field": "Coral North (Area 4)",
       "region": "East Africa",
       "yard": "SHI (KR)",
-      "contract_value_busd": 4.8,
+      "contract_value_busd": null,
       "oil_capacity_kboed": null,
-      "delivery": "2028-Q4",
+      "delivery": "2028",
       "status": "Under Construction",
-      "notes": "모잠비크 Area 4 2번째 FLNG, 3.4 MTPA. FID 2025-10. [정정 2026-10-08] Galp 지분은 2025-03 XRG(ADNOC)로 매각, 기존 \"FID 2024년\" 오기.",
+      "notes": "모잠비크 Area 4 2번째 FLNG, 3.4 MTPA. FID 2025-10. [정정 2026-10-08] Galp 지분은 2025-03 XRG(ADNOC)로 매각, 기존 \"FID 2024년\" 오기. [2026-10-13 감사] 3.55 MTPA, FID 2025-10-02, 개발계획 $7.2B 확인. 계약액 4.8→null: EPCIC(JGC·Technip Energies·SHI)는 'JGC 기준 $5B 미만'만 공개. 인도 2028-Q4→2028(첫 LNG 2028, 분기 출처 엇갈림). 가스 470·수심 2,600m·공정률 15%는 출처 없어 null.",
       "detail": {
         "hull_type": "Purpose-built FLNG (SHI)",
-        "water_depth_m": 2600,
+        "water_depth_m": null,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 470,
+        "gas_capacity_mmscfd": null,
         "mooring": "Internal Turret Mooring (SOFEC) — Coral Sul 자매선과 동일",
         "fid_date": "2025-10",
-        "construction_progress_pct": 15,
+        "construction_progress_pct": null,
         "financing": "20년 FLNG 장기 임대 (ENI)",
         "key_equipment": "LNG 액화 용량 3.55 MTPA. EPC: Technip Energies + JGC + SHI 컨소시엄. SHI Geoje 선체 건조 (2026-01 진수). Coral Sul FLNG 자매선 (Area 4 2호 FLNG).",
         "rig_demand": "드릴십 1기 — Coral North 가스전 개발정 시추 2026~2027년 예정",
@@ -2892,7 +2907,9 @@
         "key_equipment_en": "LNG liquefaction capacity 3.55 MTPA. EPC: Technip Energies + JGC + SHI consortium. Hull built at SHI Geoje (launched Jan 2026). Sister vessel of Coral Sul FLNG (Area 4's second FLNG).",
         "rig_demand_en": "1 drillship — Coral North gas field development drilling planned 2026–2027"
       },
-      "notes_en": "Second FLNG in Mozambique Area 4, 3.4 MTPA. FID Oct 2025. [Corrected 2026-10-08] Galp's stake was sold to XRG (ADNOC) in Mar 2025; the earlier \"FID 2024\" was wrong."
+      "notes_en": "Second FLNG in Mozambique Area 4, 3.4 MTPA. FID Oct 2025. [Corrected 2026-10-08] Galp's stake was sold to XRG (ADNOC) in Mar 2025; the earlier \"FID 2024\" was wrong. [2026-10-13 audit] Confirmed 3.55 MTPA, FID 2025-10-02, $7.2B development plan. Contract value 4.8→null: only 'below $5B' disclosed for the EPCIC (JGC, Technip Energies, SHI). Delivery 2028-Q4→2028 (first LNG 2028; sources differ on quarter). Gas 470, 2,600m WD and progress 15% unsourced → null.",
+      "source_url": "https://lngprime.com/africa/jgc-technip-energies-and-samsung-heavy-win-epcic-contract-for-coral-norte-flng/188694/",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-84 (Atapu 2)",
@@ -2906,7 +2923,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2029",
       "status": "Under Construction",
-      "notes": "Atapu 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B(S$11B), 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d, all-electric. 2025-Q1 건조 착수, 인도 2029. [정정 2026-10-08] 기존 \"Buzios 11 (P-84)\"는 오류 — P-84는 Atapu 2, Búzios 11은 P-83.",
+      "notes": "Atapu 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B(S$11B), 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d, all-electric. 2025-Q1 건조 착수, 인도 2029. [정정 2026-10-08] 기존 \"Buzios 11 (P-84)\"는 오류 — P-84는 Atapu 2, Búzios 11은 P-83. [2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시(P-84+P-85 합산 ~$8.15B).",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
         "water_depth_m": null,
@@ -2929,7 +2946,9 @@
         "key_equipment_en": "Seatrium EPC (P-84 + P-85 combined ~US$8.15B). All-electric design, zero routine flaring, CO2 capture. Construction started Q1 2025.",
         "source_en": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84 and P-85 each 225k bpd, 10 MMm³/d, delivery 2029"
       },
-      "notes_en": "Atapu phase 2. Owned by Petrobras, Seatrium EPC — P-84 + P-85 package combined ~US$8.15B (S$11B), individual values undisclosed. 225k bpd, gas 10 MMm³/d, all-electric. Construction started Q1 2025, delivery 2029. [Corrected 2026-10-08] The earlier \"Búzios 11 (P-84)\" was wrong — P-84 is Atapu 2; Búzios 11 is P-83."
+      "notes_en": "Atapu phase 2. Owned by Petrobras, Seatrium EPC — P-84 + P-85 package combined ~US$8.15B (S$11B), individual values undisclosed. 225k bpd, gas 10 MMm³/d, all-electric. Construction started Q1 2025, delivery 2029. [Corrected 2026-10-08] The earlier \"Búzios 11 (P-84)\" was wrong — P-84 is Atapu 2; Búzios 11 is P-83. [2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed (P-84 + P-85 combined ~$8.15B).",
+      "source_url": "https://www.offshore-energy.biz/petrobras-sanctions-next-phase-of-two-oil-projects-in-brazilian-waters/",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-85 (Sépia 2)",
@@ -2943,7 +2962,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2029",
       "status": "Under Construction",
-      "notes": "Sépia 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B, 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d. 인도 2029.",
+      "notes": "Sépia 2단계. Petrobras 자가 소유, Seatrium EPC — P-84+P-85 패키지 합산 약 US$8.15B, 개별 금액 미공시. 225k bpd, 가스 10 MMm³/d. 인도 2029. [2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
         "water_depth_m": null,
@@ -2967,7 +2986,9 @@
         "key_equipment_en": "All-electric design, zero routine flaring, CO2 capture.",
         "source_en": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84 and P-85 each 225k bpd, 10 MMm³/d, delivery 2029"
       },
-      "notes_en": "Sépia phase 2. Owned by Petrobras, Seatrium EPC — P-84 + P-85 package combined ~US$8.15B, individual values undisclosed. 225k bpd, gas 10 MMm³/d. Delivery 2029."
+      "notes_en": "Sépia phase 2. Owned by Petrobras, Seatrium EPC — P-84 + P-85 package combined ~US$8.15B, individual values undisclosed. 225k bpd, gas 10 MMm³/d. Delivery 2029. [2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed.",
+      "source_url": "https://www.offshore-energy.biz/petrobras-sanctions-next-phase-of-two-oil-projects-in-brazilian-waters/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FLNG Mk II (Golar)",
@@ -2982,15 +3003,15 @@
       "delivery": "2027-Q4",
       "status": "Under Construction",
       "confidence": "low",
-      "notes": "[정정 2026-10-08] Golar MkII 3.5 MTPA FLNG, CIMC Raffles(옌타이)에서 LNG선 개조 — 총 개조 예산 ~$2.2B(자기자본 조달). Southern Energy(아르헨티나) 20년 용선(순 EBITDA backlog $8B), 2027년 말 인도 → 2028년 가동. 기존 \"삼성중공업 $3.5B·운영사 미정·2029-Q2\"는 오류. 출처: Golar Q1 2026 results, World Oil(2025-08).",
+      "notes": "[정정 2026-10-08] Golar MkII 3.5 MTPA FLNG, CIMC Raffles(옌타이)에서 LNG선 개조 — 총 개조 예산 ~$2.2B(자기자본 조달). Southern Energy(아르헨티나) 20년 용선(순 EBITDA backlog $8B), 2027년 말 인도 → 2028년 가동. 기존 \"삼성중공업 $3.5B·운영사 미정·2029-Q2\"는 오류. 출처: Golar Q1 2026 results, World Oil(2025-08). [2026-10-13 감사] CIMC Raffles 개조·총 예산 ~$2.2B·2027년 말 인도·SESA 20년 용선 확인(Golar 실적; Fuji LNG 개조 EPC $1.6B — LNG Prime). Golar의 MkII 3호기(Esperanza)로, 2029년 말 인도 예정인 4호기와는 별개. 공정률 5%·가스 470은 출처 없어 null.",
       "detail": {
         "hull_type": "LNG 운반선 전환 (Fuji LNG, 2004년 건조)",
         "water_depth_m": null,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 470,
+        "gas_capacity_mmscfd": null,
         "mooring": null,
         "fid_date": "2025-08",
-        "construction_progress_pct": 5,
+        "construction_progress_pct": null,
         "financing": "20년 SESA 용선 계약 ($400M/년, 총 $8B). SESA 30년 수출 허가 (최대 8 MTPA).",
         "key_equipment": "Fuji LNG (2004년 건조) 개조. CIMC Raffles(옌타이) 선체 분리 후 중간 액화 모듈 삽입 방식. $1.6B EPC 계약. 3.5 MTPA 액화 용량. SHI 관련 없음 — CIMC Raffles 전담.",
         "rig_demand": "드릴십 불필요 — 기존 가스전 연계 또는 신규 발견 LNG전 개발 지원 예정",
@@ -3016,49 +3037,78 @@
         "notable_en": "Conversion of the Fuji LNG vessel; hull cut and liquefaction midbody inserted at CIMC Raffles Yantai. $1.6B EPC."
       },
       "yard_en": "CIMC Raffles Yantai (CN) — Fuji LNG conversion",
-      "notes_en": "[Corrected 2026-10-08] Golar MkII 3.5 MTPA FLNG, LNG carrier conversion at CIMC Raffles (Yantai) — total conversion budget ~$2.2B (equity funded). 20-year charter to Southern Energy (Argentina) (net EBITDA backlog $8B); delivery end-2027 → operations 2028. The earlier \"Samsung Heavy Industries $3.5B / operator TBD / 2029-Q2\" was wrong. Sources: Golar Q1 2026 results, World Oil (Aug 2025)."
+      "notes_en": "[Corrected 2026-10-08] Golar MkII 3.5 MTPA FLNG, LNG carrier conversion at CIMC Raffles (Yantai) — total conversion budget ~$2.2B (equity funded). 20-year charter to Southern Energy (Argentina) (net EBITDA backlog $8B); delivery end-2027 → operations 2028. The earlier \"Samsung Heavy Industries $3.5B / operator TBD / 2029-Q2\" was wrong. Sources: Golar Q1 2026 results, World Oil (Aug 2025). [2026-10-13 audit] Confirmed CIMC Raffles conversion, ~$2.2B total budget, delivery end-2027, 20-year SESA charter (Golar results; Fuji LNG conversion EPC $1.6B — LNG Prime). This is Golar's third FLNG (MkII, Esperanza), separate from the fourth unit due end-2029. Progress 5% and gas 470 unsourced → null.",
+      "source_url": "https://lngprime.com/asia/golar-inks-1-6-billion-epc-deal-for-flng-conversion/125892/",
+      "verified": "2026-10-13"
+    },
+    {
+      "name": "FLNG MkII #2 (Golar 4th FLNG)",
+      "type": "FLNG",
+      "owner": "Golar LNG",
+      "client": null,
+      "field": null,
+      "region": null,
+      "yard": "CIMC Raffles Yantai (CN) — LNG carrier conversion",
+      "contract_value_busd": 2.45,
+      "oil_capacity_kboed": null,
+      "delivery": "2029-Q4",
+      "status": "Under Construction",
+      "notes": "Golar 4번째 FLNG(두 번째 MkII), 액화 3.5 MTPA. 2026-08-13 CIMC Raffles와 EPC 계약, 현장 인도 기준 총 예산 ~$2.45B, 조선소 인도 2029년 말. 개조용 LNG선 확보(Golar 발표에는 선명 미기재 — Baird Maritime은 Grace Dahlia로 보도). 장기 용선처 미확정(협상 중).",
+      "notes_en": "Golar's fourth FLNG (second MkII), 3.5 MTPA liquefaction. EPC contract with CIMC Raffles signed 2026-08-13; total budget ~$2.45B delivered to site; yard delivery by end-2029. Donor LNG carrier secured (not named by Golar; Baird Maritime reports Grace Dahlia). Long-term charter not yet secured (in discussions).",
+      "detail": {
+        "hull_type": "LNG 운반선 개조 (MkII)",
+        "hull_type_en": "LNG carrier conversion (MkII)",
+        "financing": "Golar 자체 투자; 장기 용선 계약 추진 중",
+        "financing_en": "Golar-funded; long-term charter being pursued",
+        "construction_progress_pct": null
+      },
+      "source_url": "https://mfn.se/all/a/golar-lng/golar-lng-orders-4th-flng-unit-for-2029-delivery-ea21e43e",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO P-87 (SEAP II)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "Petrobras (SBM build & O&M)",
       "client": "Petrobras",
       "field": "SEAP II (Sergipe-Alagoas Basin)",
       "region": "South America",
       "yard": "SBM (Fast4Ward hull, yard TBD)",
-      "contract_value_busd": 3.9,
+      "contract_value_busd": null,
       "oil_capacity_kboed": 120,
       "delivery": "2030-Q1",
       "status": "Under Construction",
-      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정.",
+      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B. 초도 가스 수출 2031년 예정. [2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 425 MMscfd·수심 ~2,500m·2030년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,
         "storage_mmbbl": null,
-        "gas_capacity_mmscfd": 355,
+        "gas_capacity_mmscfd": 425,
         "mooring": "Spread Mooring (~2,500m)",
         "fid_date": "2026-04",
-        "construction_progress_pct": 0,
-        "financing": "BOT (Build-Operate-Transfer)",
+        "construction_progress_pct": null,
+        "financing": "Petrobras 컨소시엄 소유; SBM 6.5년 O&M 별도 계약",
         "key_equipment": "SBM Fast4Ward MPF11 선형. Sergipe-Alagoas 심해 (해안 100km). 가스 134km 해저 파이프라인으로 육상 연결. FID 2026-04; 계약 체결 2026-05-29.",
         "hull_type_en": "SBM Fast4Ward (newbuild)",
-        "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29."
+        "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29.",
+        "financing_en": "Owned by the Petrobras consortium; separate 6.5-year SBM O&M contract"
       },
-      "notes_en": "Petrobras SEAP BOT contract (May 2026). P-81 + P-87 combined $7.8B. First gas export expected 2031."
+      "notes_en": "Petrobras SEAP BOT contract (May 2026). P-81 + P-87 combined $7.8B. First gas export expected 2031. [2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 425 MMscfd, ~2,500m WD, delivery 2030. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
+      "source_url": "https://www.worldoil.com/news/2026/5/29/petrobras-awards-sbm-offshore-contracts-for-two-brazil-fpsos/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO P-81 (SEAP I)",
       "type": "FPSO",
-      "owner": "SBM Offshore",
+      "owner": "Petrobras (SBM build & O&M)",
       "client": "Petrobras",
       "field": "SEAP I (Sergipe-Alagoas Basin)",
       "region": "South America",
       "yard": "SBM (Fast4Ward hull, yard TBD)",
-      "contract_value_busd": 3.9,
+      "contract_value_busd": null,
       "oil_capacity_kboed": 120,
       "delivery": "2031-Q1",
       "status": "Under Construction",
-      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04.",
+      "notes": "Petrobras SEAP BOT 계약 (May 2026). P-81+P-87 합산 $7.8B, 하루 24만 배럴+가스 2,200만 m³. FID 2026-04. [2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 355 MMscfd·수심 ~2,500m·2031년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,
@@ -3066,13 +3116,16 @@
         "gas_capacity_mmscfd": 355,
         "mooring": "Spread Mooring (~2,500m)",
         "fid_date": "2026-04",
-        "construction_progress_pct": 0,
-        "financing": "BOT (Build-Operate-Transfer)",
+        "construction_progress_pct": null,
+        "financing": "Petrobras 컨소시엄 소유; SBM 6.5년 O&M 별도 계약",
         "key_equipment": "SBM Fast4Ward MPF11 선형. Sergipe-Alagoas 심해 (해안 100km). 가스 134km 해저 파이프라인으로 육상 연결. FID 2026-04; 계약 체결 2026-05-29.",
         "hull_type_en": "SBM Fast4Ward (newbuild)",
-        "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29."
+        "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29.",
+        "financing_en": "Owned by the Petrobras consortium; separate 6.5-year SBM O&M contract"
       },
-      "notes_en": "Petrobras SEAP BOT contract (May 2026). P-81 + P-87 combined $7.8B; 240,000 bbl/d + 22 million m³/d gas. FID Apr 2026."
+      "notes_en": "Petrobras SEAP BOT contract (May 2026). P-81 + P-87 combined $7.8B; 240,000 bbl/d + 22 million m³/d gas. FID Apr 2026. [2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 355 MMscfd, ~2,500m WD, delivery 2031. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
+      "source_url": "https://www.worldoil.com/news/2026/5/29/petrobras-awards-sbm-offshore-contracts-for-two-brazil-fpsos/",
+      "verified": "2026-10-13"
     }
   ]
 }
