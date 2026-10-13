@@ -137,16 +137,16 @@
       "type": "FPSO Self-Operator",
       "hq": "Brazil",
       "ticker": "PBR",
-      "fleet_owned": 21,
-      "on_lease": 21,
+      "fleet_owned": 20,
+      "on_lease": 20,
       "backlog_busd": null,
       "source": "Petrobras 2025–2029 Strategic Plan / Q4 2025 Results",
       "as_of": "2025-12-31",
       "source_url": "https://investors.petrobras.com.br/en/results-and-reports/",
-      "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중. [2026-10-13] 보유 20→21: P-57 포함(SBM 턴키 공급).",
+      "notes": "브라질 국영 석유사. 자체 소유 FPSO 20척 (vessels 기준). Santos Basin(Lula/Búzios/Itapu 등 pre-salt) + Campos Basin(Albacora/Roncador/Barracuda/Caratinga 등). 구형 Campos FPSOs(P-18~P-37 계열) 2025년 대규모 해체 중. [2026-10-13] 보유 20→21: P-57 포함(SBM 턴키 공급). [2026-10-13] 보유 21→20: P-50은 2023-01 PRIO로 이전.",
       "newbuilds_owned": 7,
       "newbuilds_operated": 7,
-      "notes_en": "Brazilian national oil company. 20 owned FPSOs (per vessels list). Santos Basin (Lula/Búzios/Itapu and other pre-salt) + Campos Basin (Albacora/Roncador/Barracuda/Caratinga etc.). Older Campos FPSOs (P-18 to P-37 series) undergoing large-scale decommissioning in 2025. [2026-10-13] Owned 20→21: includes P-57 (SBM turnkey supply)."
+      "notes_en": "Brazilian national oil company. 20 owned FPSOs (per vessels list). Santos Basin (Lula/Búzios/Itapu and other pre-salt) + Campos Basin (Albacora/Roncador/Barracuda/Caratinga etc.). Older Campos FPSOs (P-18 to P-37 series) undergoing large-scale decommissioning in 2025. [2026-10-13] Owned 20→21: includes P-57 (SBM turnkey supply). [2026-10-13] Owned 21→20: P-50 transferred to PRIO in Jan 2023."
     },
     {
       "name": "Shell",
@@ -1214,10 +1214,10 @@
       "oil_capacity_kboed": 150,
       "storage_mmbbl": null,
       "year_delivered": 2019,
-      "contract_start": null,
+      "contract_start": "2019-02",
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 감사] (재감사 대상) 150k·가스 7 MMm³/d는 업계지 보도. 1차 출처 URL 미확보.",
+      "notes": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 감사] (재감사 대상) 150k·가스 7 MMm³/d는 업계지 보도. 1차 출처 URL 미확보. [2026-10-13 감사] Petrobras 발표(Anadolu 인용): 생산 개시 2019-02-20, 150k bpd 확인, 가스 247→6 MMm³/d(212)(7 MMm³/d는 업계지 1곳 값). 생산정 10·주입정 7.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO 착수 → Inhaúma 완료) + Techint 통합",
         "mooring": "Spread mooring",
@@ -1230,9 +1230,11 @@
         "build_type": "conversion",
         "yard_source_url": "http://sinaval.org.br/2016/03/techint-tem-ate-setembro-para-receber-casco-da-p-76/",
         "yard_confidence": "high",
-        "gas_capacity_mmscfd": 247
+        "gas_capacity_mmscfd": 212
       },
-      "notes_en": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null. [2026-10-13 audit] (Re-audit pending) 150k and gas 7 MMm³/d are from trade press; no primary source URL yet."
+      "notes_en": "VLCC conversion; 3rd Búzios TOR FPSO; first oil February 2019. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null. [2026-10-13 audit] (Re-audit pending) 150k and gas 7 MMm³/d are from trade press; no primary source URL yet. [2026-10-13 audit] Petrobras release (via Anadolu): production start 2019-02-20, 150k bpd confirmed, gas 247→6 MMm³/d (212) (7 MMm³/d was one trade-press figure). 10 producers, 7 injectors.",
+      "source_url": "https://www.aa.com.tr/en/energy/general/petrobras-starts-output-at-3rd-platform-in-santos-basin-/23570",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-77 (Búzios 4)",
@@ -1881,7 +1883,7 @@
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). VLCC Litiopa를 Keppel Shipyard에서 개조. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사.",
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). VLCC Litiopa를 Keppel Shipyard에서 개조. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
       "detail": {
         "hull_type": "VLCC 'Litiopa' 개조 (Keppel Shipyard, 2006)",
         "mooring": "External Turret Mooring",
@@ -1898,7 +1900,9 @@
         "yard_source_url": "http://killajoules.wikidot.com/archive:keppel-clinches-s-210-million-conversion-and-newbuil",
         "yard_confidence": "medium"
       },
-      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). VLCC Litiopa converted at Keppel Shipyard. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited."
+      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). VLCC Litiopa converted at Keppel Shipyard. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
+      "source_url": "https://www.offshore-technology.com/projects/kizomba/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Mondo",
@@ -1910,12 +1914,12 @@
       "country": "Angola",
       "water_depth_m": 728,
       "oil_capacity_kboed": 100,
-      "storage_mmbbl": null,
+      "storage_mmbbl": 1.6,
       "contract_start": "2008-01",
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). Block 15 Kizomba C. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사.",
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). Block 15 Kizomba C. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -1930,7 +1934,9 @@
         "yard_source_url": "https://www.offshore-mag.com/home/article/16792187/keppel-clinches-fpso-contracts",
         "yard_confidence": "high"
       },
-      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). Block 15 Kizomba C. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited."
+      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). Block 15 Kizomba C. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
+      "source_url": "https://www.offshore-technology.com/projects/kizomba/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Espírito Santo",
@@ -2440,7 +2446,7 @@
     {
       "name": "P-50 (Albacora Leste)",
       "type": "FPSO",
-      "owner": "Petrobras",
+      "owner": "PRIO",
       "client": "PRIO (operator, 90%)",
       "field": "Albacora Leste (Campos Basin)",
       "region": "South America",
@@ -2452,7 +2458,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2006,
-      "notes": "Campos Basin 중수심 FPSO. Petrobras 소유 운영. VLCC 개조. 16개 해저 생산정 연결. [2026-10-13 감사] 운영사 Petrobras→PRIO: 2023-01 PRIO가 Albacora Leste 90% 인수 완료(Repsol Sinopec 10%). FPSO P-50 소유권 이전 여부는 출처에 명시 없어 소유주는 미확인으로 유지. 180k bpd·가스 6 MMm³/d(업계지).",
+      "notes": "Campos Basin 중수심 FPSO. Petrobras 소유 운영. VLCC 개조. 16개 해저 생산정 연결. [2026-10-13 감사] 운영사 Petrobras→PRIO: 2023-01 PRIO가 Albacora Leste 90% 인수 완료(Repsol Sinopec 10%). FPSO P-50 소유권 이전 여부는 출처에 명시 없어 소유주는 미확인으로 유지. 180k bpd·가스 6 MMm³/d(업계지). [2026-10-13 감사] 소유주·운영사 Petrobras→PRIO: PRIO가 Albacora Leste 지분 90%와 운영권 인수 완료(2023-01, ANP 운영권 이전 승인 2022-11), P-50이 이 필드의 유일한 생산설비. Repsol Sinopec 10%.",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "Campos Basin Albacora Leste 유전. Petrobras 자체 소유 및 운영.",
@@ -2463,7 +2469,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 212
       },
-      "notes_en": "Mid-water Campos Basin FPSO. Owned and operated by Petrobras. VLCC conversion. 16 subsea production wells connected. [2026-10-13 audit] Operator Petrobras→PRIO: PRIO completed acquisition of 90% of Albacora Leste in Jan 2023 (Repsol Sinopec 10%). Whether FPSO P-50 ownership transferred is not stated in sources, so owner kept as unverified. 180k bpd, gas 6 MMm³/d (trade press)."
+      "notes_en": "Mid-water Campos Basin FPSO. Owned and operated by Petrobras. VLCC conversion. 16 subsea production wells connected. [2026-10-13 audit] Operator Petrobras→PRIO: PRIO completed acquisition of 90% of Albacora Leste in Jan 2023 (Repsol Sinopec 10%). Whether FPSO P-50 ownership transferred is not stated in sources, so owner kept as unverified. 180k bpd, gas 6 MMm³/d (trade press). [2026-10-13 audit] Owner/operator Petrobras→PRIO: PRIO completed acquisition of 90% of Albacora Leste with operatorship (Jan 2023; ANP approved transfer Nov 2022); P-50 is the field's production unit. Repsol Sinopec 10%.",
+      "source_url": "https://www.offshore-mag.com/business-briefs/company-news/article/14288849/petrobras-concludes-sale-of-albacora-leste-field",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-58 (Parque das Baleias)",
@@ -2604,13 +2612,15 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 1997,
-      "notes": "Campos Basin Albacora 유전. Petrobras 소유. Internal Permanent Turret 계류. P-25(반잠수) 와 함께 운영. P-88 신조로 교체 예정(2030년 이후). [2026-10-13 감사] 가동 중 확인(2023 계류줄 수리 30일, 2016 누출로 일시 중단). 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지. P-88 신조로 교체 예정.",
+      "notes": "Campos Basin Albacora 유전. Petrobras 소유. Internal Permanent Turret 계류. P-25(반잠수) 와 함께 운영. P-88 신조로 교체 예정(2030년 이후). [2026-10-13 감사] 가동 중 확인(2023 계류줄 수리 30일, 2016 누출로 일시 중단). 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지. P-88 신조로 교체 예정. [2026-10-13 감사] ANP 개발계획: Albacora 생산은 P-25(반잠수식)와 FPSO P-31로 수행, 원유는 셔틀탱커, 가스는 PGP-1로 송출. 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지.",
       "detail": {
         "mooring": "Internal Permanent Turret (SOFEC)",
         "notable": "Albacora 유전 FPSO. P-25 반잠수식과 함께 Albacora 생산. P-88 신조 FPSO로 교체 예정.",
         "notable_en": "Albacora field FPSO. Produces Albacora together with the P-25 semisubmersible. To be replaced by newbuild FPSO P-88."
       },
-      "notes_en": "Albacora field, Campos Basin. Owned by Petrobras. Internal permanent turret mooring. Operates alongside P-25 (semisub). To be replaced by newbuild P-88 (after 2030). [2026-10-13 audit] Confirmed operating (30-day mooring repair in 2023; temporary shutdown for leaks in 2016). Capacity conflicts across sources (100k vs 200k bopd), kept null. To be replaced by newbuild P-88."
+      "notes_en": "Albacora field, Campos Basin. Owned by Petrobras. Internal permanent turret mooring. Operates alongside P-25 (semisub). To be replaced by newbuild P-88 (after 2030). [2026-10-13 audit] Confirmed operating (30-day mooring repair in 2023; temporary shutdown for leaks in 2016). Capacity conflicts across sources (100k vs 200k bopd), kept null. To be replaced by newbuild P-88. [2026-10-13 audit] ANP development plan: Albacora produces through P-25 (semisub) and FPSO P-31; oil offloaded to shuttle tankers, gas to PGP-1. Capacity conflicts across sources (100k vs 200k bopd), kept null.",
+      "source_url": "https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/desenvolvimento-e-producao/pd/albacora.pdf",
+      "verified": "2026-10-13"
     },
     {
       "name": "P-43 (Barracuda)",
