@@ -260,7 +260,7 @@
     [/^LATEST REPORTED QUARTER — (.+)$/i, '최근 발표 분기 — $1'],
     [/^(.+) · first oil (\d{4})$/, '$1 · 첫 생산 $2'],
     [/^(\d+) updates?$/, '기록 $1건'],
-    [/^today$/, '오늘'], [/^(\d+)d ago$/, '$1일 전'], [/^(\d+)mo ago$/, '$1개월 전']
+    [/^today$/, '오늘'], [/^(\d+)d ago$/, '$1일 전'], [/^(\d+)mo ago( ⚠)?$/, '$1개월 전$2']
   ];
   var HANGUL = /[가-힣]/, LATIN = /[A-Za-z]/;
   var NEEDS = LANG === 'en' ? HANGUL : LATIN;
