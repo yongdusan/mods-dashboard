@@ -154,11 +154,11 @@
     'Offshore Market Intelligence · deepwater drilling, FPSO/FLNG and E&P capex': 'Offshore Market Intelligence · 심해 시추, FPSO/FLNG, E&P 투자',
     // overview
     'Market readout': '시장 요약',
-    'of offshore projects in execution.': '규모 해양 프로젝트가 실행 단계.',
-    'of deepwater rigs on contract.': '심해 리그 계약 중.',
-    'FPSO/FLNG units under construction.': '척 FPSO/FLNG 건조 중.',
+    'of offshore projects in execution.': '규모 해양 프로젝트가 실행 중.',
+    'of deepwater rigs on contract.': '~의 심해 리그가 계약 중.',
+    'FPSO/FLNG units under construction.': '~척의 FPSO/FLNG가 건조 중.',
     'Deepwater drilling, floating production and offshore E&P capex, tracked from operator IR, contract disclosures and trade press. Project capex uses operator figures where published and indicative estimates otherwise. Each figure carries its as-of date; overdue sources are flagged.':
-      '심해 시추, 부유식 생산설비, 해양 E&P 투자를 운영사 IR·계약 공시·전문지 기준으로 추적합니다. 프로젝트 사업비는 공시값이 있으면 공시값, 없으면 추정치(indicative)입니다. 수치마다 기준일을 표시하고 갱신이 늦은 출처는 따로 표시합니다.',
+      '심해 시추, 부유식 생산설비, 해양 E&P 투자를 운영사 IR·계약 공시·전문지 기준으로 추적합니다. 프로젝트 사업비는 공시값이 있으면 공시값, 없으면 추정치입니다. 수치마다 기준일을 표시하고 갱신이 늦은 출처는 따로 표시합니다.',
     'UDW drillship dayrate': 'UDW 드릴십 일일 용선료', 'indicative': '추정', 'k/day': 'k/일',
     'Drillship UDW': 'Drillship UDW', 'Semi-sub DW': 'Semi-sub DW',
     'Pre-FID pipeline': 'FID 전 파이프라인', 'Deepwater rigs': '심해 리그', 'Avg drillship rate': '드릴십 평균 용선료',
@@ -273,7 +273,16 @@
     if (!core) return s;
     var ko = Object.prototype.hasOwnProperty.call(UI_KO, core) ? UI_KO[core] : null;
     for (var j = 0; ko == null && j < UI_KO_RE.length; j++) if (UI_KO_RE[j][0].test(core)) ko = core.replace(UI_KO_RE[j][0], UI_KO_RE[j][1]);
-    return ko == null ? s : s.replace(core, function () { return ko; });
+    if (ko == null) return s;
+    if (ko.charAt(0) === '~') { ko = ko.slice(1); s = s.replace(/^\s+/, ''); }
+    return s.replace(core, function () { return ko; });
+  }
+  // Wide letter-spacing made for Latin caps reads as broken Korean words.
+  function calmTracking(el) {
+    if (LANG !== 'ko' || !el || el.nodeType !== 1 || el.__omiTrack) return;
+    el.__omiTrack = 1;
+    var ls = parseFloat(getComputedStyle(el).letterSpacing);
+    if (ls > 1) el.style.letterSpacing = '0.02em';
   }
   function trAttrs(el) {
     if (LANG !== 'ko' || !el.getAttribute) return;
@@ -285,7 +294,7 @@
   function trTree(root) {
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n, list = [];
     while ((n = w.nextNode())) if (NEEDS.test(n.nodeValue) && !(n.parentNode && /^(SCRIPT|STYLE|OPTION|TEXTAREA)$/.test(n.parentNode.nodeName))) list.push(n);
-    list.forEach(function (t) { var v = trText(t.nodeValue); if (v !== t.nodeValue) t.nodeValue = v; });
+    list.forEach(function (t) { var v = trText(t.nodeValue); if (v !== t.nodeValue) t.nodeValue = v; if (HANGUL.test(t.nodeValue)) calmTracking(t.parentNode); });
     if (LANG === 'ko' && root.querySelectorAll) {
       trAttrs(root);
       root.querySelectorAll('[title],[aria-label],[placeholder]').forEach(trAttrs);
@@ -298,10 +307,11 @@
       ms.forEach(function (m) {
         if (m.type === 'characterData') {
           if (NEEDS.test(m.target.nodeValue)) { var v = trText(m.target.nodeValue); if (v !== m.target.nodeValue) m.target.nodeValue = v; }
+          if (HANGUL.test(m.target.nodeValue)) calmTracking(m.target.parentNode);
           return;
         }
         m.addedNodes.forEach(function (nd) {
-          if (nd.nodeType === 3) { if (NEEDS.test(nd.nodeValue)) { var v2 = trText(nd.nodeValue); if (v2 !== nd.nodeValue) nd.nodeValue = v2; } }
+          if (nd.nodeType === 3) { if (NEEDS.test(nd.nodeValue)) { var v2 = trText(nd.nodeValue); if (v2 !== nd.nodeValue) nd.nodeValue = v2; } if (HANGUL.test(nd.nodeValue)) calmTracking(nd.parentNode); }
           else if (nd.nodeType === 1) trTree(nd);
         });
       });

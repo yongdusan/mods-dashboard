@@ -496,3 +496,8 @@ a.omi-src:hover, a.omi-src:focus-visible { box-shadow: 0 0 0 3px color-mix(in sr
 .omi-src-legend span { display: inline-flex; align-items: center; gap: 6px; }
 .omi-src-legend .omi-src { margin-left: 0; }
 .omi-src.is-period { background: var(--sonar); color: var(--sonar); }
+
+/* ---- Korean line breaking: break between words, not inside them ---- */
+html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
+h1, h2, h3, .lede, .hero h1, .hero .line { text-wrap: balance; }
+p { text-wrap: pretty; }

@@ -408,7 +408,7 @@
     document.getElementById('readout').innerHTML =
       '<span class="line"><span class="num">' + fmtB(sum(execP)) + '</span> of offshore projects in execution.</span>' +
       '<span class="line"><span class="num">' + util + '%</span> of deepwater rigs on contract.</span>' +
-      '<span class="line"><span class="num">' + (ms.under_construction != null ? ms.under_construction : '—') + '</span> <span class="soft">FPSO/FLNG units under construction.</span></span>';
+      '<span class="line"><span class="num">' + (ms.under_construction != null ? ms.under_construction : '—') + '</span><span class="soft"> FPSO/FLNG units under construction.</span></span>';
 
     /* dayrate gauge */
     var series = function (type, tier) {
