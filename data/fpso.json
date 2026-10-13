@@ -71,16 +71,16 @@
       "type": "FPSO Lessor",
       "hq": "Norway",
       "ticker": "BWO.OL",
-      "fleet_owned": 5,
+      "fleet_owned": 4,
       "on_lease": 4,
       "backlog_busd": 2.2,
       "source": "BW Offshore Q2 & 1H 2026 Results (Aug 24, 2026)",
       "as_of": "2026-06-30",
       "source_url": "https://www.energy-pedia.com/news/general/bw-offshore-announces-second-quarter-and-first-half-results-2026-205049",
-      "notes": "4 units on active charter (Q1 2026): BW Catcher, BW Adolo, BW Opal, BW Pioneer. BW Hurra (formerly Nganhurra) idle/redeployment. BW Gimi는 Golar LNG 소유로 무관. [2026-10-08] backlog 2.3→2.2: 2026-06-30 firm+probable(영업현금흐름 기준) $2.2B, 97% firm. BW Opal $125M 손상, Practical Completion 2027-Q2로 지연, 2026 EBITDA 가이던스 $250–280M로 하향.",
+      "notes": "4 units on active charter (Q1 2026): BW Catcher, BW Adolo, BW Opal, BW Pioneer. BW Hurra (formerly Nganhurra) idle/redeployment. BW Gimi는 Golar LNG 소유로 무관. [2026-10-08] backlog 2.3→2.2: 2026-06-30 firm+probable(영업현금흐름 기준) $2.2B, 97% firm. BW Opal $125M 손상, Practical Completion 2027-Q2로 지연, 2026 EBITDA 가이던스 $250–280M로 하향. [2026-10-13] 보유 5→4: Pioneer는 Murphy Oil에 매각(BW O&M만). BW 공식: 가동 4척 + 재배치 대기 1척(Hurra).",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0,
-      "notes_en": "4 units on active charter (Q1 2026): BW Catcher, BW Adolo, BW Opal, BW Pioneer. BW Hurra (formerly Nganhurra) idle/redeployment. BW Gimi is owned by Golar LNG (unrelated). [2026-10-08] Backlog 2.3→2.2: firm+probable (operating cash flow basis) $2.2B at 2026-06-30, 97% firm. BW Opal $125M impairment, Practical Completion delayed to 2027-Q2, 2026 EBITDA guidance cut to $250–280M."
+      "notes_en": "4 units on active charter (Q1 2026): BW Catcher, BW Adolo, BW Opal, BW Pioneer. BW Hurra (formerly Nganhurra) idle/redeployment. BW Gimi is owned by Golar LNG (unrelated). [2026-10-08] Backlog 2.3→2.2: firm+probable (operating cash flow basis) $2.2B at 2026-06-30, 97% firm. BW Opal $125M impairment, Practical Completion delayed to 2027-Q2, 2026 EBITDA guidance cut to $250–280M. [2026-10-13] Owned 5→4: Pioneer sold to Murphy Oil (BW O&M only). BW official: 4 operating + 1 available for redeployment (Hurra)."
     },
     {
       "name": "Yinson Holdings",
@@ -263,18 +263,18 @@
       "field": "Liza Phase 2 (Stabroek Block)",
       "region": "South America",
       "country": "Guyana",
-      "water_depth_m": 1525,
+      "water_depth_m": 1600,
       "oil_capacity_kboed": 220,
-      "storage_mmbbl": 1.6,
+      "storage_mmbbl": 2.0,
       "contract_start": "2022-02",
       "contract_end": "2042-02",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO. [2026-10-13 감사] 소유주 SBM→ExxonMobil: 2023-11 ExxonMobil이 매입(~$1.26B), SBM은 2033년까지 운영. 나머지 수치는 아직 미감사.",
+      "notes": "SBM Fast4Ward 선형. 가이아나 2번째 FPSO. [2026-10-13 감사] 소유주 SBM→ExxonMobil: 2023-11 ExxonMobil이 매입(~$1.26B), SBM은 2033년까지 운영. 나머지 수치는 아직 미감사. [2026-10-13 감사] 원유 220k 확인, 가스 170→400 MMscfd, 저장 1.6→2.0 MMbbl, 수심 1,525→1,600m. 2023-11 ExxonMobil 매입, SBM 운영.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF1 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Keppel Shipyard (Seatrium), Singapore",
-        "gas_capacity_mmscfd": 170,
+        "gas_capacity_mmscfd": 400,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2019-09",
         "partners": [
@@ -298,7 +298,9 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/14074711/sbms-first-fast4ward-hull-arrives-in-singapore",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design. Guyana's 2nd FPSO. [2026-10-13 audit] Owner SBM→ExxonMobil: purchased by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033. Other values not yet audited."
+      "notes_en": "SBM Fast4Ward design. Guyana's 2nd FPSO. [2026-10-13 audit] Owner SBM→ExxonMobil: purchased by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033. Other values not yet audited. [2026-10-13 audit] Confirmed 220k oil; gas 170→400 MMscfd, storage 1.6→2.0 MMbbl, WD 1,525→1,600m. Bought by ExxonMobil Nov 2023; SBM operates.",
+      "source_url": "https://jpt.spe.org/work-continues-liza-unity-fpso",
+      "verified": "2026-10-13"
     },
     {
       "name": "Liza Destiny",
@@ -315,11 +317,11 @@
       "contract_end": "2039-12",
       "status": "On Production",
       "year_delivered": 2019,
-      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환.",
+      "notes": "가이아나 최초 FPSO. Stabroek 블록 첫 번째 생산설비. 2024-Q4 ExxonMobil JV 매입 → SBM O&M 전환. [2026-10-13 감사] 원유 120k·저장 1.6·수심 1,525m 확인, 가스 100→170 MMscfd. 2024년 말 ExxonMobil 매입, SBM 운영(~2033).",
       "detail": {
         "hull_type": "VLCC 전환 FPSO (Keppel FELS Singapore)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of VLCC Tina, orig. Hyundai Heavy Industries) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 100,
+        "gas_capacity_mmscfd": 170,
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2016-06",
         "partners": [
@@ -343,7 +345,9 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/16800835/sbm-commissions-keppel-shipyard-for-liza-fpso",
         "yard_confidence": "high"
       },
-      "notes_en": "Guyana's first FPSO. First production facility on the Stabroek Block. Purchased by ExxonMobil JV in Q4 2024 → switched to SBM O&M."
+      "notes_en": "Guyana's first FPSO. First production facility on the Stabroek Block. Purchased by ExxonMobil JV in Q4 2024 → switched to SBM O&M. [2026-10-13 audit] Confirmed 120k oil, 1.6 storage, 1,525m WD; gas 100→170 MMscfd. Bought by ExxonMobil end-2024; SBM operates (~2033).",
+      "source_url": "https://oilnow.gy/featured/liza-destiny-ready-to-set-sail-for-guyana-oil-bonanza/",
+      "verified": "2026-10-13"
     },
     {
       "name": "Almirante Tamandaré",
@@ -603,18 +607,18 @@
       "field": "Sapinhoa Field",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 2140,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.4,
-      "contract_start": "2014-07",
-      "contract_end": "2034-07",
+      "storage_mmbbl": 1.6,
+      "contract_start": "2014-11",
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "브라질 Sapinhoa 프리-솔트 생산설비.",
+      "notes": "브라질 Sapinhoa 프리-솔트 생산설비. [2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl. 생산 개시 2014-11-24(기존 2014-07). 용선 종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
         "yard": "Hull: CSSC Chengxi Shipyard (CXG), China (VLCC conversion) · Topsides/integration: Estaleiro Brasa, Niterói, Brazil",
-        "gas_capacity_mmscfd": 150,
+        "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring",
         "fid_date": "2011-05",
         "partners": [
@@ -638,28 +642,30 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/brasa-shipyard-completes-scope-fpso-cidade-de-ilhabela-sails-offshore-brazil",
         "yard_confidence": "high"
       },
-      "notes_en": "Production facility for Brazil's Sapinhoá pre-salt field."
+      "notes_en": "Production facility for Brazil's Sapinhoá pre-salt field. [2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl. Production start 2014-11-24 (was 2014-07). Charter end and WD unsourced → null.",
+      "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
+      "verified": "2026-10-13"
     },
     {
       "name": "BW Catcher",
       "type": "FPSO",
       "owner": "BW Offshore",
-      "client": "Repsol",
+      "client": "Harbour Energy",
       "field": "Catcher Area (P7/E-8P)",
       "region": "North Sea",
       "country": "UK",
-      "water_depth_m": 170,
+      "water_depth_m": null,
       "oil_capacity_kboed": 60,
       "storage_mmbbl": 0.65,
-      "contract_start": "2017-12",
+      "contract_start": "2018",
       "contract_end": "2030-12",
       "status": "On Production",
       "year_delivered": 2017,
-      "notes": "북해 Catcher 지역 생산. 영국 북해 운영.",
+      "notes": "북해 Catcher 지역 생산. 영국 북해 운영. [2026-10-13 감사] BW 선단 페이지: 고객 Repsol→Harbour Energy, 원유 60k·저장 0.65 확인, 가스 30→60 MMscfd. 계약 2018~2025 확정(옵션 ~2043), 2030년 말까지 연장(BW 2026 2분기). 수심 170m은 출처 없어 null.",
       "detail": {
         "hull_type": "신조 FPSO (IHI 아이치 선체 + 싱가포르 통합)",
         "yard": "Hull: IHI Corporation Aichi Works, Japan · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 30,
+        "gas_capacity_mmscfd": 60,
         "mooring": "Spread Mooring",
         "fid_date": "2014-06",
         "partners": [
@@ -683,7 +689,9 @@
         "yard_source_url": "https://www.offshore-energy.biz/japans-ihi-confirms-catcher-fpso-award/",
         "yard_confidence": "high"
       },
-      "notes_en": "Produces from the Catcher area in the North Sea. Operates in the UK North Sea."
+      "notes_en": "Produces from the Catcher area in the North Sea. Operates in the UK North Sea. [2026-10-13 audit] BW fleet page: client Repsol→Harbour Energy; confirmed 60k oil and 0.65 storage; gas 30→60 MMscfd. Contract 2018–2025 firm (options to ~2043), extended to end-2030 (BW Q2 2026). 170m WD unsourced → null.",
+      "source_url": "https://bwoffshore.com/our-assets",
+      "verified": "2026-10-13"
     },
     {
       "name": "BW Adolo",
@@ -693,18 +701,18 @@
       "field": "Dussafu Marin (Gabon)",
       "region": "West Africa",
       "country": "Gabon",
-      "water_depth_m": 200,
-      "oil_capacity_kboed": 45,
-      "storage_mmbbl": 1.2,
-      "contract_start": "2018-07",
-      "contract_end": "2035-07",
+      "water_depth_m": null,
+      "oil_capacity_kboed": 40,
+      "storage_mmbbl": 1.35,
+      "contract_start": "2018",
+      "contract_end": "2028",
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "가봉 Dussafu 개발 전용 전환 FPSO.",
+      "notes": "가봉 Dussafu 개발 전용 전환 FPSO. [2026-10-13 감사] BW 선단 페이지: 원유 45→40k, 가스 20→18, 저장 1.2→1.35 MMbbl. 계약 2018~2028 확정(옵션 ~2038) — 기존 종료 2035는 근거 없음. 수심 200m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO",
         "yard": "Hull: Keppel Shipyard, Singapore (redeployment refurbishment of ex-Azurite FPSO; VLCC first converted 2007-09) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 20,
+        "gas_capacity_mmscfd": 18,
         "mooring": "Spread Mooring",
         "fid_date": "2016",
         "partners": [
@@ -723,7 +731,9 @@
         "yard_source_url": "https://bw-group.com/wp-content/uploads/2021/02/2018-2.pdf",
         "yard_confidence": "medium"
       },
-      "notes_en": "Conversion FPSO dedicated to the Dussafu development, Gabon."
+      "notes_en": "Conversion FPSO dedicated to the Dussafu development, Gabon. [2026-10-13 audit] BW fleet page: oil 45→40k, gas 20→18, storage 1.2→1.35 MMbbl. Contract 2018–2028 firm (options to ~2038) — the earlier 2035 end had no basis. 200m WD unsourced → null.",
+      "source_url": "https://bwoffshore.com/our-assets",
+      "verified": "2026-10-13"
     },
     {
       "name": "Espoir Ivoirien",
@@ -852,22 +862,22 @@
       "name": "Golar Hilli",
       "type": "FLNG",
       "owner": "Golar LNG",
-      "client": "Perenco/SNH",
-      "field": "Sanaga South (Kribi)",
-      "region": "West Africa",
-      "country": "Cameroon",
-      "water_depth_m": 100,
+      "client": "Southern Energy S.A. (SESA), Argentina",
+      "field": "Gulf of San Matías, Argentina (from 2027)",
+      "region": "South America",
+      "country": "Argentina",
+      "water_depth_m": null,
       "oil_capacity_kboed": null,
       "storage_mmbbl": null,
-      "contract_start": "2018-05",
-      "contract_end": "2034-05",
-      "status": "On Production",
+      "contract_start": "2027",
+      "contract_end": "2047",
+      "status": "Redeployment",
       "year_delivered": 2018,
-      "notes": "세계 최초 상업 운전 FLNG. 1.2 MTPA 용량. Hilli Episeyo 개조.",
+      "notes": "세계 최초 상업 운전 FLNG. 1.2 MTPA 용량. Hilli Episeyo 개조. [2026-10-13 감사] 상태 On Production→재배치: 카메룬(Perenco/SNH) 8년 계약 2026 3분기 종료, 싱가포르 개조 후 아르헨티나 Gulf of San Matías에서 SESA와 20년 계약(2027 개시 예정, SESA는 12년으로 단축 가능). 공칭 2.45 MTPA. 기존 가스 190·수심 100m·계약 종료 2034는 출처 없거나 틀려 정정/null.",
       "detail": {
         "hull_type": "Golar MK I FLNG (Moss-type LNG 운반선 전환)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 1975 Moss LNG carrier Hilli) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 190,
+        "gas_capacity_mmscfd": null,
         "mooring": "Spread Mooring (FLNG)",
         "fid_date": "2015-11",
         "partners": [
@@ -887,28 +897,30 @@
         "yard_source_url": "https://www.keppel.com/media/keppel-to-deliver-world-s-first-floating-liquefaction-vessel-conversion/",
         "yard_confidence": "high"
       },
-      "notes_en": "World's first commercially operating FLNG. 1.2 MTPA capacity. Converted as Hilli Episeyo."
+      "notes_en": "World's first commercially operating FLNG. 1.2 MTPA capacity. Converted as Hilli Episeyo. [2026-10-13 audit] Status On Production→redeployment: 8-year Cameroon contract (Perenco/SNH) ended Q3 2026; after Singapore upgrades, 20-year SESA contract in the Gulf of San Matías, Argentina (start expected 2027; SESA may shorten to 12 years). Nameplate 2.45 MTPA. Previous gas 190, 100m WD and 2034 end unsourced or wrong → corrected/null.",
+      "source_url": "https://mfn.se/all/a/golar-lng/golar-entered-into-20-year-agreements-for-5-95mtpa-nameplate-capacity-in-argentina-one-of-the-worlds-largest-flng-development-projects-56afc9e7",
+      "verified": "2026-10-13"
     },
     {
       "name": "FLNG Gimi",
       "type": "FLNG",
       "owner": "Golar LNG",
-      "client": "Eni",
+      "client": "bp (GTA)",
       "field": "Greater Tortue Ahmeyim (GTA), Mauritania/Senegal",
       "region": "West Africa",
       "country": "Mauritania / Senegal",
-      "water_depth_m": 2700,
+      "water_depth_m": null,
       "oil_capacity_kboed": null,
       "storage_mmbbl": null,
       "contract_start": "2025-06",
       "contract_end": "2045-06",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "코트디부아르 Baleine 가스전 개발. 1.2 MTPA.",
+      "notes": "코트디부아르 Baleine 가스전 개발. 1.2 MTPA. [2026-10-13 감사] 고객 Eni→bp(GTA, 20년 계약), 공칭 2.7 MTPA, 상업운전 2025-06. 수심 2,700m·가스 330은 출처 없어 null(GTA FLNG는 연안 허브에 계류).",
       "detail": {
         "hull_type": "LNG 운반선 전환 (Moss-type, Keppel FELS Singapore)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 1976 Moss LNG carrier Gimi) · Topsides/integration: Keppel Shipyard, Singapore",
-        "gas_capacity_mmscfd": 330,
+        "gas_capacity_mmscfd": null,
         "mooring": "Spread Mooring (FLNG)",
         "fid_date": "2019-02",
         "partners": [
@@ -928,7 +940,9 @@
         "yard_source_url": "https://www.keppel.com/media/keppel-receives-final-approval-for-the-conversion-of-gimi-flng-project-6580",
         "yard_confidence": "high"
       },
-      "notes_en": "Côte d'Ivoire Baleine gas field development. 1.2 MTPA."
+      "notes_en": "Côte d'Ivoire Baleine gas field development. 1.2 MTPA. [2026-10-13 audit] Client Eni→bp (GTA, 20-year contract), nameplate 2.7 MTPA, commercial operations Jun 2025. 2,700m WD and gas 330 unsourced → null (the GTA FLNG is moored at a nearshore hub).",
+      "source_url": "https://www.hellenicshippingnews.com/?p=1124255",
+      "verified": "2026-10-13"
     },
     {
       "name": "Coral Sul FLNG",
@@ -1031,18 +1045,18 @@
       "field": "Lula Alto / Lula South",
       "region": "South America",
       "country": "Brazil",
-      "water_depth_m": 2140,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
-      "storage_mmbbl": 1.4,
-      "contract_start": "2016-09",
-      "contract_end": "2036-09",
+      "storage_mmbbl": 1.6,
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
       "year_delivered": 2016,
-      "notes": "Petrobras Lula Alto/South 생산설비. MODEC 운영.",
+      "notes": "Petrobras Lula Alto/South 생산설비. MODEC 운영. [2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl, 20년 운영 예정. 계약 시작월·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
         "yard": "Hull: CSSC Chengxi Shipyard (CXG), China (VLCC conversion) · Topsides/integration: Estaleiro Brasa, Niterói, Brazil",
-        "gas_capacity_mmscfd": 150,
+        "gas_capacity_mmscfd": 212,
         "mooring": "Turret Mooring",
         "fid_date": "2013-04",
         "partners": [
@@ -1061,7 +1075,9 @@
         "yard_source_url": "https://www.offshore-mag.com/regional-reports/article/16754806/brasa-shipyard-completes-four-year-fpso-construction-integration-campaign",
         "yard_confidence": "high"
       },
-      "notes_en": "Petrobras Lula Alto/South production facility. Operated by MODEC."
+      "notes_en": "Petrobras Lula Alto/South production facility. Operated by MODEC. [2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl; 20-year operation planned. Contract start month and WD unsourced → null.",
+      "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Kwame Nkrumah MV21",
@@ -1456,14 +1472,14 @@
       "field": "Lula (Nordeste) / BM-S-11",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 2100,
+      "water_depth_m": null,
       "oil_capacity_kboed": 120,
       "storage_mmbbl": 1.6,
       "year_delivered": 2013,
-      "contract_start": "2013-06",
-      "contract_end": "2033-06",
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
-      "notes": "SBM newbuild hull; CO₂ removal facility; 20-year charter from June 2013.",
+      "notes": "SBM newbuild hull; CO₂ removal facility; 20-year charter from June 2013. [2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (Keppel 싱가포르, VLCC Theseus) + BrasFELS 통합",
         "mooring": "Spread mooring",
@@ -1477,8 +1493,12 @@
         "build_type": "conversion",
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/16777431/brasfels-lands-pre-salt-module-awards",
         "yard_confidence": "high",
-        "hull_type_en": "VLCC conversion (Keppel Singapore, VLCC Theseus) + BrasFELS integration"
-      }
+        "hull_type_en": "VLCC conversion (Keppel Singapore, VLCC Theseus) + BrasFELS integration",
+        "gas_capacity_mmscfd": 177
+      },
+      "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
+      "verified": "2026-10-13",
+      "notes_en": "SBM newbuild hull; CO₂ removal facility; 20-year charter from June 2013. [2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 120k oil and 1.6 storage; gas null→5 MMm³/d (177). Contract dates and WD unsourced → null."
     },
     {
       "name": "FPSO Cidade de Saquarema",
@@ -1488,14 +1508,14 @@
       "field": "Lula (Central) / BM-S-11",
       "country": "Brazil",
       "region": "South America",
-      "water_depth_m": 2120,
+      "water_depth_m": null,
       "oil_capacity_kboed": 150,
       "storage_mmbbl": 1.6,
       "year_delivered": 2016,
-      "contract_start": "2016-07",
-      "contract_end": "2036-07",
+      "contract_start": null,
+      "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC conversion; 18 wells; formally on hire July 8, 2016; SBM-led consortium (56%).",
+      "notes": "VLCC conversion; 18 wells; formally on hire July 8, 2016; SBM-led consortium (56%). [2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC conversion",
         "mooring": "Spread mooring",
@@ -1508,8 +1528,12 @@
         "yard": "Hull: CSSC Chengxi Shipyard (CXG), China (VLCC conversion) · Topsides/integration: Estaleiro Brasa, Niterói, Brazil",
         "build_type": "conversion",
         "yard_source_url": "https://www.offshore-mag.com/regional-reports/article/16754806/brasa-shipyard-completes-four-year-fpso-construction-integration-campaign",
-        "yard_confidence": "high"
-      }
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 212
+      },
+      "source_url": "https://www.sbmoffshore.com/newsroom/fpso-cidade-de-saquarema-sails-away-after-module-integration-rio-yard/",
+      "verified": "2026-10-13",
+      "notes_en": "VLCC conversion; 18 wells; formally on hire July 8, 2016; SBM-led consortium (56%). [2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] SBM: confirmed 150k oil and 1.6 storage; gas null→6 MMm³/d (212). Contract dates and WD unsourced → null."
     },
     {
       "name": "P-66 (Lula Sul)",
@@ -1825,7 +1849,7 @@
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). VLCC Litiopa를 Keppel Shipyard에서 개조. 2025년 12월 ExxonMobil과 2032년까지 계약 연장.",
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). VLCC Litiopa를 Keppel Shipyard에서 개조. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사.",
       "detail": {
         "hull_type": "VLCC 'Litiopa' 개조 (Keppel Shipyard, 2006)",
         "mooring": "External Turret Mooring",
@@ -1842,7 +1866,7 @@
         "yard_source_url": "http://killajoules.wikidot.com/archive:keppel-clinches-s-210-million-conversion-and-newbuil",
         "yard_confidence": "medium"
       },
-      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). VLCC Litiopa converted at Keppel Shipyard. Contract with ExxonMobil extended to 2032 in Dec 2025."
+      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). VLCC Litiopa converted at Keppel Shipyard. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited."
     },
     {
       "name": "FPSO Mondo",
@@ -1859,7 +1883,7 @@
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). Block 15 Kizomba C. 2025년 12월 ExxonMobil과 2032년까지 계약 연장.",
+      "notes": "SBM 100% 소유 (2024-06 Sonangol 지분 인수). Block 15 Kizomba C. 2025년 12월 ExxonMobil과 2032년까지 계약 연장. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사.",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -1874,7 +1898,7 @@
         "yard_source_url": "https://www.offshore-mag.com/home/article/16792187/keppel-clinches-fpso-contracts",
         "yard_confidence": "high"
       },
-      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). Block 15 Kizomba C. Contract with ExxonMobil extended to 2032 in Dec 2025."
+      "notes_en": "100% owned by SBM (acquired Sonangol's stake, Jun 2024). Block 15 Kizomba C. Contract with ExxonMobil extended to 2032 in Dec 2025. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited."
     },
     {
       "name": "FPSO Espírito Santo",
@@ -1943,14 +1967,14 @@
       "field": "Barossa (NT/WA-474-P)",
       "region": "Asia Pacific",
       "country": "Australia",
-      "water_depth_m": 300,
+      "water_depth_m": null,
       "oil_capacity_kboed": 11,
-      "storage_mmbbl": 2.2,
+      "storage_mmbbl": 0.85,
       "contract_start": "2025-09",
-      "contract_end": "2035",
+      "contract_end": "2040",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "가스+컨덴세이트 FPSO. 850 MMscfd 가스 처리, 컨덴세이트 11,000 bpd. Darwin 북쪽 285km. 2025-09 Ready for Start-Up (RFSU) 달성, Q2 2026 100% 출력 목표.",
+      "notes": "가스+컨덴세이트 FPSO. 850 MMscfd 가스 처리, 컨덴세이트 11,000 bpd. Darwin 북쪽 285km. 2025-09 Ready for Start-Up (RFSU) 달성, Q2 2026 100% 출력 목표. [2026-10-13 감사] BW 선단 페이지: 가스 850 MMscfd·콘덴세이트 11k bpd 확인, 저장 2.2→0.85 MMbbl. 계약 2025~2040 확정(옵션 ~2050), 기존 종료 2035 정정. 수심 300m은 출처 없어 null.",
       "detail": {
         "gas_capacity_mmscfd": 850,
         "mooring": "Turret Mooring",
@@ -1966,24 +1990,26 @@
         "yard_source_url": "https://bwoffshore.com/media/major-milestone-for-the-barossa-project",
         "yard_confidence": "high"
       },
-      "notes_en": "Gas + condensate FPSO. 850 MMscfd gas processing, 11,000 bpd condensate. 285km north of Darwin. Ready for Start-Up (RFSU) reached Sept 2025; 100% output targeted Q2 2026."
+      "notes_en": "Gas + condensate FPSO. 850 MMscfd gas processing, 11,000 bpd condensate. 285km north of Darwin. Ready for Start-Up (RFSU) reached Sept 2025; 100% output targeted Q2 2026. [2026-10-13 audit] BW fleet page: confirmed 850 MMscfd gas and 11k bpd condensate; storage 2.2→0.85 MMbbl. Contract 2025–2040 firm (options to ~2050); end 2035 corrected. 300m WD unsourced → null.",
+      "source_url": "https://bwoffshore.com/our-assets",
+      "verified": "2026-10-13"
     },
     {
       "name": "BW Pioneer",
       "type": "FPSO",
-      "owner": "BW Offshore",
+      "owner": "Murphy Oil",
       "client": "Murphy Oil",
       "field": "Cascade-Chinook (Garden Banks Blk 2)",
       "region": "Gulf of Mexico",
       "country": "USA",
       "water_depth_m": 2600,
       "oil_capacity_kboed": 80,
-      "storage_mmbbl": 0.5,
+      "storage_mmbbl": 0.6,
       "contract_start": "2012",
-      "contract_end": null,
+      "contract_end": "2025",
       "status": "On Production",
       "year_delivered": 2012,
-      "notes": "미국 최초 상업 심해 FPSO. 2,600m 최심수. Murphy EXPRO 80% / Petrobras America 20% JV(MP GOM) 운영. BW Offshore 5년 O&M 계약 연장.",
+      "notes": "미국 최초 상업 심해 FPSO. 2,600m 최심수. Murphy EXPRO 80% / Petrobras America 20% JV(MP GOM) 운영. BW Offshore 5년 O&M 계약 연장. [2026-10-13 감사] 소유주 BW Offshore→Murphy Oil(매각, $125M), BW는 5년 O&M(~2030). 원유 80k·가스 16·수심 2,600m 확인, 저장 0.5→0.6 MMbbl. 용선 2012~2025.",
       "detail": {
         "gas_capacity_mmscfd": 16,
         "mooring": "Turret Mooring (Disconnectable)",
@@ -1998,7 +2024,9 @@
         "yard_source_url": "https://www.offshore-mag.com/production/article/16763672/petrobras-cascade-chinook-inaugurate-fpso-production-in-gom",
         "yard_confidence": "high"
       },
-      "notes_en": "First commercial deepwater FPSO in the US. Deepest at 2,600m. Operated by Murphy EXPRO 80% / Petrobras America 20% JV (MP GOM). BW Offshore 5-year O&M contract extended."
+      "notes_en": "First commercial deepwater FPSO in the US. Deepest at 2,600m. Operated by Murphy EXPRO 80% / Petrobras America 20% JV (MP GOM). BW Offshore 5-year O&M contract extended. [2026-10-13 audit] Owner BW Offshore→Murphy Oil (sold, $125M); BW provides 5-year O&M (~2030). Confirmed 80k oil, 16 gas, 2,600m WD; storage 0.5→0.6 MMbbl. Charter 2012–2025.",
+      "source_url": "https://bwoffshore.com/our-assets",
+      "verified": "2026-10-13"
     },
     {
       "name": "BW Hurra",
@@ -2015,7 +2043,7 @@
       "contract_end": null,
       "status": "Idle/Warm Stacked",
       "year_delivered": 2006,
-      "notes": "구 Woodside Nganhurra FPSO (West Australia Enfield 유전). BW Offshore가 2025-05 인수, BW Hurra로 개명. 재배치 기회 검토 중(2027-06 이전 목표). 100,000 bpd 용량.",
+      "notes": "구 Woodside Nganhurra FPSO (West Australia Enfield 유전). BW Offshore가 2025-05 인수, BW Hurra로 개명. 재배치 기회 검토 중(2027-06 이전 목표). 100,000 bpd 용량. [2026-10-13 감사] BW 선단 페이지: 원유 100k·저장 0.9 확인, 가스 null→80 MMscfd. 2018년 생산 종료 후 말레이시아 계선, 2025년 BW 인수, 재배치 대기.",
       "detail": {
         "hull_type": "Purpose-built FPSO (Suezmax 이중선체, 2006 건조)",
         "mooring": "Disconnectable Turret (사이클론 회피 자항)",
@@ -2026,9 +2054,12 @@
         "yard": "Hull: Samsung Heavy Industries, Geoje, South Korea (ex-FPSO Nganhurra) · Topsides/integration: Samsung Heavy Industries, Geoje, South Korea",
         "build_type": "newbuild",
         "yard_source_url": "https://jpt.spe.org/bw-offshore-buys-existing-fpso",
-        "yard_confidence": "high"
+        "yard_confidence": "high",
+        "gas_capacity_mmscfd": 80
       },
-      "notes_en": "Ex-Woodside Nganhurra FPSO (Enfield field, Western Australia). Acquired by BW Offshore May 2025, renamed BW Hurra. Redeployment opportunities under review (target before Jun 2027). 100,000 bpd capacity."
+      "notes_en": "Ex-Woodside Nganhurra FPSO (Enfield field, Western Australia). Acquired by BW Offshore May 2025, renamed BW Hurra. Redeployment opportunities under review (target before Jun 2027). 100,000 bpd capacity. [2026-10-13 audit] BW fleet page: confirmed 100k oil and 0.9 storage; gas null→80 MMscfd. Ceased production 2018, laid up in Malaysia, acquired by BW in 2025, available for redeployment.",
+      "source_url": "https://bwoffshore.com/our-assets",
+      "verified": "2026-10-13"
     },
     {
       "name": "FPSO Anna Nery",
