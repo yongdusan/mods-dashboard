@@ -783,7 +783,7 @@
         { title: 'In Operation',   field: 'on_lease',          width: 135, minWidth: 135, hozAlign: 'right', formatter: function(cell) { return `<span class="mono">${cell.getValue()}</span>`; } },
         { title: 'Newbuilds (Own)', field: 'newbuilds_owned',   width: 155, minWidth: 155, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--blue)' : 'var(--text-muted)'}">${v}</span>`; } },
         { title: 'Newbuilds (Op.)', field: 'newbuilds_operated',width: 150, minWidth: 150, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return `<span class="mono" style="color:${v > 0 ? 'var(--accent)' : 'var(--text-muted)'}">${v}</span>`; } },
-        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 125, minWidth: 125, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—'; } },
+        { title: 'Backlog ($B)',  field: 'backlog_busd',      width: 125, minWidth: 125, hozAlign: 'right', formatter: function(cell) { const v = cell.getValue(); return (v != null ? `<span class="mono">$${v.toFixed(1)}B</span>` : '—') + OMI.src(cell.getData()); } },
         { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
             const parts0 = OMI.splitNotes(c.notes);
@@ -931,7 +931,7 @@
       selectable: 1,
       initialSort: [{ column: 'year_delivered', dir: 'desc' }],
       columns: [
-        { title: 'Asset',            field: 'name',              minWidth: 170, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
+        { title: 'Asset',            field: 'name',              minWidth: 170, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>${OMI.src(cell.getData())}`; } },
         { title: 'Type',             field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : v === 'FSO' ? 'muted' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
         { title: 'Owner',            field: 'owner',             minWidth: 120 },
         { title: 'Operator',         field: 'client',            minWidth: 110 },
@@ -1017,7 +1017,7 @@
       layout: 'fitColumns',
       responsiveLayout: 'collapse',
       columns: [
-        { title: 'Asset',            field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>`; } },
+        { title: 'Asset',            field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>${OMI.src(cell.getData())}`; } },
         { title: 'Type',             field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
         { title: 'Owner',            field: 'owner',             minWidth: 130 },
         { title: 'Client',           field: 'client',            minWidth: 110 },

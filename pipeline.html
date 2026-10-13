@@ -1105,13 +1105,13 @@
           {
             title: 'CAPEX ($B)',
             field: 'capex_busd',
-            width: 100,
+            width: 112,
             hozAlign: 'right',
             formatter: (cell) => {
               const v = cell.getValue();
               return v != null
-                ? `<span style="font-family:var(--font-mono);color:var(--accent)">${fmtCapex(v)}</span>`
-                : `<span style="color:var(--text-muted)">—</span>`;
+                ? `<span style="font-family:var(--font-mono);color:var(--accent)">${fmtCapex(v)}</span>${OMI.src(cell.getData())}`
+                : `<span style="color:var(--text-muted)">—</span>${OMI.src(cell.getData())}`;
             },
             sorter: 'number',
           },

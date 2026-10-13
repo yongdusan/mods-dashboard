@@ -771,6 +771,7 @@
         avg_day_rate_kusd: latest.avg_day_rate_kusd,
         backlog_busd:      latest.backlog_busd,
         note: c.note,
+        _src: { source: latest.source, source_url: latest.source_url, period: latest.period },
         _company: c,
         // previous quarter for QoQ reference
         prev_period:         prev ? prev.period : null,
@@ -825,7 +826,7 @@
             const v = cell.getValue();
             const isLatest = v && v.includes('2026');
             const color = isLatest ? 'var(--accent)' : 'var(--text-muted)';
-            return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>`;
+            return `<span class="mono" style="color:${color};font-weight:${isLatest ? '600' : '400'}">${esc(v)}</span>` + OMI.src(cell.getData()._src);
           },
         },
         {

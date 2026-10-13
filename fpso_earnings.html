@@ -911,6 +911,7 @@
         ebitda_margin_pct: latest.ebitda_margin_pct,
         units_on_lease:    latest.units_on_lease,
         backlog_busd:      latest.backlog_busd,
+        _src: { source: latest.source, source_url: latest.source_url, period: latest.period },
         _company: c,
         // previous quarter for QoQ reference
         prev_period:         prev ? prev.period : null,
@@ -1042,7 +1043,7 @@
           hozAlign: 'right',
           formatter: function(cell) {
             const v = cell.getValue();
-            return `<span class="mono" style="color:var(--yellow);font-weight:600">${v}</span>`;
+            return `<span class="mono" style="color:var(--yellow);font-weight:600">${v}</span>` + OMI.src(cell.getData()._src);
           },
         },
         {

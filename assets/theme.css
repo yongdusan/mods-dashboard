@@ -482,3 +482,17 @@ a.omi-ch-src:hover { color: var(--foam); }
   .omi-ch-text { grid-column: 1 / -1; }
   .omi-ch-src { grid-column: 1 / -1; }
 }
+
+/* ---- per-figure source dot (theme.js OMI.src) ---- */
+.omi-src { display: inline-block; width: 7px; height: 7px; margin-left: 6px; border-radius: 50%; vertical-align: 1px; background: var(--silt); box-shadow: 0 0 0 3px transparent; transition: box-shadow .15s; flex: none; }
+a.omi-src { cursor: pointer; }
+a.omi-src:hover, a.omi-src:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent); outline: none; }
+.omi-src.is-fresh { background: var(--kelp); color: var(--kelp); }
+.omi-src.is-aging { background: var(--amber); color: var(--amber); }
+.omi-src.is-stale { background: var(--coral); color: var(--coral); }
+.omi-src.is-nodate { background: transparent; border: 1px solid var(--silt); color: var(--silt); }
+.omi-src.is-low { outline: 1px dashed var(--amber); outline-offset: 2px; }
+.omi-src-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: -18px 0 24px; font-family: var(--font-mono); font-size: var(--step--2); color: var(--silt); }
+.omi-src-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.omi-src-legend .omi-src { margin-left: 0; }
+.omi-src.is-period { background: var(--sonar); color: var(--sonar); }

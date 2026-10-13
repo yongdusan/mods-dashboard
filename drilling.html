@@ -1133,8 +1133,8 @@
             const v = cell.getValue();
             const isImplied = cell.getData().day_rate_basis === 'implied_contract_value';
             return v !== null && v !== undefined
-              ? `<span class="mono" title="${isImplied ? 'Implied from disclosed contract value; rig-level dayrate undisclosed' : 'Disclosed rig-level dayrate'}" style="color:var(--accent);font-weight:600">${v}${isImplied ? '*' : ''}</span>`
-              : '<span style="color:var(--text-muted)">—</span>';
+              ? `<span class="mono" title="${isImplied ? 'Implied from disclosed contract value; rig-level dayrate undisclosed' : 'Disclosed rig-level dayrate'}" style="color:var(--accent);font-weight:600">${v}${isImplied ? '*' : ''}</span>${OMI.src(allRigs.find(r => r.name === cell.getData().name))}`
+              : '<span style="color:var(--text-muted)">—</span>' + OMI.src(allRigs.find(r => r.name === cell.getData().name));
           },
         },
       ],

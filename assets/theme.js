@@ -259,7 +259,8 @@
     [/^\$([\d.]+)B disclosed \(some undisclosed\)$/, '공시 $$$1B (일부 미공시)'],
     [/^LATEST REPORTED QUARTER — (.+)$/i, '최근 발표 분기 — $1'],
     [/^(.+) · first oil (\d{4})$/, '$1 · 첫 생산 $2'],
-    [/^(\d+) updates?$/, '기록 $1건']
+    [/^(\d+) updates?$/, '기록 $1건'],
+    [/^today$/, '오늘'], [/^(\d+)d ago$/, '$1일 전'], [/^(\d+)mo ago$/, '$1개월 전']
   ];
   var HANGUL = /[가-힣]/, LATIN = /[A-Za-z]/;
   var NEEDS = LANG === 'en' ? HANGUL : LATIN;
@@ -503,7 +504,7 @@
       var fixes = 0;
       // Count records touched, not log lines, so KO and EN notes give the same number.
       if (cfg.notes) cfg.notes(D).forEach(function (t) { if (splitNotes(t).log.some(function (e) { return e.date >= since(days); })) fixes++; });
-      if (!top.length && !fixes) return;
+      if (!top.length && !fixes) { srcLegend(); return; }
       var rows = top.map(function (it) {
         var line = ko ? firstSentence(it.summary) || it.title : it.title;
         return '<li><time>' + escHtml(it.date.slice(5)) + '</time>' +
@@ -526,9 +527,55 @@
         ' · <a href="news.html">' + (ko ? '뉴스 전체 →' : 'All news →') + '</a></span></div>' +
         (rows ? '<ol class="omi-ch-list">' + rows + '</ol>' : '') + foot;
       anchor.parentNode.insertBefore(box, anchor.nextSibling);
-    }).catch(function () {});
+      srcLegend();
+    }).catch(srcLegend);
   }
   window.OMI.renderChanges = renderChanges;
+
+  /* ── Per-figure source mark ───────────────────────────────────────────
+     OMI.src(record) → a small dot placed next to a figure. Colour = age of
+     the record's own check date (verified / as_of); click opens source_url;
+     hover shows source, check date and confidence. Only fields already in the
+     record are shown — a missing date is shown as missing, never inferred. */
+  function srcMark(rec, opt) {
+    if (!rec) return '';
+    opt = opt || {};
+    var ko = LANG === 'ko';
+    var date = rec.verified || rec.as_of || null;
+    if (date && !/^\d{4}-\d{2}(-\d{2})?$/.test(date)) date = null;
+    var age = date ? Math.floor((Date.now() - new Date(date.length === 7 ? date + '-01' : date).getTime()) / 864e5) : null;
+    var cls = age == null ? (rec.period ? 'is-period' : 'is-nodate') : age <= 90 ? 'is-fresh' : age <= 180 ? 'is-aging' : 'is-stale';
+    if (rec.confidence === 'low') cls += ' is-low';
+    var lines = [];
+    if (rec.source) lines.push((ko ? '출처: ' : 'Source: ') + rec.source);
+    var dl = rec.verified ? (ko ? '확인일: ' : 'Checked: ') : (ko ? '기준일: ' : 'As of: ');
+    lines.push(date ? dl + date + (ko ? ' (' + age + '일 전)' : ' (' + age + ' days ago)')
+                    : rec.period ? (ko ? '기준: ' + rec.period + ' 실적 공시' : 'Basis: ' + rec.period + ' reported results')
+                    : (ko ? '확인일 기록 없음' : 'No check date recorded'));
+    if (rec.confidence) lines.push((ko ? '신뢰도: ' : 'Confidence: ') + rec.confidence);
+    if (opt.note) lines.push(opt.note);
+    if (rec.source_url) lines.push(ko ? '점을 누르면 원문이 열립니다' : 'Click to open the source');
+    var title = escHtml(lines.join('\n'));
+    return rec.source_url
+      ? '<a class="omi-src ' + cls + '" href="' + escHtml(rec.source_url) + '" target="_blank" rel="noopener" title="' + title + '" aria-label="' + (ko ? '출처' : 'Source') + '" onclick="event.stopPropagation()"></a>'
+      : '<span class="omi-src ' + cls + '" title="' + title + '"></span>';
+  }
+  function srcLegend() {
+    var anchor = document.querySelector('.omi-changes') || document.querySelector('.page-title-section');
+    if (!anchor || document.querySelector('.omi-src-legend')) return;
+    var ko = LANG === 'ko', p = document.createElement('p');
+    p.className = 'omi-src-legend';
+    p.innerHTML = (ko ? '수치 옆 점 — ' : 'Dot beside a figure — ') +
+      '<span><i class="omi-src is-fresh"></i>' + (ko ? '확인·기준일 90일 이내' : 'checked / as-of ≤90 days') + '</span>' +
+      '<span><i class="omi-src is-aging"></i>' + (ko ? '180일 이내' : '≤180 days') + '</span>' +
+      '<span><i class="omi-src is-stale"></i>' + (ko ? '180일 초과' : '>180 days') + '</span>' +
+      '<span><i class="omi-src is-nodate"></i>' + (ko ? '확인일 기록 없음' : 'no check date') + '</span>' +
+      (document.querySelector('.omi-src.is-period') || /earnings/.test(location.pathname) ? '<span><i class="omi-src is-period"></i>' + (ko ? '분기 실적 공시 기준' : 'quarterly filing') + '</span>' : '') +
+      '<span>' + (ko ? '점을 누르면 원문 출처' : 'click a dot for the source') + '</span>';
+    anchor.parentNode.insertBefore(p, anchor.nextSibling);
+  }
+  window.OMI.src = srcMark;
+  window.OMI.srcLegend = srcLegend;
 
   function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); renderChanges(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
