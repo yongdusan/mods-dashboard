@@ -251,6 +251,56 @@
     }
 
     /* ─── Panel ─── */
+    /* ---- Water depth fit ---- */
+    .fit-panel { margin-bottom: 24px; min-width: 0; }
+    .fit-body > * { min-width: 0; }
+    .fit-chart { overflow-x: auto; }
+    .fit-body { padding: 18px 20px 20px; display: grid; gap: 18px; }
+    .fit-controls { display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 18px 28px; align-items: start; }
+    .fit-depth { display: grid; gap: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; }
+    .fit-depth-row { display: flex; align-items: center; gap: 10px; }
+    .fit-depth input[type=range] { flex: 1; accent-color: var(--accent); }
+    .fit-depth input[type=number] { width: 78px; padding: 6px 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 3px; color: var(--text); font-family: var(--font-mono); font-size: 13px; text-align: right; }
+    .fit-unit { text-transform: none; }
+    .fit-depth output { font-size: 12px; color: var(--text); text-transform: none; letter-spacing: 0; }
+    .fit-presets { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+    .fit-presets .fit-presets-label { width: 100%; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
+    .fit-chip { padding: 5px 9px; background: var(--surface2); border: 1px solid var(--border); border-radius: 3px; color: var(--text); font-size: 12px; cursor: pointer; line-height: 1.3; text-align: left; }
+    .fit-chip small { display: block; font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); }
+    .fit-chip:hover, .fit-chip[aria-pressed=true] { border-color: var(--accent); }
+    .fit-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .fit-kpi { padding: 12px 14px; background: var(--panel); }
+    .fit-kpi b { display: block; font-family: var(--font-display); font-size: 26px; line-height: 1.1; color: var(--text); }
+    .fit-kpi span { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
+    .fit-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .fit-chart .lane-label { font-family: var(--font-mono); font-size: 10px; fill: var(--text-muted); }
+    .fit-chart .axis text { font-family: var(--font-mono); font-size: 10px; fill: var(--text-muted); }
+    .fit-chart .axis line { stroke: var(--border); }
+    .fit-chart .lane { stroke: var(--border); stroke-dasharray: 2 4; }
+    .fit-chart .req line { stroke: var(--accent); stroke-width: 1.5; }
+    .fit-chart .req text { font-family: var(--font-mono); font-size: 10px; fill: var(--accent); }
+    .fit-chart .shade { fill: var(--abyss, #06101b); opacity: .55; }
+    .fit-chart circle { cursor: pointer; stroke: var(--panel); stroke-width: 1; transition: opacity .15s; }
+    .fit-chart circle.out { opacity: .18; }
+    .fit-chart circle:hover { stroke: var(--text); }
+    .fit-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); }
+    .fit-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+    .fit-list table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .fit-list th { text-align: left; font-family: var(--font-mono); font-size: 10px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+    .fit-list td { padding: 7px 8px; border-bottom: 1px solid var(--border); color: var(--text); white-space: nowrap; }
+    .fit-list td.num, .fit-list th.num { text-align: right; font-family: var(--font-mono); }
+    .fit-list tr { cursor: pointer; }
+    .fit-list tbody tr:hover td { background: var(--surface2); }
+    .fit-list .fit-more { margin-top: 8px; background: none; border: 1px solid var(--border); color: var(--text-muted); font-family: var(--font-mono); font-size: 11px; padding: 5px 10px; border-radius: 3px; cursor: pointer; }
+    .fit-list-wrap { overflow-x: auto; }
+    .fit-note { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); }
+    @media (max-width: 760px) {
+      .fit-controls { grid-template-columns: 1fr; }
+      .fit-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .fit-body { padding: 14px; }
+      .fit-chart svg { min-width: 640px; }
+    }
+
     .panel {
       background: var(--panel);
       border: 1px solid var(--border);
@@ -730,6 +780,30 @@
       </div>
     </div>
   </div>
+
+  <!-- Water depth fit: which rigs can work at a given depth, and when they free up -->
+  <section class="panel fit-panel" id="fit-panel" aria-labelledby="fit-title">
+    <div class="panel-header">
+      <span class="panel-title" id="fit-title"><span class="dot" style="background:var(--kelp)"></span><span id="fit-title-text">Water Depth Fit</span></span>
+      <span class="panel-subtitle" id="fit-subtitle"></span>
+    </div>
+    <div class="fit-body">
+      <div class="fit-controls">
+        <label class="fit-depth">
+          <span id="fit-depth-label">Required water depth</span>
+          <span class="fit-depth-row">
+            <input type="range" id="fit-range" min="0" max="3600" step="10" value="1500" aria-describedby="fit-depth-out">
+            <input type="number" id="fit-num" min="0" max="3600" step="10" value="1500" inputmode="numeric"><span class="fit-unit">m</span>
+          </span>
+          <output id="fit-depth-out"></output>
+        </label>
+        <div class="fit-presets" id="fit-presets"></div>
+      </div>
+      <div class="fit-kpis" id="fit-kpis"></div>
+      <div class="fit-chart" id="fit-chart"></div>
+      <div class="fit-list" id="fit-list"></div>
+    </div>
+  </section>
 
   <!-- MODU Asset Value Benchmarks Table -->
   <div class="newbuild-section">
@@ -1563,6 +1637,150 @@
   renderNewbuildTable();
   renderConfidenceBadges();
   renderNamedObservations();
+  renderDepthFit();
+
+  /* ─────────────────────────────────────────
+     Water depth fit — rigs whose rated max water depth covers a required
+     depth, laid out by when they become available. Uses only fields in
+     fleet.json (specs.max_water_depth_ft, status, contract_end); rigs with
+     no rated depth are counted and left out, never guessed.
+  ───────────────────────────────────────── */
+  function renderDepthFit() {
+    const ko = OMI.lang === 'ko';
+    const FT = 3.28084;
+    const T = ko ? {
+      title: '수심-리그 매칭', sub: '정격 최대 수심 기준 · 가용 시점별', label: '필요 수심', presets: '진행 중인 개발 수심 (FPSO 데이터)',
+      fit: '작업 가능 리그', idle: '지금 가용 (유휴·스택)', soon: '12개월 내 계약 종료', rate: '작업 가능 리그 평균 용선료',
+      lanes: ['유휴·스택', '12개월 내 종료', '13–24개월', '24개월 이후', '종료일 미상'],
+      axis: '정격 최대 수심 (ft)', excluded: n => `수심 사양 미확인 ${n}척 제외`, rateNote: n => n ? `공시 용선료 ${n}척 기준` : '공시 용선료 없음',
+      cols: ['리그', '컨트랙터', '유형', '최대 수심', '상태', '계약 종료', '위치'], more: n => `${n}척 더 보기`, noRigs: '이 수심에서 작업 가능한 리그가 없습니다.',
+      types: { Drillship: '드릴십', Semisubmersible: '반잠수식', 'Jack-up': '잭업' },
+      status: { 'On Contract': '계약 중', Idle: '유휴', 'Cold Stacked': '콜드 스택' }, rigs: '척'
+    } : {
+      title: 'Water Depth Fit', sub: 'by rated max water depth · grouped by availability', label: 'Required water depth', presets: 'Depths of developments in progress (FPSO data)',
+      fit: 'Rigs rated for this depth', idle: 'Available now (idle / stacked)', soon: 'Contract ends ≤12 months', rate: 'Avg dayrate, rated rigs',
+      lanes: ['Idle / stacked', 'Ends ≤12 mo', '13–24 mo', '>24 mo', 'End date unknown'],
+      axis: 'Rated max water depth (ft)', excluded: n => `${n} rigs without a rated depth excluded`, rateNote: n => n ? `from ${n} disclosed dayrates` : 'no disclosed dayrates',
+      cols: ['Rig', 'Contractor', 'Type', 'Max WD', 'Status', 'Contract end', 'Location'], more: n => `Show ${n} more`, noRigs: 'No rigs are rated for this depth.',
+      types: { Drillship: 'Drillship', Semisubmersible: 'Semi-sub', 'Jack-up': 'Jack-up' },
+      status: {}, rigs: ' rigs'
+    };
+    document.getElementById('fit-title-text').textContent = T.title;
+    document.getElementById('fit-depth-label').textContent = T.label;
+    const COLORS = { Drillship: 'var(--accent)', Semisubmersible: 'var(--blue)', 'Jack-up': 'var(--orange)' };
+
+    const now = new Date();
+    const monthsTo = ym => { const [y, m] = ym.split('-').map(Number); return (y - now.getFullYear()) * 12 + (m - 1 - now.getMonth()); };
+    const lane = r => {
+      if (r.status === 'Idle' || r.status === 'Cold Stacked') return 0;
+      if (!r.contract_end) return 4;
+      const m = monthsTo(r.contract_end);
+      return m <= 12 ? 1 : m <= 24 ? 2 : 3;
+    };
+    const rated = allRigs.filter(r => r.specs && r.specs.max_water_depth_ft);
+    const unrated = allRigs.length - rated.length;
+    document.getElementById('fit-subtitle').textContent = `${T.sub} · ${T.excluded(unrated)}`;
+
+    // Presets: depths already recorded for FPSOs being built or commissioned
+    fetch('data/fpso.json').then(r => r.json()).then(F => {
+      const items = F.orderbook.map(o => ({ name: o.name, field: o.field, wd: (o.detail || {}).water_depth_m }))
+        .concat(F.vessels.filter(v => v.status !== 'On Production').map(v => ({ name: v.name, field: v.field, wd: v.water_depth_m })))
+        .filter(x => x.wd)
+        .sort((a, b) => a.wd - b.wd);
+      const box = document.getElementById('fit-presets');
+      box.innerHTML = `<span class="fit-presets-label">${T.presets}</span>` + items.map(x =>
+        `<button type="button" class="fit-chip" data-wd="${x.wd}" aria-pressed="false">${OMI.esc(x.name)}<small>${OMI.esc((x.field || '').replace(/\s*\(.*\)$/, ''))} · ${x.wd.toLocaleString()} m</small></button>`).join('');
+      box.addEventListener('click', e => {
+        const b = e.target.closest('.fit-chip'); if (!b) return;
+        box.querySelectorAll('.fit-chip').forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+        setDepth(+b.dataset.wd, true);
+      });
+    }).catch(() => {});
+
+    const range = document.getElementById('fit-range'), num = document.getElementById('fit-num');
+    let listOpen = false;
+    function setDepth(m, fromChip) {
+      m = Math.max(0, Math.min(3600, Math.round(+m || 0)));
+      range.value = m; num.value = m;
+      if (!fromChip) document.querySelectorAll('.fit-chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+      draw(m);
+    }
+    range.addEventListener('input', () => setDepth(range.value));
+    num.addEventListener('change', () => setDepth(num.value));
+
+    function draw(m) {
+      const reqFt = m * FT;
+      document.getElementById('fit-depth-out').textContent = `${m.toLocaleString()} m = ${Math.round(reqFt).toLocaleString()} ft`;
+      const ok = rated.filter(r => r.specs.max_water_depth_ft >= reqFt);
+      const idle = ok.filter(r => lane(r) === 0), soon = ok.filter(r => lane(r) === 1);
+      const rates = ok.filter(r => r.status === 'On Contract' && r.day_rate_kusd != null && r.day_rate_basis !== 'implied_contract_value');
+      const avg = rates.length ? Math.round(rates.reduce((s, r) => s + r.day_rate_kusd, 0) / rates.length) : null;
+      document.getElementById('fit-kpis').innerHTML = [
+        [ok.length + T.rigs, T.fit + ` / ${rated.length}`],
+        [idle.length + T.rigs, T.idle],
+        [soon.length + T.rigs, T.soon],
+        [avg != null ? `$${avg}k` : '—', `${T.rate} · ${T.rateNote(rates.length)}`]
+      ].map(([v, l]) => `<div class="fit-kpi"><b>${v}</b><span>${l}</span></div>`).join('');
+
+      // Chart: columns = 1,000 ft bins of rated depth, lanes = availability; dots pack into each cell
+      const W = 960, padL = 120, padR = 16, xMax = 13000, R = 4, step = R * 2 + 2;
+      const x = ft => padL + (Math.min(ft, xMax) / xMax) * (W - padL - padR);
+      const cellW = x(1000) - x(0), perRow = Math.max(1, Math.floor((cellW - 4) / step));
+      const lanes = [[], [], [], [], []];
+      rated.forEach(r => lanes[lane(r)].push(r));
+      let y = 18; const rows = [], dots = [];
+      lanes.forEach((L, i) => {
+        const cells = {};
+        L.sort((a, b) => a.specs.max_water_depth_ft - b.specs.max_water_depth_ft).forEach(r => {
+          const b = Math.min(12, Math.floor(r.specs.max_water_depth_ft / 1000));
+          const n = cells[b] = (cells[b] || 0) + 1;
+          dots.push({ r, b, n: n - 1, lane: i });
+        });
+        const tallest = Math.max(1, ...Object.values(cells).map(n => Math.ceil(n / perRow)));
+        const h = Math.max(28, tallest * step + 12);
+        rows.push({ y, h });
+        y += h;
+      });
+      const H = y + 26;
+      const out = [];
+      out.push(`<rect class="shade" x="${padL}" y="4" width="${Math.max(0, x(reqFt) - padL)}" height="${y - 4}"></rect>`);
+      rows.forEach((row, i) => {
+        out.push(`<line class="lane" x1="${padL}" x2="${W - padR}" y1="${row.y + row.h}" y2="${row.y + row.h}"></line>`);
+        out.push(`<text class="lane-label" x="0" y="${row.y + row.h / 2 + 3}">${T.lanes[i]} (${lanes[i].length})</text>`);
+      });
+      dots.forEach(d => {
+        const row = rows[d.lane], s = d.r.specs.max_water_depth_ft;
+        const cx = x(d.b * 1000) + 2 + R + (d.n % perRow) * step;
+        const cy = row.y + row.h - 6 - R - Math.floor(d.n / perRow) * step;
+        const tip = `${d.r.name} · ${d.r.contractor}\n${T.types[d.r.type] || d.r.type} · ${s.toLocaleString()} ft (${Math.round(s / FT).toLocaleString()} m)\n${T.status[d.r.status] || d.r.status}${d.r.contract_end ? ' → ' + d.r.contract_end : ''}${d.r.location ? ' · ' + d.r.location : ''}`;
+        out.push(`<circle data-rig="${OMI.esc(d.r.name)}" class="${s >= reqFt ? '' : 'out'}" cx="${cx}" cy="${cy}" r="${R}" fill="${COLORS[d.r.type] || 'var(--text-muted)'}"><title>${OMI.esc(tip)}</title></circle>`);
+      });
+      out.push(`<g class="axis">` + [0, 2000, 4000, 6000, 8000, 10000, 12000].map(t =>
+        `<line x1="${x(t)}" x2="${x(t)}" y1="${y}" y2="${y + 4}"></line><text x="${x(t)}" y="${y + 16}" text-anchor="middle">${t ? t.toLocaleString() : '0'}</text>`).join('') +
+        `<text x="0" y="${y + 16}">${T.axis}</text></g>`);
+      out.push(`<g class="req"><line x1="${x(reqFt)}" x2="${x(reqFt)}" y1="2" y2="${y}"></line><text x="${Math.min(x(reqFt) + 4, W - 70)}" y="12">${m.toLocaleString()} m</text></g>`);
+      const legend = Object.keys(COLORS).map(k => `<span><i style="background:${COLORS[k]}"></i>${T.types[k]}</span>`).join('');
+      document.getElementById('fit-chart').innerHTML = `<svg viewBox="0 0 ${W} ${H + 4}" role="img" aria-label="${T.title}">${out.join('')}</svg><div class="fit-legend">${legend}</div>`;
+
+      // Candidate list: available soonest first
+      const list = ok.slice().sort((a, b) => lane(a) - lane(b) || String(a.contract_end || '9999').localeCompare(String(b.contract_end || '9999')) || b.specs.max_water_depth_ft - a.specs.max_water_depth_ft);
+      const shown = listOpen ? list : list.slice(0, 10);
+      document.getElementById('fit-list').innerHTML = list.length ? `<div class="fit-list-wrap"><table><thead><tr>
+          <th>${T.cols[0]}</th><th>${T.cols[1]}</th><th>${T.cols[2]}</th><th class="num">${T.cols[3]}</th><th>${T.cols[4]}</th><th>${T.cols[5]}</th><th>${T.cols[6]}</th></tr></thead><tbody>` +
+        shown.map(r => `<tr data-rig="${OMI.esc(r.name)}"><td><strong>${OMI.esc(r.name)}</strong>${OMI.src(r)}</td><td>${OMI.esc(r.contractor)}</td><td>${T.types[r.type] || OMI.esc(r.type)}</td>
+          <td class="num">${r.specs.max_water_depth_ft.toLocaleString()} ft</td><td>${T.status[r.status] || OMI.esc(r.status)}</td><td class="num">${OMI.esc(r.contract_end || '—')}</td><td>${OMI.esc(r.location || '—')}</td></tr>`).join('') +
+        `</tbody></table></div>` + (list.length > shown.length ? `<button type="button" class="fit-more">${T.more(list.length - shown.length)}</button>` : '')
+        : `<p class="fit-note">${T.noRigs}</p>`;
+    }
+    const openRig = name => { const r = allRigs.find(x => x.name === name); if (r) openDrawer(r); };
+    document.getElementById('fit-chart').addEventListener('click', e => { const c = e.target.closest('circle[data-rig]'); if (c) openRig(c.dataset.rig); });
+    document.getElementById('fit-list').addEventListener('click', e => {
+      if (e.target.closest('.fit-more')) { listOpen = true; draw(+range.value); return; }
+      if (e.target.closest('a')) return;
+      const tr = e.target.closest('tr[data-rig]'); if (tr) openRig(tr.dataset.rig);
+    });
+    setDepth(1500);
+  }
   initFilters();
   initDrawer();
 

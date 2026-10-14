@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -76,7 +76,7 @@
       "name": "Deepwater Atlas",
       "contractor": "Transocean",
       "type": "Drillship",
-      "water_depth_ft": 20000,
+      "water_depth_ft": 12000,
       "status": "On Contract",
       "operator": "Beacon Offshore Energy",
       "location": "US Gulf of Mexico",
@@ -87,7 +87,7 @@
         "build_year": 2022,
         "build_yard": "Samsung Heavy Industries",
         "design": "Samsung 96K",
-        "max_water_depth_ft": 20000,
+        "max_water_depth_ft": 12000,
         "max_drilling_depth_ft": 40000,
         "bop_rating_psi": 20000,
         "dp_class": "DP-3",
@@ -97,8 +97,9 @@
       "source": "Transocean Fleet Status Report, Feb 19 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k.",
-      "data_note_en": "FSR (Aug-26): continuous Beacon contracts — Aug-26–Oct-26 $580k (current), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, then bp Jun-28–Jun-30 $635k."
+      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k. [2026-10-14 감사] 수심 20,000→12,000ft: Transocean 사양서 \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\"(20,000은 BOP 압력 등급 psi와 혼동).",
+      "data_note_en": "FSR (Aug-26): continuous Beacon contracts — Aug-26–Oct-26 $580k (current), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, then bp Jun-28–Jun-30 $635k. [2026-10-14 audit] Water depth 20,000→12,000 ft: Transocean spec sheet \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\" (20,000 was confused with the 20,000 psi BOP rating).",
+      "verified": "2026-10-14"
     },
     {
       "name": "Deepwater Titan",
