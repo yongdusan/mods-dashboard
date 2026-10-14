@@ -226,6 +226,11 @@
     'Quarterly earnings · backlog · leased asset overview': '분기 실적 · 수주잔고 · 리스 설비 현황', 'Units on Lease': '리스 선박',
     // news
     'Offshore Market News': '해양 시장 뉴스', 'Sector': '분야', 'Category': '분류', 'Earnings': '실적', 'Outlook': '전망',
+    // detail drawers
+    'Asset Type': '자산 유형', 'Data Freshness': '확인 시점', 'FID Date': 'FID 일자', 'Current Contract': '현재 계약',
+    'Operation Area': '작업 해역', 'Rig Specifications': '리그 사양', 'Dayrate': '용선료', 'Build Yard': '건조 조선소',
+    'Generation': '세대', 'Max Drill Depth': '최대 굴착 심도', 'Max Water Depth': '최대 수심', 'BOP Rating': 'BOP 등급', 'DP Class': 'DP 등급',
+    'Redeployment': '재배치', 'On Charter': '용선 중', 'Idle/Warm Stacked': '유휴 / 웜 스택',
     '▼ more': '▼ 더보기', '▲ less': '▲ 접기', 'Original article': '원문 기사',
     // subtitles / footer / misc
     'Rigs': '리그', 'Floaters': '부유식 설비',
@@ -259,6 +264,7 @@
     [/^\$([\d.]+)B disclosed \(some undisclosed\)$/, '공시 $$$1B (일부 미공시)'],
     [/^LATEST REPORTED QUARTER — (.+)$/i, '최근 발표 분기 — $1'],
     [/^(.+) · first oil (\d{4})$/, '$1 · 첫 생산 $2'],
+    [/^(HIGH|MEDIUM|LOW) confidence$/i, '신뢰도 $1'],
     [/^(\d+) updates?$/, '기록 $1건'],
     [/^today$/, '오늘'], [/^(\d+)d ago$/, '$1일 전'], [/^(\d+)mo ago( ⚠)?$/, '$1개월 전$2']
   ];
@@ -585,6 +591,96 @@
     anchor.parentNode.insertBefore(p, anchor.nextSibling);
   }
   window.OMI.src = srcMark;
+
+  /* ── Cross-page links ─────────────────────────────────────────────────
+     OMI.related(kind, record, el) appends a "Related" block to a detail
+     panel. Links come only from name matches in the data, and say how they
+     matched: "direct" (the field / unit name contains the project name) or
+     "mentioned" (the name appears in the other record's notes).
+     Targets open via #open=<key> (OMI.whenOpen) or news.html#q=<term>. */
+  var dataCache = {};
+  function loadData(f) {
+    if (!dataCache[f]) dataCache[f] = fetch('data/' + f + '.json').then(function (r) { return r.json(); });
+    return dataCache[f];
+  }
+  function hitText(text, key) { return hits(String(text || '').toLowerCase(), key); }
+  function anyKey(text, keys) { for (var i = 0; i < keys.length; i++) if (hitText(text, keys[i])) return true; return false; }
+  function link(href, label, meta) {
+    if (meta && LANG === 'ko') meta = meta.split(' · ').map(function (x) { return UI_KO[x] || x; }).join(' · ');
+    return '<a class="omi-rel-link" href="' + escHtml(href) + '">' + escHtml(label) + (meta ? '<small>' + escHtml(meta) + '</small>' : '') + '</a>';
+  }
+  function openHref(page, key) { return page + '#open=' + encodeURIComponent(key); }
+  function relRelated(kind, rec, el) {
+    if (!rec || !el) return;
+    var ko = LANG === 'ko';
+    var old = el.querySelector('.omi-rel'); if (old) old.remove();
+    var box = document.createElement('div');
+    box.className = 'omi-rel' + (el.classList.contains('ob-detail-grid') || /detail-grid/.test(el.id) ? ' ob-detail-item full' : '');
+    el.appendChild(box);
+    Promise.all(['pipeline', 'fpso', 'fleet', 'news', 'earnings', 'fpso_earnings'].map(loadData)).then(function (a) {
+      var P = a[0].projects, F = a[1], R = a[2].rigs, N = a[3].items, E = a[4].companies, FE = a[5].companies;
+      var units = F.vessels.map(function (v) { return { v: v, k: 'v:' }; }).concat(F.orderbook.map(function (v) { return { v: v, k: 'o:' }; }));
+      var groups = [];
+      var add = function (title, items) { if (items.length) groups.push({ title: title, items: items }); };
+      var newsFor = function (keys) {
+        return N.filter(function (n) { return anyKey(n.title + ' ' + n.summary, keys); }).slice(0, 4).map(function (n) {
+          return '<a class="omi-rel-link" href="' + escHtml(n.url || 'news.html') + '" target="_blank" rel="noopener">' + escHtml(n.title) + '<small>' + escHtml(n.date + ' · ' + (n.source || '')) + ' ↗</small></a>';
+        });
+      };
+      var uniq = function (arr) { var s = {}; return arr.filter(function (x) { return s[x] ? false : (s[x] = 1); }); };
+      if (kind === 'project') {
+        var pk = nameKeys(rec.project);
+        var direct = units.filter(function (u) { return anyKey(u.v.field, pk) || anyKey(u.v.name, pk); });
+        var ment = units.filter(function (u) { return direct.indexOf(u) < 0 && anyKey(rec.project + ' ' + (rec.notes || ''), nameKeys(u.v.name)); });
+        var ul = function (u) { return link(openHref('fpso.html', u.k + u.v.name), u.v.name, [u.k === 'o:' ? (ko ? '건조 중' : 'orderbook') : u.v.status, u.v.owner].filter(Boolean).join(' · ')); };
+        add(ko ? '이 프로젝트의 FPSO·FLNG' : 'FPSO / FLNG for this project', direct.map(ul));
+        add(ko ? '메모에 언급된 설비' : 'Units mentioned in notes', ment.map(ul));
+        add(ko ? '관련 뉴스' : 'Related news', newsFor(pk));
+        add(ko ? '더 보기' : 'More', [link('news.html#q=' + encodeURIComponent(rec.company), (ko ? rec.company + ' 뉴스 전체' : 'All ' + rec.company + ' news') + ' →')]);
+      } else if (kind === 'unit') {
+        var uk = nameKeys(rec.name);
+        var dp = P.filter(function (p) { return anyKey(rec.field, nameKeys(p.project)) || anyKey(rec.name, nameKeys(p.project)); });
+        var mp = P.filter(function (p) { return dp.indexOf(p) < 0 && anyKey(p.project + ' ' + (p.notes || ''), uk); });
+        var pl = function (p) { return link(openHref('pipeline.html', p.id), p.project, [p.company, p.phase].join(' · ')); };
+        add(ko ? '파이프라인 프로젝트' : 'Pipeline project', dp.map(pl));
+        add(ko ? '이 설비를 언급한 프로젝트' : 'Projects mentioning this unit', mp.map(pl));
+        var fin = FE.filter(function (c) { return rec.owner && (rec.owner === c.name || rec.owner.indexOf(c.name) === 0); });
+        add(ko ? '소유주 실적' : 'Owner financials', fin.map(function (c) { return link(openHref('fpso_earnings.html', c.name), c.name, ko ? 'FPSO 실적' : 'FPSO financials'); }));
+        add(ko ? '관련 뉴스' : 'Related news', newsFor(uk));
+      } else if (kind === 'rig') {
+        var rk = nameKeys(rec.name);
+        var rp = P.filter(function (p) { return anyKey((rec.location || '') + ' ' + (rec.data_note || ''), nameKeys(p.project)); });
+        add(ko ? '언급된 프로젝트' : 'Projects mentioned', rp.map(function (p) { return link(openHref('pipeline.html', p.id), p.project, p.company); }));
+        var ef = E.filter(function (c) { return c.name === rec.contractor; });
+        add(ko ? '컨트랙터' : 'Contractor', ef.map(function (c) { return link(openHref('earnings.html', c.name), c.name, ko ? '시추사 실적' : 'driller financials'); })
+          .concat([link('news.html#q=' + encodeURIComponent(rec.contractor), (ko ? rec.contractor + ' 뉴스 전체' : 'All ' + rec.contractor + ' news') + ' →')]));
+        add(ko ? '관련 뉴스' : 'Related news', newsFor(rk));
+      } else if (kind === 'company') {
+        var isRigCo = E.some(function (c) { return c.name === rec.name; });
+        var own = isRigCo
+          ? [link('drilling.html#contractor=' + encodeURIComponent(rec.name), (ko ? '보유 리그 ' : 'Fleet: ') + R.filter(function (r) { return r.contractor === rec.name; }).length + (ko ? '척 보기' : ' rigs'))]
+          : [link('fpso.html#owner=' + encodeURIComponent(rec.name), (ko ? '보유·운영 선박 보기' : 'Fleet & orderbook'))];
+        add(ko ? '선대' : 'Fleet', own);
+        add(ko ? '관련 뉴스' : 'Related news', newsFor([rec.name]).concat([link('news.html#q=' + encodeURIComponent(rec.name), (ko ? '뉴스 전체' : 'All news') + ' →')]));
+      }
+      if (!groups.length) { box.remove(); return; }
+      box.innerHTML = '<div class="omi-rel-title">' + (ko ? '관련 항목' : 'Related') + '<span>' + (ko ? '이름 일치 기준' : 'matched by name') + '</span></div>' +
+        groups.map(function (g) { return '<div class="omi-rel-group"><h5>' + escHtml(g.title) + '</h5><div class="omi-rel-items">' + uniq(g.items).join('') + '</div></div>'; }).join('');
+    }).catch(function () { box.remove(); });
+  }
+  function hashParam(name) {
+    var m = new RegExp('[#&]' + name + '=([^&]*)').exec(location.hash);
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+  function whenOpen(fn, name) {
+    name = name || 'open';
+    var run = function () { var v = hashParam(name); if (v != null) setTimeout(function () { fn(v); }, 0); };
+    run();
+    window.addEventListener('hashchange', run);
+  }
+  window.OMI.related = relRelated;
+  window.OMI.whenOpen = whenOpen;
+  window.OMI.hashParam = hashParam;
   window.OMI.srcLegend = srcLegend;
 
   function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); renderChanges(); }

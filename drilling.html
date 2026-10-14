@@ -1426,6 +1426,7 @@
       </div>
     `;
 
+    OMI.related('rig', rig, document.getElementById('drawer-body'));
     drawer.classList.add('open');
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -1455,6 +1456,12 @@
 
   function initDrawer() {
     document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+    OMI.whenOpen(name => { const rig = allRigs.find(r => r.name === name); if (rig) openDrawer(rig); });
+    OMI.whenOpen(name => {
+      const all = document.querySelector('.type-btn[data-filter="All"]');
+      const btn = [...document.querySelectorAll('.contractor-btn')].find(b => b.dataset.contractor === name);
+      if (btn) { if (all) all.click(); btn.click(); document.getElementById('fleet-table').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }, 'contractor');
     document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
   }

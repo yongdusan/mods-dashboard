@@ -1236,6 +1236,7 @@
         </div>
       `;
 
+      OMI.related('project', proj, document.getElementById('drawer-body'));
       document.getElementById('drawer').classList.add('open');
       document.getElementById('drawer-overlay').classList.add('open');
     }
@@ -1265,6 +1266,7 @@
         const capexData    = await capexRes.json();
 
         allProjects = pipelineData.projects || [];
+        OMI.whenOpen(id => { const p = allProjects.find(x => x.id === id); if (p) openDrawer(p); });
         const updateDates = [pipelineData.updated, capexData.updated].filter(Boolean).sort();
         document.getElementById('header-meta').innerHTML = `
           <span>Updated:</span>

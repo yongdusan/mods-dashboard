@@ -501,3 +501,13 @@ a.omi-src:hover, a.omi-src:focus-visible { box-shadow: 0 0 0 3px color-mix(in sr
 html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
 h1, h2, h3, .lede, .hero h1, .hero .line { text-wrap: balance; }
 p { text-wrap: pretty; }
+
+/* ---- "Related" block in detail panels (theme.js OMI.related) ---- */
+.omi-rel { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); display: grid; gap: 14px; }
+.omi-rel-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: var(--step--2); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--signal); }
+.omi-rel-title span { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--silt); }
+.omi-rel-group h5 { margin: 0 0 6px; font-size: var(--step--2); font-weight: 500; color: var(--silt); }
+.omi-rel-items { display: flex; flex-wrap: wrap; gap: 6px; }
+.omi-rel-link { display: inline-flex; flex-direction: column; gap: 1px; max-width: 100%; padding: 6px 10px; background: var(--hull-2); border: 1px solid var(--line); border-radius: 3px; color: var(--foam); font-size: var(--step--1); line-height: 1.35; text-decoration: none; transition: border-color .15s; }
+.omi-rel-link:hover, .omi-rel-link:focus-visible { border-color: var(--signal); outline: none; }
+.omi-rel-link small { font-family: var(--font-mono); font-size: var(--step--2); color: var(--silt); }

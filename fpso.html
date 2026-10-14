@@ -876,6 +876,17 @@
     });
   }
 
+  /* ─── Deep links from other pages: #open=v:<vessel> | o:<orderbook unit>, #owner=<contractor> ─── */
+  function deepLinks() {
+    const clickRow = (t, pred) => { const r = t && t.getRows().find(x => pred(x.getData())); if (r) { r.getElement().dispatchEvent(new MouseEvent('click', { bubbles: true })); r.getElement().scrollIntoView({ block: 'center' }); } return r; };
+    OMI.whenOpen(key => {
+      const name = key.slice(2);
+      if (key.startsWith('v:')) { const r = clickRow(vesselTable, d => d.name === name); }
+      else if (key.startsWith('o:')) clickRow(obTable, d => d.name === name);
+    });
+    OMI.whenOpen(name => clickRow(contractorTable, d => d.name === name || d.name.indexOf(name) === 0), 'owner');
+  }
+
   /* ─── Vessel Drilldown ─── */
   let selectedVessel = null;
 
@@ -910,6 +921,7 @@
       ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
     `;
 
+    OMI.related('unit', vessel, document.getElementById('vessel-detail-grid'));
     const panel = document.getElementById('vessel-drilldown');
     panel.classList.add('open');
     setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
@@ -998,6 +1010,7 @@
       ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
     `;
 
+    OMI.related('unit', item, document.getElementById('ob-detail-grid'));
     const panel = document.getElementById('ob-drilldown');
     panel.classList.add('open');
     setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
@@ -1151,6 +1164,7 @@
       renderContractorTable(data);
       renderVesselTable(data);
       renderOrderbookTable(data);
+      deepLinks();
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') { closeObDrilldown(); closeVesselDrilldown(); }
       });

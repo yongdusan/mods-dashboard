@@ -954,8 +954,11 @@
       } else {
         row.getElement().classList.add('row-selected');
         renderDrillDown(company);
+        OMI.related('company', company, document.getElementById('company-overview-section'));
       }
     });
+    const clickRow = (t, pred) => { const r = t && t.getRows().find(x => pred(x.getData())); if (r) { r.getElement().dispatchEvent(new MouseEvent('click', { bubbles: true })); r.getElement().scrollIntoView({ block: 'center' }); } return r; };
+    OMI.whenOpen(name => clickRow(comparisonTable, d => d.name === name));
   }
 
   /* ─── Render company overview ─── */

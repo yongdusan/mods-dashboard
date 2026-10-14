@@ -675,6 +675,8 @@
       searchQuery = e.target.value.trim();
       filterAndRender();
     });
+    // news.html#q=<term> from other pages' "Related" links
+    OMI.whenOpen(q => { searchInput.value = q; searchInput.dispatchEvent(new Event('input')); }, 'q');
   }
 
   /* ─── Render Header Meta ─── */
