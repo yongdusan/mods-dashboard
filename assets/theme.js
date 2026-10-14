@@ -230,7 +230,7 @@
     'Asset Type': '자산 유형', 'Data Freshness': '확인 시점', 'FID Date': 'FID 일자', 'Current Contract': '현재 계약',
     'Operation Area': '작업 해역', 'Rig Specifications': '리그 사양', 'Dayrate': '용선료', 'Build Yard': '건조 조선소',
     'Generation': '세대', 'Max Drill Depth': '최대 굴착 심도', 'Max Water Depth': '최대 수심', 'BOP Rating': 'BOP 등급', 'DP Class': 'DP 등급',
-    'Redeployment': '재배치', 'On Charter': '용선 중', 'Idle/Warm Stacked': '유휴 / 웜 스택',
+    'Redeployment': '재배치', 'Hook-up & Commissioning': '설치·시운전', 'On Charter': '용선 중', 'Idle/Warm Stacked': '유휴 / 웜 스택',
     '▼ more': '▼ 더보기', '▲ less': '▲ 접기', 'Original article': '원문 기사',
     // subtitles / footer / misc
     'Rigs': '리그', 'Floaters': '부유식 설비',
@@ -603,6 +603,12 @@
     if (!dataCache[f]) dataCache[f] = fetch('data/' + f + '.json').then(function (r) { return r.json(); });
     return dataCache[f];
   }
+  // A unit's own name, without the field alias in brackets: "P-31 (Albacora)" → P-31.
+  // Aliases are fine for direct field matches but too loose for "mentioned in notes".
+  function primaryKeys(n) {
+    n = String(n || '').trim();
+    return [n, n.replace(/\s*\([^)]*\)\s*$/, '')].filter(function (s, i, a) { return s.length >= 4 && a.indexOf(s) === i; });
+  }
   function hitText(text, key) { return hits(String(text || '').toLowerCase(), key); }
   function anyKey(text, keys) { for (var i = 0; i < keys.length; i++) if (hitText(text, keys[i])) return true; return false; }
   function link(href, label, meta) {
@@ -631,14 +637,14 @@
       if (kind === 'project') {
         var pk = nameKeys(rec.project);
         var direct = units.filter(function (u) { return anyKey(u.v.field, pk) || anyKey(u.v.name, pk); });
-        var ment = units.filter(function (u) { return direct.indexOf(u) < 0 && anyKey(rec.project + ' ' + (rec.notes || ''), nameKeys(u.v.name)); });
+        var ment = units.filter(function (u) { return direct.indexOf(u) < 0 && anyKey(rec.project + ' ' + (rec.notes || ''), primaryKeys(u.v.name)); });
         var ul = function (u) { return link(openHref('fpso.html', u.k + u.v.name), u.v.name, [u.k === 'o:' ? (ko ? '건조 중' : 'orderbook') : u.v.status, u.v.owner].filter(Boolean).join(' · ')); };
         add(ko ? '이 프로젝트의 FPSO·FLNG' : 'FPSO / FLNG for this project', direct.map(ul));
         add(ko ? '메모에 언급된 설비' : 'Units mentioned in notes', ment.map(ul));
         add(ko ? '관련 뉴스' : 'Related news', newsFor(pk));
         add(ko ? '더 보기' : 'More', [link('news.html#q=' + encodeURIComponent(rec.company), (ko ? rec.company + ' 뉴스 전체' : 'All ' + rec.company + ' news') + ' →')]);
       } else if (kind === 'unit') {
-        var uk = nameKeys(rec.name);
+        var uk = primaryKeys(rec.name);
         var dp = P.filter(function (p) { return anyKey(rec.field, nameKeys(p.project)) || anyKey(rec.name, nameKeys(p.project)); });
         var mp = P.filter(function (p) { return dp.indexOf(p) < 0 && anyKey(p.project + ' ' + (p.notes || ''), uk); });
         var pl = function (p) { return link(openHref('pipeline.html', p.id), p.project, [p.company, p.phase].join(' · ')); };

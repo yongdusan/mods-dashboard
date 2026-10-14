@@ -248,26 +248,26 @@
             "region": "South America",
             "type": "Deepwater FPSO",
             "status": "Under Development",
-            "capacity_kboed": 180,
-            "notes": "Stabroek 5번째 개발. FID 2024. 2027년 first oil 목표.",
+            "capacity_kboed": 150,
+            "notes": "Stabroek 7번째 개발. FID 2025-09(US$6.8B). 첫 생산 2029 목표. FPSO는 MODEC EPCI. [2026-10-14 정정] 기존 5번째·FID 2024·2027 첫 생산·Jaguar(SBM)·180k는 Whiptail 등과 혼동된 값 — ExxonMobil 발표(2025-09-22)·OGJ(2025-10-13) 기준으로 수정, 매장량·피크 연도·시추 수요는 출처 없어 null.",
             "detail": {
               "operator": "ExxonMobil (45%)",
               "partners": [
                 "Hess/Chevron 30%",
                 "CNOOC 25%"
               ],
-              "water_depth_m": 1600,
-              "reserves_mmboe": 450,
-              "fid": "2024-Q2",
-              "first_oil": "2027 (예정)",
-              "peak_year": "2028",
-              "vessel": "Jaguar FPSO (SBM Offshore)",
-              "rig_demand": "드릴십 2기 — 2025~2027년 집중 개발 시추",
-              "source": "ExxonMobil IR / Rystad Energy",
-              "first_oil_en": "2027 (planned)",
-              "rig_demand_en": "2 drillships — intensive development drilling 2025–2027"
+              "water_depth_m": 1025,
+              "reserves_mmboe": null,
+              "fid": "2025-09",
+              "first_oil": "2029 (예정)",
+              "peak_year": null,
+              "vessel": "Hammerhead FPSO (MODEC)",
+              "rig_demand": null,
+              "source": "ExxonMobil news release 2025-09-22; OGJ 2025-10-13",
+              "first_oil_en": "2029 (planned)",
+              "rig_demand_en": null
             },
-            "notes_en": "5th Stabroek development. FID 2024. First oil targeted 2027."
+            "notes_en": "Stabroek's 7th development. FID Sep 2025 (US$6.8B). First oil targeted 2029. FPSO by MODEC (EPCI). [2026-10-14 correction] The previous 5th / FID 2024 / first oil 2027 / Jaguar (SBM) / 180k values were mixed up with Whiptail and others — corrected per ExxonMobil (2025-09-22) and OGJ (2025-10-13); reserves, peak year and rig demand unsourced → null."
           },
           {
             "name": "Whiptail (Guyana)",

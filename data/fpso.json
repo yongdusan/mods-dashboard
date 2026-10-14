@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -2716,6 +2716,46 @@
       "notes_en": "Itapu field, Santos Basin pre-salt, 200km off Rio de Janeiro. 100% owned and operated by Petrobras (Transfer of Rights + PSC). First production 2022-12-21. Built by Seatrium BrasFELS. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 1.6 MMbbl storage, production start Dec 2022. 2,010m WD unsourced → null.",
       "source_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-10/p-71-produzira-ate-150-mil-barrisdia-de-petroleo-na-bacia-de-santos",
       "verified": "2026-10-13"
+    },
+    {
+      "name": "Errea Wittu",
+      "type": "FPSO",
+      "owner": null,
+      "client": "ExxonMobil",
+      "field": "Uaru (Stabroek Block)",
+      "region": "South America",
+      "country": "Guyana",
+      "water_depth_m": 1690,
+      "oil_capacity_kboed": 250,
+      "storage_mmbbl": 2.0,
+      "contract_start": null,
+      "contract_end": null,
+      "status": "Hook-up & Commissioning",
+      "year_delivered": 2026,
+      "notes": "MODEC 건조, Uaru(Stabroek 5번째) 개발용. 2026-08 가이아나 해역 도착, 첫 생산 전 해상 준비·시운전 단계. 소유 구조는 출처에 명시 없어 null. [2026-10-14 감사] 신규 등록: OGJ(2026-08-24) 250k b/d·가스 540 MMcfd·저장 ~200만 bbl·수심 1,690m·spread mooring, MODEC 인도 확인.",
+      "notes_en": "Built by MODEC for Uaru (Stabroek's 5th development). Arrived off Guyana Aug 2026; offshore preparation and commissioning ahead of first oil. Ownership not stated in sources → null. [2026-10-14 audit] Added: OGJ (2026-08-24) confirms 250k b/d, 540 MMcfd gas, ~2 MMbbl storage, 1,690m WD, spread mooring, delivered by MODEC.",
+      "detail": {
+        "hull_type": null,
+        "yard": null,
+        "gas_capacity_mmscfd": 540,
+        "mooring": "Spread mooring",
+        "fid_date": "2023-04",
+        "partners": [
+          "ExxonMobil 45% op",
+          "Chevron 30% (ex-Hess)",
+          "CNOOC 25%"
+        ],
+        "partners_en": [
+          "ExxonMobil 45% op",
+          "Chevron 30% (ex-Hess)",
+          "CNOOC 25%"
+        ],
+        "financing": null,
+        "rig_demand": null,
+        "notable": null
+      },
+      "source_url": "https://www.ogj.com/exploration-development/news/55400232/exxon-mobil-guyana-receives-errea-wittu-fpso-at-uaru-field",
+      "verified": "2026-10-14"
     }
   ],
   "orderbook": [
@@ -2873,18 +2913,18 @@
       "verified": "2026-10-13"
     },
     {
-      "name": "FPSO Jaguar (Hammerhead)",
+      "name": "FPSO Jaguar (Whiptail)",
       "type": "FPSO",
       "owner": "ExxonMobil (built & operated by SBM; transferred before installation)",
       "client": "ExxonMobil",
-      "field": "Hammerhead (Stabroek Block)",
+      "field": "Whiptail (Stabroek Block)",
       "region": "South America",
       "yard": "SWS (CN) + Seatrium (SG)",
       "contract_value_busd": null,
       "oil_capacity_kboed": 250,
       "delivery": "2027-Q3",
       "status": "Under Construction",
-      "notes": "SBM Fast4Ward 선형. Stabroek 7번째 프로젝트(Hammerhead) FPSO. [정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu). [2026-10-13 감사] 용량 120→250k bpd(가스 540 MMscfd·저장 ~200만 bbl·수심 ~1,630m 확인). 소유: SBM 건조 후 설치 전 ExxonMobil로 이전(Sale & Operate), SBM 10년 운영. 계약액 4.2·공정률 30%는 출처 없어 null(SBM $1.5B는 프로젝트 금융액).",
+      "notes": "SBM Fast4Ward 선형. Stabroek 6번째 프로젝트(Whiptail) FPSO. [정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu). [2026-10-13 감사] 용량 120→250k bpd(가스 540 MMscfd·저장 ~200만 bbl·수심 ~1,630m 확인). 소유: SBM 건조 후 설치 전 ExxonMobil로 이전(Sale & Operate), SBM 10년 운영. 계약액 4.2·공정률 30%는 출처 없어 null(SBM $1.5B는 프로젝트 금융액). [2026-10-14 감사] 대상 필드 Hammerhead→Whiptail: SBM 수주 보도(offshore-mag 2024-04-12) \"awarded contracts ... for the Whiptail development project\". Hammerhead FPSO는 MODEC 별도 발주. 금융 구조 \"20년 장기 임대\"는 Sale & Operate와 상충해 정정, 시추 수요 문구는 출처 없어 삭제.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF5 신조 (SWS hull + Seatrium 통합)",
         "water_depth_m": 1630,
@@ -2893,27 +2933,67 @@
         "mooring": "Turret Mooring (SBM)",
         "fid_date": "2024-Q2",
         "construction_progress_pct": null,
-        "financing": "20년 장기 임대 (ExxonMobil)",
+        "financing": "Sale & Operate — SBM 건조 후 설치 전 ExxonMobil로 소유권 이전, SBM 10년 운영",
         "key_equipment": "SBM Fast4Ward 7호 선형 (MPF5 hull, SWS Shanghai 건조). Stabroek 블록 6번째 FPSO. Seatrium 상부 통합.",
-        "rig_demand": "드릴십 2기 동시 운용 — Hammerhead 개발정 집중 시추 2026~2028년",
+        "rig_demand": null,
         "partners": [
           "ExxonMobil 45% op",
           "Chevron 30% (구 Hess, 2025-07 인수 완료)",
           "CNOOC 25%"
         ],
         "hull_type_en": "SBM Fast4Ward MPF5 newbuild (SWS hull + Seatrium integration)",
-        "financing_en": "20-year long-term lease (ExxonMobil)",
+        "financing_en": "Sale & operate — built by SBM, ownership transferred to ExxonMobil before installation, SBM operates for 10 years",
         "key_equipment_en": "SBM Fast4Ward hull no. 7 (MPF5 hull, built by SWS Shanghai). 6th FPSO on the Stabroek Block. Topside integration at Seatrium.",
-        "rig_demand_en": "2 drillships operating simultaneously — intensive Hammerhead development drilling 2026–2028",
+        "rig_demand_en": null,
         "partners_en": [
           "ExxonMobil 45% op",
           "Chevron 30% (ex-Hess, acquisition completed Jul 2025)",
           "CNOOC 25%"
         ]
       },
-      "notes_en": "SBM Fast4Ward design. FPSO for Stabroek's 7th project (Hammerhead). [Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu). [2026-10-13 audit] Capacity 120→250k bpd (confirmed gas 540 MMscfd, ~2 MMbbl storage, ~1,630m WD). Ownership: built by SBM, transferred to ExxonMobil before installation (sale & operate), SBM operates 10 years. Contract value 4.2 and progress 30% unsourced → null (SBM's $1.5B is project financing).",
+      "notes_en": "SBM Fast4Ward design. FPSO for Stabroek's 6th project (Whiptail). [Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu). [2026-10-13 audit] Capacity 120→250k bpd (confirmed gas 540 MMscfd, ~2 MMbbl storage, ~1,630m WD). Ownership: built by SBM, transferred to ExxonMobil before installation (sale & operate), SBM operates 10 years. Contract value 4.2 and progress 30% unsourced → null (SBM's $1.5B is project financing). [2026-10-14 audit] Field Hammerhead→Whiptail: SBM award report (offshore-mag, 2024-04-12) \"awarded contracts ... for the Whiptail development project\". The Hammerhead FPSO is a separate MODEC order. Financing \"20-year lease\" conflicted with sale & operate and was corrected; unsourced drilling-demand line removed.",
       "source_url": "https://www.offshore-mag.com/vessels/article/55017838/sbm-offshore-will-construct-and-install-fpso-jaguar",
-      "verified": "2026-10-13"
+      "verified": "2026-10-14"
+    },
+    {
+      "name": "Hammerhead FPSO",
+      "type": "FPSO",
+      "owner": null,
+      "client": "ExxonMobil",
+      "field": "Hammerhead (Stabroek Block)",
+      "region": "South America",
+      "yard": null,
+      "contract_value_busd": null,
+      "oil_capacity_kboed": 150,
+      "delivery": null,
+      "status": "Under Construction",
+      "notes": "MODEC EPCI(가이아나 2번째 MODEC FPSO). 2025-04 제한적 착수지시(LNTP) 후 2025-10 Phase 2 EPCI 계약. 첫 생산 최조 2029(정부 승인 조건). MODEC 첫 생산부터 10년 O&M. 선박명·조선소·계약액·소유 구조는 미공시로 null. [2026-10-14 감사] 신규 등록: OGJ(2025-10-13) 150k b/d·수심 ~1,025m·spread mooring 확인.",
+      "notes_en": "MODEC EPCI (MODEC's 2nd FPSO in Guyana). Limited notice to proceed Apr 2025, Phase 2 EPCI contract Oct 2025. Earliest startup 2029, subject to government approvals. MODEC provides O&M for 10 years from first oil. Unit name, yard, contract value and ownership undisclosed → null. [2026-10-14 audit] Added: OGJ (2025-10-13) confirms 150k b/d, ~1,025m WD, spread mooring.",
+      "detail": {
+        "hull_type": null,
+        "mooring": "Spread mooring (SOFEC)",
+        "fid_date": "2025-09",
+        "water_depth_m": 1025,
+        "storage_mmbbl": null,
+        "gas_capacity_mmscfd": null,
+        "construction_progress_pct": null,
+        "financing": null,
+        "key_equipment": null,
+        "rig_demand": null,
+        "partners": [
+          "ExxonMobil 45% op",
+          "Chevron 30% (ex-Hess)",
+          "CNOOC 25%"
+        ],
+        "partners_en": [
+          "ExxonMobil 45% op",
+          "Chevron 30% (ex-Hess)",
+          "CNOOC 25%"
+        ]
+      },
+      "source_url": "https://ogj.com/drilling-production/production-operations/news/55322965/exxonmobil-guyana-advances-to-phase-2-for-hammerhead-fpso",
+      "verified": "2026-10-14",
+      "confidence": "high"
     },
     {
       "name": "Gato do Mato FPSO",
