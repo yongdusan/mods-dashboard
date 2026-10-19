@@ -1,8 +1,87 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 142,
+      "date": "2026-10-16",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Equinor exercises options for two more wells on Odfjell's Deepsea Atlantic",
+      "summary": "Equinor가 Odfjell Drilling 소유 2009년 건조 반잠수식 시추선 Deepsea Atlantic의 추가 2개 웰 옵션을 행사했습니다. 이로써 확정 계약 기간이 2027년 4분기 말까지 늘어나며, 기존 계약 요율이 그대로 적용됩니다. 이후 우선가격 옵션 2개 웰이 남아 있으며 계약 금액은 공개되지 않았습니다.",
+      "summary_en": "Equinor exercised priced options for two additional wells on Odfjell Drilling's 2009-built semi-submersible Deepsea Atlantic. The firm contract now runs to late Q4 2027 at the originally agreed rates, with priced options for two more wells remaining. The contract value was not disclosed.",
+      "companies": [
+        "Equinor",
+        "Odfjell Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/16/equinor-employs-2009-built-odfjell-drilling-rig-for-additional-wells"
+    },
+    {
+      "id": 141,
+      "date": "2026-10-14",
+      "sector": "Drilling",
+      "category": "Fleet",
+      "title": "Seadrill ordered to pay SFL about $55M after appeal ruling on Hercules rig",
+      "summary": "노르웨이 Borgarting 항소법원이 2022년 12월 반잠수식 시추선 Hercules 반환 시 Seadrill 자회사들이 계약을 위반했다고 만장일치로 판단했습니다. Seadrill은 보상금·지연이자·소송비용을 합쳐 약 NOK 5.25억(약 5,500만 달러)을 SFL에 지급해야 하며, 2025년 1심의 약 4,800만 달러보다 이자만큼 늘었습니다. 양측은 한 달 안에 대법원에 상고할 수 있습니다.",
+      "summary_en": "Norway's Borgarting Court of Appeal unanimously found that Seadrill's subsidiaries breached the contract when the semi-submersible Hercules was redelivered in December 2022. Seadrill must pay about NOK 525 million (roughly $55 million) in compensation, interest and legal costs to SFL, up from about $48 million in the 2025 first-instance ruling due to accrued interest. Either party may appeal to the Supreme Court within one month.",
+      "companies": [
+        "Seadrill",
+        "SFL"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/14/seadrill-hit-with-dollar55-million-bill-after-appeals-court-upholds-rig-breach-ruling"
+    },
+    {
+      "id": 140,
+      "date": "2026-10-14",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Petrobras to receive $859M from partners in Berbigão/Sururu balancing deal",
+      "summary": "Petrobras가 산토스 분지 Berbigão·Sururu 공유 저류층의 비용·물량 정산 합의에 따라 파트너 Shell(25%), TotalEnergies(22.5%), Petrogal(10%)로부터 순 약 8.59억 달러를 2026년 11월까지 받습니다. ANP가 승인한 합의로 2000년 9월 BM-S-11 계약 체결부터 2026년 4월 30일까지의 생산 수익, 투자·운영비, 로열티를 지분율에 맞춰 정산합니다. Petrobras 지분은 42.5%입니다.",
+      "summary_en": "Petrobras will receive a net of about $859 million by November 2026 from partners Shell (25%), TotalEnergies (22.5%) and Petrogal (10%) under cost and volume balancing agreements for the shared Berbigão and Sururu reservoirs in the Santos Basin. The ANP-approved deals reconcile production revenues, capex/opex and royalties from the BM-S-11 concession signing in September 2000 through April 30, 2026. Petrobras holds 42.5%.",
+      "companies": [
+        "Petrobras",
+        "Shell",
+        "TotalEnergies",
+        "Petrogal"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/14/petrobras-lands-dollar859-million-payout-from-oil-fields-deal-with-shell-totalenergies-and-petrogal"
+    },
+    {
+      "id": 139,
+      "date": "2026-10-13",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Seadrill wins rig awards in Asia, Africa and US Gulf; 2027 drillship capacity >85% booked",
+      "summary": "Seadrill이 West Carina(인도네시아, 확정 880일, 확정분 약 4.2억 달러, 2027년 상반기 시작)를 신규 수주하고 West Capella(말레이시아, 약 9,400만 달러 규모 연장)와 Sonangol Libongos(앙골라 Sonadrill, 2030년 1월까지)를 연장했습니다. Sevan Louisiana는 Kosmos와 미국 멕시코만에서 25일 계약을 맺었습니다. 2027년 드릴십 가동 가능 일수의 85% 이상이 계약됐습니다.",
+      "summary_en": "Seadrill won a new award for West Carina in Indonesia (880 days firm, about $420 million firm term, starting 1H 2027) and extended West Capella in Malaysia (about $94 million including unpriced days) and Sonangol Libongos in Angola with Sonadrill (committed through January 2030). Sevan Louisiana secured a 25-day job with Kosmos in the US Gulf starting November 2026. More than 85% of 2027 drillship days are now contracted.",
+      "companies": [
+        "Seadrill",
+        "Sonadrill",
+        "Kosmos"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/13/seadrill-scores-big-with-new-rig-awards-in-asia-africa-and-us-gulf"
+    },
+    {
+      "id": 138,
+      "date": "2026-10-12",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Transocean adds ~$1.1B backlog: Shell Norway job and Equinor approval for three rigs",
+      "summary": "Transocean이 Shell Norway와 Transocean Norge(반잠수식) 2개 웰(+1개 옵션, 약 120일, 약 6,200만 달러) 계약을 체결했습니다. 또 Equinor가 9월 말 Transocean Enabler·Encourage·Endurance 3척에 대한 최종 승인을 내려 약 10억 달러가 확정 backlog로 전환됐습니다. 총 계약 backlog는 약 11억 달러 증가했습니다.",
+      "summary_en": "Transocean secured a two-well contract (plus one option, about 120 days, about $62 million) with Shell Norway for the semi-submersible Transocean Norge. Equinor also gave final approval in late September for Transocean Enabler, Encourage and Endurance, converting about $1 billion into firm backlog. Total added backlog is about $1.1 billion.",
+      "companies": [
+        "Transocean",
+        "Shell",
+        "Equinor"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/12/shell-and-equinor-fuel-dollar11-billion-backlog-uptick-for-transocean"
+    },
     {
       "id": 137,
       "date": "2026-10-09",
