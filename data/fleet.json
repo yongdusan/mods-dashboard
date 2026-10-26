@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-26",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -67,9 +67,9 @@
     "valaris_jackups_2026_10_13_en": "All Valaris jack-ups reconciled to the 2026-08-05 FSR: 18 missing rigs added (North Sea HE, legacy, benign, leased to ARO); specs on the existing 10 corrected to FSR design and delivery year. Sold rigs excluded (104 and 109 Jun/Jul 2026, 111 recycled Sep 2026)."
   },
   "prev_week": {
-    "total": 144,
-    "on_contract": 102,
-    "idle_stacked": 42
+    "total": 162,
+    "on_contract": 119,
+    "idle_stacked": 43
   },
   "rigs": [
     {
@@ -2034,11 +2034,11 @@
       "contractor": "Dolphin Drilling",
       "type": "Semisubmersible",
       "water_depth_ft": 6000,
-      "status": "On Contract",
-      "operator": "Oil India",
+      "status": "Idle",
+      "operator": null,
       "location": "India",
       "contract_start": null,
-      "contract_end": "2026-10",
+      "contract_end": null,
       "day_rate_kusd": null,
       "specs": {
         "build_year": 1974,
@@ -2055,9 +2055,9 @@
       "source_url": "https://offshore-energy.biz/oil-india-keeps-dolphin-drillings-rig-on-offshore-assignment-through-october",
       "fleet_source_url": "https://www.dolphindrilling.com/our-fleet/blackford-dolphin",
       "confidence": "high",
-      "data_note": "[2026-10-13 감사] Idle→계약 중: Oil India 계약이 단기 연장을 거쳐 2026-10-15까지(2024-11 개시, 인도 동부 해역). 이후 계약 미발표. 수심 6,000ft·1974 취역·2008 개조 확인(Dolphin).",
+      "data_note": "[2026-10-26] 계약 중→Idle: Dolphin 2026-08-20 공시상 Oil India 계약 최종 종료일 2026-10-15가 지났고 추가 연장·후속 계약 공시 없음(공시 확인 시 재반영). [2026-10-13 감사] Idle→계약 중: Oil India 계약이 단기 연장을 거쳐 2026-10-15까지(2024-11 개시, 인도 동부 해역). 이후 계약 미발표. 수심 6,000ft·1974 취역·2008 개조 확인(Dolphin).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13 audit] Idle→On Contract: Oil India contract extended in short steps to 2026-10-15 (started Nov 2024, east of India). No follow-on contract announced. 6,000 ft WD, entered service 1974, upgraded 2008 confirmed (Dolphin)."
+      "data_note_en": "[2026-10-26] On Contract→Idle: per Dolphin's 2026-08-20 release the final Oil India contract end date of 2026-10-15 has passed; no further extension or follow-on announced (re-update if one is disclosed). [2026-10-13 audit] Idle→On Contract: Oil India contract extended in short steps to 2026-10-15 (started Nov 2024, east of India). No follow-on contract announced. 6,000 ft WD, entered service 1974, upgraded 2008 confirmed (Dolphin)."
     },
     {
       "name": "Paul B. Loyd Jr.",
