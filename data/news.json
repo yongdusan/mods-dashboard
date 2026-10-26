@@ -1,8 +1,68 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 146,
+      "date": "2026-10-25",
+      "sector": "Drilling",
+      "category": "Fleet",
+      "title": "Borr Drilling jack-up Prospector 5 sinks off Gabon; 5 still missing",
+      "summary": "Borr Drilling 소유 2014년 건조 잭업 Prospector 5가 10월 24일 가봉 해상 BW Energy Dussafu 광구에서 프리로드 작업 중 펀치스루로 안정성을 잃고 침몰했습니다. 탑승 115명 중 110명이 확인됐고 5명은 실종 상태로 수색이 진행 중입니다. BW Energy는 MaBoMo 설비 생산을 표준 절차에 따라 중단했으며 설비 손상과 해상 유출은 보고되지 않았습니다.",
+      "summary_en": "Borr Drilling's 2014-built jack-up Prospector 5 lost stability and sank after a punch-through during preload activities on 24 October at BW Energy's Dussafu license offshore Gabon. Of 115 people on board, 110 are accounted for and 5 remain missing as search and rescue continues. BW Energy shut in production at the MaBoMo facility under standard procedure, with no reported facility damage or discharge to sea.",
+      "companies": [
+        "Borr Drilling",
+        "BW Energy"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/25/rig-incident-110-rescued-5-still-missing-after-borr-drillings-jack-up-sinks-off-gabon-coast"
+    },
+    {
+      "id": 145,
+      "date": "2026-10-23",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "Yinson Production, PTSC achieve first oil at FSO PTSC Lac Da Vang offshore Vietnam",
+      "summary": "Yinson Production과 PTSC가 베트남 Cuu Long 분지 Block 15-1/05 Lac Da Vang 필드의 FSO PTSC Lac Da Vang에서 9월 27일 first oil을 달성했습니다. 계획된 2026년 4분기보다 앞선 일정이며, 저장 용량 46만 배럴에 10년 확정 용선(최대 5년 연장 옵션) 계약입니다. 필드 운영사는 Murphy Oil이고 생산은 2028년까지 증가할 전망입니다.",
+      "summary_en": "Yinson Production and PTSC achieved first oil on 27 September at the FSO PTSC Lac Da Vang serving the Lac Da Vang field, Block 15-1/05, Cuu Long Basin offshore Vietnam, ahead of the planned Q4 2026 schedule. The 460,000-barrel FSO is on a ten-year firm charter with options to extend up to five more years. Field operator Murphy Oil expects production to build through 2028.",
+      "companies": [
+        "Yinson Production",
+        "PTSC",
+        "Murphy Oil"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/23/yinson-production-ptsc-cheer-fsos-first-oil-at-southeast-asian-project"
+    },
+    {
+      "id": 144,
+      "date": "2026-10-22",
+      "sector": "FPSO/FLNG",
+      "category": "Outlook",
+      "title": "Equinor books Aibel for Wisting FPSO topsides FEED in Barents Sea",
+      "summary": "Equinor가 바렌츠해 Wisting 유전 FPSO 탑사이드의 FEED를 Aibel에 발주했으며, 엔지니어링·조달·프로젝트 관리 옵션이 포함됩니다. 작업은 2027년 말까지 약 250명 규모로 진행됩니다. 컨셉 선정은 2026년 말, FID는 2027년 말로 계획돼 있습니다.",
+      "summary_en": "Equinor has awarded Aibel the FEED for the topsides of the Wisting FPSO in the Barents Sea, with an option for engineering, procurement and project management. The work is expected to run to late 2027 with about 250 staff. Concept selection is planned towards the end of 2026 and FID for late 2027.",
+      "companies": [
+        "Equinor",
+        "Aibel"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/22/feed-job-for-barents-sea-fpso-topsides-goes-to-aibel"
+    },
+    {
+      "id": 143,
+      "date": "2026-10-19",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Transocean's drillship pair bags $550 million in new US Gulf deals",
+      "summary": "Transocean이 미국 멕시코만 초심해 드릴십 2척의 신규 계약을 확보했습니다. Deepwater Proteus는 10개 웰·약 700일(백로그 약 3.25억 달러, 2027년 1분기 시작), Deepwater Conqueror는 5개 웰·약 450일(약 2.25억 달러, 동원비 제외, 2027년 3분기 시작)입니다. 고객은 공개되지 않았습니다.",
+      "summary_en": "Transocean secured new ultra-deepwater contracts for two drillships in the U.S. Gulf. Deepwater Proteus has 10 wells over about 700 days (about $325M backlog, starting Q1 2027), and Deepwater Conqueror has 5 wells over about 450 days (about $225M excluding mobilization, starting Q3 2027). The customers were not disclosed.",
+      "companies": [
+        "Transocean"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://offshore-energy.biz/2026/10/19/transoceans-drillship-pair-bags-dollar550-million-in-new-us-gulf-deals"
+    },
     {
       "id": 142,
       "date": "2026-10-16",
@@ -1836,36 +1896,6 @@
       "source": "Kaieteur News",
       "url": "https://kaieteurnewsonline.com/2026/04/29/exxon-awards-new-rig-contract-to-noble-at-us375000-day-rate/",
       "summary_en": "ExxonMobil awarded Noble a rig contract offshore Guyana at $375,000 a day (Kaieteur News). Noble's July 2026 Fleet Status Report shows these terms (ExxonMobil Guyana, $375k, one well from October 2026) belong to the semi-submersible Noble Developer."
-    },
-    {
-      "id": 33,
-      "date": "2026-04-23",
-      "sector": "Drilling",
-      "category": "M&A",
-      "title": "Helix Energy and Hornbeck Offshore to Merge in $75M+ Synergy Deal",
-      "summary": "Helix Energy Solutions와 Hornbeck Offshore가 전액 주식 교환 방식으로 합병하기로 했습니다. Hornbeck 주주가 약 55%를 갖고 회사명은 Hornbeck(NYSE: HOS)을 유지하며, 3년 내 연 7,500만 달러 이상의 시너지를 예상합니다. 2026년 하반기 완료 목표입니다.",
-      "companies": [
-        "Helix Energy Solutions",
-        "Hornbeck Offshore Services"
-      ],
-      "source": "World Oil",
-      "url": "https://worldoil.com/news/2026/4/23/helix-and-hornbeck-combine-to-form-deepwater-offshore-services-leader/",
-      "summary_en": "Helix Energy Solutions and Hornbeck Offshore agreed to combine in an all-stock deal, with Hornbeck shareholders owning about 55% and the company keeping the Hornbeck name (NYSE: HOS). They expect at least $75 million of annual synergies within three years, with closing targeted for H2 2026.",
-      "fact_checked": "2026-10-08"
-    },
-    {
-      "id": 2,
-      "date": "2026-04-22",
-      "sector": "Drilling",
-      "category": "Contract",
-      "title": "Seadrill Adds $260M Backlog with U.S. Gulf Drillship Awards",
-      "summary": "Seadrill이 미국 걸프에서 드릴십 계약 2건을 따냈습니다. West Neptune은 2026년 9월부터 365일 연장, West Vela는 2026년 8월부터 270일 계약으로, 약 2억 6천만 달러의 백로그가 추가됐습니다.",
-      "companies": [
-        "Seadrill"
-      ],
-      "source": "World Oil",
-      "url": "https://worldoil.com/news/2026/4/22/seadrill-adds-260-million-backlog-with-u-s-gulf-drillship-awards/",
-      "summary_en": "Seadrill secured two drillship contract awards in the U.S. Gulf of Mexico. The West Neptune received a 365-day extension commencing September 2026, and the West Vela secured a 270-day contract starting August 2026, adding approximately $260 million in backlog."
     }
   ],
   "fact_check_note": "2026-10-08: 자동 작성(Haiku) 기사 86건을 원문과 대조해 요약 재작성(국/영), 오류 제목 정정, 2024년 기사 오등재 1건(id 34) 삭제."
