@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -68,8 +68,8 @@
   },
   "prev_week": {
     "total": 162,
-    "on_contract": 119,
-    "idle_stacked": 43
+    "on_contract": 118,
+    "idle_stacked": 44
   },
   "rigs": [
     {
@@ -4408,13 +4408,13 @@
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
       "status": "On Contract",
-      "operator": "Woodside",
+      "operator": "GB Energy",
       "location": "Australia",
-      "contract_start": "2025-11",
-      "contract_end": "2026-10",
-      "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Woodside, Australia, 2025-11~2026-10. Then GB Energy Nov 2026–Mar 2027 ($163k). Oct 2026: new 300-day Australia contract after current commitments (~$50M incl. options).",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Woodside, Australia, 2025-11–2026-10. Then GB Energy Nov 2026–Mar 2027 ($163k). Oct 2026: new 300-day Australia contract after current commitments (~$50M incl. options).",
+      "contract_start": "2026-11",
+      "contract_end": "2027-03",
+      "day_rate_kusd": 163,
+      "data_note": "FSR(2026-08-05): Woodside Australia 2025-11~2026-10 종료. 후속 GB Energy Nov 2026–Mar 2027 ($163k). Valaris 발표(2026-10-07): 현 계약 이후 300일 Australia 신규 계약(옵션 포함 ~$50M).",
+      "data_note_en": "FSR (2026-08-05): Woodside Australia 2025-11–2026-10 ended. Next: GB Energy Nov 2026–Mar 2027 ($163k). Valaris release (2026-10-07): new 300-day Australia contract after current commitments (~$50M incl. options).",
       "verified": "2026-10-13"
     },
     {
