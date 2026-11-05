@@ -1,8 +1,56 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-05",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 155,
+      "date": "2026-11-03",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "Shell sells North West Shelf stake to ADNOC's XRG for $1.45B",
+      "summary": "Shell이 호주 North West Shelf(NWS) 프로젝트 지분 16.67%를 ADNOC의 XRG에 매각하기로 합의했으며 대금은 14.5억 달러입니다. 서호주 Woodside 운영 LNG·가스 사업에서 Shell이 철수하는 거래입니다.",
+      "summary_en": "Shell agreed to sell its 16.67% stake in the North West Shelf (NWS) project to ADNOC's XRG for $1.45 billion. The deal marks Shell's exit from the Woodside-operated LNG and gas venture in Western Australia.",
+      "companies": ["Shell", "ADNOC XRG", "Woodside"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/03/shell-rakes-in-dollar145-billion-for-shedding-its-stake-in-australian-gas-and-lng-project"
+    },
+    {
+      "id": 154,
+      "date": "2026-11-03",
+      "sector": "FPSO/FLNG",
+      "category": "Fleet",
+      "title": "Wison lays keel for TPAO's ultra-deepwater FPU for Sakarya Phase 3",
+      "summary": "Wison New Energies가 10월 25일 난퉁 조선소에서 튀르키예 TPAO용 초심해 FPU의 용골을 놓았습니다. 흑해 Sakarya 가스전 3단계용이며 처리 용량은 최대 일 2,500만 m³입니다. 인도 일정은 기사에 명시되지 않았습니다.",
+      "summary_en": "Wison New Energies laid the keel on 25 October at its Nantong yard for an ultra-deepwater FPU for TPAO of Türkiye. It is for Phase 3 of the Sakarya gas field in the Black Sea, with capacity of up to 25 million cubic meters of gas per day. The article gives no delivery date.",
+      "companies": ["Wison New Energies", "TPAO"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/03/wison-new-energies-lays-keel-for-turkiyes-ultra-deepwater-fpu"
+    },
+    {
+      "id": 153,
+      "date": "2026-11-03",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Chevron extends ADES jack-up Shelf Drilling Tenacious in Angola to 2028",
+      "summary": "Chevron 자회사 CABGOC가 ADES의 2007년 건조 잭업 Shelf Drilling Tenacious의 1년 옵션을 행사했습니다. 규모는 약 1.95억 사우디리얄(약 5,200만 달러)이며 2027년 1분기 만료 후 2028년 2월경까지 앙골라 해상에서 작업합니다.",
+      "summary_en": "Chevron subsidiary CABGOC exercised a one-year option on ADES's 2007-built jack-up Shelf Drilling Tenacious, worth about SAR 195 million (around $52 million). The rig stays offshore Angola after the current term ends in Q1 2027, through about February 2028.",
+      "companies": ["ADES", "Chevron"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/03/chevron-keeps-ades-2007-built-jack-up-rig-busy-in-angolan-waters-for-another-year"
+    },
+    {
+      "id": 152,
+      "date": "2026-10-30",
+      "sector": "E&P/CAPEX",
+      "category": "Outlook",
+      "title": "Petrobras makes third Foz do Amazonas oil discovery with Morpho well",
+      "summary": "Petrobras가 Amapá 앞바다 약 175km, 수심 2,886m의 FZA-M-59 광구 Morpho 시추공에서 이 광구 세 번째 석유 발견을 발표했습니다. 8월과 10월 초 발견에 이은 것이며 드릴십 Foresea ODN II(NS-42)가 시추했고 다음은 Potiguar 분지 Mãe de Ouro 지점으로 이동합니다.",
+      "summary_en": "Petrobras announced its third oil discovery in block FZA-M-59 with the Morpho well, about 175 km off Amapá in 2,886 m of water, following finds in August and early October. The drillship Foresea ODN II (NS-42) drilled it and moves next to the Mãe de Ouro location in the Potiguar Basin.",
+      "companies": ["Petrobras", "Foresea"],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/10/30/petrobras-hits-paydirt-for-third-time-in-ultra-deep-amapa-waters-as-equatorial-margins-oil-arsenal-grows"
+    },
     {
       "id": 151,
       "date": "2026-10-30",
@@ -11,7 +59,12 @@
       "title": "Noble adds ~$560M of contracts; fleet backlog reaches $6.7B",
       "summary": "Noble이 7월 Fleet Status Report 이후 약 5.6억 달러 규모의 신규 계약을 확보해 10월 26일 기준 백로그가 67억 달러(mob/demob 제외)가 됐습니다. 드릴십 Noble BlackRhino(TotalEnergies, 나이지리아 4개 웰), Faye Kozack(Tullow, 가나 5개 웰), Globetrotter I(Oxy 페루 2개 웰 및 TotalEnergies 서아프리카 3년 용량 예약)와 노르웨이 잭업 Interceptor·Intrepid 계약이 포함됩니다.",
       "summary_en": "Noble secured about $560 million of new awards since its July fleet report, lifting backlog to $6.7 billion as of 26 October (excluding mobilization/demobilization revenue). Awards include drillships Noble BlackRhino (TotalEnergies, Nigeria, four wells), Faye Kozack (Tullow, Ghana, five wells) and Globetrotter I (Oxy in Peru, plus a three-year TotalEnergies capacity reservation in West Africa), and Norway jack-ups Interceptor and Intrepid.",
-      "companies": ["Noble Corporation", "TotalEnergies", "Tullow Oil", "Oxy"],
+      "companies": [
+        "Noble Corporation",
+        "TotalEnergies",
+        "Tullow Oil",
+        "Oxy"
+      ],
       "source": "Offshore Energy",
       "url": "https://offshore-energy.biz/2026/10/30/noble-rigs-dollar560-million-drilling-gigs-push-fleet-backlog-to-dollar67-billion"
     },
@@ -23,7 +76,10 @@
       "title": "SBM Offshore awards Seatrium South American FPSO integration contract",
       "summary": "SBM Offshore가 Seatrium에 남미 해양 프로젝트용 FPSO 통합 계약을 발주했으며 규모는 2억 싱가포르달러(약 1.57억 달러) 이상입니다. 계류·라이저 지지 구조물, 플레어 타워, 탑사이드 지지 구조물 제작과 선체 개조·드라이도킹, 탑사이드 모듈 통합 및 시운전 지원을 포함하고, 2026년 4분기 착수해 2029년 완료 예정입니다. 기사에는 FPSO 명칭이 명시되지 않았습니다.",
       "summary_en": "SBM Offshore has awarded Seatrium an FPSO integration contract for upcoming South American projects, worth more than S$200 million (about US$156.5 million). Scope covers mooring and riser support structures, a flare tower and topside support structures, plus vessel modification and drydocking, topside module integration and commissioning/sea trial support. Execution starts in Q4 2026 with completion in 2029; the article does not name the FPSO.",
-      "companies": ["SBM Offshore", "Seatrium"],
+      "companies": [
+        "SBM Offshore",
+        "Seatrium"
+      ],
       "source": "Offshore Energy",
       "url": "https://offshore-energy.biz/2026/10/30/sbm-offshore-tasks-seatrium-with-multimillion-dollar-south-american-fpso-job"
     },
@@ -35,7 +91,10 @@
       "title": "Shell starts Silvertip Phase 3 in US Gulf via Perdido spar",
       "summary": "Shell이 멕시코만 Perdido Regional Host 스파(수심 약 8,000피트)에 연결된 Silvertip 3단계에서 생산을 시작했습니다. Silvertip Frio 저류층 2개 웰을 기존 해저 설비에 연결했으며 피크 생산량은 일 6,000boe, 회수 가능 자원은 1,700만boe(2P)입니다. 3단계 지분은 Chevron 60%, Shell 40%입니다.",
       "summary_en": "Shell has started production from Silvertip Phase 3, tied into the Perdido Regional Host spar in about 8,000 feet of water in the US Gulf. Two wells in the Silvertip Frio reservoir connect to existing subsea infrastructure, with peak output of up to 6,000 boe/d and 17 million boe of 2P recoverable resources. Phase 3 partners are Chevron 60% and Shell 40%.",
-      "companies": ["Shell", "Chevron"],
+      "companies": [
+        "Shell",
+        "Chevron"
+      ],
       "source": "Offshore Energy",
       "url": "https://offshore-energy.biz/2026/10/28/shell-ups-its-production-ante-with-first-oil-from-us-gulf-projects-third-chapter"
     },
@@ -47,7 +106,10 @@
       "title": "Saipem wins ~$121M Eni rig jobs off Cyprus and Ghana",
       "summary": "Saipem이 Eni와 키프로스(드릴십 Saipem 10000)·가나(반잠수식 Scarabeo 9) 해상 시추 계약을 합계 약 1.21억 달러에 체결했습니다. Saipem 10000은 2026년 11월~2027년 1월 사이 착수 예정이며, 두 계약 모두 2026~2027년 가동률을 높입니다. 개별 계약 금액, 기간, 가나 착수 시점은 공개되지 않았습니다.",
       "summary_en": "Saipem signed Eni drilling contracts off Cyprus (drillship Saipem 10000) and Ghana (semisubmersible Scarabeo 9) worth about $121 million combined. Saipem 10000 is expected to start between November 2026 and January 2027, and both deals improve fleet utilization visibility for 2026-2027. The per-contract values, durations and Ghana start date were not disclosed.",
-      "companies": ["Saipem", "Eni"],
+      "companies": [
+        "Saipem",
+        "Eni"
+      ],
       "source": "Offshore Energy",
       "url": "https://offshore-energy.biz/2026/10/28/saipem-wins-multimillion-dollar-rig-jobs-with-eni-in-mediterranean-and-west-africa"
     },
@@ -59,7 +121,10 @@
       "title": "Keppel RigCo hires Seatrium to complete four legacy rigs for S$500M+",
       "summary": "Keppel의 RigCo가 기존 마스터 서비스 계약에 따라 Seatrium에 미완성 리그 4기(7세대 드릴십 1, harsh environment 잭업 1, 반잠수식 2) 완공을 5억 싱가포르달러(약 3.91억 달러) 이상에 맡겼습니다. 드릴십은 2027년, 잭업은 2028년 인도 예정이며 나머지 2기는 계획을 검토 중입니다. 신규 장기 용선 또는 Keppel Offshore Fund를 통한 매각이 목적입니다.",
       "summary_en": "Keppel's RigCo has engaged Seatrium under an existing master services arrangement to finish four legacy rigs (one seventh-generation drillship, one harsh-environment jack-up and two semisubmersibles) for over S$500 million (about $391 million). The drillship is expected in 2027 and the jack-up in 2028, while plans for the other two are still being assessed. The rigs target new long-term charters or sale via the Keppel Offshore Fund.",
-      "companies": ["Keppel", "Seatrium"],
+      "companies": [
+        "Keppel",
+        "Seatrium"
+      ],
       "source": "Offshore Energy",
       "url": "https://offshore-energy.biz/2026/10/26/seatrium-rakes-in-millions-with-keppels-rigco-to-revive-four-stranded-rigs"
     },
@@ -1804,50 +1869,6 @@
       "source": "Seadrill IR",
       "url": "https://www.seadrill.com/investors/financial-information/",
       "summary_en": "Seadrill reported Q1 2026 revenue of $358 million with economic utilization of 95% (84% a year earlier). It finished the West Capella and West Jupiter reactivations early, added over $860 million of contracts lifting backlog to $3.1 billion, and raised 2026 guidance to revenue of $1.43-1.48 billion and EBITDA of $370-420 million."
-    },
-    {
-      "id": 28,
-      "date": "2026-05-07",
-      "sector": "FPSO/FLNG",
-      "category": "Contract",
-      "title": "BW Offshore Extends FPSO BW Catcher Contract Through 2030",
-      "summary": "BW Offshore가 Catcher 유전 파트너들과 FPSO BW Catcher 계약을 변경해 종료 시점을 2030년 12월 31일(±6개월)로 정했습니다. 약 4억 9천만 달러의 확정 영업현금흐름 백로그가 추가되고, 고사양 가혹환경 FPSO의 재배치 가시성도 높아집니다.",
-      "companies": [
-        "BW Offshore"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/05/07/3290360/0/en/bw-offshore-bw-catcher-contract-extension.html",
-      "summary_en": "BW Offshore amended the FPSO BW Catcher contract with the Catcher field partners, setting a defined end-of-term framework to December 31, 2030 plus or minus six months. The revised terms are expected to add about $490 million of firm operating cash-flow backlog and improve redeployment visibility for the high-specification harsh-environment FPSO."
-    },
-    {
-      "id": 27,
-      "date": "2026-05-07",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "SBM Offshore Q1 2026 Revenue Jumps to $3.5B; Guidance Raised",
-      "summary": "SBM Offshore의 2026년 1분기 누적 directional 매출이 35억 달러를 기록했습니다. 연간 directional 매출 가이던스를 69억 달러 이상으로 높였고 EBITDA 가이던스는 약 18억 달러를 유지했으며, ExxonMobil 가이아나 Longtail FEED와 Fast4Ward MPF 선체 2척 신규 발주도 발표했습니다.",
-      "companies": [
-        "SBM Offshore",
-        "ExxonMobil"
-      ],
-      "source": "SBM Offshore",
-      "url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-first-quarter-2026-trading-update/",
-      "summary_en": "SBM Offshore reported year-to-date Directional revenue of $3.5 billion for Q1 2026, raised full-year Directional revenue guidance to above $6.9 billion and maintained baseline Directional EBITDA guidance around $1.8 billion. The update also highlighted the ExxonMobil Guyana Longtail FEED award and two new Fast4Ward MPF hull orders."
-    },
-    {
-      "id": 40,
-      "date": "2026-05-06",
-      "sector": "Drilling",
-      "category": "M&A",
-      "title": "Transocean-Valaris $5.8B Merger Faces DOJ Second Request, Closing Delayed to H2 2026",
-      "summary": "미국 법무부(DOJ)가 Transocean의 Valaris 인수($5.8B) 건에 대해 추가 자료 제출 요청(Second Request)을 발부하며 합병 일정이 지연됐다. 두 회사는 합병 시 드릴십 33척을 포함한 73척 리그를 보유한 기업가치 $17B 규모의 최대 offshore drilling 업체가 탄생할 예정이다. 양사는 DOJ와 협조적 검토 절차를 지속 중이며 거래 완료는 2026년 하반기로 예상된다.",
-      "companies": [
-        "Transocean",
-        "Valaris"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/transoceans-5-8-billion-merger-with-valaris-pending-us-antitrust-clearance/",
-      "summary_en": "The US Department of Justice issued a Second Request on Transocean's $5.8 billion acquisition of Valaris, delaying the timetable. The combined company would own 73 rigs including 33 drillships, with an enterprise value of about $17 billion; closing was then expected in H2 2026."
     }
   ],
   "fact_check_note": "2026-10-08: 자동 작성(Haiku) 기사 86건을 원문과 대조해 요약 재작성(국/영), 오류 제목 정정, 2024년 기사 오등재 1건(id 34) 삭제."
