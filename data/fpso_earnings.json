@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-11-05",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -1258,6 +1258,33 @@
             "After quarter-end, parent guarantee released on Agogo FPSO senior financing; $131.5M bank financing secured for FSO Block B (May)",
             "Technical uptime 99.8%, commercial performance 102.2%; FSO Lac Da Vang first oil expected Q4 2026",
             "Audited FY2026 figures revised slightly lower (Q4 revenue $301M, Adj EBITDA $192M) — reflects $14M Agogo inventory cost"
+          ]
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_musd": 312,
+          "adj_ebitda_musd": 205,
+          "ebitda_margin_pct": 65.7,
+          "units_on_lease": null,
+          "backlog_busd": null,
+          "source": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Enterprise Reporting 매출·Adj EBITDA는 The Star(2026-10-20) 보도 기준(2등급, 원문 PDF 미확인); 백로그·가동 유닛 수는 Q2 기준 미확인으로 null",
+          "highlights": [
+            "Yinson Production Enterprise Reporting 매출 $312M(전년 동기 $261M), Adj EBITDA $205M(전년 동기 $135M) — 2026.05~07 분기",
+            "Yinson Holdings 그룹 매출 RM1.136B(전년 동기 RM1.364B, EPCIC 활동 감소), EBITDA RM665M, 순이익 RM128M(+26.7%)",
+            "FPSO Maria Quitéria 연간 용선료 인상 및 가동일수 증가 기여; Agogo FPSO 신규 $1.5B 프로젝트 본드(쿠폰 6.5%) 재조달, $383M 후순위 대출 조기 상환(일회성 금융비용 약 $10M)",
+            "FSO PTSC Lac Da Vang: 8월 7일 현장 도착, 최종 시운전 중 — first oil 및 용선 개시 2026년 4분기 예정",
+            "PTSC Asia Pacific(Yinson 49%)이 Murphy Oil과 Cuu Long Bac 프로젝트 계약(초기 10년, 최대 약 $416M)",
+            "ER 기준 감가상각 증가로 Yinson Production 주주귀속 손실 $7M(전년 $32M 이익); 제2차 중간배당 1센/주"
+          ],
+          "source_url": "https://www.thestar.com.my/business/business-news/2026/10/20/higher-depreciation-clouds-yinsons-earnings-outlook",
+          "source_en": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Enterprise Reporting revenue and Adj EBITDA per The Star (2026-10-20; tier-2 source, original PDF not checked); backlog and units on lease not confirmed for Q2, set to null",
+          "highlights_en": [
+            "Yinson Production Enterprise Reporting revenue $312M (prior-year quarter $261M), Adj EBITDA $205M (prior-year $135M) — May–Jul 2026 quarter",
+            "Yinson Holdings group revenue RM1.136B (prior-year RM1.364B, lower EPCIC activity), EBITDA RM665M, net profit RM128M (+26.7%)",
+            "FPSO Maria Quitéria annual charter-rate escalation and more operating days contributed; Agogo FPSO refinanced with a new $1.5B project bond (6.5% coupon), $383M junior loan repaid early (one-off financing cost ~$10M)",
+            "FSO PTSC Lac Da Vang: arrived at field 7 August, in final commissioning — first oil and charter start expected Q4 2026",
+            "PTSC Asia Pacific (49% Yinson) holds a Murphy Oil contract for the Cuu Long Bac project (10-year initial term, up to ~$416M)",
+            "Higher ER depreciation led to a $7M loss attributable to Yinson Production shareholders (prior year $32M profit); second interim dividend 1 sen/share"
           ]
         }
       ]

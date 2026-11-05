@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-11-05",
   "companies": [
     {
       "name": "Transocean",
       "ticker": "RIG",
-      "note": "Acquiring Valaris for $5.8B (announced Feb 2026); closing expected Q4 2026 per Valaris Q2 release (Aug 5, 2026). Q2 2026 reported Aug 5.",
+      "note": "Acquiring Valaris for $5.8B (announced Feb 2026); all regulatory approvals received; closing expected on or about Dec 1, 2026 (Q3 releases, Nov 2, 2026). Q3 2026 reported Nov 2.",
       "company_profile": {
         "founded": 1953,
         "hq": "Steinhausen, Switzerland",
@@ -210,13 +210,41 @@
             "FY2026 guidance: revenue $3,900–3,975M (raised from $3,800–3,900M at Q1), liquidity $1,250–1,350M, CAPEX $150M",
             "FCF $212M, total liquidity $1.3B+ (including undrawn RCF)"
           ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 937,
+          "adj_ebitda_musd": 313,
+          "ebitda_margin_pct": 33.4,
+          "utilization_pct": 75,
+          "avg_day_rate_kusd": 463,
+          "backlog_busd": 8.0,
+          "source": "Q3 2026 Earnings (Nov 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001451505/000145150526000083/rig-ex99d1.htm",
+          "highlights": [
+            "Q3 2026 매출 $937M, Adj EBITDA $313M(마진 33.4%), 순이익 $26M — 매출은 Q2($966M) 대비 감소, EBITDA는 소폭 증가",
+            "함대 가동률 74.7% (UDW 67.6% / HE 95.1%), 평균 일일 수익 $462.6k, 수익 효율 96.8%",
+            "8월 이후 신규 9건 계약으로 약 $2.0B 추가(가중평균 ~$423k/day) — Backlog 약 $8.0B(11/2 기준), 2027년 계약 커버리지 약 95%",
+            "Deepwater Aquila 잔여 채권 $200M 조기 상환 — 총 부채 $4,975M(전분기 대비 $132M 감소), 총 유동성 $1.3B",
+            "Valaris 합병: 모든 규제 승인 완료, 2026-12-01 전후 종결 예정; 연 $200M 시너지 목표",
+            "Q4 매출 가이던스 $915–965M, FY2026 $3,900–3,950M; FY2027 예비 가이던스 $3,850–4,000M"
+          ],
+          "source_en": "Q3 2026 Earnings (Nov 2026)",
+          "highlights_en": [
+            "Q3 2026 revenue $937M, Adj EBITDA $313M (33.4% margin), net income $26M — revenue down from Q2 ($966M), EBITDA slightly up",
+            "Fleet utilization 74.7% (UDW 67.6% / HE 95.1%), average daily revenue $462.6k, revenue efficiency 96.8%",
+            "Nine new fixtures since August added about $2.0B (weighted average ~$423k/day) — backlog ~$8.0B (as of 11/2), ~95% of 2027 contracted",
+            "Retired remaining $200M of Deepwater Aquila notes early — total debt $4,975M (down $132M q/q), total liquidity $1.3B",
+            "Valaris merger: all regulatory approvals received, closing expected on or about 2026-12-01; $200M annual synergy target",
+            "Q4 revenue guidance $915–965M, FY2026 $3,900–3,950M; preliminary FY2027 $3,850–4,000M"
+          ]
         }
       ]
     },
     {
       "name": "Valaris",
       "ticker": "VAL",
-      "note": "Merger with Transocean pending ($5.8B, announced Feb 2026); on track to close in Q4 2026 (Q2 release, Aug 5, 2026). Earnings calls discontinued.",
+      "note": "Merger with Transocean pending ($5.8B, announced Feb 2026); all regulatory approvals received; closing expected on or about Dec 1, 2026 (Q3 release, Nov 2, 2026). Earnings calls discontinued.",
       "company_profile": {
         "founded": 1975,
         "hq": "Hamilton, Bermuda / Houston, USA",
@@ -420,6 +448,34 @@
             "Backlog $4.585B (as of 2026-08-05; drillships $3.0B / jack-ups $1.1B)",
             "Revenue efficiency 98%; merger and integration costs $11M (Q1 $14M)",
             "Transocean merger expected to close Q4 2026 (on track) — still no earnings calls"
+          ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 594,
+          "adj_ebitda_musd": 151,
+          "ebitda_margin_pct": 25.4,
+          "utilization_pct": 62,
+          "avg_day_rate_kusd": 469,
+          "backlog_busd": 4.75,
+          "source": "Q3 2026 Earnings (Nov 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0000314808/000031480826000152/a09302026ex991pressrelease.htm",
+          "highlights": [
+            "Q3 2026 매출 $593.6M, Adj EBITDA $150.6M (Q2 $96.5M), 순이익 $46.7M — 중동 분쟁 영향 약 $24M 반영(Q2 $30M)",
+            "Drillship 전체 가동률 62%(Q2 52%), 평균 요율 $469k/day; 활성 10척 모두 계약 중 (DS-15 9월 신규 계약, DS-18 분기 후 개시)",
+            "Jackup 가동률 64%, 평균 $131k/day; VALARIS 250·116 ARO 장기 베어보트 용선 재개",
+            "백로그 $4,750M (2026.11.02 기준; Drillship $2.9B / Jackup $1.17B / 임대·관리 리그 $0.68B) — Q2 이후 약 $600M 신규",
+            "VALARIS MS-1·111·109 매각, 분기 중 처분 수익 $42.3M",
+            "Transocean 합병 규제 승인 완료, 2026-12-01 전후 종결 예정 — 어닝스 콜·가이던스 미제공"
+          ],
+          "source_en": "Q3 2026 Earnings (Nov 2026)",
+          "highlights_en": [
+            "Q3 2026 revenue $593.6M, Adj EBITDA $150.6M (Q2 $96.5M), net income $46.7M — includes ~$24M Middle East conflict impact (Q2 $30M)",
+            "Drillship total-fleet utilization 62% (Q2 52%), average rate $469k/day; all ten active drillships on contract (DS-15 started a new contract in September, DS-18 after quarter end)",
+            "Jack-up utilization 64%, average $131k/day; VALARIS 250 and 116 resumed long-term bareboat charters with ARO",
+            "Backlog $4,750M (as of 2026-11-02; drillships $2.9B / jack-ups $1.17B / leased and managed rigs $0.68B) — about $600M added since Q2",
+            "Sold VALARIS MS-1, 111 and 109; Q3 asset disposition proceeds $42.3M",
+            "Transocean merger has all regulatory approvals, closing expected on or about 2026-12-01 — no earnings calls or guidance"
           ]
         }
       ]
@@ -633,6 +689,34 @@
             "Refinanced $800M of legacy Diamond notes into 6.250% unsecured notes due 2034 — $35M annual cash savings",
             "Net loss $37M, FCF -$59M; Q3 dividend of $0.50/share declared"
           ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 684,
+          "adj_ebitda_musd": 201,
+          "ebitda_margin_pct": 29.4,
+          "utilization_pct": 66,
+          "avg_day_rate_kusd": 403,
+          "backlog_busd": 6.7,
+          "source": "Q3 2026 Earnings (Oct 2026) — revenue는 contract drilling 기준(총매출 $729M); 가동률·요율은 floater 기준",
+          "source_url": "https://www.placera.se/pressmeddelanden/noble-noble-corporation-plc-announces-third-quarter-2026-results-20261026",
+          "highlights": [
+            "Contract drilling services 매출 $684M (Q2 $679M), 총매출 $729M, Adj EBITDA $201M(Q2 $212M), 순손실 $117M",
+            "Floater 가동률 66%(Q2 64%), 평균 floater 요율 $403k/day; 잭업 가동률 86%, 평균 $208k/day",
+            "신규 계약 약 $560M(Noble BlackRhino TotalEnergies 나이지리아, Faye Kozack Tullow 가나, Globetrotter I Oxy 페루 $400k/day 등) — Backlog $6.7B (10/26 기준)",
+            "FY2026 가이던스: 매출 $2,850–2,900M(기존 $2,800–2,900M), Adj EBITDA $850–900M(기존 $850–925M), CAPEX $680–705M(기존 $615–665M)",
+            "FCF -$48M; Noble Resolve 매각 종결, Globetrotter II($38M) 4분기 종결 예정; Q4 배당 $0.50/주",
+            "경영진: 2027년 하반기부터 가동률·현금흐름의 의미 있는 반등 기대"
+          ],
+          "source_en": "Q3 2026 Earnings (Oct 2026) — revenue on a contract-drilling basis (total revenue $729M); utilization and rate are floater figures",
+          "highlights_en": [
+            "Contract drilling services revenue $684M (Q2 $679M), total revenue $729M, Adj EBITDA $201M (Q2 $212M), net loss $117M",
+            "Floater utilization 66% (Q2 64%), average floater rate $403k/day; jack-up utilization 86%, average $208k/day",
+            "About $560M of new contracts (Noble BlackRhino with TotalEnergies in Nigeria, Faye Kozack with Tullow in Ghana, Globetrotter I with Oxy in Peru at $400k/day, etc.) — backlog $6.7B (as of 10/26)",
+            "FY2026 guidance: revenue $2,850–2,900M (was $2,800–2,900M), Adj EBITDA $850–900M (was $850–925M), CAPEX $680–705M (was $615–665M)",
+            "FCF -$48M; Noble Resolve sale closed, Globetrotter II ($38M) expected to close in Q4; Q4 dividend $0.50/share",
+            "Management expects a meaningful inflection in utilization and cash flow starting H2 2027"
+          ]
         }
       ]
     },
@@ -843,6 +927,34 @@
             "Economic utilization 96%, average contract rate $360k/day",
             "~$200M of new contracts: West Vela US Gulf 1 year (~$161M), West Capella Malaysia extension (~$26M) — backlog ~$2.9B (as of 8/10)",
             "~$20M of share buybacks (program extended to end-2026); senior notes refinanced to 2034 maturity, RCF increased to $300M (due 2031)"
+          ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 428,
+          "adj_ebitda_musd": 121,
+          "ebitda_margin_pct": 28.3,
+          "utilization_pct": 94.5,
+          "avg_day_rate_kusd": 376,
+          "backlog_busd": 3.3,
+          "source": "Q3 2026 Earnings (Nov 2026)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001737706/000173770626000029/seadrillpressreleaseq32026.htm",
+          "highlights": [
+            "매출 $428M (Q2 $449M), Adj EBITDA $121M(Q2 $144M), 순손실 $30M — 법적 충당금 반영",
+            "경제적 가동률 94.5%(Q2 95.5%), 평균 계약 요율 $376k/day, 평균 가동 리그 9기(Q2 10기)",
+            "8월 FSR 이후 신규 계약·연장 약 $800M: West Carina 인도네시아 880일 확정(~$420M), West Capella 말레이시아 옵션 행사(~$41M), Sonangol Libongos 앙골라 약 3년 연장, Sevan Louisiana 미국 걸프",
+            "Backlog 약 $3.3B (11/3 기준); 2027년 가용 드릴십 일수의 85% 이상 계약",
+            "FY2026 가이던스 상향: 매출 $1.56–1.58B(기존 $1.50–1.55B, 환급매출 $90M 제외), Adj EBITDA $440–460M(기존 $420–450M), CAPEX $210–230M",
+            "FCF $179M, 자사주 약 $22M 매입; 총차입 $750M, 순부채 $244M"
+          ],
+          "source_en": "Q3 2026 Earnings (Nov 2026)",
+          "highlights_en": [
+            "Revenue $428M (Q2 $449M), Adj EBITDA $121M (Q2 $144M), net loss $30M — includes a legal provision",
+            "Economic utilization 94.5% (Q2 95.5%), average contractual rate $376k/day, average rigs on contract 9 (Q2 10)",
+            "~$800M of new awards and extensions since the August FSR: West Carina Indonesia 880 firm days (~$420M), West Capella Malaysia options exercised (~$41M), Sonangol Libongos Angola extended ~3 years, Sevan Louisiana US Gulf",
+            "Backlog ~$3.3B (as of 11/3); over 85% of available drillship days contracted for 2027",
+            "FY2026 guidance raised: revenue $1.56–1.58B (was $1.50–1.55B; excludes $90M reimbursables), Adj EBITDA $440–460M (was $420–450M), CAPEX $210–230M",
+            "FCF $179M, ~$22M of share buybacks; gross debt $750M, net debt $244M"
           ]
         }
       ]

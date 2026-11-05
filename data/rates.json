@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-11-05",
   "data_quality": {
     "day_rates": {
       "confidence": "mixed",
@@ -75,9 +75,9 @@
       "date": "2026-07",
       "rig_type": "Drillship",
       "tier": "Ultra-deepwater",
-      "rate_kusd": 450,
-      "source": "Indicative (Q3 진행 중) — Noble Q2 2026 release(2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. Q3 실적(11월) 발표 시 실제 평균으로 교체",
-      "source_en": "Indicative (Q3 in progress) — Noble Q2 2026 release (2026-07-27): Tier-1 drillship leading-edge dayrate 'mid $400Ks'. To be replaced with the actual average at Q3 results (November)"
+      "rate_kusd": 438,
+      "source": "Q3 2026 actual — 컨트랙터 평균 dayrate(RIG UDW floaters $442.1K / VAL drillships $469K / NE floaters $403.1K, Nov 2026)",
+      "source_en": "Q3 2026 actual — contractor average dayrates (RIG UDW floaters $442.1K / VAL drillships $469K / NE floaters $403.1K, Nov 2026)"
     },
     {
       "date": "2025-01",
