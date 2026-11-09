@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -509,7 +509,7 @@
       "operator": null,
       "location": "Australia",
       "contract_start": "2026-08",
-      "contract_end": "2026-10",
+      "contract_end": "2026-11",
       "day_rate_kusd": 540,
       "specs": {
         "build_year": 2014,
@@ -525,7 +525,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options."
+      "data_note": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options. [2026-11-09] Transocean 2026-11-02 FSR(GlobeNewswire 사본 기준): 옵션 1정(약 50일) 행사 → 계약 종료월 2026-11로 연장. 원문 FSR PDF는 직접 확인 못 함.",
+      "data_note_en": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options. [2026-11-09] Per Transocean 2026-11-02 FSR (GlobeNewswire copy): one optional well (~50 days) exercised, so contract end extended to 2026-11. Original FSR PDF not directly verified."
     },
     {
       "name": "Transocean Barents",
