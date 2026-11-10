@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-11-10",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -3080,7 +3080,7 @@
       },
       "notes_en": "Suriname's first deepwater FPSO (Block 58). FID Oct 2024. 220k bbl/d. [Corrected 2026-10-08] The previous \"FID not confirmed (expected 2025)\" was wrong. [2026-10-13 audit] Confirmed 220k bpd, gas 500 MMscfd, ~2 MMbbl storage, ~400m WD (SBM). Owner SBM→TotalEnergies consortium (turnkey build by SBM + Technip Energies, SBM O&M). Contract value 4.0 and progress 10% unsourced → null.",
       "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-signs-an-operations-and-maintenance-contract-for-fpso-granmorgu-with-totalenergies/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-10"
     },
     {
       "name": "Coral Norte FLNG",
@@ -3120,7 +3120,7 @@
       },
       "notes_en": "Second FLNG in Mozambique Area 4, 3.4 MTPA. FID Oct 2025. [Corrected 2026-10-08] Galp's stake was sold to XRG (ADNOC) in Mar 2025; the earlier \"FID 2024\" was wrong. [2026-10-13 audit] Confirmed 3.55 MTPA, FID 2025-10-02, $7.2B development plan. Contract value 4.8→null: only 'below $5B' disclosed for the EPCIC (JGC, Technip Energies, SHI). Delivery 2028-Q4→2028 (first LNG 2028; sources differ on quarter). Gas 470, 2,600m WD and progress 15% unsourced → null.",
       "source_url": "https://lngprime.com/africa/jgc-technip-energies-and-samsung-heavy-win-epcic-contract-for-coral-norte-flng/188694/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-10"
     },
     {
       "name": "P-84 (Atapu 2)",
