@@ -34,6 +34,14 @@ CADENCE = {
     "capex.json": 100,
 }
 
+# Earnings: a quarter's results are overdue this many days after the quarter ends
+# (calendar-quarter reporters publish ~4-7 weeks after quarter end; peers are usually in by ~6 weeks).
+REPORT_LAG_DAYS = 40
+# Per-company override. Yinson has a January fiscal year-end and the file labels its fiscal Q(n)
+# with the calendar quarter it mostly overlaps (e.g. "Q2 2026" = May-Jul, published Sep), so
+# its "Q3" (Aug-Oct) is published in December, ~75 days after Sep 30.
+REPORT_LAG_OVERRIDE = {"Yinson Holdings": 90}
+
 PHASES = {"Pre-FEED", "FEED", "FID", "Execution", "Production"}
 CATEGORIES = {"Contract", "Earnings", "Fleet", "M&A", "Outlook"}
 SECTORS = {"Drilling", "FPSO/FLNG", "E&P/CAPEX"}
@@ -47,6 +55,14 @@ def load(name):
 def quarter_index(period):
     m = re.match(r"Q([1-4]) (\d{4})", period or "")
     return int(m.group(2)) * 4 + int(m.group(1)) if m else None
+
+
+def quarter_overdue(latest_q, today, lag_days=REPORT_LAG_DAYS):
+    """True if the quarter after `latest_q` (a quarter_index) ended more than `lag_days` ago."""
+    nxt = latest_q + 1
+    year, q = (nxt - 1) // 4, (nxt - 1) % 4 + 1
+    first_of_next = dt.date(year + (q == 4), 1 if q == 4 else q * 3 + 1, 1)
+    return today > first_of_next - dt.timedelta(days=1) + dt.timedelta(days=lag_days)
 
 
 def p_numbers(text):
@@ -163,8 +179,8 @@ def run(today):
                 errors.append(f"{name}: {c['name']} has no quarters")
                 continue
             lag = expected_q - max(qs)
-            # results arrive 4-10 weeks after quarter end; two quarters behind is always overdue
-            if lag >= 2 or (lag == 1 and today.month in (3, 6, 9, 12)):
+            # two quarters behind is always overdue; one behind once the missing quarter's reporting window has passed
+            if lag >= 2 or (lag == 1 and quarter_overdue(max(qs), today, REPORT_LAG_OVERRIDE.get(c["name"], REPORT_LAG_DAYS))):
                 last = c["quarters"][-1]["period"]
                 overdue.append(f"{name}: {c['name']} latest quarter is {last}")
             for q in c.get("quarters", []):

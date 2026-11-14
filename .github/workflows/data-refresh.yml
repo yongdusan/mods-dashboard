@@ -4,11 +4,15 @@ name: Data Refresh (Claude, cloud)
 # Claude는 data/ 파일 조사·편집만 하고, 검증(check_data.py)·커밋·push는 이 워크플로가 한다.
 # 비용: 공개 저장소라 Actions 실행 시간 무료, Claude는 구독 토큰(CLAUDE_CODE_OAUTH_TOKEN) 사용 → 추가 과금 없음.
 # API 키(ANTHROPIC_API_KEY)는 쓰지 않는다.
+# Claude 단계가 실패하면(일시적 즉시 실패 — 0.4초 만에 is_error:true, setup-bun HTTP 504 등) 4분 뒤 data/를 원상복구하고 1회 재시도한다.
+# 두 번 다 실패하면 마지막 단계에서 잡을 실패 처리한다. 커밋은 여전히 check_data.py ERROR 0일 때만.
+# 실적 시즌(1·2·4·5·7·8·10·11월)에는 매주 수 12:00 KST에 earnings를 추가 실행한다(분기 실적이 몰려 나오는 시기).
 on:
   schedule:
     - cron: '0 0 * * 1'       # news           — 매주 월 09:00 KST
     - cron: '30 1 * * 1'      # fleet          — 매주 월 10:30 KST
     - cron: '0 1 1,16 * *'    # earnings       — 매월 1·16일 10:00 KST
+    - cron: '0 3 * 1,2,4,5,7,8,10,11 3'  # earnings (실적 시즌) — 1·2·4·5·7·8·10·11월 매주 수 12:00 KST
     - cron: '0 0 10 * *'      # pipeline_fpso  — 매월 10일 09:00 KST
   workflow_dispatch:
     inputs:
@@ -25,7 +29,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 120   # 시도 2회 + 대기 4분
     permissions:
       contents: write
       issues: write
@@ -64,6 +68,7 @@ jobs:
             '0 0 * * 1')    TASK=news ;;
             '30 1 * * 1')   TASK=fleet ;;
             '0 1 1,16 * *') TASK=earnings ;;
+            '0 3 * 1,2,4,5,7,8,10,11 3') TASK=earnings ;;
             '0 0 10 * *')   TASK=pipeline_fpso ;;
             *)              TASK="${{ inputs.task }}" ;;
           esac
@@ -88,6 +93,31 @@ jobs:
 
       - name: Run Claude
         id: claude
+        continue-on-error: true   # 실패해도 아래에서 1회 재시도, 최종 판정은 마지막 단계에서
+        uses: anthropics/claude-code-action@v1
+        env:
+          TODAY: ${{ steps.pick.outputs.today }}
+        with:
+          # Claude 구독(Pro/Max) 토큰으로 실행 — API 과금 없음. `claude setup-token`으로 발급해 저장소 시크릿에 등록.
+          claude_code_oauth_token: ${{ env.CLAUDE_TOKEN_CLEAN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: ${{ steps.pick.outputs.prompt }}
+          claude_args: |
+            --model ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5-5' }}
+            --max-turns 150
+            --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(python3 scripts/check_data.py*),Bash(python3 scripts/refresh_news.py*),Bash(python3 scripts/audit_queue.py*),Bash(python3 -m json.tool *),Bash(git status*),Bash(git diff*)"
+
+      - name: Wait and reset before retry
+        if: steps.claude.outcome == 'failure'
+        run: |
+          echo "::warning::Claude attempt 1 failed — resetting data/ and retrying in 4 minutes."
+          git checkout -- data/    # 1차 시도가 남긴 부분 편집 제거 (재시도는 깨끗한 상태에서)
+          git clean -fdq data/
+          sleep 240
+
+      - name: Run Claude (retry)
+        id: claude_retry
+        if: steps.claude.outcome == 'failure'
         uses: anthropics/claude-code-action@v1
         env:
           TODAY: ${{ steps.pick.outputs.today }}
@@ -103,7 +133,7 @@ jobs:
 
       - name: Validate
         id: validate
-        if: steps.pick.outputs.files != ''
+        if: steps.pick.outputs.files != '' && (steps.claude.outcome == 'success' || steps.claude_retry.outcome == 'success')
         run: |
           set +e
           python scripts/check_data.py --markdown > report.md
@@ -111,7 +141,7 @@ jobs:
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit and push (only this task's files, only if valid)
-        if: steps.pick.outputs.files != '' && steps.validate.outputs.status == '0'
+        if: steps.pick.outputs.files != '' && (steps.claude.outcome == 'success' || steps.claude_retry.outcome == 'success') && steps.validate.outputs.status == '0'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -128,7 +158,7 @@ jobs:
           exit 1
 
       - name: Report invalid result
-        if: steps.pick.outputs.files != '' && steps.validate.outputs.status != '0'
+        if: steps.pick.outputs.files != '' && (steps.claude.outcome == 'success' || steps.claude_retry.outcome == 'success') && steps.validate.outputs.status != '0'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -139,4 +169,10 @@ jobs:
             --body "check_data.py found errors, so nothing was committed. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
           $(cat report.md)"
+          exit 1
+
+      - name: Fail if Claude did not complete
+        if: steps.claude.outcome != 'success' && steps.claude_retry.outcome != 'success'
+        run: |
+          echo "::error::Claude failed on both attempts (attempt 1: ${{ steps.claude.outcome }}, retry: ${{ steps.claude_retry.outcome }}) — nothing was committed."
           exit 1

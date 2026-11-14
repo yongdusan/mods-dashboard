@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-14",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -346,6 +346,33 @@
             "Design and procurement started on Petrobras SEAP I/II FPSOs (delivery 2030–31); 13 Fast4Ward hulls ordered in total; Jaguar, Chalchi and GranMorgu 50–75% complete",
             "Interim dividend $100M; $270M buyback ~44% complete; commitment to at least $2.1B of shareholder returns over 2026–2031"
           ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 1433,
+          "adj_ebitda_musd": null,
+          "ebitda_margin_pct": null,
+          "units_on_lease": null,
+          "backlog_busd": null,
+          "source": "Q3 2026 Trading Update (Nov 12, 2026) — Q3 revenue = 9M 2026 Directional $6,337M − H1 2026 Directional $4,904M = $1,433M; Trading Update는 EBITDA·backlog·유닛 수 미공시(null)",
+          "source_en": "Q3 2026 Trading Update (Nov 12, 2026) — Q3 revenue = 9M 2026 directional $6,337M − H1 2026 directional $4,904M = $1,433M; the trading update does not disclose EBITDA, backlog or unit count (null)",
+          "source_url": "https://www.sbmoffshore.com/newsroom/sbm-offshore-third-quarter-2026-trading-update/",
+          "highlights": [
+            "9M 2026 Directional 매출 $6,337M(+77% YoY) — Turnkey $4,565M(+132%), L&O $1,772M(+10%)",
+            "FY2026 가이던스 재상향: Directional 매출 ~$7.9B(기존 ~$7.6B), Directional EBITDA $1.95B 초과(기존 ~$1.9B)",
+            "Directional 순차입금 $3.6B — FY2025 $5.7B 대비 36% 감소; 연초 이후 함대 원유 가동률 99.0%",
+            "FPSO Jaguar 공정률 75% 이상(first oil 2027), GranMorgu·FSO Chalchi 50~75%(GranMorgu first oil 2028), SEAP I·II 25% 미만(인도 2031·2030)",
+            "FSO Chalchi 지분 45% NYK 매각 완료(2026-06); 입찰 대응용 Fast4Ward 선체 2척 추가 발주",
+            "$270M 자사주 매입 ~72% 진행(11/11 기준), 600만 주 소각(11/5); 2031년까지 최소 $2.1B 주주환원 재확인"
+          ],
+          "highlights_en": [
+            "9M 2026 directional revenue $6,337M (+77% y/y) — turnkey $4,565M (+132%), L&O $1,772M (+10%)",
+            "FY2026 guidance raised again: directional revenue ~$7.9B (was ~$7.6B), directional EBITDA above $1.95B (was ~$1.9B)",
+            "Directional net debt $3.6B — down 36% from $5.7B at FY2025; year-to-date fleet oil uptime 99.0%",
+            "FPSO Jaguar above 75% complete (first oil 2027), GranMorgu and FSO Chalchi 50–75% (GranMorgu first oil 2028), SEAP I/II below 25% (handover 2031/2030)",
+            "45% of FSO Chalchi divested to NYK (completed June 2026); two more Fast4Ward hulls ordered to support tendering",
+            "$270M share buyback ~72% complete (as of 11/11), 6 million shares cancelled (11/5); at least $2.1B of shareholder returns through 2031 reaffirmed"
+          ]
         }
       ]
     },
@@ -663,6 +690,33 @@
             "FY2026 guidance maintained: revenue $4.6B, net income $370M",
             "Planned annual dividend JPY 200/share (Q2 JPY 100)",
             "Backlog: secondary sources conflict ($17.0B vs $25.5B), so null until confirmed by a tier-1 source"
+          ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 1244,
+          "adj_ebitda_musd": 97,
+          "ebitda_margin_pct": 7.8,
+          "units_on_lease": 20,
+          "backlog_busd": 23.8,
+          "source": "2026 Third Quarter Financial Results (Nov 10, 2026) — 9M 2026 − H1 2026 기준 Q3 단독 역산: 매출 $3,690.8M − $2,447.1M = $1,243.7M, adj_ebitda_musd는 operating profit proxy $390.2M − $293.0M = $97.1M; backlog $23.8B는 3Q 2026 Investor Presentation의 Total Backlog(결산단신 order backlog $15.94B + 용선 backlog $8.3B 별도 표기); units 20 = 용선 FPSO/FSO 15척 + O&M 전용 5건(프레젠테이션 p.9)",
+          "source_en": "2026 Third Quarter Financial Results (Nov 10, 2026) — Q3 stand-alone back-calculated as 9M 2026 − H1 2026: revenue $3,690.8M − $2,447.1M = $1,243.7M; adj_ebitda_musd is an operating profit proxy $390.2M − $293.0M = $97.1M; backlog $23.8B is Total Backlog from the 3Q 2026 Investor Presentation (results summary shows order backlog $15.94B; charter backlog $8.3B shown separately); units 20 = 15 chartered FPSOs/FSOs + 5 O&M-only projects (presentation p.9)",
+          "source_url": "https://www.modec.com/ir/library/result/assets/pdf/2026_3Q_results_en.pdf",
+          "highlights": [
+            "9M 2026 매출 $3,690.8M(+10.1% YoY), 영업이익 $390.2M(+27.8%), 지배주주 순이익 $306.5M(+24.8%), Adjusted EBITDA $394M(+30%)",
+            "9M 누적에서 H1(매출 $2,447.1M·영업이익 $293.0M)을 차감해 Q3 단독 매출 $1,244M, 영업이익 proxy $97M 산출",
+            "FY2026 가이던스 상향: 매출 $4.6B→$4.9B, 영업이익 $460M→$520M, 순이익 $370M→$410M",
+            "Total Backlog $23.8B — FYE2025 대비 $3.1B(-12%) 감소(기존 프로젝트 진척 반영); 9M 수주액 $676.9M(기존 프로젝트 사양 변경 등)",
+            "Hammerhead·Gato do Mato·Raia·Uaru EPCI 4건 순조롭게 진행",
+            "최대 JPY 100억 자사주 매입 결의(2026-11-11~2027-01-29), 연간 배당 JPY 200/주 유지"
+          ],
+          "highlights_en": [
+            "9M 2026 revenue $3,690.8M (+10.1% y/y), operating profit $390.2M (+27.8%), profit attributable to owners $306.5M (+24.8%), Adjusted EBITDA $394M (+30%)",
+            "Q3 stand-alone revenue $1,244M and operating profit proxy $97M derived by subtracting H1 (revenue $2,447.1M, operating profit $293.0M) from 9M",
+            "FY2026 guidance raised: revenue $4.6B→$4.9B, operating profit $460M→$520M, net income $370M→$410M",
+            "Total Backlog $23.8B — down $3.1B (-12%) vs FYE2025 (reflecting progress on existing projects); 9M orders received $676.9M (specification changes etc. on existing projects)",
+            "Four EPCI projects — Hammerhead, Gato do Mato, Raia, Uaru — progressing steadily",
+            "Share buyback of up to JPY 10 billion approved (2026-11-11 to 2027-01-29); annual dividend of JPY 200/share maintained"
           ]
         }
       ]
@@ -1267,24 +1321,24 @@
           "ebitda_margin_pct": 65.7,
           "units_on_lease": null,
           "backlog_busd": null,
-          "source": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Enterprise Reporting 매출·Adj EBITDA는 The Star(2026-10-20) 보도 기준(2등급, 원문 PDF 미확인); 백로그·가동 유닛 수는 Q2 기준 미확인으로 null",
+          "source": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd(YPOPL) 2Q FY2027 중간보고서(2026-07-31 종료 분기) Enterprise Reporting 손익계산서 기준 USD: 매출 $312M, Adjusted EBITDA $205M(EBITDA $207M) — The Star(2026-10-20) 보도 수치와 일치 확인; 백로그·가동 유닛 수는 보고서 미기재로 null",
           "highlights": [
             "Yinson Production Enterprise Reporting 매출 $312M(전년 동기 $261M), Adj EBITDA $205M(전년 동기 $135M) — 2026.05~07 분기",
             "Yinson Holdings 그룹 매출 RM1.136B(전년 동기 RM1.364B, EPCIC 활동 감소), EBITDA RM665M, 순이익 RM128M(+26.7%)",
             "FPSO Maria Quitéria 연간 용선료 인상 및 가동일수 증가 기여; Agogo FPSO 신규 $1.5B 프로젝트 본드(쿠폰 6.5%) 재조달, $383M 후순위 대출 조기 상환(일회성 금융비용 약 $10M)",
             "FSO PTSC Lac Da Vang: 8월 7일 현장 도착, 최종 시운전 중 — first oil 및 용선 개시 2026년 4분기 예정",
             "PTSC Asia Pacific(Yinson 49%)이 Murphy Oil과 Cuu Long Bac 프로젝트 계약(초기 10년, 최대 약 $416M)",
-            "ER 기준 감가상각 증가로 Yinson Production 주주귀속 손실 $7M(전년 $32M 이익); 제2차 중간배당 1센/주"
+            "YPOPL Enterprise Reporting 기준 Q2 순손실 $4M(조정 순손실 $2M, 전년 동기 순이익 $37M) — 감가상각 $90M(전년 $61M)·금융비용 증가 영향; The Star 보도의 주주귀속 손실 $7M은 YPOPL 보고서에서 확인 안 됨. 제2차 중간배당 1센/주(Yinson Holdings)"
           ],
-          "source_url": "https://www.thestar.com.my/business/business-news/2026/10/20/higher-depreciation-clouds-yinsons-earnings-outlook",
-          "source_en": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Enterprise Reporting revenue and Adj EBITDA per The Star (2026-10-20; tier-2 source, original PDF not checked); backlog and units on lease not confirmed for Q2, set to null",
+          "source_url": "https://stamdata.com/news/api/pdf/c70d7e6d-262a-4b4f-8172-f546b44b916e",
+          "source_en": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd (YPOPL) Q2 FY2027 interim report (quarter ended 2026-07-31), Enterprise Reporting income statement, USD: revenue $312M, Adjusted EBITDA $205M (EBITDA $207M) — matches figures reported by The Star (2026-10-20); backlog and units on lease not stated in the report, null",
           "highlights_en": [
             "Yinson Production Enterprise Reporting revenue $312M (prior-year quarter $261M), Adj EBITDA $205M (prior-year $135M) — May–Jul 2026 quarter",
             "Yinson Holdings group revenue RM1.136B (prior-year RM1.364B, lower EPCIC activity), EBITDA RM665M, net profit RM128M (+26.7%)",
             "FPSO Maria Quitéria annual charter-rate escalation and more operating days contributed; Agogo FPSO refinanced with a new $1.5B project bond (6.5% coupon), $383M junior loan repaid early (one-off financing cost ~$10M)",
             "FSO PTSC Lac Da Vang: arrived at field 7 August, in final commissioning — first oil and charter start expected Q4 2026",
             "PTSC Asia Pacific (49% Yinson) holds a Murphy Oil contract for the Cuu Long Bac project (10-year initial term, up to ~$416M)",
-            "Higher ER depreciation led to a $7M loss attributable to Yinson Production shareholders (prior year $32M profit); second interim dividend 1 sen/share"
+            "YPOPL Enterprise Reporting Q2 net loss $4M (adjusted net loss $2M; prior-year net income $37M) — higher depreciation ($90M vs $61M) and finance costs; The Star's reported $7M loss attributable to shareholders could not be found in the YPOPL report. Second interim dividend 1 sen/share (Yinson Holdings)"
           ]
         }
       ]

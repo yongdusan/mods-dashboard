@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-14",
   "data_quality": {
     "day_rates": {
       "confidence": "mixed",
@@ -78,6 +78,15 @@
       "rate_kusd": 438,
       "source": "Q3 2026 actual — 컨트랙터 평균 dayrate(RIG UDW floaters $442.1K / VAL drillships $469K / NE floaters $403.1K, Nov 2026)",
       "source_en": "Q3 2026 actual — contractor average dayrates (RIG UDW floaters $442.1K / VAL drillships $469K / NE floaters $403.1K, Nov 2026)"
+    },
+    {
+      "date": "2026-10",
+      "rig_type": "Drillship",
+      "tier": "Ultra-deepwater",
+      "rate_kusd": 475,
+      "source": "Indicative (Q4 진행 중) — Noble Q3 2026 실적(2026-10-26): \"leading edge dayrates for Tier-1 drillships ranging between the mid-$400,000s and $500,000\" → 범위 $450–500K의 중간값 475. 참고: Noble Globetrotter I(6G) Occidental 페루 $400K(2027 Q2 개시). Q4 실적 발표 시 교체",
+      "source_en": "Indicative (Q4 in progress) — Noble Q3 2026 results (2026-10-26): \"leading edge dayrates for Tier-1 drillships ranging between the mid-$400,000s and $500,000\" → midpoint 475 of the $450–500K range. Reference: Noble Globetrotter I (6G) Occidental Peru $400K (starts Q2 2027). To be replaced at Q4 results",
+      "source_url": "https://www.placera.se/pressmeddelanden/noble-noble-corporation-plc-announces-third-quarter-2026-results-20261026"
     },
     {
       "date": "2025-01",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-14",
   "data_quality": {
     "contractors": {
       "confidence": "medium",
@@ -57,14 +57,14 @@
       "ticker": "6269.T",
       "fleet_owned": 11,
       "on_lease": 11,
-      "backlog_busd": 25.0,
-      "source": "MODEC 1H 2026 Results (Aug 7, 2026) — total backlog (order backlog $17.0B + charter $8.5B)",
-      "as_of": "2026-06-30",
-      "source_url": "https://filingreader.com/news-wire/tokyo/2026-08-07/modec-reports-strong-profit-growth-in-first-half-of-2026",
-      "notes": "일본 최대 FPSO 사업자. 브라질 13척(MV계열+Bacalhau) + 가나 2척(MV21, Prof. Atta Mills) = 15척 L&O. MV20 Enauta 매각(2023-12), Fluminense 해체(2024). Gato do Mato 신조 1척(orderbook). [2026-10-08] backlog 14.8→25.0 갱신: 1H 2026 total backlog $25.0B(FYE2025 대비 -7%, 프로젝트 진행 반영). 수주잔고(order backlog) $17.0B, 용선 backlog $8.5B(평균 잔여 11.4년). 기존 14.8은 산정 기준 불명확. [2026-10-13] 보유 15→11: MV14·MV18 해체, MV21 Tullow 이전, Bacalhau Equinor 소유(MODEC 프로젝트 페이지).",
+      "backlog_busd": 23.8,
+      "source": "MODEC 3Q 2026 Investor Presentation (Nov 10, 2026) — Total Backlog $23.8B",
+      "as_of": "2026-09-30",
+      "source_url": "https://www.modec.com/ir/library/presentation/assets/pdf/2026_3Q_presentation_en.pdf",
+      "notes": "일본 최대 FPSO 사업자. 브라질 13척(MV계열+Bacalhau) + 가나 2척(MV21, Prof. Atta Mills) = 15척 L&O. MV20 Enauta 매각(2023-12), Fluminense 해체(2024). Gato do Mato 신조 1척(orderbook). [2026-10-08] backlog 14.8→25.0 갱신: 1H 2026 total backlog $25.0B(FYE2025 대비 -7%, 프로젝트 진행 반영). 수주잔고(order backlog) $17.0B, 용선 backlog $8.5B(평균 잔여 11.4년). 기존 14.8은 산정 기준 불명확. [2026-10-13] 보유 15→11: MV14·MV18 해체, MV21 Tullow 이전, Bacalhau Equinor 소유(MODEC 프로젝트 페이지). [2026-11-14] 25.0→23.8: 3Q 2026 Investor Presentation Total Backlog $23.8B(FYE2025 대비 -$3.1B, -12%). 같은 날 결산단신의 order backlog는 $15.94B(2026-09-30), 프레젠테이션 용선 backlog $8.3B(잔여 평균 11.1년) — 두 값의 단순 합은 Total Backlog와 일치하지 않아 회사 표기 Total Backlog를 사용.",
       "newbuilds_owned": 0,
       "newbuilds_operated": 0,
-      "notes_en": "Japan's largest FPSO operator. 13 units in Brazil (MV series + Bacalhau) + 2 in Ghana (MV21, Prof. Atta Mills) = 15 units on L&O. MV20 sold to Enauta (Dec 2023), Fluminense decommissioned (2024). One newbuild for Gato do Mato (orderbook). [2026-10-08] Backlog updated 14.8→25.0: 1H 2026 total backlog $25.0B (-7% vs FYE2025, reflecting project progress). Order backlog $17.0B, charter backlog $8.5B (average remaining term 11.4 years). Previous 14.8 had an unclear basis. [2026-10-13] Owned 15→11: MV14 and MV18 decommissioned, MV21 transferred to Tullow, Bacalhau owned by Equinor (MODEC project pages)."
+      "notes_en": "Japan's largest FPSO operator. 13 units in Brazil (MV series + Bacalhau) + 2 in Ghana (MV21, Prof. Atta Mills) = 15 units on L&O. MV20 sold to Enauta (Dec 2023), Fluminense decommissioned (2024). One newbuild for Gato do Mato (orderbook). [2026-10-08] Backlog updated 14.8→25.0: 1H 2026 total backlog $25.0B (-7% vs FYE2025, reflecting project progress). Order backlog $17.0B, charter backlog $8.5B (average remaining term 11.4 years). Previous 14.8 had an unclear basis. [2026-10-13] Owned 15→11: MV14 and MV18 decommissioned, MV21 transferred to Tullow, Bacalhau owned by Equinor (MODEC project pages). [2026-11-14] 25.0→23.8: 3Q 2026 Investor Presentation Total Backlog $23.8B (−$3.1B, −12% vs FYE2025). The same-day results summary shows order backlog of $15.94B (2026-09-30) and the presentation shows charter backlog of $8.3B (11.1-year average remaining life) — their simple sum does not equal Total Backlog, so the company's stated Total Backlog is used."
     },
     {
       "name": "BW Offshore",
@@ -2732,8 +2732,8 @@
       "contract_end": null,
       "status": "Hook-up & Commissioning",
       "year_delivered": 2026,
-      "notes": "MODEC 건조, Uaru(Stabroek 5번째) 개발용. 2026-08 가이아나 해역 도착, 첫 생산 전 해상 준비·시운전 단계. 소유 구조는 출처에 명시 없어 null. [2026-10-14 감사] 신규 등록: OGJ(2026-08-24) 250k b/d·가스 540 MMcfd·저장 ~200만 bbl·수심 1,690m·spread mooring, MODEC 인도 확인.",
-      "notes_en": "Built by MODEC for Uaru (Stabroek's 5th development). Arrived off Guyana Aug 2026; offshore preparation and commissioning ahead of first oil. Ownership not stated in sources → null. [2026-10-14 audit] Added: OGJ (2026-08-24) confirms 250k b/d, 540 MMcfd gas, ~2 MMbbl storage, 1,690m WD, spread mooring, delivered by MODEC.",
+      "notes": "MODEC 건조, Uaru(Stabroek 5번째) 개발용. 2026-08 가이아나 해역 도착, 첫 생산 전 해상 준비·시운전 단계. 소유 구조는 출처에 명시 없어 null. [2026-10-14 감사] 신규 등록: OGJ(2026-08-24) 250k b/d·가스 540 MMcfd·저장 ~200만 bbl·수심 1,690m·spread mooring, MODEC 인도 확인. [2026-11-14] 상태 유지(Hook-up & Commissioning): ExxonMobil 2026-11-12 보도자료 — Stabroek 4개 프로젝트에서 ~90만 b/d 생산 중, 5번째 Uaru는 4분기 가동 예정(아직 first oil 미발표).",
+      "notes_en": "Built by MODEC for Uaru (Stabroek's 5th development). Arrived off Guyana Aug 2026; offshore preparation and commissioning ahead of first oil. Ownership not stated in sources → null. [2026-10-14 audit] Added: OGJ (2026-08-24) confirms 250k b/d, 540 MMcfd gas, ~2 MMbbl storage, 1,690m WD, spread mooring, delivered by MODEC. [2026-11-14] Status unchanged (Hook-up & Commissioning): ExxonMobil release of 2026-11-12 — ~900,000 b/d from four Stabroek projects; fifth project Uaru expected to start up in Q4 (first oil not yet announced).",
       "detail": {
         "hull_type": null,
         "yard": null,
@@ -2755,7 +2755,7 @@
         "notable": null
       },
       "source_url": "https://www.ogj.com/exploration-development/news/55400232/exxon-mobil-guyana-receives-errea-wittu-fpso-at-uaru-field",
-      "verified": "2026-10-14"
+      "verified": "2026-11-14"
     }
   ],
   "orderbook": [
@@ -2771,7 +2771,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027",
       "status": "Under Construction",
-      "notes": "Búzios 9번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium Tuas에서 통합 마무리·출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. 계약금액 미확인. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d(424 MMscfd)·2027 가동 확인(World Oil). 계약액은 미공시로 null 유지.",
+      "notes": "Búzios 9번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium Tuas에서 통합 마무리·출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. 계약금액 미확인. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d(424 MMscfd)·2027 가동 확인(World Oil). 계약액은 미공시로 null 유지. [2026-11-14] 2026-09-30 싱가포르 Tuas Boulevard Yard 출항, Búzios로 이동 중 — 생산 개시 2027 예정(Petrobras 발표, energy-pedia 2026-10-02 게재). status는 미가동이라 유지.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC)",
         "water_depth_m": null,
@@ -2789,9 +2789,9 @@
         "financing_en": "Owned by Petrobras",
         "key_equipment_en": "Process modules fabricated at Seatrium BrasFELS (Angra dos Reis)."
       },
-      "notes_en": "9th Búzios FPSO. Owned by Petrobras. As of Aug 2026 completing integration and preparing to sail from Seatrium Tuas; operations 2027. 225k bpd, gas 12 MMm³/d. Contract value unconfirmed. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d (424 MMscfd), operations 2027 (World Oil). Contract value undisclosed, kept null.",
+      "notes_en": "9th Búzios FPSO. Owned by Petrobras. As of Aug 2026 completing integration and preparing to sail from Seatrium Tuas; operations 2027. 225k bpd, gas 12 MMm³/d. Contract value unconfirmed. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d (424 MMscfd), operations 2027 (World Oil). Contract value undisclosed, kept null. [2026-11-14] Sailed from Tuas Boulevard Yard, Singapore on 2026-09-30, en route to Búzios — production start expected 2027 (Petrobras announcement via energy-pedia, 2026-10-02). Status kept as it is not yet producing.",
       "source_url": "https://worldoil.com/news/2026/8/27/seatrium-readies-p-80-p-82-fpsos-for-petrobras-buzios-field/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-14"
     },
     {
       "name": "P-82 (Búzios 10)",
@@ -2805,7 +2805,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027",
       "status": "Under Construction",
-      "notes": "Búzios 10번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium에서 P-80에 이어 출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. [정정 2026-10-08] 기존 vessels에 \"P-82 (Búzios 9) / Commissioned\"로 잘못 등재 — 미가동 신조선이므로 orderbook으로 이동. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d·2027 가동 확인(World Oil). 계약액 미공시.",
+      "notes": "Búzios 10번째 FPSO. Petrobras 자가 소유. 2026-08 기준 Seatrium에서 P-80에 이어 출항 준비, 가동 2027. 225k bpd, 가스 12 MMm³/d. [정정 2026-10-08] 기존 vessels에 \"P-82 (Búzios 9) / Commissioned\"로 잘못 등재 — 미가동 신조선이므로 orderbook으로 이동. [2026-10-13 감사] 225k bpd·가스 12 MMm³/d·2027 가동 확인(World Oil). 계약액 미공시. [2026-11-14] 2026-10-18 싱가포르 Tuas Boulevard Yard 출항, Búzios로 이동 중 — 2027 가동 예정(Petrobras 발표, energy-pedia 2026-10-19 게재). status는 미가동이라 유지.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC)",
         "water_depth_m": null,
@@ -2823,9 +2823,9 @@
         "financing_en": "Owned by Petrobras",
         "key_equipment_en": "Process modules fabricated at Seatrium Aracruz (Espírito Santo)."
       },
-      "notes_en": "10th Búzios FPSO. Owned by Petrobras. As of Aug 2026 preparing to sail from Seatrium after P-80; operations 2027. 225k bpd, gas 12 MMm³/d. [Corrected 2026-10-08] Previously listed in vessels as \"P-82 (Búzios 9) / Commissioned\" — moved to orderbook as a newbuild not yet in service. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d, operations 2027 (World Oil). Contract value undisclosed.",
+      "notes_en": "10th Búzios FPSO. Owned by Petrobras. As of Aug 2026 preparing to sail from Seatrium after P-80; operations 2027. 225k bpd, gas 12 MMm³/d. [Corrected 2026-10-08] Previously listed in vessels as \"P-82 (Búzios 9) / Commissioned\" — moved to orderbook as a newbuild not yet in service. [2026-10-13 audit] Confirmed 225k bpd, gas 12 MMm³/d, operations 2027 (World Oil). Contract value undisclosed. [2026-11-14] Sailed from Tuas Boulevard Yard, Singapore on 2026-10-18, en route to Búzios — expected to start operating in 2027 (Petrobras announcement via energy-pedia, 2026-10-19). Status kept as it is not yet producing.",
       "source_url": "https://worldoil.com/news/2026/8/27/seatrium-readies-p-80-p-82-fpsos-for-petrobras-buzios-field/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-14"
     },
     {
       "name": "Kaminho FPSO",
