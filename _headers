@@ -1,0 +1,8 @@
+# Cloudflare static-asset response headers.
+# Shared CSS/JS: reuse for 10 minutes so moving between pages does not re-request them.
+/assets/*
+  Cache-Control: public, max-age=600
+
+# Data: reuse for 1 minute within a visit; refreshes still show up almost immediately.
+/data/*
+  Cache-Control: public, max-age=60

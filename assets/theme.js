@@ -76,19 +76,45 @@
     }
     return o;
   }
-  if (LANG === 'en' && window.fetch) {
+  /* Current page as "<name>.html" — production serves extensionless paths (/earnings). */
+  var PAGE = (function () {
+    var n = location.pathname.split('/').pop() || 'index.html';
+    return /\.html?$/.test(n) ? n : n + '.html';
+  })();
+
+  /* data/*.json: one download per file per page view, shared by the page script and
+     the theme helpers (changes strip, related links, depth presets). Cache-buster
+     queries are dropped — the server revalidates by ETag. In English mode the parsed
+     copy has its `_en` fields swapped in. */
+  var jsonCache = {};
+  if (window.fetch) {
     var _fetch = window.fetch.bind(window);
     window.fetch = function (input, init) {
       var url = typeof input === 'string' ? input : (input && input.url) || '';
-      var p = _fetch(input, init);
-      if (!/(^|\/)data\/[^/?]+\.json(\?|$)/.test(url)) return p;
-      return p.then(function (r) {
-        if (!r.ok) return r;
-        return r.clone().json().then(function (obj) {
-          return new Response(JSON.stringify(swapEn(obj)), { status: r.status, statusText: r.statusText, headers: r.headers });
-        }, function () { return r; });
-      });
+      if (!/(^|\/)data\/[^/?]+\.json(\?|$)/.test(url) || (init && init.method && init.method !== 'GET')) return _fetch(input, init);
+      var key = url.replace(/^\.\//, '').replace(/[?#].*$/, '');
+      if (!jsonCache[key]) {
+        jsonCache[key] = _fetch(key).then(function (r) {
+          if (!r.ok) { delete jsonCache[key]; return r; }
+          if (LANG !== 'en') return r;
+          return r.clone().json().then(function (obj) {
+            return new Response(JSON.stringify(swapEn(obj)), { status: r.status, statusText: r.statusText, headers: r.headers });
+          }, function () { return r; });
+        }, function (e) { delete jsonCache[key]; throw e; });
+      }
+      return jsonCache[key].then(function (r) { return r.clone(); });
     };
+    // Start the page's data downloads now, in parallel with the remaining scripts.
+    var WARM = {
+      'index.html': ['pipeline', 'fleet', 'rates', 'fpso', 'news', 'earnings', 'fpso_earnings', 'capex'],
+      'pipeline.html': ['pipeline', 'capex', 'news'],
+      'drilling.html': ['fleet', 'rates', 'earnings', 'news', 'fpso'],
+      'fpso.html': ['fpso', 'fpso_earnings', 'news'],
+      'earnings.html': ['earnings', 'news'],
+      'fpso_earnings.html': ['fpso_earnings', 'news'],
+      'news.html': ['news']
+    };
+    (WARM[PAGE] || []).forEach(function (f) { window.fetch('data/' + f + '.json').catch(function () {}); });
   }
 
   var UI_EN = [
@@ -388,7 +414,7 @@
     'fpso_earnings.html': 'FPSO Financials', 'news.html': 'News'
   };
   function shortenNav() {
-    var here = (location.pathname.split('/').pop() || 'index.html');
+    var here = PAGE;
     Array.prototype.forEach.call(document.querySelectorAll('.header-nav .nav-link'), function (a) {
       var key = (a.getAttribute('href') || '').split(/[?#]/)[0] || (a.classList.contains('active') ? here : '');
       var short = NAV_SHORT[key];
@@ -426,7 +452,7 @@
   function tidyMeta() {
     var m = document.getElementById('header-meta');
     if (!m) return;
-    var page = (location.pathname.split('/').pop() || 'index.html').replace(/\?.*$/, '');
+    var page = PAGE;
     var cadence = { 'pipeline.html': 40, 'drilling.html': 14, 'fpso.html': 40, 'earnings.html': 100, 'fpso_earnings.html': 100, 'news.html': 10 }[page];
     var fix = function () {
       Array.prototype.forEach.call(m.querySelectorAll('span, div'), function (el) {
@@ -488,7 +514,7 @@
     return s.length > 150 ? s.slice(0, 148) + '…' : s;
   }
   function renderChanges() {
-    var page = (location.pathname.split('/').pop() || 'index.html');
+    var page = PAGE;
     var cfg = CHANGES[page], anchor = document.querySelector('.page-title-section');
     if (!cfg || !anchor || document.querySelector('.omi-changes') || !window.fetch) return;
     var files = ['news'].concat(cfg.files), D = {};
@@ -689,7 +715,24 @@
   window.OMI.hashParam = hashParam;
   window.OMI.srcLegend = srcLegend;
 
-  function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); renderChanges(); }
+  /* Production redirects /page.html → /page (one extra round trip per click).
+     Point same-site links at the final URL; local servers still need .html. */
+  var LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.protocol === 'file:';
+  function directHref(a) {
+    var h = a.getAttribute && a.getAttribute('href');
+    if (!h || /^[a-z]+:|^\/\//i.test(h)) return;
+    var m = /^([\w-]+)\.html([?#].*)?$/.exec(h);
+    if (m) a.setAttribute('href', (m[1] === 'index' ? './' : m[1]) + (m[2] || ''));
+  }
+  function directLinks() {
+    if (LOCAL) return;
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), directHref);
+    document.addEventListener('mousedown', function (e) { var a = e.target.closest && e.target.closest('a[href]'); if (a) directHref(a); }, true);
+    document.addEventListener('touchstart', function (e) { var a = e.target.closest && e.target.closest('a[href]'); if (a) directHref(a); }, { capture: true, passive: true });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Enter' && document.activeElement && document.activeElement.tagName === 'A') directHref(document.activeElement); }, true);
+  }
+
+  function boot() { decorate(); shortenNav(); addLangToggle(); tidyMeta(); startUiTranslate(); renderChanges(); directLinks(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
