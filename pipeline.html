@@ -672,6 +672,15 @@
       margin-top: 5px;
       white-space: nowrap;
     }
+    .tn-title { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.5; }
+    .tn-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .tn-table th { text-align: left; font-family: var(--font-mono); font-size: 10px; letter-spacing: .06em; color: var(--text-muted); font-weight: 500; padding: 6px 6px; border-bottom: 1px solid var(--border); }
+    .tn-table td { padding: 7px 6px; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text); }
+    .tn-table a { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+    .tn-table a:hover { text-decoration-color: var(--accent); }
+    .tn-partners { color: var(--text-muted); font-size: 11px; }
+    .tn-num { text-align: right; white-space: nowrap; }
+    .tn-note { margin-top: 8px; font-size: 11px; color: var(--text-muted); line-height: 1.5; }
   </style>
   <link rel="stylesheet" href="assets/theme.css">
   <script src="assets/theme.js"></script>
@@ -817,6 +826,32 @@
 
     // ─── Data freshness helpers ─────────────────────────────────────
     const TODAY_MS = Date.now();
+    // ─── Tender results (data/companies.json) ───────────────────────
+    let companyData = null;
+    fetch('./data/companies.json').then(r => r.ok ? r.json() : null).then(d => { companyData = d; }).catch(() => {});
+    function tenderHtml(projectId) {
+      if (!companyData) return '';
+      const ko = OMI.lang === 'ko';
+      const byId = {}; (companyData.companies || []).forEach(c => { byId[c.id] = c; });
+      const nm = id => byId[id] ? `<a href="fpso.html#company=${encodeURIComponent(id)}">${OMI.esc(byId[id].name.replace(/ \(.*\)$/, ''))}</a>` : OMI.esc(id);
+      return (companyData.tenders || []).filter(t => t.project_id === projectId).map(t => {
+        const low = Math.min(...t.bids.filter(b => b.price_busd != null).map(b => b.price_busd));
+        const priced = t.bids.some(b => b.price_busd != null);
+        const rows = t.bids.map(b => `<tr>
+            <td class="mono">${b.rank != null ? b.rank : '·'}</td>
+            <td>${nm(b.lead)}${b.partners && b.partners.length ? ` <span class="tn-partners">+ ${b.partners.map(nm).join(', ')}</span>` : ''}</td>
+            ${priced ? `<td class="mono tn-num">${b.price_busd != null ? '$' + b.price_busd.toFixed(3).replace(/0+$/, '').replace(/\.$/, '') + 'B' : '—'}</td>
+            <td class="mono tn-num">${b.price_busd != null && b.price_busd !== low ? '+' + ((b.price_busd / low - 1) * 100).toFixed(0) + '%' : ''}</td>` : `<td>${OMI.esc(b.result || '')}</td>`}
+          </tr>`).join('');
+        return `<div class="drawer-section">
+          <div class="drawer-section-title">Tender results</div>
+          <div class="tn-title">${OMI.esc(t.title)} · ${OMI.esc(t.status)}</div>
+          <table class="tn-table"><thead><tr><th>#</th><th>${ko ? '입찰사(주관 + 파트너)' : 'Bidder (lead + partners)'}</th>${priced ? `<th>${ko ? '제안가' : 'Bid'}</th><th>${ko ? '최저가 대비' : 'vs lowest'}</th>` : `<th>${ko ? '결과' : 'Result'}</th>`}</tr></thead><tbody>${rows}</tbody></table>
+          <div class="tn-note">${OMI.esc(t.partners_note || '')}</div>
+        </div>`;
+      }).join('');
+    }
+
     function daysSince(dateStr) {
       if (!dateStr) return 9999;
       const d = /^\d{4}-\d{2}-\d{2}$/.test(dateStr) ? new Date(dateStr + 'T00:00:00') : new Date(dateStr);
@@ -1216,6 +1251,8 @@
           <div class="drawer-section-title">Change log</div>
           ${OMI.logHtml(notesParts.log)}
         </div>` : ''}
+
+        ${tenderHtml(proj.id)}
 
         <div class="drawer-section">
           <div class="drawer-section-title">Source</div>

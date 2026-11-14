@@ -107,9 +107,9 @@
     // Start the page's data downloads now, in parallel with the remaining scripts.
     var WARM = {
       'index.html': ['pipeline', 'fleet', 'rates', 'fpso', 'news', 'earnings', 'fpso_earnings', 'capex'],
-      'pipeline.html': ['pipeline', 'capex', 'news'],
+      'pipeline.html': ['pipeline', 'capex', 'news', 'companies'],
       'drilling.html': ['fleet', 'rates', 'earnings', 'news', 'fpso'],
-      'fpso.html': ['fpso', 'fpso_earnings', 'news'],
+      'fpso.html': ['fpso', 'fpso_earnings', 'news', 'companies'],
       'earnings.html': ['earnings', 'news'],
       'fpso_earnings.html': ['fpso_earnings', 'news'],
       'news.html': ['news']
@@ -215,7 +215,7 @@
     'Sanctioned': '승인', 'Pre-FID (indicative)': 'FID 전 (추정)', 'Projects': '프로젝트', 'Project': '프로젝트',
     'Company': '회사', 'Region': '지역', 'Phase': '단계', 'CAPEX ($B)': '사업비 ($B)', 'First Production': '첫 생산',
     'Type': '유형', 'Verified': '확인일', 'All': '전체', 'Notes': '비고', 'Note': '비고', 'Source': '출처',
-    'Update log': '업데이트 기록', 'Change log': '변경 기록', 'Contract notes': '계약 메모', 'Unit overview': '설비 개요', 'Project overview': '프로젝트 개요', 'Review status': '확인 현황',
+    'Update log': '업데이트 기록', 'Change log': '변경 기록', 'Company Directory': '업체 디렉터리', 'Tender results': '입찰 결과', 'Fleet table →': '선단 표에서 보기 →', 'Owner / lessor': '선주·임대', 'Operator (O&M)': '운영(O&M)', 'EPC / yard': 'EPC·조선소', 'Partner / other': '파트너·기타', 'Bidders, yards and operators beyond the fleet table — sourced facts only': '선단 표에 없는 입찰사·조선소·운영사 — 출처 확인된 내용만', 'Contract notes': '계약 메모', 'Unit overview': '설비 개요', 'Project overview': '프로젝트 개요', 'Review status': '확인 현황',
     // drilling
     'UDW & Deepwater Drilling — Fleet, Dayrate & Asset Values': 'UDW·심해 시추 — 선대, 용선료, 자산가치',
     'UDW / Deepwater Rig Market': 'UDW / 심해 리그 시장', 'Deepwater Rigs': '심해 리그', 'Deepwater focus': '심해 중심',

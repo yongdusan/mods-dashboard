@@ -46,3 +46,8 @@
 - check_data.py 결과
 ## fpso.json notes 형식 (2026-11-15~)
 - vessels·orderbook·contractors의 notes도 pipeline과 같다: 요약은 한 줄에 사실 하나, 변경은 끝에 날짜 항목으로 덧붙이고 해당 요약 줄을 고친다. 대조한 선박은 변경이 없어도 `verified`를 오늘로 바꾼다.
+
+## 입찰 결과·업체 디렉터리 (data/companies.json, 2026-11-15~)
+- FPSO·FLNG·해양 EPC 입찰의 개찰 결과(입찰사·컨소시엄·제안가·순위)가 1~2등급 출처로 확인되면 `tenders`에 추가하거나 갱신한다(`project_id`는 pipeline.json의 id).
+- 입찰에 처음 등장한 회사는 `companies`에 등록한다: 국적, 모그룹, 역할(owner/operator/epc/partner), 한 줄씩 쓴 요약(`summary`/`summary_en`), 출처, 확인일. 확인되지 않은 역할은 '미공개'로 쓴다.
+- 이 파일도 담당 파일로 커밋된다.

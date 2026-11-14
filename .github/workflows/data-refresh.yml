@@ -76,7 +76,7 @@ jobs:
             news)          FILES="data/news.json" ;;
             fleet)         FILES="data/fleet.json" ;;
             earnings)      FILES="data/earnings.json data/fpso_earnings.json data/rates.json data/capex.json" ;;
-            pipeline_fpso) FILES="data/pipeline.json data/fpso.json data/news.json" ;;
+            pipeline_fpso) FILES="data/pipeline.json data/fpso.json data/news.json data/companies.json" ;;
             smoke)         FILES="" ;;
             *) echo "unknown task $TASK"; exit 1 ;;
           esac

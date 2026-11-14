@@ -562,6 +562,17 @@
         justify-content: flex-start;
       }
     }
+    .co-dir { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; padding: 16px 18px 18px; }
+    .co-card { border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; background: var(--surface2); display: grid; gap: 10px; align-content: start; scroll-margin-top: 90px; }
+    .co-card.co-hit { border-color: var(--accent); }
+    .co-card h4 { margin: 0; font-size: 14px; font-weight: 600; color: var(--text); }
+    .co-meta { font-size: 11px; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .co-role { font-family: var(--font-mono); font-size: 10px; padding: 1px 6px; border: 1px solid var(--border); border-radius: 3px; color: var(--text-muted); }
+    .co-tenders { display: flex; flex-wrap: wrap; gap: 6px; }
+    .co-tenders a { font-size: 11px; padding: 3px 8px; border: 1px solid var(--border); border-radius: 3px; color: var(--text); text-decoration: none; }
+    .co-tenders a:hover { border-color: var(--accent); }
+    .co-src { font-size: 10.5px; color: var(--text-muted); font-family: var(--font-mono); }
+    .co-src a { color: var(--text-muted); }
   </style>
   <link rel="stylesheet" href="assets/theme.css">
 </head>
@@ -678,6 +689,16 @@
         <div class="ob-detail-grid" id="ob-detail-grid"></div>
       </div>
     </div>
+  </div>
+
+  <!-- Company directory: tender bidders, yards and operators not in the fleet table -->
+  <div class="panel" id="company-section">
+    <div class="panel-header">
+      <span class="panel-title"><span class="dot"></span>Company Directory</span>
+      <span class="panel-subtitle">Bidders, yards and operators beyond the fleet table — sourced facts only</span>
+    </div>
+    <div class="filter-bar"><div class="filter-row" id="co-role-filter"></div></div>
+    <div class="co-dir" id="co-dir"></div>
   </div>
 
 </div>
@@ -1141,6 +1162,42 @@
       obTable.setFilter(activeFilters);
     }
   };
+
+
+  /* ─── Company directory (data/companies.json) ─── */
+  const ROLE_LABEL = { owner: 'Owner / lessor', operator: 'Operator (O&M)', epc: 'EPC / yard', partner: 'Partner / other' };
+  function renderCompanies(cd) {
+    const box = document.getElementById('co-dir'), bar = document.getElementById('co-role-filter');
+    if (!box || !cd) return;
+    const byId = {}; cd.companies.forEach(c => { byId[c.id] = c; });
+    const tendersOf = id => (cd.tenders || []).filter(t => t.bids.some(b => b.lead === id || (b.partners || []).includes(id)));
+    const pipeHref = t => 'pipeline.html#open=' + encodeURIComponent(t.project_id);
+    let role = 'all';
+    const card = c => {
+      const ts = tendersOf(c.id);
+      const src = c.source_url ? `<a href="${c.source_url}" target="_blank" rel="noopener">${esc(c.source)}</a>` : esc(c.source || '—');
+      return `<div class="co-card" id="co-${c.id}">
+        <div><h4>${esc(c.name)}</h4>
+          <div class="co-meta">${esc(c.country)}${c.group ? ' · ' + esc(c.group) : ''} ${(c.roles || []).map(r => `<span class="co-role">${esc(ROLE_LABEL[r] || r)}</span>`).join('')}</div></div>
+        ${OMI.factsHtml(c.summary)}
+        ${ts.length ? `<div class="co-tenders">${ts.map(t => `<a href="${pipeHref(t)}">${esc(t.title)} →</a>`).join('')}</div>` : ''}
+        ${c.contractor ? `<div class="co-tenders"><a href="#owner=${encodeURIComponent(c.contractor)}" data-owner="${esc(c.contractor)}">Fleet table →</a></div>` : ''}
+        <div class="co-src">${src}${OMI.src({ verified: c.verified, source_url: c.source_url })}</div>
+      </div>`;
+    };
+    const draw = () => { box.innerHTML = cd.companies.filter(c => role === 'all' || (c.roles || []).includes(role)).map(card).join(''); };
+    ['all', 'owner', 'operator', 'epc', 'partner'].forEach(r => {
+      const b = document.createElement('button');
+      b.className = 'filter-btn' + (r === 'all' ? ' active' : '');
+      b.textContent = r === 'all' ? 'All' : ROLE_LABEL[r];
+      b.addEventListener('click', () => { role = r; bar.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active')); b.classList.add('active'); draw(); });
+      bar.appendChild(b);
+    });
+    draw();
+    box.addEventListener('click', e => { const a = e.target.closest('a[data-owner]'); if (!a) return; e.preventDefault(); const n = a.dataset.owner; const r = contractorTable && contractorTable.getRows().find(x => x.getData().name === n); if (r) { r.getElement().dispatchEvent(new MouseEvent('click', { bubbles: true })); r.getElement().scrollIntoView({ block: 'center' }); } });
+    OMI.whenOpen(id => { const el = document.getElementById('co-' + id); if (el) { el.classList.add('co-hit'); el.scrollIntoView({ block: 'center' }); } }, 'company');
+  }
+  fetch('./data/companies.json').then(r => r.ok ? r.json() : null).then(renderCompanies).catch(() => {});
 
   /* ─── Main init ─── */
   Promise.all([
