@@ -510,7 +510,7 @@
     .tabulator .tabulator-row.tabulator-selected,
     .tabulator .tabulator-row.row-selected {
       background: rgba(255,122,61, 0.08) !important;
-      border-left: 2px solid var(--accent) !important;
+      box-shadow: inset 2px 0 0 var(--accent) !important; /* not a border: a border widens the row by 2px and summons a horizontal scrollbar */
     }
     .tabulator .tabulator-row .tabulator-cell {
       border-right: 1px solid var(--border) !important;
@@ -770,7 +770,7 @@
     contractorTable = new Tabulator('#contractor-table', {
       data: data.contractors,
       layout: 'fitDataStretch',
-      // no responsive collapse: it hangs Safari at mid widths (2026-11-14); the table scrolls sideways instead
+      // no responsive collapse: the table scrolls sideways instead
       selectable: false,
       columns: [
         { title: 'Company',       field: 'name',              width: 205, formatter: function(cell) {
@@ -867,8 +867,8 @@
         // Show filter badges
         const vBadge = document.getElementById('vessel-contractor-badge');
         const oBadge = document.getElementById('ob-contractor-badge');
-        if (vBadge) { vBadge.textContent = ownerKey; vBadge.style.display = 'inline'; }
-        if (oBadge) { oBadge.textContent = ownerKey; oBadge.style.display = 'inline'; }
+        if (vBadge) { vBadge.textContent = contractorKey; vBadge.style.display = 'inline'; }
+        if (oBadge) { oBadge.textContent = contractorKey; oBadge.style.display = 'inline'; }
         // Scroll to Notable Vessels
         const vesselSection = document.getElementById('vessel-section');
         if (vesselSection) vesselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });

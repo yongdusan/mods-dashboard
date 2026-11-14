@@ -511,3 +511,9 @@ p { text-wrap: pretty; }
 .omi-rel-link { display: inline-flex; flex-direction: column; gap: 1px; max-width: 100%; padding: 6px 10px; background: var(--hull-2); border: 1px solid var(--line); border-radius: 3px; color: var(--foam); font-size: var(--step--1); line-height: 1.35; text-decoration: none; transition: border-color .15s; }
 .omi-rel-link:hover, .omi-rel-link:focus-visible { border-color: var(--signal); outline: none; }
 .omi-rel-link small { font-family: var(--font-mono); font-size: var(--step--2); color: var(--silt); }
+
+/* Auto-height tables must never grow a vertical scrollbar. With always-visible scroll bars (macOS with a
+   mouse attached) the vertical bar narrows the holder, which summons a horizontal bar, which shortens it
+   again — Tabulator then re-measures and redraws forever and the tab freezes (Safari, 2026-11-14).
+   Tables given a height/maxHeight carry it inline on .tabulator and keep their vertical scrolling. */
+body .tabulator:not([style*="height"]) > .tabulator-tableholder { overflow-y: hidden !important; }
