@@ -3,7 +3,7 @@
   "data_quality": {
     "confidence": "medium",
     "basis": "Company filings, earnings releases and press releases (2024–2026)",
-    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers (2026-10-08 재정정: P-78=Búzios6, P-79=Búzios8, P-80=Búzios9, P-82=Búzios10, P-83=Búzios11; P-81은 SEAP I); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek. 2026-05-29 REVIEW: petrobras-sepia-1 removed (5yr production threshold). No new FIDs or major changes since 2026-05-14. Venus/Wisting/Papua LNG/Aphrodite/Masela remain FEED. Búzios 6 H1 2026 first oil on track but not officially confirmed — remains Execution. 2026-05-29: adnoc-upper-zakum 제거 (인공섬 기반, MODU 수요 無). Gallaf + Maydan Mazam 추가 (Shallow Offshore Fixed Platform 스코프 확장). 2026-10-02 REFRESH (실행 시작은 9월 targeted-scan 기준이었으나 세션 재개로 실제 반영일은 10월 — 대부분 프로젝트 verified >90일 경과로 IOC 8개사+NOC 5개사 사실상 전면 재점검 수행, Q2 2026 실적 전사 스캔 포함): NEW ADDITIONS — Azule Greater PAJ Cross-Block Angola (FID Jun 2026, $5.1B, Execution), ADNOC Umm Shaif Gas Cap (FID Jul 2026, $6.2B, Execution), Shell Bonga South West/Aparo Nigeria (Pre-FEED, $20B indicative, FID target 2027). P-88/Albacora — Yinson 최저가 1위($2.297B), 2026-09-22 기준 상업 협상 중(계약 미서명, FEED 유지). KEY UPDATES — QatarEnergy NFE Train 1 first gas delayed 2026→2027 (Iran conflict disruption, Chiyoda work stoppage); ADNOC Hail & Ghasha first production revised 2028→2027; INPEX Masela FEED 79.56% complete, FID target moved up to end-2026; TotalEnergies Papua LNG CAPEX revised $10B→$14B (cost cuts, operatorship transferred to ExxonMobil, FID targeted Nov 2026); Venus FID still pending, pushed to Q4 2026 (fiscal terms unresolved); Equinor Wisting FID further delayed to end-2027 (from end-2026); TotalEnergies Mopane 운영권 인수 완료(2026-09-04), FID 2028 재확인; Petrobras P-91 입찰 마감 180일 추가 연장. Maydan Mahzam: 운영사 오기재 정정(ADNOC→QatarEnergy, id 변경 qatarenergy-maydan-mahzam), 2026-09 EPC 낙찰자 선정(PKG1 PTSC+Seatrium, PKG2 COOEC) 반영, first_production 근거 없는 2028 → null. 미반영/미확인: Petrobras P-86 Marlim(취소 vs 재입찰 상충되는 출처 발견 — 미등재 유지, 다음 사이클에서 1등급 출처로 재확인 필요), ADNOC Rich Gas Development($8.2B, Aug 2026 FID)는 offshore 상류 생산설비 여부 미확인으로 미등재. 2026-10-08 CORRECTIONS: Búzios 번호 체계 재정정(World Oil 2026-08, Petrobras 2026-05) — petrobras-buzios-10 \"Búzios Phase 9 (P-number TBD)\" 삭제(실재하지 않는 중복 슬롯, Búzios 9=P-80; 실행 CAPEX $3.5B 이중 집계 해소). P-84/P-85 용량 ~100k→225k bpd 정정. 2026-10-08 추가 검증: 누락 프로젝트 3건 등재(bp Tiber-Guadalupe, Shell HI OML144, TotalEnergies Kaminho), Jackdaw 승인 지연·Uaru/Scarborough 일정 재확인. chevron-ballymore 제거(CAPEX $1.6B < 수록 기준 $2B, Production 2025). 2026-11-10 집중 점검·출처감사: Tortue FLNG Ph1 CAPEX 4.8→null(출처 미확인), FID 2020-02→2018-12 정정; Yellowtail·Bonga North·GranMorgu·Mozambique LNG·Mopane 재확인. Uaru first oil·P-88/P-91 계약은 미확인(미반영). 2026-11-15: 전 프로젝트 비고를 항목별 한 줄 형식으로 정리(한/영 분리). 요약이 2026-10-13 감사 결과를 반영하지 못한 10건(Uaru·Búzios 9/10 CAPEX, Venus·Wisting·P-91·REVIT Tupi·Mopane의 출처 없는 CAPEX, SEAP 사업비·용량)을 변경 기록에 맞춰 정정. P-91 입찰 진행 상황 재확인(변동 없음).",
+    "notes": "Phase and CAPEX data verified against latest available sources as of 2026-05-14. Comprehensive gap fill conducted 2026-05-10/14. NEW ADDITIONS: Whiptail (corrected Pre-FEED→Execution, FID Apr 2024, $12.7B), Uaru (Execution, 5th Stabroek), Gato do Mato (Shell Brazil, FID Mar 2025), P-91/Búzios12 + P-88/Albacora (FEED tender), Azule Agogo Angola (Production Jul 2025), Johan Castberg (Production Mar 2025), Zuluf (Saudi Aramco Execution), QatarEnergy NFE ($28.75B) + NFS ($10B) Execution, ADNOC Upper Zakum Execution, Aphrodite FEED, Leviathan Expansion (FID Jan 2026), Woodside Scarborough/Pluto T2 ($12.5B Execution), bp Tangguh UCC (FID Nov 2024), Eni Indonesia dual-FID South+North Hub (Mar 2026), INPEX Masela/Abadi FEED. ROOT CAUSE OF GAPS: (1) original data biased toward IOC deepwater FID press-releases; missed NOC programs (QatarEnergy, ADNOC), rolling FPSO batches (Petrobras), LNG megaprojects, and FIDs before data was first compiled. FIXES: Búzios phase numbers (2026-10-08 재정정: P-78=Búzios6, P-79=Búzios8, P-80=Búzios9, P-82=Búzios10, P-83=Búzios11; P-81은 SEAP I); SEAP I fid_date corrected to Apr 2026; Hammerhead corrected to 7th Stabroek. 2026-05-29 REVIEW: petrobras-sepia-1 removed (5yr production threshold). No new FIDs or major changes since 2026-05-14. Venus/Wisting/Papua LNG/Aphrodite/Masela remain FEED. Búzios 6 H1 2026 first oil on track but not officially confirmed — remains Execution. 2026-05-29: adnoc-upper-zakum 제거 (인공섬 기반, MODU 수요 無). Gallaf + Maydan Mazam 추가 (Shallow Offshore Fixed Platform 스코프 확장). 2026-10-02 REFRESH (실행 시작은 9월 targeted-scan 기준이었으나 세션 재개로 실제 반영일은 10월 — 대부분 프로젝트 verified >90일 경과로 IOC 8개사+NOC 5개사 사실상 전면 재점검 수행, Q2 2026 실적 전사 스캔 포함): NEW ADDITIONS — Azule Greater PAJ Cross-Block Angola (FID Jun 2026, $5.1B, Execution), ADNOC Umm Shaif Gas Cap (FID Jul 2026, $6.2B, Execution), Shell Bonga South West/Aparo Nigeria (Pre-FEED, $20B indicative, FID target 2027). P-88/Albacora — Yinson 최저가 1위($2.297B), 2026-09-22 기준 상업 협상 중(계약 미서명, FEED 유지). KEY UPDATES — QatarEnergy NFE Train 1 first gas delayed 2026→2027 (Iran conflict disruption, Chiyoda work stoppage); ADNOC Hail & Ghasha first production revised 2028→2027; INPEX Masela FEED 79.56% complete, FID target moved up to end-2026; TotalEnergies Papua LNG CAPEX revised $10B→$14B (cost cuts, operatorship transferred to ExxonMobil, FID targeted Nov 2026); Venus FID still pending, pushed to Q4 2026 (fiscal terms unresolved); Equinor Wisting FID further delayed to end-2027 (from end-2026); TotalEnergies Mopane 운영권 인수 완료(2026-09-04), FID 2028 재확인; Petrobras P-91 입찰 마감 180일 추가 연장. Maydan Mahzam: 운영사 오기재 정정(ADNOC→QatarEnergy, id 변경 qatarenergy-maydan-mahzam), 2026-09 EPC 낙찰자 선정(PKG1 PTSC+Seatrium, PKG2 COOEC) 반영, first_production 근거 없는 2028 → null. 미반영/미확인: Petrobras P-86 Marlim(취소 vs 재입찰 상충되는 출처 발견 — 미등재 유지, 다음 사이클에서 1등급 출처로 재확인 필요), ADNOC Rich Gas Development($8.2B, Aug 2026 FID)는 offshore 상류 생산설비 여부 미확인으로 미등재. 2026-10-08 CORRECTIONS: Búzios 번호 체계 재정정(World Oil 2026-08, Petrobras 2026-05) — petrobras-buzios-10 \"Búzios Phase 9 (P-number TBD)\" 삭제(실재하지 않는 중복 슬롯, Búzios 9=P-80; 실행 CAPEX $3.5B 이중 집계 해소). P-84/P-85 용량 ~100k→225k bpd 정정. 2026-10-08 추가 검증: 누락 프로젝트 3건 등재(bp Tiber-Guadalupe, Shell HI OML144, TotalEnergies Kaminho), Jackdaw 승인 지연·Uaru/Scarborough 일정 재확인. chevron-ballymore 제거(CAPEX $1.6B < 수록 기준 $2B, Production 2025). 2026-11-10 집중 점검·출처감사: Tortue FLNG Ph1 CAPEX 4.8→null(출처 미확인), FID 2020-02→2018-12 정정; Yellowtail·Bonga North·GranMorgu·Mozambique LNG·Mopane 재확인. Uaru first oil·P-88/P-91 계약은 미확인(미반영). 2026-11-15: 전 프로젝트 비고를 항목별 한 줄 형식으로 정리(한/영 분리). 요약이 2026-10-13 감사 결과를 반영하지 못한 10건(Uaru·Búzios 9/10 CAPEX, Venus·Wisting·P-91·REVIT Tupi·Mopane의 출처 없는 CAPEX, SEAP 사업비·용량)을 변경 기록에 맞춰 정정. P-91 입찰 진행 상황 재확인(변동 없음). 2026-11-15 재점검: 10월 초 확인 15건 재확인 — Eni South/North Hub CAPEX 7.5→null(합산 $15B만 공개), North Hub FPSO 사양 정정·Saipem 수주, P-88 Yinson 상업 협상, Greater PAJ·Umm Shaif·Tangguh·Gato do Mato·Bonga SW 진척 반영.",
     "removed_2026_10_13": "shell-graff 제거 — 수록 기준(Pre-FEED 이상) 미충족: Shell은 PEL 39 개발을 확정하지 않았고(2025-01 $400M 손상) 2026년에도 탐사·평가정(Merlin-1X) 단계(S&P Global, 2025-08; Shell 2026). 개발 컨셉·FEED 착수 시 재수록.",
     "removed_2026_10_13_en": "Removed shell-graff — does not meet the inclusion rule (Pre-FEED or later): Shell has not committed to PEL 39 development ($400M impairment Jan 2025) and remains at exploration/appraisal in 2026 (Merlin-1X) (S&P Global, Aug 2025; Shell 2026). Re-add if a development concept or FEED starts."
   },
@@ -647,12 +647,12 @@
       "capex_busd": 3.4,
       "fid_date": "2025-03",
       "first_production": "2029",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Shell Press Release (Mar 2025)",
       "source_url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2025/shell-invests-in-the-gato-do-mato-project-in-brazils-pre-salt.html",
       "confidence": "high",
-      "notes": "산투스 분지 프리솔트, 수심 약 2,100m\nMODEC FPSO 20년 용선, 120k bbl/d · TechnipFMC 해저 일괄 계약(iEPCI, $1B 이상)\nFID 2025년 3월 · 첫 생산 2029년 · 총 CAPEX 시장 추정 약 $3.4B(공식 미공시)\n지분: Shell 50%(운영), Ecopetrol 30%, TotalEnergies 20%",
-      "notes_en": "Pre-salt Santos Basin, ~2,100m WD\nMODEC FPSO on a 20-year charter, 120k bbl/d · TechnipFMC iEPCI subsea (>$1B)\nFID March 2025 · first oil 2029 · total CAPEX ~$3.4B market estimate (not officially disclosed)\nEquity: Shell 50% (op), Ecopetrol 30%, TotalEnergies 20%"
+      "notes": "산투스 분지 프리솔트, 수심 약 2,100m\nMODEC FPSO 20년 용선, 120k bbl/d · TechnipFMC 해저 일괄 계약(iEPCI, $1B 이상)\nFID 2025년 3월 · 첫 생산 2029년 · 총 CAPEX 시장 추정 약 $3.4B(공식 미공시)\n2025년 6월 TotalEnergies가 이 프로젝트 지분 20%를 Shell에 넘기고 Lapa 지분 3%를 받는 맞교환 합의 — 규제 승인 조건, 완료 여부 미확인(성사 시 Shell 70%·Ecopetrol 30%)\n2026년 7월 MODEC: Sumitomo(요코스카)에서 선수 선체 블록 완성\n지분: Shell 50%(운영), Ecopetrol 30%, TotalEnergies 20%\n[2026-11-15 갱신] 2025-06 TotalEnergies↔Shell 지분 맞교환 합의(World Oil, 완료 미확인)와 2026-07 선수 선체 블록 완성(Offshore Magazine) 반영. 이후 새 소식 없음.",
+      "notes_en": "Pre-salt Santos Basin, ~2,100m WD\nMODEC FPSO on a 20-year charter, 120k bbl/d · TechnipFMC iEPCI subsea (>$1B)\nFID March 2025 · first oil 2029 · total CAPEX ~$3.4B market estimate (not officially disclosed)\nJune 2025: TotalEnergies agreed to swap its 20% here to Shell for an extra 3% in Lapa — subject to regulatory approval, closing not confirmed (if closed: Shell 70%, Ecopetrol 30%)\nJuly 2026 (MODEC): forward hull section completed at Sumitomo, Yokosuka\nEquity: Shell 50% (op), Ecopetrol 30%, TotalEnergies 20%\n[2026-11-15 update] Added the June 2025 TotalEnergies↔Shell stake swap (World Oil; closing not confirmed) and the July 2026 forward hull completion (Offshore Magazine). No newer news."
     },
     {
       "id": "petrobras-p91-buzios12",
@@ -698,12 +698,12 @@
       "capex_busd": 3.0,
       "fid_date": null,
       "first_production": "2031",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Agência iNFRA (Sep 22, 2026); BNamericas (Aug 2026)",
       "source_url": "https://agenciainfra.com/blog/?p=47790",
       "confidence": "medium",
-      "notes": "Campos 분지 · FPSO P-88(Albacora 재활성화, 기존 P-25·P-31 대체)\n120k bbl/d · 25공(생산 15·주입 10) · 저장 124만 bbl · 가스 처리 용량은 출처마다 다름(6 MMm³/d 대 Agência iNFRA 4.3 MMm³/d)\nBOT 방식\n2026년 8월 개찰 — Yinson Production이 US$2.297B로 최저가\n제안가 순위: Yinson $2.29B < COOEC(+Mota-Engil+CenerTech) $2.84B < Shapoorji Pallonji(+Ocyan+Seatrium) $2.9B < MISC(+Himile) $3.05B < BW Offshore(+Saipem) $3.19B\n지분: Petrobras 100%\n[정정 2026-10-02] 기존 'Execution / 2026-08 계약 확정'은 과대 기재 — 2026-09-22 기준 Petrobras가 Yinson 제안을 기술적으로 유효 판정하고 가격 조건 개선을 위한 상업 협상 진행 중(이의제기 없음), 계약 서명 미확인. 서명 확인 시 Execution으로 전환. 가동 개시 2031년 이후 목표. Note: P-86 Marlim 재입찰 건은 2025-08 취소 후 재추진설이 있었으나 2026-02 ANP가 Marlim Sul 개발계획 개정 신청을 반려, 취소 상태 유지로 확인(미확정 상태, 파이프라인 미등재).",
-      "notes_en": "Campos Basin · FPSO P-88 (Albacora revitalization, replacing P-25 and P-31)\n120k bbl/d · 25 wells (15 producers + 10 injectors) · 1.24 MMbbl storage · gas capacity differs by source (6 MMm³/d vs Agência iNFRA 4.3 MMm³/d)\nBOT model\nBids opened Aug 2026 — Yinson Production lowest at US$2.297B\nBid ranking: Yinson $2.29B < COOEC (+Mota-Engil+CenerTech) $2.84B < Shapoorji Pallonji (+Ocyan+Seatrium) $2.9B < MISC (+Himile) $3.05B < BW Offshore (+Saipem) $3.19B\nEquity: Petrobras 100%\n[Corrected 2026-10-02] Earlier 'Execution / contract confirmed Aug 2026' was overstated — as of 2026-09-22 Petrobras deemed Yinson's bid technically valid and is in commercial negotiations to improve price terms (no appeals); contract signing unconfirmed. Will move to Execution once signing is confirmed. Startup targeted after 2031. Note: the P-86 Marlim re-tender was cancelled in Aug 2025 with talk of a relaunch, but in Feb 2026 ANP rejected the Marlim Sul development plan revision — remains cancelled (unconfirmed; not listed in pipeline)."
+      "notes": "Campos 분지 · FPSO P-88(Albacora 재활성화, 기존 P-25·P-31 대체)\n120k bbl/d · 25공(생산 15·주입 10) · 저장 124만 bbl · 가스 처리 용량은 출처마다 다름(6 MMm³/d 대 Agência iNFRA 4.3 MMm³/d)\nBOT 방식\n2026년 8월 개찰 — Yinson Production이 US$2.297B로 최저가\n제안가 순위: Yinson $2.29B < COOEC(+Mota-Engil+CenerTech) $2.84B < Shapoorji Pallonji(+Ocyan+Seatrium) $2.9B < MISC(+Himile) $3.05B < BW Offshore(+Saipem) $3.19B\n2026년 9월 22일 Petrobras: Yinson 기술 제안 검증 완료, 상업 조건 협상 중 — 연내 타결 가능(엔지니어링 이사 Renata Baruzzi) · 탈락사의 정식 이의 제기 없음 · 첫 생산 2031년 이후\n지분: Petrobras 100%\n[2026-11-15 갱신] 2026-09-22 Yinson 기술 제안 검증·상업 협상 개시(Agência iNFRA, Brazil Energy Insight). 2026-11-15까지 계약 서명 보도 없음 — 단계 FEED 유지. [정정 2026-10-02] 기존 'Execution / 2026-08 계약 확정'은 과대 기재 — 2026-09-22 기준 Petrobras가 Yinson 제안을 기술적으로 유효 판정하고 가격 조건 개선을 위한 상업 협상 진행 중(이의제기 없음), 계약 서명 미확인. 서명 확인 시 Execution으로 전환. 가동 개시 2031년 이후 목표. Note: P-86 Marlim 재입찰 건은 2025-08 취소 후 재추진설이 있었으나 2026-02 ANP가 Marlim Sul 개발계획 개정 신청을 반려, 취소 상태 유지로 확인(미확정 상태, 파이프라인 미등재).",
+      "notes_en": "Campos Basin · FPSO P-88 (Albacora revitalization, replacing P-25 and P-31)\n120k bbl/d · 25 wells (15 producers + 10 injectors) · 1.24 MMbbl storage · gas capacity differs by source (6 MMm³/d vs Agência iNFRA 4.3 MMm³/d)\nBOT model\nBids opened Aug 2026 — Yinson Production lowest at US$2.297B\nBid ranking: Yinson $2.29B < COOEC (+Mota-Engil+CenerTech) $2.84B < Shapoorji Pallonji (+Ocyan+Seatrium) $2.9B < MISC (+Himile) $3.05B < BW Offshore (+Saipem) $3.19B\nSept 22, 2026 (Petrobras): Yinson technical proposal validated, commercial terms under negotiation — could close by year-end (engineering director Renata Baruzzi) · no formal appeals from losing bidders · first oil after 2031\nEquity: Petrobras 100%\n[2026-11-15 update] Sept 22, 2026: Yinson technical proposal validated, commercial negotiations started (Agência iNFRA, Brazil Energy Insight). No signing reported as of 2026-11-15 — phase stays FEED. [Corrected 2026-10-02] Earlier 'Execution / contract confirmed Aug 2026' was overstated — as of 2026-09-22 Petrobras deemed Yinson's bid technically valid and is in commercial negotiations to improve price terms (no appeals); contract signing unconfirmed. Will move to Execution once signing is confirmed. Startup targeted after 2031. Note: the P-86 Marlim re-tender was cancelled in Aug 2025 with talk of a relaunch, but in Feb 2026 ANP rejected the Marlim Sul development plan revision — remains cancelled (unconfirmed; not listed in pipeline)."
     },
     {
       "id": "azule-agogo",
@@ -715,12 +715,12 @@
       "capex_busd": 8.2,
       "fid_date": "2023-05",
       "first_production": "2025",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Azule Energy Press Release (Jul 2025); Eni/OGJ Press Release (Feb 2026)",
       "source_url": "https://www.azule-energy.com/wp-content/uploads/2025/07/AGOGO-1st-OIl-DRAFT-7_-ENI-BP-ANPG_-Final-Eng.pdf",
       "confidence": "high",
-      "notes": "앙골라 해상 Block 15/06, 수심 약 1,500m · 2023년 세계 최대 FID\nFPSO 2척: Agogo FPSO(첫 생산 2025년 7월 29일) + Ndungu(N'goma FPSO 경유, 2026년 2월 18일 전면 가동, 생산 7·주입 4공으로 피크 약 60k bbl/d — Agogo 가동 6개월 만)\n합산 피크 약 175k bbl/d\n지분: Azule Energy 36.84%(운영, bp·Eni 50:50 합작), Sonangol E&P 36.84%, Sinopec 26.32%",
-      "notes_en": "Block 15/06, offshore Angola (~1,500m WD) · largest global FID of 2023\nTwo FPSOs: Agogo FPSO (first oil Jul 29, 2025) + Ndungu (via N'goma FPSO; full-field start-up 2026-02-18, ~60k bbl/d peak from 7 producers + 4 injectors, 6 months after Agogo startup)\nCombined peak ~175k bbl/d\nEquity: Azule Energy 36.84% (op; bp/Eni 50/50 JV), Sonangol E&P 36.84%, Sinopec 26.32%"
+      "notes": "앙골라 해상 Block 15/06, 수심 약 1,500m · 2023년 세계 최대 FID\nFPSO 2척: Agogo FPSO(첫 생산 2025년 7월 29일) + Ndungu(N'goma FPSO 경유, 2026년 2월 18일 전면 가동, 생산 7·주입 4공으로 피크 약 60k bbl/d — Agogo 가동 6개월 만)\n합산 피크 약 175k bbl/d\n지분: Azule Energy 36.84%(운영, bp·Eni 50:50 합작), Sonangol E&P 36.84%, Sinopec 26.32%\n[2026-11-15 갱신] 2026-02 Ndungu 전면 가동 이후 새 소식 없음.",
+      "notes_en": "Block 15/06, offshore Angola (~1,500m WD) · largest global FID of 2023\nTwo FPSOs: Agogo FPSO (first oil Jul 29, 2025) + Ndungu (via N'goma FPSO; full-field start-up 2026-02-18, ~60k bbl/d peak from 7 producers + 4 injectors, 6 months after Agogo startup)\nCombined peak ~175k bbl/d\nEquity: Azule Energy 36.84% (op; bp/Eni 50/50 JV), Sonangol E&P 36.84%, Sinopec 26.32%\n[2026-11-15 update] No news since the Feb 2026 Ndungu full-field start-up."
     },
     {
       "id": "equinor-johan-castberg",
@@ -817,12 +817,12 @@
       "capex_busd": 2.36,
       "fid_date": "2026-01",
       "first_production": "2029",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Chevron Press Release (Jan 2026)",
       "source_url": "https://www.chevron.com/newsroom/2026/q1/chevron-takes-final-investment-decision-on-leviathan-gas-expansion",
       "confidence": "high",
-      "notes": "이스라엘 해상, 동지중해, 수심 약 1,700m\n3공 + 해저 설비 추가 · 공급 능력 약 21 BCM/년으로 확대\nFID 2026년 1월 16일 · CAPEX $2.36B · 첫 가스 2029년 하반기\n지분: Chevron 39.66%(운영, Chevron Mediterranean Ltd), NewMed Energy 45.34%, Ratio Energies 15%",
-      "notes_en": "Offshore Israel, Eastern Mediterranean (~1,700m WD)\nAdds 3 wells + subsea infrastructure; raises delivery capacity to ~21 BCM/yr\nFID January 16, 2026 · CAPEX $2.36B · first gas H2 2029\nEquity: Chevron 39.66% (op, via Chevron Mediterranean Ltd), NewMed Energy 45.34%, Ratio Energies 15%"
+      "notes": "이스라엘 해상, 동지중해, 수심 약 1,700m\n3공 + 해저 설비 추가 · 공급 능력 약 21 BCM/년으로 확대\nFID 2026년 1월 16일 · CAPEX $2.36B · 첫 가스 2029년 하반기\n2026년 3분기 실적(10월 30일): 동지중해 분기 최대 생산 — 세 번째 집하 파이프라인 가동 효과(확장 사업 자체의 진척은 언급 없음)\n지분: Chevron 39.66%(운영, Chevron Mediterranean Ltd), NewMed Energy 45.34%, Ratio Energies 15%\n[2026-11-15 갱신] Chevron 3분기 실적 발언 확인, 일정 변경 없음.",
+      "notes_en": "Offshore Israel, Eastern Mediterranean (~1,700m WD)\nAdds 3 wells + subsea infrastructure; raises delivery capacity to ~21 BCM/yr\nFID January 16, 2026 · CAPEX $2.36B · first gas H2 2029\nQ3 2026 results (Oct 30): record Eastern Med quarterly output as the third gathering line ramped up (no milestone given for the expansion itself)\nEquity: Chevron 39.66% (op, via Chevron Mediterranean Ltd), NewMed Energy 45.34%, Ratio Energies 15%\n[2026-11-15 update] Checked Chevron Q3 results remarks; no schedule change."
     },
     {
       "id": "woodside-scarborough",
@@ -851,12 +851,12 @@
       "capex_busd": 7.0,
       "fid_date": "2024-11",
       "first_production": "2028",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "bp Press Release (Nov 2024); bp Q2 2026 Earnings Call (Aug 2026)",
       "source_url": "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/bp-and-partners-give-go-ahead-for-tangguh-ucc-project-in-papua-barat-indonesia.html",
       "confidence": "high",
-      "notes": "인도네시아 Papua Barat, Berau 분지\nUbadari 유전 개발 + 인도네시아 첫 대규모 CCUS(CO₂ 약 15 Mt 저장) · 주 EPC Saipem\nFID 2024년 11월 · 첫 생산 2028년\n2026년 2분기 실적: 공정률 약 45%, 약 55 mboed 목표로 2028년 가동 순항\n지분: bp 40.22%(운영), MI Berau B.V. 16.30%, CNOOC Muturi 13.90%, Nippon Oil Exploration 12.23%, KG Berau 8.56%, INGRM 7.35%, KG Wiriagar 1.44%",
-      "notes_en": "Berau Basin, Papua Barat, Indonesia\nUbadari field development + Indonesia's first at-scale CCUS (~15 Mt CO₂) · Saipem main EPC contractor\nFID November 2024 · first production 2028\nQ2 2026 results: ~45% complete; on track for 2028 startup at ~55 mboed\nEquity: bp 40.22% (op), MI Berau B.V. 16.30%, CNOOC Muturi 13.90%, Nippon Oil Exploration 12.23%, KG Berau 8.56%, INGRM 7.35%, KG Wiriagar 1.44%"
+      "notes": "인도네시아 Papua Barat, Berau 분지\nUbadari 유전 개발 + 인도네시아 첫 대규모 CCUS(CO₂ 약 15 Mt 저장) · 주 EPC Saipem\nFID 2024년 11월 · 첫 생산 2028년\n2026년 2분기 실적: 공정률 약 45%, 약 55 mboed 목표로 2028년 가동 순항\n2026년 7월 24일 첫 해상 플랫폼 재킷이 Fakfak에 도착해 해상 설치 단계 착수 — 이어 Tangguh LNG까지 75km 파이프라인 부설\n지분: bp 40.22%(운영), MI Berau B.V. 16.30%, CNOOC Muturi 13.90%, Nippon Oil Exploration 12.23%, KG Berau 8.56%, INGRM 7.35%, KG Wiriagar 1.44%\n[2026-11-15 갱신] 2026-07-24 해상 설치 착수(OE Digital) 반영. 3분기 공정률은 찾지 못함.",
+      "notes_en": "Berau Basin, Papua Barat, Indonesia\nUbadari field development + Indonesia's first at-scale CCUS (~15 Mt CO₂) · Saipem main EPC contractor\nFID November 2024 · first production 2028\nQ2 2026 results: ~45% complete; on track for 2028 startup at ~55 mboed\nJuly 24, 2026: first offshore platform jacket arrived at Fakfak, starting the offshore installation phase — next, 75km of pipeline to Tangguh LNG\nEquity: bp 40.22% (op), MI Berau B.V. 16.30%, CNOOC Muturi 13.90%, Nippon Oil Exploration 12.23%, KG Berau 8.56%, INGRM 7.35%, KG Wiriagar 1.44%\n[2026-11-15 update] Added the July 24, 2026 start of offshore installation (OE Digital). No Q3 percent-complete found."
     },
     {
       "id": "eni-indonesia-south-hub",
@@ -865,15 +865,15 @@
       "region": "Asia Pacific",
       "asset_type": "Deepwater Gas",
       "phase": "Execution",
-      "capex_busd": 7.5,
+      "capex_busd": null,
       "fid_date": "2026-03",
       "first_production": "2028",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Eni FID Press Release (Mar 2026)",
       "source_url": "https://www.eni.com/en-IT/media/press-release/2026/03/eni-moves-forward-with-major-deep-water-gas-hubs-in-indonesia-with-dual-fids.html",
       "confidence": "high",
-      "notes": "인도네시아 동칼리만탄 Kutei 분지, 수심 1,000–1,800m\n약 1 Bcf/d 가스 + 콘덴세이트 · 기존 Jangkrik FPU에 타이백\n2026년 3월 18일 North Hub와 동시 FID · South+North 합산 $15B, 자원 약 10 TCF · 첫 생산 2028년\n2026년 5월 LNG 장기 구매계약 3건 체결(South+North Hub 물량)\n지분: Eni(운영), Pertamina",
-      "notes_en": "Kutei Basin, East Kalimantan (1,000–1,800m WD)\n~1 Bcf/d gas + condensate; ties back to the existing Jangkrik FPU\nDual FID with North Hub on March 18, 2026 · $15B combined for South + North, ~10 TCF resource base · first production 2028\nMay 2026: three long-term LNG offtake agreements signed (South + North Hub volumes)\nEquity: Eni (op), Pertamina"
+      "notes": "인도네시아 동칼리만탄 Kutei 분지, 수심 1,000–1,800m\n약 1 Bcf/d 가스 + 콘덴세이트 · 생산정 7공, 기존 Jangkrik FPU에 해저 타이백\n2026년 3월 18일 North Hub와 동시 FID · CAPEX는 South+North 합산 $15B만 공개 · 자원 약 10 TCF · 첫 생산 2028년, 정점 2029년\n2026년 5월 LNG 장기 구매계약 3건 체결(South+North Hub 물량)\n지분: Eni(운영), Pertamina\n[2026-11-15 갱신] CAPEX 7.5→null: Eni는 South+North 합산 $15B만 공개(기존 7.5는 합산액을 반으로 나눈 값). 생산정 7공(Eni 보도자료).",
+      "notes_en": "Kutei Basin, East Kalimantan (1,000–1,800m WD)\n~1 Bcf/d gas + condensate · 7 producing wells, subsea tie-back to the existing Jangkrik FPU\nDual FID with North Hub on March 18, 2026 · only the combined South + North CAPEX ($15B) is disclosed · ~10 TCF resource base · first production 2028, plateau 2029\nMay 2026: three long-term LNG offtake agreements signed (South + North Hub volumes)\nEquity: Eni (op), Pertamina\n[2026-11-15 update] CAPEX 7.5→null: Eni disclosed only the combined $15B for South + North (the previous 7.5 was half of it). 7 producing wells (Eni release)."
     },
     {
       "id": "eni-indonesia-north-hub",
@@ -882,15 +882,15 @@
       "region": "Asia Pacific",
       "asset_type": "Deepwater Gas",
       "phase": "Execution",
-      "capex_busd": 7.5,
+      "capex_busd": null,
       "fid_date": "2026-03",
       "first_production": "2029",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Eni FID Press Release (Mar 2026)",
       "source_url": "https://www.eni.com/en-IT/media/press-release/2026/03/eni-moves-forward-with-major-deep-water-gas-hubs-in-indonesia-with-dual-fids.html",
       "confidence": "high",
-      "notes": "인도네시아 동칼리만탄 Kutei 분지, 수심 1,700–2,000m\n약 1 Bcf/d 가스 · 신규 FPSO 필요(저장 약 1 MMbbl, 처리 1 Bcf/d 이상)\n2026년 3월 18일 South Hub와 동시 FID · 첫 생산 2028–2029년\n2026년 5월 LNG 장기 구매계약 3건 체결(South+North Hub 물량)\n지분: Eni(운영), Pertamina",
-      "notes_en": "Kutei Basin, East Kalimantan (1,700–2,000m WD)\n~1 Bcf/d gas; requires a new FPSO (~1 MMbbl storage, >1 Bcf/d processing)\nDual FID with South Hub on March 18, 2026 · first production 2028–2029\nMay 2026: three long-term LNG offtake agreements signed (South + North Hub volumes)\nEquity: Eni (op), Pertamina"
+      "notes": "인도네시아 동칼리만탄 Kutei 분지, 수심 1,700–2,000m\n생산정 16공 · 신규 FPSO: 가스 처리 최대 1 Bcf/d, 콘덴세이트 90,000 boepd, 저장 1.4 MMbbl(Eni 발표)\n2026년 3월 18일 South Hub와 동시 FID · CAPEX는 South+North 합산 $15B만 공개 · 첫 생산 2028–2029년\n2026년 7월 7일 Saipem(PT Tripatra와 합작) FPSO EPCI 수주, Saipem 몫 약 $2B, 48개월 — 발주처 Eni North Ganal(Eni·Petronas 합작 Searah 계열)\n2026년 5월 LNG 장기 구매계약 3건 체결(South+North Hub 물량)\n지분: Eni(운영), Pertamina\n[2026-11-15 갱신] CAPEX 7.5→null(합산 $15B만 공개). FPSO 사양을 Eni 발표값으로 정정(저장 약 1→1.4 MMbbl, 콘덴세이트 90k boepd), Saipem FPSO 수주(2026-07-07, Saipem 발표·OGJ) 추가.",
+      "notes_en": "Kutei Basin, East Kalimantan (1,700–2,000m WD)\n16 producing wells · new FPSO: up to 1 Bcf/d gas processing, 90,000 boepd condensate, 1.4 MMbbl storage (Eni)\nDual FID with South Hub on March 18, 2026 · only the combined South + North CAPEX ($15B) is disclosed · first production 2028–2029\nJuly 7, 2026: Saipem (JV with PT Tripatra) won the FPSO EPCI, Saipem share ~$2B, 48 months — client Eni North Ganal (part of Searah, the Eni–Petronas JV)\nMay 2026: three long-term LNG offtake agreements signed (South + North Hub volumes)\nEquity: Eni (op), Pertamina\n[2026-11-15 update] CAPEX 7.5→null (only the combined $15B is disclosed). FPSO specs corrected to Eni figures (storage ~1→1.4 MMbbl, 90k boepd condensate); added the Saipem FPSO award (2026-07-07, Saipem/OGJ)."
     },
     {
       "id": "inpex-masela-abadi",
@@ -919,12 +919,12 @@
       "capex_busd": 5.0,
       "fid_date": null,
       "first_production": "2024",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "North Oil Company / Upstream Online (2024–2025)",
       "source_url": "https://www.upstreamonline.com/exclusive/qatar-expansion-scheme-chase-begins-for-giant-gallaf-offshore-development-project/2-1-1090192",
       "confidence": "high",
-      "notes": "카타르 해상 Al-Shaheen 유전, 수심 약 100m · 고정식 플랫폼 단계별 확장\n3단계(Gallaf) 첫 생산 2024년 12월\nProject Ru'ya(추가 약 100k bbl/d, EPC $6B, 생산 플랫폼 9기 + 중앙처리시설, 생산정 200공 이상, 가채매장량 5.5억 bbl 이상): 건설·시운전 중, 2027년 목표 유지\nCAPEX 약 $5B 이상 · 잭업 수요 지속\n운영사 North Oil Company(QatarEnergy 70%, TotalEnergies 30%; 2016년 합작 설립, 2017년 7월 14일 운영권 이관)",
-      "notes_en": "Al-Shaheen oilfield, offshore Qatar (~100m WD) · multi-batch fixed-platform expansion\nBatch 3 (Gallaf) first oil December 2024\nProject Ru'ya (~100k bbl/d additional, $6B EPC, 9 wellhead platforms + central processing facility, 200+ production wells, 550+ MMbbl recoverable): in construction/commissioning, 2027 target maintained\nCAPEX ~$5B+ · sustained jack-up demand\nOperator North Oil Company (QatarEnergy 70%, TotalEnergies 30%; JV formed 2016, operatorship transferred 2017-07-14)"
+      "notes": "카타르 해상 Al-Shaheen 유전, 수심 약 100m · 고정식 플랫폼 단계별 확장\n3단계(Gallaf) 첫 생산 2024년 12월\nProject Ru'ya(추가 약 100k bbl/d, EPC $6B, 생산 플랫폼 9기 + 중앙처리시설, 생산정 200공 이상, 가채매장량 5.5억 bbl 이상): 건설·시운전 중, 2027년 목표 유지\n2026년 1월 McDermott가 Package 11(위성 플랫폼 9기) 재킷 바지 3척 출항(Qingdao→Al Shaheen) · Ru'ya 첫 생산 2027년 유지\nCAPEX 약 $5B 이상 · 잭업 수요 지속\n운영사 North Oil Company(QatarEnergy 70%, TotalEnergies 30%; 2016년 합작 설립, 2017년 7월 14일 운영권 이관)\n[2026-11-15 갱신] 2027 목표 유지 확인, 새 일정 변경 없음.",
+      "notes_en": "Al-Shaheen oilfield, offshore Qatar (~100m WD) · multi-batch fixed-platform expansion\nBatch 3 (Gallaf) first oil December 2024\nProject Ru'ya (~100k bbl/d additional, $6B EPC, 9 wellhead platforms + central processing facility, 200+ production wells, 550+ MMbbl recoverable): in construction/commissioning, 2027 target maintained\nJan 2026: McDermott sailed out three jacket barges for Package 11 (nine satellite wellhead platforms) from Qingdao · Ru'ya first oil still 2027\nCAPEX ~$5B+ · sustained jack-up demand\nOperator North Oil Company (QatarEnergy 70%, TotalEnergies 30%; JV formed 2016, operatorship transferred 2017-07-14)\n[2026-11-15 update] 2027 target unchanged; no new schedule change."
     },
     {
       "id": "qatarenergy-maydan-mahzam",
@@ -936,12 +936,12 @@
       "capex_busd": 4.5,
       "fid_date": null,
       "first_production": null,
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "MEED (Sep 16, 2026)",
       "source_url": "https://guest.meed.com/?p=17829",
       "confidence": "medium",
-      "notes": "카타르 해상, 해안 북동쪽 약 100km·Halul Island 남동쪽 28km, 수심 약 40m\n1965년부터 생산 중인 노후 유전의 수명 연장·생산 유지를 위한 고정식 플랫폼 확장\n[정정 2026-10-02] 기존 'ADNOC/아부다비'로 오기재되어 있었음 — 운영사는 QatarEnergy (MEED). EPC tender 2025-02 발행, 기술입찰 2025-09, 상업입찰 마감 2026-06-21(연장). 2026-09 EPC 낙찰자 선정: Package 1 (EPCI·HUC·브라운필드 개조 — 신규 topsides 7기 78,000t+, 메인 공정 topside 19,400t, 기존 topsides 5기 개조, bridge 4기, Halul Island 브라운필드, 파이프라인·케이블) = PTSC(베트남)+Seatrium 컨소시엄, 본계약 서명 2026-10 예정(PTSC 공시). Package 2 (topsides·umbilical·케이블 EPCI) = COOEC. 기타 입찰사: 한화오션, HD현대중공업, L&T, Saipem, McDermott(한때 Package 2 유력), Allseas. CAPEX $4–5B (MEED 추정). 공식 FID 발표 및 first oil 시점은 미공시.",
-      "notes_en": "Offshore Qatar, ~100km northeast of the coast and 28km southeast of Halul Island, ~40m WD\nFixed-platform expansion to extend life and sustain output of an ageing field producing since 1965\n[Corrected 2026-10-02] Previously mislabeled as 'ADNOC/Abu Dhabi' — operator is QatarEnergy (MEED). EPC tender issued Feb 2025, technical bids Sep 2025, commercial bid deadline 2026-06-21 (extended). EPC winners selected Sep 2026: Package 1 (EPCI, HUC, brownfield modifications — 7 new topsides 78,000t+, main process topside 19,400t, modification of 5 existing topsides, 4 bridges, Halul Island brownfield, pipelines and cables) = PTSC (Vietnam) + Seatrium consortium, main contract signing expected Oct 2026 (PTSC disclosure). Package 2 (topsides, umbilicals and cables EPCI) = COOEC. Other bidders: Hanwha Ocean, HD Hyundai Heavy Industries, L&T, Saipem, McDermott (once favored for Package 2), Allseas. CAPEX $4–5B (MEED estimate). Official FID and first oil timing undisclosed."
+      "notes": "카타르 해상, 해안 북동쪽 약 100km·Halul Island 남동쪽 28km, 수심 약 40m\n1965년부터 생산 중인 노후 유전의 수명 연장·생산 유지를 위한 고정식 플랫폼 확장\nEPC 계약자 선정(2026년 9–10월): Package 1 PTSC(베트남)+Seatrium 컨소시엄(본계약 2026년 10월 서명 예정, 서명 보도는 아직 없음), Package 2 COOEC(2026년 10월 9일 수주 발표, 금액 미공시)\nCAPEX $4–5B(MEED 추정) · 공식 FID·첫 생산 시점 미공시\n[2026-11-15 갱신] COOEC Package 2 수주 발표(2026-10-09, MEED) 확인. PTSC 본계약 서명은 2026-11-15까지 보도 없음 — 단계 FEED 유지(계약 서명 확인 시 Execution). [정정 2026-10-02] 기존 'ADNOC/아부다비'로 오기재되어 있었음 — 운영사는 QatarEnergy (MEED). EPC tender 2025-02 발행, 기술입찰 2025-09, 상업입찰 마감 2026-06-21(연장). 2026-09 EPC 낙찰자 선정: Package 1 (EPCI·HUC·브라운필드 개조 — 신규 topsides 7기 78,000t+, 메인 공정 topside 19,400t, 기존 topsides 5기 개조, bridge 4기, Halul Island 브라운필드, 파이프라인·케이블) = PTSC(베트남)+Seatrium 컨소시엄, 본계약 서명 2026-10 예정(PTSC 공시). Package 2 (topsides·umbilical·케이블 EPCI) = COOEC. 기타 입찰사: 한화오션, HD현대중공업, L&T, Saipem, McDermott(한때 Package 2 유력), Allseas. CAPEX $4–5B (MEED 추정). 공식 FID 발표 및 first oil 시점은 미공시.",
+      "notes_en": "Offshore Qatar, ~100km northeast of the coast and 28km southeast of Halul Island, ~40m WD\nFixed-platform expansion to extend life and sustain output of an ageing field producing since 1965\nEPC contractors selected (Sep–Oct 2026): Package 1 PTSC (Vietnam) + Seatrium consortium (main contract due to be signed Oct 2026; no signing reported yet), Package 2 COOEC (award announced Oct 9, 2026, value undisclosed)\nCAPEX $4–5B (MEED estimate) · no official FID or first-oil date\n[2026-11-15 update] Confirmed COOEC Package 2 award announcement (2026-10-09, MEED). PTSC main-contract signing not reported as of 2026-11-15 — phase stays FEED (Execution once signing is confirmed). [Corrected 2026-10-02] Previously mislabeled as 'ADNOC/Abu Dhabi' — operator is QatarEnergy (MEED). EPC tender issued Feb 2025, technical bids Sep 2025, commercial bid deadline 2026-06-21 (extended). EPC winners selected Sep 2026: Package 1 (EPCI, HUC, brownfield modifications — 7 new topsides 78,000t+, main process topside 19,400t, modification of 5 existing topsides, 4 bridges, Halul Island brownfield, pipelines and cables) = PTSC (Vietnam) + Seatrium consortium, main contract signing expected Oct 2026 (PTSC disclosure). Package 2 (topsides, umbilicals and cables EPCI) = COOEC. Other bidders: Hanwha Ocean, HD Hyundai Heavy Industries, L&T, Saipem, McDermott (once favored for Package 2), Allseas. CAPEX $4–5B (MEED estimate). Official FID and first oil timing undisclosed."
     },
     {
       "id": "azule-greater-paj",
@@ -953,12 +953,12 @@
       "capex_busd": 5.1,
       "fid_date": "2026-06",
       "first_production": "2029",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "Eni Press Release (Jun 2026); Brazil Energy Insight (Jun 2026)",
       "source_url": "https://www.eni.com/en-IT/media/press-release/2026/06/eni-announces-final-investment-decision-greater-paj-project-angola.html",
       "confidence": "high",
-      "notes": "앙골라 해상 Block 31·31/21, 초심해 신규 개발 · 앙골라 첫 광구 통합 개발(5개 유전을 신규 FPSO 1척으로)\nFPSO 설계 용량 원유 95,000 bbl/d + 가스 70 MMscfd · 추정 매장량 252 MMbbl(Block 31 143 + Block 31/21 108)\nFID 2026년 6월 22일 · 첫 생산 2029년 상반기\n운영 Azule Energy(bp·Eni 50:50 합작) · 파트너 Equinor, Sonangol E&P, ANPG",
-      "notes_en": "Blocks 31 and 31/21, offshore Angola, ultra-deepwater greenfield · Angola's first integrated cross-block development (five fields via one new FPSO)\nFPSO nameplate 95,000 bbl/d oil + 70 MMscfd gas · estimated reserves 252 MMbbl (Block 31 143 + Block 31/21 108)\nFID June 22, 2026 · first oil H1 2029\nOperated by Azule Energy (bp/Eni 50:50 JV) · partners Equinor, Sonangol E&P, ANPG"
+      "notes": "앙골라 해상 Block 31·31/21, 초심해 신규 개발 · 앙골라 첫 광구 통합 개발(5개 유전을 신규 FPSO 1척으로)\nFPSO 설계 용량 원유 95,000 bbl/d + 가스 70 MMscfd · 추정 매장량 252 MMbbl(Block 31 143 + Block 31/21 108)\nFID 2026년 6월 22일($5.1B) · 첫 생산 2029년 상반기\nFID와 함께 주요 계약 6건: FPSO CIMC Raffles, 해저 생산 시스템 Baker Hughes, 엄빌리컬 OneSubsea, 라이저·플로라인 TechnipFMC, 강관 Vallourec 등 · 17공을 신규 FPSO에 연결\n2026년 7월 30일 Haiyang CIMC Raffles 야드에서 상부 공정 모듈 강재 절단\n운영 Azule Energy(bp·Eni 50:50 합작) · 파트너 Equinor, Sonangol E&P, ANPG\n[2026-11-15 갱신] FID 시 계약 6건(World Oil·Offshore Magazine)과 2026-07-30 강재 절단(OE Digital) 반영.",
+      "notes_en": "Blocks 31 and 31/21, offshore Angola, ultra-deepwater greenfield · Angola's first integrated cross-block development (five fields via one new FPSO)\nFPSO nameplate 95,000 bbl/d oil + 70 MMscfd gas · estimated reserves 252 MMbbl (Block 31 143 + Block 31/21 108)\nFID June 22, 2026 ($5.1B) · first oil H1 2029\nSix main contracts at FID: FPSO CIMC Raffles, subsea production systems Baker Hughes, umbilicals OneSubsea, risers/flowlines TechnipFMC, rigid pipe Vallourec and others · 17 wells tied to the new FPSO\nJuly 30, 2026: steel cutting for the topside process modules at Haiyang CIMC Raffles\nOperated by Azule Energy (bp/Eni 50:50 JV) · partners Equinor, Sonangol E&P, ANPG\n[2026-11-15 update] Added the six FID contract awards (World Oil, Offshore Magazine) and the July 30, 2026 steel cutting (OE Digital)."
     },
     {
       "id": "adnoc-umm-shaif-gascap",
@@ -970,12 +970,12 @@
       "capex_busd": 6.2,
       "fid_date": "2026-07",
       "first_production": "2030",
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "ADNOC Press Release (Jul 2026)",
       "source_url": "https://www.adnoc.ae/en/news-and-media/press-releases/2026/adnoc-accelerates-gas-growth-strategy-with-62-billion-fid-for-umm-shaif-gas-cap",
       "confidence": "high",
-      "notes": "아부다비 해상 Umm Shaif 유전 · 기존 원유 저류층 위 가스캡 개발 + 콘덴세이트 회수 극대화\n가스 600 MMscfd 이상 추가(UAE 국내 가스 소비의 약 10%)\nFID 2026년 7월 21일($6.2B / AED 22.6B) · EPC 3건 합계 $5.1B + 시추 프로그램 $365M(14공) · 첫 생산 목표 2030년\nADNOC의 2035년 LNG 47 Mtpa 목표 전략의 일부\n지분: ADNOC Offshore 60%(운영), TotalEnergies 20%, Eni 10%, CNPC 10%",
-      "notes_en": "Offshore Abu Dhabi, Umm Shaif field · gas cap above the existing oil reservoir + maximized condensate recovery\nAdds 600+ MMscfd (~10% of UAE domestic gas consumption)\nFID July 21, 2026 ($6.2B / AED 22.6B) · three EPC contracts totaling $5.1B + $365M drilling program (14 wells) · first production targeted 2030\nPart of ADNOC's strategy for 47 Mtpa LNG capacity by 2035\nEquity: ADNOC Offshore 60% (op), TotalEnergies 20%, Eni 10%, CNPC 10%"
+      "notes": "아부다비 해상 Umm Shaif 유전 · 기존 원유 저류층 위 가스캡 개발 + 콘덴세이트 회수 극대화\n가스 600 MMscfd 이상 추가(UAE 국내 가스 소비의 약 10%)\nFID 2026년 7월 21일($6.2B / AED 22.6B) · EPC 3건 합계 $5.1B + 시추 프로그램 $365M(14공) · 첫 생산 목표 2030년\n2026년 8월 24일 McDermott Package 4 EPCI 수주($1B 이상, 설계 UAE·제작 Qingdao 합작 야드)\nADNOC의 2035년 LNG 47 Mtpa 목표 전략의 일부\n지분: ADNOC Offshore 60%(운영), TotalEnergies 20%, Eni 10%, CNPC 10%\n[2026-11-15 갱신] McDermott Package 4 수주(2026-08-24, World Oil·OGJ) 반영. 이후 새 소식 없음.",
+      "notes_en": "Offshore Abu Dhabi, Umm Shaif field · gas cap above the existing oil reservoir + maximized condensate recovery\nAdds 600+ MMscfd (~10% of UAE domestic gas consumption)\nFID July 21, 2026 ($6.2B / AED 22.6B) · three EPC contracts totaling $5.1B + $365M drilling program (14 wells) · first production targeted 2030\nAug 24, 2026: McDermott won the Package 4 EPCI (>$1B; engineering in the UAE, fabrication at a JV yard in Qingdao)\nPart of ADNOC's strategy for 47 Mtpa LNG capacity by 2035\nEquity: ADNOC Offshore 60% (op), TotalEnergies 20%, Eni 10%, CNPC 10%\n[2026-11-15 update] Added the McDermott Package 4 award (2026-08-24, World Oil/OGJ). No newer news."
     },
     {
       "id": "shell-bonga-southwest-aparo",
@@ -987,12 +987,12 @@
       "capex_busd": 20.0,
       "fid_date": null,
       "first_production": null,
-      "verified": "2026-10-02",
+      "verified": "2026-11-15",
       "source": "JPT/SPE, Argus Media, ThisDayLive (2025–2026)",
       "source_url": "https://jpt.spe.org/nigeria-offers-incentives-pressing-shell-for-fid-on-offshore-bonga-south-west-by-2027",
       "confidence": "low",
-      "notes": "나이지리아 해상, OML 118 인접 · 기존 Bonga FPSO(2005년 가동)로 타이백 예정\n완공 시 원유 약 150k bbl/d + 가스 140 MMscfd 목표 · CAPEX 추정 약 $20B(비공식)\n나이지리아 정부(Tinubu 대통령)가 프로젝트별 세제 혜택으로 2027년 FID 유도 중 · 첫 생산 시점 미정(FID 이후 산정)\n수심·파트너 지분 등 세부 사항 미확인 · 이미 FID한 Bonga North와는 별개 프로젝트",
-      "notes_en": "Offshore Nigeria, adjacent to OML 118 · planned tie-back to the existing Bonga FPSO (in service since 2005)\nTargets ~150k bbl/d oil + 140 MMscfd gas at completion · estimated CAPEX ~$20B (unofficial)\nThe Nigerian government (President Tinubu) is offering project-specific tax incentives to drive FID in 2027 · first production timing TBD (after FID)\nWater depth, partner equity and other details unconfirmed · separate from Bonga North, which already reached FID"
+      "notes": "나이지리아 해상, OML 118 인접 · 기존 Bonga FPSO(2005년 가동)로 타이백 예정\n완공 시 원유 약 150k bbl/d + 가스 140 MMscfd 목표 · CAPEX 추정 약 $20B(비공식)\n나이지리아 정부(Tinubu 대통령)가 생산세 공제(배럴당 최대 $11.50) 등 세제 혜택 승인 · 2026년 8월 24일 Shell·NNPC가 OML 118 생산물분배계약(PSC) 부속 합의 서명 — FID는 아직, Shell CEO는 2027년까지 FID 예상 · 첫 생산 시점 미정\n수심·파트너 지분 등 세부 사항 미확인 · 이미 FID한 Bonga North와는 별개 프로젝트\n[2026-11-15 갱신] 2026-08-24 PSC 부속 합의 서명·세제 혜택 내용(The Energy Year, Newsbase) 반영. FID 보도 없음.",
+      "notes_en": "Offshore Nigeria, adjacent to OML 118 · planned tie-back to the existing Bonga FPSO (in service since 2005)\nTargets ~150k bbl/d oil + 140 MMscfd gas at completion · estimated CAPEX ~$20B (unofficial)\nThe Nigerian government (President Tinubu) approved fiscal incentives including a production tax credit of up to $11.50/bbl · Aug 24, 2026: Shell and NNPC signed OML 118 PSC addenda — no FID yet; Shell CEO expects FID by 2027 · first production timing TBD\nWater depth, partner equity and other details unconfirmed · separate from Bonga North, which already reached FID\n[2026-11-15 update] Added the Aug 24, 2026 PSC addenda and incentive terms (The Energy Year, Newsbase). No FID reported."
     },
     {
       "id": "bp-tiber-guadalupe",
@@ -1004,12 +1004,12 @@
       "capex_busd": 5.0,
       "fid_date": "2025-09",
       "first_production": "2030",
-      "verified": "2026-10-08",
+      "verified": "2026-11-15",
       "source": "bp FID announcement (Sep 29, 2025); World Oil",
       "source_url": "https://worldoil.com/news/2025/9/29/bp-sanctions-5-billion-tiber-guadalupe-deepwater-project-in-u-s-gulf",
       "confidence": "high",
-      "notes": "미국 멕시코만 Keathley Canyon, 20k psi급 심해 개발\n부유식 생산설비(FPU) 80k bbl/d · 1단계 Tiber 6공 + Guadalupe 2공 타이백 · 회수 자원 약 350 MMboe\nbp가 2028–30년 가동 예정인 신규 프로젝트 8–10개 중 하나\n지분: bp 100%\n[2026-10-08 신규 등재 — 기존 누락]",
-      "notes_en": "US Gulf (Keathley Canyon), 20k psi deepwater development\nFloating production unit (FPU) 80k bbl/d · Phase 1: 6 Tiber wells + 2 Guadalupe tie-back wells · ~350 MMboe recoverable\nOne of 8–10 new bp startups planned for 2028–30\nEquity: bp 100%\n[Added 2026-10-08 — previously missing]"
+      "notes": "미국 멕시코만 Keathley Canyon, 20k psi급 심해 개발\n부유식 생산설비(FPU) 80k bbl/d · 1단계 Tiber 6공 + Guadalupe 2공 타이백 · 회수 자원 약 350 MMboe\nFID 2025년 9월(약 $5B) · 첫 생산 목표 2030년 · FPU는 Seatrium 건조(Kaskida FPU 설계 85% 이상 재사용), 해저 부스팅 SLB OneSubsea\nbp가 2028–30년 가동 예정인 신규 프로젝트 8–10개 중 하나\n지분: bp 100%\n[2026-11-15 갱신] 요약에 FID·계약자 정보 추가(OGJ·World Oil). 2026년 진척 보도 없음. [2026-10-08 신규 등재 — 기존 누락]",
+      "notes_en": "US Gulf (Keathley Canyon), 20k psi deepwater development\nFloating production unit (FPU) 80k bbl/d · Phase 1: 6 Tiber wells + 2 Guadalupe tie-back wells · ~350 MMboe recoverable\nFID September 2025 (~$5B) · first production targeted 2030 · FPU by Seatrium (>85% reuse of the Kaskida FPU design), subsea boosting by SLB OneSubsea\nOne of 8–10 new bp startups planned for 2028–30\nEquity: bp 100%\n[2026-11-15 update] Added FID and contractor details to the overview (OGJ, World Oil). No 2026 progress reported. [Added 2026-10-08 — previously missing]"
     },
     {
       "id": "shell-hi-oml144",
@@ -1021,12 +1021,12 @@
       "capex_busd": 2.0,
       "fid_date": "2025-10",
       "first_production": "2028",
-      "verified": "2026-10-08",
+      "verified": "2026-11-15",
       "source": "Shell / Sunlink FID (Oct 2025); Offshore Technology",
       "source_url": "https://www.offshore-technology.com/projects/hi-gas-field-nigeria/",
       "confidence": "medium",
-      "notes": "나이지리아 해상 OML 144\n신규 플랫폼 + 생산정 4공, Bonny Island까지 다상 파이프라인 · Nigeria LNG(Train 7)에 공급\n피크 350 MMscf/d(약 60k boe/d) · 자원 285 MMboe(P50)\n상부·재킷 COOEC 제작(2026년 2월 인도 완료)\n첫 가스: 2028년(Offshore Technology) 대 '2020년대 말'(Shell) — 출처마다 다름\n지분: Sunlink 60%, SNEPCo(Shell) 40%\n[2026-10-08 신규 등재 — 기존 누락]",
-      "notes_en": "Offshore Nigeria, OML 144\nNew platform + 4 production wells, multiphase pipeline to Bonny Island · supplies Nigeria LNG (Train 7)\nPeak 350 MMscf/d (~60k boe/d) · resources 285 MMboe (P50)\nTopsides and jacket by COOEC (delivered Feb 2026)\nFirst gas: 2028 (Offshore Technology) vs 'end of the 2020s' (Shell) — sources differ\nEquity: Sunlink 60%, SNEPCo (Shell) 40%\n[Added 2026-10-08 — previously missing]"
+      "notes": "나이지리아 해상 OML 144\n신규 플랫폼 + 생산정 4공, Bonny Island까지 다상 파이프라인 · Nigeria LNG(Train 7)에 공급\n피크 350 MMscf/d(약 60k boe/d) · 자원 285 MMboe(P50)\nFID 2025년 10월(약 $2B) · 시추 통합 서비스 Halliburton\n상부·재킷 COOEC 제작(2026년 2월 인도 완료)\n첫 가스: 2028년(Offshore Technology) 대 '2020년대 말'(Shell) — 출처마다 다름\n지분: Sunlink 60%, SNEPCo(Shell) 40%\n[2026-11-15 갱신] FID·Halliburton 계약 요약에 추가. 2026년 새 진척 보도 없음. [2026-10-08 신규 등재 — 기존 누락]",
+      "notes_en": "Offshore Nigeria, OML 144\nNew platform + 4 production wells, multiphase pipeline to Bonny Island · supplies Nigeria LNG (Train 7)\nPeak 350 MMscf/d (~60k boe/d) · resources 285 MMboe (P50)\nFID October 2025 (~$2B) · integrated drilling services by Halliburton\nTopsides and jacket by COOEC (delivered Feb 2026)\nFirst gas: 2028 (Offshore Technology) vs 'end of the 2020s' (Shell) — sources differ\nEquity: Sunlink 60%, SNEPCo (Shell) 40%\n[2026-11-15 update] Added FID and the Halliburton contract to the overview. No new 2026 progress reported. [Added 2026-10-08 — previously missing]"
     },
     {
       "id": "totalenergies-kaminho",
@@ -1038,12 +1038,12 @@
       "capex_busd": 6.0,
       "fid_date": "2024-05",
       "first_production": "2028",
-      "verified": "2026-10-08",
+      "verified": "2026-11-15",
       "source": "TotalEnergies FID (May 21, 2024); JPT",
       "source_url": "https://jpt.spe.org/totalenergies-6-billion-deepwater-angola-project-is-a-go-at-last",
       "confidence": "medium",
-      "notes": "앙골라 Kwanza 분지 Cameia·Golfinho 유전, 해안 100km\nVLCC 개조 FPSO 70k bbl/d(FPSO 페이지 오더북의 Kaminho FPSO) · 수반가스 전량 재주입\nCAPEX 약 $6B(일부 출처 $5.8B)\n지분: TotalEnergies 40%(운영), PETRONAS 40%, Sonangol 20%\n[2026-10-08 신규 등재 — fpso.json에는 있었으나 pipeline 누락]",
-      "notes_en": "Cameia and Golfinho fields, Kwanza Basin, Angola, 100km offshore\nVLCC-conversion FPSO, 70k bbl/d (Kaminho FPSO in the FPSO orderbook) · all associated gas reinjected\nCAPEX ~$6B (some sources $5.8B)\nEquity: TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%"
+      "notes": "앙골라 Kwanza 분지 Block 20 Cameia·Golfinho 유전, 해안 약 100km, 수심 약 1,700m\nVLCC 개조 FPSO 70k bbl/d(FPSO 페이지 오더북의 Kaminho FPSO) · 수반가스 전량 재주입\nCAPEX 약 $6B(일부 출처 $5.8B)\nFID 2024년 5월 · 첫 생산 목표 2028년(2026년 5월 보도에서도 유지)\n지분: TotalEnergies 40%(운영), PETRONAS 40%, Sonangol 20%\n[2026-11-15 갱신] 2028 목표 유지(World Oil 2026-05) 확인. 개조 야드 진척 보도는 찾지 못함. [2026-10-08 신규 등재 — fpso.json에는 있었으나 pipeline 누락]",
+      "notes_en": "Cameia and Golfinho fields, Block 20, Kwanza Basin, Angola, ~100km offshore, ~1,700m WD\nVLCC-conversion FPSO, 70k bbl/d (Kaminho FPSO in the FPSO orderbook) · all associated gas reinjected\nCAPEX ~$6B (some sources $5.8B)\nFID May 2024 · first oil targeted 2028 (unchanged in May 2026 reporting)\nEquity: TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%\n[2026-11-15 update] 2028 target unchanged (World Oil, May 2026). No conversion-yard progress found."
     }
   ]
 }

@@ -44,3 +44,5 @@
 - 변경됨(프로젝트/선박 · 변경 내용 · 출처) / 확인만 함 / 신규 추가 / 확인 못 함(이유)
 - 다음 달 주의 항목(임박한 FID, first oil, 입찰 마감)
 - check_data.py 결과
+## fpso.json notes 형식 (2026-11-15~)
+- vessels·orderbook·contractors의 notes도 pipeline과 같다: 요약은 한 줄에 사실 하나, 변경은 끝에 날짜 항목으로 덧붙이고 해당 요약 줄을 고친다. 대조한 선박은 변경이 없어도 `verified`를 오늘로 바꾼다.

@@ -215,7 +215,7 @@
     'Sanctioned': '승인', 'Pre-FID (indicative)': 'FID 전 (추정)', 'Projects': '프로젝트', 'Project': '프로젝트',
     'Company': '회사', 'Region': '지역', 'Phase': '단계', 'CAPEX ($B)': '사업비 ($B)', 'First Production': '첫 생산',
     'Type': '유형', 'Verified': '확인일', 'All': '전체', 'Notes': '비고', 'Note': '비고', 'Source': '출처',
-    'Update log': '업데이트 기록', 'Change log': '변경 기록', 'Project overview': '프로젝트 개요', 'Review status': '확인 현황',
+    'Update log': '업데이트 기록', 'Change log': '변경 기록', 'Contract notes': '계약 메모', 'Unit overview': '설비 개요', 'Project overview': '프로젝트 개요', 'Review status': '확인 현황',
     // drilling
     'UDW & Deepwater Drilling — Fleet, Dayrate & Asset Values': 'UDW·심해 시추 — 선대, 용선료, 자산가치',
     'UDW / Deepwater Rig Market': 'UDW / 심해 리그 시장', 'Deepwater Rigs': '심해 리그', 'Deepwater focus': '심해 중심',
@@ -414,7 +414,23 @@
       return '<li>' + (m ? '<b>' + escHtml(m[1]) + '</b> ' + escHtml(m[2]) : escHtml(l)) + '</li>';
     }).join('') + '</ul>';
   }
-  window.OMI = Object.assign(window.OMI || {}, { splitNotes: splitNotes, logHtml: logHtml, factsHtml: factsHtml, esc: escHtml, lang: LANG });
+  /* "Review status" block: last checked (verified), last changed (newest log date), next scheduled review. */
+  function reviewHtml(o) {
+    var ko = LANG !== 'en', v = o.verified || null, lastChange = (o.log && o.log.length) ? o.log[0].date : null;
+    var days = null;
+    if (v) { var dt = new Date(v.length === 7 ? v + '-01T00:00:00' : v + 'T00:00:00'); days = Math.max(0, Math.floor((Date.now() - dt.getTime()) / 86400000)); }
+    var age = days == null ? '' : days === 0 ? (ko ? '오늘' : 'today') : days < 90 ? (ko ? days + '일 전' : days + 'd ago') : (ko ? Math.floor(days / 30) + '개월 전' : Math.floor(days / 30) + 'mo ago');
+    var color = days == null ? 'var(--silt)' : days <= 45 ? 'var(--green, #3ecf8e)' : days <= 120 ? 'var(--yellow, #e6c84f)' : 'var(--orange, #ff7a3d)';
+    var noChange = v && (!lastChange || v > lastChange);
+    var note = ko
+      ? (v ? '출처를 다시 확인한 날짜입니다. 확인했는데 바뀐 내용이 없으면 날짜만 갱신되고 변경 기록은 남지 않습니다.' + (noChange && lastChange ? ' 마지막 변경 이후 다시 확인했고 변동이 없었습니다.' : '') : '아직 개별 출처 확인 기록이 없습니다. 정기 점검 때 순서대로 확인합니다.') + ' 정기 점검: ' + o.cadenceKo + '.'
+      : (v ? 'The date the sources were last re-checked. A check that finds nothing new only moves this date; it adds no change-log entry.' + (noChange && lastChange ? ' Re-checked after the last change; nothing had moved.' : '') : 'No item-level source check recorded yet; it will be reached in the scheduled rotation.') + ' Scheduled review: ' + o.cadenceEn + '.';
+    return '<dl class="omi-fresh">' +
+      '<dt>' + (ko ? '마지막 확인' : 'Checked') + '</dt><dd>' + (v ? '<span style="color:' + color + '">' + escHtml(v) + ' (' + age + ')</span>' : '—') + '</dd>' +
+      '<dt>' + (ko ? '마지막 변경' : 'Changed') + '</dt><dd>' + escHtml(lastChange || '—') + '</dd>' +
+      '</dl><div class="omi-fresh-note">' + escHtml(note) + '</div>';
+  }
+  window.OMI = Object.assign(window.OMI || {}, { splitNotes: splitNotes, logHtml: logHtml, factsHtml: factsHtml, reviewHtml: reviewHtml, esc: escHtml, lang: LANG });
 
   /* Short nav labels so the full menu fits; full names stay in title/aria. */
   var NAV_SHORT = {

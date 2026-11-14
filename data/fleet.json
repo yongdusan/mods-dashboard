@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -100,8 +100,8 @@
       "source": "Transocean Fleet Status Report, Feb 19 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/February%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR(Aug-26): Beacon 연속 계약 — Aug-26–Oct-26 $580k(현재), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, 이후 bp Jun-28–Jun-30 $635k. [2026-10-14 감사] 수심 20,000→12,000ft: Transocean 사양서 \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\"(20,000은 BOP 압력 등급 psi와 혼동).",
-      "data_note_en": "FSR (Aug-26): continuous Beacon contracts — Aug-26–Oct-26 $580k (current), contingent $650k, Dec-26 $580k, Feb-27–Jul-27 $505k, then bp Jun-28–Jun-30 $635k. [2026-10-14 audit] Water depth 20,000→12,000 ft: Transocean spec sheet \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\" (20,000 was confused with the 20,000 psi BOP rating).",
+      "data_note": "계약 일정(FSR 2026-08): Beacon 연속 계약 — 2026-08~10 $580k(현재), 조건부 $650k, 2026-12 $580k, 2027-02~07 $505k\n다음 계약: bp 2028-06~2030-06 $635k\n[2026-10-14 감사] 수심 20,000→12,000ft: Transocean 사양서 \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\"(20,000은 BOP 압력 등급 psi와 혼동).",
+      "data_note_en": "Schedule (FSR Aug 2026): continuous Beacon contracts — Aug–Oct 2026 $580k (current), contingent $650k, Dec 2026 $580k, Feb–Jul 2027 $505k\nNext: bp Jun 2028–Jun 2030 $635k\n[2026-10-14 audit] Water depth 20,000→12,000 ft: Transocean spec sheet \"Maximum Water Depth 12,000 ft designed / 8,000 ft outfitted\" (20,000 was confused with the 20,000 psi BOP rating).",
       "verified": "2026-10-14"
     },
     {
@@ -181,7 +181,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026 — Eastern Med firm Dec-26 to Dec-27",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "No current contract shown before the Dec-26 Eastern Med program (20 days contract preparation); marked Idle until commencement. Contract dates/dayrate refer to the upcoming firm program."
+      "data_note": "현재 계약 없음 · 2026-12 동지중해 작업(계약 준비 20일) 시작 전까지 Idle\n표시된 계약 기간·데이레이트는 예정된 확정 작업 기준",
+      "data_note_en": "No current contract · Idle until the Eastern Med program starts in Dec 2026 (20 days contract preparation)\nContract dates and dayrate refer to the upcoming firm program"
     },
     {
       "name": "Deepwater Invictus",
@@ -234,7 +235,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026 — two-well contract, unnamed operator",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Firm Jul-26 to Nov-26 plus priced options Nov-26 to Jan-27; operator and dayrate not disclosed."
+      "data_note": "확정 2026-07~11 + 가격 확정 옵션 2026-11~2027-01\n운영사·데이레이트 미공시",
+      "data_note_en": "Firm Jul–Nov 2026 plus priced options Nov 2026–Jan 2027\nOperator and dayrate not disclosed"
     },
     {
       "name": "Deepwater Poseidon",
@@ -287,7 +289,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Petrobras firm Apr-26 to Dec-26 at $375k, then Jan-27 to Mar-30 at $390k."
+      "data_note": "Petrobras 확정: 2026-04~12 $375k → 2027-01~2030-03 $390k",
+      "data_note_en": "Petrobras firm: Apr–Dec 2026 $375k → Jan 2027–Mar 2030 $390k"
     },
     {
       "name": "Deepwater Conqueror",
@@ -340,7 +343,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Petrobras firm Apr-26 to Dec-26 at $379k, then Jan-27 to Nov-30 at $390k."
+      "data_note": "Petrobras 확정: 2026-04~12 $379k → 2027-01~2030-11 $390k",
+      "data_note_en": "Petrobras firm: Apr–Dec 2026 $379k → Jan 2027–Nov 2030 $390k"
     },
     {
       "name": "Deepwater Mykonos",
@@ -367,7 +371,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Out of service May-26 to Aug-26 (80 days contract preparation), then bp Brazil firm Sep-26 to Jun-27."
+      "data_note": "2026-05~08 작업 중단(계약 준비 80일)\nbp 브라질 확정 2026-09~2027-06",
+      "data_note_en": "Out of service May–Aug 2026 (80 days contract preparation)\nbp Brazil firm Sep 2026–Jun 2027"
     },
     {
       "name": "Deepwater Thalassa",
@@ -420,7 +425,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Equinor firm Jun-26 to Mar-27 at $413k, then Mar-27 to Nov-27 at $515k."
+      "data_note": "Equinor 확정: 2026-06~2027-03 $413k → 2027-03~11 $515k",
+      "data_note_en": "Equinor firm: Jun 2026–Mar 2027 $413k → Mar–Nov 2027 $515k"
     },
     {
       "name": "Transocean Enabler",
@@ -447,7 +453,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Equinor firm May-26 to Jan-27 at $436k, Jan-27 to Mar-28 at $476k. A further 3-year program (Mar-28 to Mar-31, $399k) is pending Equinor license partner approvals and is excluded from contract_end."
+      "data_note": "Equinor 확정: 2026-05~2027-01 $436k → 2027-01~2028-03 $476k\n추가 3년(2028-03~2031-03, $399k)은 라이선스 파트너 승인 대기 — 계약 종료일에서 제외",
+      "data_note_en": "Equinor firm: May 2026–Jan 2027 $436k → Jan 2027–Mar 2028 $476k\nA further 3-year program (Mar 2028–Mar 2031, $399k) awaits licence-partner approval — excluded from contract end"
     },
     {
       "name": "Transocean Encourage",
@@ -474,7 +481,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Equinor firm Jan-26 to May-27 at $511k, May-27 to May-28 at $437k. A further 2-year program (May-28 to May-30, $399k) is pending Equinor license partner approvals and is excluded from contract_end."
+      "data_note": "Equinor 확정: 2026-01~2027-05 $511k → 2027-05~2028-05 $437k\n추가 2년(2028-05~2030-05, $399k)은 라이선스 파트너 승인 대기 — 계약 종료일에서 제외",
+      "data_note_en": "Equinor firm: Jan 2026–May 2027 $511k → May 2027–May 2028 $437k\nA further 2-year program (May 2028–May 2030, $399k) awaits licence-partner approval — excluded from contract end"
     },
     {
       "name": "Transocean Endurance",
@@ -501,7 +509,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Woodside Australia firm Jul-26 to Nov-26. Equinor Norway 2-year program (Jun-27 to Jun-29, $399k) is pending license partner approvals."
+      "data_note": "Woodside 호주 확정 2026-07~11\n다음: Equinor 노르웨이 2년(2027-06~2029-06, $399k) — 라이선스 파트너 승인 대기",
+      "data_note_en": "Woodside Australia firm Jul–Nov 2026\nNext: Equinor Norway 2-year program (Jun 2027–Jun 2029, $399k) — awaiting licence-partner approval"
     },
     {
       "name": "Transocean Equinox",
@@ -528,8 +537,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options. [2026-11-09] Transocean 2026-11-02 FSR(GlobeNewswire 사본 기준): 옵션 1정(약 50일) 행사 → 계약 종료월 2026-11로 연장. 원문 FSR PDF는 직접 확인 못 함.",
-      "data_note_en": "Undisclosed operator Australia firm Aug-26 to Oct-26 at $540k, priced option Oct-26 to Nov-26; Santos Australia firm Apr-27 to Jun-27 at $395k plus five one-well options. [2026-11-09] Per Transocean 2026-11-02 FSR (GlobeNewswire copy): one optional well (~50 days) exercised, so contract end extended to 2026-11. Original FSR PDF not directly verified."
+      "data_note": "미공개 운영사 호주: 확정 2026-08~10 $540k + 가격 확정 옵션 2026-10~11(1정 행사, 약 50일)\n다음: Santos 호주 확정 2027-04~06 $395k + 1정 옵션 5개\n[2026-11-09] Transocean 2026-11-02 FSR(GlobeNewswire 사본 기준): 옵션 1정(약 50일) 행사 → 계약 종료월 2026-11로 연장. 원문 FSR PDF는 직접 확인 못 함.",
+      "data_note_en": "Undisclosed operator, Australia: firm Aug–Oct 2026 $540k + priced option Oct–Nov 2026 (one well exercised, ~50 days)\nNext: Santos Australia firm Apr–Jun 2027 $395k plus five one-well options\n[2026-11-09] Per Transocean 2026-11-02 FSR (GlobeNewswire copy): one optional well (~50 days) exercised, so contract end extended to 2026-11. Original FSR PDF not directly verified."
     },
     {
       "name": "Transocean Barents",
@@ -556,7 +565,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "OMV Petrom Romania Mar-25 to Sep-26 ($482k), then Sep-26 to Feb-27 ($498k). Vår Energi Norway firm Jul-27 to Jul-30 at $467k after ~135 days mobilization/contract preparation."
+      "data_note": "OMV Petrom 루마니아: 2025-03~2026-09 $482k → 2026-09~2027-02 $498k\n다음: Vår Energi 노르웨이 확정 2027-07~2030-07 $467k(이동·계약 준비 약 135일 후)",
+      "data_note_en": "OMV Petrom Romania: Mar 2025–Sep 2026 $482k → Sep 2026–Feb 2027 $498k\nNext: Vår Energi Norway firm Jul 2027–Jul 2030 $467k (after ~135 days mobilization/preparation)"
     },
     {
       "name": "Transocean Norge",
@@ -583,7 +593,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "Harbour Energy / OMV firm Jun-26 to Jan-28 at $472k; Harbour Energy five-well contract Jan-28 to Nov-28 at $513k plus three one-well options."
+      "data_note": "Harbour Energy / OMV 확정 2026-06~2028-01 $472k\n다음: Harbour Energy 5공 2028-01~11 $513k + 1정 옵션 3개",
+      "data_note_en": "Harbour Energy / OMV firm Jun 2026–Jan 2028 $472k\nNext: Harbour Energy five-well contract Jan–Nov 2028 $513k plus three one-well options"
     },
     {
       "name": "Valaris DS-7",
@@ -688,7 +699,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Shell Nigeria Jun-26 to Jul-28; TCV ~$352M for two years, two 1-year options. Dayrate not disclosed."
+      "data_note": "Shell 나이지리아 2026-06~2028-07 · 2년 총 계약액 약 $352M, 1년 옵션 2개\n데이레이트 미공시",
+      "data_note_en": "Shell Nigeria Jun 2026–Jul 2028 · TCV ~$352M for two years, two 1-year options\nDayrate not disclosed"
     },
     {
       "name": "Valaris DS-12",
@@ -715,7 +727,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "BP Egypt Apr-26 to Apr-27; TCV ~$140M for ~350 days, three option wells. Dayrate not disclosed."
+      "data_note": "BP 이집트 2026-04~2027-04 · 약 350일 총 계약액 약 $140M, 옵션 3공\n데이레이트 미공시",
+      "data_note_en": "BP Egypt Apr 2026–Apr 2027 · TCV ~$140M for ~350 days, three option wells\nDayrate not disclosed"
     },
     {
       "name": "Valaris DS-17",
@@ -768,8 +781,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Ithaca Energy UK May-26 to Feb-27 (backlog ~$36M, ~300 days). Dayrate not disclosed. [2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "Ithaca Energy 영국 2026-05~2027-02(수주잔고 약 $36M, 약 300일)\n데이레이트 미공시\n[2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "Ithaca Energy UK May 2026–Feb 2027 (backlog ~$36M, ~300 days)\nDayrate not disclosed\n[2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris Stavanger",
@@ -796,8 +810,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "NEO NEXT+ UK Jan-26 to Aug-27 (TCV >$75M, 600-day priced extension; two 200-day priced options). Dayrate not disclosed. [2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "NEO NEXT+ 영국 2026-01~2027-08(총 계약액 $75M 이상, 600일 가격 확정 연장, 200일 가격 확정 옵션 2개)\n데이레이트 미공시\n[2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "NEO NEXT+ UK Jan 2026–Aug 2027 (TCV >$75M, 600-day priced extension, two 200-day priced options)\nDayrate not disclosed\n[2026-10-13] Specs per FSR (KFELS N Class, 2011); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 106",
@@ -824,8 +839,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "BP Indonesia eight-well contract, Oct-26 to Sep-28 (TCV ~$74M, four 1-well options); ~90 days out of service for leg repairs in 3Q26. Prior Medco Energi contract terminated by mutual agreement. Dayrate not disclosed. [2026-10-13] Specs per FSR (KFELS MOD V-B, 2005); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "BP 인도네시아 8공 2026-10~2028-09(총 계약액 약 $74M, 1정 옵션 4개)\n2026년 3분기 레그 수리로 약 90일 작업 중단 · 이전 Medco Energi 계약은 합의 해지\n데이레이트 미공시\n[2026-10-13] Specs per FSR (KFELS MOD V-B, 2005); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "BP Indonesia eight-well contract Oct 2026–Sep 2028 (TCV ~$74M, four one-well options)\n~90 days out of service for leg repairs in Q3 2026 · prior Medco Energi contract terminated by mutual agreement\nDayrate not disclosed\n[2026-10-13] Specs per FSR (KFELS MOD V-B, 2005); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 110",
@@ -852,8 +868,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "NOC (Qatar) four-year extension Oct-25 to Oct-29 (backlog ~$117M); resumed operations late May 2026 after suspension since early March 2026. Dayrate not disclosed. [2026-10-13] Specs per FSR (KFELS MOD V-B, 2015); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "NOC(카타르) 4년 연장 2025-10~2029-10(수주잔고 약 $117M)\n2026-03 초부터 중단됐다가 2026-05 말 작업 재개\n데이레이트 미공시\n[2026-10-13] Specs per FSR (KFELS MOD V-B, 2015); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "NOC (Qatar) four-year extension Oct 2025–Oct 2029 (backlog ~$117M)\nSuspended from early March 2026, resumed late May 2026\nDayrate not disclosed\n[2026-10-13] Specs per FSR (KFELS MOD V-B, 2015); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 143",
@@ -880,8 +897,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR. [2026-10-13] Specs per FSR (LT Super 116-E, 2010); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "2026-08 FSR에서 계선(UAE)\n[2026-10-13] Specs per FSR (LT Super 116-E, 2010); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "Listed as stacked (UAE) in the Aug 2026 FSR\n[2026-10-13] Specs per FSR (LT Super 116-E, 2010); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 146",
@@ -908,8 +926,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Leased to ARO Drilling via bareboat charter (May-25 to Apr-30) to fulfil ARO contracts with Saudi Aramco; no dayrate (bareboat). [2026-10-13] Specs per FSR (LT Super 116-E, 2011); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "ARO Drilling에 나용선(2025-05~2030-04) — ARO의 Saudi Aramco 계약 수행용\n나용선이라 데이레이트 없음\n[2026-10-13] Specs per FSR (LT Super 116-E, 2011); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "Bareboat-chartered to ARO Drilling (May 2025–Apr 2030) for ARO's Saudi Aramco contracts\nNo dayrate (bareboat)\n[2026-10-13] Specs per FSR (LT Super 116-E, 2011); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 147",
@@ -936,8 +955,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR; prior QatarEnergy contract entry was unsourced. [2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "2026-08 FSR에서 계선(UAE)\n이전에 표시된 QatarEnergy 계약은 출처가 없어 삭제\n[2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "Listed as stacked (UAE) in the Aug 2026 FSR\nThe earlier QatarEnergy contract entry was unsourced and removed\n[2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 148",
@@ -964,8 +984,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Listed under Stacked (UAE) in Aug 2026 FSR. [2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "2026-08 FSR에서 계선(UAE)\n[2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "Listed as stacked (UAE) in the Aug 2026 FSR\n[2026-10-13] Specs per FSR (LT Super 116-E, 2013); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 248",
@@ -992,8 +1013,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "GE Vernova UK accommodation contract (Nov-25 to Sep-26) ended; no work shown until 41-well UK P&A contract (undisclosed operator) Apr-27 to Mar-30, backlog ~$140M, two unpriced 1-year options. Contract dates refer to the upcoming P&A program. Prior PETRONAS Malaysia entry was unsourced. [2026-10-13] Specs per FSR (LT Super Gorilla, 2000); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "GE Vernova 영국 숙박 지원 계약(2025-11~2026-09) 종료, 다음 작업 전까지 공백\n다음: 영국 41공 폐공(P&A) 2027-04~2030-03, 미공개 운영사, 수주잔고 약 $140M, 가격 미정 1년 옵션 2개 — 표시된 계약 기간은 이 작업 기준\n이전에 표시된 PETRONAS 말레이시아 계약은 출처가 없어 삭제\n[2026-10-13] Specs per FSR (LT Super Gorilla, 2000); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "GE Vernova UK accommodation contract (Nov 2025–Sep 2026) ended; no work until the next program\nNext: 41-well UK P&A contract Apr 2027–Mar 2030, undisclosed operator, backlog ~$140M, two unpriced 1-year options — contract dates refer to this program\nThe earlier PETRONAS Malaysia entry was unsourced and removed\n[2026-10-13] Specs per FSR (LT Super Gorilla, 2000); previous specs block was an unsourced fill."
     },
     {
       "name": "Valaris 249",
@@ -1020,8 +1042,9 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "medium",
-      "data_note": "BP Trinidad Apr-26 to Jul-26 then ~100 days planned maintenance in 3Q/4Q26; Shell Trinidad Oct-26 to Oct-27 (backlog ~$66M, 365 days, three priced options). Commencement in Oct-26 not yet confirmed. Prior PETRONAS Malaysia entry was unsourced. [2026-10-13] Specs per FSR (LT Super Gorilla, 2001); previous specs block was an unsourced fill.",
-      "verified": "2026-10-13"
+      "data_note": "BP 트리니다드 2026-04~07 후 2026년 3·4분기 약 100일 정기 정비\nShell 트리니다드 2026-10~2027-10(수주잔고 약 $66M, 365일, 가격 확정 옵션 3개) — 10월 개시 여부 미확인\n이전에 표시된 PETRONAS 말레이시아 계약은 출처가 없어 삭제\n[2026-10-13] Specs per FSR (LT Super Gorilla, 2001); previous specs block was an unsourced fill.",
+      "verified": "2026-10-13",
+      "data_note_en": "BP Trinidad Apr–Jul 2026, then ~100 days planned maintenance in Q3/Q4 2026\nShell Trinidad Oct 2026–Oct 2027 (backlog ~$66M, 365 days, three priced options) — October start not yet confirmed\nThe earlier PETRONAS Malaysia entry was unsourced and removed\n[2026-10-13] Specs per FSR (LT Super Gorilla, 2001); previous specs block was an unsourced fill."
     },
     {
       "name": "West Vela",
@@ -1048,7 +1071,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "Talos May-26 to Aug-26, LLOG Sep-26 to Jun-27, then Talos one-year contract Jun-27 to Jun-28 (TCV ~$161M excl. additional services). FSR(Aug-26): Talos May-26–Aug-26 → LLOG Sep-26–Jun-27 → Talos Jun-27–Jun-28(~$161M)."
+      "data_note": "Talos 2026-05~08 → LLOG 2026-09~2027-06(현재) → Talos 1년 2027-06~2028-06(총 계약액 약 $161M, 부가 서비스 제외)(FSR 2026-08)",
+      "data_note_en": "Talos May–Aug 2026 → LLOG Sep 2026–Jun 2027 (current) → Talos one-year Jun 2027–Jun 2028 (TCV ~$161M excl. additional services) (FSR Aug 2026)"
     },
     {
       "name": "West Neptune",
@@ -1075,7 +1099,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "LLOG Nov-25 to May-26, May-26 to Oct-26, Oct-26 to Oct-27."
+      "data_note": "LLOG 연속 계약: 2025-11~2026-05 → 2026-05~10 → 2026-10~2027-10",
+      "data_note_en": "Continuous LLOG contracts: Nov 2025–May 2026 → May–Oct 2026 → Oct 2026–Oct 2027"
     },
     {
       "name": "West Capella",
@@ -1102,7 +1127,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "PTTEP Malaysia Mar-26 to Aug-27; ~75-day priced option exercised at original dayrate."
+      "data_note": "PTTEP 말레이시아 2026-03~2027-08 · 약 75일 가격 확정 옵션을 기존 데이레이트로 행사",
+      "data_note_en": "PTTEP Malaysia Mar 2026–Aug 2027 · ~75-day priced option exercised at the original dayrate"
     },
     {
       "name": "West Jupiter",
@@ -1181,7 +1207,8 @@
       "source": "Seadrill Fleet Status Report, Feb 25 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "Drillship (misclassified as Semisubmersible); TCV ~$539m"
+      "data_note": "드릴십(이전에 반잠수식으로 잘못 분류) · 총 계약액 약 $539M",
+      "data_note_en": "Drillship (previously misclassified as a semisubmersible) · TCV ~$539M"
     },
     {
       "name": "West Saturn",
@@ -1260,7 +1287,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "Petrobras Feb-25 to Jan-31. Dayrate $413,400 from Apr 1 2026 to Mar 31 2027; $459,400 Apr 2027 to Jan 15 2028; $441,500 Jan 16 2028 to Jan 15 2031 (subject to FX). FSR lists rig type as Drillship."
+      "data_note": "Petrobras 2025-02~2031-01 · FSR상 드릴십\n데이레이트: 2026-04-01~2027-03-31 $413,400 → 2027-04~2028-01-15 $459,400 → 2028-01-16~2031-01-15 $441,500(환율 조정 적용)",
+      "data_note_en": "Petrobras Feb 2025–Jan 2031 · FSR lists the rig as a drillship\nDayrate: Apr 1, 2026–Mar 31, 2027 $413,400 → Apr 2027–Jan 15, 2028 $459,400 → Jan 16, 2028–Jan 15, 2031 $441,500 (subject to FX)"
     },
     {
       "name": "West Elara",
@@ -1287,7 +1315,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "ConocoPhillips May-18 to Aug-26; Equinor accommodation contract Sep-26 to Dec-27 (TCV ~$78M incl. mobilization) plus priced options ~270 days."
+      "data_note": "ConocoPhillips 2018-05~2026-08 종료\nEquinor 숙박 지원 2026-09~2027-12(동원비 포함 총 계약액 약 $78M) + 가격 확정 옵션 약 270일",
+      "data_note_en": "ConocoPhillips May 2018–Aug 2026 ended\nEquinor accommodation contract Sep 2026–Dec 2027 (TCV ~$78M incl. mobilization) plus ~270 days of priced options"
     },
     {
       "name": "West Gemini",
@@ -1314,7 +1343,8 @@
       "source": "Seadrill Fleet Status Report, Feb 25 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/02/Seadrill-Fleet-Status-Report-February-25-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "Sonadrill JV — Seadrill earns management fee, not dayrate"
+      "data_note": "Sonadrill 합작 — Seadrill은 데이레이트가 아닌 관리 수수료 수취",
+      "data_note_en": "Sonadrill JV — Seadrill earns a management fee, not a dayrate"
     },
     {
       "name": "Sevan Louisiana",
@@ -1341,7 +1371,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "Short-term US Gulf work (Walter Oil & Gas, Guardian/LLOG) ran Jun-26 to Aug-26; no follow-on shown in Aug 2026 FSR."
+      "data_note": "미국 멕시코만 단기 작업(Walter Oil & Gas, Guardian/LLOG) 2026-06~08 종료\n2026-08 FSR에 후속 작업 없음",
+      "data_note_en": "Short-term US Gulf work (Walter Oil & Gas, Guardian/LLOG) Jun–Aug 2026 ended\nNo follow-on in the Aug 2026 FSR"
     },
     {
       "name": "Borr Gerd",
@@ -1368,9 +1399,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Foxtrot International, Ivory Coast, Feb-26 to Mar-27 (extended from Feb-27). Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Foxtrot International, Ivory Coast, 2026-02~2027-03. Operating. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Foxtrot International 코트디부아르 2026-02~2027-03(2027-02에서 연장)\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Foxtrot International, Ivory Coast, 2026-02~2027-03. Operating. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Foxtrot International, Ivory Coast, 2026-02–2027-03. Operating. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Foxtrot International, Ivory Coast, Feb 2026–Mar 2027 (extended from Feb 2027)\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Foxtrot International, Ivory Coast, 2026-02–2027-03. Operating. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Ran",
@@ -1397,9 +1428,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Eni Mexico contract May-25 to Sep-26 has ended; no follow-on found as of 2026-10-08. [2026-10-13] FSR(2026-08-11) 기준 계약은 2026-09 종료. 이후 상태는 기존 기록 유지. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Eni 멕시코 계약 2025-05~2026-09 종료\n2026-10-08 기준 후속 계약 없음\n[2026-10-13] FSR(2026-08-11) 기준 계약은 2026-09 종료. 이후 상태는 기존 기록 유지. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11) contract ended Sep 2026; subsequent status kept from earlier record. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Eni Mexico contract May 2025–Sep 2026 ended\nNo follow-on found as of 2026-10-08\n[2026-10-13] FSR (2026-08-11) contract ended Sep 2026; subsequent status kept from earlier record. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Thor",
@@ -1426,9 +1457,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Concluded HLHV JOC work in late July 2026 and commenced PVEP-Cuulong (Vietnam) in direct continuation, Jul-26 to Nov-26. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): PVEP-Cuulong, Vietnam, 2026-07~2026-11. Then undisclosed, Vietnam Nov 2026–Apr 2027. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "HLHV JOC 작업을 2026-07 말 마치고 곧바로 PVEP-Cuulong(베트남) 2026-07~11\n다음: 미공개 운영사 베트남 2026-11~2027-04(FSR 2026-08-11)\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): PVEP-Cuulong, Vietnam, 2026-07~2026-11. Then undisclosed, Vietnam Nov 2026–Apr 2027. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): PVEP-Cuulong, Vietnam, 2026-07–2026-11. Then undisclosed, Vietnam Nov 2026–Apr 2027. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Finished HLHV JOC work in late July 2026 and moved straight to PVEP-Cuulong (Vietnam) Jul–Nov 2026\nNext: undisclosed operator, Vietnam, Nov 2026–Apr 2027 (FSR 2026-08-11)\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): PVEP-Cuulong, Vietnam, 2026-07–2026-11. Then undisclosed, Vietnam Nov 2026–Apr 2027. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Joro",
@@ -1455,9 +1486,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Concluded Siemens Energy work in Germany late May 2026, then warm stacked in the UK. Sep 30 2026 update: UK accommodation contract with undisclosed operator expected to start mid-Oct 2026, ~60 days firm — not yet commenced as of 2026-10-08. [2026-10-13] FSR(2026-08-11): 계선(warm stacked), UK. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Siemens Energy 독일 작업을 2026-05 말 마치고 영국에서 계선(warm stacked)\n2026-09-30: 미공개 운영사 영국 숙박 지원 계약, 2026-10 중순 개시 예정, 확정 약 60일 — 2026-10-08 기준 미개시\n[2026-10-13] FSR(2026-08-11): 계선(warm stacked), UK. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): warm stacked, UK. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Finished Siemens Energy work in Germany late May 2026, then warm stacked in the UK\nSep 30, 2026: UK accommodation contract with an undisclosed operator expected to start mid-Oct 2026, ~60 days firm — not started as of 2026-10-08\n[2026-10-13] FSR (2026-08-11): warm stacked, UK. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Groa",
@@ -1484,9 +1515,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Listed as Available / warm stacked in UAE. Prior Saudi Aramco entry was unsourced. [2026-10-13] FSR(2026-08-11): 계선(warm stacked), UAE. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "계선(warm stacked), UAE · 투입 가능\n이전에 표시된 Saudi Aramco 계약은 출처가 없어 삭제\n[2026-10-13] FSR(2026-08-11): 계선(warm stacked), UAE. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): warm stacked, UAE. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Warm stacked in the UAE · available\nThe earlier Saudi Aramco entry was unsourced and removed\n[2026-10-13] FSR (2026-08-11): warm stacked, UAE. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Idun",
@@ -1513,9 +1544,9 @@
       "source": "Borr Drilling 6-K Exhibit 99.1, Sep 15 2026 (contract update: Odin, Idun, Bestla)",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1715497/000114036126036705/ef20082084_ex99-1.htm",
       "confidence": "high",
-      "data_note": "Undisclosed operator Vietnam Jul-26 to Sep-26, then HLHV JOC Vietnam Sep-26 to Oct-26. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): HLHV JOC, Vietnam, 2026-09~2026-10. Follow-on after undisclosed Jul–Sep 2026 work. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력). [2026-11-14 감사] HLHV JOC 2026-09~2026-10→미공개 운영사(베트남) 3-well 약 130일, 시작/종료 null: 2026-09-15 Borr 공시 \"scheduled to commence in the fourth quarter of 2026, in direct continuation of the rig’s current contract\" — 개시 월·종료일 미공시라 날짜는 null. Dayrate 미공시.",
+      "data_note": "미공개 운영사 베트남 2026-07~09 → HLHV JOC 베트남 2026-09~10\n다음: 미공개 운영사(베트남) 3공 약 130일, 2026년 4분기 현 계약에 이어 개시(Borr 2026-09-15 공시) — 개시 월·종료일 미공시\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): HLHV JOC, Vietnam, 2026-09~2026-10. Follow-on after undisclosed Jul–Sep 2026 work. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력). [2026-11-14 감사] HLHV JOC 2026-09~2026-10→미공개 운영사(베트남) 3-well 약 130일, 시작/종료 null: 2026-09-15 Borr 공시 \"scheduled to commence in the fourth quarter of 2026, in direct continuation of the rig’s current contract\" — 개시 월·종료일 미공시라 날짜는 null. Dayrate 미공시.",
       "verified": "2026-11-14",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): HLHV JOC, Vietnam, 2026-09–2026-10. Follow-on after undisclosed Jul–Sep 2026 work. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill). [2026-11-14 audit] HLHV JOC 2026-09–2026-10 → undisclosed operator (Vietnam) 3-well ~130 days, start/end null: Borr release 2026-09-15 \"scheduled to commence in the fourth quarter of 2026, in direct continuation of the rig’s current contract\" — start month and end date not disclosed, so dates null. Dayrate not disclosed."
+      "data_note_en": "Undisclosed operator, Vietnam, Jul–Sep 2026 → HLHV JOC, Vietnam, Sep–Oct 2026\nNext: undisclosed operator (Vietnam), 3 wells ~130 days, starting Q4 2026 in direct continuation (Borr release 2026-09-15) — start month and end date not disclosed\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): HLHV JOC, Vietnam, 2026-09–2026-10. Follow-on after undisclosed Jul–Sep 2026 work. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill). [2026-11-14 audit] HLHV JOC 2026-09–2026-10 → undisclosed operator (Vietnam) 3-well ~130 days, start/end null: Borr release 2026-09-15 \"scheduled to commence in the fourth quarter of 2026, in direct continuation of the rig’s current contract\" — start month and end date not disclosed, so dates null. Dayrate not disclosed."
     },
     {
       "name": "Borr Saga",
@@ -1542,9 +1573,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Brunei Shell Petroleum Nov-22 to Apr-27, operating with option to extend. Prior ONGC India entry was unsourced. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Brunei Shell Petroleum, Brunei, 2022-11~2027-04. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Brunei Shell Petroleum 2022-11~2027-04, 연장 옵션\n이전에 표시된 ONGC 인도 계약은 출처가 없어 삭제\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Brunei Shell Petroleum, Brunei, 2022-11~2027-04. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Brunei Shell Petroleum, Brunei, 2022-11–2027-04. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Brunei Shell Petroleum Nov 2022–Apr 2027, with option to extend\nThe earlier ONGC India entry was unsourced and removed\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Brunei Shell Petroleum, Brunei, 2022-11–2027-04. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Var",
@@ -1571,9 +1602,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Listed as Available / warm stacked in Singapore. Prior Aker BP Norway entry was unsourced. [2026-10-13] FSR(2026-08-11): 계선(warm stacked), Singapore. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "계선(warm stacked), 싱가포르 · 투입 가능\n이전에 표시된 Aker BP 노르웨이 계약은 출처가 없어 삭제\n[2026-10-13] FSR(2026-08-11): 계선(warm stacked), Singapore. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): warm stacked, Singapore. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Warm stacked in Singapore · available\nThe earlier Aker BP Norway entry was unsourced and removed\n[2026-10-13] FSR (2026-08-11): warm stacked, Singapore. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Arabia I",
@@ -1600,9 +1631,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Petrobras Brazil Apr-25 to Apr-29, operating with option to extend. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Petrobras, Brazil, 2025-04~2029-04. Operating with option to extend; charter arrangement, ultimate customer Petrobras. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Petrobras 브라질 2025-04~2029-04, 연장 옵션 · 용선 구조(최종 고객 Petrobras)\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Petrobras, Brazil, 2025-04~2029-04. Operating with option to extend; charter arrangement, ultimate customer Petrobras. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Petrobras, Brazil, 2025-04–2029-04. Operating with option to extend; charter arrangement, ultimate customer Petrobras. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Petrobras Brazil Apr 2025–Apr 2029, with option to extend · charter arrangement (ultimate customer Petrobras)\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Petrobras, Brazil, 2025-04–2029-04. Operating with option to extend; charter arrangement, ultimate customer Petrobras. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Arabia II",
@@ -1629,9 +1660,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Bunduq UAE Sep-25 to Jan-27, operating with option to extend. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Bunduq, UAE, 2025-09~2027-01. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Bunduq UAE 2025-09~2027-01, 연장 옵션\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Bunduq, UAE, 2025-09~2027-01. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Bunduq, UAE, 2025-09–2027-01. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Bunduq UAE Sep 2025–Jan 2027, with option to extend\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Bunduq, UAE, 2025-09–2027-01. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Arabia III",
@@ -1658,9 +1689,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Saudi Aramco Sep-23 to Sep-28, operating with option to extend. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Saudi Aramco, Saudi Arabia, 2023-09~2028-09. Operating with option to extend; HD/HE capable. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Saudi Aramco 2023-09~2028-09, 연장 옵션 · 고심도·고사양(HD/HE) 가능\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Saudi Aramco, Saudi Arabia, 2023-09~2028-09. Operating with option to extend; HD/HE capable. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Saudi Aramco, Saudi Arabia, 2023-09–2028-09. Operating with option to extend; HD/HE capable. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Saudi Aramco Sep 2023–Sep 2028, with option to extend · HD/HE capable\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Saudi Aramco, Saudi Arabia, 2023-09–2028-09. Operating with option to extend; HD/HE capable. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Norve",
@@ -1687,9 +1718,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Vaalco Energy Gabon Nov-25 to Sep-26 ended. Sep 30 2026: binding LOA from undisclosed West Africa operator, 3 wells (~245 days) from mid-Dec 2026 into Aug 2027 plus ~175 days priced options — not yet a firm commencement. [2026-10-13] FSR(2026-08-11) 기준 계약은 2026-09 종료. 이후 상태는 기존 기록 유지. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Vaalco Energy 가봉 2025-11~2026-09 종료\n2026-09-30: 서아프리카 미공개 운영사와 구속력 있는 LOA — 3공(약 245일), 2026-12 중순~2027-08 + 가격 확정 옵션 약 175일 · 확정 개시 전\n[2026-10-13] FSR(2026-08-11) 기준 계약은 2026-09 종료. 이후 상태는 기존 기록 유지. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11) contract ended Sep 2026; subsequent status kept from earlier record. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Vaalco Energy Gabon Nov 2025–Sep 2026 ended\nSep 30, 2026: binding LOA with an undisclosed West Africa operator — 3 wells (~245 days) from mid-Dec 2026 to Aug 2027 plus ~175 days of priced options · not yet commenced\n[2026-10-13] FSR (2026-08-11) contract ended Sep 2026; subsequent status kept from earlier record. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Hild",
@@ -1716,9 +1747,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Listed as Available / warm stacked in Mexico. Prior TotalEnergies Denmark entry was unsourced. [2026-10-13] FSR(2026-08-11): 계선(warm stacked), Mexico. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "계선(warm stacked), 멕시코 · 투입 가능\n이전에 표시된 TotalEnergies 덴마크 계약은 출처가 없어 삭제\n[2026-10-13] FSR(2026-08-11): 계선(warm stacked), Mexico. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): warm stacked, Mexico. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Warm stacked in Mexico · available\nThe earlier TotalEnergies Denmark entry was unsourced and removed\n[2026-10-13] FSR (2026-08-11): warm stacked, Mexico. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Borr Skald",
@@ -1745,9 +1776,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Commenced Vestigo Petroleum (Malaysia) late May 2026, May-26 to Nov-26 with option to extend. Dayrate not disclosed. [2026-10-13] FSR(2026-08-11): Vestigo Petroleum, Malaysia, 2026-05~2026-11. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
+      "data_note": "Vestigo Petroleum(말레이시아) 2026-05 말 개시, 2026-05~11, 연장 옵션\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Vestigo Petroleum, Malaysia, 2026-05~2026-11. Operating with option to extend. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-13] FSR (2026-08-11): Vestigo Petroleum, Malaysia, 2026-05–2026-11. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note_en": "Started with Vestigo Petroleum (Malaysia) late May 2026, May–Nov 2026, with option to extend\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Vestigo Petroleum, Malaysia, 2026-05–2026-11. Operating with option to extend. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
     },
     {
       "name": "Tidal Action",
@@ -1777,7 +1808,8 @@
       "fleet_source_url": "https://www.hanwhadrilling.com/fleet/",
       "contract_source_url": "https://www.hanwhadrilling.com/2024/09/hanwha-drilling-and-constellation-secure-a-500-million-deal-for-drillship-tidal-action/",
       "confidence": "high",
-      "data_note": "Tidal Action commenced its maiden Petrobras contract on 2025-09-17. The contract is described as approximately $500M for 30 months plus options and is managed with Constellation Oil Services. Dayrate shown is an implied contract value (~$500M / 30 months), not a disclosed rig-level dayrate."
+      "data_note": "2025-09-17 Petrobras 첫 계약 개시 · 30개월 약 $500M + 옵션, Constellation Oil Services와 공동 관리\n표시된 데이레이트는 총 계약액을 기간으로 나눈 환산값(약 $500M ÷ 30개월) — 공시된 리그별 데이레이트 아님",
+      "data_note_en": "Started its maiden Petrobras contract on 2025-09-17 · ~$500M for 30 months plus options, managed with Constellation Oil Services\nDayrate shown is implied from contract value (~$500M / 30 months), not a disclosed rig-level dayrate"
     },
     {
       "name": "Deepsea Aberdeen",
@@ -1804,8 +1836,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-aberdeen/",
       "confidence": "high",
-      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "현재 고객·대략의 계약 기간은 Odfjell Drilling 선단 페이지 기준\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Current client and broad contract timeline per the Odfjell Drilling fleet page\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Nordkapp",
@@ -1832,8 +1865,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-nordkapp/",
       "confidence": "high",
-      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "현재 고객·대략의 계약 기간은 Odfjell Drilling 선단 페이지 기준\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Current client and broad contract timeline per the Odfjell Drilling fleet page\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Atlantic",
@@ -1860,8 +1894,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-atlantic/",
       "confidence": "high",
-      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "현재 고객·대략의 계약 기간은 Odfjell Drilling 선단 페이지 기준\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Current client and broad contract timeline per the Odfjell Drilling fleet page\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Stavanger",
@@ -1888,8 +1923,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-stavanger/",
       "confidence": "high",
-      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "현재 고객·대략의 계약 기간은 Odfjell Drilling 선단 페이지 기준\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Current client and broad contract timeline per the Odfjell Drilling fleet page\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Yantai",
@@ -1916,8 +1952,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-yantai/",
       "confidence": "high",
-      "data_note": "Current client and broad contract timeline cross-checked against Odfjell Drilling Our Fleet page; rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "현재 고객·대략의 계약 기간은 Odfjell Drilling 선단 페이지 기준\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Current client and broad contract timeline per the Odfjell Drilling fleet page\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Bergen",
@@ -1944,8 +1981,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-bollsta/",
       "confidence": "high",
-      "data_note": "Former Deepsea Bollsta, renamed Deepsea Bergen after Odfjell acquisition; current client and broad timeline from Odfjell Our Fleet page. Rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "구 Deepsea Bollsta — Odfjell 인수 후 개명\n현재 고객·대략의 계약 기간은 Odfjell 선단 페이지 기준 · 리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Formerly Deepsea Bollsta, renamed after the Odfjell acquisition\nCurrent client and broad timeline per the Odfjell fleet page · rig-level dayrate not disclosed"
     },
     {
       "name": "Hercules",
@@ -1972,8 +2010,9 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/hercules/",
       "confidence": "high",
-      "data_note": "Odfjell rig page lists Client None; broad timeline may include availability/optional periods rather than firm work. Rig-level dayrate is not disclosed.",
-      "verified": "2026-10-13"
+      "data_note": "Odfjell 리그 페이지상 고객 없음 · 표시 기간에는 확정 작업이 아닌 대기·옵션 기간이 섞여 있을 수 있음\n리그별 데이레이트 미공시",
+      "verified": "2026-10-13",
+      "data_note_en": "Odfjell rig page lists no client · the broad timeline may include availability/optional periods rather than firm work\nRig-level dayrate not disclosed"
     },
     {
       "name": "Deepsea Mira",
@@ -2000,8 +2039,8 @@
       "source": "Odfjell Drilling fleet page, May 2026",
       "source_url": "https://www.odfjelldrilling.com/rig/deepsea-mira/",
       "confidence": "high",
-      "data_note": "Odfjell Our Fleet page shows no current client and location Namibia; broad timeline may include availability/optional periods rather than firm work. Rig-level dayrate is not disclosed. [2026-10-13] NOL 발표: Shell 나미비아 1공 작업 2026-04-04~07-02 완료(2공째 옵션 미행사), 이후 Walvis Bay에서 개조 — 하반기 후속 계약 미발표. 소유 Northern Ocean, Odfjell 관리.",
-      "data_note_en": " [2026-10-13] NOL: Shell Namibia one-well job 2026-04-04 to 07-02 completed (second-well option not exercised); then upgrades at Walvis Bay — no follow-on announced. Owned by Northern Ocean, managed by Odfjell.",
+      "data_note": "Northern Ocean 소유, Odfjell 관리 · 위치 나미비아, 현재 고객 없음(Odfjell 선단 페이지)\nShell 나미비아 1공 2026-04-04~07-02 완료(2공째 옵션 미행사) → Walvis Bay에서 개조, 하반기 후속 계약 미발표(NOL)\n리그별 데이레이트 미공시\n[2026-10-13] NOL 발표: Shell 나미비아 1공 작업 2026-04-04~07-02 완료(2공째 옵션 미행사), 이후 Walvis Bay에서 개조 — 하반기 후속 계약 미발표. 소유 Northern Ocean, Odfjell 관리.",
+      "data_note_en": "Owned by Northern Ocean, managed by Odfjell · located in Namibia with no current client (Odfjell fleet page)\nShell Namibia one-well job Apr 4–Jul 2, 2026 completed (second-well option not exercised) → upgrades at Walvis Bay, no H2 follow-on announced (NOL)\nRig-level dayrate not disclosed\n[2026-10-13] NOL: Shell Namibia one-well job 2026-04-04 to 07-02 completed (second-well option not exercised); then upgrades at Walvis Bay — no follow-on announced. Owned by Northern Ocean, managed by Odfjell.",
       "verified": "2026-10-13"
     },
     {
@@ -2030,9 +2069,9 @@
       "source_url": "https://offshore-energy.biz/oil-india-keeps-dolphin-drillings-rig-on-offshore-assignment-through-october",
       "fleet_source_url": "https://www.dolphindrilling.com/our-fleet/blackford-dolphin",
       "confidence": "high",
-      "data_note": "[2026-10-26] 계약 중→Idle: Dolphin 2026-08-20 공시상 Oil India 계약 최종 종료일 2026-10-15가 지났고 추가 연장·후속 계약 공시 없음(공시 확인 시 재반영). [2026-10-13 감사] Idle→계약 중: Oil India 계약이 단기 연장을 거쳐 2026-10-15까지(2024-11 개시, 인도 동부 해역). 이후 계약 미발표. 수심 6,000ft·1974 취역·2008 개조 확인(Dolphin).",
+      "data_note": "Oil India 계약(2024-11 개시, 인도 동부 해역)이 단기 연장을 거쳐 2026-10-15 종료(Dolphin 2026-08-20 공시)\n추가 연장·후속 계약 공시 없음 · 수심 6,000ft, 1974년 취역·2008년 개조\n[2026-10-26] 계약 중→Idle: Dolphin 2026-08-20 공시상 Oil India 계약 최종 종료일 2026-10-15가 지났고 추가 연장·후속 계약 공시 없음(공시 확인 시 재반영). [2026-10-13 감사] Idle→계약 중: Oil India 계약이 단기 연장을 거쳐 2026-10-15까지(2024-11 개시, 인도 동부 해역). 이후 계약 미발표. 수심 6,000ft·1974 취역·2008 개조 확인(Dolphin).",
       "verified": "2026-10-13",
-      "data_note_en": "[2026-10-26] On Contract→Idle: per Dolphin's 2026-08-20 release the final Oil India contract end date of 2026-10-15 has passed; no further extension or follow-on announced (re-update if one is disclosed). [2026-10-13 audit] Idle→On Contract: Oil India contract extended in short steps to 2026-10-15 (started Nov 2024, east of India). No follow-on contract announced. 6,000 ft WD, entered service 1974, upgraded 2008 confirmed (Dolphin)."
+      "data_note_en": "Oil India contract (started Nov 2024, east coast of India) ran through short extensions to 2026-10-15 (Dolphin release 2026-08-20)\nNo further extension or follow-on announced · 6,000 ft water depth, built 1974, upgraded 2008\n[2026-10-26] On Contract→Idle: per Dolphin's 2026-08-20 release the final Oil India contract end date of 2026-10-15 has passed; no further extension or follow-on announced (re-update if one is disclosed). [2026-10-13 audit] Idle→On Contract: Oil India contract extended in short steps to 2026-10-15 (started Nov 2024, east of India). No follow-on contract announced. 6,000 ft WD, entered service 1974, upgraded 2008 confirmed (Dolphin)."
     },
     {
       "name": "Paul B. Loyd Jr.",
@@ -2060,7 +2099,8 @@
       "source_url": "https://www.dolphindrilling.com/news/dolphin-drilling-signs-letter-of-intent-for-paul-b-loyd-jr",
       "fleet_source_url": "https://www.dolphindrilling.com/our-fleet/paul-b-loyd-jr",
       "confidence": "medium",
-      "data_note": "Currently on firm Harbour Energy contract until Feb 2028; Apr 2026 LOI contemplates direct-continuation work through Aug 2030, subject to conditions. Rig-level dayrate is not disclosed."
+      "data_note": "Harbour Energy 확정 계약 2028-02까지\n2026-04 LOI: 조건부로 2030-08까지 연속 작업 검토\n리그별 데이레이트 미공시",
+      "data_note_en": "Firm Harbour Energy contract until Feb 2028\nApr 2026 LOI: conditional direct-continuation work through Aug 2030\nRig-level dayrate not disclosed"
     },
     {
       "name": "Borgland Dolphin",
@@ -2089,7 +2129,8 @@
       "future_contract_source_url": "https://www.offshore-energy.biz/dolphin-drillings-1977-built-rig-gets-hold-of-new-multi-year-gig/",
       "fleet_source_url": "https://www.dolphindrilling.com/our-fleet/borgland-dolphin",
       "confidence": "medium",
-      "data_note": "Warm stacked while completing remaining SPS. Repsol contract is scheduled to start late 2026 for 7 wells/minimum 220 days; Apr 2026 LOI indicates potential direct-continuation work from 2H 2027 to Oct 2031. Rig-level dayrate is not disclosed."
+      "data_note": "잔여 정기검사(SPS) 마무리 중 계선(warm stacked)\nRepsol 계약 2026년 말 개시 예정 — 7공, 최소 220일\n2026-04 LOI: 2027년 하반기~2031-10 연속 작업 가능\n리그별 데이레이트 미공시",
+      "data_note_en": "Warm stacked while completing the remaining SPS\nRepsol contract due to start late 2026 — 7 wells, minimum 220 days\nApr 2026 LOI: possible direct-continuation work from H2 2027 to Oct 2031\nRig-level dayrate not disclosed"
     },
     {
       "name": "Stena Carron",
@@ -2117,7 +2158,8 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-carron/",
       "confidence": "medium",
-      "data_note": "Stena states Carron is firmly committed throughout 2026 with options beyond. Rig-level dayrate is not disclosed."
+      "data_note": "Stena: 2026년 내내 확정 작업, 이후 옵션\n리그별 데이레이트 미공시",
+      "data_note_en": "Stena: firmly committed throughout 2026, with options beyond\nRig-level dayrate not disclosed"
     },
     {
       "name": "Stena DrillMAX",
@@ -2145,7 +2187,8 @@
       "source_url": "https://www.worldoil.com/news/2026/4/15/greece-to-see-first-deepwater-offshore-well-as-energean-taps-stena-drillmax/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-drillmax/",
       "confidence": "medium",
-      "data_note": "Energean Greece one-well campaign is expected to begin in early 2027. Current 2026 option status is not clearly disclosed, so the rig is marked idle/preparing pending newer fleet availability data."
+      "data_note": "Energean 그리스 1공 작업 2027년 초 개시 예정\n2026년 옵션 상태가 명확히 공시되지 않아 Idle(준비 중)로 표시 — 선단 가동 자료 갱신 시 재확인",
+      "data_note_en": "Energean Greece one-well campaign expected to start early 2027\n2026 option status not clearly disclosed, so shown as idle/preparing — re-check when newer fleet data appears"
     },
     {
       "name": "Stena Evolution",
@@ -2173,7 +2216,8 @@
       "source_url": "https://www.stena-drilling.com/stena-drilling-sign-a-new-contract-with-shell-offshore-inc-for-stena-evolution/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-evolution/",
       "confidence": "medium",
-      "data_note": "Stena announced a Shell contract starting Q2 2024 for a primary term of 5 years plus options. Rig-level dayrate is not disclosed."
+      "data_note": "Shell 계약 2024년 2분기 개시, 기본 5년 + 옵션(Stena 발표)\n리그별 데이레이트 미공시",
+      "data_note_en": "Shell contract from Q2 2024, primary term 5 years plus options (Stena announcement)\nRig-level dayrate not disclosed"
     },
     {
       "name": "Stena Forth",
@@ -2200,7 +2244,8 @@
       "source": "Stena Drilling fleet page, May 2026",
       "source_url": "https://www.stena-drilling.com/our-fleet/stena-forth/",
       "confidence": "medium",
-      "data_note": "Stena fleet page confirms specifications, but a current firm contract was not identified in the available public contract-status text. Marked idle pending fleet availability refresh."
+      "data_note": "사양은 Stena 선단 페이지로 확인 · 공개된 계약 현황에서 현재 확정 계약을 찾지 못해 Idle로 표시",
+      "data_note_en": "Specifications confirmed on the Stena fleet page · no current firm contract found in public contract-status text, so shown as idle"
     },
     {
       "name": "Stena IceMAX",
@@ -2228,7 +2273,8 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-icemax/",
       "confidence": "medium",
-      "data_note": "Stena stated IceMAX secured a four-well Egypt campaign starting Feb 2026 for about 190 days plus options (estimated end Aug 2026). No option exercise or follow-on contract confirmed as of 2026-10-08, so contract fields are cleared per update rules; the rig may still be working options — re-verify."
+      "data_note": "이집트 4공 작업 2026-02 개시, 약 190일 + 옵션(종료 추정 2026-08)(Stena 발표)\n2026-10-08 기준 옵션 행사·후속 계약 미확인이라 계약 정보를 비움 — 옵션 작업 중일 수 있어 재확인 필요",
+      "data_note_en": "Four-well Egypt campaign from Feb 2026, ~190 days plus options (estimated end Aug 2026) (Stena)\nNo option exercise or follow-on confirmed as of 2026-10-08, so contract fields are cleared — the rig may still be on options; re-check"
     },
     {
       "name": "Stena Don",
@@ -2256,7 +2302,8 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-don/",
       "confidence": "medium",
-      "data_note": "Stena states Don secured a four-well UK programme starting Feb 2026 for around ten months, with options that could extend employment to end-2028. Rig-level dayrate is not disclosed."
+      "data_note": "영국 4공 프로그램 2026-02 개시, 약 10개월 · 옵션 행사 시 2028년 말까지(Stena 발표)\n리그별 데이레이트 미공시",
+      "data_note_en": "Four-well UK programme from Feb 2026, ~10 months · options could extend to end-2028 (Stena)\nRig-level dayrate not disclosed"
     },
     {
       "name": "Tungsten Explorer",
@@ -2284,15 +2331,15 @@
       "source_url": "https://www.nasdaq.com/press-release/vantage-drilling-international-ltd-reports-third-quarter-2025-results-2025-11-25",
       "transaction_source_url": "https://www.nasdaq.com/press-release/vantage-drilling-international-ltd-announces-completion-sale-tungsten-explorer-2025",
       "confidence": "medium",
-      "data_note": "Tungsten Explorer is owned by the TEVA JV and managed by Vantage under a 10-year management agreement. Vantage reported West Africa operations commenced in early Nov 2025. Rig-level dayrate is not disclosed. [2026-10-13] 2026-05-29 Eldorado Drilling가 Vantage 인수 합의(주당 $19, 2026-06-18 주총 승인), 합병 후에도 Vantage 이름 유지.",
-      "data_note_en": " [2026-10-13] 2026-05-29 Eldorado Drilling agreed to acquire Vantage ($19/share; shareholders approved 2026-06-18); combined company keeps the Vantage name."
+      "data_note": "TEVA 합작 소유, Vantage가 10년 관리 계약으로 운영\n2025-11 초 서아프리카 작업 개시(Vantage 발표)\n리그별 데이레이트 미공시\n[2026-10-13] 2026-05-29 Eldorado Drilling가 Vantage 인수 합의(주당 $19, 2026-06-18 주총 승인), 합병 후에도 Vantage 이름 유지.",
+      "data_note_en": "Owned by the TEVA JV and managed by Vantage under a 10-year management agreement\nWest Africa operations began early Nov 2025 (Vantage)\nRig-level dayrate not disclosed\n[2026-10-13] 2026-05-29 Eldorado Drilling agreed to acquire Vantage ($19/share; shareholders approved 2026-06-18); combined company keeps the Vantage name."
     },
     {
       "name": "Platinum Explorer",
       "contractor": "Vantage Drilling",
       "type": "Drillship",
       "water_depth_ft": 10000,
-      "status": "Idle",
+      "status": "On Contract",
       "operator": "ONGC",
       "location": "India",
       "contract_start": "2026-08",
@@ -2313,8 +2360,9 @@
       "source": "Vantage Drilling ONGC NOA, Feb 2026",
       "source_url": "https://www.globenewswire.com/news-release/2026/02/10/3235035/0/en/vantage-drilling-international-ltd-announces-ongc-notification-of-award-for-platinum-explorer.html",
       "confidence": "medium",
-      "data_note": "ONGC NOA is for a 3-year firm plus 1-year optional campaign with estimated TCV of $261M excluding MPD services. Dayrate shown is an implied contract value over 3 years, not a disclosed rig-level dayrate. Commencement is no later than 180 days after the Feb 10 2026 NOA. [2026-10-13] 2026-05-29 Eldorado Drilling가 Vantage 인수 합의(주당 $19, 2026-06-18 주총 승인), 합병 후에도 Vantage 이름 유지.",
-      "data_note_en": " [2026-10-13] 2026-05-29 Eldorado Drilling agreed to acquire Vantage ($19/share; shareholders approved 2026-06-18); combined company keeps the Vantage name."
+      "data_note": "ONGC 낙찰 통지(NOA, 2026-02-10): 확정 3년 + 옵션 1년, 총 계약액 약 $261M(MPD 서비스 제외)\nNOA 후 180일 이내 개시 조건 · 2026-06 인도로 이동, 회사 안내상 2026년 3분기 개시\n표시된 데이레이트는 3년 총 계약액에서 환산한 값 — 공시된 리그별 데이레이트 아님\n[2026-11-15 감사] Idle→계약 중: NOA(2026-02-10) 조건상 180일 이내(2026-08-09까지) 개시 의무, Vantage 1분기 실적에서 \"2026년 3분기 개시\" 안내, 2026-06 인도로 이동 중(Baird Maritime). 개시 공시 자체는 찾지 못했으나 기한·안내 시점이 모두 지나 계약 중으로 표시 — 반대 보도 확인 시 재수정. [2026-10-13] 2026-05-29 Eldorado Drilling가 Vantage 인수 합의(주당 $19, 2026-06-18 주총 승인), 합병 후에도 Vantage 이름 유지.",
+      "data_note_en": "ONGC notice of award (2026-02-10): 3 years firm + 1-year option, TCV ~$261M (excluding MPD services)\nCommencement no later than 180 days after the NOA · mobilizing to India in Jun 2026, company-guided Q3 2026 start\nDayrate shown is implied from the 3-year contract value, not a disclosed rig-level dayrate\n[2026-10-13] [2026-11-15 audit] Idle→On Contract: the NOA (2026-02-10) requires start within 180 days (by 2026-08-09), Vantage guided a Q3 2026 start in its Q1 results, and the rig was mobilizing to India in June 2026 (Baird Maritime). No explicit commencement release found, but the deadline and guided window have both passed, so shown as on contract — will revert if contrary news appears. [2026-10-13] 2026-05-29 Eldorado Drilling agreed to acquire Vantage ($19/share; shareholders approved 2026-06-18); combined company keeps the Vantage name.",
+      "verified": "2026-11-15"
     },
     {
       "name": "Valaris DS-4",
@@ -2341,7 +2389,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "Petrobras Dec-24 to Nov-27, then 1,064-day extension Nov-27 to Oct-30 (backlog ~$447M). Previous $450k dayrate was adjusted from Apr-26; current dayrate not disclosed."
+      "data_note": "Petrobras 2024-12~2027-11 → 1,064일 연장 2027-11~2030-10(수주잔고 약 $447M)\n기존 $450k 데이레이트는 2026-04부터 조정됨 — 현재 데이레이트 미공시",
+      "data_note_en": "Petrobras Dec 2024–Nov 2027 → 1,064-day extension Nov 2027–Oct 2030 (backlog ~$447M)\nThe previous $450k dayrate was adjusted from Apr 2026; current dayrate not disclosed"
     },
     {
       "name": "Deepwater Pontus",
@@ -2368,7 +2417,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Shell USGOM firm Oct-17 to Oct-27 at $499k."
+      "data_note": "Shell 미국 멕시코만 확정 2017-10~2027-10 $499k(FSR)",
+      "data_note_en": "Shell US Gulf firm Oct 2017–Oct 2027 $499k (FSR)"
     },
     {
       "name": "Deepwater Skyros",
@@ -2395,8 +2445,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Murphy firm Dec-25–Sep-26 $361k + one-well extension(Sep-26–Nov-26, $361k). 이후 Australia 미공개 운영사 Apr-27–Mar-28.",
-      "data_note_en": "FSR: Murphy firm Dec-25–Sep-26 $361k + one-well extension (Sep-26–Nov-26, $361k). Then undisclosed operator in Australia Apr-27–Mar-28."
+      "data_note": "Murphy 확정 2025-12~2026-09 $361k + 1정 연장(2026-09~11, $361k)(FSR)\n다음: 호주 미공개 운영사 2027-04~2028-03",
+      "data_note_en": "Murphy firm Dec 2025–Sep 2026 $361k + one-well extension (Sep–Nov 2026, $361k) (FSR)\nNext: undisclosed operator, Australia, Apr 2027–Mar 2028"
     },
     {
       "name": "Dhirubhai Deepwater KG1",
@@ -2423,8 +2473,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: 계약 준비(Jun–Aug 26) 후 Reliance firm Aug-26–Mar-28 $410k, priced options to Aug-29.",
-      "data_note_en": "FSR: contract preparation (Jun–Aug 26), then Reliance firm Aug-26–Mar-28 $410k, priced options to Aug-29."
+      "data_note": "계약 준비(2026-06~08) 후 Reliance 확정 2026-08~2028-03 $410k\n가격 확정 옵션 2029-08까지(FSR)",
+      "data_note_en": "Contract preparation (Jun–Aug 2026), then Reliance firm Aug 2026–Mar 2028 $410k\nPriced options to Aug 2029 (FSR)"
     },
     {
       "name": "Dhirubhai Deepwater KG2",
@@ -2451,8 +2501,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Idle since May-26. 다음 계약: ONGC 인도 2년 구속력 LOA, 2027-Q1 착수, ~$300M(옵션 2년 포함 시 2031년 초까지)(Offshore Energy 2026-08-20).",
-      "data_note_en": "FSR: idle since May-26. Next contract: ONGC India 2-year binding LOA, starting Q1 2027, ~$300M (to early 2031 including 2-year options) (Offshore Energy 2026-08-20)."
+      "data_note": "2026-05부터 Idle(FSR)\n다음: ONGC 인도 2년 구속력 있는 LOA, 2027년 1분기 착수, 약 $300M(2년 옵션 포함 시 2031년 초까지)(Offshore Energy 2026-08-20)",
+      "data_note_en": "Idle since May 2026 (FSR)\nNext: ONGC India 2-year binding LOA, starting Q1 2027, ~$300M (to early 2031 including 2-year options) (Offshore Energy 2026-08-20)"
     },
     {
       "name": "Petrobras 10000",
@@ -2479,7 +2529,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Petrobras firm Oct-25–Oct-26 $416k, Oct-26–Oct-27 $428k, Oct-27–Oct-28 $441k, Oct-28–Aug-29 $454k."
+      "data_note": "Petrobras 확정(FSR): 2025-10~2026-10 $416k → 2026-10~2027-10 $428k → 2027-10~2028-10 $441k → 2028-10~2029-08 $454k",
+      "data_note_en": "Petrobras firm (FSR): Oct 2025–Oct 2026 $416k → Oct 2026–Oct 2027 $428k → Oct 2027–Oct 2028 $441k → Oct 2028–Aug 2029 $454k"
     },
     {
       "name": "Ocean Rig Apollo",
@@ -2506,7 +2557,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked since May-16."
+      "data_note": "2016-05부터 계선(FSR)",
+      "data_note_en": "Stacked since May 2016 (FSR)"
     },
     {
       "name": "Ocean Rig Athena",
@@ -2533,7 +2585,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked since Mar-17."
+      "data_note": "2017-03부터 계선(FSR)",
+      "data_note_en": "Stacked since Mar 2017 (FSR)"
     },
     {
       "name": "Ocean Rig Mylos",
@@ -2560,7 +2613,8 @@
       "source": "Transocean Fleet Status Report, Aug 5 2026",
       "source_url": "https://www.deepwater.com/documents/FleetStatusReport/2026/August%202026%20Fleet%20Status%20Report.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked since Sep-16."
+      "data_note": "2016-09부터 계선(FSR)",
+      "data_note_en": "Stacked since Sep 2016 (FSR)"
     },
     {
       "name": "Valaris DS-16",
@@ -2587,8 +2641,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Occidental Jun-24–Jun-26, 940-day extension Jun-26–Dec-28 (DS-16/DS-18 합산 backlog ~$760M). Day rate 미공시.",
-      "data_note_en": "FSR: Occidental Jun-24–Jun-26, 940-day extension Jun-26–Dec-28 (DS-16/DS-18 combined backlog ~$760M). Day rate undisclosed."
+      "data_note": "Occidental 2024-06~2026-06 → 940일 연장 2026-06~2028-12(DS-16·DS-18 합산 수주잔고 약 $760M)(FSR)\n데이레이트 미공시",
+      "data_note_en": "Occidental Jun 2024–Jun 2026 → 940-day extension Jun 2026–Dec 2028 (DS-16/DS-18 combined backlog ~$760M) (FSR)\nDayrate not disclosed"
     },
     {
       "name": "Valaris DS-15",
@@ -2615,8 +2669,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Las Palmas warm stack 후 CNR Sep-26–May-27, TCV ~$135M(~250일). Day rate 미공시.",
-      "data_note_en": "FSR: warm stacked at Las Palmas, then CNR Sep-26–May-27, TCV ~$135M (~250 days). Day rate undisclosed."
+      "data_note": "Las Palmas 계선 후 CNR 2026-09~2027-05, 총 계약액 약 $135M(약 250일)(FSR)\n데이레이트 미공시",
+      "data_note_en": "Warm stacked at Las Palmas, then CNR Sep 2026–May 2027, TCV ~$135M (~250 days) (FSR)\nDayrate not disclosed"
     },
     {
       "name": "Valaris DS-18",
@@ -2643,8 +2697,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026; Valaris contract awards update, Oct 7 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/content_files/10-7-2026-Valaris-Announces-Contract-Awards-and-Fleet-Status-Updates.pdf",
       "confidence": "high",
-      "data_note": "FSR(8/5): LOA 2-well(Nov-26–May-27, 미공개 운영사) 후 Occidental Jun-27–Dec-29(914일). 10/7 Valaris 공시: PETRONAS Suriname 2-well 탐사 계약(2026 Q4 개시 예정, 최대 약 7개월; trade press 보도) — 8/5 LOA와의 동일 여부는 미확인. 현재 계약 개시 전.",
-      "data_note_en": "FSR (8/5): LOA 2-well (Nov-26–May-27, undisclosed operator), then Occidental Jun-27–Dec-29 (914 days). Valaris 10/7 release: PETRONAS Suriname 2-well exploration contract (expected to start Q4 2026, up to ~7 months; per trade press) — whether this is the same as the 8/5 LOA is unconfirmed. Current contract not yet started."
+      "data_note": "FSR(2026-08-05): 미공개 운영사 2공 LOA(2026-11~2027-05) → Occidental 2027-06~2029-12(914일) · 현재 계약 개시 전\nValaris 발표(2026-10-07): PETRONAS 수리남 2공 탐사 계약(2026년 4분기 개시 예정, 최대 약 7개월, 업계 보도) — 8월 LOA와 같은 건인지 미확인",
+      "data_note_en": "FSR (2026-08-05): undisclosed-operator 2-well LOA (Nov 2026–May 2027) → Occidental Jun 2027–Dec 2029 (914 days) · current contract not yet started\nValaris release (2026-10-07): PETRONAS Suriname 2-well exploration contract (expected Q4 2026 start, up to ~7 months, per trade press) — whether it is the same as the August LOA is unconfirmed"
     },
     {
       "name": "Valaris DS-14",
@@ -2671,7 +2725,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked (Spain)."
+      "data_note": "계선(스페인)(FSR)",
+      "data_note_en": "Stacked (Spain) (FSR)"
     },
     {
       "name": "Valaris DS-13",
@@ -2698,7 +2753,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked (Spain)."
+      "data_note": "계선(스페인)(FSR)",
+      "data_note_en": "Stacked (Spain) (FSR)"
     },
     {
       "name": "Valaris DS-11",
@@ -2725,7 +2781,8 @@
       "source": "Valaris Fleet Status Report, Aug 5 2026",
       "source_url": "https://s23.q4cdn.com/956522167/files/doc_financials/2026/q2/08052026-Fleet-Status-Report_FINAL.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked (Spain)."
+      "data_note": "계선(스페인)(FSR)",
+      "data_note_en": "Stacked (Spain) (FSR)"
     },
     {
       "name": "Noble Faye Kozack",
@@ -2752,8 +2809,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Jul-24–Jan-27. 운영 중단(operational suspension) 후 해결책 협의 중 — 실제 매출 불확실. 다음 계약: Tullow Oil 가나 최대 10공, 2027년 중반 착수(Offshore Energy 2026-09-28).",
-      "data_note_en": "FSR: Petrobras Jul-24–Jan-27. Operational suspension; resolution under discussion — actual revenue uncertain. Next contract: Tullow Oil Ghana up to 10 wells, starting mid-2027 (Offshore Energy 2026-09-28).",
+      "data_note": "Petrobras 2024-07~2027-01(FSR) · 작업 중단 후 해결 방안 협의 중 — 실제 매출 불확실\n다음: Tullow Oil 가나 최대 10공, 2027년 중반 개시(Offshore Energy 2026-09-28)",
+      "data_note_en": "Petrobras Jul 2024–Jan 2027 (FSR) · operational suspension, resolution under discussion — actual revenue uncertain\nNext: Tullow Oil Ghana up to 10 wells, starting mid-2027 (Offshore Energy 2026-09-28)",
       "verified": "2026-11-14"
     },
     {
@@ -2781,8 +2838,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: well-based, 작업 순서 변경으로 종료 Jan-27로 앞당겨짐.",
-      "data_note_en": "FSR: well-based; end date brought forward to Jan-27 due to change in work sequence.",
+      "data_note": "공정(well) 단위 계약 · 작업 순서 변경으로 종료가 2027-01로 앞당겨짐(FSR)",
+      "data_note_en": "Well-based contract · end brought forward to Jan 2027 after a change in work sequence (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -2810,8 +2867,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: TotalEnergies 수리남 16공(~1,060일) Nov-26–Q3-29 예정, 현재 계약 개시 전. [정정 2026-10-08] 기존 \"ExxonMobil 가이아나 $375k(2026-05~)\"는 오류 — 해당 계약은 Noble Developer(반잠수식). [2026-11-14 감사] 계약 2026-11~2029-09→2026-12~2029-12: FSR(2026-10-26) \"Suriname | TotalEnergies | Dec-26 | Q4-29\"(개시 지연, 굵게 표시된 변경). Idle(계약 개시 전) 유지.",
-      "data_note_en": "FSR: TotalEnergies Suriname 16 wells (~1,060 days) Nov-26–Q3-29 planned; current contract not yet started. [Corrected 2026-10-08] The earlier \"ExxonMobil Guyana $375k (from May 2026)\" was wrong — that contract belongs to Noble Developer (semisub). [2026-11-14 audit] contract 2026-11–2029-09 → 2026-12–2029-12: FSR (2026-10-26) \"Suriname | TotalEnergies | Dec-26 | Q4-29\" (start pushed back; shown in bold as a change). Stays Idle (not yet started).",
+      "data_note": "다음: TotalEnergies 수리남 16공(약 1,060일) 2026-12~2029년 4분기(FSR 2026-10-26, 개시 한 달 지연) · 현재 계약 개시 전\n[정정 2026-10-08] 기존 \"ExxonMobil 가이아나 $375k(2026-05~)\"는 오류 — 해당 계약은 Noble Developer(반잠수식). [2026-11-14 감사] 계약 2026-11~2029-09→2026-12~2029-12: FSR(2026-10-26) \"Suriname | TotalEnergies | Dec-26 | Q4-29\"(개시 지연, 굵게 표시된 변경). Idle(계약 개시 전) 유지.",
+      "data_note_en": "Next: TotalEnergies Suriname 16 wells (~1,060 days) Dec 2026–Q4 2029 (FSR 2026-10-26; start slipped a month) · current contract not yet started\n[Corrected 2026-10-08] The earlier \"ExxonMobil Guyana $375k (from May 2026)\" was wrong — that contract belongs to Noble Developer (semisub). [2026-11-14 audit] contract 2026-11–2029-09 → 2026-12–2029-12: FSR (2026-10-26) \"Suriname | TotalEnergies | Dec-26 | Q4-29\" (start pushed back; shown in bold as a change). Stays Idle (not yet started).",
       "verified": "2026-11-14"
     },
     {
@@ -2839,8 +2896,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Tullow Ghana Nov-25–Sep-26 종료. 다음 Planet One Dec-26–Feb-27 $430k → Amni Feb-27–Mar-27 $450k → Shell US Gulf Q4-27–Q3-31(4년, base $606M). [2026-11-14 감사] Idle(Planet One 2026-12~2027-02 예정)→On Contract, Planet One 2026-10~2026-11 $430k: FSR(2026-10-26) \"Ghana | Planet One | Oct-26 | Nov-26 | $430,000 | Plus two unpriced option wells\". 이후 Shell US Gulf Q4-27–Q3-31. 이전 FSR의 Amni Feb-27–Mar-27 $450k 행은 10월 FSR에 없음.",
-      "data_note_en": "FSR: Tullow Ghana Nov-25–Sep-26 ended. Next: Planet One Dec-26–Feb-27 $430k → Amni Feb-27–Mar-27 $450k → Shell US Gulf Q4-27–Q3-31 (4 years, base $606M). [2026-11-14 audit] Idle (Planet One 2026-12–2027-02 planned) → On Contract, Planet One 2026-10–2026-11 $430k: FSR (2026-10-26) \"Ghana | Planet One | Oct-26 | Nov-26 | $430,000 | Plus two unpriced option wells\". Then Shell US Gulf Q4-27–Q3-31. The Amni Feb-27–Mar-27 $450k row from the prior FSR is not in the October FSR.",
+      "data_note": "Tullow 가나 2025-11~2026-09 종료\n현재: Planet One 가나 2026-10~11 $430k + 가격 미정 옵션 2공(FSR 2026-10-26)\n다음: Shell 미국 멕시코만 2027년 4분기~2031년 3분기(4년, 기본 $606M)\n[2026-11-14 감사] Idle(Planet One 2026-12~2027-02 예정)→On Contract, Planet One 2026-10~2026-11 $430k: FSR(2026-10-26) \"Ghana | Planet One | Oct-26 | Nov-26 | $430,000 | Plus two unpriced option wells\". 이후 Shell US Gulf Q4-27–Q3-31. 이전 FSR의 Amni Feb-27–Mar-27 $450k 행은 10월 FSR에 없음.",
+      "data_note_en": "Tullow Ghana Nov 2025–Sep 2026 ended\nCurrent: Planet One Ghana Oct–Nov 2026 $430k plus two unpriced option wells (FSR 2026-10-26)\nNext: Shell US Gulf Q4 2027–Q3 2031 (4 years, base $606M)\n[2026-11-14 audit] Idle (Planet One 2026-12–2027-02 planned) → On Contract, Planet One 2026-10–2026-11 $430k: FSR (2026-10-26) \"Ghana | Planet One | Oct-26 | Nov-26 | $430,000 | Plus two unpriced option wells\". Then Shell US Gulf Q4-27–Q3-31. The Amni Feb-27–Mar-27 $450k row from the prior FSR is not in the October FSR.",
       "verified": "2026-11-14"
     },
     {
@@ -2868,8 +2925,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Malaysia 미공개 Aug-26–Oct-26 + 옵션 2. 이후 Asia Pac 6-well Q1-28–Q4-28(옵션 Q1-29). [2026-11-14 감사] On Contract(미공개, 말레이시아, 2026-08~2026-10)→Idle(계약 개시 전), 다음 계약 2028-01~2028-12: Noble FSR(2026-10-26)에 말레이시아 Aug-26–Oct-26 행이 없고 \"Asia Pac | Undisclosed | Q1-28 | Q4-28 | Undisclosed | Plus options to Q1 2029\"만 남음. 날짜는 분기→월 관례(Q1=01, Q4=12). 운영사 미공개라 null.",
-      "data_note_en": "FSR: undisclosed operator, Malaysia Aug-26–Oct-26 + 2 options. Then Asia Pac 6-well Q1-28–Q4-28 (option Q1-29). [2026-11-14 audit] On Contract (undisclosed, Malaysia, 2026-08–2026-10) → Idle (next contract not yet started), next contract 2028-01–2028-12: the Noble FSR (2026-10-26) no longer lists the Malaysia Aug-26–Oct-26 row; only \"Asia Pac | Undisclosed | Q1-28 | Q4-28 | Undisclosed | Plus options to Q1 2029\" remains. Quarter→month convention (Q1=01, Q4=12). Operator undisclosed, so null.",
+      "data_note": "말레이시아 단기 작업(2026-08~10)은 10월 FSR에서 빠짐\n다음: 아시아·태평양 미공개 운영사 6공 2028년 1분기~4분기, 옵션 2029년 1분기까지(FSR 2026-10-26)\n[2026-11-14 감사] On Contract(미공개, 말레이시아, 2026-08~2026-10)→Idle(계약 개시 전), 다음 계약 2028-01~2028-12: Noble FSR(2026-10-26)에 말레이시아 Aug-26–Oct-26 행이 없고 \"Asia Pac | Undisclosed | Q1-28 | Q4-28 | Undisclosed | Plus options to Q1 2029\"만 남음. 날짜는 분기→월 관례(Q1=01, Q4=12). 운영사 미공개라 null.",
+      "data_note_en": "The Malaysia short job (Aug–Oct 2026) no longer appears in the October FSR\nNext: undisclosed operator, Asia Pacific, 6 wells Q1–Q4 2028, options to Q1 2029 (FSR 2026-10-26)\n[2026-11-14 audit] On Contract (undisclosed, Malaysia, 2026-08–2026-10) → Idle (next contract not yet started), next contract 2028-01–2028-12: the Noble FSR (2026-10-26) no longer lists the Malaysia Aug-26–Oct-26 row; only \"Asia Pac | Undisclosed | Q1-28 | Q4-28 | Undisclosed | Plus options to Q1 2029\" remains. Quarter→month convention (Q1=01, Q4=12). Operator undisclosed, so null.",
       "verified": "2026-11-14"
     },
     {
@@ -2897,8 +2954,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Shell 4년 base $606M(+성과보상 최대 20%), 1년 옵션 4. [2026-11-14 감사] 계약 2026-07~2030-07→2026-09~2030-09: FSR(2026-10-26) \"US Gulf | Shell | Sep-26 | Sep-30\"(굵게 표시된 변경).",
-      "data_note_en": "FSR: Shell 4-year base $606M (+ up to 20% performance compensation), four 1-year options. [2026-11-14 audit] contract 2026-07–2030-07 → 2026-09–2030-09: FSR (2026-10-26) \"US Gulf | Shell | Sep-26 | Sep-30\" (shown in bold as a change).",
+      "data_note": "Shell 미국 멕시코만 2026-09~2030-09(FSR 2026-10-26) · 4년 기본 $606M(+성과 보상 최대 20%), 1년 옵션 4개\n[2026-11-14 감사] 계약 2026-07~2030-07→2026-09~2030-09: FSR(2026-10-26) \"US Gulf | Shell | Sep-26 | Sep-30\"(굵게 표시된 변경).",
+      "data_note_en": "Shell US Gulf Sep 2026–Sep 2030 (FSR 2026-10-26) · 4-year base $606M (+ up to 20% performance compensation), four 1-year options\n[2026-11-14 audit] contract 2026-07–2030-07 → 2026-09–2030-09: FSR (2026-10-26) \"US Gulf | Shell | Sep-26 | Sep-30\" (shown in bold as a change).",
       "verified": "2026-11-14"
     },
     {
@@ -2926,8 +2983,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil CEA, market-based dayrate(2026-03-01 리셋 후 매년 1·7월 조정).",
-      "data_note_en": "FSR: ExxonMobil CEA, market-based dayrate (reset 2026-03-01, then adjusted each January and July).",
+      "data_note": "ExxonMobil 상업 기업 계약(CEA), 시장 연동 데이레이트 — 2026-03-01 재설정 후 매년 1·7월 조정(FSR)",
+      "data_note_en": "ExxonMobil commercial enabling agreement (CEA), market-based dayrate — reset 2026-03-01, then adjusted each January and July (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -2955,8 +3012,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil CEA, market-based.",
-      "verified": "2026-11-14"
+      "data_note": "ExxonMobil 상업 기업 계약(CEA), 시장 연동 데이레이트(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "ExxonMobil commercial enabling agreement (CEA), market-based dayrate (FSR)"
     },
     {
       "name": "Noble Don Taylor",
@@ -2983,8 +3041,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil CEA, market-based.",
-      "verified": "2026-11-14"
+      "data_note": "ExxonMobil 상업 기업 계약(CEA), 시장 연동 데이레이트(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "ExxonMobil commercial enabling agreement (CEA), market-based dayrate (FSR)"
     },
     {
       "name": "Noble Bob Douglas",
@@ -3011,8 +3070,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil CEA, market-based.",
-      "verified": "2026-11-14"
+      "data_note": "ExxonMobil 상업 기업 계약(CEA), 시장 연동 데이레이트(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "ExxonMobil commercial enabling agreement (CEA), market-based dayrate (FSR)"
     },
     {
       "name": "Noble BlackHawk",
@@ -3039,8 +3099,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 2년 $350M(MPD 별도), 1년 옵션 3.",
-      "data_note_en": "FSR: 2 years $350M (MPD separate), three 1-year options.",
+      "data_note": "Occidental 2년 $350M(MPD 별도), 1년 옵션 3개(FSR)",
+      "data_note_en": "Occidental 2 years $350M (MPD separate), three 1-year options (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3068,8 +3128,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp Feb-25–Feb-27 $350M, Feb-27–Feb-29 $310M, 1년 priced option.",
-      "data_note_en": "FSR: bp Feb-25–Feb-27 $350M, Feb-27–Feb-29 $310M, 1-year priced option.",
+      "data_note": "bp 2025-02~2027-02 $350M → 2027-02~2029-02 $310M, 1년 가격 확정 옵션(FSR)",
+      "data_note_en": "bp Feb 2025–Feb 2027 $350M → Feb 2027–Feb 2029 $310M, 1-year priced option (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3097,8 +3157,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp Sep-24–Sep-26 $350M, Sep-26–Sep-28 $310M.",
-      "verified": "2026-11-14"
+      "data_note": "bp 2024-09~2026-09 $350M → 2026-09~2028-09 $310M(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "bp Sep 2024–Sep 2026 $350M → Sep 2026–Sep 2028 $310M (FSR)"
     },
     {
       "name": "Noble BlackRhino",
@@ -3125,8 +3186,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Available. [2026-11-14 감사] Idle(Available, 계약 없음)→Idle(계약 개시 전), TotalEnergies 나이지리아 2026-11~2027-04: FSR(2026-10-26) \"Nigeria | TotalEnergies | Nov-26 | Apr-27 | Undisclosed | Four-well contract (estimated 150 days) plus six priced option wells\". 2026-11-14 현재 개시 여부 미확인이라 Idle 유지.",
-      "data_note_en": "[2026-11-14 audit] Idle (Available, no contract) → Idle (next contract not yet started), TotalEnergies Nigeria 2026-11–2027-04: FSR (2026-10-26) \"Nigeria | TotalEnergies | Nov-26 | Apr-27 | Undisclosed | Four-well contract (estimated 150 days) plus six priced option wells\". Commencement not confirmed as of 2026-11-14, so kept Idle.",
+      "data_note": "다음: TotalEnergies 나이지리아 2026-11~2027-04 — 4공(약 150일) + 가격 확정 옵션 6공(FSR 2026-10-26)\n2026-11-14 기준 개시 미확인이라 Idle 유지\n[2026-11-14 감사] Idle(Available, 계약 없음)→Idle(계약 개시 전), TotalEnergies 나이지리아 2026-11~2027-04: FSR(2026-10-26) \"Nigeria | TotalEnergies | Nov-26 | Apr-27 | Undisclosed | Four-well contract (estimated 150 days) plus six priced option wells\". 2026-11-14 현재 개시 여부 미확인이라 Idle 유지.",
+      "data_note_en": "Next: TotalEnergies Nigeria Nov 2026–Apr 2027 — four wells (~150 days) plus six priced option wells (FSR 2026-10-26)\nStart not confirmed as of 2026-11-14, so kept Idle\n[2026-11-14 audit] Idle (Available, no contract) → Idle (next contract not yet started), TotalEnergies Nigeria 2026-11–2027-04: FSR (2026-10-26) \"Nigeria | TotalEnergies | Nov-26 | Apr-27 | Undisclosed | Four-well contract (estimated 150 days) plus six priced option wells\". Commencement not confirmed as of 2026-11-14, so kept Idle.",
       "verified": "2026-11-14"
     },
     {
@@ -3154,8 +3215,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Available (Las Palmas). [2026-11-14 감사] Idle(Available, Las Palmas)→Idle(계약 개시 전), Occidental 페루 2027-04~2027-06 $400k: FSR(2026-10-26) \"Peru | Occidental | Q2-27 | Q2-27 | Undisclosed\", 이후 TotalEnergies 서아프리카 3년 CRA Q3/Q4-27–2030. Dayrate는 Noble Q3 2026 실적 보도자료(2026-10-26) \"at a dayrate of $400,000, plus a mobilization fee\" 기준 — FSR 표에는 Undisclosed로 표기되어 두 회사 문서가 다름(보도자료 수치 채택).",
-      "data_note_en": "[2026-11-14 audit] Idle (Available, Las Palmas) → Idle (next contract not yet started), Occidental Peru 2027-04–2027-06 $400k: FSR (2026-10-26) \"Peru | Occidental | Q2-27 | Q2-27 | Undisclosed\", then TotalEnergies West Africa 3-year CRA Q3/Q4-27–2030. Dayrate from the Noble Q3 2026 results release (2026-10-26) \"at a dayrate of $400,000, plus a mobilization fee\" — the FSR table shows Undisclosed, so the two company documents differ (release figure used).",
+      "data_note": "Las Palmas에서 대기\n다음: Occidental 페루 2027년 2분기 $400k + 동원비(Noble 3분기 실적 발표 2026-10-26 — FSR 표에는 미공시로 표기)\n이후: TotalEnergies 서아프리카 3년 계약 2027년 3·4분기~2030\n[2026-11-14 감사] Idle(Available, Las Palmas)→Idle(계약 개시 전), Occidental 페루 2027-04~2027-06 $400k: FSR(2026-10-26) \"Peru | Occidental | Q2-27 | Q2-27 | Undisclosed\", 이후 TotalEnergies 서아프리카 3년 CRA Q3/Q4-27–2030. Dayrate는 Noble Q3 2026 실적 보도자료(2026-10-26) \"at a dayrate of $400,000, plus a mobilization fee\" 기준 — FSR 표에는 Undisclosed로 표기되어 두 회사 문서가 다름(보도자료 수치 채택).",
+      "data_note_en": "Waiting at Las Palmas\nNext: Occidental Peru Q2 2027 at $400k plus a mobilization fee (Noble Q3 results release 2026-10-26 — the FSR table shows it as undisclosed)\nThen: TotalEnergies West Africa 3-year contract Q3/Q4 2027–2030\n[2026-11-14 audit] Idle (Available, Las Palmas) → Idle (next contract not yet started), Occidental Peru 2027-04–2027-06 $400k: FSR (2026-10-26) \"Peru | Occidental | Q2-27 | Q2-27 | Undisclosed\", then TotalEnergies West Africa 3-year CRA Q3/Q4-27–2030. Dayrate from the Noble Q3 2026 results release (2026-10-26) \"at a dayrate of $400,000, plus a mobilization fee\" — the FSR table shows Undisclosed, so the two company documents differ (release figure used).",
       "verified": "2026-11-14"
     },
     {
@@ -3183,7 +3244,8 @@
       "source": "Noble Fleet Status Report, Jul 27 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Held for sale."
+      "data_note": "매각 예정(FSR)",
+      "data_note_en": "Held for sale (FSR)"
     },
     {
       "name": "Noble Gerry de Souza",
@@ -3210,8 +3272,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: ExxonMobil Nigeria 2년 $292M + 옵션 3년. [정정 2026-10-08] 기존 \"Petrobras 브라질 $435k~2027-04\"는 오류. [2026-11-14 감사] 종료 2028-07→2028-08: FSR(2026-10-26) \"Nigeria | ExxonMobil | Aug-26 | Aug-28\"(굵게 표시된 변경), 2년 $292M + 1년 옵션 3.",
-      "data_note_en": "FSR: ExxonMobil Nigeria 2 years $292M + 3-year option. [Corrected 2026-10-08] The earlier \"Petrobras Brazil $435k to Apr 2027\" was wrong. [2026-11-14 audit] end 2028-07 → 2028-08: FSR (2026-10-26) \"Nigeria | ExxonMobil | Aug-26 | Aug-28\" (shown in bold as a change), 2-year $292M + three 1-year options.",
+      "data_note": "ExxonMobil 나이지리아 2026-08~2028-08(FSR 2026-10-26) · 2년 $292M + 1년 옵션 3개\n[정정 2026-10-08] 기존 \"Petrobras 브라질 $435k~2027-04\"는 오류. [2026-11-14 감사] 종료 2028-07→2028-08: FSR(2026-10-26) \"Nigeria | ExxonMobil | Aug-26 | Aug-28\"(굵게 표시된 변경), 2년 $292M + 1년 옵션 3.",
+      "data_note_en": "ExxonMobil Nigeria Aug 2026–Aug 2028 (FSR 2026-10-26) · 2 years $292M + three 1-year options\n[Corrected 2026-10-08] The earlier \"Petrobras Brazil $435k to Apr 2027\" was wrong. [2026-11-14 audit] end 2028-07 → 2028-08: FSR (2026-10-26) \"Nigeria | ExxonMobil | Aug-26 | Aug-28\" (shown in bold as a change), 2-year $292M + three 1-year options.",
       "verified": "2026-11-14"
     },
     {
@@ -3239,8 +3301,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Woodside 5-well Q2-27–Q1-28($121M).",
-      "verified": "2026-11-14"
+      "data_note": "다음: Woodside 5공 2027년 2분기~2028년 1분기($121M)(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "Next: Woodside five wells Q2 2027–Q1 2028 ($121M) (FSR)"
     },
     {
       "name": "Noble Developer",
@@ -3267,8 +3330,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petronas 수리남 Jul-25–Sep-26 → ExxonMobil 가이아나 1-well Oct-26–Nov-26 $375k(~$22M) → bp Trinidad Dec-26–Aug-27 $375k. [정정 2026-10-08] 기존 \"Cold Stacked\"는 오류. [2026-11-14 감사] ExxonMobil 2026-10~2026-11→2026-11~2027-01($375k 유지): FSR(2026-10-26) Petronas 수리남 Jul-25–Oct-26(종료월 변경) → \"Guyana | ExxonMobil | Nov-26 | Jan-27 | $375,000\"(1-well 약 50일, ~$22M) → bp Trinidad Jan-27–Sep-27 $375k. 11월 개시 여부는 별도 확인 못 함(FSR 일정 기준 On Contract 유지).",
-      "data_note_en": "FSR: Petronas Suriname Jul-25–Sep-26 → ExxonMobil Guyana 1-well Oct-26–Nov-26 $375k (~$22M) → bp Trinidad Dec-26–Aug-27 $375k. [Corrected 2026-10-08] The earlier \"Cold Stacked\" was wrong. [2026-11-14 audit] ExxonMobil 2026-10–2026-11 → 2026-11–2027-01 ($375k unchanged): FSR (2026-10-26) Petronas Suriname Jul-25–Oct-26 (end month changed) → \"Guyana | ExxonMobil | Nov-26 | Jan-27 | $375,000\" (1 well ~50 days, ~$22M) → bp Trinidad Jan-27–Sep-27 $375k. November commencement not separately confirmed (kept On Contract per the FSR schedule).",
+      "data_note": "Petronas 수리남 2025-07~2026-10 → ExxonMobil 가이아나 1공(약 50일) 2026-11~2027-01 $375k(약 $22M) → bp 트리니다드 2027-01~09 $375k(FSR 2026-10-26)\n11월 개시 여부는 별도로 확인하지 못함 — FSR 일정 기준으로 계약 중 표시\n[정정 2026-10-08] 기존 \"Cold Stacked\"는 오류. [2026-11-14 감사] ExxonMobil 2026-10~2026-11→2026-11~2027-01($375k 유지): FSR(2026-10-26) Petronas 수리남 Jul-25–Oct-26(종료월 변경) → \"Guyana | ExxonMobil | Nov-26 | Jan-27 | $375,000\"(1-well 약 50일, ~$22M) → bp Trinidad Jan-27–Sep-27 $375k. 11월 개시 여부는 별도 확인 못 함(FSR 일정 기준 On Contract 유지).",
+      "data_note_en": "Petronas Suriname Jul 2025–Oct 2026 → ExxonMobil Guyana one well (~50 days) Nov 2026–Jan 2027 $375k (~$22M) → bp Trinidad Jan–Sep 2027 $375k (FSR 2026-10-26)\nNovember start not separately confirmed — shown on contract per the FSR schedule\n[Corrected 2026-10-08] The earlier \"Cold Stacked\" was wrong. [2026-11-14 audit] ExxonMobil 2026-10–2026-11 → 2026-11–2027-01 ($375k unchanged): FSR (2026-10-26) Petronas Suriname Jul-25–Oct-26 (end month changed) → \"Guyana | ExxonMobil | Nov-26 | Jan-27 | $375,000\" (1 well ~50 days, ~$22M) → bp Trinidad Jan-27–Sep-27 $375k. November commencement not separately confirmed (kept On Contract per the FSR schedule).",
       "verified": "2026-11-14"
     },
     {
@@ -3296,8 +3359,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Colombia Jun-24–Sep-26 종료, TotalEnergies 수리남 Dec-26–Q4-29(16공) 예정.",
-      "data_note_en": "FSR: Petrobras Colombia Jun-24–Sep-26 ended; TotalEnergies Suriname Dec-26–Q4-29 (16 wells) planned.",
+      "data_note": "Petrobras 콜롬비아 2024-06~2026-09 종료\n다음: TotalEnergies 수리남 16공 2026-12~2029년 4분기(FSR)",
+      "data_note_en": "Petrobras Colombia Jun 2024–Sep 2026 ended\nNext: TotalEnergies Suriname 16 wells Dec 2026–Q4 2029 (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3325,8 +3388,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK Mar-27–Sep-27 $320k(+$5M mob) → Aker BP Norway Sep-27–Sep-30(3년 $473M).",
-      "data_note_en": "FSR: bp UK Mar-27–Sep-27 $320k (+$5M mob) → Aker BP Norway Sep-27–Sep-30 (3 years, $473M).",
+      "data_note": "다음: bp 영국 2027-03~09 $320k(+동원비 $5M) → Aker BP 노르웨이 2027-09~2030-09(3년 $473M)(FSR)",
+      "data_note_en": "Next: bp UK Mar–Sep 2027 $320k (+$5M mobilization) → Aker BP Norway Sep 2027–Sep 2030 (3 years, $473M) (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3354,8 +3417,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Petrobras Dec-23–Dec-30. 운영 중단 후 해결책 협의 중 — 실제 매출 불확실.",
-      "data_note_en": "FSR: Petrobras Dec-23–Dec-30. Operational suspension; resolution under discussion — actual revenue uncertain.",
+      "data_note": "Petrobras 2023-12~2030-12(FSR) · 작업 중단 후 해결 방안 협의 중 — 실제 매출 불확실",
+      "data_note_en": "Petrobras Dec 2023–Dec 2030 (FSR) · operational suspension, resolution under discussion — actual revenue uncertain",
       "verified": "2026-11-14"
     },
     {
@@ -3383,8 +3446,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 미공개 운영사 Jan-27–Jun-28 $300k(+성과보상). 1975 건조/2006 대규모 개조.",
-      "data_note_en": "FSR: undisclosed operator Jan-27–Jun-28 $300k (+ performance compensation). Built 1975 / major upgrade 2006.",
+      "data_note": "다음: 미공개 운영사 2027-01~2028-06 $300k(+성과 보상)(FSR)\n1975년 건조, 2006년 대규모 개조",
+      "data_note_en": "Next: undisclosed operator Jan 2027–Jun 2028 $300k (+ performance compensation) (FSR)\nBuilt 1975, major upgrade 2006",
       "verified": "2026-11-14"
     },
     {
@@ -3412,8 +3475,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK Sep-25–Sep-26 $155k 종료, 잔여 backlog Noble Intrepid로 이전.",
-      "data_note_en": "FSR: bp UK Sep-25–Sep-26 $155k ended; remaining backlog transferred to Noble Intrepid.",
+      "data_note": "bp 영국 2025-09~2026-09 $155k 종료 · 잔여 수주잔고는 Noble Intrepid로 이전(FSR)",
+      "data_note_en": "bp UK Sep 2025–Sep 2026 $155k ended · remaining backlog transferred to Noble Intrepid (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3441,8 +3504,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Aker BP frame agreement.",
-      "verified": "2026-11-14"
+      "data_note": "Aker BP 프레임 계약(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "Aker BP frame agreement (FSR)"
     },
     {
       "name": "Noble Interceptor",
@@ -3469,8 +3533,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: 150일 accommodation $38.7M. 다음 계약: ConocoPhillips Skandinavia Greater Ekofisk P&A, 2027-Q3 착수 ~670일(Offshore Energy 2026-08-07). [2026-11-14 감사] 종료 2027-02→2027-01: FSR(2026-10-26) \"Aker BP | Sep-26 | Jan-27\"(굵게 표시된 변경, 150일 숙박 scope $38.7M + 옵션 최대 90일). 이후 DNO Q3-27 1-well, ConocoPhillips Ekofisk P&A Q3-27–Q3-29.",
-      "data_note_en": "FSR: 150-day accommodation $38.7M. Next contract: ConocoPhillips Skandinavia Greater Ekofisk P&A, starting Q3 2027, ~670 days (Offshore Energy 2026-08-07). [2026-11-14 audit] end 2027-02 → 2027-01: FSR (2026-10-26) \"Aker BP | Sep-26 | Jan-27\" (shown in bold as a change; 150-day accommodation scope $38.7M + up to 90 days of options). Then DNO Q3-27 1 well, ConocoPhillips Ekofisk P&A Q3-27–Q3-29.",
+      "data_note": "Aker BP 숙박 지원 2026-09~2027-01 — 150일 $38.7M + 최대 90일 옵션(FSR 2026-10-26)\n다음: DNO 1공 2027년 3분기 → ConocoPhillips Skandinavia Greater Ekofisk 폐공(P&A) 2027년 3분기~2029년 3분기(약 670일)\n[2026-11-14 감사] 종료 2027-02→2027-01: FSR(2026-10-26) \"Aker BP | Sep-26 | Jan-27\"(굵게 표시된 변경, 150일 숙박 scope $38.7M + 옵션 최대 90일). 이후 DNO Q3-27 1-well, ConocoPhillips Ekofisk P&A Q3-27–Q3-29.",
+      "data_note_en": "Aker BP accommodation Sep 2026–Jan 2027 — 150 days $38.7M + up to 90 days of options (FSR 2026-10-26)\nNext: DNO one well Q3 2027 → ConocoPhillips Skandinavia Greater Ekofisk P&A Q3 2027–Q3 2029 (~670 days)\n[2026-11-14 audit] end 2027-02 → 2027-01: FSR (2026-10-26) \"Aker BP | Sep-26 | Jan-27\" (shown in bold as a change; 150-day accommodation scope $38.7M + up to 90 days of options). Then DNO Q3-27 1 well, ConocoPhillips Ekofisk P&A Q3-27–Q3-29.",
       "verified": "2026-11-14"
     },
     {
@@ -3498,8 +3562,8 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: bp UK $150k, 옵션 4공.",
-      "data_note_en": "FSR: bp UK $150k, 4 option wells.",
+      "data_note": "bp 영국 $150k, 옵션 4공(FSR)",
+      "data_note_en": "bp UK $150k, four option wells (FSR)",
       "verified": "2026-11-14"
     },
     {
@@ -3527,8 +3591,9 @@
       "source": "Noble Fleet Status Report, Oct 26 2026",
       "source_url": "https://noblecorp.com/our-investors/reports-filings/fleet-status-report/",
       "confidence": "high",
-      "data_note": "FSR: Aker BP frame agreement.",
-      "verified": "2026-11-14"
+      "data_note": "Aker BP 프레임 계약(FSR)",
+      "verified": "2026-11-14",
+      "data_note_en": "Aker BP frame agreement (FSR)"
     },
     {
       "name": "Sonangol Libongos",
@@ -3555,8 +3620,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — Seadrill은 관리 수수료 수취. priced options to Jan-30.",
-      "data_note_en": "FSR: owned by Sonangol, Sonadrill JV (managed by Seadrill) — Seadrill earns a management fee. Priced options to Jan-30."
+      "data_note": "Sonangol 소유, Sonadrill 합작(Seadrill 관리) — Seadrill은 관리 수수료 수취(FSR)\n가격 확정 옵션 2030-01까지",
+      "data_note_en": "Owned by Sonangol, Sonadrill JV (managed by Seadrill) — Seadrill earns a management fee (FSR)\nPriced options to Jan 2030"
     },
     {
       "name": "Sonangol Quenguela",
@@ -3583,8 +3648,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Sonangol 소유, Sonadrill JV(Seadrill 관리) — 관리 수수료 수취.",
-      "data_note_en": "FSR: owned by Sonangol, Sonadrill JV (managed by Seadrill) — earns a management fee."
+      "data_note": "Sonangol 소유, Sonadrill 합작(Seadrill 관리) — Seadrill은 관리 수수료 수취(FSR)",
+      "data_note_en": "Owned by Sonangol, Sonadrill JV (managed by Seadrill) — Seadrill earns a management fee (FSR)"
     },
     {
       "name": "West Aquarius",
@@ -3611,7 +3676,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked."
+      "data_note": "계선(FSR)",
+      "data_note_en": "Stacked (FSR)"
     },
     {
       "name": "West Phoenix",
@@ -3638,7 +3704,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked."
+      "data_note": "계선(FSR)",
+      "data_note_en": "Stacked (FSR)"
     },
     {
       "name": "West Eclipse",
@@ -3665,7 +3732,8 @@
       "source": "Seadrill Fleet Status Report, Aug 10 2026",
       "source_url": "https://www.seadrill.com/wp-content/uploads/2026/08/Seadrill-Fleet-Status-Report-August-2026-vF.pdf",
       "confidence": "high",
-      "data_note": "FSR: Stacked."
+      "data_note": "계선(FSR)",
+      "data_note_en": "Stacked (FSR)"
     },
     {
       "name": "Borr Bestla",
@@ -3693,8 +3761,8 @@
       "contract_start": "2025-12",
       "contract_end": "2026-12",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Eni, Netherlands, 2025-12~2026-12. Operating with option to extend; bareboat chartered to Noble Corporation affiliate. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Eni, Netherlands, 2025-12–2026-12. Operating with option to extend; bareboat chartered to Noble Corporation affiliate. Dayrate not disclosed."
+      "data_note": "Eni 네덜란드 2025-12~2026-12, 연장 옵션 · Noble 계열사에 나용선(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "Eni Netherlands Dec 2025–Dec 2026, with option to extend · bareboat-chartered to a Noble affiliate (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Forseti",
@@ -3722,8 +3790,8 @@
       "contract_start": "2025-12",
       "contract_end": "2026-12",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Noble Corp (bareboat charter), UAE, 2025-12~2026-12. Committed under bareboat charter to Noble affiliate. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Noble Corp (bareboat charter), UAE, 2025-12–2026-12. Committed under bareboat charter to Noble affiliate. Dayrate not disclosed."
+      "data_note": "Noble 계열사에 나용선, UAE 2025-12~2026-12(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "Bareboat-chartered to a Noble affiliate, UAE, Dec 2025–Dec 2026 (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Galar",
@@ -3751,8 +3819,8 @@
       "contract_start": "2024-04",
       "contract_end": "2030-05",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): PEMEX, Mexico, 2024-04~2030-05. Bareboat charter via Mexican JV; ultimate customer PEMEX. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): PEMEX, Mexico, 2024-04–2030-05. Bareboat charter via Mexican JV; ultimate customer PEMEX. Dayrate not disclosed."
+      "data_note": "PEMEX 멕시코 2024-04~2030-05 · 멕시코 합작사 경유 나용선(최종 고객 PEMEX)(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "PEMEX Mexico Apr 2024–May 2030 · bareboat charter via a Mexican JV (ultimate customer PEMEX) (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Gersemi",
@@ -3780,8 +3848,8 @@
       "contract_start": "2024-01",
       "contract_end": "2030-05",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): PEMEX, Mexico, 2024-01~2030-05. Bareboat charter via Mexican JV; ultimate customer PEMEX. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): PEMEX, Mexico, 2024-01–2030-05. Bareboat charter via Mexican JV; ultimate customer PEMEX. Dayrate not disclosed."
+      "data_note": "PEMEX 멕시코 2024-01~2030-05 · 멕시코 합작사 경유 나용선(최종 고객 PEMEX)(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "PEMEX Mexico Jan 2024–May 2030 · bareboat charter via a Mexican JV (ultimate customer PEMEX) (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Grid",
@@ -3809,8 +3877,8 @@
       "contract_start": "2026-03",
       "contract_end": "2026-11",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Halliburton, Angola, 2026-03~2026-11. Operating with option to extend. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Halliburton, Angola, 2026-03–2026-11. Operating with option to extend. Dayrate not disclosed."
+      "data_note": "Halliburton 앙골라 2026-03~11, 연장 옵션(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "Halliburton Angola Mar–Nov 2026, with option to extend (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Gunnlod",
@@ -3838,8 +3906,8 @@
       "contract_start": "2026-08",
       "contract_end": "2027-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): PVEP-NCS, Vietnam, 2026-08~2027-04. Follow-on to TLJOC (May–Aug 2026); committed with option to extend. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): PVEP-NCS, Vietnam, 2026-08–2027-04. Follow-on to TLJOC (May–Aug 2026); committed with option to extend. Dayrate not disclosed."
+      "data_note": "PVEP-NCS 베트남 2026-08~2027-04, 연장 옵션 · 직전 TLJOC 2026-05~08(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "PVEP-NCS Vietnam Aug 2026–Apr 2027, with option to extend · follows TLJOC May–Aug 2026 (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Mist",
@@ -3867,8 +3935,8 @@
       "contract_start": "2026-10",
       "contract_end": "2026-11",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Sarawak Shell, Malaysia, 2026-10~2026-11. LOA; follows Valeura Energy, Thailand Dec 2023–Aug 2026. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Sarawak Shell, Malaysia, 2026-10–2026-11. LOA; follows Valeura Energy, Thailand Dec 2023–Aug 2026. Dayrate not disclosed."
+      "data_note": "Sarawak Shell 말레이시아 2026-10~11(LOA) · 직전 Valeura Energy 태국 2023-12~2026-08(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "Sarawak Shell Malaysia Oct–Nov 2026 (LOA) · follows Valeura Energy Thailand Dec 2023–Aug 2026 (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Natt",
@@ -3896,8 +3964,8 @@
       "contract_start": "2026-04",
       "contract_end": "2027-03",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): SNEPCO, Nigeria, 2026-04~2027-03. Operating with option to extend. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): SNEPCO, Nigeria, 2026-04–2027-03. Operating with option to extend. Dayrate not disclosed."
+      "data_note": "SNEPCO 나이지리아 2026-04~2027-03, 연장 옵션(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "SNEPCO Nigeria Apr 2026–Mar 2027, with option to extend (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Njord",
@@ -3925,8 +3993,8 @@
       "contract_start": "2026-05",
       "contract_end": "2028-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): PEMEX, Mexico, 2026-05~2028-04. Bareboat charter via Mexican JV; operating with option to extend. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): PEMEX, Mexico, 2026-05–2028-04. Bareboat charter via Mexican JV; operating with option to extend. Dayrate not disclosed."
+      "data_note": "PEMEX 멕시코 2026-05~2028-04, 연장 옵션 · 멕시코 합작사 경유 나용선(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "PEMEX Mexico May 2026–Apr 2028, with option to extend · bareboat charter via a Mexican JV (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Odin",
@@ -3954,8 +4022,8 @@
       "contract_start": "2026-08",
       "contract_end": "2026-12",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Undisclosed, USA, 2026-08~2026-12. Committed with option to extend; then Cantium Feb–Jul 2027. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Undisclosed, USA, 2026-08–2026-12. Committed with option to extend; then Cantium Feb–Jul 2027. Dayrate not disclosed."
+      "data_note": "미공개 운영사 미국 2026-08~12, 연장 옵션(FSR 2026-08-11)\n다음: Cantium 2027-02~07\n데이레이트 미공시",
+      "data_note_en": "Undisclosed operator, USA, Aug–Dec 2026, with option to extend (FSR 2026-08-11)\nNext: Cantium Feb–Jul 2027\nDayrate not disclosed"
     },
     {
       "name": "Borr Prospector 1",
@@ -3983,8 +4051,8 @@
       "contract_start": "2025-12",
       "contract_end": "2027-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): ONE-Dyas, Netherlands, 2025-12~2027-04. Operating with option to extend; HD/HE capable. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): ONE-Dyas, Netherlands, 2025-12–2027-04. Operating with option to extend; HD/HE capable. Dayrate not disclosed."
+      "data_note": "ONE-Dyas 네덜란드 2025-12~2027-04, 연장 옵션 · 고심도·고사양(HD/HE) 가능(FSR 2026-08-11)\n데이레이트 미공시",
+      "data_note_en": "ONE-Dyas Netherlands Dec 2025–Apr 2027, with option to extend · HD/HE capable (FSR 2026-08-11)\nDayrate not disclosed"
     },
     {
       "name": "Borr Sif",
@@ -4012,8 +4080,8 @@
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Petronas, Suriname, 2026-07~2026-10. Operating. Dayrate 미공시. [2026-11-14 감사] On Contract(Petronas, 수리남, 2026-07~2026-10)→Idle, 운영사·계약 필드 null: FSR(2026-08-11) 행 \"Petronas | Suriname | July-2026 | October-2026 | Operating\"(옵션·후속 계약 없음), 수리남 해사청 NTM 36/2026T 시추 기간 \"July 1st till October 28th, 2026\". 2026-11-14까지 후속 계약 공시 못 찾음(Borr 6-K 2026-09-15·09-30 확인) — 다음 FSR(Q3 실적, 2026-11-18 예정)로 재확인 필요.",
-      "data_note_en": "FSR (2026-08-11): Petronas, Suriname, 2026-07–2026-10. Operating. Dayrate not disclosed. [2026-11-14 audit] On Contract (Petronas, Suriname, 2026-07–2026-10) → Idle, operator/contract fields null: FSR (2026-08-11) row \"Petronas | Suriname | July-2026 | October-2026 | Operating\" (no option or follow-on), Maritime Authority Suriname NTM 36/2026T drilling window \"July 1st till October 28th, 2026\". No follow-on contract found as of 2026-11-14 (checked Borr 6-Ks of 2026-09-15 and 09-30) — recheck against the next FSR (Q3 results, expected 2026-11-18)."
+      "data_note": "Petronas 수리남 계약 2026-07~10 종료(수리남 해사청 공지상 시추 2026-10-28까지)\n2026-11-14까지 후속 계약 공시 없음 — 다음 FSR(2026-11-18 예정)에서 재확인\n[2026-11-14 감사] On Contract(Petronas, 수리남, 2026-07~2026-10)→Idle, 운영사·계약 필드 null: FSR(2026-08-11) 행 \"Petronas | Suriname | July-2026 | October-2026 | Operating\"(옵션·후속 계약 없음), 수리남 해사청 NTM 36/2026T 시추 기간 \"July 1st till October 28th, 2026\". 2026-11-14까지 후속 계약 공시 못 찾음(Borr 6-K 2026-09-15·09-30 확인) — 다음 FSR(Q3 실적, 2026-11-18 예정)로 재확인 필요.",
+      "data_note_en": "Petronas Suriname contract Jul–Oct 2026 ended (Suriname maritime notice: drilling until 2026-10-28)\nNo follow-on announced as of 2026-11-14 — re-check at the next FSR (due 2026-11-18)\n[2026-11-14 audit] On Contract (Petronas, Suriname, 2026-07–2026-10) → Idle, operator/contract fields null: FSR (2026-08-11) row \"Petronas | Suriname | July-2026 | October-2026 | Operating\" (no option or follow-on), Maritime Authority Suriname NTM 36/2026T drilling window \"July 1st till October 28th, 2026\". No follow-on contract found as of 2026-11-14 (checked Borr 6-Ks of 2026-09-15 and 09-30) — recheck against the next FSR (Q3 results, expected 2026-11-18)."
     },
     {
       "name": "Borr Vali",
@@ -4041,8 +4109,8 @@
       "contract_start": "2025-03",
       "contract_end": "2026-10",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): Mellitah Oil and Gas, Libya, 2025-03~2026-10. Operating with option to extend. Dayrate 미공시.",
-      "data_note_en": "FSR (2026-08-11): Mellitah Oil and Gas, Libya, 2025-03–2026-10. Operating with option to extend. Dayrate not disclosed."
+      "data_note": "Mellitah Oil and Gas 리비아 2025-03~2026-10, 연장 옵션(FSR 2026-08-11)\n계약 종료월이 지났으나 연장 여부 미공시 — 다음 FSR에서 확인\n데이레이트 미공시",
+      "data_note_en": "Mellitah Oil and Gas, Libya, Mar 2025–Oct 2026, with option to extend (FSR 2026-08-11)\nContract end month has passed; extension not disclosed — check at the next FSR\nDayrate not disclosed"
     },
     {
       "name": "Borr Freyja",
@@ -4070,8 +4138,8 @@
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-11): 계선(warm stacked), Singapore.",
-      "data_note_en": "FSR (2026-08-11): warm stacked, Singapore."
+      "data_note": "계선(warm stacked), 싱가포르(FSR 2026-08-11)",
+      "data_note_en": "Warm stacked in Singapore (FSR 2026-08-11)"
     },
     {
       "name": "Valaris 123",
@@ -4098,8 +4166,8 @@
       "contract_start": "2026-09",
       "contract_end": "2027-01",
       "day_rate_kusd": 135,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Central European Petroleum (CEP), Poland, 2026-09~2027-01. After TAQA accommodation support, Netherlands Jan–Sep 2026 ($80k). Priced 30-day option.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Central European Petroleum (CEP), Poland, 2026-09–2027-01. After TAQA accommodation support, Netherlands Jan–Sep 2026 ($80k). Priced 30-day option.",
+      "data_note": "Central European Petroleum(CEP) 폴란드 2026-09~2027-01 · 가격 확정 30일 옵션\n직전: TAQA 숙박 지원, 네덜란드 2026-01~09($80k)\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Central European Petroleum (CEP), Poland, Sep 2026–Jan 2027 · priced 30-day option\nPreviously: TAQA accommodation support, Netherlands Jan–Sep 2026 ($80k)\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4127,8 +4195,8 @@
       "contract_start": "2026-09",
       "contract_end": "2027-02",
       "day_rate_kusd": 115,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): INEOS, UK, 2026-09~2027-02. After Adura Jan–Sep 2026 (accommodation support). Oct 2026: further 126-day INEOS extension from Feb 2027 at $115k (Danish North Sea).",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): INEOS, UK, 2026-09–2027-02. After Adura Jan–Sep 2026 (accommodation support). Oct 2026: further 126-day INEOS extension from Feb 2027 at $115k (Danish North Sea).",
+      "data_note": "INEOS 영국 2026-09~2027-02\n직전: Adura 2026-01~09(숙박 지원)\n2026-10: INEOS 126일 추가 연장, 2027-02부터 $115k(덴마크 북해)\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "INEOS UK Sep 2026–Feb 2027\nPreviously: Adura Jan–Sep 2026 (accommodation support)\nOct 2026: further 126-day INEOS extension from Feb 2027 at $115k (Danish North Sea)\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4156,8 +4224,8 @@
       "contract_start": "2026-02",
       "contract_end": "2026-11",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Adura, UK, 2026-02~2026-11. Backlog over $25M, ~194 days. Oct 2026: to take ~8.5 months of the Eni East Irish Sea program from Nov 2026.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Adura, UK, 2026-02–2026-11. Backlog over $25M, ~194 days. Oct 2026: to take ~8.5 months of the Eni East Irish Sea program from Nov 2026.",
+      "data_note": "Adura 영국 2026-02~11 · 수주잔고 $25M 이상, 약 194일\n2026-10: 2026-11부터 Eni 동아일랜드해 작업 약 8.5개월 인수\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Adura UK Feb–Nov 2026 · backlog over $25M, ~194 days\nOct 2026: to take ~8.5 months of the Eni East Irish Sea program from Nov 2026\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4185,8 +4253,8 @@
       "contract_start": "2026-01",
       "contract_end": "2028-01",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Eni, UK, 2026-01~2028-01. Contract assigned from VALARIS 248.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Eni, UK, 2026-01–2028-01. Contract assigned from VALARIS 248.",
+      "data_note": "Eni 영국 2026-01~2028-01 · VALARIS 248에서 이관된 계약\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Eni UK Jan 2026–Jan 2028 · contract assigned from VALARIS 248\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4214,8 +4282,8 @@
       "contract_start": null,
       "contract_end": null,
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05): 계선(stacked), UK.",
-      "data_note_en": "FSR (2026-08-05): stacked, UK.",
+      "data_note": "계선(영국)(FSR 2026-08-05)",
+      "data_note_en": "Stacked, UK (FSR 2026-08-05)",
       "verified": "2026-10-13"
     },
     {
@@ -4243,8 +4311,8 @@
       "contract_start": "2025-08",
       "contract_end": "2027-10",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Shell, UK, 2025-08~2027-10. Options up to one year.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Shell, UK, 2025-08–2027-10. Options up to one year.",
+      "data_note": "Shell 영국 2025-08~2027-10 · 최대 1년 옵션\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Shell UK Aug 2025–Oct 2027 · options up to one year\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4272,8 +4340,8 @@
       "contract_start": "2025-10",
       "contract_end": "2027-03",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Eni, UK, 2025-10~2027-03. Oct 2026 amendment: program now completes Mar 2027 (was Sep 2027), part moved to VALARIS 121.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Eni, UK, 2025-10–2027-03. Oct 2026 amendment: program now completes Mar 2027 (was Sep 2027), part moved to VALARIS 121.",
+      "data_note": "Eni 영국 2025-10~2027-03\n2026-10 변경: 종료가 2027-09에서 2027-03으로 앞당겨지고 일부 작업은 VALARIS 121로 이관\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Eni UK Oct 2025–Mar 2027\nOct 2026 amendment: program now ends Mar 2027 (was Sep 2027), part moved to VALARIS 121\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4301,8 +4369,8 @@
       "contract_start": "2025-09",
       "contract_end": "2027-10",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Azule Energy, Angola, 2025-09~2027-10. TCV ~$149–156M (730–770 days). Three-well option.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Azule Energy, Angola, 2025-09–2027-10. TCV ~$149–156M (730–770 days). Three-well option.",
+      "data_note": "Azule Energy 앙골라 2025-09~2027-10 · 총 계약액 약 $149–156M(730–770일), 3공 옵션\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Azule Energy Angola Sep 2025–Oct 2027 · TCV ~$149–156M (730–770 days), three-well option\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4330,8 +4398,8 @@
       "contract_start": "2025-11",
       "contract_end": "2028-08",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): BP, Trinidad, 2025-11~2028-08. TCV ~$168M, three years. Two 1-year options.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): BP, Trinidad, 2025-11–2028-08. TCV ~$168M, three years. Two 1-year options.",
+      "data_note": "BP 트리니다드 2025-11~2028-08 · 3년 총 계약액 약 $168M, 1년 옵션 2개\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "BP Trinidad Nov 2025–Aug 2028 · TCV ~$168M for three years, two 1-year options\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4359,8 +4427,8 @@
       "contract_start": "2026-08",
       "contract_end": "2028-08",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Undisclosed, Trinidad, 2026-08~2028-08. After Eni Mexico Apr 2025–Apr 2026. Day rate in line with regional market.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Undisclosed, Trinidad, 2026-08–2028-08. After Eni Mexico Apr 2025–Apr 2026. Day rate in line with regional market.",
+      "data_note": "미공개 운영사 트리니다드 2026-08~2028-08 · 데이레이트는 지역 시세 수준\n직전: Eni 멕시코 2025-04~2026-04\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Undisclosed operator, Trinidad, Aug 2026–Aug 2028 · dayrate in line with the regional market\nPreviously: Eni Mexico Apr 2025–Apr 2026\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4388,8 +4456,8 @@
       "contract_start": "2023-04",
       "contract_end": "2029-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): Shell, Brunei, 2023-04~2029-04. Four years to Apr 2027 (TCV ~$159M) + two-year extension to Apr 2029 (~$78M).",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): Shell, Brunei, 2023-04–2029-04. Four years to Apr 2027 (TCV ~$159M) + two-year extension to Apr 2029 (~$78M).",
+      "data_note": "Shell 브루나이 2023-04~2029-04 · 2027-04까지 4년(총 계약액 약 $159M) + 2029-04까지 2년 연장(약 $78M)\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "Shell Brunei Apr 2023–Apr 2029 · four years to Apr 2027 (TCV ~$159M) + two-year extension to Apr 2029 (~$78M)\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4417,8 +4485,8 @@
       "contract_start": "2026-11",
       "contract_end": "2027-03",
       "day_rate_kusd": 163,
-      "data_note": "FSR(2026-08-05): Woodside Australia 2025-11~2026-10 종료. 후속 GB Energy Nov 2026–Mar 2027 ($163k). Valaris 발표(2026-10-07): 현 계약 이후 300일 Australia 신규 계약(옵션 포함 ~$50M).",
-      "data_note_en": "FSR (2026-08-05): Woodside Australia 2025-11–2026-10 ended. Next: GB Energy Nov 2026–Mar 2027 ($163k). Valaris release (2026-10-07): new 300-day Australia contract after current commitments (~$50M incl. options).",
+      "data_note": "Woodside 호주 2025-11~2026-10 종료(FSR 2026-08-05)\n후속: GB Energy 2026-11~2027-03 $163k\nValaris 발표(2026-10-07): 이후 호주 300일 신규 계약(옵션 포함 약 $50M)",
+      "data_note_en": "Woodside Australia Nov 2025–Oct 2026 ended (FSR 2026-08-05)\nNext: GB Energy Nov 2026–Mar 2027 $163k\nValaris release (2026-10-07): a new 300-day Australia contract after that (~$50M incl. options)",
       "verified": "2026-10-13"
     },
     {
@@ -4446,8 +4514,8 @@
       "contract_start": "2025-05",
       "contract_end": "2030-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05~2030-04. Bareboat charter to ARO; recommenced Jul 2026 after shipyard project.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05–2030-04. Bareboat charter to ARO; recommenced Jul 2026 after shipyard project.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2025-05~2030-04 · ARO에 나용선\n조선소 작업 후 2026-07 재가동\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, May 2025–Apr 2030 · bareboat charter to ARO\nRecommenced Jul 2026 after a shipyard project\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4475,8 +4543,8 @@
       "contract_start": "2025-08",
       "contract_end": "2030-08",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-08~2030-08. Bareboat charter to ARO.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-08–2030-08. Bareboat charter to ARO.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2025-08~2030-08 · ARO에 나용선\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, Aug 2025–Aug 2030 · bareboat charter to ARO\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4504,8 +4572,8 @@
       "contract_start": "2025-05",
       "contract_end": "2030-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05~2030-04. Bareboat charter to ARO.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05–2030-04. Bareboat charter to ARO.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2025-05~2030-04 · ARO에 나용선\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, May 2025–Apr 2030 · bareboat charter to ARO\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4533,8 +4601,8 @@
       "contract_start": "2025-05",
       "contract_end": "2030-04",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05~2030-04. Bareboat charter to ARO; expected to recommence in 3Q26 after shipyard project.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-05–2030-04. Bareboat charter to ARO; expected to recommence in 3Q26 after shipyard project.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2025-05~2030-04 · ARO에 나용선\n조선소 작업 후 2026년 3분기 재가동 예정\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, May 2025–Apr 2030 · bareboat charter to ARO\nExpected to recommence in Q3 2026 after a shipyard project\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4562,8 +4630,8 @@
       "contract_start": "2024-03",
       "contract_end": "2027-03",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2024-03~2027-03. Bareboat charter to ARO; 1-year priced option.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2024-03–2027-03. Bareboat charter to ARO; 1-year priced option.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2024-03~2027-03 · ARO에 나용선, 1년 가격 확정 옵션\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, Mar 2024–Mar 2027 · bareboat charter to ARO, 1-year priced option\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     },
     {
@@ -4591,8 +4659,8 @@
       "contract_start": "2025-12",
       "contract_end": "2030-12",
       "day_rate_kusd": null,
-      "data_note": "FSR(2026-08-05)·Valaris 발표(2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-12~2030-12. Bareboat charter to ARO; priced options up to two years.",
-      "data_note_en": "FSR (2026-08-05) / Valaris release (2026-10-07): ARO Drilling (Saudi Aramco), Saudi Arabia, 2025-12–2030-12. Bareboat charter to ARO; priced options up to two years.",
+      "data_note": "ARO Drilling(Saudi Aramco) 사우디 2025-12~2030-12 · ARO에 나용선, 최대 2년 가격 확정 옵션\n출처: FSR(2026-08-05)·Valaris 발표(2026-10-07)",
+      "data_note_en": "ARO Drilling (Saudi Aramco), Saudi Arabia, Dec 2025–Dec 2030 · bareboat charter to ARO, priced options up to two years\nSources: FSR (2026-08-05), Valaris release (2026-10-07)",
       "verified": "2026-10-13"
     }
   ]

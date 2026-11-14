@@ -787,7 +787,7 @@
         { title: 'Notes',         field: 'notes',             minWidth: 200, widthGrow: 1, formatter: function(cell) {
             const c = cell.getData();
             const parts0 = OMI.splitNotes(c.notes);
-            const desc = esc(parts0.summary) + (parts0.log.length
+            const desc = esc(parts0.summary.split('\n').join(' · ')) + (parts0.log.length
               ? ` <span class="omi-log-chip" title="${esc(parts0.log.map(e => e.date + ' — ' + e.text).join('\n'))}">${parts0.log.length} update${parts0.log.length > 1 ? 's' : ''}</span>`
               : '');
             // Append latest earnings data if available
@@ -919,6 +919,10 @@
       ${d.notable ? `<div class="ob-detail-item full"><span class="ob-detail-label">주요 특징</span><span class="ob-detail-value">${esc(d.notable)}</span></div>` : ''}
       ${d.rig_demand ? `<div class="ob-rig-demand">${esc(d.rig_demand)}</div>` : ''}
       ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
+      ${(() => { const np = OMI.splitNotes(vessel.notes); return `
+        ${np.summary ? `<div class="ob-detail-item full"><span class="ob-detail-label">Unit overview</span>${OMI.factsHtml(np.summary)}</div>` : ''}
+        ${np.log.length ? `<div class="ob-detail-item full"><span class="ob-detail-label">Change log</span>${OMI.logHtml(np.log)}</div>` : ''}
+        <div class="ob-detail-item full"><span class="ob-detail-label">Review status</span>${OMI.reviewHtml({ verified: vessel.verified, log: np.log, cadenceKo: '매월 10일 — 컨트랙터별 선단을 4개월 주기로 돌아가며 대조, 오더북은 매달', cadenceEn: 'the 10th of each month — fleets checked contractor by contractor on a 4-month rotation, orderbook every month' })}</div>`; })()}
     `;
 
     OMI.related('unit', vessel, document.getElementById('vessel-detail-grid'));
@@ -956,7 +960,7 @@
     });
     vesselTable.on('rowClick', function(e, row) {
       const vessel = row.getData();
-      if (!vessel.detail) return;
+      // every unit opens: notes, change log and review status exist even without a detail block
       const isSelected = row.getElement().classList.contains('row-selected');
       vesselTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
       if (isSelected) {
@@ -1007,6 +1011,10 @@
       ${d.key_equipment ? `<div class="ob-detail-item full"><span class="ob-detail-label">주요 특징 / 기자재</span><span class="ob-detail-value">${esc(d.key_equipment)}</span></div>` : ''}
       ${d.rig_demand ? `<div class="ob-rig-demand">${esc(d.rig_demand)}</div>` : ''}
       ${partners ? `<div class="ob-detail-item full"><span class="ob-detail-label">지분 구조</span>${partners}</div>` : ''}
+      ${(() => { const np = OMI.splitNotes(item.notes); return `
+        ${np.summary ? `<div class="ob-detail-item full"><span class="ob-detail-label">Unit overview</span>${OMI.factsHtml(np.summary)}</div>` : ''}
+        ${np.log.length ? `<div class="ob-detail-item full"><span class="ob-detail-label">Change log</span>${OMI.logHtml(np.log)}</div>` : ''}
+        <div class="ob-detail-item full"><span class="ob-detail-label">Review status</span>${OMI.reviewHtml({ verified: item.verified, log: np.log, cadenceKo: '매월 10일 — 컨트랙터별 선단을 4개월 주기로 돌아가며 대조, 오더북은 매달', cadenceEn: 'the 10th of each month — fleets checked contractor by contractor on a 4-month rotation, orderbook every month' })}</div>`; })()}
     `;
 
     OMI.related('unit', item, document.getElementById('ob-detail-grid'));
@@ -1042,7 +1050,7 @@
     });
     obTable.on('rowClick', function(e, row) {
       const item = row.getData();
-      if (!item.detail) return;
+      // every unit opens: notes, change log and review status exist even without a detail block
       const isSelected = row.getElement().classList.contains('row-selected');
       obTable.getRows().forEach(r => r.getElement().classList.remove('row-selected'));
       if (isSelected) {

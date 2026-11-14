@@ -1448,13 +1448,19 @@
       </div>
 
       ${noteParts.summary ? `<div class="drawer-section">
-        <div class="drawer-section-title">Data Note</div>
-        <div class="data-note-card">${esc(noteParts.summary)}</div>
+        <div class="drawer-section-title">Contract notes</div>
+        ${OMI.factsHtml(noteParts.summary)}
       </div>` : ''}
       ${noteParts.log.length ? `<div class="drawer-section">
-        <div class="drawer-section-title">Update log</div>
+        <div class="drawer-section-title">Change log</div>
         ${OMI.logHtml(noteParts.log)}
       </div>` : ''}
+      <div class="drawer-section">
+        <div class="drawer-section-title">Review status</div>
+        ${OMI.reviewHtml({ verified: rig.verified, log: noteParts.log,
+          cadenceKo: '매주 월요일 — 시추사별 리그 현황 보고서(FSR)를 3주 주기로 돌아가며 전수 대조',
+          cadenceEn: 'every Monday — each contractor\'s fleet status report is fully re-checked on a 3-week rotation' })}
+      </div>
 
       <!-- Rig Specs -->
       <div class="drawer-section">
