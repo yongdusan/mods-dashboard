@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="assets/vendor/chart.umd.min.js"></script>
   <script src="assets/theme.js"></script>
   <!-- Tabulator CDN -->
   <link href="assets/vendor/tabulator_midnight.min.css" rel="stylesheet">
-  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="assets/vendor/tabulator.min.js"></script>
   <style>
     /* ─── CSS Variables ─── */
     :root {
@@ -332,7 +332,7 @@
     /* ─── Two-column layout ─── */
     .two-col {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: 0;
     }
     @media (max-width: 1024px) {
@@ -1249,6 +1249,11 @@
     // Render company overview, chart, table and highlights
     renderCompanyOverview(company);
     renderDetailChart(company);
+    // Safari: the chart is built while the panel is still expanding from max-height 0 and can stay blank.
+    // Redraw at full size once the panel has opened.
+    const redrawDetailChart = () => { if (detailChart) { detailChart.resize(); detailChart.update('none'); } };
+    requestAnimationFrame(redrawDetailChart);
+    setTimeout(redrawDetailChart, 450);
     renderDetailTable(company);
     renderHighlights(company);
   }
