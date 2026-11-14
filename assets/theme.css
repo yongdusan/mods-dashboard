@@ -527,3 +527,6 @@ body .tabulator:not([style*="height"]) > .tabulator-tableholder { overflow-y: hi
 .omi-fresh dt { color: var(--silt); font-size: 11px; letter-spacing: .04em; }
 .omi-fresh dd { margin: 0; color: var(--foam); }
 .omi-fresh-note { margin-top: 10px; font-size: 11.5px; line-height: 1.6; color: var(--silt); }
+
+/* Related items placed straight inside an unpadded section (financials company overview): match its 16px/18px inset */
+#company-overview-section > .omi-rel { margin: 0; padding: 16px 18px 18px; border-top: 0; border-bottom: 1px solid var(--line); }
