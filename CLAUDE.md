@@ -98,11 +98,13 @@
 |------|---------|------|
 | `news.json` | `news` — RSS 후보 수집(`scripts/refresh_news.py`) + Claude 선별·한국어 요약 | 매주 월 09:00 KST |
 | `fleet.json` | `fleet` | 매주 월 10:30 KST |
-| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | `earnings` (새 발표분만, 데이레이트 Indicative→실제값 교체) | 매월 1·16일 10:00 KST |
+| `earnings.json` · `fpso_earnings.json` · `rates.json` · `capex.json` | `earnings` (새 발표분만, 데이레이트 Indicative→실제값 교체) | 매월 1·16일 10:00 KST + 실적 시즌(1·2·4·5·7·8·10·11월) 매주 수 12:00 KST |
 | `pipeline.json` · `fpso.json` (+ 주요 이벤트 `news.json`) | `pipeline_fpso` (1·4·7·10월 전수 점검) | 매월 10일 09:00 KST |
 | 전체 점검 | `data-health.yml` → `scripts/check_data.py` | data push 시 + 매주 월 10:00 KST |
 
 **동작 방식**
+- 재시도(2026-11-14~): Claude 단계가 실패하면 4분 뒤 `data/`를 되돌리고 1회 재시도한다. 두 번 다 실패해야 실행이 실패로 끝난다(2026-11-01·11-09 일시 실패로 실적·뉴스가 밀린 뒤 추가).
+- `check_data.py`는 분기 종료 40일(Yinson 90일)이 지나도 그 분기 실적이 없으면 OVERDUE로 표시한다. 테스트: `python3 scripts/test_check_data.py`.
 - 지시문: `automation/prompts/{news,fleet,earnings,pipeline_fpso,smoke}.md`.
 - Claude는 `data/` 조사·편집만(git 권한 없음). 워크플로가 `check_data.py` ERROR 0일 때만 담당 파일을 커밋·push(→ Cloudflare 배포). 실패 시 `data-health` 이슈.
 - 수동 실행: GitHub → Actions → "Data Refresh (Claude, cloud)" → Run workflow. 연결 점검은 task=smoke.
