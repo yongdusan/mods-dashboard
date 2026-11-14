@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -1319,9 +1319,9 @@
           "revenue_musd": 312,
           "adj_ebitda_musd": 205,
           "ebitda_margin_pct": 65.7,
-          "units_on_lease": null,
-          "backlog_busd": null,
-          "source": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd(YPOPL) 2Q FY2027 중간보고서(2026-07-31 종료 분기) Enterprise Reporting 손익계산서 기준 USD: 매출 $312M, Adjusted EBITDA $205M(EBITDA $207M) — The Star(2026-10-20) 보도 수치와 일치 확인; 백로그·가동 유닛 수는 보고서 미기재로 null",
+          "units_on_lease": 8,
+          "backlog_busd": 19.3,
+          "source": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd(YPOPL) 2Q FY2027 중간보고서(2026-07-31 종료 분기) Enterprise Reporting 손익계산서 기준 USD: 매출 $312M, Adjusted EBITDA $205M(EBITDA $207M) — The Star(2026-10-20) 보도 수치와 일치 확인; 중간보고서에는 백로그·가동 유닛 수가 없어 따로 보완 — 백로그 $19.3B(2026-07-31, 가동 FPSO 계약 매출 잔고, Baird Maritime Q2 FY2027 보도), 리스 선박 8척(Yinson Production 선단 FPSO 8척 모두 분기 내 생산 중 — 이 사이트 FPSO 선박 목록 기준)",
           "highlights": [
             "Yinson Production Enterprise Reporting 매출 $312M(전년 동기 $261M), Adj EBITDA $205M(전년 동기 $135M) — 2026.05~07 분기",
             "Yinson Holdings 그룹 매출 RM1.136B(전년 동기 RM1.364B, EPCIC 활동 감소), EBITDA RM665M, 순이익 RM128M(+26.7%)",
@@ -1331,7 +1331,7 @@
             "YPOPL Enterprise Reporting 기준 Q2 순손실 $4M(조정 순손실 $2M, 전년 동기 순이익 $37M) — 감가상각 $90M(전년 $61M)·금융비용 증가 영향; The Star 보도의 주주귀속 손실 $7M은 YPOPL 보고서에서 확인 안 됨. 제2차 중간배당 1센/주(Yinson Holdings)"
           ],
           "source_url": "https://stamdata.com/news/api/pdf/c70d7e6d-262a-4b4f-8172-f546b44b916e",
-          "source_en": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd (YPOPL) Q2 FY2027 interim report (quarter ended 2026-07-31), Enterprise Reporting income statement, USD: revenue $312M, Adjusted EBITDA $205M (EBITDA $207M) — matches figures reported by The Star (2026-10-20); backlog and units on lease not stated in the report, null",
+          "source_en": "Q2 FY2027 Earnings (Sep 2026) — Yinson Production Offshore Pte Ltd (YPOPL) Q2 FY2027 interim report (quarter ended 2026-07-31), Enterprise Reporting income statement, USD: revenue $312M, Adjusted EBITDA $205M (EBITDA $207M) — matches figures reported by The Star (2026-10-20); backlog and units on lease are not in the interim report and were filled separately — backlog $19.3B (Jul 31, 2026, contracted revenue backlog of the operating FPSO fleet, Baird Maritime Q2 FY2027) and 8 units on lease (all 8 Yinson Production FPSOs producing through the quarter, per this site's FPSO list)",
           "highlights_en": [
             "Yinson Production Enterprise Reporting revenue $312M (prior-year quarter $261M), Adj EBITDA $205M (prior-year $135M) — May–Jul 2026 quarter",
             "Yinson Holdings group revenue RM1.136B (prior-year RM1.364B, lower EPCIC activity), EBITDA RM665M, net profit RM128M (+26.7%)",
