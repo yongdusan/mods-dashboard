@@ -770,7 +770,7 @@
     contractorTable = new Tabulator('#contractor-table', {
       data: data.contractors,
       layout: 'fitDataStretch',
-      responsiveLayout: 'collapse',
+      // no responsive collapse: it hangs Safari at mid widths (2026-11-14); the table scrolls sideways instead
       selectable: false,
       columns: [
         { title: 'Company',       field: 'name',              width: 205, formatter: function(cell) {
@@ -939,7 +939,6 @@
     vesselTable = new Tabulator('#vessel-table', {
       data: data.vessels,
       layout: 'fitColumns',
-      responsiveLayout: 'collapse',
       selectable: 1,
       initialSort: [{ column: 'year_delivered', dir: 'desc' }],
       columns: [
@@ -1028,7 +1027,6 @@
     obTable = new Tabulator('#orderbook-table', {
       data: data.orderbook,
       layout: 'fitColumns',
-      responsiveLayout: 'collapse',
       columns: [
         { title: 'Asset',            field: 'name',              minWidth: 180, formatter: function(cell) { return `<strong style="font-size:12px">${esc(cell.getValue())}</strong>${OMI.src(cell.getData())}`; } },
         { title: 'Type',             field: 'type',              width: 65,  formatter: function(cell) { const v = cell.getValue(); const c = v === 'FLNG' ? 'orange' : 'blue'; return `<span class="badge badge-${c}">${esc(v)}</span>`; } },
