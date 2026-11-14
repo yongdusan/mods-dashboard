@@ -14,7 +14,7 @@
 
 ## 할 일
 1. `python3 scripts/check_data.py` 실행 → pipeline / fpso 관련 ERROR·OVERDUE·NOTE를 우선 처리 목록으로 삼는다.
-2. **pipeline.json**: 위 범위대로 확인한다. 실제로 확인한 프로젝트는 변경이 없어도 `verified`를 오늘로 바꾼다. phase 전환 기준: FID나 BOT 계약 서명이 확인되면 Execution, first oil이 확인되면 Production. 낙찰자 선정이나 협상 중인 단계는 phase를 바꾸지 않는다. notes는 기존 내용에 덧붙인다. `data_quality.notes`에 이번 변경을 한 줄 추가한다.
+2. **pipeline.json**: 위 범위대로 확인한다. 실제로 확인한 프로젝트는 변경이 없어도 `verified`를 오늘로 바꾼다. **집중 점검 대상(위 목록)은 하나도 빠짐없이 확인하고 각각 `verified`를 갱신한다** — 사이트는 `verified`를 「마지막 확인」, 변경 기록의 최신 날짜를 「마지막 변경」으로 보여 주므로, 확인하고도 날짜를 안 바꾸면 사용자는 점검이 없었던 것으로 본다. 확인하지 못한 대상은 보고에 이름을 남긴다. phase 전환 기준: FID나 BOT 계약 서명이 확인되면 Execution, first oil이 확인되면 Production. 낙찰자 선정이나 협상 중인 단계는 phase를 바꾸지 않는다. **notes 형식**: 앞부분(요약)은 한 줄에 사실 하나씩 `\n`으로 구분한다(위치·설비/용량·일정·계약·`지분: ...` 순). 요약에 문장을 이어 붙이지 않는다. 새 사실이 생기면 해당 요약 줄을 고치고, 무엇이 언제 바뀌었는지는 notes 끝에 `[YYYY-MM-DD 갱신] 내용` 항목으로 덧붙인다(사이트의 「변경 기록」). `notes_en`도 같은 구조로 맞춘다. `data_quality.notes`에 이번 변경을 한 줄 추가한다.
 3. **fpso.json**:
    - orderbook: 신규 FPSO/FLNG 계약(LOI 제외)은 추가한다. 인도/first oil이 확인된 선박은 vessels로 이동한다(status "On Production").
    - contractors: 최근 분기 IR 기준으로 backlog_busd를 갱신한다(SBM, MODEC, BW Offshore, Yinson, Golar).

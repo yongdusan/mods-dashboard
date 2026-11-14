@@ -215,7 +215,7 @@
     'Sanctioned': '승인', 'Pre-FID (indicative)': 'FID 전 (추정)', 'Projects': '프로젝트', 'Project': '프로젝트',
     'Company': '회사', 'Region': '지역', 'Phase': '단계', 'CAPEX ($B)': '사업비 ($B)', 'First Production': '첫 생산',
     'Type': '유형', 'Verified': '확인일', 'All': '전체', 'Notes': '비고', 'Note': '비고', 'Source': '출처',
-    'Update log': '업데이트 기록',
+    'Update log': '업데이트 기록', 'Change log': '변경 기록', 'Project overview': '프로젝트 개요', 'Review status': '확인 현황',
     // drilling
     'UDW & Deepwater Drilling — Fleet, Dayrate & Asset Values': 'UDW·심해 시추 — 선대, 용선료, 자산가치',
     'UDW / Deepwater Rig Market': 'UDW / 심해 리그 시장', 'Deepwater Rigs': '심해 리그', 'Deepwater focus': '심해 중심',
@@ -405,7 +405,16 @@
       return '<li><time>' + escHtml(e.date) + '</time><span>' + escHtml(e.text) + '</span></li>';
     }).join('') + '</ol>';
   }
-  window.OMI = Object.assign(window.OMI || {}, { splitNotes: splitNotes, logHtml: logHtml, esc: escHtml, lang: LANG });
+  /* Note summaries are written one fact per line; "Label: text" lines get the label set apart. */
+  function factsHtml(summary) {
+    var lines = String(summary || '').split(/\n+/).map(function (l) { return l.trim(); }).filter(Boolean);
+    if (!lines.length) return '';
+    return '<ul class="omi-facts">' + lines.map(function (l) {
+      var m = /^([^:：·]{1,14})[:：]\s+(.+)$/.exec(l);
+      return '<li>' + (m ? '<b>' + escHtml(m[1]) + '</b> ' + escHtml(m[2]) : escHtml(l)) + '</li>';
+    }).join('') + '</ul>';
+  }
+  window.OMI = Object.assign(window.OMI || {}, { splitNotes: splitNotes, logHtml: logHtml, factsHtml: factsHtml, esc: escHtml, lang: LANG });
 
   /* Short nav labels so the full menu fits; full names stay in title/aria. */
   var NAV_SHORT = {

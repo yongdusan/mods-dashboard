@@ -819,8 +819,8 @@
     const TODAY_MS = Date.now();
     function daysSince(dateStr) {
       if (!dateStr) return 9999;
-      const d = new Date(dateStr);
-      return Math.floor((TODAY_MS - d.getTime()) / 86400000);
+      const d = /^\d{4}-\d{2}-\d{2}$/.test(dateStr) ? new Date(dateStr + 'T00:00:00') : new Date(dateStr);
+      return Math.max(0, Math.floor((TODAY_MS - d.getTime()) / 86400000));
     }
     function stalenessColor(days) {
       if (days < 90)  return 'var(--green)';
@@ -828,11 +828,12 @@
       return 'var(--orange)';
     }
     function stalenessLabel(days) {
-      if (days >= 9999) return 'unknown';
-      if (days === 0)   return 'today';
-      if (days < 90)   return days + 'd ago';
-      if (days < 180)  return Math.floor(days/30) + 'mo ago';
-      return Math.floor(days/30) + 'mo ago ⚠';
+      const ko = OMI.lang === 'ko';
+      if (days >= 9999) return ko ? '미상' : 'unknown';
+      if (days === 0)   return ko ? '오늘' : 'today';
+      if (days < 90)   return ko ? days + '일 전' : days + 'd ago';
+      if (days < 180)  return ko ? Math.floor(days/30) + '개월 전' : Math.floor(days/30) + 'mo ago';
+      return (ko ? Math.floor(days/30) + '개월 전' : Math.floor(days/30) + 'mo ago') + ' ⚠';
     }
 
     // ─── Phase badge helper ─────────────────────────────────────────
@@ -1206,13 +1207,13 @@
 
         ${notesParts.summary ? `
         <div class="drawer-section">
-          <div class="drawer-section-title">Notes</div>
-          <div class="drawer-notes">${OMI.esc(notesParts.summary)}</div>
+          <div class="drawer-section-title">Project overview</div>
+          ${OMI.factsHtml(notesParts.summary)}
         </div>` : ''}
 
         ${notesParts.log.length ? `
         <div class="drawer-section">
-          <div class="drawer-section-title">Update log</div>
+          <div class="drawer-section-title">Change log</div>
           ${OMI.logHtml(notesParts.log)}
         </div>` : ''}
 
@@ -1222,17 +1223,27 @@
         </div>
 
         <div class="drawer-section">
-          <div class="drawer-section-title">Data Freshness</div>
-          <div style="font-family:var(--font-mono);font-size:12px;">
-            ${(() => {
-              const days = daysSince(proj.verified);
-              const color = stalenessColor(days);
-              const label = proj.verified || '—';
-              const ago = proj.verified ? ` (${stalenessLabel(days)})` : '';
-              const warn = days > 180 ? ' — <span style="color:var(--orange)">재확인 필요</span>' : '';
-              return `<span style="color:${color}">${label}${ago}</span>${warn}`;
-            })()}
-          </div>
+          <div class="drawer-section-title">Review status</div>
+          ${(() => {
+            const ko = OMI.lang === 'ko';
+            const days = daysSince(proj.verified);
+            const lastChange = notesParts.log.length ? notesParts.log[0].date : null;
+            const now = new Date(TODAY_MS);
+            const next = new Date(now.getFullYear(), now.getMonth() + (now.getDate() >= 10 ? 1 : 0), 10);
+            const nextStr = next.getFullYear() + '-' + String(next.getMonth() + 1).padStart(2, '0') + '-10';
+            const checked = proj.verified
+              ? `<span style="color:${stalenessColor(days)}">${proj.verified} (${stalenessLabel(days)})</span>${days > 180 ? ` <span style="color:var(--orange)">${ko ? '재확인 필요' : 'Needs re-check'}</span>` : ''}`
+              : '—';
+            const noChange = proj.verified && (!lastChange || proj.verified > lastChange);
+            const note = ko
+              ? `출처를 다시 확인한 날짜입니다. 확인했는데 바뀐 내용이 없으면 날짜만 갱신되고 변경 기록은 남지 않습니다.${noChange ? ' 이 프로젝트는 마지막 변경 이후 다시 확인했고 변동이 없었습니다.' : ''} 정기 점검은 매월 10일입니다(1·4·7·10월 전수, 그 외 달은 입찰·FID 임박 등 중점 항목).`
+              : `The date the sources were last re-checked. A check that finds nothing new only moves this date; it adds no change-log entry.${noChange ? ' This project was re-checked after its last change and nothing had moved.' : ''} Scheduled review: the 10th of each month (full sweep in Jan/Apr/Jul/Oct, focus items such as tenders and near-term FIDs otherwise).`;
+            return `<dl class="omi-fresh">
+              <dt>${ko ? '마지막 확인' : 'Checked'}</dt><dd>${checked}</dd>
+              <dt>${ko ? '마지막 변경' : 'Changed'}</dt><dd>${lastChange || '—'}</dd>
+              <dt>${ko ? '다음 정기 점검' : 'Next review'}</dt><dd>${nextStr}</dd>
+            </dl><div class="omi-fresh-note">${note}</div>`;
+          })()}
         </div>
       `;
 

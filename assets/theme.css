@@ -517,3 +517,13 @@ p { text-wrap: pretty; }
    again — Tabulator then re-measures and redraws forever and the tab freezes (Safari, 2026-11-14).
    Tables given a height/maxHeight carry it inline on .tabulator and keep their vertical scrolling. */
 body .tabulator:not([style*="height"]) > .tabulator-tableholder { overflow-y: hidden !important; }
+
+/* Note summaries: one fact per line */
+.omi-facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.omi-facts li { position: relative; padding-left: 13px; font-size: 12.5px; line-height: 1.6; color: var(--foam); }
+.omi-facts li::before { content: ""; position: absolute; left: 0; top: .72em; width: 5px; height: 1px; background: var(--signal); }
+.omi-facts b { font-weight: 600; color: var(--silt); margin-right: 2px; }
+.omi-fresh { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-family: var(--font-mono); font-size: 12px; align-items: baseline; }
+.omi-fresh dt { color: var(--silt); font-size: 11px; letter-spacing: .04em; }
+.omi-fresh dd { margin: 0; color: var(--foam); }
+.omi-fresh-note { margin-top: 10px; font-size: 11.5px; line-height: 1.6; color: var(--silt); }
