@@ -18,12 +18,12 @@
       "capex_busd": 5.7,
       "fid_date": "2019-12",
       "first_production": "2024",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Chevron Q4 2023 Earnings",
       "source_url": "https://chevroncorp.gcs-web.com/news-releases/news-release-details/chevron-sanctions-anchor-project-deepwater-us-gulf-mexico",
       "confidence": "high",
-      "notes": "반잠수식 FPS, 피크 75k boe/d\n지분: Chevron 62.86%(운영), TotalEnergies 37.14%\n[2026-10-13 검증] FID 2019-08→2019-12(Chevron 보도자료 2019-12-12). [2026-10-13 출처감사] Chevron 발표: 초기 개발 ~$5.7B, FID 2019-12-12, 75k bpd 확인.",
-      "notes_en": "Semi-sub FPS; 75k boe/d peak\nEquity: Chevron 62.86% (op), TotalEnergies 37.14%\n[2026-10-13 검증] FID 2019-08→2019-12(Chevron 보도자료 2019-12-12). [2026-10-13 verification] FID 2019-08→2019-12 (Chevron release, 2019-12-12). [2026-10-13 source audit] Chevron release: initial development ~$5.7B, FID 2019-12-12, 75k bpd confirmed."
+      "notes": "반잠수식 FPS, 피크 75k boe/d\n지분: Chevron 62.86%(운영), TotalEnergies 37.14%\n[2026-11-15 감사] 새 보도 없음(Chevron 4Q25 콜: 증산 중) — 변동 없음. [2026-10-13 검증] FID 2019-08→2019-12(Chevron 보도자료 2019-12-12). [2026-10-13 출처감사] Chevron 발표: 초기 개발 ~$5.7B, FID 2019-12-12, 75k bpd 확인.",
+      "notes_en": "Semi-sub FPS; 75k boe/d peak\nEquity: Chevron 62.86% (op), TotalEnergies 37.14%\n[2026-11-15 audit] No newer news (chevron q4 2025 call: ramping up) — no change. [2026-10-13 검증] FID 2019-08→2019-12(Chevron 보도자료 2019-12-12). [2026-10-13 verification] FID 2019-08→2019-12 (Chevron release, 2019-12-12). [2026-10-13 source audit] Chevron release: initial development ~$5.7B, FID 2019-12-12, 75k bpd confirmed."
     },
     {
       "id": "shell-whale",
@@ -35,12 +35,12 @@
       "capex_busd": null,
       "fid_date": "2021-07",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Shell Offshore FID release (Jul 26, 2021); first-oil release (Jan 2025)",
       "source_url": "https://www.prnewswire.com/news-releases/shell-invests-in-the-whale-development-in-the-gulf-of-mexico-301340654.html",
       "confidence": "medium",
-      "notes": "Alaminos Canyon Block 773, 수심 약 2,620m\n반잠수식 TLP, 피크 약 100k boe/d\n첫 생산 2025년 1월 9일(일정보다 앞당김)\n지분: Shell 60%(운영), Chevron 40%\n[2026-10-13 검증] CAPEX 8.0→null: Shell 총 투자비 미공시(외부 추정 ~$1.25B, Industrial Info). FID 2022→2021-07(Shell FID 보도자료 2021-07-26).",
-      "notes_en": "Alaminos Canyon Block 773, ~2,620m WD\nSemi-sub TLP; ~100k boe/d peak\nFirst oil January 9, 2025 — ahead of schedule\nEquity: Shell 60% (op), Chevron 40%\n[2026-10-13 검증] CAPEX 8.0→null: Shell 총 투자비 미공시(외부 추정 ~$1.25B, Industrial Info). FID 2022→2021-07(Shell FID 보도자료 2021-07-26). [2026-10-13 verification] CAPEX 8.0→null: Shell never disclosed total capex (external estimate ~$1.25B, Industrial Info). FID 2022→2021-07 (Shell FID release, 2021-07-26)."
+      "notes": "Alaminos Canyon Block 773, 수심 약 2,620m\n반잠수식 TLP, 피크 약 100k boe/d\n첫 생산 2025년 1월 9일(일정보다 앞당김)\n지분: Shell 60%(운영), Chevron 40%\n[2026-11-15 감사] 2025년 가동 이후 새 보도 없음 — 변동 없음. [2026-10-13 검증] CAPEX 8.0→null: Shell 총 투자비 미공시(외부 추정 ~$1.25B, Industrial Info). FID 2022→2021-07(Shell FID 보도자료 2021-07-26).",
+      "notes_en": "Alaminos Canyon Block 773, ~2,620m WD\nSemi-sub TLP; ~100k boe/d peak\nFirst oil January 9, 2025 — ahead of schedule\nEquity: Shell 60% (op), Chevron 40%\n[2026-11-15 audit] No news since 2025 start-up — no change. [2026-10-13 검증] CAPEX 8.0→null: Shell 총 투자비 미공시(외부 추정 ~$1.25B, Industrial Info). FID 2022→2021-07(Shell FID 보도자료 2021-07-26). [2026-10-13 verification] CAPEX 8.0→null: Shell never disclosed total capex (external estimate ~$1.25B, Industrial Info). FID 2022→2021-07 (Shell FID release, 2021-07-26)."
     },
     {
       "id": "bp-mad-dog-ph2",
@@ -52,12 +52,12 @@
       "capex_busd": 9.0,
       "fid_date": "2016-12",
       "first_production": "2023",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "bp Annual Report 2023",
       "source_url": "https://www.offshore-mag.com/deepwater/article/16769564/bp-sanctions-mad-dog-phase-2-project",
       "confidence": "high",
-      "notes": "Argos FPS, 140k bbl/d\n지분: bp 60.5%(운영), Woodside Energy 23.9%(구 BHP 지분, 2022년 Woodside·BHP 통합), Union Oil(Chevron 자회사) 15.6%\n[2026-10-13 검증] FID 2017→2016-12(bp 승인 2016-12, $9B). [2026-10-13 출처감사] bp 승인 2016-12, $9B, 140k bpd 확인. Argos 2023-04 생산 개시.",
-      "notes_en": "Argos FPS; 140k bbl/d\nEquity: bp 60.5% (op), Woodside Energy 23.9% (former BHP stake, after the 2022 Woodside-BHP merger), Union Oil (Chevron subsidiary) 15.6%\n[2026-10-13 verification] FID 2017→2016-12 (bp approval Dec 2016, $9B). [2026-10-13 source audit] bp sanction Dec 2016, $9B, 140k bpd confirmed. Argos production start Apr 2023."
+      "notes": "Argos FPS, 140k bbl/d\nArgos Southwest Extension 2025년 8월 가동(타이백 3공, 피크 +20k boe/d, 일정보다 7개월 앞당김, bp)\n지분: bp 60.5%(운영), Woodside Energy 23.9%(구 BHP 지분, 2022년 Woodside·BHP 통합), Union Oil(Chevron 자회사) 15.6%\n[2026-11-15 갱신] Argos Southwest Extension 가동(OGJ, bp) 반영. [2026-10-13 검증] FID 2017→2016-12(bp 승인 2016-12, $9B). [2026-10-13 출처감사] bp 승인 2016-12, $9B, 140k bpd 확인. Argos 2023-04 생산 개시.",
+      "notes_en": "Argos FPS; 140k bbl/d\nArgos Southwest Extension started Aug 2025 (3-well tieback, +20k boe/d gross peak, 7 months early, bp)\nEquity: bp 60.5% (op), Woodside Energy 23.9% (former BHP stake, after the 2022 Woodside-BHP merger), Union Oil (Chevron subsidiary) 15.6%\n[2026-11-15 update] Added the Argos Southwest Extension start-up (OGJ, bp). [2026-10-13 verification] FID 2017→2016-12 (bp approval Dec 2016, $9B). [2026-10-13 source audit] bp sanction Dec 2016, $9B, 140k bpd confirmed. Argos production start Apr 2023."
     },
     {
       "id": "bp-kaskida",
@@ -154,12 +154,12 @@
       "capex_busd": 5.2,
       "fid_date": "2023",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras Business Plan 2026–2030 (Nov 2025), p.29",
       "source_url": "https://petrobras.com.br/documents/2677942/12513210/PN+2026-30_27nov_final_port.pdf",
       "confidence": "medium",
-      "notes": "산투스 분지 프리솔트 · FPSO P-78(Búzios 6번째, Petrobras 소유 Búzios FPSO 중 6번째)\n180k bbl/d · 첫 생산 2025년 12월 31일\n지분: Petrobras 100%(운영)\n[2026-10-13 검증] CAPEX 3.5→5.2: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음.",
-      "notes_en": "Pre-salt Santos Basin · FPSO P-78 (6th Búzios FPSO, 6th Petrobras-owned Búzios FPSO)\n180k bbl/d · first oil Dec 31, 2025\nEquity: Petrobras 100% (op)\n[2026-10-13 verification] CAPEX 3.5→5.2: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share."
+      "notes": "산투스 분지 프리솔트 · FPSO P-78(Búzios 6번째, Petrobras 소유 Búzios FPSO 중 6번째)\n180k bbl/d · 첫 생산 2025년 12월 31일\n지분: Petrobras 100%(운영)\n[2026-11-15 감사] Petrobras 3분기 실적(2026-10-29): P-78·P-79 증산이 분기 최대 생산 3.51 MMboe/d의 요인 — 변동 없음. [2026-10-13 검증] CAPEX 3.5→5.2: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음.",
+      "notes_en": "Pre-salt Santos Basin · FPSO P-78 (6th Búzios FPSO, 6th Petrobras-owned Búzios FPSO)\n180k bbl/d · first oil Dec 31, 2025\nEquity: Petrobras 100% (op)\n[2026-11-15 audit] Petrobras Q3 (2026-10-29): P-78/P-79 ramp-up drove record 3.51 MMboe/d — no change. [2026-10-13 verification] CAPEX 3.5→5.2: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share."
     },
     {
       "id": "petrobras-buzios-8",
@@ -171,12 +171,12 @@
       "capex_busd": 5.7,
       "fid_date": "2023",
       "first_production": "2026",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras material fact (2026-05-01); Offshore Technology",
       "source_url": "https://petrobras.com.br/documents/2677942/12513210/PN+2026-30_27nov_final_port.pdf",
       "confidence": "high",
-      "notes": "산투스 분지 프리솔트 · FPSO P-79(Búzios 8번째)\n180k bbl/d, 가스 7.2 MMm³/d, 14공(생산 8·주입 6)\n2026년 5월 1일 생산 개시(2026–30 사업계획보다 앞당김)\n지분: Petrobras 100%(운영, 양허권 이전 지역)\n[정정 2026-10-08] 기존 명칭 \"Búzios Phase 7\"은 오류 — Búzios 7은 SBM Almirante Tamandaré. [2026-10-13 검증] CAPEX 3.5→5.7: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. id 정정 buzios-7→buzios-8.",
-      "notes_en": "Pre-salt Santos Basin · FPSO P-79 (8th FPSO at Búzios)\n180k bbl/d, gas 7.2 MMm³/d, 14 wells (8 producers, 6 injectors)\nProduction started 2026-05-01 (ahead of the 2026-30 Business Plan)\nEquity: Petrobras 100% (op), transfer-of-rights area\n[Corrected 2026-10-08] Previous label \"Búzios Phase 7\" was wrong — Búzios 7 is SBM's Almirante Tamandaré. [2026-10-13 verification] CAPEX 3.5→5.7: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. id corrected buzios-7→buzios-8."
+      "notes": "산투스 분지 프리솔트 · FPSO P-79(Búzios 8번째)\n180k bbl/d, 가스 7.2 MMm³/d, 14공(생산 8·주입 6)\n2026년 5월 1일 생산 개시(2026–30 사업계획보다 앞당김)\n지분: Petrobras 100%(운영, 양허권 이전 지역)\n[2026-11-15 감사] Petrobras 3분기 실적(2026-10-29): P-78·P-79 증산이 분기 최대 생산 3.51 MMboe/d의 요인 — 변동 없음. [정정 2026-10-08] 기존 명칭 \"Búzios Phase 7\"은 오류 — Búzios 7은 SBM Almirante Tamandaré. [2026-10-13 검증] CAPEX 3.5→5.7: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. id 정정 buzios-7→buzios-8.",
+      "notes_en": "Pre-salt Santos Basin · FPSO P-79 (8th FPSO at Búzios)\n180k bbl/d, gas 7.2 MMm³/d, 14 wells (8 producers, 6 injectors)\nProduction started 2026-05-01 (ahead of the 2026-30 Business Plan)\nEquity: Petrobras 100% (op), transfer-of-rights area\n[2026-11-15 audit] Petrobras Q3 (2026-10-29): P-78/P-79 ramp-up drove record 3.51 MMboe/d — no change. [Corrected 2026-10-08] Previous label \"Búzios Phase 7\" was wrong — Búzios 7 is SBM's Almirante Tamandaré. [2026-10-13 verification] CAPEX 3.5→5.7: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. id corrected buzios-7→buzios-8."
     },
     {
       "id": "petrobras-mero-4",
@@ -188,12 +188,12 @@
       "capex_busd": 1.3,
       "fid_date": "2020",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras Business Plan 2026–2030 (Nov 2025), p.29",
       "source_url": "https://petrobras.com.br/documents/2677942/12513210/PN+2026-30_27nov_final_port.pdf",
       "confidence": "medium",
-      "notes": "산투스 분지 프리솔트 Libra/Mero 유전, 수심 약 2,000m\nFPSO Alexandre de Gusmão(Mero 4번째), 약 180k bbl/d · 첫 생산 2025년 5월\n지분: Petrobras 38.6%(운영), Shell 19.3%, TotalEnergies 19.3%, CNOOC 9.65%, CNPC 9.65%, Petrogal 3.5%\n[2026-10-13 검증] CAPEX 5.0→1.3: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. WI 39%, 용선 FPSO(SBM) 비용 제외라 총 개발비보다 작음.",
-      "notes_en": "Libra/Mero field, pre-salt Santos Basin (~2,000m WD)\nFPSO Alexandre de Gusmão (4th Mero FPSO); ~180k bbl/d · first oil May 2025\nEquity: Petrobras 38.6% (op), Shell 19.3%, TotalEnergies 19.3%, CNOOC 9.65%, CNPC 9.65%, Petrogal 3.5%\n[2026-10-13 검증] CAPEX 5.0→1.3: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. WI 39%, 용선 FPSO(SBM) 비용 제외라 총 개발비보다 작음. [2026-10-13 verification] CAPEX 5.0→1.3: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. WI 39%; excludes the chartered SBM FPSO, so it is below total development cost."
+      "notes": "산투스 분지 프리솔트 Libra/Mero 유전, 수심 약 2,000m\nFPSO Alexandre de Gusmão(Mero 4번째), 약 180k bbl/d · 첫 생산 2025년 5월\n지분: Petrobras 38.6%(운영), Shell 19.3%, TotalEnergies 19.3%, CNOOC 9.65%, CNPC 9.65%, Petrogal 3.5%\n[2026-11-15 감사] 새 보도 없음 — 변동 없음. [2026-10-13 검증] CAPEX 5.0→1.3: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. WI 39%, 용선 FPSO(SBM) 비용 제외라 총 개발비보다 작음.",
+      "notes_en": "Libra/Mero field, pre-salt Santos Basin (~2,000m WD)\nFPSO Alexandre de Gusmão (4th Mero FPSO); ~180k bbl/d · first oil May 2025\nEquity: Petrobras 38.6% (op), Shell 19.3%, TotalEnergies 19.3%, CNOOC 9.65%, CNPC 9.65%, Petrogal 3.5%\n[2026-11-15 audit] No newer news — no change. [2026-10-13 검증] CAPEX 5.0→1.3: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. WI 39%, 용선 FPSO(SBM) 비용 제외라 총 개발비보다 작음. [2026-10-13 verification] CAPEX 5.0→1.3: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. WI 39%; excludes the chartered SBM FPSO, so it is below total development cost."
     },
     {
       "id": "petrobras-buzios-9",
@@ -256,12 +256,12 @@
       "capex_busd": 6.4,
       "fid_date": "2024-05",
       "first_production": "2029",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras Business Plan 2026–2030 (Nov 2025), p.29",
       "source_url": "https://petrobras.com.br/documents/2677942/12513210/PN+2026-30_27nov_final_port.pdf",
       "confidence": "medium",
-      "notes": "산투스 분지 프리솔트 · FPSO P-84\n225k bbl/d, 가스 10 MMm³/d(Seatrium/SGX 공시)\nFID 2024년 5월 · Seatrium 건조 계약(P-84·P-85 합산 $8.16B)\n[정정 2026-10-08: 기존 ~100k 오기]. First oil 2029. Petrobras 65.7% (op), Shell 16.7%, TotalEnergies 15%, Petrogal 1.7%. [2026-10-13 검증] CAPEX 8.0→6.4: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. 이전 8.0은 P-84+P-85 FPSO 2척 합산 계약액($8.15B)을 각각 넣은 것으로 이중 집계.",
-      "notes_en": "Pre-salt Santos Basin · FPSO P-84\n225k bbl/d, gas 10 MMm³/d (Seatrium/SGX disclosure)\nFID May 2024 · Seatrium contract ($8.16B combined for P-84 + P-85)\n[Corrected 2026-10-08: previously misstated as ~100k]. First oil 2029. Petrobras 65.7% (op), Shell 16.7%, TotalEnergies 15%, Petrogal 1.7%. [2026-10-13 verification] CAPEX 8.0→6.4: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. The previous 8.0 was the combined P-84 + P-85 two-FPSO contract value ($8.15B) entered for each, i.e. double counted."
+      "notes": "산투스 분지 프리솔트 · FPSO P-84\n225k bbl/d, 가스 10 MMm³/d(Seatrium/SGX 공시)\nFID 2024년 5월 · Seatrium 건조 계약(P-84·P-85 합산 $8.16B)\nP-84 선체 2026년 9월 3일 CIMC Raffles 옌타이에서 완성 · 브라질·중국·싱가포르 모듈 제작 후 싱가포르에서 통합·시운전, 브라질로 예인 · 첫 생산 2029–2030년 목표(Offshore 2026-09-09)\n[2026-11-15 갱신] P-84 선체 완성(Offshore 2026-09-09) 반영. 일정 변경 없음. [정정 2026-10-08: 기존 ~100k 오기]. First oil 2029. Petrobras 65.7% (op), Shell 16.7%, TotalEnergies 15%, Petrogal 1.7%. [2026-10-13 검증] CAPEX 8.0→6.4: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. 이전 8.0은 P-84+P-85 FPSO 2척 합산 계약액($8.15B)을 각각 넣은 것으로 이중 집계.",
+      "notes_en": "Pre-salt Santos Basin · FPSO P-84\n225k bbl/d, gas 10 MMm³/d (Seatrium/SGX disclosure)\nFID May 2024 · Seatrium contract ($8.16B combined for P-84 + P-85)\nP-84 hull completed Sep 3, 2026 at CIMC Raffles Yantai · modules built in Brazil, China and Singapore, then integration and commissioning in Singapore before tow to Brazil · first oil targeted 2029–2030 (Offshore, 2026-09-09)\n[2026-11-15 update] Added P-84 hull completion (Offshore, 2026-09-09). No schedule change. [Corrected 2026-10-08: previously misstated as ~100k]. First oil 2029. Petrobras 65.7% (op), Shell 16.7%, TotalEnergies 15%, Petrogal 1.7%. [2026-10-13 verification] CAPEX 8.0→6.4: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. The previous 8.0 was the combined P-84 + P-85 two-FPSO contract value ($8.15B) entered for each, i.e. double counted."
     },
     {
       "id": "petrobras-sepia-phase2",
@@ -273,12 +273,12 @@
       "capex_busd": 4.7,
       "fid_date": "2024-05",
       "first_production": "2029",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras Business Plan 2026–2030 (Nov 2025), p.29",
       "source_url": "https://petrobras.com.br/documents/2677942/12513210/PN+2026-30_27nov_final_port.pdf",
       "confidence": "medium",
-      "notes": "산투스 분지 프리솔트 · FPSO P-85\n225k bbl/d, 가스 10 MMm³/d(Seatrium/SGX 공시)\nFID 2024년 5월 · Seatrium 건조 계약(P-84/Atapu·P-85 합산 $8.16B)\n[정정 2026-10-08: 기존 ~100k 오기]. First oil 2029. Petrobras 55.3% (op), TotalEnergies 16.9%, QatarEnergy 12.7%, PETRONAS 12.7%, Petrogal 2.4%. [2026-10-13 검증] CAPEX 8.0→4.7: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. 이전 8.0은 P-84+P-85 FPSO 2척 합산 계약액($8.15B)을 각각 넣은 것으로 이중 집계.",
-      "notes_en": "Pre-salt Santos Basin · FPSO P-85\n225k bbl/d, gas 10 MMm³/d (Seatrium/SGX disclosure)\nFID May 2024 · Seatrium contract ($8.16B combined for P-84/Atapu + P-85)\n[Corrected 2026-10-08: previously misstated as ~100k]. First oil 2029. Petrobras 55.3% (op), TotalEnergies 16.9%, QatarEnergy 12.7%, PETRONAS 12.7%, Petrogal 2.4%. [2026-10-13 verification] CAPEX 8.0→4.7: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. The previous 8.0 was the combined P-84 + P-85 two-FPSO contract value ($8.15B) entered for each, i.e. double counted."
+      "notes": "산투스 분지 프리솔트 · FPSO P-85\n225k bbl/d, 가스 10 MMm³/d(Seatrium/SGX 공시)\nFID 2024년 5월 · Seatrium 건조 계약(P-84/Atapu·P-85 합산 $8.16B)\nP-84 선체 2026년 9월 3일 CIMC Raffles 옌타이에서 완성 · 브라질·중국·싱가포르 모듈 제작 후 싱가포르에서 통합·시운전, 브라질로 예인 · 첫 생산 2029–2030년 목표(Offshore 2026-09-09)\n[2026-11-15 갱신] P-84 선체 완성(Offshore 2026-09-09) 반영. 일정 변경 없음. [정정 2026-10-08: 기존 ~100k 오기]. First oil 2029. Petrobras 55.3% (op), TotalEnergies 16.9%, QatarEnergy 12.7%, PETRONAS 12.7%, Petrogal 2.4%. [2026-10-13 검증] CAPEX 8.0→4.7: Petrobras 사업계획 2026–30 p.29 'Capex full life(PN 2025-29)' 기준. 용선(리스) FPSO 비용은 Petrobras capex에서 제외되며, 표에 WI가 따로 표기돼 100%/지분 기준 여부는 명시돼 있지 않음. 이전 8.0은 P-84+P-85 FPSO 2척 합산 계약액($8.15B)을 각각 넣은 것으로 이중 집계.",
+      "notes_en": "Pre-salt Santos Basin · FPSO P-85\n225k bbl/d, gas 10 MMm³/d (Seatrium/SGX disclosure)\nFID May 2024 · Seatrium contract ($8.16B combined for P-84/Atapu + P-85)\nP-84 hull completed Sep 3, 2026 at CIMC Raffles Yantai · modules built in Brazil, China and Singapore, then integration and commissioning in Singapore before tow to Brazil · first oil targeted 2029–2030 (Offshore, 2026-09-09)\n[2026-11-15 update] Added P-84 hull completion (Offshore, 2026-09-09). No schedule change. [Corrected 2026-10-08: previously misstated as ~100k]. First oil 2029. Petrobras 55.3% (op), TotalEnergies 16.9%, QatarEnergy 12.7%, PETRONAS 12.7%, Petrogal 2.4%. [2026-10-13 verification] CAPEX 8.0→4.7: Per Petrobras Business Plan 2026–30 p.29 'Capex full life (PN 2025-29)'. Chartered (leased) FPSO cost is excluded from Petrobras capex; the table lists WI separately and does not state whether figures are 100% or Petrobras share. The previous 8.0 was the combined P-84 + P-85 two-FPSO contract value ($8.15B) entered for each, i.e. double counted."
     },
     {
       "id": "petrobras-seap-1",
@@ -290,12 +290,12 @@
       "capex_busd": null,
       "fid_date": "2026-04",
       "first_production": "2031",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras FID Announcement (Apr 2026)",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1119639/000129281426002243/pbr20260413_6k2.htm",
       "confidence": "medium",
-      "notes": "Sergipe-Alagoas 분지 · SEAP 모듈 1, FPSO P-81\n120k bpd, 가스 10 MMm³/d · P-81·P-87 두 척으로 구성된 SEAP 개발의 일부(SEAP I+II 합산 사업비 R$600억 이상, Petrobras 공시)\nFPSO는 Petrobras 컨소시엄 소유, SBM이 Fast4Ward 선체로 건조하고 6.5년 운영·유지보수(2026년 5월 29일 계약)\nFID 2026년 4월 13일 · 첫 생산 2031년(2030 사업계획 기간 이후)\n지분: Petrobras 100%(운영)\n[2026-10-13 출처감사] Petrobras 공시: FID 2026-04-13, 120k bpd·가스 10 MMm³/d 확인. 사업비 6.0→null: SEAP I+II 합산 'R$600억 이상'만 공개(기존 6.0은 합산액을 반으로 나눈 추정).",
-      "notes_en": "Sergipe-Alagoas Basin · SEAP Module 1, FPSO P-81\n120k bpd, gas 10 MMm³/d · part of the two-FPSO SEAP development (P-81 + P-87; combined SEAP I+II capex over R$60bn per Petrobras)\nFPSO owned by the Petrobras consortium; SBM builds the Fast4Ward unit and provides 6.5-year O&M (contracts 2026-05-29)\nFID April 13, 2026 · first oil 2031 (beyond the 2030 Business Plan horizon)\nEquity: Petrobras 100% (op)\n[2026-10-13 source audit] Petrobras filing: FID 2026-04-13, 120k bpd and 10 MMm³/d gas confirmed. Capex 6.0→null: only the combined SEAP I+II figure ('over R$60bn') is disclosed (the previous 6.0 was half of the combined amount)."
+      "notes": "Sergipe-Alagoas 분지 · SEAP 모듈 1, FPSO P-81\n120k bpd, 가스 10 MMm³/d · P-81·P-87 두 척으로 구성된 SEAP 개발의 일부(SEAP I+II 합산 사업비 R$600억 이상, Petrobras 공시)\nFPSO는 Petrobras 컨소시엄 소유, SBM이 Fast4Ward 선체로 건조하고 6.5년 운영·유지보수(2026년 5월 29일 계약)\nFID 2026년 4월 13일 · 첫 생산 2031년(2030 사업계획 기간 이후)\n지분: Petrobras 100%(운영)\n[2026-11-15 감사] SBM 3분기(2026-11-12): 공정률 25% 미만, 인도 2031년 — 변동 없음. [2026-10-13 출처감사] Petrobras 공시: FID 2026-04-13, 120k bpd·가스 10 MMm³/d 확인. 사업비 6.0→null: SEAP I+II 합산 'R$600억 이상'만 공개(기존 6.0은 합산액을 반으로 나눈 추정).",
+      "notes_en": "Sergipe-Alagoas Basin · SEAP Module 1, FPSO P-81\n120k bpd, gas 10 MMm³/d · part of the two-FPSO SEAP development (P-81 + P-87; combined SEAP I+II capex over R$60bn per Petrobras)\nFPSO owned by the Petrobras consortium; SBM builds the Fast4Ward unit and provides 6.5-year O&M (contracts 2026-05-29)\nFID April 13, 2026 · first oil 2031 (beyond the 2030 Business Plan horizon)\nEquity: Petrobras 100% (op)\n[2026-11-15 audit] No news since apr–may 2026 fid and sbm contract — no change. [2026-10-13 source audit] Petrobras filing: FID 2026-04-13, 120k bpd and 10 MMm³/d gas confirmed. Capex 6.0→null: only the combined SEAP I+II figure ('over R$60bn') is disclosed (the previous 6.0 was half of the combined amount)."
     },
     {
       "id": "petrobras-seap-2",
@@ -307,12 +307,12 @@
       "capex_busd": null,
       "fid_date": "2025-12",
       "first_production": "2030",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras FID announcement (Dec 2025)",
       "source_url": "https://agencia.petrobras.com.br/w/petrobras-aprova-decis%C3%A3o-final-de-investimento-para-o-desenvolvimento-do-projeto-sergipe-%C3%A1guas-profundas-m%C3%B3dulo-2",
       "confidence": "medium",
-      "notes": "Sergipe-Alagoas 분지 · SEAP 모듈 2, FPSO P-87\n120k bpd, 가스 12 MMm³/d · FID 2025년 12월 30일(SEAP II가 SEAP I보다 먼저 FID) · 원유 2030년, 가스 수출 2031년\nFPSO는 Petrobras 컨소시엄 소유, SBM이 Fast4Ward 선체로 건조하고 6.5년 운영·유지보수(2026년 5월 29일 계약)\n지분: Petrobras 100%(운영)\n[2026-10-13 출처감사] 사업비 6.0→null: SEAP I+II 합산 'R$600억 이상'만 공개(Petrobras 2026-04-13 공시). 120k bpd·가스 12 MMm³/d, 2030 원유·2031 가스 수출.",
-      "notes_en": "Sergipe-Alagoas Basin · SEAP Module 2, FPSO P-87\n120k bpd, gas 12 MMm³/d · FID December 30, 2025 (SEAP II reached FID before SEAP I) · oil 2030, gas export 2031\nFPSO owned by the Petrobras consortium; SBM builds the Fast4Ward unit and provides 6.5-year O&M (contracts 2026-05-29)\nEquity: Petrobras 100% (op)\n[2026-10-13 source audit] Capex 6.0→null: only the combined SEAP I+II figure ('over R$60bn') is disclosed (Petrobras filing 2026-04-13). 120k bpd, gas 12 MMm³/d; oil 2030, gas export 2031."
+      "notes": "Sergipe-Alagoas 분지 · SEAP 모듈 2, FPSO P-87\n120k bpd, 가스 12 MMm³/d · FID 2025년 12월 30일(SEAP II가 SEAP I보다 먼저 FID) · 원유 2030년, 가스 수출 2031년\nFPSO는 Petrobras 컨소시엄 소유, SBM이 Fast4Ward 선체로 건조하고 6.5년 운영·유지보수(2026년 5월 29일 계약)\n지분: Petrobras 100%(운영)\n[2026-11-15 갱신] SBM 3분기(2026-11-12): 중국 조선소에서 Fast4Ward 선체 건조 착수, 공정률 25% 미만, 인도 2030년. [2026-10-13 출처감사] 사업비 6.0→null: SEAP I+II 합산 'R$600억 이상'만 공개(Petrobras 2026-04-13 공시). 120k bpd·가스 12 MMm³/d, 2030 원유·2031 가스 수출.",
+      "notes_en": "Sergipe-Alagoas Basin · SEAP Module 2, FPSO P-87\n120k bpd, gas 12 MMm³/d · FID December 30, 2025 (SEAP II reached FID before SEAP I) · oil 2030, gas export 2031\nFPSO owned by the Petrobras consortium; SBM builds the Fast4Ward unit and provides 6.5-year O&M (contracts 2026-05-29)\nEquity: Petrobras 100% (op)\n[2026-11-15 audit] No news since the sbm contract (may 2026) — no change. [2026-10-13 source audit] Capex 6.0→null: only the combined SEAP I+II figure ('over R$60bn') is disclosed (Petrobras filing 2026-04-13). 120k bpd, gas 12 MMm³/d; oil 2030, gas export 2031."
     },
     {
       "id": "bp-tortue-flng",
@@ -426,12 +426,12 @@
       "capex_busd": null,
       "fid_date": null,
       "first_production": null,
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "bp Annual Report 2024",
       "source_url": "https://www.offshore-mag.com/drilling-completion/article/14310069/bp-assessing-options-for-third-clair-field-project-west-of-shetland",
       "confidence": "low",
-      "notes": "셰틀랜드 서쪽 해역\n개념 선정 단계, 장기 개발 사업\n지분: bp 45.1%(운영)\n[2026-10-13 출처감사] bp가 Clair 3단계(Clair South) 계획 검토 중, FID·컨셉 미정 확인(2024-03). bp가 영국 북해 사업 매각 절차 착수(2026-07).",
-      "notes_en": "West of Shetland\nConcept selection stage; long lead-time development\nEquity: bp 45.1% (op)\n[2026-10-13 출처감사] bp가 Clair 3단계(Clair South) 계획 검토 중, FID·컨셉 미정 확인(2024-03). bp가 영국 북해 사업 매각 절차 착수(2026-07). [2026-10-13 source audit] bp working on Clair Phase 3 (Clair South), FID and concept not set (Mar 2024). bp launched sale of its UK North Sea business (Jul 2026)."
+      "notes": "셰틀랜드 서쪽 해역\n개념 선정 단계, 장기 개발 사업\n지분: bp 45.1%(운영)\n[2026-11-15 감사] 개발안·FID 발표 찾지 못함 — 변동 없음. [2026-10-13 출처감사] bp가 Clair 3단계(Clair South) 계획 검토 중, FID·컨셉 미정 확인(2024-03). bp가 영국 북해 사업 매각 절차 착수(2026-07).",
+      "notes_en": "West of Shetland\nConcept selection stage; long lead-time development\nEquity: bp 45.1% (op)\n[2026-11-15 audit] No concept or fid announcement found — no change. [2026-10-13 출처감사] bp가 Clair 3단계(Clair South) 계획 검토 중, FID·컨셉 미정 확인(2024-03). bp가 영국 북해 사업 매각 절차 착수(2026-07). [2026-10-13 source audit] bp working on Clair Phase 3 (Clair South), FID and concept not set (Mar 2024). bp launched sale of its UK North Sea business (Jul 2026)."
     },
     {
       "id": "equinor-wisting",
@@ -460,12 +460,12 @@
       "capex_busd": null,
       "fid_date": "2018-01",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Shell Q1 2025 Results (May 2025)",
       "source_url": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2025/shell-starts-up-new-facility-in-uk-north-sea-restoring-production-from-the-penguins-field.html",
       "confidence": "medium",
-      "notes": "영국 북해 Block 211/13a, 수심 약 150m(가혹 환경)\n노후 설비를 대체하는 가혹 환경용 신조 FPSO\n첫 생산 2025년 2월\n지분: Shell 50%(운영), NEO Energy 50%\n[2026-10-13 검증] FID 2021→2018-01(OE Digital 2018-01-15). CAPEX 2.0은 Shell 미공시 — 추정치(Bernstein 최대 $2.5B). [2026-10-13 출처감사] Shell 발표로 2025 생산 재개 확인. 사업비 2.0→null(Shell 미공시, 외부 추정만).",
-      "notes_en": "UK North Sea, Block 211/13a (~150m WD, harsh environment)\nNew-build harsh-environment FPSO replacing ageing infrastructure\nFirst oil February 2025\nEquity: Shell 50% (op), NEO Energy 50%\n[2026-10-13 검증] FID 2021→2018-01(OE Digital 2018-01-15). CAPEX 2.0은 Shell 미공시 — 추정치(Bernstein 최대 $2.5B). [2026-10-13 verification] FID 2021→2018-01 (OE Digital, 2018-01-15). CAPEX 2.0 is not disclosed by Shell — an estimate (Bernstein: up to $2.5B). [2026-10-13 source audit] Shell release confirms production restart in 2025. Capex 2.0→null (not disclosed by Shell; external estimates only)."
+      "notes": "영국 북해 Block 211/13a, 수심 약 150m(가혹 환경)\n노후 설비를 대체하는 가혹 환경용 신조 FPSO\n첫 생산 2025년 2월\n지분: Shell 50%(운영), NEO Energy 50%\n[2026-11-15 감사] 2025년 재가동 이후 새 보도 없음 — 변동 없음. [2026-10-13 검증] FID 2021→2018-01(OE Digital 2018-01-15). CAPEX 2.0은 Shell 미공시 — 추정치(Bernstein 최대 $2.5B). [2026-10-13 출처감사] Shell 발표로 2025 생산 재개 확인. 사업비 2.0→null(Shell 미공시, 외부 추정만).",
+      "notes_en": "UK North Sea, Block 211/13a (~150m WD, harsh environment)\nNew-build harsh-environment FPSO replacing ageing infrastructure\nFirst oil February 2025\nEquity: Shell 50% (op), NEO Energy 50%\n[2026-11-15 audit] No news since 2025 restart — no change. [2026-10-13 검증] FID 2021→2018-01(OE Digital 2018-01-15). CAPEX 2.0은 Shell 미공시 — 추정치(Bernstein 최대 $2.5B). [2026-10-13 verification] FID 2021→2018-01 (OE Digital, 2018-01-15). CAPEX 2.0 is not disclosed by Shell — an estimate (Bernstein: up to $2.5B). [2026-10-13 source audit] Shell release confirms production restart in 2025. Capex 2.0→null (not disclosed by Shell; external estimates only)."
     },
     {
       "id": "adnoc-hail-ghasha",
@@ -494,12 +494,12 @@
       "capex_busd": 18.0,
       "fid_date": "2019-07",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Aramco press release (Jul 9, 2019); Aramco FY2025 results",
       "source_url": "https://www.aramco.com/en/news-media/news/2019/aramco-contracts-marjan-berri-oilfields",
       "confidence": "high",
-      "notes": "아라비아만 해상 · 생산능력 +300k bbl/d 증설\nMarjan 생산 개시 2025년 12월(Tanajib 가스 플랜트 동시 가동)\n지분: Saudi Aramco 100%\n[2026-10-13 검증] CAPEX 17→18: Aramco 발표(2019-07-09) 34건 계약 총 $18B는 Marjan과 Berri 증산 프로그램 합산 — 이 항목에 합산액을 두고 Berri는 null로 해 이중 집계 해소(이전 17+8=25). FID 2020→2019-07(계약 발주 시점, Aramco는 FID 미공시).",
-      "notes_en": "Arabian Gulf offshore · +300k bbl/d capacity increment\nMarjan first production December 2025 (Tanajib Gas Plant started up at the same time)\nEquity: Saudi Aramco 100%\n[2026-10-13 verification] CAPEX 17→18: Aramco's 2019-07-09 release cites 34 contracts totaling $18B for the Marjan AND Berri increment programs combined — the combined figure sits here and Berri is set to null to remove double counting (previously 17+8=25). FID 2020→2019-07 (contract award date; Aramco does not announce FIDs)."
+      "notes": "아라비아만 해상 · 생산능력 +300k bbl/d 증설\nMarjan 생산 개시 2025년 12월(Tanajib 가스 플랜트 동시 가동)\n지분: Saudi Aramco 100%\n[2026-11-15 감사] Aramco 3분기 실적에 Marjan 언급 없음 — 변동 없음. [2026-10-13 검증] CAPEX 17→18: Aramco 발표(2019-07-09) 34건 계약 총 $18B는 Marjan과 Berri 증산 프로그램 합산 — 이 항목에 합산액을 두고 Berri는 null로 해 이중 집계 해소(이전 17+8=25). FID 2020→2019-07(계약 발주 시점, Aramco는 FID 미공시).",
+      "notes_en": "Arabian Gulf offshore · +300k bbl/d capacity increment\nMarjan first production December 2025 (Tanajib Gas Plant started up at the same time)\nEquity: Saudi Aramco 100%\n[2026-11-15 audit] Not mentioned in aramco q3 results — no change. [2026-10-13 verification] CAPEX 17→18: Aramco's 2019-07-09 release cites 34 contracts totaling $18B for the Marjan AND Berri increment programs combined — the combined figure sits here and Berri is set to null to remove double counting (previously 17+8=25). FID 2020→2019-07 (contract award date; Aramco does not announce FIDs)."
     },
     {
       "id": "saudi-aramco-berri",
@@ -511,12 +511,12 @@
       "capex_busd": null,
       "fid_date": "2019-07",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Aramco press release (Jul 9, 2019); Aramco FY2025 results",
       "source_url": "https://www.aramco.com/en/news-media/news/2019/aramco-contracts-marjan-berri-oilfields",
       "confidence": "medium",
-      "notes": "아라비아만 해상 · +250k bbl/d 증설\n2025년 생산 시작(수주입 운영 개시 확인, Marjan과 같은 일정)\n지분: Saudi Aramco 100%\n[2026-10-13 검증] CAPEX 8→null: Aramco $18B는 Marjan+Berri 합산(Marjan 항목에 반영), Berri 단독 금액 미공시. FID 2022→2019-07(계약 발주 시점).",
-      "notes_en": "Arabian Gulf offshore · +250k bbl/d increment\nProduction started 2025 (water-injection operations confirmed; same timeline as Marjan)\nEquity: Saudi Aramco 100%\n[2026-10-13 verification] CAPEX 8→null: Aramco's $18B covers Marjan + Berri combined (shown under Marjan); no Berri-only figure disclosed. FID 2022→2019-07 (contract award date)."
+      "notes": "아라비아만 해상 · +250k bbl/d 증설\n2025년 생산 시작(수주입 운영 개시 확인, Marjan과 같은 일정)\n지분: Saudi Aramco 100%\n[2026-11-15 감사] Aramco 3분기 실적에 Berri 언급 없음 — 변동 없음. [2026-10-13 검증] CAPEX 8→null: Aramco $18B는 Marjan+Berri 합산(Marjan 항목에 반영), Berri 단독 금액 미공시. FID 2022→2019-07(계약 발주 시점).",
+      "notes_en": "Arabian Gulf offshore · +250k bbl/d increment\nProduction started 2025 (water-injection operations confirmed; same timeline as Marjan)\nEquity: Saudi Aramco 100%\n[2026-11-15 audit] Not mentioned in aramco q3 results — no change. [2026-10-13 verification] CAPEX 8→null: Aramco's $18B covers Marjan + Berri combined (shown under Marjan); no Berri-only figure disclosed. FID 2022→2019-07 (contract award date)."
     },
     {
       "id": "totalenergies-suriname-block58",
@@ -562,12 +562,12 @@
       "capex_busd": null,
       "fid_date": null,
       "first_production": "2024",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "PETRONAS Press Release (Aug 2024)",
       "source_url": "https://www.worldoil.com/news/2024/8/21/petronas-achieves-first-gas-production-from-kasawari-field-offshore-malaysia",
       "confidence": "medium",
-      "notes": "말레이시아 사라왁 해상 Block SK316, 해안 약 200km · 말레이시아 최대 해상 가스전(자원 약 10 TCF)\n첫 가스 2024년 8월(초기 200 MMscfd) · 설계 용량 약 545 MMscfd\n지분: PETRONAS Carigali 90%(운영), Exploration and Production Malaysia Venture 10%\n[2026-10-13 검증] FID 2021→null: 2021은 근거 없음(CCS FID는 2022-10). 가스전 FID는 2019로 제시된 자료(PETRONAS 2019년 3분기 보고서)가 있으나 원문 확인 불가. CAPEX 3.0은 PETRONAS 미공시 추정. [2026-10-13 출처감사] 2024-08 첫 가스(200 MMcfd)·판매 545 MMcfd 확인. 사업비 3.0→null(PETRONAS 미공시).",
-      "notes_en": "Offshore Sarawak, Malaysia, Block SK316 (~200km offshore) · Malaysia's largest offshore gas field (~10 TCF)\nFirst gas August 2024 at an initial 200 MMscfd · nameplate ~545 MMscfd\nEquity: PETRONAS Carigali 90% (op), Exploration and Production Malaysia Venture 10%\n[2026-10-13 검증] FID 2021→null: 2021은 근거 없음(CCS FID는 2022-10). 가스전 FID는 2019로 제시된 자료(PETRONAS 2019년 3분기 보고서)가 있으나 원문 확인 불가. CAPEX 3.0은 PETRONAS 미공시 추정. [2026-10-13 verification] FID 2021→null: no basis for 2021 (the CCS FID was Oct 2022). A source (PETRONAS Q3 2019 report) is said to show a 2019 gas-field FID but could not be checked. CAPEX 3.0 is an estimate; PETRONAS has not disclosed it. [2026-10-13 source audit] First gas Aug 2024 (200 MMcfd), sales 545 MMcfd confirmed. Capex 3.0→null (not disclosed by PETRONAS)."
+      "notes": "말레이시아 사라왁 해상 Block SK316, 해안 약 200km · 말레이시아 최대 해상 가스전(자원 약 10 TCF)\n첫 가스 2024년 8월(초기 200 MMscfd) · 설계 용량 약 545 MMscfd\nCCS(연 3.3 Mt CO2) 첫 주입을 2027년으로 앞당기는 안 추진(PETRONAS, The Star 2026-04-01) · McDermott 운송·설치 하도급(2026년 4월)\n지분: PETRONAS Carigali 90%(운영), Exploration and Production Malaysia Venture 10%\n[2026-11-15 갱신] CCS 첫 주입 2027년 앞당김 추진(The Star) 반영. [2026-10-13 검증] FID 2021→null: 2021은 근거 없음(CCS FID는 2022-10). 가스전 FID는 2019로 제시된 자료(PETRONAS 2019년 3분기 보고서)가 있으나 원문 확인 불가. CAPEX 3.0은 PETRONAS 미공시 추정. [2026-10-13 출처감사] 2024-08 첫 가스(200 MMcfd)·판매 545 MMcfd 확인. 사업비 3.0→null(PETRONAS 미공시).",
+      "notes_en": "Offshore Sarawak, Malaysia, Block SK316 (~200km offshore) · Malaysia's largest offshore gas field (~10 TCF)\nFirst gas August 2024 at an initial 200 MMscfd · nameplate ~545 MMscfd\nCCS (3.3 Mtpa CO2): PETRONAS seeking to bring first injection forward to 2027 (The Star, 2026-04-01) · McDermott T&I subcontract (Apr 2026)\nEquity: PETRONAS Carigali 90% (op), Exploration and Production Malaysia Venture 10%\n[2026-11-15 update] Added the plan to bring CCS first injection forward to 2027 (The Star). [2026-10-13 검증] FID 2021→null: 2021은 근거 없음(CCS FID는 2022-10). 가스전 FID는 2019로 제시된 자료(PETRONAS 2019년 3분기 보고서)가 있으나 원문 확인 불가. CAPEX 3.0은 PETRONAS 미공시 추정. [2026-10-13 verification] FID 2021→null: no basis for 2021 (the CCS FID was Oct 2022). A source (PETRONAS Q3 2019 report) is said to show a 2019 gas-field FID but could not be checked. CAPEX 3.0 is an estimate; PETRONAS has not disclosed it. [2026-10-13 source audit] First gas Aug 2024 (200 MMcfd), sales 545 MMcfd confirmed. Capex 3.0→null (not disclosed by PETRONAS)."
     },
     {
       "id": "shell-crux",
@@ -613,12 +613,12 @@
       "capex_busd": null,
       "fid_date": null,
       "first_production": null,
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "ExxonMobil 2024 Investor Day",
       "source_url": "https://investor.exxonmobil.com/company-information/press-releases/detail/42/exxonmobil-and-papua-new-guinea-sign-pnyang-gas-agreement",
       "confidence": "low",
-      "notes": "파푸아뉴기니 · LNG 3번째 트레인 가능성\nPapua LNG FID와 가스 공급 계약에 따라 결정\n[2026-10-13 출처감사] P'nyang 가스 협약(2022-02): 재정 조건·초기 계획 단계, Papua LNG 이후 개발 — Pre-FEED 확인.",
-      "notes_en": "Papua New Guinea · potential 3rd LNG train\nContingent on Papua LNG FID and gas supply agreements\n[2026-10-13 출처감사] P'nyang 가스 협약(2022-02): 재정 조건·초기 계획 단계, Papua LNG 이후 개발 — Pre-FEED 확인. [2026-10-13 source audit] P'nyang gas agreement (Feb 2022): fiscal terms and early planning; development to follow Papua LNG — Pre-FEED confirmed."
+      "notes": "파푸아뉴기니 · LNG 3번째 트레인 가능성\nPapua LNG FID와 가스 공급 계약에 따라 결정\n[2026-11-15 감사] 3번째 트레인 진척 보도 찾지 못함 — P'nyang 가스는 기존 2개 트레인 공급용으로 보도됨 — 변동 없음. [2026-10-13 출처감사] P'nyang 가스 협약(2022-02): 재정 조건·초기 계획 단계, Papua LNG 이후 개발 — Pre-FEED 확인.",
+      "notes_en": "Papua New Guinea · potential 3rd LNG train\nContingent on Papua LNG FID and gas supply agreements\n[2026-11-15 audit] No third-train progress found — p'nyang gas reported as feed for the existing two trains — no change. [2026-10-13 출처감사] P'nyang 가스 협약(2022-02): 재정 조건·초기 계획 단계, Papua LNG 이후 개발 — Pre-FEED 확인. [2026-10-13 source audit] P'nyang gas agreement (Feb 2022): fiscal terms and early planning; development to follow Papua LNG — Pre-FEED confirmed."
     },
     {
       "id": "totalenergies-mozambique-lng",
@@ -681,12 +681,12 @@
       "capex_busd": null,
       "fid_date": null,
       "first_production": null,
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Petrobras Business Plan 2026-2030 (Nov 2025); Petrobras/OE Digital (2026)",
       "source_url": "https://www.bnamericas.com/en/features/petrobras-plans-to-sign-six-fpso-contracts-by-2027",
       "confidence": "low",
-      "notes": "산투스 분지 프리솔트 · Tupi(Tupi/Iracema) 유전 재활성화용 신규 FPSO, 120k b/d\nPetrobras EPC 발주(용선 아님), 레플리칸트(P-66~P-71) 설계 기반, 계약 2027년 예정(BNamericas, 2026년 3월)\n2026–2030 사업계획 '검토 중' 포트폴리오($18B, ICSPB·Entorno de Forno 등 FPSO 6척 검토군)에 포함\nCAPEX·첫 생산 시점 미공시\n기존 Tupi 생산 인프라(FPSO 6척 운영 중) 활용으로 해저 비용 일부 절감 가능 · P-90 지정 가능성 있으나 공식 미확인\n참고: Tupi 유전은 2026년 누적 생산 40억 boe 돌파(Petrobras 73년 역사상 처음)\n지분: Petrobras 100%(운영)\n[2026-10-13 검증] CAPEX 4.0→null: 출처 없는 임시값(Búzios 12와 동일 값). [2026-10-13 출처감사] (원문 접속 불가로 재감사 대상) 첫 생산 2033은 출처 없어 null. [2026-10-13 출처감사] BNamericas(2026-03): Tupi 재활성화 FPSO는 120k b/d, Petrobras EPC 발주(용선 아님), 레플리칸트(P-66~P-71) 설계 기반, 계약 2027년 예정 — 기존 '100k 용선'은 오류.",
-      "notes_en": "Pre-salt Santos Basin · new FPSO to revitalize Tupi (Tupi/Iracema), 120k b/d\nProcured by Petrobras under EPC (not chartered), based on the replicant (P-66–P-71) design, contract planned for 2027 (BNamericas, Mar 2026)\nListed in the 2026–2030 Business Plan 'Under Evaluation' portfolio ($18B; one of six FPSOs under review, alongside ICSPB, Entorno de Forno, etc.)\nCAPEX and first-oil date not disclosed\nExisting Tupi infrastructure (6 FPSOs in operation) may cut some subsea cost · may be designated P-90, not officially confirmed\nNote: Tupi passed 4 billion boe cumulative production in 2026 (a first in Petrobras' 73-year history)\nEquity: Petrobras 100% (op)\n[2026-10-13 verification] CAPEX 4.0→null: unsourced placeholder (same value as Búzios 12). [2026-10-13 source audit] (Re-audit pending: source unreachable) First oil 2033 unsourced → null. [2026-10-13 source audit] BNamericas (Mar 2026): the Tupi revitalization FPSO is 120k b/d, procured by Petrobras under EPC (not chartered), based on the replicant (P-66–P-71) design, contract planned for 2027 — the earlier '100k charter' was wrong."
+      "notes": "산투스 분지 프리솔트 · Tupi(Tupi/Iracema) 유전 재활성화용 신규 FPSO, 120k b/d\nPetrobras EPC 발주(용선 아님), 레플리칸트(P-66~P-71) 설계 기반, 계약 2027년 예정(BNamericas, 2026년 3월)\n2026–2030 사업계획 '검토 중' 포트폴리오($18B, ICSPB·Entorno de Forno 등 FPSO 6척 검토군)에 포함\n2026년 11월 6일 Lloyd's Register가 P-68 상세 설계 기반 REVIT I TUPI FPSO 개념 설계 기본승인(AiP) — 입찰·계약 발표는 아직 없음(OE Digital)\nCAPEX·첫 생산 시점 미공시\n기존 Tupi 생산 인프라(FPSO 6척 운영 중) 활용으로 해저 비용 일부 절감 가능 · P-90 지정 가능성 있으나 공식 미확인\n참고: Tupi 유전은 2026년 누적 생산 40억 boe 돌파(Petrobras 73년 역사상 처음)\n지분: Petrobras 100%(운영)\n[2026-11-15 갱신] LR 개념 설계 AiP(OE Digital 2026-11-06) 반영. 계약 미발표. [2026-10-13 검증] CAPEX 4.0→null: 출처 없는 임시값(Búzios 12와 동일 값). [2026-10-13 출처감사] (원문 접속 불가로 재감사 대상) 첫 생산 2033은 출처 없어 null. [2026-10-13 출처감사] BNamericas(2026-03): Tupi 재활성화 FPSO는 120k b/d, Petrobras EPC 발주(용선 아님), 레플리칸트(P-66~P-71) 설계 기반, 계약 2027년 예정 — 기존 '100k 용선'은 오류.",
+      "notes_en": "Pre-salt Santos Basin · new FPSO to revitalize Tupi (Tupi/Iracema), 120k b/d\nProcured by Petrobras under EPC (not chartered), based on the replicant (P-66–P-71) design, contract planned for 2027 (BNamericas, Mar 2026)\nListed in the 2026–2030 Business Plan 'Under Evaluation' portfolio ($18B; one of six FPSOs under review, alongside ICSPB, Entorno de Forno, etc.)\nNov 6, 2026: Lloyd's Register gave Approval in Principle to the REVIT I TUPI FPSO concept, based on the P-68 detailed design — no tender award announced yet (OE Digital)\nCAPEX and first-oil date not disclosed\nExisting Tupi infrastructure (6 FPSOs in operation) may cut some subsea cost · may be designated P-90, not officially confirmed\nNote: Tupi passed 4 billion boe cumulative production in 2026 (a first in Petrobras' 73-year history)\nEquity: Petrobras 100% (op)\n[2026-11-15 update] Added LR concept AiP (OE Digital, 2026-11-06). No contract yet. [2026-10-13 verification] CAPEX 4.0→null: unsourced placeholder (same value as Búzios 12). [2026-10-13 source audit] (Re-audit pending: source unreachable) First oil 2033 unsourced → null. [2026-10-13 source audit] BNamericas (Mar 2026): the Tupi revitalization FPSO is 120k b/d, procured by Petrobras under EPC (not chartered), based on the replicant (P-66–P-71) design, contract planned for 2027 — the earlier '100k charter' was wrong."
     },
     {
       "id": "petrobras-p88-albacora",
@@ -732,12 +732,12 @@
       "capex_busd": 8.1,
       "fid_date": "2017",
       "first_production": "2025",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "Equinor press release (Mar 31, 2025); Equinor project update (Sep 19, 2023)",
       "source_url": "https://www.equinor.com/news/20250331-johan-castberg-strengthens-norway-as-long-term-energy-exporter",
       "confidence": "high",
-      "notes": "노르웨이 바렌츠해, 수심 약 380m · FPSO Johan Castberg\n첫 생산 2025년 3월 31일 · 2025년 6월 정점 생산 약 220k bopd 도달 · 회수 가능 450–650 MMbbl\nIsflak 타이백 FID 2025년 12월(약 14–24 MMbbl, 2028년 4분기 가동)\n지분: Equinor 46.3%(운영), Vår Energi 30%, Petoro 23.7%\n[2026-10-13 검증] CAPEX 5.4→8.1: Equinor 가동 발표(2025-03-31) 'NOK 86 billion (2024)' ≈ US$8.1B 환산(2017 PDO 당시 추정 NOK 57bn이 이전 값의 근거로 보임). FID 2019→2017: PDO 2017년 제출(Equinor 2023-09-19).",
-      "notes_en": "Norwegian Barents Sea (~380m WD) · FPSO Johan Castberg\nFirst oil March 31, 2025 · plateau ~220k bopd reached June 2025 · 450–650 MMbbl recoverable\nIsflak tie-back FID Dec 2025 (~14–24 MMbbl, startup Q4 2028)\nEquity: Equinor 46.3% (op), Vår Energi 30%, Petoro 23.7%\n[2026-10-13 검증] CAPEX 5.4→8.1: Equinor 가동 발표(2025-03-31) 'NOK 86 billion (2024)' ≈ US$8.1B 환산(2017 PDO 당시 추정 NOK 57bn이 이전 값의 근거로 보임). FID 2019→2017: PDO 2017년 제출(Equinor 2023-09-19). [2026-10-13 verification] CAPEX 5.4→8.1: Equinor start-up release (2025-03-31) gives 'NOK 86 billion (2024)' ≈ US$8.1B (the previous value appears to reflect the 2017 PDO estimate of NOK 57bn). FID 2019→2017: PDO submitted in 2017 (Equinor, 2023-09-19)."
+      "notes": "노르웨이 바렌츠해, 수심 약 380m · FPSO Johan Castberg\n첫 생산 2025년 3월 31일 · 2025년 6월 정점 생산 약 220k bopd 도달 · 회수 가능 450–650 MMbbl\nIsflak 타이백 FID 2025년 12월(약 14–24 MMbbl, 2028년 4분기 가동)\n지분: Equinor 46.3%(운영), Vår Energi 30%, Petoro 23.7%\n[2026-11-15 감사] Isflak 2026년 3월 공사 착수, 2028년 4분기 가동 일정 유지 — 변동 없음. [2026-10-13 검증] CAPEX 5.4→8.1: Equinor 가동 발표(2025-03-31) 'NOK 86 billion (2024)' ≈ US$8.1B 환산(2017 PDO 당시 추정 NOK 57bn이 이전 값의 근거로 보임). FID 2019→2017: PDO 2017년 제출(Equinor 2023-09-19).",
+      "notes_en": "Norwegian Barents Sea (~380m WD) · FPSO Johan Castberg\nFirst oil March 31, 2025 · plateau ~220k bopd reached June 2025 · 450–650 MMbbl recoverable\nIsflak tie-back FID Dec 2025 (~14–24 MMbbl, startup Q4 2028)\nEquity: Equinor 46.3% (op), Vår Energi 30%, Petoro 23.7%\n[2026-11-15 audit] Isflak construction began Mar 2026, start-up still Q4 2028 — no change. [2026-10-13 검증] CAPEX 5.4→8.1: Equinor 가동 발표(2025-03-31) 'NOK 86 billion (2024)' ≈ US$8.1B 환산(2017 PDO 당시 추정 NOK 57bn이 이전 값의 근거로 보임). FID 2019→2017: PDO 2017년 제출(Equinor 2023-09-19). [2026-10-13 verification] CAPEX 5.4→8.1: Equinor start-up release (2025-03-31) gives 'NOK 86 billion (2024)' ≈ US$8.1B (the previous value appears to reflect the 2017 PDO estimate of NOK 57bn). FID 2019→2017: PDO submitted in 2017 (Equinor, 2023-09-19)."
     },
     {
       "id": "saudi-aramco-zuluf",
@@ -783,12 +783,12 @@
       "capex_busd": 10.0,
       "fid_date": "2023",
       "first_production": "2028",
-      "verified": "2026-10-13",
+      "verified": "2026-11-15",
       "source": "QatarEnergy Announcement 2023; MEES (2026)",
       "source_url": "https://qna.org.qa/en/news/news-details?id=0029-qatarenergy-announces-awarding-epc-contract-for-north-field-south-project&date=16/05/2023",
       "confidence": "medium",
-      "notes": "카타르 North Field · LNG 트레인 2기 × 8 Mtpa = 16 Mtpa 증설 · North Field 확장의 마지막 단계\nCAPEX 약 $10B\nNFE Train 1 지연(2027년 초 가동)에 연동돼 가동이 2028년 하반기로 밀릴 전망\n지분: QatarEnergy 75%(운영), TotalEnergies 9.375%, Shell 9.375%, ConocoPhillips 6.25%\n[2026-10-13 검증] CAPEX 10.0은 총 사업비가 아니라 EPC 계약액(Technip Energies/CCC, 2023-05-16). FID 공식 발표 없음 — EPC 발주를 FID로 간주. [2026-10-13 출처감사] QNA: EPC ~$10B(총사업비 아님), 2×8 = 16 MTPA 확인.",
-      "notes_en": "North Field, Qatar · 2 LNG trains × 8 Mtpa = 16 Mtpa increment · completes the North Field expansion\nCAPEX ~$10B\nLinked to the NFE Train 1 delay (startup early 2027), startup expected to slip to H2 2028\nEquity: QatarEnergy 75% (op), TotalEnergies 9.375%, Shell 9.375%, ConocoPhillips 6.25%\n[2026-10-13 verification] CAPEX 10.0 is the EPC contract value (Technip Energies/CCC, 2023-05-16), not total capex. No formal FID announcement — EPC award used as FID. [2026-10-13 source audit] QNA: EPC ~$10B (not total capex), 2×8 = 16 MTPA confirmed."
+      "notes": "카타르 North Field · LNG 트레인 2기 × 8 Mtpa = 16 Mtpa 증설 · North Field 확장의 마지막 단계\nCAPEX 약 $10B\n2026년 9월 al-Kaabi: NFS 생산 개시 2028년 · NFE Train 1은 2027년 상반기 — 호르무즈 사태로 장비 반입이 막혀 추가 지연 가능(Reuters/OE Digital 2026-09-21)\n지분: QatarEnergy 75%(운영), TotalEnergies 9.375%, Shell 9.375%, ConocoPhillips 6.25%\n[2026-11-15 갱신] 가동 2028년(al-Kaabi, 2026-09-21)·호르무즈 지연 위험 반영. 첫 생산 연도 2028 유지. [2026-10-13 검증] CAPEX 10.0은 총 사업비가 아니라 EPC 계약액(Technip Energies/CCC, 2023-05-16). FID 공식 발표 없음 — EPC 발주를 FID로 간주. [2026-10-13 출처감사] QNA: EPC ~$10B(총사업비 아님), 2×8 = 16 MTPA 확인.",
+      "notes_en": "North Field, Qatar · 2 LNG trains × 8 Mtpa = 16 Mtpa increment · completes the North Field expansion\nCAPEX ~$10B\nSept 2026, al-Kaabi: NFS to start production in 2028 · NFE Train 1 in H1 2027 — Hormuz disruption is blocking equipment deliveries and could delay further (Reuters/OE Digital, 2026-09-21)\nEquity: QatarEnergy 75% (op), TotalEnergies 9.375%, Shell 9.375%, ConocoPhillips 6.25%\n[2026-11-15 update] Start-up 2028 (al-Kaabi, 2026-09-21) and Hormuz delay risk added. First production year still 2028. [2026-10-13 verification] CAPEX 10.0 is the EPC contract value (Technip Energies/CCC, 2023-05-16), not total capex. No formal FID announcement — EPC award used as FID. [2026-10-13 source audit] QNA: EPC ~$10B (not total capex), 2×8 = 16 MTPA confirmed."
     },
     {
       "id": "chevron-aphrodite",

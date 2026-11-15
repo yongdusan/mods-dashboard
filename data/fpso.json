@@ -181,7 +181,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "SBM Fast4Ward 선형 · Yellowtail 개발 전용\n생산 개시 2025-08 · SBM이 최대 2년 임대·운영 후 2026년 1분기 ExxonMobil에 매각\n[2026-10-13 감사] 250k bpd·가스 450·저장 2.0·수심 ~1,800m 확인. 생산 개시 2025-08(기존 2024-01 오류). SBM이 최대 2년 임대·운영 후 ExxonMobil로 이전(2026 1분기 매각). 용선 종료 2044는 근거 없어 null.",
+      "notes": "SBM Fast4Ward 선형 · Yellowtail 개발 전용\n생산 개시 2025-08 · SBM이 최대 2년 임대·운영 후 2026년 2월 ExxonMobil에 매각\n[2026-11-15 갱신] SBM 3분기 실적(2026-11-12): 매각 시점 2026년 2월 확인. [2026-10-13 감사] 250k bpd·가스 450·저장 2.0·수심 ~1,800m 확인. 생산 개시 2025-08(기존 2024-01 오류). SBM이 최대 2년 임대·운영 후 ExxonMobil로 이전(2026 1분기 매각). 용선 종료 2044는 근거 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (SWS 선체 + Seatrium 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Seatrium (ex-Keppel), Singapore",
@@ -209,9 +209,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/wp-content/uploads/2024/09/Singapore-Field-Trip-2024-001-SBM-Offshore.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design · dedicated to the Yellowtail development\nProduction from Aug 2025 · SBM leased and operated it for up to two years, then sold it to ExxonMobil in Q1 2026\n[2026-10-13 audit] Confirmed 250k bpd, gas 450, 2.0 storage, ~1,800m WD. Production start Aug 2025 (was 2024-01). SBM leased/operated for up to 2 years before transfer to ExxonMobil (sold Q1 2026). 2044 end unsourced → null.",
+      "notes_en": "SBM Fast4Ward design · dedicated to the Yellowtail development\nProduction from Aug 2025 · SBM leased and operated it for up to two years, then sold it to ExxonMobil in February 2026\n[2026-11-15 update] SBM Q3 trading update (2026-11-12): sale completed February 2026. [2026-10-13 audit] Confirmed 250k bpd, gas 450, 2.0 storage, ~1,800m WD. Production start Aug 2025 (was 2024-01). SBM leased/operated for up to 2 years before transfer to ExxonMobil (sold Q1 2026). 2044 end unsourced → null.",
       "source_url": "https://jpt.spe.org/exxonmobil-brings-fourth-fpso-online-offshore-guyana",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Prosperity",
@@ -228,7 +228,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "SBM Fast4Ward 선형 · 가이아나 3번째 FPSO(Payara)\n생산 개시 2023-11 · 2024-11 ExxonMobil 합작이 매입, 이후 SBM은 운영만\n[2026-10-13 감사] 220k bpd·수심 ~1,900m 확인, 가스 150→400 MMscfd, 저장 1.6→2.0 MMbbl. 생산 개시 2023-11(기존 2023-12). 2024-11 ExxonMobil 매입. 용선 종료 2043은 근거 없어 null.",
+      "notes": "SBM Fast4Ward 선형 · 가이아나 3번째 FPSO(Payara)\n생산 개시 2023-11 · 2024-11 ExxonMobil 합작이 매입, 이후 SBM은 운영만\n[2026-11-15 감사] ExxonMobil 3분기 실적(2026-10): Stabroek 누적 생산 10억 bbl 돌파, 이 선박 변동 언급 없음. [2026-10-13 감사] 220k bpd·수심 ~1,900m 확인, 가스 150→400 MMscfd, 저장 1.6→2.0 MMbbl. 생산 개시 2023-11(기존 2023-12). 2024-11 ExxonMobil 매입. 용선 종료 2043은 근거 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF2 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Keppel Shipyard (Seatrium), Singapore",
@@ -256,9 +256,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/naming-ceremony-prosperity-fpso-takes-place",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design · Guyana's 3rd FPSO (Payara)\nProduction from Nov 2023 · bought by the ExxonMobil JV in Nov 2024; SBM now operates only\n[2026-10-13 audit] Confirmed 220k bpd, ~1,900m WD; gas 150→400 MMscfd, storage 1.6→2.0 MMbbl. Production start Nov 2023 (was 2023-12). Bought by ExxonMobil Nov 2024. 2043 end unsourced → null.",
+      "notes_en": "SBM Fast4Ward design · Guyana's 3rd FPSO (Payara)\nProduction from Nov 2023 · bought by the ExxonMobil JV in Nov 2024; SBM now operates only\n[2026-11-15 audit] ExxonMobil Q3 2026: Stabroek cumulative output passed 1 billion bbl; no change reported for this unit. [2026-10-13 audit] Confirmed 220k bpd, ~1,900m WD; gas 150→400 MMscfd, storage 1.6→2.0 MMbbl. Production start Nov 2023 (was 2023-12). Bought by ExxonMobil Nov 2024. 2043 end unsourced → null.",
       "source_url": "https://oilnow.gy/featured/dutch-ship-builder-completes-us1-05-billion-financing-for-prosperity-fpso/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Liza Unity",
@@ -275,7 +275,7 @@
       "contract_end": "2042-02",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "SBM Fast4Ward 선형 · 가이아나 2번째 FPSO(Liza 2단계)\n2023-11 ExxonMobil이 약 $1.26B에 매입, SBM이 2033년까지 운영\n[2026-10-13 감사] 소유주 SBM→ExxonMobil: 2023-11 ExxonMobil이 매입(~$1.26B), SBM은 2033년까지 운영. 나머지 수치는 아직 미감사. [2026-10-13 감사] 원유 220k 확인, 가스 170→400 MMscfd, 저장 1.6→2.0 MMbbl, 수심 1,525→1,600m. 2023-11 ExxonMobil 매입, SBM 운영.",
+      "notes": "SBM Fast4Ward 선형 · 가이아나 2번째 FPSO(Liza 2단계)\n2023-11 ExxonMobil이 약 $1.26B에 매입, SBM이 2033년까지 운영\n[2026-11-15 감사] ExxonMobil 3분기 실적(2026-10): Stabroek 누적 생산 10억 bbl 돌파, 이 선박 변동 언급 없음. [2026-10-13 감사] 소유주 SBM→ExxonMobil: 2023-11 ExxonMobil이 매입(~$1.26B), SBM은 2033년까지 운영. 나머지 수치는 아직 미감사. [2026-10-13 감사] 원유 220k 확인, 가스 170→400 MMscfd, 저장 1.6→2.0 MMbbl, 수심 1,525→1,600m. 2023-11 ExxonMobil 매입, SBM 운영.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF1 신조 (SWS hull + Keppel FELS 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: Keppel Shipyard (Seatrium), Singapore",
@@ -303,9 +303,9 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/14074711/sbms-first-fast4ward-hull-arrives-in-singapore",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design · Guyana's 2nd FPSO (Liza Phase 2)\nBought by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033\n[2026-10-13 audit] Owner SBM→ExxonMobil: purchased by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033. Other values not yet audited. [2026-10-13 audit] Confirmed 220k oil; gas 170→400 MMscfd, storage 1.6→2.0 MMbbl, WD 1,525→1,600m. Bought by ExxonMobil Nov 2023; SBM operates.",
+      "notes_en": "SBM Fast4Ward design · Guyana's 2nd FPSO (Liza Phase 2)\nBought by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033\n[2026-11-15 audit] ExxonMobil Q3 2026: Stabroek cumulative output passed 1 billion bbl; no change reported for this unit. [2026-10-13 audit] Owner SBM→ExxonMobil: purchased by ExxonMobil in Nov 2023 (~$1.26B); SBM operates through 2033. Other values not yet audited. [2026-10-13 audit] Confirmed 220k oil; gas 170→400 MMscfd, storage 1.6→2.0 MMbbl, WD 1,525→1,600m. Bought by ExxonMobil Nov 2023; SBM operates.",
       "source_url": "https://jpt.spe.org/work-continues-liza-unity-fpso",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Liza Destiny",
@@ -322,7 +322,7 @@
       "contract_end": "2039-12",
       "status": "On Production",
       "year_delivered": 2019,
-      "notes": "가이아나 첫 FPSO · Stabroek 광구 첫 생산설비(Liza 1단계)\n2024년 말 ExxonMobil 합작이 매입, SBM이 2033년경까지 운영\n[2026-10-13 감사] 원유 120k·저장 1.6·수심 1,525m 확인, 가스 100→170 MMscfd. 2024년 말 ExxonMobil 매입, SBM 운영(~2033).",
+      "notes": "가이아나 첫 FPSO · Stabroek 광구 첫 생산설비(Liza 1단계)\n2024년 말 ExxonMobil 합작이 매입, SBM이 2033년경까지 운영\n[2026-11-15 감사] ExxonMobil 3분기 실적(2026-10): Stabroek 누적 생산 10억 bbl 돌파, 이 선박 변동 언급 없음. [2026-10-13 감사] 원유 120k·저장 1.6·수심 1,525m 확인, 가스 100→170 MMscfd. 2024년 말 ExxonMobil 매입, SBM 운영(~2033).",
       "detail": {
         "hull_type": "VLCC 전환 FPSO (Keppel FELS Singapore)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of VLCC Tina, orig. Hyundai Heavy Industries) · Topsides/integration: Keppel Shipyard, Singapore",
@@ -350,9 +350,9 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/16800835/sbm-commissions-keppel-shipyard-for-liza-fpso",
         "yard_confidence": "high"
       },
-      "notes_en": "Guyana's first FPSO · first production facility on the Stabroek Block (Liza Phase 1)\nBought by the ExxonMobil JV in late 2024; SBM operates to ~2033\n[2026-10-13 audit] Confirmed 120k oil, 1.6 storage, 1,525m WD; gas 100→170 MMscfd. Bought by ExxonMobil end-2024; SBM operates (~2033).",
+      "notes_en": "Guyana's first FPSO · first production facility on the Stabroek Block (Liza Phase 1)\nBought by the ExxonMobil JV in late 2024; SBM operates to ~2033\n[2026-11-15 audit] ExxonMobil Q3 2026: Stabroek cumulative output passed 1 billion bbl; no change reported for this unit. [2026-10-13 audit] Confirmed 120k oil, 1.6 storage, 1,525m WD; gas 100→170 MMscfd. Bought by ExxonMobil end-2024; SBM operates (~2033).",
       "source_url": "https://oilnow.gy/featured/liza-destiny-ready-to-set-sail-for-guyana-oil-bonanza/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Almirante Tamandaré",
@@ -369,7 +369,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "SBM Fast4Ward 선형 · Búzios 유전\n생산 개시 2025-02-15 · 원유 225k bpd, 가스 12 MMm³/d\n[2026-10-13 감사] SBM 발표: 원유 225k bpd 확인, 가스 212→424 MMscfd(12 MMm³/d). 생산 개시 2025-02-15(용선 시작 2024-06→2025-02). 저장·수심·용선 종료는 출처 없어 null.",
+      "notes": "SBM Fast4Ward 선형 · Búzios 유전\n생산 개시 2025-02-15 · 원유 225k bpd, 가스 12 MMm³/d\n2026년 7월 월간 263k bpd 기록(Petrobras 3분기)\n[2026-11-15 갱신] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. 2026년 7월 월간 263k bpd로 브라질 최대 생산 설비(Petrobras 3분기, World Oil 2026-10-29). [2026-10-13 감사] SBM 발표: 원유 225k bpd 확인, 가스 212→424 MMscfd(12 MMm³/d). 생산 개시 2025-02-15(용선 시작 2024-06→2025-02). 저장·수심·용선 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF4 신조 (CMHI hull + Seatrium 통합)",
         "yard": "Hull: China Merchants Heavy Industry (CMHI), China · Topsides/integration: China Merchants Heavy Industry (CMHI Haimen), China",
@@ -392,9 +392,9 @@
         "yard_source_url": "https://www.offshore-energy.biz/sbm-offshores-behemoth-fpso-steps-into-brazil-to-work-at-petrobras-mega-deepwater-field/",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design · Búzios field\nProduction from Feb 15, 2025 · 225k bpd oil, 12 MMm³/d gas\n[2026-10-13 audit] SBM release: confirmed 225k bpd, gas 212→424 MMscfd (12 MMm³/d). Production start 2025-02-15 (charter start 2024-06→2025-02). Storage, WD and charter end unsourced → null.",
+      "notes_en": "SBM Fast4Ward design · Búzios field\nProduction from Feb 15, 2025 · 225k bpd oil, 12 MMm³/d gas\nMonthly record 263k bpd in July 2026 (Petrobras Q3)\n[2026-11-15 update] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. July 2026 monthly record of 263k bpd, Brazil's top-producing unit (Petrobras Q3, World Oil 2026-10-29). [2026-10-13 audit] SBM release: confirmed 225k bpd, gas 212→424 MMscfd (12 MMm³/d). Production start 2025-02-15 (charter start 2024-06→2025-02). Storage, WD and charter end unsourced → null.",
       "source_url": "https://oilnow.gy/featured/sbm-offshore-welcomes-almirante-tamandare-brazils-largest-fpso",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Sepetiba",
@@ -411,7 +411,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2024,
-      "notes": "Mero 2 개발용(Libra 컨소시엄) · 원유 180k bpd, 저장 최소 1.4 MMbbl\n[2026-10-13 감사] SBM/Offshore Magazine: 원유 180k bpd·저장 최소 1.4 MMbbl 확인, 가스 12 백만(출처 단위 표기 불명확, 424 MMscfd 유지). 생산 개시월·용선 종료·수심은 1차 출처 미확인으로 null.",
+      "notes": "Mero 2 개발용(Libra 컨소시엄) · 원유 180k bpd, 저장 최소 1.4 MMbbl\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] SBM/Offshore Magazine: 원유 180k bpd·저장 최소 1.4 MMbbl 확인, 가스 12 백만(출처 단위 표기 불명확, 424 MMscfd 유지). 생산 개시월·용선 종료·수심은 1차 출처 미확인으로 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward 신조 (CMHI 선체 + BOMESC 통합)",
         "yard": "Hull: China Merchants Heavy Industry (CMHI), China · Topsides/integration: BOMESC, Tianjin, China",
@@ -437,9 +437,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/fpso-sepetiba-sails-away",
         "yard_confidence": "high"
       },
-      "notes_en": "For the Mero 2 development (Libra consortium) · 180k bpd oil, at least 1.4 MMbbl storage\n[2026-10-13 audit] SBM/Offshore Magazine: confirmed 180k bpd and minimum 1.4 MMbbl storage; gas '12 million' (source unit unclear; 424 MMscfd kept). Production start month, charter end and WD unconfirmed → null.",
+      "notes_en": "For the Mero 2 development (Libra consortium) · 180k bpd oil, at least 1.4 MMbbl storage\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] SBM/Offshore Magazine: confirmed 180k bpd and minimum 1.4 MMbbl storage; gas '12 million' (source unit unclear; 424 MMscfd kept). Production start month, charter end and WD unconfirmed → null.",
       "source_url": "https://www.offshore-mag.com/vessels/news/55243501/sbm-offshore-two-more-sbm-newbuild-fpsos-nearing-completion",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Carioca (MV30)",
@@ -456,7 +456,7 @@
       "contract_end": "2042",
       "status": "On Production",
       "year_delivered": 2021,
-      "notes": "Sépia 유전(산투스 분지 프리솔트) · MODEC 소유\n첫 생산 2021-08 · 21년 용선(~2042)\n[2026-10-13 감사] MODEC 프로젝트 페이지: 180k·가스 212·저장 1.4·수심 2,200m. 첫 생산 2021-08(기존 2022-09 오류), 21년 용선 → ~2042.",
+      "notes": "Sépia 유전(산투스 분지 프리솔트) · MODEC 소유\n첫 생산 2021-08 · 21년 용선(~2042)\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 180k·가스 212·저장 1.4·수심 2,200m. 첫 생산 2021-08(기존 2022-09 오류), 21년 용선 → ~2042.",
       "detail": {
         "hull_type": "VLCC 전환 (COSCO Dalian) — MODEC MV30 (Sépia/Mero 전용)",
         "yard": "Hull: COSCO Shipping Dalian, China (conversion of VLCC Flandre) · Topsides/integration: BrasFELS (Keppel FELS Brasil), Angra dos Reis, Brazil",
@@ -481,9 +481,9 @@
         "yard_source_url": "https://www.offshore-energy.biz/fpso-carioca-sets-sail-for-petrobras-sepia-field/",
         "yard_confidence": "high"
       },
-      "notes_en": "Sépia field (Santos Basin pre-salt) · owned by MODEC\nFirst oil Aug 2021 · 21-year charter (~2042)\n[2026-10-13 audit] MODEC project page: 180k, gas 212, storage 1.4, 2,200m WD. First oil Aug 2021 (was 2022-09), 21-year charter → ~2042.",
+      "notes_en": "Sépia field (Santos Basin pre-salt) · owned by MODEC\nFirst oil Aug 2021 · 21-year charter (~2042)\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: 180k, gas 212, storage 1.4, 2,200m WD. First oil Aug 2021 (was 2022-09), 21-year charter → ~2042.",
       "source_url": "https://www.modec.com/project/detail/sepia.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Anita Garibaldi (MV33)",
@@ -500,7 +500,7 @@
       "contract_end": "2048",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "Marlim 재개발용(캄푸스 분지, 수심 670m) · MODEC 신조\n원유 80k bopd · 첫 생산 2023-08 · 25년 용선(~2048)\n[2026-10-13 감사] MODEC 프로젝트 페이지: 원유 225→80k bopd, 가스 80→248, 저장 1.8→1.0, 수심 2,000→670m(Marlim). 첫 생산 2023-08, 25년 용선 → ~2048.",
+      "notes": "Marlim 재개발용(캄푸스 분지, 수심 670m) · MODEC 신조\n원유 80k bopd · 첫 생산 2023-08 · 25년 용선(~2048)\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 원유 225→80k bopd, 가스 80→248, 저장 1.8→1.0, 수심 2,000→670m(Marlim). 첫 생산 2023-08, 25년 용선 → ~2048.",
       "detail": {
         "hull_type": "신조 (DSIC Dalian) — MODEC MV33 (Marlim 전용)",
         "yard": "Hull: Dalian Shipbuilding Industry Co. (DSIC), China (VLCC conversion) · Topsides/integration: DSIC, China",
@@ -521,9 +521,9 @@
         "yard_source_url": "https://www.xindemarinenews.com/m/view.php?aid=41512",
         "yard_confidence": "high"
       },
-      "notes_en": "For the Marlim revitalization (Campos Basin, 670m WD) · MODEC newbuild\n80k bopd · first oil Aug 2023 · 25-year charter (~2048)\n[2026-10-13 audit] MODEC project page: Oil 225→80k bopd, gas 80→248, storage 1.8→1.0, WD 2,000→670m (Marlim). First oil Aug 2023, 25-year charter → ~2048.",
+      "notes_en": "For the Marlim revitalization (Campos Basin, 670m WD) · MODEC newbuild\n80k bopd · first oil Aug 2023 · 25-year charter (~2048)\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: Oil 225→80k bopd, gas 80→248, storage 1.8→1.0, WD 2,000→670m (Marlim). First oil Aug 2023, 25-year charter → ~2048.",
       "source_url": "https://www.modec.com/project/detail/marlim1.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Abigail Joseph",
@@ -540,7 +540,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": null,
-      "notes": "나이지리아 Anyala-Madu(OML 83/85) · 고객 First E&P · Yinson 소유\n원유 50k bopd, 저장 0.87 MMbbl · 1992년 건조 선체를 2007–08 Dubai, 2019–20 Keppel에서 개조\n[2026-10-13 감사] Yinson 사양서: 원유 100→50k bopd, 저장 1.3→0.87 MMbbl, 가스 45→15 MMscfd(가스리프트 39), 선체 1992 Harland & Wolff·2007-08 Dubai 개조·2019-20 Keppel 개선. 수심·계약기간·인도연도는 출처 없어 null.",
+      "notes": "나이지리아 Anyala-Madu(OML 83/85) · 고객 First E&P · Yinson 소유\n원유 50k bopd, 저장 0.87 MMbbl · 1992년 건조 선체를 2007–08 Dubai, 2019–20 Keppel에서 개조\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 사양서: 원유 100→50k bopd, 저장 1.3→0.87 MMbbl, 가스 45→15 MMscfd(가스리프트 39), 선체 1992 Harland & Wolff·2007-08 Dubai 개조·2019-20 Keppel 개선. 수심·계약기간·인도연도는 출처 없어 null.",
       "detail": {
         "hull_type": "brownfield FPSO 개조 (구 탱커, Keppel Benoi Singapore)",
         "yard": "Hull: Keppel Shipyard (Benoi), Singapore (redeployment/upgrade; orig. 1992 Suezmax by Harland & Wolff, first converted Dubai Drydocks 2007-08) · Topsides/integration: Keppel Shipyard, Singapore",
@@ -561,9 +561,9 @@
         "yard_source_url": "https://www.yinson.com/news/yinsons-fpso-abigail-joseph-sets-sail-for-nigeria/",
         "yard_confidence": "high"
       },
-      "notes_en": "Anyala-Madu (OML 83/85), Nigeria · client First E&P · owned by Yinson\n50k bopd, 0.87 MMbbl storage · 1992 hull converted in Dubai (2007–08) and upgraded at Keppel (2019–20)\n[2026-10-13 audit] Yinson brochure: oil 100→50k bopd, storage 1.3→0.87 MMbbl, gas 45→15 MMscfd (39 gas lift), hull built 1992 Harland & Wolff, converted Dubai 2007-08, upgraded Keppel 2019-20. WD, contract term and delivery year unsourced → null.",
+      "notes_en": "Anyala-Madu (OML 83/85), Nigeria · client First E&P · owned by Yinson\n50k bopd, 0.87 MMbbl storage · 1992 hull converted in Dubai (2007–08) and upgraded at Keppel (2019–20)\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 audit] Yinson brochure: oil 100→50k bopd, storage 1.3→0.87 MMbbl, gas 45→15 MMscfd (39 gas lift), hull built 1992 Harland & Wolff, converted Dubai 2007-08, upgraded Keppel 2019-20. WD, contract term and delivery year unsourced → null.",
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_abigail_joseph_r1/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Ngujima-Yin",
@@ -621,7 +621,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "산투스 분지 Sapinhoá 프리솔트 · SBM 소유\n생산 개시 2014-11-24 · 원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl\n[2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl. 생산 개시 2014-11-24(기존 2014-07). 용선 종료·수심은 출처 없어 null.",
+      "notes": "산투스 분지 Sapinhoá 프리솔트 · SBM 소유\n생산 개시 2014-11-24 · 원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl. 생산 개시 2014-11-24(기존 2014-07). 용선 종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
         "yard": "Hull: CSSC Chengxi Shipyard (CXG), China (VLCC conversion) · Topsides/integration: Estaleiro Brasa, Niterói, Brazil",
@@ -649,9 +649,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/brasa-shipyard-completes-scope-fpso-cidade-de-ilhabela-sails-offshore-brazil",
         "yard_confidence": "high"
       },
-      "notes_en": "Sapinhoá pre-salt, Santos Basin · owned by SBM\nProduction from Nov 24, 2014 · 150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage\n[2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl. Production start 2014-11-24 (was 2014-07). Charter end and WD unsourced → null.",
+      "notes_en": "Sapinhoá pre-salt, Santos Basin · owned by SBM\nProduction from Nov 24, 2014 · 150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl. Production start 2014-11-24 (was 2014-07). Charter end and WD unsourced → null.",
       "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "BW Catcher",
@@ -799,7 +799,7 @@
       "contract_end": "2036",
       "status": "On Production",
       "year_delivered": 2017,
-      "notes": "가나 OCTP(Sankofa-Gye Nyame) 유전, Eni 운영 · 2017-07 첫 생산\n소유: Yinson 74%·일본 컨소시엄 26%\n2026-10-02 Eni Ghana와 계약 변경 — 가스 처리·압축 증설(가스 수출 약 210–220→355 MMscf/d, 2028년 1분기 완료), 확정 계약 4년 연장(~2036)\n[2026-10-10] 2026-10-02 Eni Ghana와 계약 변경 체결 — 가스 처리·압축 설비 증설(가스 수출 ~210-220→355 MMscf/d, 개조 2028-Q1 완료 예정), 확정 계약 4년 연장(~2036). 증분 일비 총액 ~$810M 중 Yinson 귀속 ~$600M (2등급: OE Digital, The Star). [2026-10-13] 기존 'Pecan 개발·2025 인도'는 오류로 정정. [2026-10-13 감사] Yinson 사양서: 원유 110→58k bopd, 저장 1.8→1.4 MMbbl, 가스 40→수출 210 MMscfd(재주입 150), 선체 SHI 1998·Keppel 2017 개조. 수심 2,500m은 출처 없어 null.",
+      "notes": "가나 OCTP(Sankofa-Gye Nyame) 유전, Eni 운영 · 2017-07 첫 생산\n소유: Yinson 74%·일본 컨소시엄 26%\n2026-10-02 Eni Ghana와 계약 변경 — 가스 처리·압축 증설(가스 수출 약 210–220→355 MMscf/d, 2028년 1분기 완료), 확정 계약 4년 연장(~2036)\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-10] 2026-10-02 Eni Ghana와 계약 변경 체결 — 가스 처리·압축 설비 증설(가스 수출 ~210-220→355 MMscf/d, 개조 2028-Q1 완료 예정), 확정 계약 4년 연장(~2036). 증분 일비 총액 ~$810M 중 Yinson 귀속 ~$600M (2등급: OE Digital, The Star). [2026-10-13] 기존 'Pecan 개발·2025 인도'는 오류로 정정. [2026-10-13 감사] Yinson 사양서: 원유 110→58k bopd, 저장 1.8→1.4 MMbbl, 가스 40→수출 210 MMscfd(재주입 150), 선체 SHI 1998·Keppel 2017 개조. 수심 2,500m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Keppel FELS Singapore, 2017)",
         "yard": "Hull: Keppel Shipyard, Singapore (conversion of 1998 Samsung Heavy-built VLCC) · Topsides/integration: Keppel Shipyard, Singapore",
@@ -822,9 +822,9 @@
         "yard_source_url": "https://www.yinson-production.com/wp-content/uploads/our-business/pdf/Vessel_Brochure_FPSO_JAK_R1.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "Ghana OCTP (Sankofa-Gye Nyame) fields, operated by Eni · first oil Jul 2017\nOwned 74% by Yinson, 26% by a Japanese consortium\nOct 2, 2026 contract amendment with Eni Ghana — gas processing/compression upgrade (gas export ~210–220→355 MMscf/d, done Q1 2028) and a 4-year firm extension (~2036)\n[2026-10-10] Contract amendment signed with Eni Ghana on 2026-10-02 — added gas processing and compression (gas export ~210–220 → 355 MMscf/d, modification due Q1 2028) and a 4-year extension of the firm term (~2036). Of ~$810M total incremental day-rate value, ~$600M is attributable to Yinson (tier 2: OE Digital, The Star). [2026-10-13] Corrected the earlier 'Pecan development / delivered 2025'. [2026-10-13 audit] Yinson brochure: oil 110→58k bopd, storage 1.8→1.4 MMbbl, gas 40→210 MMscfd export (150 injection), hull SHI 1998 converted Keppel 2017. 2,500m WD unsourced → null.",
+      "notes_en": "Ghana OCTP (Sankofa-Gye Nyame) fields, operated by Eni · first oil Jul 2017\nOwned 74% by Yinson, 26% by a Japanese consortium\nOct 2, 2026 contract amendment with Eni Ghana — gas processing/compression upgrade (gas export ~210–220→355 MMscf/d, done Q1 2028) and a 4-year firm extension (~2036)\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-10] Contract amendment signed with Eni Ghana on 2026-10-02 — added gas processing and compression (gas export ~210–220 → 355 MMscf/d, modification due Q1 2028) and a 4-year extension of the firm term (~2036). Of ~$810M total incremental day-rate value, ~$600M is attributable to Yinson (tier 2: OE Digital, The Star). [2026-10-13] Corrected the earlier 'Pecan development / delivered 2025'. [2026-10-13 audit] Yinson brochure: oil 110→58k bopd, storage 1.8→1.4 MMbbl, gas 40→210 MMscfd export (150 injection), hull SHI 1998 converted Keppel 2017. 2,500m WD unsourced → null.",
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_jak_r1/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Prelude FLNG",
@@ -1023,7 +1023,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "SBM Fast4Ward 선형 · Mero 4 전용\n생산 개시 2025-05-24 · 원유 180k bpd, 가스 12 MMm³/d\n[2026-10-13 감사] Petrobras 공시·SBM 발표: 원유 225→180k bpd, 가스 212→424 MMscfd(12 MMm³/d), 생산 개시 2025-05-24(용선 시작 2025-06→2025-05). 저장·수심·용선 종료는 출처 없어 null.",
+      "notes": "SBM Fast4Ward 선형 · Mero 4 전용\n생산 개시 2025-05-24 · 원유 180k bpd, 가스 12 MMm³/d\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] Petrobras 공시·SBM 발표: 원유 225→180k bpd, 가스 212→424 MMscfd(12 MMm³/d), 생산 개시 2025-05-24(용선 시작 2025-06→2025-05). 저장·수심·용선 종료는 출처 없어 null.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF 신조 (SWS 선체 + COSCO Qidong 통합)",
         "yard": "Hull: Shanghai Waigaoqiao Shipbuilding (SWS), China · Topsides/integration: COSCO Shipping (Qidong) Offshore, China",
@@ -1046,9 +1046,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/fpso-alexandre-de-gusmao-is-on-its-way-to-brazil-and-consolidates-sbm-offshores-presence-in-the-country/",
         "yard_confidence": "high"
       },
-      "notes_en": "SBM Fast4Ward design · dedicated to Mero 4\nProduction from May 24, 2025 · 180k bpd oil, 12 MMm³/d gas\n[2026-10-13 audit] Petrobras filing and SBM release: oil 225→180k bpd, gas 212→424 MMscfd (12 MMm³/d), production start 2025-05-24 (charter start 2025-06→2025-05). Storage, WD and charter end unsourced → null.",
+      "notes_en": "SBM Fast4Ward design · dedicated to Mero 4\nProduction from May 24, 2025 · 180k bpd oil, 12 MMm³/d gas\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] Petrobras filing and SBM release: oil 225→180k bpd, gas 212→424 MMscfd (12 MMm³/d), production start 2025-05-24 (charter start 2025-06→2025-05). Storage, WD and charter end unsourced → null.",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1119639/000129281425002231/pbr20250524_6k.htm",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Cidade de Maricá",
@@ -1065,7 +1065,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2016,
-      "notes": "산투스 분지 Lula Alto/South 프리솔트 · SBM 소유\n원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl · 20년 운영 예정\n[2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl, 20년 운영 예정. 계약 시작월·수심은 출처 없어 null.",
+      "notes": "산투스 분지 Lula Alto/South 프리솔트 · SBM 소유\n원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl · 20년 운영 예정\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] 원유 150k 확인, 가스 150→6 MMm³/d(212), 저장 1.4→1.6 MMbbl, 20년 운영 예정. 계약 시작월·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Chengxi, 광저우) — SBM Offshore",
         "yard": "Hull: CSSC Chengxi Shipyard (CXG), China (VLCC conversion) · Topsides/integration: Estaleiro Brasa, Niterói, Brazil",
@@ -1088,9 +1088,9 @@
         "yard_source_url": "https://www.offshore-mag.com/regional-reports/article/16754806/brasa-shipyard-completes-four-year-fpso-construction-integration-campaign",
         "yard_confidence": "high"
       },
-      "notes_en": "Lula Alto/South pre-salt, Santos Basin · owned by SBM\n150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage · 20-year operation planned\n[2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl; 20-year operation planned. Contract start month and WD unsourced → null.",
+      "notes_en": "Lula Alto/South pre-salt, Santos Basin · owned by SBM\n150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage · 20-year operation planned\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] Confirmed 150k oil; gas 150→6 MMm³/d (212), storage 1.4→1.6 MMbbl; 20-year operation planned. Contract start month and WD unsourced → null.",
       "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Kwame Nkrumah MV21",
@@ -1107,7 +1107,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2010,
-      "notes": "가나 Jubilee 유전 · 2010년 첫 생산\nMODEC 용선·운영 종료 후 Tullow(Jubilee 파트너) 소유로 이전\n[2026-10-13 감사] MODEC 프로젝트 페이지: 소유권 Tullow(고객)로 이전, MODEC 용선 2010-12~2011-12·O&M ~2022-06 종료(MODEC 표기 'Sold'). 원유 120k·저장 1.6 확인, 가스 120→160, 수심 1,200→1,100m.",
+      "notes": "가나 Jubilee 유전 · 2010년 첫 생산\nMODEC 용선·운영 종료 후 Tullow(Jubilee 파트너) 소유로 이전\n[2026-11-15 갱신] Tullow가 DeepOcean에 가스리프트 라이저 재연결 작업 발주, 해상 작업 2026년 4분기(World Oil 2026-10-28). [2026-10-13 감사] MODEC 프로젝트 페이지: 소유권 Tullow(고객)로 이전, MODEC 용선 2010-12~2011-12·O&M ~2022-06 종료(MODEC 표기 'Sold'). 원유 120k·저장 1.6 확인, 가스 120→160, 수심 1,200→1,100m.",
       "detail": {
         "hull_type": "VLCC 전환 (Jurong Singapore) — MODEC MV21 (Jubilee 전용)",
         "yard": "Hull: Jurong Shipyard (Sembcorp Marine, now Seatrium), Singapore (conversion of VLCC Ohdoh) · Topsides/integration: Jurong Shipyard, Singapore",
@@ -1131,9 +1131,9 @@
         "yard_source_url": "https://www.offshore-mag.com/vessels/article/16787215/jurong-wins-fpso-conversion-contract-for-jubilee-field",
         "yard_confidence": "high"
       },
-      "notes_en": "Jubilee field, Ghana · first oil 2010\nOwnership passed to Tullow (Jubilee partners) after MODEC's charter and O&M ended\n[2026-10-13 audit] MODEC project page: Ownership transferred to Tullow (client); MODEC charter Dec 2010–Dec 2011 and O&M to Jun 2022 ended (MODEC lists it as 'Sold'). Confirmed 120k and 1.6 storage; gas 120→160; WD 1,200→1,100m.",
+      "notes_en": "Jubilee field, Ghana · first oil 2010\nOwnership passed to Tullow (Jubilee partners) after MODEC's charter and O&M ended\n[2026-11-15 update] Tullow hired DeepOcean for gas-lift riser retermination, offshore work Q4 2026 (World Oil, 2026-10-28). [2026-10-13 audit] MODEC project page: Ownership transferred to Tullow (client); MODEC charter Dec 2010–Dec 2011 and O&M to Jun 2022 ended (MODEC lists it as 'Sold'). Confirmed 120k and 1.6 storage; gas 120→160; WD 1,200→1,100m.",
       "source_url": "https://www.modec.com/project/detail/jubilee.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-74 (Búzios 1)",
@@ -1150,7 +1150,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 1번째 FPSO · 첫 생산 2018-04\n원유 150k bpd, 가스 6 MMm³/d\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212 MMscfd) 확인. 저장 1.4·수심 2,200m은 출처 없어 null.",
+      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 1번째 FPSO · 첫 생산 2018-04\n원유 150k bpd, 가스 6 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212 MMscfd) 확인. 저장 1.4·수심 2,200m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (Inhaúma 조선소, 브라질)",
         "mooring": "Spread mooring",
@@ -1166,8 +1166,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://eixos.com.br/energia/p-74-e-liberada-pelo-ibama-e-pode-ser-o-primeiro-projeto-da-cessao-onerosa/",
-      "verified": "2026-10-13",
-      "notes_en": "VLCC conversion · 1st Búzios TOR FPSO · first oil April 2018\n150k bpd oil, 6 MMm³/d gas\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212 MMscfd) 확인. 저장 1.4·수심 2,200m은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212 MMscfd). Storage 1.4 and 2,200m WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "VLCC conversion · 1st Búzios TOR FPSO · first oil April 2018\n150k bpd oil, 6 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212 MMscfd) 확인. 저장 1.4·수심 2,200m은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212 MMscfd). Storage 1.4 and 2,200m WD unsourced → null."
     },
     {
       "name": "P-75 (Búzios 2)",
@@ -1184,7 +1184,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 2번째 FPSO · 첫 생산 2018-11\n원유 150k bpd, 가스 6 MMm³/d\n[2026-10-13 감사] 가동 개시 발표 기준 150k bpd·가스 6 MMm³/d(212) 확인(건조 전 자료의 180k는 설계 변경 전 값). 저장·수심은 출처 없어 null.",
+      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 2번째 FPSO · 첫 생산 2018-11\n원유 150k bpd, 가스 6 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 가동 개시 발표 기준 150k bpd·가스 6 MMm³/d(212) 확인(건조 전 자료의 180k는 설계 변경 전 값). 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO 다롄)",
         "mooring": "Spread mooring",
@@ -1200,8 +1200,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://offshore-energy.biz/?p=202417",
-      "verified": "2026-10-13",
-      "notes_en": "VLCC conversion · 2nd Búzios TOR FPSO · first oil November 2018\n150k bpd oil, 6 MMm³/d gas\n[2026-10-13 감사] 가동 개시 발표 기준 150k bpd·가스 6 MMm³/d(212) 확인(건조 전 자료의 180k는 설계 변경 전 값). 저장·수심은 출처 없어 null. [2026-10-13 audit] Per start-up release: confirmed 150k bpd, gas 6 MMm³/d (212) (the pre-construction 180k figure predates the design). Storage and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "VLCC conversion · 2nd Búzios TOR FPSO · first oil November 2018\n150k bpd oil, 6 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 가동 개시 발표 기준 150k bpd·가스 6 MMm³/d(212) 확인(건조 전 자료의 180k는 설계 변경 전 값). 저장·수심은 출처 없어 null. [2026-10-13 audit] Per start-up release: confirmed 150k bpd, gas 6 MMm³/d (212) (the pre-construction 180k figure predates the design). Storage and WD unsourced → null."
     },
     {
       "name": "P-76 (Búzios 3)",
@@ -1218,7 +1218,7 @@
       "contract_start": "2019-02",
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 3번째 FPSO · 생산 개시 2019-02-20\n원유 150k bpd, 가스 6 MMm³/d · 생산정 10·주입정 7\n[2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 감사] (재감사 대상) 150k·가스 7 MMm³/d는 업계지 보도. 1차 출처 URL 미확보. [2026-10-13 감사] Petrobras 발표(Anadolu 인용): 생산 개시 2019-02-20, 150k bpd 확인, 가스 247→6 MMm³/d(212)(7 MMm³/d는 업계지 1곳 값). 생산정 10·주입정 7.",
+      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 3번째 FPSO · 생산 개시 2019-02-20\n원유 150k bpd, 가스 6 MMm³/d · 생산정 10·주입정 7\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 감사] (재감사 대상) 150k·가스 7 MMm³/d는 업계지 보도. 1차 출처 URL 미확보. [2026-10-13 감사] Petrobras 발표(Anadolu 인용): 생산 개시 2019-02-20, 150k bpd 확인, 가스 247→6 MMm³/d(212)(7 MMm³/d는 업계지 1곳 값). 생산정 10·주입정 7.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO 착수 → Inhaúma 완료) + Techint 통합",
         "mooring": "Spread mooring",
@@ -1233,9 +1233,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 212
       },
-      "notes_en": "VLCC conversion · 3rd Búzios TOR FPSO · production from Feb 20, 2019\n150k bpd oil, 6 MMm³/d gas · 10 producers, 7 injectors\n[2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null. [2026-10-13 audit] (Re-audit pending) 150k and gas 7 MMm³/d are from trade press; no primary source URL yet. [2026-10-13 audit] Petrobras release (via Anadolu): production start 2019-02-20, 150k bpd confirmed, gas 247→6 MMm³/d (212) (7 MMm³/d was one trade-press figure). 10 producers, 7 injectors.",
+      "notes_en": "VLCC conversion · 3rd Búzios TOR FPSO · production from Feb 20, 2019\n150k bpd oil, 6 MMm³/d gas · 10 producers, 7 injectors\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 원유 180→150k bpd, 가스 null→7 MMm³/d(247 MMscfd)(브라질 업계지 보도; 1차 출처 URL은 다음 감사에서 확인). 저장 1.6·수심은 출처 없어 null. [2026-10-13 audit] Oil 180→150k bpd, gas null→7 MMm³/d (247 MMscfd) (Brazilian trade press; primary source URL to be confirmed in a later audit). Storage 1.6 and WD unsourced → null. [2026-10-13 audit] (Re-audit pending) 150k and gas 7 MMm³/d are from trade press; no primary source URL yet. [2026-10-13 audit] Petrobras release (via Anadolu): production start 2019-02-20, 150k bpd confirmed, gas 247→6 MMm³/d (212) (7 MMm³/d was one trade-press figure). 10 producers, 7 injectors.",
       "source_url": "https://www.aa.com.tr/en/energy/general/petrobras-starts-output-at-3rd-platform-in-santos-basin-/23570",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-77 (Búzios 4)",
@@ -1252,7 +1252,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 4번째 FPSO · 첫 생산 2019-12\n원유 150k bpd, 가스 6 MMm³/d\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212) 확인. 저장·수심은 출처 없어 null.",
+      "notes": "VLCC 개조 · Búzios 양허권 이전 지역 4번째 FPSO · 첫 생산 2019-12\n원유 150k bpd, 가스 6 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212) 확인. 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO 다롄)",
         "mooring": "Spread mooring",
@@ -1268,8 +1268,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://eixos.com.br/energia/petrobras-recebe-aval-do-ibama-para-produzir-com-a-plataforma-p-77/",
-      "verified": "2026-10-13",
-      "notes_en": "VLCC conversion · 4th Búzios TOR FPSO · first oil December 2019\n150k bpd oil, 6 MMm³/d gas\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212) 확인. 저장·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212). Storage and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "VLCC conversion · 4th Búzios TOR FPSO · first oil December 2019\n150k bpd oil, 6 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212) 확인. 저장·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212). Storage and WD unsourced → null."
     },
     {
       "name": "P-78 (Búzios 6)",
@@ -1286,7 +1286,7 @@
       "contract_start": "2025-12",
       "contract_end": null,
       "status": "On Production",
-      "notes": "신조 · 선체 HD현대중공업(350m) + 상부 Seatrium\n첫 생산 2025-12-31 · 원유 180k bpd, 가스 7.2 MMm³/d\n[2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 생산 개시 2025-12-31. 저장 2.0·수심은 출처 없어 null.",
+      "notes": "신조 · 선체 HD현대중공업(350m) + 상부 Seatrium\n첫 생산 2025-12-31 · 원유 180k bpd, 가스 7.2 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. 3분기 증산이 Petrobras 분기 최대 생산의 요인(2026-10-29). [2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 생산 개시 2025-12-31. 저장 2.0·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild — HD Hyundai (KR) hull + Seatrium (SG) topsides",
         "mooring": "Spread mooring",
@@ -1301,8 +1301,8 @@
         "gas_capacity_mmscfd": 254
       },
       "source_url": "https://www.poder360.com.br/poder-energia/petrobras-inicia-producao-da-plataforma-p-78-em-buzios/",
-      "verified": "2026-10-13",
-      "notes_en": "Newbuild · 350m hull by HHI (KR) + Seatrium topsides (SG)\nFirst oil Dec 31, 2025 · 180k bpd oil, 7.2 MMm³/d gas\n[2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 생산 개시 2025-12-31. 저장 2.0·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 180k bpd; gas null→7.2 MMm³/d (254); production start 2025-12-31. Storage 2.0 and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Newbuild · 350m hull by HHI (KR) + Seatrium topsides (SG)\nFirst oil Dec 31, 2025 · 180k bpd oil, 7.2 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. Q3 ramp-up drove Petrobras record output (2026-10-29). [2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 생산 개시 2025-12-31. 저장 2.0·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 180k bpd; gas null→7.2 MMm³/d (254); production start 2025-12-31. Storage 2.0 and WD unsourced → null."
     },
     {
       "name": "P-79 (Búzios 8)",
@@ -1319,7 +1319,7 @@
       "contract_start": "2026-05",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Búzios 8 · Petrobras 소유 · 2025-11 한국 조선소 출항\n2026-05-01 생산 개시(예정보다 빠름) · 원유 180k bpd, 가스 7.2 MMm³/d, 14공(생산 8·주입 6)\n[2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 14개 공(생산 8·주입 6). 저장·수심은 출처 없어 null.",
+      "notes": "Búzios 8 · Petrobras 소유 · 2025-11 한국 조선소 출항\n2026-05-01 생산 개시(예정보다 빠름) · 원유 180k bpd, 가스 7.2 MMm³/d, 14공(생산 8·주입 6)\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. 3분기 증산이 Petrobras 분기 최대 생산의 요인(2026-10-29). [2026-10-13 감사] 180k bpd 확인, 가스 null→7.2 MMm³/d(254), 14개 공(생산 8·주입 6). 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild — SAME Netherlands BV JV (Saipem 57% + Hanwha Ocean/DSME 43%); 4개국 모듈 제작",
         "mooring": "Spread mooring",
@@ -1335,9 +1335,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 254
       },
-      "notes_en": "Búzios 8 · owned by Petrobras · sailed from a Korean yard in Nov 2025\nProduction from May 1, 2026 (ahead of plan) · 180k bpd oil, 7.2 MMm³/d gas, 14 wells (8 producers, 6 injectors)\n[2026-10-13 audit] Confirmed 180k bpd; gas null→7.2 MMm³/d (254); 14 wells (8 producers, 6 injectors). Storage and WD unsourced → null.",
+      "notes_en": "Búzios 8 · owned by Petrobras · sailed from a Korean yard in Nov 2025\nProduction from May 1, 2026 (ahead of plan) · 180k bpd oil, 7.2 MMm³/d gas, 14 wells (8 producers, 6 injectors)\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. Q3 ramp-up drove Petrobras record output (2026-10-29). [2026-10-13 audit] Confirmed 180k bpd; gas null→7.2 MMm³/d (254); 14 wells (8 producers, 6 injectors). Storage and WD unsourced → null.",
       "source_url": "https://www.offshore-technology.com/news/petrobras-starts-oil-output-buzios-8/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Cidade de Angra dos Reis (MV22)",
@@ -1354,7 +1354,7 @@
       "contract_start": "2010-10",
       "contract_end": "2030",
       "status": "On Production",
-      "notes": "산투스 분지 첫 대용량 프리솔트 FPSO(Lula 파일럿) · VLCC 개조\n첫 생산 2010-10 · 15년 + 5년 연장 용선 → 2030\n[2026-10-13 감사] MODEC 프로젝트 페이지: 100k·저장 1.6·수심 2,149m 확인, 가스 null→150. 첫 생산 2010-10(기존 2010-01), 15년+5년 연장 → 2030.",
+      "notes": "산투스 분지 첫 대용량 프리솔트 FPSO(Lula 파일럿) · VLCC 개조\n첫 생산 2010-10 · 15년 + 5년 연장 용선 → 2030\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 100k·저장 1.6·수심 2,149m 확인, 가스 null→150. 첫 생산 2010-10(기존 2010-01), 15년+5년 연장 → 2030.",
       "detail": {
         "hull_type": "VLCC conversion",
         "mooring": "Spread mooring",
@@ -1371,8 +1371,8 @@
         "gas_capacity_mmscfd": 150
       },
       "source_url": "https://www.modec.com/project/detail/tupi.html",
-      "verified": "2026-10-13",
-      "notes_en": "First high-capacity pre-salt FPSO in the Santos Basin (Lula pilot) · VLCC conversion\nFirst oil Oct 2010 · 15-year charter + 5-year extension → 2030\n[2026-10-13 감사] MODEC 프로젝트 페이지: 100k·저장 1.6·수심 2,149m 확인, 가스 null→150. 첫 생산 2010-10(기존 2010-01), 15년+5년 연장 → 2030. [2026-10-13 audit] MODEC project page: Confirmed 100k, 1.6 storage, 2,149m WD; gas null→150. First oil Oct 2010 (was 2010-01), 15 + 5-year extension → 2030."
+      "verified": "2026-11-15",
+      "notes_en": "First high-capacity pre-salt FPSO in the Santos Basin (Lula pilot) · VLCC conversion\nFirst oil Oct 2010 · 15-year charter + 5-year extension → 2030\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 감사] MODEC 프로젝트 페이지: 100k·저장 1.6·수심 2,149m 확인, 가스 null→150. 첫 생산 2010-10(기존 2010-01), 15년+5년 연장 → 2030. [2026-10-13 audit] MODEC project page: Confirmed 100k, 1.6 storage, 2,149m WD; gas null→150. First oil Oct 2010 (was 2010-01), 15 + 5-year extension → 2030."
     },
     {
       "name": "FPSO Cidade de Mangaratiba (MV24)",
@@ -1389,7 +1389,7 @@
       "contract_start": "2014-10",
       "contract_end": "2034-10",
       "status": "On Production",
-      "notes": "Lula Iracema Sul · VLCC 개조, MODEC EPCI\n첫 생산 2014-10 · 20년 용선\n[2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,200m·2014-10 첫 생산·20년 확인, 가스 null→280.",
+      "notes": "Lula Iracema Sul · VLCC 개조, MODEC EPCI\n첫 생산 2014-10 · 20년 용선\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,200m·2014-10 첫 생산·20년 확인, 가스 null→280.",
       "detail": {
         "hull_type": "VLCC conversion",
         "mooring": "Spread mooring",
@@ -1406,8 +1406,8 @@
         "gas_capacity_mmscfd": 280
       },
       "source_url": "https://www.modec.com/project/detail/cernambi.html",
-      "verified": "2026-10-13",
-      "notes_en": "Lula Iracema Sul · VLCC conversion, MODEC EPCI\nFirst oil Oct 2014 · 20-year charter\n[2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,200m·2014-10 첫 생산·20년 확인, 가스 null→280. [2026-10-13 audit] MODEC project page: Confirmed 150k, 1.6 storage, 2,200m WD, first oil Oct 2014, 20 years; gas null→280."
+      "verified": "2026-11-15",
+      "notes_en": "Lula Iracema Sul · VLCC conversion, MODEC EPCI\nFirst oil Oct 2014 · 20-year charter\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,200m·2014-10 첫 생산·20년 확인, 가스 null→280. [2026-10-13 audit] MODEC project page: Confirmed 150k, 1.6 storage, 2,200m WD, first oil Oct 2014, 20 years; gas null→280."
     },
     {
       "name": "FPSO Cidade de Itaguaí (MV26)",
@@ -1424,7 +1424,7 @@
       "contract_start": "2015-07",
       "contract_end": "2035-07",
       "status": "On Production",
-      "notes": "Lula Iracema Norte · VLCC 개조, 5개월 조기 인도\n첫 생산 2015-07-31 · 20년 용선\n[2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,240m·2015-07 첫 생산·20년 확인, 가스 null→280.",
+      "notes": "Lula Iracema Norte · VLCC 개조, 5개월 조기 인도\n첫 생산 2015-07-31 · 20년 용선\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,240m·2015-07 첫 생산·20년 확인, 가스 null→280.",
       "detail": {
         "hull_type": "VLCC conversion",
         "mooring": "Spread mooring",
@@ -1441,8 +1441,8 @@
         "gas_capacity_mmscfd": 280
       },
       "source_url": "https://www.modec.com/project/detail/iracemanorte.html",
-      "verified": "2026-10-13",
-      "notes_en": "Lula Iracema Norte · VLCC conversion, delivered 5 months early\nFirst oil Jul 31, 2015 · 20-year charter\n[2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,240m·2015-07 첫 생산·20년 확인, 가스 null→280. [2026-10-13 audit] MODEC project page: Confirmed 150k, 1.6 storage, 2,240m WD, first oil Jul 2015, 20 years; gas null→280."
+      "verified": "2026-11-15",
+      "notes_en": "Lula Iracema Norte · VLCC conversion, delivered 5 months early\nFirst oil Jul 31, 2015 · 20-year charter\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 감사] MODEC 프로젝트 페이지: 150k·저장 1.6·수심 2,240m·2015-07 첫 생산·20년 확인, 가스 null→280. [2026-10-13 audit] MODEC project page: Confirmed 150k, 1.6 storage, 2,240m WD, first oil Jul 2015, 20 years; gas null→280."
     },
     {
       "name": "FPSO Cidade de São Paulo (MV23)",
@@ -1459,7 +1459,7 @@
       "contract_start": "2013-01",
       "contract_end": "2033-01",
       "status": "On Production",
-      "notes": "Sapinhoá 유전 · VLCC 개조 · 해안 300km\n첫 생산 2013-01 · 20년 용선\n[2026-10-13 감사] MODEC 프로젝트 페이지: 120k·저장 1.6·2013-01 첫 생산·20년 확인, 가스 null→180, 수심 2,200→2,140m.",
+      "notes": "Sapinhoá 유전 · VLCC 개조 · 해안 300km\n첫 생산 2013-01 · 20년 용선\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 120k·저장 1.6·2013-01 첫 생산·20년 확인, 가스 null→180, 수심 2,200→2,140m.",
       "detail": {
         "hull_type": "VLCC conversion (Radiant Jewel)",
         "mooring": "Spread mooring",
@@ -1476,8 +1476,8 @@
         "gas_capacity_mmscfd": 180
       },
       "source_url": "https://www.modec.com/project/detail/guara.html",
-      "verified": "2026-10-13",
-      "notes_en": "Sapinhoá field · VLCC conversion · 300km offshore\nFirst oil Jan 2013 · 20-year charter\n[2026-10-13 감사] MODEC 프로젝트 페이지: 120k·저장 1.6·2013-01 첫 생산·20년 확인, 가스 null→180, 수심 2,200→2,140m. [2026-10-13 audit] MODEC project page: Confirmed 120k, 1.6 storage, first oil Jan 2013, 20 years; gas null→180; WD 2,200→2,140m."
+      "verified": "2026-11-15",
+      "notes_en": "Sapinhoá field · VLCC conversion · 300km offshore\nFirst oil Jan 2013 · 20-year charter\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 감사] MODEC 프로젝트 페이지: 120k·저장 1.6·2013-01 첫 생산·20년 확인, 가스 null→180, 수심 2,200→2,140m. [2026-10-13 audit] MODEC project page: Confirmed 120k, 1.6 storage, first oil Jan 2013, 20 years; gas null→180; WD 2,200→2,140m."
     },
     {
       "name": "FPSO Cidade de Paraty",
@@ -1494,7 +1494,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "Lula Nordeste · SBM 신조 선체, CO₂ 제거 설비\n2013-06부터 20년 용선 · SBM·QGOG·NYK·ITOCHU 합작 소유\n[2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null.",
+      "notes": "Lula Nordeste · SBM 신조 선체, CO₂ 제거 설비\n2013-06부터 20년 용선 · SBM·QGOG·NYK·ITOCHU 합작 소유\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (Keppel 싱가포르, VLCC Theseus) + BrasFELS 통합",
         "mooring": "Spread mooring",
@@ -1512,8 +1512,8 @@
         "gas_capacity_mmscfd": 177
       },
       "source_url": "https://www.nsenergybusiness.com/news/sbm-offshore-constellation-fpsos/",
-      "verified": "2026-10-13",
-      "notes_en": "Lula Nordeste · SBM newbuild hull with CO₂ removal\n20-year charter from Jun 2013 · owned by an SBM/QGOG/NYK/ITOCHU JV\n[2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 120k oil and 1.6 storage; gas null→5 MMm³/d (177). Contract dates and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Lula Nordeste · SBM newbuild hull with CO₂ removal\n20-year charter from Jun 2013 · owned by an SBM/QGOG/NYK/ITOCHU JV\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 감사] 원유 120k·저장 1.6 확인, 가스 null→5 MMm³/d(177). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 120k oil and 1.6 storage; gas null→5 MMm³/d (177). Contract dates and WD unsourced → null."
     },
     {
       "name": "FPSO Cidade de Saquarema",
@@ -1530,7 +1530,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "Lula Central · VLCC 개조 · 18공\n2016-07-08 용선 개시 · SBM 주도 합작(56%)\n[2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null.",
+      "notes": "Lula Central · VLCC 개조 · 18공\n2016-07-08 용선 개시 · SBM 주도 합작(56%)\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC conversion",
         "mooring": "Spread mooring",
@@ -1547,8 +1547,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://www.sbmoffshore.com/newsroom/fpso-cidade-de-saquarema-sails-away-after-module-integration-rio-yard/",
-      "verified": "2026-10-13",
-      "notes_en": "Lula Central · VLCC conversion · 18 wells\nOn hire from Jul 8, 2016 · SBM-led JV (56%)\n[2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] SBM: confirmed 150k oil and 1.6 storage; gas null→6 MMm³/d (212). Contract dates and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Lula Central · VLCC conversion · 18 wells\nOn hire from Jul 8, 2016 · SBM-led JV (56%)\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 감사] SBM: 원유 150k·저장 1.6 확인, 가스 null→6 MMm³/d(212). 계약 시작·종료·수심은 출처 없어 null. [2026-10-13 audit] SBM: confirmed 150k oil and 1.6 storage; gas null→6 MMm³/d (212). Contract dates and WD unsourced → null."
     },
     {
       "name": "P-66 (Lula Sul)",
@@ -1565,7 +1565,7 @@
       "contract_start": "2017-05",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Lula 첫 컨소시엄 소유 FPSO(용선 아님) · 신조 레플리칸트\n첫 생산 2017-05-17\n[2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null.",
+      "notes": "Lula 첫 컨소시엄 소유 FPSO(용선 아님) · 신조 레플리칸트\n첫 생산 2017-05-17\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null.",
       "detail": {
         "hull_type": "Newbuild (최초 브라질 내 완전 건조 FPSO 선체)",
         "mooring": "Spread mooring",
@@ -1582,8 +1582,8 @@
         "yard_confidence": "high"
       },
       "source_url": "https://www.offshore-mag.com/articles/2019/02/petrobras-brings-onstream-ninth-lula-field-platform-offshore-brazil.html",
-      "verified": "2026-10-13",
-      "notes_en": "First consortium-owned Lula FPSO (not chartered) · newbuild replicant\nFirst oil May 17, 2017\n[2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null. [2026-10-13 audit] Production start May 2017 (7th FPSO in BM-S-11) confirmed. Same replicant design, but capacities not individually sourced — storage 1.67 and WD → null."
+      "verified": "2026-11-15",
+      "notes_en": "First consortium-owned Lula FPSO (not chartered) · newbuild replicant\nFirst oil May 17, 2017\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 생산 개시 2017-05(BM-S-11 7번째 FPSO) 확인. 처리용량 등은 동일 설계(레플리칸트)지만 개별 출처 미확인 — 저장 1.67·수심은 null. [2026-10-13 audit] Production start May 2017 (7th FPSO in BM-S-11) confirmed. Same replicant design, but capacities not individually sourced — storage 1.67 and WD → null."
     },
     {
       "name": "P-67 (Lula Norte)",
@@ -1600,7 +1600,7 @@
       "contract_start": "2019-02",
       "contract_end": null,
       "status": "On Production",
-      "notes": "표준 선체(P-66/P-69와 동형) · Lula 9번째 설비\n생산 개시 2019-02-01 · 원유 150k bpd, 가스 6 MMm³/d, 수심 2,130m\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null.",
+      "notes": "표준 선체(P-66/P-69와 동형) · Lula 9번째 설비\n생산 개시 2019-02-01 · 원유 150k bpd, 가스 6 MMm³/d, 수심 2,130m\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (standardized)",
         "mooring": "Spread mooring",
@@ -1617,8 +1617,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://offshore-energy.biz/?p=203653",
-      "verified": "2026-10-13",
-      "notes_en": "Standardized hull (sister to P-66/P-69) · 9th unit at Lula\nProduction from Feb 1, 2019 · 150k bpd oil, 6 MMm³/d gas, 2,130m WD\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 2,130m WD, production start 2019-02-01. Storage unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Standardized hull (sister to P-66/P-69) · 9th unit at Lula\nProduction from Feb 1, 2019 · 150k bpd oil, 6 MMm³/d gas, 2,130m WD\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·수심 2,130m·생산 개시 2019-02-01 확인. 저장은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 2,130m WD, production start 2019-02-01. Storage unsourced → null."
     },
     {
       "name": "P-68 (Berbigão & Sururu)",
@@ -1635,7 +1635,7 @@
       "contract_start": null,
       "contract_end": null,
       "status": "On Production",
-      "notes": "신조 · 선체 Jurong Aracruz(Sembcorp), 316m × 54m\n첫 생산 2019-11 · 원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl, 수심 2,280m\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·수심 2,280m·2019 생산 개시 확인.",
+      "notes": "신조 · 선체 Jurong Aracruz(Sembcorp), 316m × 54m\n첫 생산 2019-11 · 원유 150k bpd, 가스 6 MMm³/d, 저장 1.6 MMbbl, 수심 2,280m\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·수심 2,280m·2019 생산 개시 확인.",
       "detail": {
         "hull_type": "Newbuild (SembCorp Marine, Jurong Aracruz Brazil)",
         "mooring": "Spread mooring",
@@ -1654,8 +1654,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://jpt.spe.org/petrobras-starts-production-pre-salt-berbigao-field",
-      "verified": "2026-10-13",
-      "notes_en": "Newbuild · hull by Jurong Aracruz (Sembcorp), 316m × 54m\nFirst oil Nov 2019 · 150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage, 2,280m WD\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·수심 2,280m·2019 생산 개시 확인. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 1.6 MMbbl storage, 2,280m WD, production start 2019."
+      "verified": "2026-11-15",
+      "notes_en": "Newbuild · hull by Jurong Aracruz (Sembcorp), 316m × 54m\nFirst oil Nov 2019 · 150k bpd oil, 6 MMm³/d gas, 1.6 MMbbl storage, 2,280m WD\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·수심 2,280m·2019 생산 개시 확인. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 1.6 MMbbl storage, 2,280m WD, production start 2019."
     },
     {
       "name": "P-69 (Lula Extremo Sul)",
@@ -1672,7 +1672,7 @@
       "contract_start": "2018-10",
       "contract_end": null,
       "status": "On Production",
-      "notes": "표준 선체(P-66/P-67과 동형) · Lula 8번째 설비\n첫 생산 2018-10 · 원유 150k bpd, 가스 6 MMm³/d\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null.",
+      "notes": "표준 선체(P-66/P-67과 동형) · Lula 8번째 설비\n첫 생산 2018-10 · 원유 150k bpd, 가스 6 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (standardized)",
         "mooring": "Spread mooring",
@@ -1689,8 +1689,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://www.offshore-mag.com/articles/2019/02/petrobras-brings-onstream-ninth-lula-field-platform-offshore-brazil.html",
-      "verified": "2026-10-13",
-      "notes_en": "Standardized hull (sister to P-66/P-67) · 8th unit at Lula\nFirst oil Oct 2018 · 150k bpd oil, 6 MMm³/d gas\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), production start Oct 2018. Storage and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Standardized hull (sister to P-66/P-67) · 8th unit at Lula\nFirst oil Oct 2018 · 150k bpd oil, 6 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·생산 개시 2018-10 확인. 저장·수심은 출처 없어 null. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), production start Oct 2018. Storage and WD unsourced → null."
     },
     {
       "name": "P-70 (Atapu)",
@@ -1707,7 +1707,7 @@
       "contract_start": "2020-06",
       "contract_end": null,
       "status": "On Production",
-      "notes": "레플리칸트 5번째 · MODEC 설계 M350 선체, COOEC(칭다오) 건조\n생산 개시 2020-06-25 · 4공만으로 150k 도달\n[2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null.",
+      "notes": "레플리칸트 5번째 · MODEC 설계 M350 선체, COOEC(칭다오) 건조\n생산 개시 2020-06-25 · 4공만으로 150k 도달\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild M350 (COSCO Changxing hull + COOEC Qingdao 통합)",
         "mooring": "Spread mooring",
@@ -1725,8 +1725,8 @@
         "gas_capacity_mmscfd": 212
       },
       "source_url": "https://www.latibex.com/docs/Documentos/esp/hechosrelev/2020/Comunicado-Início%20Produção%20P-70_Ingles%20FINAL.pdf",
-      "verified": "2026-10-13",
-      "notes_en": "5th replicant · MODEC-designed M350 hull built by COOEC (Qingdao)\nProduction from Jun 25, 2020 · reached 150k with only 4 wells\n[2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null. [2026-10-13 audit] Petrobras release: confirmed 150k bpd, gas 6 MMm³/d (212), production start 2020-06-25 (5th replicant). Storage and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "5th replicant · MODEC-designed M350 hull built by COOEC (Qingdao)\nProduction from Jun 25, 2020 · reached 150k with only 4 wells\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] Petrobras 발표: 150k bpd·가스 6 MMm³/d(212)·생산 개시 2020-06-25 확인(레플리칸트 5번째). 저장·수심은 출처 없어 null. [2026-10-13 audit] Petrobras release: confirmed 150k bpd, gas 6 MMm³/d (212), production start 2020-06-25 (5th replicant). Storage and WD unsourced → null."
     },
     {
       "name": "P-57 (Jubarte)",
@@ -1743,7 +1743,7 @@
       "contract_start": "2010-12",
       "contract_end": null,
       "status": "On Production",
-      "notes": "Jubarte 유전(중질유) · Keppel/BrasFELS에서 VLCC 개조\nSBM 턴키 공급 후 2010-12 Petrobras 인도 · 첫 생산 2010-12-17 · 원유 180k bpd\n[2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null.",
+      "notes": "Jubarte 유전(중질유) · Keppel/BrasFELS에서 VLCC 개조\nSBM 턴키 공급 후 2010-12 Petrobras 인도 · 첫 생산 2010-12-17 · 원유 180k bpd\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null.",
       "detail": {
         "hull_type": "VLCC conversion (Keppel/BrasFELS, BR)",
         "mooring": "Spread mooring",
@@ -1757,8 +1757,8 @@
         "yard_confidence": "high"
       },
       "source_url": "https://sbmoffshore.com/newsroom/p-57-fpso-contract-confirmed-sbm-offshore-2008",
-      "verified": "2026-10-13",
-      "notes_en": "Jubarte field (heavy crude) · VLCC converted at Keppel/BrasFELS\nTurnkey supply by SBM, delivered to Petrobras Dec 2010 · first oil Dec 17, 2010 · 180k bpd\n[2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null. [2026-10-13 audit] Owner SBM→Petrobras: SBM turnkey supply (EPC sale), delivered to Petrobras Dec 2010. Confirmed 180k bpd; storage 1.4→1.6 MMbbl. 2033 end and WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Jubarte field (heavy crude) · VLCC converted at Keppel/BrasFELS\nTurnkey supply by SBM, delivered to Petrobras Dec 2010 · first oil Dec 17, 2010 · 180k bpd\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 감사] 소유주 SBM→Petrobras: SBM이 턴키 공급(EPC 판매)한 선박, 2010-12 Petrobras 인도. 180k bpd 확인, 저장 1.4→1.6 MMbbl. 용선 종료 2033·수심은 근거 없어 null. [2026-10-13 audit] Owner SBM→Petrobras: SBM turnkey supply (EPC sale), delivered to Petrobras Dec 2010. Confirmed 180k bpd; storage 1.4→1.6 MMbbl. 2033 end and WD unsourced → null."
     },
     {
       "name": "FPSO Maria Quitéria",
@@ -1775,7 +1775,7 @@
       "contract_start": null,
       "contract_end": "2047",
       "status": "On Production",
-      "notes": "Jubarte 프리솔트 · Yinson 소유 · 선체 SHI 2002 건조·2024 개조\n첫 생산 2024-10-15(조기) · 22.5년 확정 용선 ~2047\n[2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null.",
+      "notes": "Jubarte 프리솔트 · Yinson 소유 · 선체 SHI 2002 건조·2024 개조\n첫 생산 2024-10-15(조기) · 22.5년 확정 용선 ~2047\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 개조 (COSCO Shipping Heavy Industry 상하이)",
         "mooring": "Spread mooring",
@@ -1791,8 +1791,8 @@
         "gas_capacity_mmscfd": 177
       },
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_mq_r1/",
-      "verified": "2026-10-13",
-      "notes_en": "Jubarte pre-salt · owned by Yinson · hull built by SHI 2002, converted 2024\nFirst oil Oct 15, 2024 (early) · 22.5-year firm charter to ~2047\n[2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 100k bopd, storage null→1.5 MMbbl, gas null→177 MMscfd, hull SHI-built 2002, converted 2024. 22.5-year firm charter to ~2047 (Petrobras/Yinson). 1,385m WD and charter start month unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Jubarte pre-salt · owned by Yinson · hull built by SHI 2002, converted 2024\nFirst oil Oct 15, 2024 (early) · 22.5-year firm charter to ~2047\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 감사] Yinson 사양서: 원유 100k bopd 확인, 저장 null→1.5 MMbbl, 가스 null→177 MMscfd, 선체 SHI 2002 건조·2024 개조. 22.5년 확정 용선 ~2047(Petrobras/Yinson). 수심 1,385m·용선 시작월은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 100k bopd, storage null→1.5 MMbbl, gas null→177 MMscfd, hull SHI-built 2002, converted 2024. 22.5-year firm charter to ~2047 (Petrobras/Yinson). 1,385m WD and charter start month unsourced → null."
     },
     {
       "name": "Yinson FPSO Atlanta",
@@ -1809,7 +1809,7 @@
       "contract_start": "2024-12",
       "contract_end": "2039",
       "status": "On Production",
-      "notes": "Atlanta 유전 중질유(API 약 14°) · 구 OSX-2, Drydocks World(두바이) 개조\n고객 Brava Energia(구 Enauta) · 2024-12~2039 확정 15년 + 5년 옵션(최대 $1,981M)\n[2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null.",
+      "notes": "Atlanta 유전 중질유(API 약 14°) · 구 OSX-2, Drydocks World(두바이) 개조\n고객 Brava Energia(구 Enauta) · 2024-12~2039 확정 15년 + 5년 옵션(최대 $1,981M)\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null.",
       "detail": {
         "hull_type": "FPSO 전환 (구 OSX-2, Drydocks World Dubai)",
         "mooring": "Turret Mooring",
@@ -1830,8 +1830,8 @@
         "yard_confidence": "high"
       },
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_atlanta_r1/",
-      "verified": "2026-10-13",
-      "notes_en": "Atlanta field heavy crude (API ~14°) · ex-OSX-2, converted at Drydocks World Dubai\nClient Brava Energia (ex-Enauta) · firm 15 years Dec 2024–2039 + 5-year option (up to $1,981M)\n[2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 50k bopd, storage 1.0→1.2 MMbbl, gas 50→12.3 MMscfd, hull HHI 1989, converted Keppel 2013 and Drydocks World 2022-23. Charter 2024-01–2049 → 2024-12–2039 (15-year firm + 5-year option, up to $1,981M). Client ENAUTA→Brava Energia (formerly Enauta). 1,500m WD unsourced → null."
+      "verified": "2026-11-15",
+      "notes_en": "Atlanta field heavy crude (API ~14°) · ex-OSX-2, converted at Drydocks World Dubai\nClient Brava Energia (ex-Enauta) · firm 15 years Dec 2024–2039 + 5-year option (up to $1,981M)\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 감사] Yinson 사양서: 원유 50k bopd 확인, 저장 1.0→1.2 MMbbl, 가스 50→12.3 MMscfd, 선체 HHI 1989·Keppel 2013·Drydocks World 2022-23 개조. 용선 2024-01~2049→2024-12~2039(15년 확정 + 5년 옵션, 최대 $1,981M). 고객 ENAUTA→Brava Energia(구 Enauta). 수심 1,500m은 출처 없어 null. [2026-10-13 audit] Yinson brochure: confirmed 50k bopd, storage 1.0→1.2 MMbbl, gas 50→12.3 MMscfd, hull HHI 1989, converted Keppel 2013 and Drydocks World 2022-23. Charter 2024-01–2049 → 2024-12–2039 (15-year firm + 5-year option, up to $1,981M). Client ENAUTA→Brava Energia (formerly Enauta). 1,500m WD unsourced → null."
     },
     {
       "name": "FPSO N'Goma",
@@ -1848,7 +1848,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "앙골라 Block 15/06 West Hub · 고객 Eni Angola · 2014-11 가동\nSonasing 합작 소유(SBM 80% — 2024-06 Sonangol EP 지분 약 $40M 인수)\n[2026-10-13 감사] 100k bpd·가스 115 MMscfd 확인, 저장 null→~1.5 MMbbl. Sonasing JV(SBM 과반) 소유. 수심 1,000m은 출처 없어 null.",
+      "notes": "앙골라 Block 15/06 West Hub · 고객 Eni Angola · 2014-11 가동\nSonasing 합작 소유(SBM 80% — 2024-06 Sonangol EP 지분 약 $40M 인수)\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] 100k bpd·가스 115 MMscfd 확인, 저장 null→~1.5 MMbbl. Sonasing JV(SBM 과반) 소유. 수심 1,000m은 출처 없어 null.",
       "detail": {
         "gas_capacity_mmscfd": 115,
         "mooring": "Turret Mooring",
@@ -1865,9 +1865,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/newsroom/ngoma-fpso-producing-and-hire/",
         "yard_confidence": "high"
       },
-      "notes_en": "Block 15/06 West Hub, Angola · client Eni Angola · in service since Nov 2014\nOwned by the Sonasing JV (SBM 80% after buying Sonangol EP's stake for ~$40M in Jun 2024)\n[2026-10-13 audit] Confirmed 100k bpd and 115 MMscfd; storage null→~1.5 MMbbl. Owned by Sonasing JV (SBM majority). 1,000m WD unsourced → null.",
+      "notes_en": "Block 15/06 West Hub, Angola · client Eni Angola · in service since Nov 2014\nOwned by the Sonasing JV (SBM 80% after buying Sonangol EP's stake for ~$40M in Jun 2024)\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] Confirmed 100k bpd and 115 MMscfd; storage null→~1.5 MMbbl. Owned by Sonasing JV (SBM majority). 1,000m WD unsourced → null.",
       "source_url": "https://www.offshore-technology.com/projects/west-hub-development-project/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Saxi Batuque",
@@ -1884,7 +1884,7 @@
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "앙골라 Block 15 Kizomba C · SBM 100% 소유(2024-06 Sonangol 지분 인수)\nExxonMobil(Esso Angola)과 임대·운영 계약 2032년까지 연장(2025-12-17, 수명 연장 작업 포함)\n[2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
+      "notes": "앙골라 Block 15 Kizomba C · SBM 100% 소유(2024-06 Sonangol 지분 인수)\nExxonMobil(Esso Angola)과 임대·운영 계약 2032년까지 연장(2025-12-17, 수명 연장 작업 포함)\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
       "detail": {
         "hull_type": "VLCC 'Litiopa' 개조 (Keppel Shipyard, 2006)",
         "mooring": "External Turret Mooring",
@@ -1901,9 +1901,9 @@
         "yard_source_url": "http://killajoules.wikidot.com/archive:keppel-clinches-s-210-million-conversion-and-newbuil",
         "yard_confidence": "medium"
       },
-      "notes_en": "Block 15 Kizomba C, Angola · 100% owned by SBM (bought Sonangol's stake in Jun 2024)\nLease and operations contract with ExxonMobil (Esso Angola) extended to 2032 (Dec 17, 2025, incl. life extension)\n[2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
+      "notes_en": "Block 15 Kizomba C, Angola · 100% owned by SBM (bought Sonangol's stake in Jun 2024)\nLease and operations contract with ExxonMobil (Esso Angola) extended to 2032 (Dec 17, 2025, incl. life extension)\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
       "source_url": "https://www.offshore-technology.com/projects/kizomba/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Mondo",
@@ -1920,7 +1920,7 @@
       "contract_end": "2032",
       "status": "On Production",
       "year_delivered": 2008,
-      "notes": "앙골라 Block 15 Kizomba C · SBM 100% 소유(2024-06 Sonangol 지분 인수)\nExxonMobil(Esso Angola)과 임대·운영 계약 2032년까지 연장(2025-12-17, 수명 연장 작업 포함)\n[2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
+      "notes": "앙골라 Block 15 Kizomba C · SBM 100% 소유(2024-06 Sonangol 지분 인수)\nExxonMobil(Esso Angola)과 임대·운영 계약 2032년까지 연장(2025-12-17, 수명 연장 작업 포함)\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] SBM 발표(2025-12-17): ExxonMobil(Esso Angola Block 15)과 임대·운영 계약 2032년까지 연장(수명연장 작업 포함) 확인. 처리용량 등 나머지는 아직 미감사. [2026-10-13 감사] 100k bopd·저장 1.6 MMbbl 확인(Kizomba C, SBM 100% 소유). 계약 2032년까지(SBM 2025-12-17).",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -1935,9 +1935,9 @@
         "yard_source_url": "https://www.offshore-mag.com/home/article/16792187/keppel-clinches-fpso-contracts",
         "yard_confidence": "high"
       },
-      "notes_en": "Block 15 Kizomba C, Angola · 100% owned by SBM (bought Sonangol's stake in Jun 2024)\nLease and operations contract with ExxonMobil (Esso Angola) extended to 2032 (Dec 17, 2025, incl. life extension)\n[2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
+      "notes_en": "Block 15 Kizomba C, Angola · 100% owned by SBM (bought Sonangol's stake in Jun 2024)\nLease and operations contract with ExxonMobil (Esso Angola) extended to 2032 (Dec 17, 2025, incl. life extension)\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] SBM release (2025-12-17): lease and operate contract with ExxonMobil (Esso Angola Block 15) extended to 2032 (incl. life-extension work). Capacities etc. not yet audited. [2026-10-13 audit] Confirmed 100k bopd and 1.6 MMbbl storage (Kizomba C, 100% SBM-owned). Contract to 2032 (SBM 2025-12-17).",
       "source_url": "https://www.offshore-technology.com/projects/kizomba/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Espírito Santo",
@@ -1954,7 +1954,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2009,
-      "notes": "Parque das Conchas(BC-10) 초심해 중질유 · 고객 Shell\n2024-09 MISC와 지분 맞교환(SBM이 Kikeh 49% 양도·Espírito Santo 49% 인수)으로 SBM 단독 소유\n[2026-10-13 감사] 100k bpd 확인, 저장 null→2.0 MMbbl. 2024 MISC 지분 인수로 SBM 단독 소유. 수심 1,780m·계약 기간은 출처 없어 null.",
+      "notes": "Parque das Conchas(BC-10) 초심해 중질유 · 고객 Shell\n2024-09 MISC와 지분 맞교환(SBM이 Kikeh 49% 양도·Espírito Santo 49% 인수)으로 SBM 단독 소유\n[2026-11-15 감사] SBM 3분기 실적(2026-11-12): 선단 원유 가동률 99.0%, 이 선박의 변동 언급 없음. [2026-10-13 감사] 100k bpd 확인, 저장 null→2.0 MMbbl. 2024 MISC 지분 인수로 SBM 단독 소유. 수심 1,780m·계약 기간은 출처 없어 null.",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -1969,9 +1969,9 @@
         "yard_source_url": "https://www.sbmoffshore.com/wp-content/uploads/2024/03/pressrelease-20081215-original-587.pdf",
         "yard_confidence": "high"
       },
-      "notes_en": "Parque das Conchas (BC-10) ultra-deepwater heavy oil · client Shell\nSept 2024 equity swap with MISC (SBM gave 49% of Kikeh, took 49% of Espírito Santo) → solely owned by SBM\n[2026-10-13 audit] Confirmed 100k bpd; storage null→2.0 MMbbl. Solely SBM-owned after acquiring MISC's stake (2024). 1,780m WD and contract term unsourced → null.",
+      "notes_en": "Parque das Conchas (BC-10) ultra-deepwater heavy oil · client Shell\nSept 2024 equity swap with MISC (SBM gave 49% of Kikeh, took 49% of Espírito Santo) → solely owned by SBM\n[2026-11-15 audit] SBM Q3 trading update (2026-11-12): fleet oil uptime 99.0%, no change reported for this unit. [2026-10-13 audit] Confirmed 100k bpd; storage null→2.0 MMbbl. Solely SBM-owned after acquiring MISC's stake (2024). 1,780m WD and contract term unsourced → null.",
       "source_url": "https://www.offshore-mag.com/rigs-vessels/article/16778445/keppel-delivers-fpso-espirito-santo",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Gimboa",
@@ -2119,7 +2119,7 @@
       "contract_end": "2048",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "Marlim 재개발 · Yinson 63.2%·Sumitomo 25% 등 합작 소유\n첫 생산 2023-05 · 25년 확정 용선 ~2048 · 원유 70k bopd\n[2026-10-13 감사] Yinson 사양서: 원유 70k bopd·가스 142 MMscfd 확인, 저장 1.6→1.5 MMbbl, 선체 SHI·COSCO Qidong 2022 개조. 25년 확정 용선 2023-05~2048(Yinson 연차보고서 2023). 수심 927m은 출처 없어 null.",
+      "notes": "Marlim 재개발 · Yinson 63.2%·Sumitomo 25% 등 합작 소유\n첫 생산 2023-05 · 25년 확정 용선 ~2048 · 원유 70k bopd\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 사양서: 원유 70k bopd·가스 142 MMscfd 확인, 저장 1.6→1.5 MMbbl, 선체 SHI·COSCO Qidong 2022 개조. 25년 확정 용선 2023-05~2048(Yinson 연차보고서 2023). 수심 927m은 출처 없어 null.",
       "detail": {
         "hull_type": "New build FPSO (COSCO Changxing, Shanghai)",
         "gas_capacity_mmscfd": 142,
@@ -2134,9 +2134,9 @@
         "yard_source_url": "https://www.ship-technology.com/projects/anna-nery-fpso",
         "yard_confidence": "high"
       },
-      "notes_en": "Marlim redevelopment · owned by a JV of Yinson 63.2%, Sumitomo 25% and others\nFirst oil May 2023 · 25-year firm charter to ~2048 · 70k bopd\n[2026-10-13 audit] Yinson brochure: confirmed 70k bopd and 142 MMscfd, storage 1.6→1.5 MMbbl, hull SHI converted COSCO Qidong 2022. 25-year firm charter May 2023–2048 (Yinson Annual Report 2023). 927m WD unsourced → null.",
+      "notes_en": "Marlim redevelopment · owned by a JV of Yinson 63.2%, Sumitomo 25% and others\nFirst oil May 2023 · 25-year firm charter to ~2048 · 70k bopd\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 audit] Yinson brochure: confirmed 70k bopd and 142 MMscfd, storage 1.6→1.5 MMbbl, hull SHI converted COSCO Qidong 2022. 25-year firm charter May 2023–2048 (Yinson Annual Report 2023). 927m WD unsourced → null.",
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_annanery_r1/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Agogo",
@@ -2153,7 +2153,7 @@
       "contract_end": "2040",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "세계 첫 연소 후 탄소 포집(CCS) 탑재 FPSO · Yinson 100% 소유 · 고객 Azule Energy\n첫 생산 2025-07-29(예정보다 4개월 빠름) · 15년 확정 용선(2025-08~2040, 최대 5년 옵션)\n[2026-10-13 감사] Yinson 발표: 원유 120k bopd 확인, 저장 null→1.6 MMbbl, 첫 생산 2025-07-29, 15년 확정 용선(2025-08~2040, 연 단위 최대 5년 옵션). 가스 재주입 230 MMscfd·수심 ~1,700m(Offshore Technology).",
+      "notes": "세계 첫 연소 후 탄소 포집(CCS) 탑재 FPSO · Yinson 100% 소유 · 고객 Azule Energy\n첫 생산 2025-07-29(예정보다 4개월 빠름) · 15년 확정 용선(2025-08~2040, 최대 5년 옵션)\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 발표: 원유 120k bopd 확인, 저장 null→1.6 MMbbl, 첫 생산 2025-07-29, 15년 확정 용선(2025-08~2040, 연 단위 최대 5년 옵션). 가스 재주입 230 MMscfd·수심 ~1,700m(Offshore Technology).",
       "detail": {
         "mooring": "Turret Mooring",
         "partners": [
@@ -2169,9 +2169,9 @@
         "yard_confidence": "medium",
         "gas_capacity_mmscfd": 230
       },
-      "notes_en": "World's first FPSO with post-combustion carbon capture · 100% owned by Yinson · client Azule Energy\nFirst oil Jul 29, 2025 (4 months early) · 15-year firm charter (Aug 2025–2040, up to 5 years of options)\n[2026-10-13 audit] Yinson release: confirmed 120k bopd, storage null→1.6 MMbbl, first oil 2025-07-29, 15-year firm charter (Aug 2025–2040, annual options up to 5 years). Gas injection 230 MMscfd and ~1,700m WD (Offshore Technology).",
+      "notes_en": "World's first FPSO with post-combustion carbon capture · 100% owned by Yinson · client Azule Energy\nFirst oil Jul 29, 2025 (4 months early) · 15-year firm charter (Aug 2025–2040, up to 5 years of options)\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 audit] Yinson release: confirmed 120k bopd, storage null→1.6 MMbbl, first oil 2025-07-29, 15-year firm charter (Aug 2025–2040, annual options up to 5 years). Gas injection 230 MMscfd and ~1,700m WD (Offshore Technology).",
       "source_url": "https://www.yinson-production.com/wp-content/uploads/2025/08/20250813-Agogo-FPSO-achieves-first-oil-four-months-ahead-of-schedule-and-begins-15-year-firm-charter-CLEAN-Rev-1.pdf",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Helang",
@@ -2188,7 +2188,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": null,
-      "notes": "말레이시아 사라왁 해상 Layang 유전 · Yinson 100% 소유 · 고객 ENEOS Xplora\n이중 선체 내부 터릿 계류 · 첫 생산 2019-12-06 · 선체 1992 Fincantieri 건조, 2002 Keppel 개조\n[2026-10-13 감사] Yinson 사양서: 원유 12k bopd·저장 0.55 MMbbl 확인, 가스 null→수출 170 MMscfd. 선체는 1992 Fincantieri 건조·2002 Keppel 개조·2004 호주 재배치 — 외부 검토 시트의 'HRDD/COSCO Qidong(구 Four Rainbow)'는 오류로 정정. 계약기간·인도연도는 출처 없어 null.",
+      "notes": "말레이시아 사라왁 해상 Layang 유전 · Yinson 100% 소유 · 고객 ENEOS Xplora\n이중 선체 내부 터릿 계류 · 첫 생산 2019-12-06 · 선체 1992 Fincantieri 건조, 2002 Keppel 개조\n[2026-11-15 감사] Yinson Production 반기 재무제표(2026-07-31 기준): 용선 계속 — 변동 없음. [2026-10-13 감사] Yinson 사양서: 원유 12k bopd·저장 0.55 MMbbl 확인, 가스 null→수출 170 MMscfd. 선체는 1992 Fincantieri 건조·2002 Keppel 개조·2004 호주 재배치 — 외부 검토 시트의 'HRDD/COSCO Qidong(구 Four Rainbow)'는 오류로 정정. 계약기간·인도연도는 출처 없어 null.",
       "detail": {
         "hull_type": "이중선체 내부 터릿 계류 FPSO",
         "notable": "말레이시아 Layang 유전 FPSO. ENEOS Xplora (구 JX Nippon) 운영 계약.",
@@ -2200,9 +2200,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 170
       },
-      "notes_en": "Layang field, offshore Sarawak · 100% owned by Yinson · client ENEOS Xplora\nDouble-hull internal-turret mooring · first oil Dec 6, 2019 · hull built by Fincantieri 1992, converted at Keppel 2002\n[2026-10-13 audit] Yinson brochure: confirmed 12k bopd and 0.55 MMbbl storage, gas null→170 MMscfd export. Hull built 1992 Fincantieri, converted Keppel 2002, redeployed Australia 2004 — the review sheet's 'HRDD/COSCO Qidong (ex-Four Rainbow)' was wrong and is corrected. Contract term and delivery year unsourced → null.",
+      "notes_en": "Layang field, offshore Sarawak · 100% owned by Yinson · client ENEOS Xplora\nDouble-hull internal-turret mooring · first oil Dec 6, 2019 · hull built by Fincantieri 1992, converted at Keppel 2002\n[2026-11-15 audit] Yinson Production interim statements (period to 2026-07-31): charter continuing — no change. [2026-10-13 audit] Yinson brochure: confirmed 12k bopd and 0.55 MMbbl storage, gas null→170 MMscfd export. Hull built 1992 Fincantieri, converted Keppel 2002, redeployed Australia 2004 — the review sheet's 'HRDD/COSCO Qidong (ex-Four Rainbow)' was wrong and is corrected. Contract term and delivery year unsourced → null.",
       "source_url": "https://www.yinson-production.com/vessel_brochure_fpso_helang_r1/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO PTSC Lam Son",
@@ -2219,7 +2219,7 @@
       "contract_end": "2026-12",
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "베트남 Cuu Long 분지 Thang Long–Dong Do · Yinson 49%·PTSC 51% 합작\n2014년 Keppel 개조 · 용선 2026-06까지 확정 + 2026-12까지 자동 연장\n[2026-10-13 감사] Yinson 사양서·발표: 원유 20→18k bopd, 저장 0.65→0.6 MMbbl, 가스 압축 47 MMscfd, 선체 SHI 1994·Keppel 2014 개조, Yinson 49%·PTSC 51%. 용선 2025-01~2026-06 확정 + 2026-12까지 자동 연장. 수심 80m은 출처 없어 null.",
+      "notes": "베트남 Cuu Long 분지 Thang Long–Dong Do · Yinson 49%·PTSC 51% 합작\n2014년 Keppel 개조 · 용선 2026-06까지 확정 + 2026-12까지 자동 연장\n[2026-11-15 감사] 2026-06-30 계약 종료 후 자동 6개월 연장으로 2026-12-31까지(Yinson 2024-12 공시). 그 이후 연장 발표는 찾지 못함. [2026-10-13 감사] Yinson 사양서·발표: 원유 20→18k bopd, 저장 0.65→0.6 MMbbl, 가스 압축 47 MMscfd, 선체 SHI 1994·Keppel 2014 개조, Yinson 49%·PTSC 51%. 용선 2025-01~2026-06 확정 + 2026-12까지 자동 연장. 수심 80m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 FPSO (Keppel, 2014)",
         "notable": "Yinson-PTSC 합작 FPSO. 베트남 Cuu Long Basin 천해 운영. Thang Long-Dong Do 유전 통합 생산.",
@@ -2231,9 +2231,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 47
       },
-      "notes_en": "Thang Long–Dong Do, Cuu Long Basin, Vietnam · JV of Yinson 49% / PTSC 51%\nConverted at Keppel 2014 · charter firm to Jun 2026 + automatic extension to Dec 2026\n[2026-10-13 audit] Yinson brochure and release: oil 20→18k bopd, storage 0.65→0.6 MMbbl, gas compression 47 MMscfd, hull SHI 1994 converted Keppel 2014, Yinson 49% / PTSC 51%. Charter firm Jan 2025–Jun 2026 + automatic extension to Dec 2026. 80m WD unsourced → null.",
+      "notes_en": "Thang Long–Dong Do, Cuu Long Basin, Vietnam · JV of Yinson 49% / PTSC 51%\nConverted at Keppel 2014 · charter firm to Jun 2026 + automatic extension to Dec 2026\n[2026-11-15 audit] Charter to 2026-06-30 with automatic 6-month extension to 2026-12-31 (Yinson, Dec 2024). No later extension found. [2026-10-13 audit] Yinson brochure and release: oil 20→18k bopd, storage 0.65→0.6 MMbbl, gas compression 47 MMscfd, hull SHI 1994 converted Keppel 2014, Yinson 49% / PTSC 51%. Charter firm Jan 2025–Jun 2026 + automatic extension to Dec 2026. 80m WD unsourced → null.",
       "source_url": "https://yinson-production.com/wp-content/uploads/2024/12/20241230-Yinson-Production-secures-contract-extension-for-FPSO-Lam-Son.pdf",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Guanabara MV31",
@@ -2250,7 +2250,7 @@
       "contract_end": "2044",
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "Mero 1 FPSO(Libra) · MODEC 합작 소유\n첫 생산 2022-04 · 22년 용선 ~2044 · 가스는 전량 재주입\n브라질 최대 생산 설비(2025 ANP, 평균 184k bopd)\n[2026-10-13 감사] MODEC 프로젝트 페이지: 180k·수심 2,100m·2022-04 첫 생산 확인, 저장 null→1.4, 가스 null→424(전량 재주입), 22년 용선 → ~2044.",
+      "notes": "Mero 1 FPSO(Libra) · MODEC 합작 소유\n첫 생산 2022-04 · 22년 용선 ~2044 · 가스는 전량 재주입\n브라질 최대 생산 설비(2025 ANP, 평균 184k bopd)\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 180k·수심 2,100m·2022-04 첫 생산 확인, 저장 null→1.4, 가스 null→424(전량 재주입), 22년 용선 → ~2044.",
       "detail": {
         "gas_capacity_mmscfd": 424,
         "mooring": "Spread Mooring (SOFEC)",
@@ -2269,9 +2269,9 @@
         "yard_source_url": "https://www.bairdmaritime.com/offshore/refining-processing/offshore-processing-storage/vessel-review-guanabara-mv31-ex-vlcc-undergoes-comprehensive-refit-for-fpso-duties",
         "yard_confidence": "high"
       },
-      "notes_en": "Mero 1 FPSO (Libra) · owned by a MODEC JV\nFirst oil Apr 2022 · 22-year charter to ~2044 · all gas reinjected\nBrazil's top producer (ANP 2025, average 184k bopd)\n[2026-10-13 audit] MODEC project page: Confirmed 180k, 2,100m WD, first oil Apr 2022; storage null→1.4, gas null→424 (100% reinjection), 22-year charter → ~2044.",
+      "notes_en": "Mero 1 FPSO (Libra) · owned by a MODEC JV\nFirst oil Apr 2022 · 22-year charter to ~2044 · all gas reinjected\nBrazil's top producer (ANP 2025, average 184k bopd)\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: Confirmed 180k, 2,100m WD, first oil Apr 2022; storage null→1.4, gas null→424 (100% reinjection), 22-year charter → ~2044.",
       "source_url": "https://www.modec.com/project/detail/libra.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Almirante Barroso MV32",
@@ -2288,7 +2288,7 @@
       "contract_end": "2044",
       "status": "On Production",
       "year_delivered": 2023,
-      "notes": "Búzios 유전 · MODEC EPCI·임대·운영\n첫 생산 2023-05, 5개월 만에 150k bopd 도달 · 21년 용선 ~2044\n[2026-10-13 감사] MODEC 프로젝트 페이지: 150k·수심 1,900m·2023-05 첫 생산 확인, 저장 null→1.4, 가스 null→212, 21년 용선 → ~2044.",
+      "notes": "Búzios 유전 · MODEC EPCI·임대·운영\n첫 생산 2023-05, 5개월 만에 150k bopd 도달 · 21년 용선 ~2044\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 150k·수심 1,900m·2023-05 첫 생산 확인, 저장 null→1.4, 가스 null→212, 21년 용선 → ~2044.",
       "detail": {
         "mooring": "Spread Mooring (SOFEC)",
         "notable": "Búzios 유전 MODEC 소유 FPSO. 출범 후 5개월 만에 150,000 bopd 피크 달성.",
@@ -2299,9 +2299,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 212
       },
-      "notes_en": "Búzios field · MODEC EPCI, lease and O&M\nFirst oil May 2023, reached 150k bopd within 5 months · 21-year charter to ~2044\n[2026-10-13 audit] MODEC project page: Confirmed 150k, 1,900m WD, first oil May 2023; storage null→1.4, gas null→212, 21-year charter → ~2044.",
+      "notes_en": "Búzios field · MODEC EPCI, lease and O&M\nFirst oil May 2023, reached 150k bopd within 5 months · 21-year charter to ~2044\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: Confirmed 150k, 1,900m WD, first oil May 2023; storage null→1.4, gas null→212, 21-year charter → ~2044.",
       "source_url": "https://www.modec.com/project/detail/buzios5.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Cidade de Caraguatatuba MV27",
@@ -2318,7 +2318,7 @@
       "contract_end": "2036",
       "status": "On Production",
       "year_delivered": 2016,
-      "notes": "산투스 분지 Lapa(Carioca) 프리솔트 · MODEC 다섯 번째 프리솔트 FPSO\n고객 TotalEnergies(Petrobras에서 이전) · 첫 생산 2016-12-19 · 20년 용선 ~2036\n[2026-10-13 감사] MODEC 프로젝트 페이지: 100k·가스 177·저장 1.6·수심 2,126m·2016-12 첫 생산 확인, 20년 용선 → ~2036. 고객 TotalEnergies(Petrobras에서 이전).",
+      "notes": "산투스 분지 Lapa(Carioca) 프리솔트 · MODEC 다섯 번째 프리솔트 FPSO\n고객 TotalEnergies(Petrobras에서 이전) · 첫 생산 2016-12-19 · 20년 용선 ~2036\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 100k·가스 177·저장 1.6·수심 2,126m·2016-12 첫 생산 확인, 20년 용선 → ~2036. 고객 TotalEnergies(Petrobras에서 이전).",
       "detail": {
         "gas_capacity_mmscfd": 177,
         "mooring": "Spread Mooring",
@@ -2334,9 +2334,9 @@
         "yard_source_url": "https://www.modec.com/project/detail/carioca.html",
         "yard_confidence": "high"
       },
-      "notes_en": "Lapa (Carioca) pre-salt, Santos Basin · MODEC's 5th pre-salt FPSO\nClient TotalEnergies (transferred from Petrobras) · first oil Dec 19, 2016 · 20-year charter to ~2036\n[2026-10-13 audit] MODEC project page: Confirmed 100k, gas 177, 1.6 storage, 2,126m WD, first oil Dec 2016; 20-year charter → ~2036. Client TotalEnergies (transferred from Petrobras).",
+      "notes_en": "Lapa (Carioca) pre-salt, Santos Basin · MODEC's 5th pre-salt FPSO\nClient TotalEnergies (transferred from Petrobras) · first oil Dec 19, 2016 · 20-year charter to ~2036\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: Confirmed 100k, gas 177, 1.6 storage, 2,126m WD, first oil Dec 2016; 20-year charter → ~2036. Client TotalEnergies (transferred from Petrobras).",
       "source_url": "https://www.modec.com/project/detail/carioca.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Cidade de Campos dos Goytacazes MV29",
@@ -2353,7 +2353,7 @@
       "contract_end": "2038",
       "status": "On Production",
       "year_delivered": 2018,
-      "notes": "캄푸스 분지 Tartaruga Verde·Tartaruga Mestiça, 수심 765m · MODEC EPCI·임대·운영\n첫 생산 2018-06 · 20년 용선 ~2038 · 2026-04 Petrobras가 잔여 50% 지분 인수 계약\n[2026-10-13 감사] MODEC 프로젝트 페이지: 유전 Espadarte Module III→Tartaruga Verde·Tartaruga Mestiça(기존 오기). 150k·저장 1.6·수심 765m 확인, 가스 null→176, 첫 생산 2018-06, 20년 용선 → ~2038.",
+      "notes": "캄푸스 분지 Tartaruga Verde·Tartaruga Mestiça, 수심 765m · MODEC EPCI·임대·운영\n첫 생산 2018-06 · 20년 용선 ~2038 · 2026-04 Petrobras가 잔여 50% 지분 인수 계약\n[2026-11-15 감사] MODEC 3분기 IR(2026-11-10) 용선 표에서 계약 확인 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 유전 Espadarte Module III→Tartaruga Verde·Tartaruga Mestiça(기존 오기). 150k·저장 1.6·수심 765m 확인, 가스 null→176, 첫 생산 2018-06, 20년 용선 → ~2038.",
       "detail": {
         "mooring": "Spread Mooring",
         "notable": "Campos Basin 중수심(765m) FPSO. 150k bopd 처리 용량.",
@@ -2364,9 +2364,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 176
       },
-      "notes_en": "Tartaruga Verde & Tartaruga Mestiça, Campos Basin, 765m WD · MODEC EPCI, lease and O&M\nFirst oil Jun 2018 · 20-year charter to ~2038 · Apr 2026: Petrobras agreed to buy the remaining 50%\n[2026-10-13 audit] MODEC project page: Field Espadarte Module III→Tartaruga Verde and Tartaruga Mestiça (was wrong). Confirmed 150k, 1.6 storage, 765m WD; gas null→176; first oil Jun 2018; 20-year charter → ~2038.",
+      "notes_en": "Tartaruga Verde & Tartaruga Mestiça, Campos Basin, 765m WD · MODEC EPCI, lease and O&M\nFirst oil Jun 2018 · 20-year charter to ~2038 · Apr 2026: Petrobras agreed to buy the remaining 50%\n[2026-11-15 audit] Contract confirmed in MODEC 3Q IR fleet table (2026-11-10) — no change. [2026-10-13 audit] MODEC project page: Field Espadarte Module III→Tartaruga Verde and Tartaruga Mestiça (was wrong). Confirmed 150k, 1.6 storage, 765m WD; gas null→176; first oil Jun 2018; 20-year charter → ~2038.",
       "source_url": "https://www.modec.com/project/detail/tartaruga.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Bacalhau",
@@ -2383,7 +2383,7 @@
       "contract_end": "2053",
       "status": "On Production",
       "year_delivered": 2025,
-      "notes": "MODEC 차세대 M350 선체 첫 적용 · Equinor 최대 해외 유전\nEquinor 소유(매매계약) — MODEC이 첫 1년 운영 후 Equinor 직접 운영, 라이선스 ~2053\n첫 생산 2025-10-15 · 원유 220k bpd\n[2026-10-13 감사] MODEC 프로젝트 페이지: 소유주 MODEC→Equinor(매매계약, MODEC은 첫 1년 O&M 후 Equinor 직접 운영, 라이선스 ~2053). 220k·저장 2.0·수심 2,050m·2025-10 첫 생산 확인, 가스 null→530.",
+      "notes": "MODEC 차세대 M350 선체 첫 적용 · Equinor 최대 해외 유전\nEquinor 소유(매매계약) — MODEC이 첫 1년 운영 후 Equinor 직접 운영, 라이선스 ~2053\n첫 생산 2025-10-15 · 원유 220k bpd\n[2026-11-15 감사] MODEC 3분기 IR: O&M 2025~2027 — 변동 없음. [2026-10-13 감사] MODEC 프로젝트 페이지: 소유주 MODEC→Equinor(매매계약, MODEC은 첫 1년 O&M 후 Equinor 직접 운영, 라이선스 ~2053). 220k·저장 2.0·수심 2,050m·2025-10 첫 생산 확인, 가스 null→530.",
       "detail": {
         "hull_type": "MODEC M350 Hull (새 세대 신조 이중선체, 370m×64m)",
         "mooring": "Spread Mooring (SOFEC)",
@@ -2401,9 +2401,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 530
       },
-      "notes_en": "First MODEC next-generation M350 hull · Equinor's largest field outside Norway\nOwned by Equinor (purchase agreement) — MODEC operates the first year, then Equinor; licence to ~2053\nFirst oil Oct 15, 2025 · 220k bpd\n[2026-10-13 audit] MODEC project page: Owner MODEC→Equinor (sale & purchase agreement; MODEC operates for the first year, then Equinor operates to licence end ~2053). Confirmed 220k, 2.0 storage, 2,050m WD, first oil Oct 2025; gas null→530.",
+      "notes_en": "First MODEC next-generation M350 hull · Equinor's largest field outside Norway\nOwned by Equinor (purchase agreement) — MODEC operates the first year, then Equinor; licence to ~2053\nFirst oil Oct 15, 2025 · 220k bpd\n[2026-11-15 audit] MODEC 3Q IR: O&M 2025–2027 — no change. [2026-10-13 audit] MODEC project page: Owner MODEC→Equinor (sale & purchase agreement; MODEC operates for the first year, then Equinor operates to licence end ~2053). Confirmed 220k, 2.0 storage, 2,050m WD, first oil Oct 2025; gas null→530.",
       "source_url": "https://www.modec.com/project/detail/bacalhau.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Prof. John Evans Atta Mills",
@@ -2417,10 +2417,10 @@
       "oil_capacity_kboed": 80,
       "storage_mmbbl": 1.7,
       "contract_start": "2016-08",
-      "contract_end": "2026",
+      "contract_end": "2027",
       "status": "On Production",
       "year_delivered": 2016,
-      "notes": "가나 TEN 유전 · VLCC Centennial J 개조 · MODEC EPCI·임대·운영\n첫 생산 2016-08-17 · 고객 Tullow Ghana, 10년 확정(~2026) + 1년 옵션 10회\n[2026-10-13 감사] MODEC 프로젝트 페이지: 80k·가스 180·저장 1.7·수심 1,500m·2016-08 첫 생산 확인. 용선 10년 확정(~2026) + 1년 옵션 10회.",
+      "notes": "가나 TEN 유전 · VLCC Centennial J 개조 · MODEC EPCI·임대·운영\n첫 생산 2016-08-17 · 고객 Tullow Ghana, 10년 확정(~2026) + 1년 옵션 10회\n[2026-11-15 정정] 계약 종료 2026→2027 정정(MODEC 3분기 IR 2026-11-10 용선 표: 2016~2027). [2026-10-13 감사] MODEC 프로젝트 페이지: 80k·가스 180·저장 1.7·수심 1,500m·2016-08 첫 생산 확인. 용선 10년 확정(~2026) + 1년 옵션 10회.",
       "detail": {
         "hull_type": "VLCC Centennial J 개조 (Sembcorp Marine Singapore)",
         "gas_capacity_mmscfd": 180,
@@ -2440,9 +2440,9 @@
         "yard_source_url": "https://www.offshore-mag.com/subsea/article/16754771/deepwater-ten-project-delivers-first-oil-on-time-within-budget",
         "yard_confidence": "high"
       },
-      "notes_en": "TEN field, Ghana · converted from VLCC Centennial J · MODEC EPCI, lease and O&M\nFirst oil Aug 17, 2016 · client Tullow Ghana, 10 years firm (~2026) + ten 1-year options\n[2026-10-13 audit] MODEC project page: Confirmed 80k, gas 180, 1.7 storage, 1,500m WD, first oil Aug 2016. Charter 10 years firm (~2026) + ten 1-year options.",
+      "notes_en": "TEN field, Ghana · converted from VLCC Centennial J · MODEC EPCI, lease and O&M\nFirst oil Aug 17, 2016 · client Tullow Ghana, 10 years firm (~2026) + ten 1-year options\n[2026-11-15 correction] Contract end corrected 2026→2027 (MODEC 3Q IR fleet table, 2026-11-10: 2016–2027). [2026-10-13 audit] MODEC project page: Confirmed 80k, gas 180, 1.7 storage, 1,500m WD, first oil Aug 2016. Charter 10 years firm (~2026) + ten 1-year options.",
       "source_url": "https://www.modec.com/project/detail/ten.html",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-50 (Albacora Leste)",
@@ -2489,7 +2489,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "Espírito Santo 해안 85km, Parque das Baleias · Petrobras 소유\n생산 개시 2014-03-17 · 프리솔트·포스트솔트 유정 동시 연결 · 원유 180k bpd, 수심 1,400m\n[2026-10-13 감사] Petrobras 공시: 180k bpd·가스 6 MMm³/d(212)·수심 1,400m·2014-03-17 가동 확인.",
+      "notes": "Espírito Santo 해안 85km, Parque das Baleias · Petrobras 소유\n생산 개시 2014-03-17 · 프리솔트·포스트솔트 유정 동시 연결 · 원유 180k bpd, 수심 1,400m\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] Petrobras 공시: 180k bpd·가스 6 MMm³/d(212)·수심 1,400m·2014-03-17 가동 확인.",
       "detail": {
         "gas_capacity_mmscfd": 212,
         "mooring": "Spread Mooring",
@@ -2500,9 +2500,9 @@
         "yard_source_url": "http://sinaval.org.br/2013/12/p-58-e-tad-da-p-61-seguem-para-suas-locacoes-em-parque-das-baleias-e-papa-terra/",
         "yard_confidence": "high"
       },
-      "notes_en": "85km off Espírito Santo, Parque das Baleias · owned by Petrobras\nProduction from Mar 17, 2014 · connected to pre- and post-salt wells · 180k bpd, 1,400m WD\n[2026-10-13 audit] Petrobras filing: confirmed 180k bpd, gas 6 MMm³/d (212), 1,400m WD, start 2014-03-17.",
+      "notes_en": "85km off Espírito Santo, Parque das Baleias · owned by Petrobras\nProduction from Mar 17, 2014 · connected to pre- and post-salt wells · 180k bpd, 1,400m WD\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Petrobras filing: confirmed 180k bpd, gas 6 MMm³/d (212), 1,400m WD, start 2014-03-17.",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001119639/000129281414000616/pbra20140318_6k.htm",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-62 (Roncador IV)",
@@ -2519,7 +2519,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2014,
-      "notes": "캄푸스 분지 Roncador 네 번째 설비 · Petrobras 소유\n생산 개시 2014-05-12 · 원유 180k bpd, 수심 1,600m · 생산정 14·주입정 8\n[2026-10-13 감사] Petrobras 공시: 180k bpd·가스 6 MMm³/d(212)·수심 1,600m·2014-05-12 생산 개시 확인.",
+      "notes": "캄푸스 분지 Roncador 네 번째 설비 · Petrobras 소유\n생산 개시 2014-05-12 · 원유 180k bpd, 수심 1,600m · 생산정 14·주입정 8\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] Petrobras 공시: 180k bpd·가스 6 MMm³/d(212)·수심 1,600m·2014-05-12 생산 개시 확인.",
       "detail": {
         "gas_capacity_mmscfd": 212,
         "mooring": "Spread Mooring",
@@ -2530,9 +2530,9 @@
         "yard_source_url": "https://www.oedigital.com/news/457044-petrobras-p-62-fpso-completed",
         "yard_confidence": "high"
       },
-      "notes_en": "4th unit at Roncador, Campos Basin · owned by Petrobras\nProduction from May 12, 2014 · 180k bpd, 1,600m WD · 14 producers, 8 injectors\n[2026-10-13 audit] Petrobras filing: confirmed 180k bpd, gas 6 MMm³/d (212), 1,600m WD, production start 2014-05-12.",
+      "notes_en": "4th unit at Roncador, Campos Basin · owned by Petrobras\nProduction from May 12, 2014 · 180k bpd, 1,600m WD · 14 producers, 8 injectors\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Petrobras filing: confirmed 180k bpd, gas 6 MMm³/d (212), 1,600m WD, production start 2014-05-12.",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001119639/000129281414001184/pbra20140512_6k.htm",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-63 (Papa-Terra)",
@@ -2549,7 +2549,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2013,
-      "notes": "캄푸스 분지 Papa-Terra · VLCC BW Nisa 개조(COSCO)\n첫 생산 2013-11 · P-61 TLWP와 연동 · 원유 140k bpd, 수심 약 1,200m\n[2026-10-13 감사] 140k bpd·수심 ~1,200m(3,940ft) 확인, 가스 null→1 MMm³/d(35), BW Nisa 개조(COSCO). 운영 Petrobras 62.5%·Chevron 37.5%(당시).",
+      "notes": "캄푸스 분지 Papa-Terra · VLCC BW Nisa 개조(COSCO)\n첫 생산 2013-11 · P-61 TLWP와 연동 · 원유 140k bpd, 수심 약 1,200m\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 140k bpd·수심 ~1,200m(3,940ft) 확인, 가스 null→1 MMm³/d(35), BW Nisa 개조(COSCO). 운영 Petrobras 62.5%·Chevron 37.5%(당시).",
       "detail": {
         "hull_type": "VLCC BW Nisa 개조 (323,000 DWT)",
         "mooring": "Spread Mooring",
@@ -2562,9 +2562,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 35
       },
-      "notes_en": "Papa-Terra, Campos Basin · converted from VLCC BW Nisa (COSCO)\nFirst oil Nov 2013 · linked with the P-61 TLWP · 140k bpd, ~1,200m WD\n[2026-10-13 audit] Confirmed 140k bpd, ~1,200m WD (3,940 ft); gas null→1 MMm³/d (35); converted from BW Nisa (COSCO). Operator Petrobras 62.5%, Chevron 37.5% (at the time).",
+      "notes_en": "Papa-Terra, Campos Basin · converted from VLCC BW Nisa (COSCO)\nFirst oil Nov 2013 · linked with the P-61 TLWP · 140k bpd, ~1,200m WD\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Confirmed 140k bpd, ~1,200m WD (3,940 ft); gas null→1 MMm³/d (35); converted from BW Nisa (COSCO). Operator Petrobras 62.5%, Chevron 37.5% (at the time).",
       "source_url": "https://ogj.com/drilling-production/production-operations/article/17258580/fpso-en-route-to-papa-terra-heavy-oil-field-offshore-brazil",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-54 (Roncador II)",
@@ -2581,7 +2581,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2007,
-      "notes": "캄푸스 분지 Roncador 2단계 · 구 Settebello 개조(Jurong)\n생산 개시 2007-12-11 · 원유 180k bpd, 가스 6 MMm³/d\n[2026-10-13 감사] 180k bpd·가스 6 MMm³/d(212)·생산 개시 2007-12-11 확인. 저장 2.0·수심은 출처 없어 null.",
+      "notes": "캄푸스 분지 Roncador 2단계 · 구 Settebello 개조(Jurong)\n생산 개시 2007-12-11 · 원유 180k bpd, 가스 6 MMm³/d\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 180k bpd·가스 6 MMm³/d(212)·생산 개시 2007-12-11 확인. 저장 2.0·수심은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC Settebello 개조 (Jurong Shipyard, $628M)",
         "gas_capacity_mmscfd": 212,
@@ -2594,9 +2594,9 @@
         "yard_source_url": "https://tnpetroleo.com.br/noticia/casco-da-p-54-chega-ao-estaleiro-maua-jurong/",
         "yard_confidence": "high"
       },
-      "notes_en": "Roncador module 2, Campos Basin · converted from the former Settebello (Jurong)\nProduction from Dec 11, 2007 · 180k bpd oil, 6 MMm³/d gas\n[2026-10-13 audit] Confirmed 180k bpd, gas 6 MMm³/d (212), production start 2007-12-11. Storage 2.0 and WD unsourced → null.",
+      "notes_en": "Roncador module 2, Campos Basin · converted from the former Settebello (Jurong)\nProduction from Dec 11, 2007 · 180k bpd oil, 6 MMm³/d gas\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Confirmed 180k bpd, gas 6 MMm³/d (212), production start 2007-12-11. Storage 2.0 and WD unsourced → null.",
       "source_url": "https://www.offshore-mag.com/production/article/16798092/petrobras-starts-p-54-contracts-p-55",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-31 (Albacora)",
@@ -2613,15 +2613,15 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 1997,
-      "notes": "캄푸스 분지 Albacora · 내부 터릿 계류 · 반잠수식 P-25와 함께 생산\nP-88 신조로 교체 예정 · 처리 용량은 출처 간 상충(100k 대 200k bopd)\n[2026-10-13 감사] 가동 중 확인(2023 계류줄 수리 30일, 2016 누출로 일시 중단). 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지. P-88 신조로 교체 예정. [2026-10-13 감사] ANP 개발계획: Albacora 생산은 P-25(반잠수식)와 FPSO P-31로 수행, 원유는 셔틀탱커, 가스는 PGP-1로 송출. 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지.",
+      "notes": "캄푸스 분지 Albacora · 내부 터릿 계류 · 반잠수식 P-25와 함께 생산\nP-88 신조로 교체 예정 · 처리 용량은 출처 간 상충(100k 대 200k bopd)\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. Albacora 재활성화용 신규 FPSO 입찰 진행(제안 마감 2026-05-25, agência infra). [2026-10-13 감사] 가동 중 확인(2023 계류줄 수리 30일, 2016 누출로 일시 중단). 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지. P-88 신조로 교체 예정. [2026-10-13 감사] ANP 개발계획: Albacora 생산은 P-25(반잠수식)와 FPSO P-31로 수행, 원유는 셔틀탱커, 가스는 PGP-1로 송출. 처리용량은 출처 간 상충(100k vs 200k bopd)으로 null 유지.",
       "detail": {
         "mooring": "Internal Permanent Turret (SOFEC)",
         "notable": "Albacora 유전 FPSO. P-25 반잠수식과 함께 Albacora 생산. P-88 신조 FPSO로 교체 예정.",
         "notable_en": "Albacora field FPSO. Produces Albacora together with the P-25 semisubmersible. To be replaced by newbuild FPSO P-88."
       },
-      "notes_en": "Albacora, Campos Basin · internal turret mooring · produces alongside the P-25 semisub\nTo be replaced by newbuild P-88 · capacity conflicts between sources (100k vs 200k bopd)\n[2026-10-13 audit] Confirmed operating (30-day mooring repair in 2023; temporary shutdown for leaks in 2016). Capacity conflicts across sources (100k vs 200k bopd), kept null. To be replaced by newbuild P-88. [2026-10-13 audit] ANP development plan: Albacora produces through P-25 (semisub) and FPSO P-31; oil offloaded to shuttle tankers, gas to PGP-1. Capacity conflicts across sources (100k vs 200k bopd), kept null.",
+      "notes_en": "Albacora, Campos Basin · internal turret mooring · produces alongside the P-25 semisub\nTo be replaced by newbuild P-88 · capacity conflicts between sources (100k vs 200k bopd)\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. New FPSO tender for Albacora revitalization under way (bids due 2026-05-25, agência infra). [2026-10-13 audit] Confirmed operating (30-day mooring repair in 2023; temporary shutdown for leaks in 2016). Capacity conflicts across sources (100k vs 200k bopd), kept null. To be replaced by newbuild P-88. [2026-10-13 audit] ANP development plan: Albacora produces through P-25 (semisub) and FPSO P-31; oil offloaded to shuttle tankers, gas to PGP-1. Capacity conflicts across sources (100k vs 200k bopd), kept null.",
       "source_url": "https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/desenvolvimento-e-producao/pd/albacora.pdf",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-43 (Barracuda)",
@@ -2638,7 +2638,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2004,
-      "notes": "캄푸스 분지 Barracuda, Macaé 동쪽 160km · 구 Stena Continent 개조(Jurong)\n생산 개시 2004-12-21 · Caratinga(P-48)와 통합 운영 · 원유 150k bpd\n[2026-10-13 감사] Petrobras 공시: 150k bpd 확인, 가스 null→6 MMm³/d(212), 2004-12-21 생산 개시. 저장 2.0·수심 785m은 출처 없어 null.",
+      "notes": "캄푸스 분지 Barracuda, Macaé 동쪽 160km · 구 Stena Continent 개조(Jurong)\n생산 개시 2004-12-21 · Caratinga(P-48)와 통합 운영 · 원유 150k bpd\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] Petrobras 공시: 150k bpd 확인, 가스 null→6 MMm³/d(212), 2004-12-21 생산 개시. 저장 2.0·수심 785m은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC Stena Continent 개조 (Jurong Shipyard, Singapore)",
         "mooring": "Internal Turret Mooring",
@@ -2651,9 +2651,9 @@
         "yard_confidence": "high",
         "gas_capacity_mmscfd": 212
       },
-      "notes_en": "Barracuda, Campos Basin, 160km east of Macaé · converted from the former Stena Continent (Jurong)\nProduction from Dec 21, 2004 · operated together with Caratinga (P-48) · 150k bpd\n[2026-10-13 audit] Petrobras filing: confirmed 150k bpd; gas null→6 MMm³/d (212); production start 2004-12-21. Storage 2.0 and 785m WD unsourced → null.",
+      "notes_en": "Barracuda, Campos Basin, 160km east of Macaé · converted from the former Stena Continent (Jurong)\nProduction from Dec 21, 2004 · operated together with Caratinga (P-48) · 150k bpd\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Petrobras filing: confirmed 150k bpd; gas null→6 MMm³/d (212); production start 2004-12-21. Storage 2.0 and 785m WD unsourced → null.",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001119639/000129281404000656/pbra20041221_6k.htm",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-48 (Caratinga)",
@@ -2670,7 +2670,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2005,
-      "notes": "캄푸스 분지 Caratinga · 구 Stena Concordia 개조(BrasFELS)\n원유 150k bpd · Barracuda(P-43)와 용량 공유 · 첫 생산 시점은 1차 출처 미확인(2005-01 예정으로 공시)\n[2026-10-13 감사] Petrobras 공시: 150k bpd 확인(첫 생산 2005-01 예정으로 공시). 저장 2.0·수심 1,035m·시작월은 1차 출처 미확인으로 null.",
+      "notes": "캄푸스 분지 Caratinga · 구 Stena Concordia 개조(BrasFELS)\n원유 150k bpd · Barracuda(P-43)와 용량 공유 · 첫 생산 시점은 1차 출처 미확인(2005-01 예정으로 공시)\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] Petrobras 공시: 150k bpd 확인(첫 생산 2005-01 예정으로 공시). 저장 2.0·수심 1,035m·시작월은 1차 출처 미확인으로 null.",
       "detail": {
         "hull_type": "VLCC Stena Concordia 개조 (BrasFELS, Angra dos Reis, Brazil)",
         "mooring": "Internal Turret Mooring",
@@ -2682,9 +2682,9 @@
         "yard_source_url": "https://www.offshore-technology.com/projects/barracuda-caratinga-fields-brazil/",
         "yard_confidence": "high"
       },
-      "notes_en": "Caratinga, Campos Basin · converted from the former Stena Concordia (BrasFELS)\n150k bpd · shares capacity with Barracuda (P-43) · first-oil month not confirmed (announced for Jan 2005)\n[2026-10-13 audit] Petrobras filing: confirmed 150k bpd (first oil expected Jan 2005). Storage 2.0, 1,035m WD and start month unconfirmed → null.",
+      "notes_en": "Caratinga, Campos Basin · converted from the former Stena Concordia (BrasFELS)\n150k bpd · shares capacity with Barracuda (P-43) · first-oil month not confirmed (announced for Jan 2005)\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Petrobras filing: confirmed 150k bpd (first oil expected Jan 2005). Storage 2.0, 1,035m WD and start month unconfirmed → null.",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001119639/000129281404000414/pbra20041013_6k.htm",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-71 (Itapu)",
@@ -2701,7 +2701,7 @@
       "contract_end": null,
       "status": "On Production",
       "year_delivered": 2022,
-      "notes": "산투스 분지 Itapu 프리솔트, 리우 해상 200km · Petrobras 100%\n생산 개시 2022-12 · Seatrium BrasFELS 건조 · 원유 150k bpd, 저장 1.6 MMbbl\n[2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·2022-12 생산 개시 확인. 수심 2,010m은 출처 없어 null.",
+      "notes": "산투스 분지 Itapu 프리솔트, 리우 해상 200km · Petrobras 100%\n생산 개시 2022-12 · Seatrium BrasFELS 건조 · 원유 150k bpd, 저장 1.6 MMbbl\n[2026-11-15 감사] Petrobras 해체 계획(2026: P-35·P-19·Cidade de Niterói·P-20·P-37, 2027: Cidade de Santos·P-18·P-47)에 없음 — 가동 유지. [2026-10-13 감사] 150k bpd·가스 6 MMm³/d(212)·저장 1.6 MMbbl·2022-12 생산 개시 확인. 수심 2,010m은 출처 없어 null.",
       "detail": {
         "hull_type": "신조 (CIMC Raffles 옌타이 선체 + Jurong Aracruz 통합)",
         "gas_capacity_mmscfd": 212,
@@ -2714,9 +2714,9 @@
         "yard_confidence": "high",
         "hull_type_en": "Newbuild (CIMC Raffles Yantai hull + Jurong Aracruz integration)"
       },
-      "notes_en": "Itapu pre-salt, Santos Basin, 200km off Rio · Petrobras 100%\nProduction from Dec 2022 · built by Seatrium BrasFELS · 150k bpd, 1.6 MMbbl storage\n[2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 1.6 MMbbl storage, production start Dec 2022. 2,010m WD unsourced → null.",
+      "notes_en": "Itapu pre-salt, Santos Basin, 200km off Rio · Petrobras 100%\nProduction from Dec 2022 · built by Seatrium BrasFELS · 150k bpd, 1.6 MMbbl storage\n[2026-11-15 audit] Not in Petrobras decommissioning plan (2026: P-35, P-19, Cidade de Niterói, P-20, P-37; 2027: Cidade de Santos, P-18, P-47) — still producing. [2026-10-13 audit] Confirmed 150k bpd, gas 6 MMm³/d (212), 1.6 MMbbl storage, production start Dec 2022. 2,010m WD unsourced → null.",
       "source_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-10/p-71-produzira-ate-150-mil-barrisdia-de-petroleo-na-bacia-de-santos",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "Errea Wittu",
@@ -2840,7 +2840,7 @@
       "oil_capacity_kboed": 70,
       "delivery": "2028",
       "status": "Under Construction",
-      "notes": "VLCC(Alsace) 개조 · Saipem EPC · 앙골라 Kwanza 분지 Cameia·Golfinho\n원유 70k bbl/d, 수반가스 전량 재주입 · 수심 약 1,700m\nFID 2024-05, 첫 생산 2028년 · Saipem $3.7B는 FPSO EPC·12년 운영·SURF 합산(FPSO 단독 금액 미공시)\n지분: TotalEnergies 40%(운영), PETRONAS 40%, Sonangol 20%\n[정정 2026-10-08] VLCC(Alsace) 개조 FPSO, Saipem EPC — 기존 \"SBM Fast4Ward 선형\"은 오류. 70k bbl/d, 수반가스 전량 재주입. 앙골라 Kwanza 분지 Cameia·Golfinho, TotalEnergies 40%(op)·PETRONAS 40%·Sonangol 20%. FID 2024-05, first oil 2028. [2026-10-13 감사] 계약액 3.5→null: Saipem $3.7B는 FPSO EPC·12년 O&M·SURF 3건 합산이라 FPSO 단독 금액 아님. 인도 2027-Q1→2028(첫 생산 2028, FPSO 인도 시점 미공시). 수심 ~1,700m·70k bpd 확인. 공정률 45%·가스 120은 출처 없어 null.",
+      "notes": "VLCC(Alsace) 개조 · Saipem EPC · 앙골라 Kwanza 분지 Cameia·Golfinho\n원유 70k bbl/d, 수반가스 전량 재주입 · 수심 약 1,700m\nFID 2024-05, 첫 생산 2028년 · Saipem $3.7B는 FPSO EPC·12년 운영·SURF 합산(FPSO 단독 금액 미공시)\n지분: TotalEnergies 40%(운영), PETRONAS 40%, Sonangol 20%\n[2026-11-15 감사] 2026년 새 이정표 보도 찾지 못함, 첫 생산 2028년 유지(TotalEnergies) — 변동 없음. [정정 2026-10-08] VLCC(Alsace) 개조 FPSO, Saipem EPC — 기존 \"SBM Fast4Ward 선형\"은 오류. 70k bbl/d, 수반가스 전량 재주입. 앙골라 Kwanza 분지 Cameia·Golfinho, TotalEnergies 40%(op)·PETRONAS 40%·Sonangol 20%. FID 2024-05, first oil 2028. [2026-10-13 감사] 계약액 3.5→null: Saipem $3.7B는 FPSO EPC·12년 O&M·SURF 3건 합산이라 FPSO 단독 금액 아님. 인도 2027-Q1→2028(첫 생산 2028, FPSO 인도 시점 미공시). 수심 ~1,700m·70k bpd 확인. 공정률 45%·가스 120은 출처 없어 null.",
       "detail": {
         "hull_type": "VLCC 전환 (VLCC Alsace, Saipem EPC)",
         "water_depth_m": 1700,
@@ -2864,9 +2864,9 @@
         "rig_demand_en": "1 dedicated drillship — Kaminho development drilling campaign 2025–2027",
         "notable_en": "Saipem $3.7B EPC + O&M contract May 2024. TotalEnergies 40% / PETRONAS PAEPAL 40% / Sonangol 20%. 70,000 bopd; all gas reinjected; first oil targeted 2028."
       },
-      "notes_en": "VLCC (Alsace) conversion · Saipem EPC · Cameia and Golfinho, Kwanza Basin, Angola\n70k bbl/d, all associated gas reinjected · ~1,700m WD\nFID May 2024, first oil 2028 · Saipem's $3.7B covers FPSO EPC, 12-year O&M and SURF combined (no FPSO-only value)\nEquity: TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%\n[Corrected 2026-10-08] VLCC (Alsace) conversion FPSO, Saipem EPC — the earlier \"SBM Fast4Ward design\" was wrong. 70k bbl/d, all associated gas reinjected. Cameia and Golfinho, Kwanza Basin, Angola; TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%. FID May 2024, first oil 2028. [2026-10-13 audit] Contract value 3.5→null: Saipem's $3.7B covers three contracts (FPSO EPC, 12-year O&M, SURF), not the FPSO alone. Delivery 2027-Q1→2028 (first oil 2028; FPSO delivery date not disclosed). Confirmed ~1,700m WD and 70k bpd. Progress 45% and gas 120 unsourced → null.",
+      "notes_en": "VLCC (Alsace) conversion · Saipem EPC · Cameia and Golfinho, Kwanza Basin, Angola\n70k bbl/d, all associated gas reinjected · ~1,700m WD\nFID May 2024, first oil 2028 · Saipem's $3.7B covers FPSO EPC, 12-year O&M and SURF combined (no FPSO-only value)\nEquity: TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%\n[2026-11-15 audit] No new 2026 milestone found; first oil still 2028 (TotalEnergies) — no change. [Corrected 2026-10-08] VLCC (Alsace) conversion FPSO, Saipem EPC — the earlier \"SBM Fast4Ward design\" was wrong. 70k bbl/d, all associated gas reinjected. Cameia and Golfinho, Kwanza Basin, Angola; TotalEnergies 40% (op), PETRONAS 40%, Sonangol 20%. FID May 2024, first oil 2028. [2026-10-13 audit] Contract value 3.5→null: Saipem's $3.7B covers three contracts (FPSO EPC, 12-year O&M, SURF), not the FPSO alone. Delivery 2027-Q1→2028 (first oil 2028; FPSO delivery date not disclosed). Confirmed ~1,700m WD and 70k bpd. Progress 45% and gas 120 unsourced → null.",
       "source_url": "https://www.offshore-technology.com/news/saipem-totalenergies-angola-contracts/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-83 (Búzios 11)",
@@ -2880,7 +2880,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2027-Q2",
       "status": "Under Construction",
-      "notes": "Búzios 11번째 FPSO · Petrobras 소유 · Keppel 계약 $2.8B(2022)\n선체·거주구 CIMC Raffles(중국), 상부 모듈은 싱가포르·중국·브라질 분산 제작 후 싱가포르 통합 · P-80 반복 설계\n원유 225k bpd, 저장 200만 bbl · 인도 2027년 상반기 목표\n[정정 2026-10-08] 기존 명칭 \"Marechal Duque de Caxias\"는 MISC 소유 Mero-3 FPSO(2024-10 생산개시)로 별개 선박 — 오기재. 기존 notes의 \"SBM Fast4Ward\"도 오류. [2026-10-08] 계약금액 3.8→2.8($B, Keppel O&M EPC 2022 수주액). 선체·거주구 CIMC Raffles(중국), 상부 모듈 싱가포르·중국·브라질 분산 제작, 싱가포르 통합. P-80 반복 설계. 인도 2027 상반기 목표. [2026-10-13 감사] Keppel 발표로 $2.8B·225k bpd·저장 200만 bbl·2027 상반기 인도 확인. 공정률 40%·수심 2,100m은 출처 없어 null.",
+      "notes": "Búzios 11번째 FPSO · Petrobras 소유 · Keppel 계약 $2.8B(2022)\n선체·거주구 CIMC Raffles(중국), 상부 모듈은 싱가포르·중국·브라질 분산 제작 후 싱가포르 통합 · P-80 반복 설계\n원유 225k bpd, 저장 200만 bbl · 인도 2027년 상반기 목표\nIBAMA 설치 허가(2026-08) · 2027년 2월 출항 예정\n[2026-11-15 갱신] 2026-08 IBAMA 설치 허가, 2027-02 출항 예정(Brasil Energia, eixos). [정정 2026-10-08] 기존 명칭 \"Marechal Duque de Caxias\"는 MISC 소유 Mero-3 FPSO(2024-10 생산개시)로 별개 선박 — 오기재. 기존 notes의 \"SBM Fast4Ward\"도 오류. [2026-10-08] 계약금액 3.8→2.8($B, Keppel O&M EPC 2022 수주액). 선체·거주구 CIMC Raffles(중국), 상부 모듈 싱가포르·중국·브라질 분산 제작, 싱가포르 통합. P-80 반복 설계. 인도 2027 상반기 목표. [2026-10-13 감사] Keppel 발표로 $2.8B·225k bpd·저장 200만 bbl·2027 상반기 인도 확인. 공정률 40%·수심 2,100m은 출처 없어 null.",
       "detail": {
         "hull_type": "Newbuild (CIMC Raffles hull, Seatrium EPC ~$2.8B)",
         "water_depth_m": null,
@@ -2909,9 +2909,9 @@
           "PPSA (PSC administrator)"
         ]
       },
-      "notes_en": "11th Búzios FPSO · owned by Petrobras · Keppel contract $2.8B (2022)\nHull and living quarters by CIMC Raffles (CN); topside modules built in Singapore, China and Brazil, integrated in Singapore · repeat of the P-80 design\n225k bpd, 2 MMbbl storage · delivery targeted H1 2027\n[Corrected 2026-10-08] The previous name \"Marechal Duque de Caxias\" belongs to a different vessel — MISC's Mero-3 FPSO (production started Oct 2024). The previous \"SBM Fast4Ward\" note was also wrong. [2026-10-08] Contract value 3.8→2.8 ($B, Keppel O&M EPC award 2022). Hull and living quarters by CIMC Raffles (China); topside modules fabricated across Singapore, China and Brazil; integrated in Singapore. Repeat of P-80 design. Delivery targeted H1 2027. [2026-10-13 audit] Keppel release confirms $2.8B, 225k bpd, 2 MMbbl storage, delivery H1 2027. Progress 40% and 2,100m WD unsourced → null.",
+      "notes_en": "11th Búzios FPSO · owned by Petrobras · Keppel contract $2.8B (2022)\nHull and living quarters by CIMC Raffles (CN); topside modules built in Singapore, China and Brazil, integrated in Singapore · repeat of the P-80 design\n225k bpd, 2 MMbbl storage · delivery targeted H1 2027\nIBAMA licence (Aug 2026) · sail-away planned Feb 2027\n[2026-11-15 update] Aug 2026 IBAMA installation licence, sail-away planned Feb 2027 (Brasil Energia, eixos). [Corrected 2026-10-08] The previous name \"Marechal Duque de Caxias\" belongs to a different vessel — MISC's Mero-3 FPSO (production started Oct 2024). The previous \"SBM Fast4Ward\" note was also wrong. [2026-10-08] Contract value 3.8→2.8 ($B, Keppel O&M EPC award 2022). Hull and living quarters by CIMC Raffles (China); topside modules fabricated across Singapore, China and Brazil; integrated in Singapore. Repeat of P-80 design. Delivery targeted H1 2027. [2026-10-13 audit] Keppel release confirms $2.8B, 225k bpd, 2 MMbbl storage, delivery H1 2027. Progress 40% and 2,100m WD unsourced → null.",
       "source_url": "https://www.keppel.com/media/keppel-om-secures-repeat-newbuild-fpso-contract-worth-us28b-from-petrobras/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO Jaguar (Whiptail)",
@@ -2925,7 +2925,7 @@
       "oil_capacity_kboed": 250,
       "delivery": "2027-Q3",
       "status": "Under Construction",
-      "notes": "SBM Fast4Ward 선형 · Stabroek 6번째 프로젝트(Whiptail)\nSale-and-Operate: SBM 건조 후 설치 전 ExxonMobil로 소유권 이전, SBM 10년 운영\n원유 250k bpd, 가스 540 MMscfd, 저장 약 200만 bbl, 수심 약 1,630m\n[정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu). [2026-10-13 감사] 용량 120→250k bpd(가스 540 MMscfd·저장 ~200만 bbl·수심 ~1,630m 확인). 소유: SBM 건조 후 설치 전 ExxonMobil로 이전(Sale & Operate), SBM 10년 운영. 계약액 4.2·공정률 30%는 출처 없어 null(SBM $1.5B는 프로젝트 금융액). [2026-10-14 감사] 대상 필드 Hammerhead→Whiptail: SBM 수주 보도(offshore-mag 2024-04-12) \"awarded contracts ... for the Whiptail development project\". Hammerhead FPSO는 MODEC 별도 발주. 금융 구조 \"20년 장기 임대\"는 Sale & Operate와 상충해 정정, 시추 수요 문구는 출처 없어 삭제.",
+      "notes": "SBM Fast4Ward 선형 · Stabroek 6번째 프로젝트(Whiptail)\nSale-and-Operate: SBM 건조 후 설치 전 ExxonMobil로 소유권 이전, SBM 10년 운영\n원유 250k bpd, 가스 540 MMscfd, 저장 약 200만 bbl, 수심 약 1,630m\nSBM 3분기: 공정률 75% 이상, 상부 모듈 탑재 완료\n[2026-11-15 갱신] SBM 3분기(2026-11-12): 공정률 75–100%, 상부 모듈 탑재 완료, 인도 2027년. [정정 2026-10-08] 기존 \"가이아나 5번째 FPSO\"는 오류(5번째는 Uaru/Errea Wittu). [2026-10-13 감사] 용량 120→250k bpd(가스 540 MMscfd·저장 ~200만 bbl·수심 ~1,630m 확인). 소유: SBM 건조 후 설치 전 ExxonMobil로 이전(Sale & Operate), SBM 10년 운영. 계약액 4.2·공정률 30%는 출처 없어 null(SBM $1.5B는 프로젝트 금융액). [2026-10-14 감사] 대상 필드 Hammerhead→Whiptail: SBM 수주 보도(offshore-mag 2024-04-12) \"awarded contracts ... for the Whiptail development project\". Hammerhead FPSO는 MODEC 별도 발주. 금융 구조 \"20년 장기 임대\"는 Sale & Operate와 상충해 정정, 시추 수요 문구는 출처 없어 삭제.",
       "detail": {
         "hull_type": "SBM Fast4Ward MPF5 신조 (SWS hull + Seatrium 통합)",
         "water_depth_m": 1630,
@@ -2952,9 +2952,9 @@
           "CNOOC 25%"
         ]
       },
-      "notes_en": "SBM Fast4Ward design · Stabroek's 6th project (Whiptail)\nSale-and-Operate: built by SBM, ownership passes to ExxonMobil before installation, SBM operates 10 years\n250k bpd oil, 540 MMscfd gas, ~2 MMbbl storage, ~1,630m WD\n[Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu). [2026-10-13 audit] Capacity 120→250k bpd (confirmed gas 540 MMscfd, ~2 MMbbl storage, ~1,630m WD). Ownership: built by SBM, transferred to ExxonMobil before installation (sale & operate), SBM operates 10 years. Contract value 4.2 and progress 30% unsourced → null (SBM's $1.5B is project financing). [2026-10-14 audit] Field Hammerhead→Whiptail: SBM award report (offshore-mag, 2024-04-12) \"awarded contracts ... for the Whiptail development project\". The Hammerhead FPSO is a separate MODEC order. Financing \"20-year lease\" conflicted with sale & operate and was corrected; unsourced drilling-demand line removed.",
+      "notes_en": "SBM Fast4Ward design · Stabroek's 6th project (Whiptail)\nSale-and-Operate: built by SBM, ownership passes to ExxonMobil before installation, SBM operates 10 years\n250k bpd oil, 540 MMscfd gas, ~2 MMbbl storage, ~1,630m WD\nSBM Q3: >75% complete, topside modules lifted\n[2026-11-15 update] SBM Q3 (2026-11-12): 75–100% complete, topside module lifting completed, delivery 2027. [Corrected 2026-10-08] The previous \"Guyana's 5th FPSO\" was wrong (5th is Uaru/Errea Wittu). [2026-10-13 audit] Capacity 120→250k bpd (confirmed gas 540 MMscfd, ~2 MMbbl storage, ~1,630m WD). Ownership: built by SBM, transferred to ExxonMobil before installation (sale & operate), SBM operates 10 years. Contract value 4.2 and progress 30% unsourced → null (SBM's $1.5B is project financing). [2026-10-14 audit] Field Hammerhead→Whiptail: SBM award report (offshore-mag, 2024-04-12) \"awarded contracts ... for the Whiptail development project\". The Hammerhead FPSO is a separate MODEC order. Financing \"20-year lease\" conflicted with sale & operate and was corrected; unsourced drilling-demand line removed.",
       "source_url": "https://www.offshore-mag.com/vessels/article/55017838/sbm-offshore-will-construct-and-install-fpso-jaguar",
-      "verified": "2026-10-14"
+      "verified": "2026-11-15"
     },
     {
       "name": "Hammerhead FPSO",
@@ -3008,7 +3008,7 @@
       "oil_capacity_kboed": 120,
       "delivery": "2027-Q4",
       "status": "Under Construction",
-      "notes": "Shell이 2022-11 Saipem EPC 계약 해지 → 2025-03 MODEC과 신규 매매계약(PSA) + 20년 운영\n선체 분할 건조: 선수 Sumitomo 요코스카(2026-07 완성) + 선미 COSCO Qidong\n원유 120k bpd, 수심 약 2,000m · 첫 생산 2029년\n[2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029.",
+      "notes": "Shell이 2022-11 Saipem EPC 계약 해지 → 2025-03 MODEC과 신규 매매계약(PSA) + 20년 운영\n선체 분할 건조: 선수 Sumitomo 요코스카(2026-07 완성) + 선미 COSCO Qidong\n원유 120k bpd, 수심 약 2,000m · 첫 생산 2029년\n2026년 7월 선수 선체 중국 통합 위해 출항\n[2026-11-15 갱신] 2026-07 선수 선체(SHI-ME 요코스카) 중국으로 출항, 선미 선체와 통합 예정(Offshore, OE Digital). 인도 일정 변경 없음. [2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029.",
       "detail": {
         "hull_type": "MODEC Next Generation 신조 (VLCC 전환 아님)",
         "water_depth_m": 2000,
@@ -3033,8 +3033,8 @@
         "notable_en": "MODEC took over Saipem's EPC contract in Mar 2025. Hull: split build, Sumitomo (JP) forward + COSCO Qidong (CN) aft."
       },
       "source_url": "https://www.oedigital.com/amp/news/540864-modec-advances-construction-of-brazil-bound-gato-do-mato-fpso",
-      "verified": "2026-10-13",
-      "notes_en": "Shell terminated the Saipem EPC in Nov 2022 → new MODEC purchase agreement (PSA) Mar 2025 + 20-year O&M\nSplit hull: forward at Sumitomo Yokosuka (completed Jul 2026) + aft at COSCO Qidong\n120k bpd, ~2,000m WD · first oil 2029\n[2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029. [2026-10-13 audit] Capacity 100→120k bpd, ~2,000m WD confirmed. Owner MODEC→Shell consortium (MODEC builds and delivers under a purchase & sale agreement, 20-year O&M). Contract value 5.0, gas 384, storage 0.85 and progress 35% unsourced → null. Production start 2029."
+      "verified": "2026-11-15",
+      "notes_en": "Shell terminated the Saipem EPC in Nov 2022 → new MODEC purchase agreement (PSA) Mar 2025 + 20-year O&M\nSplit hull: forward at Sumitomo Yokosuka (completed Jul 2026) + aft at COSCO Qidong\n120k bpd, ~2,000m WD · first oil 2029\nForward hull sailed to China for integration, Jul 2026\n[2026-11-15 update] Jul 2026: forward hull (SHI-ME Yokosuka) sailed to China for integration with aft hull (Offshore, OE Digital). No delivery change. [2026-10-13 감사] 용량 100→120k bpd, 수심 ~2,000m 확인. 소유 MODEC→Shell 컨소시엄(MODEC은 매매계약(PSA)으로 건조 후 인도, 20년 O&M). 계약액 5.0·가스 384·저장 0.85·공정률 35%는 출처 없어 null. 생산 개시 2029. [2026-10-13 audit] Capacity 100→120k bpd, ~2,000m WD confirmed. Owner MODEC→Shell consortium (MODEC builds and delivers under a purchase & sale agreement, 20-year O&M). Contract value 5.0, gas 384, storage 0.85 and progress 35% unsourced → null. Production start 2029."
     },
     {
       "name": "GranMorgu FPSO",
@@ -3135,7 +3135,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2029",
       "status": "Under Construction",
-      "notes": "Atapu 2단계 · Petrobras 소유, Seatrium EPC — P-84·P-85 합산 약 $8.15B(개별 금액 미공시)\n원유 225k bpd, 가스 10 MMm³/d, 전기 구동 · 2025년 1분기 착공, 인도 2029년\n[정정 2026-10-08] 기존 \"Buzios 11 (P-84)\"는 오류 — P-84는 Atapu 2, Búzios 11은 P-83. [2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시(P-84+P-85 합산 ~$8.15B).",
+      "notes": "Atapu 2단계 · Petrobras 소유, Seatrium EPC — P-84·P-85 합산 약 $8.15B(개별 금액 미공시)\n원유 225k bpd, 가스 10 MMm³/d, 전기 구동 · 2025년 1분기 착공, 인도 2029년\nP-84 선체 2026년 9월 완성(CIMC Raffles)\n[2026-11-15 갱신] P-84 선체 2026-09-03 CIMC Raffles 옌타이 완성, 싱가포르에서 통합 후 브라질 예인, 첫 생산 2029–2030 목표(Offshore 2026-09-09). [정정 2026-10-08] 기존 \"Buzios 11 (P-84)\"는 오류 — P-84는 Atapu 2, Búzios 11은 P-83. [2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시(P-84+P-85 합산 ~$8.15B).",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
         "water_depth_m": null,
@@ -3158,9 +3158,9 @@
         "key_equipment_en": "Seatrium EPC (P-84 + P-85 combined ~US$8.15B). All-electric design, zero routine flaring, CO2 capture. Construction started Q1 2025.",
         "source_en": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84 and P-85 each 225k bpd, 10 MMm³/d, delivery 2029"
       },
-      "notes_en": "Atapu phase 2 · owned by Petrobras, Seatrium EPC — P-84 + P-85 combined ~$8.15B (individual values undisclosed)\n225k bpd, 10 MMm³/d gas, all-electric · construction from Q1 2025, delivery 2029\n[Corrected 2026-10-08] The earlier \"Búzios 11 (P-84)\" was wrong — P-84 is Atapu 2; Búzios 11 is P-83. [2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed (P-84 + P-85 combined ~$8.15B).",
+      "notes_en": "Atapu phase 2 · owned by Petrobras, Seatrium EPC — P-84 + P-85 combined ~$8.15B (individual values undisclosed)\n225k bpd, 10 MMm³/d gas, all-electric · construction from Q1 2025, delivery 2029\nP-84 hull completed Sep 2026 (CIMC Raffles)\n[2026-11-15 update] P-84 hull completed 2026-09-03 at CIMC Raffles Yantai; integration in Singapore then tow to Brazil; first oil 2029–2030 (Offshore, 2026-09-09). [Corrected 2026-10-08] The earlier \"Búzios 11 (P-84)\" was wrong — P-84 is Atapu 2; Búzios 11 is P-83. [2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed (P-84 + P-85 combined ~$8.15B).",
       "source_url": "https://www.offshore-energy.biz/petrobras-sanctions-next-phase-of-two-oil-projects-in-brazilian-waters/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "P-85 (Sépia 2)",
@@ -3174,7 +3174,7 @@
       "oil_capacity_kboed": 225,
       "delivery": "2029",
       "status": "Under Construction",
-      "notes": "Sépia 2단계 · Petrobras 소유, Seatrium EPC — P-84·P-85 합산 약 $8.15B(개별 금액 미공시)\n원유 225k bpd, 가스 10 MMm³/d · 인도 2029년\n[2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시.",
+      "notes": "Sépia 2단계 · Petrobras 소유, Seatrium EPC — P-84·P-85 합산 약 $8.15B(개별 금액 미공시)\n원유 225k bpd, 가스 10 MMm³/d · 인도 2029년\nP-84 선체 2026년 9월 완성(CIMC Raffles)\n[2026-11-15 갱신] P-84 선체 2026-09-03 CIMC Raffles 옌타이 완성, 싱가포르에서 통합 후 브라질 예인, 첫 생산 2029–2030 목표(Offshore 2026-09-09). [2026-10-13 감사] 225k bpd·가스 10 MMm³/d·2029 확인. 개별 계약액 미공시.",
       "detail": {
         "hull_type": "Newbuild (Seatrium EPC, P-84/P-85 패키지)",
         "water_depth_m": null,
@@ -3198,9 +3198,9 @@
         "key_equipment_en": "All-electric design, zero routine flaring, CO2 capture.",
         "source_en": "Seatrium SGX announcement / Seatrade Maritime (2024): P-84 and P-85 each 225k bpd, 10 MMm³/d, delivery 2029"
       },
-      "notes_en": "Sépia phase 2 · owned by Petrobras, Seatrium EPC — P-84 + P-85 combined ~$8.15B (individual values undisclosed)\n225k bpd, 10 MMm³/d gas · delivery 2029\n[2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed.",
+      "notes_en": "Sépia phase 2 · owned by Petrobras, Seatrium EPC — P-84 + P-85 combined ~$8.15B (individual values undisclosed)\n225k bpd, 10 MMm³/d gas · delivery 2029\nP-84 hull completed Sep 2026 (CIMC Raffles)\n[2026-11-15 update] P-84 hull completed 2026-09-03 at CIMC Raffles Yantai; integration in Singapore then tow to Brazil; first oil 2029–2030 (Offshore, 2026-09-09). [2026-10-13 audit] Confirmed 225k bpd, gas 10 MMm³/d, 2029. Individual contract value undisclosed.",
       "source_url": "https://www.offshore-energy.biz/petrobras-sanctions-next-phase-of-two-oil-projects-in-brazilian-waters/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FLNG Mk II (Golar)",
@@ -3215,7 +3215,7 @@
       "delivery": "2027-Q4",
       "status": "Under Construction",
       "confidence": "low",
-      "notes": "Golar MkII 3호기(Esperanza) · 액화 3.5 MTPA · Fuji LNG 개조, CIMC Raffles(옌타이)\n총 개조 예산 약 $2.2B(자기자본) · 2027년 말 인도 → 2028년 가동\n고객 Southern Energy(아르헨티나) 20년 용선\n[정정 2026-10-08] Golar MkII 3.5 MTPA FLNG, CIMC Raffles(옌타이)에서 LNG선 개조 — 총 개조 예산 ~$2.2B(자기자본 조달). Southern Energy(아르헨티나) 20년 용선(순 EBITDA backlog $8B), 2027년 말 인도 → 2028년 가동. 기존 \"삼성중공업 $3.5B·운영사 미정·2029-Q2\"는 오류. 출처: Golar Q1 2026 results, World Oil(2025-08). [2026-10-13 감사] CIMC Raffles 개조·총 예산 ~$2.2B·2027년 말 인도·SESA 20년 용선 확인(Golar 실적; Fuji LNG 개조 EPC $1.6B — LNG Prime). Golar의 MkII 3호기(Esperanza)로, 2029년 말 인도 예정인 4호기와는 별개. 공정률 5%·가스 470은 출처 없어 null.",
+      "notes": "Golar MkII 3호기(Esperanza) · 액화 3.5 MTPA · Fuji LNG 개조, CIMC Raffles(옌타이)\n총 개조 예산 약 $2.2B(자기자본) · 2027년 말 인도 → 2028년 가동\n고객 Southern Energy(아르헨티나) 20년 용선\n[2026-11-15 감사] Golar 1분기(2026): 일정·예산 내, 완공 2027년 4분기, 집행 약 $1.2B / 예산 $2.2B. [정정 2026-10-08] Golar MkII 3.5 MTPA FLNG, CIMC Raffles(옌타이)에서 LNG선 개조 — 총 개조 예산 ~$2.2B(자기자본 조달). Southern Energy(아르헨티나) 20년 용선(순 EBITDA backlog $8B), 2027년 말 인도 → 2028년 가동. 기존 \"삼성중공업 $3.5B·운영사 미정·2029-Q2\"는 오류. 출처: Golar Q1 2026 results, World Oil(2025-08). [2026-10-13 감사] CIMC Raffles 개조·총 예산 ~$2.2B·2027년 말 인도·SESA 20년 용선 확인(Golar 실적; Fuji LNG 개조 EPC $1.6B — LNG Prime). Golar의 MkII 3호기(Esperanza)로, 2029년 말 인도 예정인 4호기와는 별개. 공정률 5%·가스 470은 출처 없어 null.",
       "detail": {
         "hull_type": "LNG 운반선 전환 (Fuji LNG, 2004년 건조)",
         "water_depth_m": null,
@@ -3249,9 +3249,9 @@
         "notable_en": "Conversion of the Fuji LNG vessel; hull cut and liquefaction midbody inserted at CIMC Raffles Yantai. $1.6B EPC."
       },
       "yard_en": "CIMC Raffles Yantai (CN) — Fuji LNG conversion",
-      "notes_en": "Golar MkII #3 (Esperanza) · 3.5 MTPA · Fuji LNG conversion at CIMC Raffles (Yantai)\nTotal conversion budget ~$2.2B (equity funded) · delivery end-2027 → operations 2028\nClient Southern Energy (Argentina), 20-year charter\n[Corrected 2026-10-08] Golar MkII 3.5 MTPA FLNG, LNG carrier conversion at CIMC Raffles (Yantai) — total conversion budget ~$2.2B (equity funded). 20-year charter to Southern Energy (Argentina) (net EBITDA backlog $8B); delivery end-2027 → operations 2028. The earlier \"Samsung Heavy Industries $3.5B / operator TBD / 2029-Q2\" was wrong. Sources: Golar Q1 2026 results, World Oil (Aug 2025). [2026-10-13 audit] Confirmed CIMC Raffles conversion, ~$2.2B total budget, delivery end-2027, 20-year SESA charter (Golar results; Fuji LNG conversion EPC $1.6B — LNG Prime). This is Golar's third FLNG (MkII, Esperanza), separate from the fourth unit due end-2029. Progress 5% and gas 470 unsourced → null.",
+      "notes_en": "Golar MkII #3 (Esperanza) · 3.5 MTPA · Fuji LNG conversion at CIMC Raffles (Yantai)\nTotal conversion budget ~$2.2B (equity funded) · delivery end-2027 → operations 2028\nClient Southern Energy (Argentina), 20-year charter\n[2026-11-15 audit] Golar Q1 2026: on time and budget, completion Q4 2027, ~$1.2B spent of $2.2B budget. [Corrected 2026-10-08] Golar MkII 3.5 MTPA FLNG, LNG carrier conversion at CIMC Raffles (Yantai) — total conversion budget ~$2.2B (equity funded). 20-year charter to Southern Energy (Argentina) (net EBITDA backlog $8B); delivery end-2027 → operations 2028. The earlier \"Samsung Heavy Industries $3.5B / operator TBD / 2029-Q2\" was wrong. Sources: Golar Q1 2026 results, World Oil (Aug 2025). [2026-10-13 audit] Confirmed CIMC Raffles conversion, ~$2.2B total budget, delivery end-2027, 20-year SESA charter (Golar results; Fuji LNG conversion EPC $1.6B — LNG Prime). This is Golar's third FLNG (MkII, Esperanza), separate from the fourth unit due end-2029. Progress 5% and gas 470 unsourced → null.",
       "source_url": "https://lngprime.com/asia/golar-inks-1-6-billion-epc-deal-for-flng-conversion/125892/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FLNG MkII #2 (Golar 4th FLNG)",
@@ -3289,7 +3289,7 @@
       "oil_capacity_kboed": 120,
       "delivery": "2030-Q1",
       "status": "Under Construction",
-      "notes": "Sergipe-Alagoas SEAP II · Petrobras 컨소시엄 소유(BOT·임대 아님)\nSBM Fast4Ward 건조 + 6.5년 운영(2026-05 계약) · 개별·합산 계약액 미공시\n원유 120k bpd, 가스 425 MMscfd, 수심 약 2,500m · 인도 2030년, 가스 수출 2031년\n[2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 425 MMscfd·수심 ~2,500m·2030년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
+      "notes": "Sergipe-Alagoas SEAP II · Petrobras 컨소시엄 소유(BOT·임대 아님)\nSBM Fast4Ward 건조 + 6.5년 운영(2026-05 계약) · 개별·합산 계약액 미공시\n원유 120k bpd, 가스 425 MMscfd, 수심 약 2,500m · 인도 2030년, 가스 수출 2031년\nFast4Ward 선체 건조 착수(중국, SBM 3분기)\n[2026-11-15 갱신] SBM 3분기(2026-11-12): 공정률 25% 미만, 중국 조선소에서 Fast4Ward 선체 건조 착수, 인도 2030년. [2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 425 MMscfd·수심 ~2,500m·2030년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,
@@ -3304,9 +3304,9 @@
         "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29.",
         "financing_en": "Owned by the Petrobras consortium; separate 6.5-year SBM O&M contract"
       },
-      "notes_en": "Sergipe-Alagoas SEAP II · owned by the Petrobras consortium (not BOT or lease)\nSBM builds a Fast4Ward unit + 6.5-year O&M (May 2026 contract) · individual and combined values undisclosed\n120k bpd oil, 425 MMscfd gas, ~2,500m WD · delivery 2030, gas export 2031\n[2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 425 MMscfd, ~2,500m WD, delivery 2030. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
+      "notes_en": "Sergipe-Alagoas SEAP II · owned by the Petrobras consortium (not BOT or lease)\nSBM builds a Fast4Ward unit + 6.5-year O&M (May 2026 contract) · individual and combined values undisclosed\n120k bpd oil, 425 MMscfd gas, ~2,500m WD · delivery 2030, gas export 2031\nFast4Ward hull construction started in China (SBM Q3)\n[2026-11-15 update] SBM Q3 (2026-11-12): <25% complete, Fast4Ward hull construction started in China, handover 2030. [2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 425 MMscfd, ~2,500m WD, delivery 2030. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
       "source_url": "https://www.worldoil.com/news/2026/5/29/petrobras-awards-sbm-offshore-contracts-for-two-brazil-fpsos/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     },
     {
       "name": "FPSO P-81 (SEAP I)",
@@ -3320,7 +3320,7 @@
       "oil_capacity_kboed": 120,
       "delivery": "2031-Q1",
       "status": "Under Construction",
-      "notes": "Sergipe-Alagoas SEAP I · Petrobras 컨소시엄 소유(BOT·임대 아님) · FID 2026-04\nSBM Fast4Ward 건조 + 6.5년 운영(2026-05 계약) · 개별·합산 계약액 미공시\n원유 120k bpd, 가스 355 MMscfd, 수심 약 2,500m · 인도 2031년 · SEAP I+II 합산 원유 24만 bbl/d, 가스 2,200만 m³/d\n[2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 355 MMscfd·수심 ~2,500m·2031년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
+      "notes": "Sergipe-Alagoas SEAP I · Petrobras 컨소시엄 소유(BOT·임대 아님) · FID 2026-04\nSBM Fast4Ward 건조 + 6.5년 운영(2026-05 계약) · 개별·합산 계약액 미공시\n원유 120k bpd, 가스 355 MMscfd, 수심 약 2,500m · 인도 2031년 · SEAP I+II 합산 원유 24만 bbl/d, 가스 2,200만 m³/d\n[2026-11-15 감사] SBM 3분기(2026-11-12): 공정률 25% 미만, 인도 2031년 — 변동 없음. [2026-10-13 감사] 소유 SBM→Petrobras 컨소시엄(SBM은 Fast4Ward 건조 + 6.5년 O&M, BOT·임대 아님). 120k bpd·가스 355 MMscfd·수심 ~2,500m·2031년 인도 확인. 계약액 3.9→null: 개별·합산 금액 미공시(기존 $7.8B 합산은 출처 미확인).",
       "detail": {
         "hull_type": "SBM Fast4Ward (신조)",
         "water_depth_m": 2500,
@@ -3335,9 +3335,9 @@
         "key_equipment_en": "SBM Fast4Ward MPF11 design. Sergipe-Alagoas deepwater (100km offshore). Gas sent ashore via a 134km subsea pipeline. FID Apr 2026; contract signed 2026-05-29.",
         "financing_en": "Owned by the Petrobras consortium; separate 6.5-year SBM O&M contract"
       },
-      "notes_en": "Sergipe-Alagoas SEAP I · owned by the Petrobras consortium (not BOT or lease) · FID Apr 2026\nSBM builds a Fast4Ward unit + 6.5-year O&M (May 2026 contract) · individual and combined values undisclosed\n120k bpd oil, 355 MMscfd gas, ~2,500m WD · delivery 2031 · SEAP I + II combined 240k bbl/d oil, 22 MMm³/d gas\n[2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 355 MMscfd, ~2,500m WD, delivery 2031. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
+      "notes_en": "Sergipe-Alagoas SEAP I · owned by the Petrobras consortium (not BOT or lease) · FID Apr 2026\nSBM builds a Fast4Ward unit + 6.5-year O&M (May 2026 contract) · individual and combined values undisclosed\n120k bpd oil, 355 MMscfd gas, ~2,500m WD · delivery 2031 · SEAP I + II combined 240k bbl/d oil, 22 MMm³/d gas\n[2026-11-15 audit] SBM Q3 (2026-11-12): <25% complete, handover 2031 — no change. [2026-10-13 audit] Owner SBM→Petrobras consortium (SBM builds the Fast4Ward unit and provides 6.5-year O&M; not a BOT/lease). Confirmed 120k bpd, gas 355 MMscfd, ~2,500m WD, delivery 2031. Contract value 3.9→null: neither individual nor combined value disclosed (the earlier $7.8B combined figure is unverified).",
       "source_url": "https://www.worldoil.com/news/2026/5/29/petrobras-awards-sbm-offshore-contracts-for-two-brazil-fpsos/",
-      "verified": "2026-10-13"
+      "verified": "2026-11-15"
     }
   ]
 }
