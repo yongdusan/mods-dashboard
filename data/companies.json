@@ -6,183 +6,401 @@
     {
       "id": "cooec",
       "name": "COOEC (Offshore Oil Engineering Co.)",
-      "country": "중국", "country_en": "China",
-      "group": "CNOOC 계열 상장사", "group_en": "Listed CNOOC subsidiary",
-      "roles": ["epc"],
+      "country": "중국",
+      "country_en": "China",
+      "group": "CNOOC 계열 상장사",
+      "group_en": "Listed CNOOC subsidiary",
+      "roles": [
+        "epc"
+      ],
       "summary": "중국 최대 해양 EPCI 업체 · 칭다오·톈진·주하이·잔장에 야드\nFPSO 실적: Penguins FPSO 건조(칭다오), Petrobras P-70 선체(M350), P-79 상부 모듈 납품(2025)\nKvaerner와 칭다오 합작 엔지니어링사(KCET), 해저 자회사 COOEC Subsea 보유\nPetrobras FPSO EPC 단독 수주는 아직 없음(업계 분석)",
       "summary_en": "China's largest offshore EPCI contractor · yards in Qingdao, Tianjin, Zhuhai and Zhanjiang\nFPSO record: built the Penguins FPSO (Qingdao), Petrobras P-70 hull (M350), delivered P-79 topside modules (2025)\nQingdao engineering JV with Kvaerner (KCET) and subsea arm COOEC Subsea\nNo standalone Petrobras FPSO EPC award yet (trade analysis)",
-      "source": "China Daily (2025-01-16); Upstream", "source_url": "https://regional.chinadaily.com.cn/tianjin/binhain/2025-01/16/c_1064963.htm",
+      "source": "China Daily (2025-01-16); Upstream",
+      "source_url": "https://regional.chinadaily.com.cn/tianjin/binhain/2025-01/16/c_1064963.htm",
       "verified": "2026-11-15"
     },
     {
       "id": "cenertech",
       "name": "CenerTech (CNOOC EnerTech)",
-      "country": "중국", "country_en": "China",
-      "group": "CNOOC 계열 상장사(600968.SH)", "group_en": "Listed CNOOC subsidiary (600968.SH)",
-      "roles": ["operator"],
+      "country": "중국",
+      "country_en": "China",
+      "group": "CNOOC 계열 상장사(600968.SH)",
+      "group_en": "Listed CNOOC subsidiary (600968.SH)",
+      "roles": [
+        "operator"
+      ],
       "summary": "CNOOC Energy Technology & Services · 사업부문에 FPSO 생산기술 서비스(운영) 포함\n2021년 SK이노베이션 Lufeng 12-3 유전에 신규 FPSO 공급 + 운영·유지보수 수주\nP-88에서 COOEC 컨소시엄 파트너로 보도됨 — 역할 미공개",
       "summary_en": "CNOOC Energy Technology & Services · segments include FPSO production technology services (operations)\n2021: supplied a new FPSO plus O&M to SK Innovation for Lufeng 12-3\nReported as a partner in COOEC's P-88 consortium — role undisclosed",
-      "source": "Splash247; company profiles (2021–2024)", "source_url": "https://splash247.com/?p=108074",
+      "source": "Splash247; company profiles (2021–2024)",
+      "source_url": "https://splash247.com/?p=108074",
       "verified": "2026-11-15"
     },
     {
       "id": "mota-engil",
       "name": "Mota-Engil",
-      "country": "포르투갈", "country_en": "Portugal",
-      "group": "상장 건설·엔지니어링 그룹", "group_en": "Listed construction and engineering group",
-      "roles": ["partner"],
+      "country": "포르투갈",
+      "country_en": "Portugal",
+      "group": "상장 건설·엔지니어링 그룹",
+      "group_en": "Listed construction and engineering group",
+      "roles": [
+        "partner"
+      ],
       "summary": "건설·인프라 그룹 — FPSO 선주·운영 실적은 확인하지 못함\nPetrobras와 R$16억 계약 체결 보도(Brasil Energia, 내용은 확인 못 함)\nP-88에서 COOEC 컨소시엄 파트너로 보도됨 — 역할 미공개",
       "summary_en": "Construction and infrastructure group — no FPSO owner/operator record found\nReported R$1.6bn contract with Petrobras (Brasil Energia; details not verified)\nReported as a partner in COOEC's P-88 consortium — role undisclosed",
-      "source": "Brasil Energia (PetróleoHoje)", "source_url": "https://brasilenergia.com.br/petroleoegas/empresas/mota-engil-firma-contrato-de-r-16-bilhao-com-a-petrobras",
+      "source": "Brasil Energia (PetróleoHoje)",
+      "source_url": "https://brasilenergia.com.br/petroleoegas/empresas/mota-engil-firma-contrato-de-r-16-bilhao-com-a-petrobras",
       "verified": "2026-11-15"
     },
     {
       "id": "shapoorji",
       "name": "Shapoorji Pallonji Oil & Gas",
-      "country": "인도", "country_en": "India",
-      "group": "Shapoorji Pallonji 그룹", "group_en": "Shapoorji Pallonji Group",
-      "roles": ["owner", "operator"],
+      "country": "인도",
+      "country_en": "India",
+      "group": "Shapoorji Pallonji 그룹",
+      "group_en": "Shapoorji Pallonji Group",
+      "roles": [
+        "owner",
+        "operator"
+      ],
       "summary": "스스로 '인도 유일의 FPSO 전문 회사'라고 소개 · Bumi Armada와 합작으로 FPSO 소유\nFPSO Armada Sterling V(ONGC, 10년 용선)는 이 회사의 네 번째 FPSO\n2025년 ONGC DWN 98/2 Cluster-II FPSO 운영·유지보수 낙찰(합작사)\n2025년 Petrobras FPSO 입찰에서 '가격이 너무 높다'는 판정에 이의 제기(Reuters 보도)",
       "summary_en": "Describes itself as India's only FPSO specialist · owns FPSOs in JVs with Bumi Armada\nFPSO Armada Sterling V (ONGC, 10-year charter) is its fourth FPSO\n2025: JV won O&M of the ONGC DWN 98/2 Cluster-II FPSO\n2025: appealed a Petrobras ruling that its FPSO bid was 'too costly' (Reuters)",
-      "source": "Indian Infrastructure (2022-11-16); Baird Maritime", "source_url": "https://indianinfrastructure.com/2022/11/16/shapoorji-pallonjis-fpso-armada-sterling-v-indias-largest-floater-achieves-sail-away-readiness/",
+      "source": "Indian Infrastructure (2022-11-16); Baird Maritime",
+      "source_url": "https://indianinfrastructure.com/2022/11/16/shapoorji-pallonjis-fpso-armada-sterling-v-indias-largest-floater-achieves-sail-away-readiness/",
       "verified": "2026-11-15"
     },
     {
       "id": "ocyan",
       "name": "Ocyan",
-      "country": "브라질", "country_en": "Brazil",
-      "group": "구 Odebrecht Óleo e Gás(2018년 개명)", "group_en": "Formerly Odebrecht Óleo e Gás (renamed 2018)",
-      "roles": ["operator"],
+      "country": "브라질",
+      "country_en": "Brazil",
+      "group": "구 Odebrecht Óleo e Gás(2018년 개명)",
+      "group_en": "Formerly Odebrecht Óleo e Gás (renamed 2018)",
+      "roles": [
+        "operator"
+      ],
       "summary": "브라질 유일의 브라질계 FPSO 운영사 · Altera Infrastructure와 50:50 합작으로 FPSO 4척 운영(2023), Pioneiro de Libra 포함\n시추 리그도 운영\n2023-12 미국 EIG가 $3.9억에 인수 계약 — 거래 완료 여부는 확인 못 함",
       "summary_en": "Brazil's only Brazilian FPSO operator · runs four FPSOs in a 50:50 JV with Altera Infrastructure (2023), incl. Pioneiro de Libra\nAlso operates drilling rigs\nDec 2023: US investor EIG agreed to buy it for $390M — closing not confirmed",
-      "source": "OE Digital (2023-12)", "source_url": "https://www.oedigital.com/amp/news/510452-eig-to-buy-brazil-s-only-fpso-operator-in-390m-deal",
+      "source": "OE Digital (2023-12)",
+      "source_url": "https://www.oedigital.com/amp/news/510452-eig-to-buy-brazil-s-only-fpso-operator-in-390m-deal",
       "verified": "2026-11-15"
     },
     {
       "id": "misc",
       "name": "MISC Berhad",
-      "country": "말레이시아", "country_en": "Malaysia",
-      "group": "Petronas 계열 해운·해양 회사", "group_en": "Petronas-group shipping and offshore company",
-      "roles": ["owner", "operator"],
+      "country": "말레이시아",
+      "country_en": "Malaysia",
+      "group": "Petronas 계열 해운·해양 회사",
+      "group_en": "Petronas-group shipping and offshore company",
+      "roles": [
+        "owner",
+        "operator"
+      ],
       "summary": "Petrobras 첫 FPSO: Marechal Duque de Caxias(Mero 3) — CIMC Raffles(옌타이) 개조, 2024-10-30 첫 생산\n원유 180k bpd, 저장 1.4 MMbbl, 가스 440 MMscfd · 30년 무입거 설계",
       "summary_en": "First Petrobras FPSO: Marechal Duque de Caxias (Mero 3) — converted at CIMC Raffles (Yantai), first oil Oct 30, 2024\n180k bpd oil, 1.4 MMbbl storage, 440 MMscfd gas · designed for 30 years without dry-docking",
-      "source": "MISC Group (2024-10-31)", "source_url": "https://www.miscgroup.com/media/media-releases/misc-group-hits-major-milestone-with-first-oil-for-fpso-marechal-duque-de-caxias",
+      "source": "MISC Group (2024-10-31)",
+      "source_url": "https://www.miscgroup.com/media/media-releases/misc-group-hits-major-milestone-with-first-oil-for-fpso-marechal-duque-de-caxias",
       "verified": "2026-11-15"
     },
     {
       "id": "himile",
       "name": "Himile",
-      "country": "중국", "country_en": "China",
-      "group": null, "group_en": null,
-      "roles": ["partner"],
+      "country": "중국",
+      "country_en": "China",
+      "group": null,
+      "group_en": null,
+      "roles": [
+        "partner"
+      ],
       "summary": "P-88 입찰에서 MISC의 파트너로 보도됨(Black Ridge Research)\n회사 개요·해양 실적은 1차 출처로 확인하지 못함",
       "summary_en": "Reported as MISC's partner in the P-88 tender (Black Ridge Research)\nCompany profile and offshore record not confirmed by a primary source",
-      "source": "Black Ridge Research — P-88 project profile", "source_url": "https://www.blackridgeresearch.com/project-profiles/albacora-fpso-p88-project-location-offshore-brazil-petrobras-developer-latest-updates-completion-date-details",
+      "source": "Black Ridge Research — P-88 project profile",
+      "source_url": "https://www.blackridgeresearch.com/project-profiles/albacora-fpso-p88-project-location-offshore-brazil-petrobras-developer-latest-updates-completion-date-details",
       "verified": "2026-11-15"
+    },
+    {
+      "id": "harbin-guanghan",
+      "name": "Harbin Guanghan Gas Turbine (GH Turbine)",
+      "country": "중국",
+      "country_en": "China",
+      "group": "CSSC 703연구소 계열",
+      "group_en": "Affiliated with CSSC's 703 Research Institute",
+      "roles": [
+        "partner"
+      ],
+      "summary": "가스터빈 제조사 · 3–50MW 중소형이 주력, 함정용 가스터빈에서 출발\nCGT25-EA: ISO 26MW, 천연가스·디젤 운전 중 전환 가능(회사 자료) · 산업용 CGT25-D는 30MW 표기 — 자료마다 출력이 다름\nCGT30: 열효율 39.5%(중국 매체), 출력 33MW(Brasil Energia) — 비공식 자료는 약 37MW\nPetrobras: P-88에 CGT25 선택지 허용, CGT30은 인증 중 — P-91 입찰 180일 연기 사유 중 하나로 보도\n중국 내 파이프라인 압축·해양 플랫폼용 100건 이상 수주(증권사 리포트) · CGT25-D가 러시아 Novatek 가스 승압 시설에서 72시간 시험 통과(보도) — Novatek은 미국 제재 대상",
+      "summary_en": "Gas turbine maker · focus on 3–50 MW units, rooted in naval gas turbines\nCGT25-EA: 26 MW ISO, online switching between gas and diesel (company) · industrial CGT25-D listed at 30 MW — ratings differ by source\nCGT30: 39.5% thermal efficiency (Chinese media), 33 MW (Brasil Energia) — unofficial sources say ~37 MW\nPetrobras: CGT25 allowed as an option for P-88; CGT30 in qualification — reported as one reason for the 180-day P-91 bid delay\n100+ domestic orders for pipeline compression and offshore platforms (broker note) · a CGT25-D reportedly passed a 72-hour test at a Russian Novatek gas booster station — Novatek is under US sanctions",
+      "source": "Brasil Energia (2026-07); GH Turbine; Oriental Securities",
+      "source_url": "https://brasilenergia.com.br/petroleoegas/ep/petrobras-adia-bid-para-construcao-do-fpso-de-buzios-12",
+      "verified": "2026-11-15",
+      "projects": [
+        {
+          "id": "petrobras-p88-albacora",
+          "label": "P-88 (Albacora)"
+        },
+        {
+          "id": "petrobras-p91-buzios12",
+          "label": "P-91 (Búzios 12)"
+        }
+      ]
     },
     {
       "id": "hanwha-ocean",
       "name": "Hanwha Ocean (한화오션)",
-      "country": "한국", "country_en": "South Korea",
-      "group": "한화그룹", "group_en": "Hanwha Group",
-      "roles": ["epc"],
+      "country": "한국",
+      "country_en": "South Korea",
+      "group": "한화그룹",
+      "group_en": "Hanwha Group",
+      "roles": [
+        "epc"
+      ],
       "summary": "Petrobras P-79(Búzios 8) 건조 — 2026-05 생산 개시\n2024년 싱가포르 Dyna-Mac 인수(현 Hanwha Offshore Singapore) — 2025년 Errea Wittu 상부 모듈 8기 납품\n2026-09 표준 FPSO 설계 ABS 인증(남미·서아프리카 심해용)\nMaydan Mahzam(카타르) EPC 입찰 참여 — 낙찰은 PTSC·Seatrium, COOEC",
       "summary_en": "Built Petrobras P-79 (Búzios 8) — production from May 2026\n2024: acquired Dyna-Mac Singapore (now Hanwha Offshore Singapore) — delivered eight Errea Wittu topside modules in 2025\nSept 2026: ABS certification of its standardized FPSO design (South America / West Africa deepwater)\nBid for Maydan Mahzam (Qatar) EPC — awarded to PTSC/Seatrium and COOEC",
-      "source": "Offshore Magazine (2026-09); Hanwha Offshore Singapore", "source_url": "https://www.offshore-mag.com/vessels/news/55404177/abs-issues-certification-to-hanwha-ocean-for-standardized-fpso-design",
+      "source": "Offshore Magazine (2026-09); Hanwha Offshore Singapore",
+      "source_url": "https://www.offshore-mag.com/vessels/news/55404177/abs-issues-certification-to-hanwha-ocean-for-standardized-fpso-design",
       "verified": "2026-11-15"
     },
     {
       "id": "hd-hhi",
       "name": "HD Hyundai Heavy Industries (HD현대중공업)",
-      "country": "한국", "country_en": "South Korea",
-      "group": "HD현대(HD한국조선해양)", "group_en": "HD Hyundai (HD KSOE)",
-      "roles": ["epc"],
+      "country": "한국",
+      "country_en": "South Korea",
+      "group": "HD현대(HD한국조선해양)",
+      "group_en": "HD Hyundai (HD KSOE)",
+      "roles": [
+        "epc"
+      ],
       "summary": "Petrobras P-78(Búzios 6) 선체 건조(350m) — 2025-12-31 첫 생산\n2026년 상반기 해양 수주 약 $1.13억(연간 목표의 약 3.5%, 업계 보도)\nMaydan Mahzam(카타르) EPC 입찰 참여",
       "summary_en": "Built the Petrobras P-78 (Búzios 6) hull (350m) — first oil Dec 31, 2025\nH1 2026 offshore orders ~$113M (~3.5% of the annual target, trade press)\nBid for Maydan Mahzam (Qatar) EPC",
-      "source": "PortNews; Herald Business (2026)", "source_url": "https://en.portnews.ru/news/394401/",
+      "source": "PortNews; Herald Business (2026)",
+      "source_url": "https://en.portnews.ru/news/394401/",
       "verified": "2026-11-15"
     },
     {
       "id": "shi",
       "name": "Samsung Heavy Industries (삼성중공업)",
-      "country": "한국", "country_en": "South Korea",
-      "group": "삼성그룹", "group_en": "Samsung Group",
-      "roles": ["epc"],
+      "country": "한국",
+      "country_en": "South Korea",
+      "group": "삼성그룹",
+      "group_en": "Samsung Group",
+      "roles": [
+        "epc"
+      ],
       "summary": "FLNG 건조 선두 — Coral Sul FLNG 건조, Coral Norte FLNG 2026-01-16 진수\n2026-06 Delfin LNG(미국) 첫 FLNG 약 $29억 수주 · 전 세계 신조 FLNG 11기 중 7기 수주(회사·언론 집계)",
       "summary_en": "Leading FLNG builder — built Coral Sul FLNG, launched Coral Norte FLNG on Jan 16, 2026\nJune 2026: ~$2.9B order for the first Delfin LNG (US) FLNG · 7 of 11 newbuild FLNGs worldwide (company/press count)",
-      "source": "Samsung Heavy Industries; Korea Times (2026-06-04)", "source_url": "https://samsungshi.com/En/Notice_news_view.aspx?no=136",
+      "source": "Samsung Heavy Industries; Korea Times (2026-06-04)",
+      "source_url": "https://samsungshi.com/En/Notice_news_view.aspx?no=136",
       "verified": "2026-11-15"
     },
     {
       "id": "seatrium",
       "name": "Seatrium",
-      "country": "싱가포르", "country_en": "Singapore",
-      "group": "구 Keppel O&M·Sembcorp Marine 합병", "group_en": "Merged Keppel O&M and Sembcorp Marine",
-      "roles": ["epc"],
+      "country": "싱가포르",
+      "country_en": "Singapore",
+      "group": "구 Keppel O&M·Sembcorp Marine 합병",
+      "group_en": "Merged Keppel O&M and Sembcorp Marine",
+      "roles": [
+        "epc"
+      ],
       "summary": "Petrobras P-80·P-82 건조(2026년 9·10월 출항), P-84·P-85 수주(합산 약 $8.15B), P-71 건조(BrasFELS)\nMaydan Mahzam Package 1을 PTSC와 함께 낙찰 · P-88에서는 Shapoorji 컨소시엄 파트너로 보도",
       "summary_en": "Built Petrobras P-80 and P-82 (sailed Sep/Oct 2026), holds P-84/P-85 (~$8.15B combined), built P-71 (BrasFELS)\nWon Maydan Mahzam Package 1 with PTSC · reported as a partner in Shapoorji's P-88 consortium",
-      "source": "이 사이트 FPSO 데이터(Petrobras·Seatrium 공시 기반)", "source_en": "This site's FPSO data (Petrobras/Seatrium disclosures)", "source_url": null,
+      "source": "이 사이트 FPSO 데이터(Petrobras·Seatrium 공시 기반)",
+      "source_en": "This site's FPSO data (Petrobras/Seatrium disclosures)",
+      "source_url": null,
       "verified": "2026-11-15"
     },
     {
-      "id": "yinson", "name": "Yinson Holdings", "country": "말레이시아", "country_en": "Malaysia", "group": null, "group_en": null,
-      "roles": ["owner", "operator"], "contractor": "Yinson Holdings",
+      "id": "yinson",
+      "name": "Yinson Holdings",
+      "country": "말레이시아",
+      "country_en": "Malaysia",
+      "group": null,
+      "group_en": null,
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "contractor": "Yinson Holdings",
       "summary": "FPSO 임대 사업자 — 선단·실적은 FPSO 컨트랙터 표와 FPSO 실적 페이지 참고\nP-88 최저가 입찰자, Petrobras와 상업 협상 중(2026-09~)",
       "summary_en": "FPSO lessor — see the FPSO contractor table and FPSO financials for fleet and results\nLowest bidder for P-88, in commercial negotiations with Petrobras (since Sep 2026)",
-      "source": "Brazil Energy Insight (2026-09-23)", "source_url": "https://brazilenergyinsight.com/2026/09/23/petrobras-enters-commercial-negotiations-with-yinson-for-albacora-fpso/", "verified": "2026-11-15"
+      "source": "Brazil Energy Insight (2026-09-23)",
+      "source_url": "https://brazilenergyinsight.com/2026/09/23/petrobras-enters-commercial-negotiations-with-yinson-for-albacora-fpso/",
+      "verified": "2026-11-15"
     },
     {
-      "id": "bw-offshore", "name": "BW Offshore", "country": "노르웨이", "country_en": "Norway", "group": "BW 그룹", "group_en": "BW Group",
-      "roles": ["owner", "operator"], "contractor": "BW Offshore",
+      "id": "bw-offshore",
+      "name": "BW Offshore",
+      "country": "노르웨이",
+      "country_en": "Norway",
+      "group": "BW 그룹",
+      "group_en": "BW Group",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "contractor": "BW Offshore",
       "summary": "FPSO 임대 사업자 — 선단·실적은 FPSO 컨트랙터 표와 FPSO 실적 페이지 참고\nP-88에 Saipem과 함께 입찰(5위)",
       "summary_en": "FPSO lessor — see the FPSO contractor table and FPSO financials for fleet and results\nBid for P-88 with Saipem (5th)",
-      "source": "BNamericas; Agência iNFRA (2026-08)", "source_url": null, "verified": "2026-11-15"
+      "source": "BNamericas; Agência iNFRA (2026-08)",
+      "source_url": null,
+      "verified": "2026-11-15"
     },
     {
-      "id": "saipem", "name": "Saipem", "country": "이탈리아", "country_en": "Italy", "group": null, "group_en": null,
-      "roles": ["epc", "owner"], "contractor": "Saipem",
+      "id": "saipem",
+      "name": "Saipem",
+      "country": "이탈리아",
+      "country_en": "Italy",
+      "group": null,
+      "group_en": null,
+      "roles": [
+        "epc",
+        "owner"
+      ],
+      "contractor": "Saipem",
       "summary": "해양 EPC·FPSO 운영 — FPSO Gimboa 소유, Kaminho FPSO EPC, Kutei North Hub FPSO EPCI(2026-07, 약 $2B)\nP-88에서 BW Offshore 컨소시엄 파트너로 보도",
       "summary_en": "Offshore EPC and FPSO operator — owns FPSO Gimboa, Kaminho FPSO EPC, Kutei North Hub FPSO EPCI (Jul 2026, ~$2B)\nReported as BW Offshore's partner for P-88",
-      "source": "이 사이트 FPSO·파이프라인 데이터", "source_en": "This site's FPSO and pipeline data", "source_url": null, "verified": "2026-11-15"
+      "source": "이 사이트 FPSO·파이프라인 데이터",
+      "source_en": "This site's FPSO and pipeline data",
+      "source_url": null,
+      "verified": "2026-11-15"
     }
   ],
   "tenders": [
     {
       "id": "p88-albacora",
       "project_id": "petrobras-p88-albacora",
-      "title": "P-88 (Albacora) FPSO — BOT 입찰", "title_en": "P-88 (Albacora) FPSO — BOT tender",
+      "title": "P-88 (Albacora) FPSO — BOT 입찰",
+      "title_en": "P-88 (Albacora) FPSO — BOT tender",
       "opened": "2026-08",
-      "status": "2026-09-22 Yinson 기술 제안 검증 완료, 상업 조건 협상 중(연내 타결 목표) — 계약 서명 전", "status_en": "Sept 22, 2026: Yinson technical proposal validated; commercial negotiation under way (aiming to close this year) — not yet signed",
+      "status": "2026-09-22 Yinson 기술 제안 검증 완료, 상업 조건 협상 중(연내 타결 목표) — 계약 서명 전",
+      "status_en": "Sept 22, 2026: Yinson technical proposal validated; commercial negotiation under way (aiming to close this year) — not yet signed",
       "partners_note": "가격은 Petrobras(Petronect) 공개 문서·Agência iNFRA 보도 기준. 컨소시엄 파트너 구성은 BNamericas 보도 기준이며 MISC+Himile만 Black Ridge로 교차 확인됨.",
       "partners_note_en": "Prices per Petrobras (Petronect) documents and Agência iNFRA. Consortium partners per BNamericas; only MISC + Himile cross-checked (Black Ridge).",
-      "source": "Agência iNFRA (2026-09-22); Brazil Energy Insight; BNamericas (2026-08)", "source_url": "https://brazilenergyinsight.com/2026/08/11/yinson-offers-the-lowest-bid-in-the-tender-for-the-new-albacora-field-fpso/",
+      "source": "Agência iNFRA (2026-09-22); Brazil Energy Insight; BNamericas (2026-08)",
+      "source_url": "https://brazilenergyinsight.com/2026/08/11/yinson-offers-the-lowest-bid-in-the-tender-for-the-new-albacora-field-fpso/",
       "verified": "2026-11-15",
       "bids": [
-        { "rank": 1, "lead": "yinson", "partners": [], "price_busd": 2.297 },
-        { "rank": 2, "lead": "cooec", "partners": ["mota-engil", "cenertech"], "price_busd": 2.842 },
-        { "rank": 3, "lead": "shapoorji", "partners": ["ocyan", "seatrium"], "price_busd": 2.9 },
-        { "rank": 4, "lead": "misc", "partners": ["himile"], "price_busd": 3.056 },
-        { "rank": 5, "lead": "bw-offshore", "partners": ["saipem"], "price_busd": 3.191 }
+        {
+          "rank": 1,
+          "lead": "yinson",
+          "partners": [],
+          "price_busd": 2.297
+        },
+        {
+          "rank": 2,
+          "lead": "cooec",
+          "partners": [
+            "mota-engil",
+            "cenertech"
+          ],
+          "price_busd": 2.842
+        },
+        {
+          "rank": 3,
+          "lead": "shapoorji",
+          "partners": [
+            "ocyan",
+            "seatrium"
+          ],
+          "price_busd": 2.9
+        },
+        {
+          "rank": 4,
+          "lead": "misc",
+          "partners": [
+            "himile"
+          ],
+          "price_busd": 3.056
+        },
+        {
+          "rank": 5,
+          "lead": "bw-offshore",
+          "partners": [
+            "saipem"
+          ],
+          "price_busd": 3.191
+        }
       ]
     },
     {
       "id": "maydan-mahzam-epc",
       "project_id": "qatarenergy-maydan-mahzam",
-      "title": "Maydan Mahzam 재개발 — EPC 패키지", "title_en": "Maydan Mahzam redevelopment — EPC packages",
+      "title": "Maydan Mahzam 재개발 — EPC 패키지",
+      "title_en": "Maydan Mahzam redevelopment — EPC packages",
       "opened": "2026-06",
-      "status": "Package 1: PTSC+Seatrium 선정(본계약 2026-10 서명 예정, 서명 보도 미확인) · Package 2: COOEC 수주 발표(2026-10-09)", "status_en": "Package 1: PTSC + Seatrium selected (main contract due Oct 2026; signing not yet reported) · Package 2: COOEC award announced (Oct 9, 2026)",
-      "partners_note": "제안가는 공개되지 않음. 기타 입찰사 목록은 MEED 보도 기준.", "partners_note_en": "Bid prices not disclosed. Other bidders per MEED.",
-      "source": "MEED (2026-09-16, 2026-10-09)", "source_url": "https://guest.meed.com/qatarenergy-selects-contractors-for-offshore-oil-field-expansion/",
+      "status": "Package 1: PTSC+Seatrium 선정(본계약 2026-10 서명 예정, 서명 보도 미확인) · Package 2: COOEC 수주 발표(2026-10-09)",
+      "status_en": "Package 1: PTSC + Seatrium selected (main contract due Oct 2026; signing not yet reported) · Package 2: COOEC award announced (Oct 9, 2026)",
+      "partners_note": "제안가는 공개되지 않음. 기타 입찰사 목록은 MEED 보도 기준.",
+      "partners_note_en": "Bid prices not disclosed. Other bidders per MEED.",
+      "source": "MEED (2026-09-16, 2026-10-09)",
+      "source_url": "https://guest.meed.com/qatarenergy-selects-contractors-for-offshore-oil-field-expansion/",
       "verified": "2026-11-15",
       "bids": [
-        { "rank": null, "lead": "PTSC", "partners": ["seatrium"], "price_busd": null, "result": "Package 1 선정", "result_en": "Package 1 selected" },
-        { "rank": null, "lead": "cooec", "partners": [], "price_busd": null, "result": "Package 2 수주", "result_en": "Package 2 awarded" },
-        { "rank": null, "lead": "hanwha-ocean", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" },
-        { "rank": null, "lead": "hd-hhi", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" },
-        { "rank": null, "lead": "L&T", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" },
-        { "rank": null, "lead": "saipem", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" },
-        { "rank": null, "lead": "McDermott", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" },
-        { "rank": null, "lead": "Allseas", "partners": [], "price_busd": null, "result": "입찰 참여", "result_en": "Bid" }
+        {
+          "rank": null,
+          "lead": "PTSC",
+          "partners": [
+            "seatrium"
+          ],
+          "price_busd": null,
+          "result": "Package 1 선정",
+          "result_en": "Package 1 selected"
+        },
+        {
+          "rank": null,
+          "lead": "cooec",
+          "partners": [],
+          "price_busd": null,
+          "result": "Package 2 수주",
+          "result_en": "Package 2 awarded"
+        },
+        {
+          "rank": null,
+          "lead": "hanwha-ocean",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        },
+        {
+          "rank": null,
+          "lead": "hd-hhi",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        },
+        {
+          "rank": null,
+          "lead": "L&T",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        },
+        {
+          "rank": null,
+          "lead": "saipem",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        },
+        {
+          "rank": null,
+          "lead": "McDermott",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        },
+        {
+          "rank": null,
+          "lead": "Allseas",
+          "partners": [],
+          "price_busd": null,
+          "result": "입찰 참여",
+          "result_en": "Bid"
+        }
       ]
     }
   ]

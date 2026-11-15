@@ -1181,6 +1181,7 @@
           <div class="co-meta">${esc(c.country)}${c.group ? ' · ' + esc(c.group) : ''} ${(c.roles || []).map(r => `<span class="co-role">${esc(ROLE_LABEL[r] || r)}</span>`).join('')}</div></div>
         ${OMI.factsHtml(c.summary)}
         ${ts.length ? `<div class="co-tenders">${ts.map(t => `<a href="${pipeHref(t)}">${esc(t.title)} →</a>`).join('')}</div>` : ''}
+        ${(c.projects || []).length ? `<div class="co-tenders">${c.projects.map(pr => `<a href="pipeline.html#open=${encodeURIComponent(pr.id)}">${esc(pr.label)} →</a>`).join('')}</div>` : ''}
         ${c.contractor ? `<div class="co-tenders"><a href="#owner=${encodeURIComponent(c.contractor)}" data-owner="${esc(c.contractor)}">Fleet table →</a></div>` : ''}
         <div class="co-src">${src}${OMI.src({ verified: c.verified, source_url: c.source_url })}</div>
       </div>`;
