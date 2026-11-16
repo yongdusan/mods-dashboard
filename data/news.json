@@ -1,8 +1,23 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 161,
+      "date": "2026-11-09",
+      "sector": "E&P/CAPEX",
+      "category": "M&A",
+      "title": "QatarEnergy acquires 25% of Chevron-operated PEL82 offshore Namibia",
+      "summary": "QatarEnergy가 Chevron으로부터 나미비아 해상 PEL82(블록 2112B·2212A, 수심 약 350~2,300m) 지분 25%를 인수하기로 했으며 규제 승인이 필요합니다. 거래 후 지분은 Chevron 55%, QatarEnergy 25%, Namcor 10%, Custos Energy 10%입니다. 두 회사는 오렌지 분지 PEL90에서도 이미 협력 중이며 QatarEnergy가 27.5%를 보유합니다.",
+      "summary_en": "QatarEnergy agreed to acquire a 25% interest in Chevron-operated PEL82 offshore Namibia (blocks 2112B and 2212A, water depth about 350-2,300 m), subject to regulatory approvals. Post-deal interests: Chevron 55%, QatarEnergy 25%, Namcor 10% and Custos Energy 10%. The two companies already partner in Orange Basin PEL90, where QatarEnergy holds 27.5%.",
+      "companies": [
+        "QatarEnergy",
+        "Chevron"
+      ],
+      "source": "Rigzone",
+      "url": "https://www.rigzone.com/news/qatarenergy_chevron_expand_exploration_partnership_offshore_namibia-09-nov-2026-185039-article/"
+    },
     {
       "id": 160,
       "date": "2026-11-13",
@@ -1930,20 +1945,6 @@
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html",
       "summary_en": "Golar LNG reported Q1 2026 revenue of $138 million (+120% YoY) and EBITDA of $106 million (+158%), driven by FLNG Hilli at full utilization and FLNG Gimi producing above contract. It hired Goldman Sachs to advise on strategic alternatives to accelerate FLNG growth."
-    },
-    {
-      "id": 41,
-      "date": "2026-05-18",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "BW Offshore Q1 2026: 100% Utilization; EBITDA Guidance Cut on BW Opal Downtime",
-      "summary": "BW Offshore가 Q1 2026 매출 $130M, EBITDA $48M을 기록했으며 함대 전체 가중평균 가동률 100%를 달성했다. BW Opal의 압축기 씰 교체 완료로 5월 초 가스 생산이 재개됐으나, 다운타임 영향을 반영해 연간 EBITDA 가이던스를 $3.4~3.7억에서 $3.1~3.4억으로 하향 조정했다. Equinor의 Bay du Nord FPSO FEED 계약 체결로 파이프라인은 확대됐다.",
-      "companies": [
-        "BW Offshore"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/05/18/3296285/0/en/BW-Offshore-First-quarter-results-2026.html",
-      "summary_en": "BW Offshore reported Q1 2026 revenue of $130 million and EBITDA of $48 million with 100% fleet utilization. BW Opal resumed gas production in early May after a compressor seal replacement, and full-year EBITDA guidance was cut to $310-340 million; a FEED for Equinor's Bay du Nord FPSO expanded the pipeline."
     }
   ],
   "fact_check_note": "2026-10-08: 자동 작성(Haiku) 기사 86건을 원문과 대조해 요약 재작성(국/영), 오류 제목 정정, 2024년 기사 오등재 1건(id 34) 삭제."
