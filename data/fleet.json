@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -4194,15 +4194,15 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "verified": "2026-10-13",
-      "status": "On Contract",
-      "operator": "Mellitah Oil and Gas",
+      "verified": "2026-11-16",
+      "status": "Idle",
+      "operator": null,
       "location": "Libya",
-      "contract_start": "2025-03",
-      "contract_end": "2026-10",
+      "contract_start": null,
+      "contract_end": null,
       "day_rate_kusd": null,
-      "data_note": "Mellitah Oil and Gas 리비아 2025-03~2026-10, 연장 옵션(FSR 2026-08-11)\n계약 종료월이 지났으나 연장 여부 미공시 — 다음 FSR에서 확인\n데이레이트 미공시",
-      "data_note_en": "Mellitah Oil and Gas, Libya, Mar 2025–Oct 2026, with option to extend (FSR 2026-08-11)\nContract end month has passed; extension not disclosed — check at the next FSR\nDayrate not disclosed"
+      "data_note": "계약 없음(확인된 후속 계약 없음)\n비고: 이전 Mellitah(리비아) 계약 2026-10 종료, 연장 옵션 행사 여부 미공시 — 다음 FSR에서 확인\n데이레이트 미공시\n[2026-11-16 감사] On Contract→Idle: 계약 종료월(2026-10) 경과, 연장·후속 계약 공시 없음(Borr FSR 2026-08-11 이후 신규 FSR 미발표)",
+      "data_note_en": "No contract (no successor contract confirmed)\nNote: prior Mellitah (Libya) contract ended Oct 2026; whether the extension option was exercised is not disclosed — check at the next FSR\nDayrate not disclosed\n[2026-11-16 audit] On Contract→Idle: contract end month (Oct 2026) passed, no extension or follow-on contract disclosed (no new Borr FSR since 2026-08-11)"
     },
     {
       "name": "Borr Freyja",
