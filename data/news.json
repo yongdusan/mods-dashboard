@@ -1,8 +1,83 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "update_frequency": "Weekly review + ad hoc for major contracts, earnings and project milestones",
   "update_frequency_ko": "주 1회 정기 점검 + 주요 계약/실적/프로젝트 이벤트 발생 시 수시 업데이트",
   "items": [
+    {
+      "id": 162,
+      "date": "2026-11-20",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "TechnipFMC wins $500M–1B subsea contract for ExxonMobil's Longtail, Guyana",
+      "summary": "TechnipFMC가 엑손모빌 가이아나의 Stabroek 광구 여덟 번째 개발 프로젝트 Longtail의 해저생산시스템(Subsea 2.0 트리·매니폴드·제어) 계약을 5억~10억 달러 규모로 수주했다. 별도로 7,500만~2.5억 달러 규모의 플렉서블 라이저 계약도 체결했다. FPSO는 가스 12억 scf/d, 콘덴세이트 25만 b/d 처리 설계이며 약 45개 해저 생산·주입정이 예상된다.",
+      "summary_en": "TechnipFMC won a $500M–$1B contract from ExxonMobil Guyana for the subsea production system (Subsea 2.0 trees, manifolds, controls) of Longtail, the eighth development in the Stabroek block. A separate $75M–$250M flexible riser contract was also placed. The FPSO is designed for 1.2 Bscf/d of gas and 250,000 b/d of condensate, with about 45 subsea production and injection wells expected.",
+      "companies": [
+        "TechnipFMC",
+        "ExxonMobil"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/20/technipfmc-scores-double-offshore-guyana"
+    },
+    {
+      "id": 163,
+      "date": "2026-11-17",
+      "sector": "FPSO/FLNG",
+      "category": "Contract",
+      "title": "ExxonMobil moves Guyana's Longtail into execution; SBM gets FPSO, Saipem SURF",
+      "summary": "엑손모빌이 Guyana Stabroek 광구 여덟 번째 프로젝트 Longtail을 실행 단계로 진행하며, SBM Offshore가 Fast4Ward 선체 기반 FPSO를 수주했다(엑손모빌 가이아나 6번째 FPSO). Saipem은 약 4년간 SURF EPCI를 수행하며 계약 규모는 약 10억~15억 달러로 추정된다. FPSO는 약 1,750m 수심에 스프레드 계류된다.",
+      "summary_en": "ExxonMobil is moving Longtail, the eighth Stabroek development in Guyana, into execution; SBM Offshore won the FPSO (its sixth for ExxonMobil Guyana) based on its Fast4Ward hull. Saipem will perform SURF EPCI over about four years, with the contract estimated at $1–1.5 billion. The FPSO will be spread-moored in about 1,750 m of water.",
+      "companies": [
+        "ExxonMobil",
+        "SBM Offshore",
+        "Saipem"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/17/exxonmobil-pushes-ahead-with-guyanas-eighth-oil-project-as-saipem-gets-the-all-clear-and-sbm-offshore-bags-fpso-job"
+    },
+    {
+      "id": 164,
+      "date": "2026-11-16",
+      "sector": "FPSO/FLNG",
+      "category": "Fleet",
+      "title": "ExxonMobil starts Uaru production offshore Guyana with MODEC FPSO",
+      "summary": "엑손모빌이 Stabroek 광구 다섯 번째 프로젝트 Uaru의 생산을 시작했다. MODEC의 FPSO Errea Wittu(수심 약 1,690m)가 투입됐고 가이아나 설치 용량은 110만 b/d로 늘었다. Uaru 초기 생산 목표는 25만 b/d이며 2027년 1분기 도달 예정이다.",
+      "summary_en": "ExxonMobil started production at Uaru, the fifth Stabroek development. MODEC's FPSO Errea Wittu (about 1,690 m water depth) is deployed, lifting Guyana's installed capacity to 1.1 million b/d. Uaru's initial production target is 250,000 b/d, expected in Q1 2027.",
+      "companies": [
+        "ExxonMobil",
+        "MODEC"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/16/exxonmobil-brings-online-its-fifth-oil-project-offshore-guyana"
+    },
+    {
+      "id": 165,
+      "date": "2026-11-19",
+      "sector": "Drilling",
+      "category": "Outlook",
+      "title": "Borr Drilling sees encouraging signs in shallow-water rig market",
+      "summary": "Borr Drilling은 서아프리카·동남아 천해 시추 수요 개선을 언급했으며 최신 잭업 가동률은 약 93%(9개월 전 약 90%)다. 올해 누적 30건·약 6,300일·8.1억 달러 백로그를 확보했고 계약 커버리지는 2026년 79%, 2027년 52%다. 한편 Prospector 5가 10월 24일 가봉 해상에서 침몰해 전손 처리됐다.",
+      "summary_en": "Borr Drilling cited improving shallow-water demand in West Africa and Southeast Asia, with modern jack-up marketed utilization at about 93% (up from about 90% nine months earlier). Year to date it has 30 commitments, about 6,300 days and $810 million of backlog; contract coverage is 79% for 2026 and 52% for 2027. Separately, Prospector 5 sank off Gabon on October 24 and was declared a total loss.",
+      "companies": [
+        "Borr Drilling"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/19/borr-drillings-ceo-sees-encouraging-signs-in-rig-market-activity"
+    },
+    {
+      "id": 166,
+      "date": "2026-11-18",
+      "sector": "Drilling",
+      "category": "Contract",
+      "title": "Saipem's Scarabeo 9 secures Egypt and Suriname drilling work through 2028",
+      "summary": "Saipem의 반잠수식 Scarabeo 9이 이집트(Burullus Gas, 3개 정, 2027년 1분기 시작)와 수리남(TotalEnergies, 5개 정 + 옵션 5개 정) 시추 계약을 확보했다. 두 계약 합계는 약 1.81억 달러이며 가동은 2028년까지 이어진다.",
+      "summary_en": "Saipem's Scarabeo 9 semisubmersible secured drilling contracts in Egypt (Burullus Gas, three wells, starting Q1 2027) and Suriname (TotalEnergies, five wells plus an option for five more). The two contracts total about $181 million, extending operations through 2028.",
+      "companies": [
+        "Saipem",
+        "TotalEnergies"
+      ],
+      "source": "Offshore Energy",
+      "url": "https://www.offshore-energy.biz/2026/11/18/saipem-rig-lines-up-multimillion-dollar-gigs-off-egypt-and-surinames-coasts"
+    },
     {
       "id": 161,
       "date": "2026-11-09",
@@ -1888,63 +1963,6 @@
       "url": "https://www.rigzone.com/news/noble_appoints_halliburton_ceo_as_director-27-may-2026-183790-article/?rss=true",
       "summary_en": "Noble Corporation's board appointed Jeff Miller, Halliburton's chairman, president and CEO, as a director.",
       "fact_checked": "2026-10-08"
-    },
-    {
-      "id": 38,
-      "date": "2026-05-26",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Vantage Drilling Q1 2026: Returns to Profit, ONGC Contract Begins Ramp-Up",
-      "summary": "Vantage Drilling이 Q1 2026에 순이익 $0.4M을 기록하며 전년 동기 순손실 $18.9M에서 흑자 전환에 성공했다. ONGC와의 3년·$261M 규모 Platinum Explorer 계약 준비를 위해 보증금 $17.9M을 납부했으며, 향후 실적 개선의 기반이 마련됐다. 현금 잔고는 $65.3M으로 감소했으나 계약 커버리지 확대에 따른 현금흐름 개선이 기대된다.",
-      "companies": [
-        "Vantage Drilling",
-        "ONGC"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/05/26/3301130/0/en/Vantage-Drilling-International-Ltd-Reports-First-Quarter-2026-Results.html",
-      "summary_en": "Vantage Drilling returned to profit in Q1 2026 with net income of $0.4 million versus an $18.9 million loss a year earlier. It posted a $17.9 million deposit ahead of the three-year, $261 million ONGC contract for Platinum Explorer; cash fell to $65.3 million."
-    },
-    {
-      "id": 39,
-      "date": "2026-05-21",
-      "sector": "Drilling",
-      "category": "Outlook",
-      "title": "Borr CEO: Middle East Conflict Boosts Long-Term Jack-Up Outlook Despite Near-Term Delays",
-      "summary": "Borr Drilling CEO Bruno Morand은 중동 분쟁이 단기 텐더 지연을 야기하지만, 에너지 안보 부각과 유가 상승을 통해 장기 오프쇼어 드릴링 전망을 강화하고 있다고 밝혔다. 유가 상승 효과가 데이레이트와 활동량에 반영되기까지 6~12개월이 소요될 것으로 예상하며, 2027~2028년 전망에 자신감을 표명했다. 단기 단가 압박에도 불구하고 잭업 공급 타이트 구조는 유지되고 있다.",
-      "companies": [
-        "Borr Drilling"
-      ],
-      "source": "Offshore Energy",
-      "url": "https://www.offshore-energy.biz/borr-drillings-ceo-middle-east-conflict-brings-uncertainty-but-empowers-long-term-rig-outlook/",
-      "summary_en": "Borr Drilling CEO Bruno Morand said the Middle East conflict is delaying some tenders but strengthens the long-term offshore outlook through energy security and higher oil prices, expecting the effect on dayrates and activity within 6-12 months and expressing confidence in 2027-2028 despite near-term pricing pressure."
-    },
-    {
-      "id": 37,
-      "date": "2026-05-20",
-      "sector": "Drilling",
-      "category": "Earnings",
-      "title": "Borr Drilling Q1 2026 Disappoints: Revenue Falls QoQ Despite High Utilization",
-      "summary": "Borr Drilling의 Q1 2026 매출이 $247M으로 전분기($259M) 대비 4.8% 감소하며 시장 기대치를 하회, 주가가 급락했다. 가동률 97%의 높은 운영 효율성에도 불구하고 평균 Day rate 하락과 Noble 잭업 5기 인수 비용 부담이 실적을 눌렀다. 2026년 커버리지는 71%(평균 $137K)로, 근시일 가시성은 확보했으나 단가 압박이 지속되고 있다.",
-      "companies": [
-        "Borr Drilling"
-      ],
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-borr-drilling-q1-2026-results-disappoint-stock-drops-93CH-4704355",
-      "summary_en": "Borr Drilling's Q1 2026 revenue fell 4.8% quarter on quarter to $247 million, missing expectations, despite 97% utilization, as average dayrates eased and costs of the five Noble jack-ups weighed. 2026 coverage stands at 71% at an average of about $137,000 a day."
-    },
-    {
-      "id": 35,
-      "date": "2026-05-20",
-      "sector": "FPSO/FLNG",
-      "category": "Earnings",
-      "title": "Golar LNG Q1 2026: EBITDA +158% YoY; Goldman Sachs Hired for Strategic Review",
-      "summary": "Golar LNG이 Q1 2026 매출 $138M(+120% YoY), EBITDA $106M(+158% YoY)의 강력한 실적을 발표했다. FLNG Hilli 100% 가동률 유지 및 FLNG Gimi의 계약 초과 생산이 성장을 견인했다. 전략적 대안 검토(FLNG 성장 가속화·주주가치 제고) 자문사로 골드만삭스를 선임, M&A 가능성에 시장의 관심이 쏠리고 있다.",
-      "companies": [
-        "Golar LNG"
-      ],
-      "source": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/05/20/3298304/0/en/Golar-LNG-Limited-Interim-results-for-the-period-ended-March-31-2026.html",
-      "summary_en": "Golar LNG reported Q1 2026 revenue of $138 million (+120% YoY) and EBITDA of $106 million (+158%), driven by FLNG Hilli at full utilization and FLNG Gimi producing above contract. It hired Goldman Sachs to advise on strategic alternatives to accelerate FLNG growth."
     }
   ],
   "fact_check_note": "2026-10-08: 자동 작성(Haiku) 기사 86건을 원문과 대조해 요약 재작성(국/영), 오류 제목 정정, 2024년 기사 오등재 1건(id 34) 삭제."
