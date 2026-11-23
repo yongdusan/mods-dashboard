@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "data_quality": {
     "contract_data": {
       "confidence": "medium",
@@ -71,8 +71,8 @@
   },
   "prev_week": {
     "total": 161,
-    "on_contract": 117,
-    "idle_stacked": 44
+    "on_contract": 116,
+    "idle_stacked": 45
   },
   "rigs": [
     {
@@ -1463,9 +1463,9 @@
       "source": "Borr Drilling Fleet Status Report, Aug 11 2026",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-3.htm",
       "confidence": "high",
-      "data_note": "Foxtrot International 코트디부아르 2026-02~2027-03(2027-02에서 연장)\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Foxtrot International, Ivory Coast, 2026-02~2027-03. Operating. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).",
-      "verified": "2026-10-13",
-      "data_note_en": "Foxtrot International, Ivory Coast, Feb 2026–Mar 2027 (extended from Feb 2027)\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Foxtrot International, Ivory Coast, 2026-02–2027-03. Operating. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill)."
+      "data_note": "Foxtrot International 코트디부아르 2026-02~2027-03(2027-02에서 연장)\n데이레이트 미공시\n[2026-10-13] FSR(2026-08-11): Foxtrot International, Ivory Coast, 2026-02~2027-03. Operating. Dayrate 미공시. 사양은 FSR 기준으로 정정(기존 사양 블록은 출처 없는 일괄 입력).\n[2026-11-23 감사] Borr FSR(2026-11-18) 대조 — Foxtrot, Ivory Coast, 2026-02~2027-03, Operating, 변동 없음",
+      "verified": "2026-11-23",
+      "data_note_en": "Foxtrot International, Ivory Coast, Feb 2026–Mar 2027 (extended from Feb 2027)\nDayrate not disclosed\n[2026-10-13] FSR (2026-08-11): Foxtrot International, Ivory Coast, 2026-02–2027-03. Operating. Dayrate not disclosed. Specs corrected to the FSR (the previous specs block was an unsourced blanket fill).\n[2026-11-23 audit] Borr FSR (2026-11-18) checked — Foxtrot, Ivory Coast, Feb 2026–Mar 2027, operating; no change"
     },
     {
       "name": "Borr Ran",
@@ -2285,8 +2285,9 @@
       "source_url": "https://www.stena-drilling.com/stena-drilling-sign-a-new-contract-with-shell-offshore-inc-for-stena-evolution/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-evolution/",
       "confidence": "medium",
-      "data_note": "Shell 계약 2024년 2분기 개시, 기본 5년 + 옵션(Stena 발표)\n리그별 데이레이트 미공시",
-      "data_note_en": "Shell contract from Q2 2024, primary term 5 years plus options (Stena announcement)\nRig-level dayrate not disclosed"
+      "data_note": "Shell 계약 2024년 2분기 개시, 기본 5년 + 옵션(Stena 발표)\n리그별 데이레이트 미공시\n[2026-11-23 감사] 변동 없음 — Stena 발표 대조: Shell, US GoM, 2024-Q2 개시, 기본 5년(contract_end 2029-06은 개시+5년 환산값, 공시 종료일 아님)",
+      "data_note_en": "Shell contract from Q2 2024, primary term 5 years plus options (Stena announcement)\nRig-level dayrate not disclosed\n[2026-11-23 audit] No change — checked against Stena release: Shell, US GoM, start Q2 2024, 5-year primary term (contract_end 2029-06 is start + 5 years, not a disclosed end date)",
+      "verified": "2026-11-23"
     },
     {
       "name": "Stena Forth",
@@ -2343,8 +2344,9 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-icemax/",
       "confidence": "medium",
-      "data_note": "이집트 4공 작업 2026-02 개시, 약 190일 + 옵션(종료 추정 2026-08)(Stena 발표)\n2026-10-08 기준 옵션 행사·후속 계약 미확인이라 계약 정보를 비움 — 옵션 작업 중일 수 있어 재확인 필요",
-      "data_note_en": "Four-well Egypt campaign from Feb 2026, ~190 days plus options (estimated end Aug 2026) (Stena)\nNo option exercise or follow-on confirmed as of 2026-10-08, so contract fields are cleared — the rig may still be on options; re-check"
+      "data_note": "이집트 4공 작업 2026-02 개시, 약 190일 + 옵션(종료 추정 2026-08)(Stena 발표)\n2026-10-08 기준 옵션 행사·후속 계약 미확인이라 계약 정보를 비움 — 옵션 작업 중일 수 있어 재확인 필요\n[2026-11-23 감사] 변동 없음 — Stena 계약현황(2025-08-07 발표) 외 신규 공시 없음, 옵션/후속 계약 미확인",
+      "data_note_en": "Four-well Egypt campaign from Feb 2026, ~190 days plus options (estimated end Aug 2026) (Stena)\nNo option exercise or follow-on confirmed as of 2026-10-08, so contract fields are cleared — the rig may still be on options; re-check\n[2026-11-23 audit] No change — no new disclosure beyond Stena contract status update (2025-08-07); option/follow-on unconfirmed",
+      "verified": "2026-11-23"
     },
     {
       "name": "Stena Don",
@@ -2372,8 +2374,9 @@
       "source_url": "https://www.stena-drilling.com/fleet-contract-status-update/",
       "fleet_source_url": "https://www.stena-drilling.com/our-fleet/stena-don/",
       "confidence": "medium",
-      "data_note": "영국 4공 프로그램 2026-02 개시, 약 10개월 · 옵션 행사 시 2028년 말까지(Stena 발표)\n리그별 데이레이트 미공시",
-      "data_note_en": "Four-well UK programme from Feb 2026, ~10 months · options could extend to end-2028 (Stena)\nRig-level dayrate not disclosed"
+      "data_note": "영국 4공 프로그램 2026-02 개시, 약 10개월 · 옵션 행사 시 2028년 말까지(Stena 발표)\n리그별 데이레이트 미공시\n[2026-11-23 감사] 변동 없음 — Stena 계약현황(2025-08-07 발표) 외 신규 공시 없음",
+      "data_note_en": "Four-well UK programme from Feb 2026, ~10 months · options could extend to end-2028 (Stena)\nRig-level dayrate not disclosed\n[2026-11-23 audit] No change — no new disclosure beyond Stena contract status update (2025-08-07)",
+      "verified": "2026-11-23"
     },
     {
       "name": "Tungsten Explorer",
