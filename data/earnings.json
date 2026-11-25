@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-25",
   "companies": [
     {
       "name": "Transocean",
@@ -1162,6 +1162,32 @@
             "Technical utilization 98.4%, economic utilization 96.4% (utilization_pct uses economic utilization)",
             "21 contracts and $541M of backlog added YTD; 2026 coverage 73% (average ~$134k/day) — backlog $1.04B (6/30) → $1.13B (at results date)",
             "After quarter-end (July) completed the $287M acquisition of 5 premium jack-ups via a 50/50 JV"
+          ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 263.1,
+          "adj_ebitda_musd": 78.9,
+          "ebitda_margin_pct": 30.0,
+          "utilization_pct": 98,
+          "avg_day_rate_kusd": null,
+          "backlog_busd": 1.11,
+          "source": "Q3 2026 Earnings (Nov 2026) — utilization은 가동 리그 기준 technical 98.0%(economic 97.3%), 평균 day rate 미공시, backlog는 Dayrate Equivalent Backlog",
+          "source_en": "Q3 2026 Earnings (Nov 2026) — utilization is technical 98.0% for working rigs (economic 97.3%), average day rate not disclosed, backlog is Dayrate Equivalent Backlog",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126044994/ef20085971_ex99-1.htm",
+          "highlights": [
+            "매출 $263.1M(QoQ +13%), Adj EBITDA $78.9M(QoQ +80%) — 순손실 $38.7M(Q2 부채 상환 비용 $176.3M 제외 효과로 $202.7M 개선)",
+            "10/24 Prospector 5가 가봉 해상에서 침몰, 전손 처리 — 보험가액 $200M, 재무 영향 평가 중",
+            "2026년 YTD 계약 30건, 약 6,300일·$810M backlog 추가; 최근 9건 약 $269M(Nigeria Hild 포함)",
+            "계약 커버리지 2026년 79%, 2027년 52%",
+            "가이던스: Q4 2026 Adj EBITDA는 Q3와 대체로 유사, 2027년 전체는 2026년과 유사(Q1 2027 일시 감소 후 Q4 2027 강한 증가)"
+          ],
+          "highlights_en": [
+            "Revenue $263.1M (+13% q/q), Adj EBITDA $78.9M (+80% q/q) — net loss $38.7M (improved $202.7M, as Q2 included a $176.3M debt extinguishment charge)",
+            "Prospector 5 sank offshore Gabon on 24 Oct and was declared a total loss — insured value $200M, financial impact under assessment",
+            "30 contract commitments YTD 2026, ~6,300 days and $810M of backlog added; latest 9 awards ~$269M (incl. Hild offshore Nigeria)",
+            "Contract coverage 79% for 2026 and 52% for 2027",
+            "Guidance: Q4 2026 Adj EBITDA broadly in line with Q3; FY2027 broadly in line with 2026 (Q1 2027 lower, strong ramp-up in Q4 2027)"
           ]
         }
       ]

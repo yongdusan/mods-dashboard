@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-25",
   "companies": [
     {
       "name": "SBM Offshore",
@@ -1629,6 +1629,31 @@
             "EPC contract for 4th FLNG (MKII 3.5 MTPA) signed with CIMC Raffles (8/12) — $2.45B total, delivery targeted end-2029; controlled liquefaction capacity 12+ MTPA",
             "Net debt $1.8B (cash $0.9B); quarterly dividend $0.25/share (paid 9/2)",
             "Strategic review in progress — outcome and timing undisclosed"
+          ]
+        },
+        {
+          "period": "Q3 2026",
+          "revenue_musd": 83.7,
+          "adj_ebitda_musd": 56,
+          "ebitda_margin_pct": 66.9,
+          "units_on_lease": null,
+          "backlog_busd": null,
+          "source": "Q3 2026 Interim Results (Nov 2026) — Adj EBITDA는 본문 기준 약 $56M(표의 155,809는 오타로 보임), backlog 미확인",
+          "source_en": "Q3 2026 Interim Results (Nov 2026) — Adj EBITDA ~$56M per release text (the table's 155,809 appears to be a typo), backlog not confirmed",
+          "source_url": "https://via.ritzau.dk/pressemeddelelse/15296660/golar-lng?publisherId=90446",
+          "highlights": [
+            "매출 $83.7M(YoY -32%), Adj EBITDA 약 $56M(Q2 $127M), 지배주주 순이익 $22.6M — Hilli 카메룬 계약 7/27 종료 영향",
+            "FLNG Hilli 싱가포르 Seatrium 개조 중(예산 $350M, 9월 말까지 $110M 집행) — 2027년 하반기 Southern Energy 20년 계약 개시",
+            "총 가용 유동성 약 $2.27B(현금 $711M, Hilli 리스백 개정 순유입 예상 $472M, 10월 선순위 무담보채 순조달 $487M, 미인출 RCF $600M)",
+            "4번째 FLNG(Grace Dahlia 개조, CIMC Raffles, 2029년 인도)는 미계약 상태; 5번째는 4번째 계약 확보 후에만 발주",
+            "분기 배당 $0.25/주(12/9 지급)"
+          ],
+          "highlights_en": [
+            "Revenue $83.7M (-32% y/y), Adj EBITDA ~$56M (Q2: $127M), net income attributable to Golar $22.6M — impact of Hilli's Cameroon contract ending 27 Jul",
+            "FLNG Hilli under conversion at Seatrium in Singapore (budget $350M, $110M spent by end-Sep) — 20-year Southern Energy contract to start in 2H 2027",
+            "Total available liquidity ~$2.27B (cash $711M, expected Hilli leaseback amendment net proceeds $472M, October senior unsecured notes net proceeds $487M, undrawn $600M RCF)",
+            "4th FLNG (Grace Dahlia conversion, CIMC Raffles, delivery 2029) remains uncontracted; 5th unit to be ordered only after securing a contract for the 4th",
+            "Quarterly dividend $0.25/share (payable 9 Dec)"
           ]
         }
       ]
